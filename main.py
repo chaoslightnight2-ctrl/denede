@@ -294,13 +294,15 @@ def assemble_video(bg_path, audio_path, chunked_ts, music_path=None):
 # ---------- 8. YouTube ----------
 def get_youtube_service():
     with open(CLIENT_SECRETS_FILE, "r") as f:
-        config = json.load(f)["installed"]
+        config = json.load(f)
+    # Google bazen "installed", bazen "web" anahtarı gönderir, otomatik bul
+    client_config = config.get("installed") or config.get("web") or next(iter(config.values()))
     creds = Credentials(
         token=None,
         refresh_token=YOUTUBE_REFRESH_TOKEN,
         token_uri="https://oauth2.googleapis.com/token",
-        client_id=config["client_id"],
-        client_secret=config["client_secret"],
+        client_id=client_config["client_id"],
+        client_secret=client_config["client_secret"],
         scopes=YOUTUBE_SCOPES
     )
     creds.refresh(Request())
