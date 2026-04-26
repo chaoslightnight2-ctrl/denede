@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-🔥 VIRAL YOUTUBE SHORTS GENERATOR – ULTIMATE VERSION
-Her çalıştırmada yüksek tutundurma odaklı bir video üretir ve YouTube'a yükler.
+🔥 VIRAL YOUTUBE SHORTS GENERATOR – HATALARDAN ARINDIRILMIŞ SON SÜRÜM
+Her çalışmada yüksek kaliteli, altyazılı ve sesli bir Shorts üretir, YouTube’a yükler.
 GitHub Actions ile tam otomatik çalışır.
 """
 
@@ -38,7 +38,7 @@ import g4f
 import edge_tts
 from moviepy.editor import (VideoFileClip, AudioFileClip, CompositeVideoClip,
                             CompositeAudioClip, TextClip)
-from moviepy.video.fx import crop
+from moviepy.video.fx.all import crop
 from moviepy.audio.fx.all import audio_loop, volumex
 import requests
 from google.oauth2.credentials import Credentials
@@ -79,7 +79,6 @@ NICHE_POOL = [
 # ---------- 1. Viral Senaryo Üretimi (Gelişmiş) ----------
 def generate_script(niche: str) -> str:
     logger.info(f"✍️ Viral senaryo üretiliyor: '{niche}'")
-    
     prompt = f"""
 Sen viral YouTube Shorts metinleri yazan bir uzmansın.
 Konu: {niche}
@@ -93,12 +92,10 @@ Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
 6. Cümleler kısa ve net olsun. Her cümle bir satır.
 Yalnızca metni döndür.
 """
-    
-    # Yeni g4f istemcisi
+    # Yeni g4f Client API
     from g4f.client import Client
     client = Client()
-
-    for attempt in range(3):  # 3 deneme yap
+    for attempt in range(3):
         try:
             response = client.chat.completions.create(
                 model="gpt-4",
@@ -115,10 +112,9 @@ Yalnızca metni döndür.
         except Exception as e:
             logger.warning(f"Deneme {attempt+1} başarısız: {e}")
             time.sleep(3)
-    
-    raise RuntimeError("Senaryo üretilemedi.")
+    raise RuntimeError("Hiçbir model senaryo üretemedi.")
 
-# ---------- 2. Hızlı Seslendirme (Türkçe, tempolu) ----------
+# ---------- 2. Seslendirme (edge-tts) + Zamanlama ----------
 async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, str]]]:
     logger.info("🔊 Seslendirme oluşturuluyor...")
     communicate = edge_tts.Communicate(script, DEFAULT_VOICE, rate=RATE, pitch=PITCH)
@@ -135,7 +131,7 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
 
     if not word_timestamps:
         logger.warning("⚠️ Kelime zamanlaması alınamadı. Ses süresine göre eşit dağıtılacak.")
-        # Ses dosyasının gerçek süresini al
+        # Ses dosyasının gerçek süresini oku
         audio_clip = AudioFileClip(VOICEOVER_FILE)
         total_duration = audio_clip.duration
         audio_clip.close()
@@ -143,7 +139,7 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
         if not words:
             raise RuntimeError("Senaryo boş, seslendirme yapılamaz.")
         dur_per_word = total_duration / len(words)
-        current_time = 0.1  # hafif gecikme
+        current_time = 0.1
         for word in words:
             word_timestamps.append((current_time, dur_per_word, word))
             current_time += dur_per_word
@@ -152,6 +148,7 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
         logger.info(f"✅ {len(word_timestamps)} kelime zamanlaması alındı.")
 
     return VOICEOVER_FILE, word_timestamps
+
 # ---------- 3. Arka Plan Videosu (Dramatik, koyu tonlu) ----------
 def extract_keywords(script: str, count=5) -> List[str]:
     stop_words = {"için","gibi","kadar","ama","fakat","ancak","değil","evet","hayır","çok","daha","bir","iki","üç","dört","beş","the","and","for","with","that","this","from","are","was","were","been","being","have","has","had"}
@@ -162,7 +159,6 @@ def extract_keywords(script: str, count=5) -> List[str]:
 
 def search_pexels(keywords: List[str]) -> Optional[str]:
     headers = {"Authorization": PEXELS_API_KEY}
-    # koyu/soyut arka plan şansını artırmak için soyut kelimelere öncelik ver
     for i in range(min(3, len(keywords)), 0, -1):
         query = " ".join(keywords[:i])
         logger.info(f"🔍 Pexels sorgu: '{query}'")
@@ -187,7 +183,6 @@ def search_pexels(keywords: List[str]) -> Optional[str]:
 
 def fetch_background_video(script: str) -> str:
     keywords = extract_keywords(script)
-    # dramatik ton için ekleme yap
     if not keywords:
         keywords = ["dark", "mysterious", "abstract"]
     else:
