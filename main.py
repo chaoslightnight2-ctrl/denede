@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 """
 🔥 VIRAL YOUTUBE SHORTS GENERATOR – FINAL STABLE VERSION
-Her çalıştırmada yüksek tutundurma odaklı bir video üretir ve YouTube'a yükler.
 GitHub Actions ile tam otomatik çalışır.
 """
 
-import asyncio, os, sys, re, random, json, logging, time, traceback
+import asyncio, os, sys, re, random, json, logging, time, traceback, base64
 from pathlib import Path
 from typing import List, Tuple, Optional
 
 from dotenv import load_dotenv
 load_dotenv()
 
-# ---------- API Anahtarları ve Kritik Kontroller ----------
+# ---------- API Anahtarları ----------
 PEXELS_API_KEY = os.getenv("PEXELS_API_KEY")
 YOUTUBE_REFRESH_TOKEN = os.getenv("YOUTUBE_REFRESH_TOKEN")
 
@@ -20,8 +19,6 @@ if not PEXELS_API_KEY:
     sys.exit("❌ PEXELS_API_KEY tanımlı değil.")
 if not YOUTUBE_REFRESH_TOKEN:
     sys.exit("❌ YOUTUBE_REFRESH_TOKEN tanımlı değil.")
-if not Path("client_secrets.json").exists():
-    sys.exit("❌ client_secrets.json bulunamadı.")
 
 CLIENT_SECRETS_FILE = "client_secrets.json"
 YOUTUBE_SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
@@ -75,19 +72,17 @@ NICHE_POOL = [
     "Tuhaf ve Enteresan Yasalar"
 ]
 
-# ---------- 1. Senaryo Üretimi ----------
+# ---------- 1. Senaryo ----------
 def generate_script(niche: str) -> str:
     logger.info(f"✍️ Viral senaryo üretiliyor: '{niche}'")
     prompt = f"""
 Sen viral YouTube Shorts metinleri yazan bir uzmansın.
 Konu: {niche}
-
 Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
 1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı.
 2. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
 3. Son cümle güçlü bir call-to-action içersin.
 4. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
-5. Cümleler kısa ve net olsun.
 Yalnızca metni döndür.
 """
     from g4f.client import Client
@@ -101,15 +96,15 @@ Yalnızca metni döndür.
             )
             script = response.choices[0].message.content.strip().strip('"').strip("'")
             if len(script) < 30:
-                logger.warning("Çok kısa yanıt, tekrar deneniyor...")
+                logger.warning("Çok kısa, tekrar deneniyor...")
                 time.sleep(2)
                 continue
             logger.info("✅ Senaryo hazır.")
             return script
         except Exception as e:
-            logger.warning(f"Deneme {attempt+1} başarısız: {e}")
+            logger.warning(f"Deneme {attempt+1}: {e}")
             time.sleep(3)
-    raise RuntimeError("Hiçbir model senaryo üretemedi.")
+    raise RuntimeError("Senaryo üretilemedi.")
 
 # ---------- 2. Seslendirme ----------
 async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, str]]]:
@@ -121,84 +116,68 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
             if chunk["type"] == "audio":
                 f.write(chunk["data"])
             elif chunk["type"] == "WordBoundary":
-                start = chunk["offset"] / 10_000_000
-                dur = chunk["duration"] / 10_000_000
-                word = chunk["text"]
-                word_timestamps.append((start, dur, word))
+                word_timestamps.append((chunk["offset"]/10_000_000, chunk["duration"]/10_000_000, chunk["text"]))
 
     if not word_timestamps:
-        logger.warning("⚠️ Kelime zamanlaması yok, ses süresine göre eşit dağıtılacak.")
+        logger.warning("⚠️ Zamanlama yok, eşit dağıtılacak.")
         audio_clip = AudioFileClip(VOICEOVER_FILE)
-        total_duration = audio_clip.duration
+        total_dur = audio_clip.duration
         audio_clip.close()
         words = script.split()
         if not words:
             raise RuntimeError("Senaryo boş.")
-        dur_per_word = total_duration / len(words)
-        current_time = 0.1
+        dur_per_word = total_dur / len(words)
+        current = 0.1
         for word in words:
-            word_timestamps.append((current_time, dur_per_word, word))
-            current_time += dur_per_word
-        logger.info(f"✅ {len(word_timestamps)} kelime için zamanlama hesaplandı.")
-    else:
-        logger.info(f"✅ {len(word_timestamps)} kelime zamanlaması alındı.")
+            word_timestamps.append((current, dur_per_word, word))
+            current += dur_per_word
+    logger.info(f"✅ {len(word_timestamps)} kelime.")
     return VOICEOVER_FILE, word_timestamps
 
-# ---------- 3. Arka Plan Videosu ----------
-def extract_keywords(script: str, count=5) -> List[str]:
-    stop_words = {"için","gibi","kadar","ama","fakat","ancak","değil","evet","hayır",
-                  "çok","daha","bir","iki","üç","dört","beş","the","and","for","with",
-                  "that","this","from","are","was","were","been","being","have","has","had"}
+# ---------- 3. Arka Plan ----------
+def extract_keywords(script, count=5):
+    stop_words = {"için","gibi","kadar","ama","fakat","ancak","değil","evet","hayır","çok","daha","bir","iki","üç","dört","beş","the","and","for","with","that","this","from","are","was","were","been","being","have","has","had"}
     words = re.findall(r'\b\w{4,}\b', script.lower())
     filtered = [w for w in words if w not in stop_words]
     filtered.sort(key=len, reverse=True)
     return filtered[:count]
 
-def search_pexels(keywords: List[str]) -> Optional[str]:
+def search_pexels(keywords):
     headers = {"Authorization": PEXELS_API_KEY}
     for i in range(min(3, len(keywords)), 0, -1):
         query = " ".join(keywords[:i])
-        logger.info(f"🔍 Pexels sorgu: '{query}'")
         try:
-            resp = requests.get("https://api.pexels.com/videos/search",
-                               headers=headers,
-                               params={"query": query, "per_page": 4, "orientation": "portrait", "size": "large"},
-                               timeout=15)
+            resp = requests.get("https://api.pexels.com/videos/search", headers=headers,
+                               params={"query": query, "per_page": 4, "orientation": "portrait", "size": "large"}, timeout=15)
             resp.raise_for_status()
             videos = resp.json().get("videos", [])
             if videos:
                 for vid in videos:
                     for vf in vid["video_files"]:
-                        if vf["width"] >= 1080 and vf["height"] >= 1920:
+                        if vf["width"]>=1080 and vf["height"]>=1920:
                             return vf["link"]
-                best = max(videos[0]["video_files"], key=lambda x: x["width"]*x["height"])
-                return best["link"]
-        except Exception as e:
-            logger.warning(f"Hata: {e}")
+                return max(videos[0]["video_files"], key=lambda x: x["width"]*x["height"])["link"]
+        except Exception:
             time.sleep(1)
     return None
 
-def fetch_background_video(script: str) -> str:
+def fetch_background_video(script):
     keywords = extract_keywords(script) or ["dark", "mysterious", "abstract"]
     keywords = ["dark atmosphere"] + keywords
-    url = search_pexels(keywords)
+    url = search_pexels(keywords) or search_pexels(["dark", "gradient", "abstract"])
     if not url:
-        url = search_pexels(["dark", "gradient", "abstract"])
-    if not url:
-        raise RuntimeError("Pexels'te uygun video bulunamadı.")
-    logger.info(f"⏬ İndiriliyor...")
+        raise RuntimeError("Pexels'te video bulunamadı.")
     with requests.get(url, stream=True, timeout=60) as r:
         r.raise_for_status()
         with open(BACKGROUND_FILE, "wb") as f:
-            for chunk in r.iter_content(chunk_size=8192):
+            for chunk in r.iter_content(8192):
                 f.write(chunk)
     return BACKGROUND_FILE
 
 # ---------- 4. Font ----------
-def ensure_font() -> str:
+def ensure_font():
     if FONT_PATH.exists():
         return str(FONT_PATH.resolve())
-    logger.info("🔤 Montserrat Bold indiriliyor...")
     try:
         FONT_DIR.mkdir(exist_ok=True)
         with requests.get(FONT_URL, timeout=15) as r:
@@ -209,13 +188,13 @@ def ensure_font() -> str:
     except Exception:
         return "Arial-Bold"
 
-# ---------- 5. Altyazı Chunking ----------
+# ---------- 5. Altyazı ----------
 def chunk_timestamps(word_ts):
     if not word_ts: return []
     chunks = []
     cur_words, chunk_start, acc_dur = [], word_ts[0][0], 0.0
     for start, dur, word in word_ts:
-        if (len(cur_words) >= MAX_CAPTION_WORDS or (cur_words and acc_dur+dur > MAX_CAPTION_DURATION)):
+        if len(cur_words) >= MAX_CAPTION_WORDS or (cur_words and acc_dur+dur > MAX_CAPTION_DURATION):
             chunks.append((chunk_start, acc_dur, " ".join(cur_words)))
             cur_words, chunk_start, acc_dur = [word], start, dur
         else:
@@ -223,7 +202,6 @@ def chunk_timestamps(word_ts):
             acc_dur += dur
     if cur_words:
         chunks.append((chunk_start, acc_dur, " ".join(cur_words)))
-    logger.info(f"📝 {len(chunks)} altyazı grubu.")
     return chunks
 
 def generate_captions(chunked_ts):
@@ -232,19 +210,12 @@ def generate_captions(chunked_ts):
     clips = []
     for start, dur, text in chunked_ts:
         dur += 0.08
-        txt_clip = (TextClip(text,
-                             fontsize=FONT_SIZE,
-                             color="white",
-                             font=font,
-                             stroke_color="black",
-                             stroke_width=STROKE_WIDTH,
-                             method="caption" if len(text)>12 else "label",
-                             size=(VIDEO_SIZE[0]-80, None))
-                    .set_start(start)
-                    .set_duration(dur)
-                    .set_position(("center", "center")))
-        clips.append(txt_clip)
-    logger.info(f"✅ {len(clips)} altyazı klibi.")
+        txt = (TextClip(text, fontsize=FONT_SIZE, color="white", font=font,
+                       stroke_color="black", stroke_width=STROKE_WIDTH,
+                       method="caption" if len(text)>12 else "label",
+                       size=(VIDEO_SIZE[0]-80, None))
+               .set_start(start).set_duration(dur).set_position(("center", "center")))
+        clips.append(txt)
     return clips
 
 # ---------- 6. Müzik ----------
@@ -287,16 +258,24 @@ def assemble_video(bg_path, audio_path, chunked_ts, music_path=None):
     captions = generate_captions(chunked_ts)
     final = CompositeVideoClip([bg_clip] + captions, size=VIDEO_SIZE)
     final.write_videofile(OUTPUT_VIDEO, codec="libx264", audio_codec="aac",
-                         fps=30, preset="medium", threads=4,
-                         verbose=False, logger=None)
+                         fps=30, preset="medium", threads=4, verbose=False, logger=None)
     return OUTPUT_VIDEO
 
 # ---------- 8. YouTube ----------
 def get_youtube_service():
-    with open(CLIENT_SECRETS_FILE, "r") as f:
-        config = json.load(f)
-    # Google bazen "installed", bazen "web" anahtarı gönderir, otomatik bul
+    # client_secrets.json'u doğrudan Secret'tan al
+    client_secrets_json = os.getenv("CLIENT_SECRETS_JSON")
+    if client_secrets_json:
+        config = json.loads(client_secrets_json)
+    elif Path(CLIENT_SECRETS_FILE).exists():
+        with open(CLIENT_SECRETS_FILE, "r") as f:
+            config = json.load(f)
+    else:
+        raise RuntimeError("CLIENT_SECRETS_JSON bulunamadı!")
+
+    # "installed" veya "web" anahtarını otomatik bul
     client_config = config.get("installed") or config.get("web") or next(iter(config.values()))
+
     creds = Credentials(
         token=None,
         refresh_token=YOUTUBE_REFRESH_TOKEN,
@@ -327,10 +306,8 @@ def upload_to_youtube(video_path, title, description, tags=None):
         }
     }
     logger.info(f"📤 Yükleniyor: {title}")
-    media = MediaFileUpload(video_path, mimetype="video/mp4",
-                            resumable=True, chunksize=5*1024*1024)
-    request = youtube.videos().insert(part="snippet,status", body=body,
-                                      media_body=media)
+    media = MediaFileUpload(video_path, mimetype="video/mp4", resumable=True, chunksize=5*1024*1024)
+    request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
     resp = None
     while resp is None:
         status, resp = request.next_chunk()
@@ -344,7 +321,7 @@ def upload_to_youtube(video_path, title, description, tags=None):
 # ---------- 9. Ana Akış ----------
 async def run_pipeline(niche: str):
     try:
-        logger.info(f"🎲 Seçilen niş: {niche}")
+        logger.info(f"🎲 Niş: {niche}")
         script = generate_script(niche)
         logger.info("📜 Senaryo:\n" + script)
         audio, word_ts = await create_voiceover(script)
