@@ -137,19 +137,24 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
         if word_timestamps:
             return VOICEOVER_FILE, word_timestamps
         else:
-            logger.warning("⚠️ edge-tts çalıştı fakat kelime zamanlaması alınamadı.")
+            logger.warning("⚠️ edge-tts kelime zamanlaması vermedi, gTTS deneniyor...")
     except Exception as e:
         logger.warning(f"edge-tts başarısız: {e}. gTTS deneniyor...")
 
-    # Yedek: gTTS (Google TTS) – ücretsiz, kelime zamanlaması yok
+    # Yedek: gTTS (Google Text-to-Speech) – ücretsiz
     try:
         from gtts import gTTS
         tts = gTTS(script, lang='tr', slow=False)
         tts.save(VOICEOVER_FILE)
         logger.info("✅ Seslendirme gTTS ile oluşturuldu.")
-        # Sabit altyazılar için yaklaşık süre hesapla
+
+        # Kelime zamanlaması yok → her kelimeye eşit süre ver
         words = script.split()
-        dur_per_word = 0.35  # ortalama saniye
+        if not words:
+            return VOICEOVER_FILE, []
+        # Seslendirme süresini tahmin et (karakter başına ~0.07 sn)
+        estimated_duration = len(script) * 0.07
+        dur_per_word = estimated_duration / len(words) if words else 0.3
         word_ts = []
         current_time = 0.2
         for word in words:
@@ -158,6 +163,9 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
         return VOICEOVER_FILE, word_ts
     except ImportError:
         logger.error("gTTS yüklü değil. pip install gtts")
+        raise
+    except Exception as e:
+        logger.error(f"gTTS başarısız: {e}")
         raise
 # ---------- 3. Arka Plan Videosu (Dramatik, koyu tonlu) ----------
 def extract_keywords(script: str, count=5) -> List[str]:
