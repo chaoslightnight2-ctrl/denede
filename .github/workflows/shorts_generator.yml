@@ -26,17 +26,15 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 🔐 Gizli anahtarları yapılandır
+      - name: Setup secrets
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
-          TOKEN_PICKLE_BASE64: ${{ secrets.TOKEN_PICKLE_BASE64 }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" > .env
+          echo "YOUTUBE_REFRESH_TOKEN=${YOUTUBE_REFRESH_TOKEN}" >> .env
           echo "${CLIENT_SECRETS_JSON}" > client_secrets.json
-          if [ -n "${TOKEN_PICKLE_BASE64}" ]; then
-            echo "${TOKEN_PICKLE_BASE64}" | base64 -d > token.pickle
-          fi
 
       - name: 🤖 Botu çalıştır
         run: python main.py
