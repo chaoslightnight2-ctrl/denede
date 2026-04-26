@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-🔥 VIRAL YOUTUBE SHORTS GENERATOR – HATALARDAN ARINDIRILMIŞ SON SÜRÜM
-Her çalışmada yüksek kaliteli, altyazılı ve sesli bir Shorts üretir, YouTube’a yükler.
+🔥 VIRAL YOUTUBE SHORTS GENERATOR – FINAL STABLE VERSION
+Her çalıştırmada yüksek tutundurma odaklı bir video üretir ve YouTube'a yükler.
 GitHub Actions ile tam otomatik çalışır.
 """
 
@@ -25,7 +25,7 @@ if not Path("client_secrets.json").exists():
 
 CLIENT_SECRETS_FILE = "client_secrets.json"
 YOUTUBE_SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
-YOUTUBE_CATEGORY_ID = "22"  # People & Blogs
+YOUTUBE_CATEGORY_ID = "22"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -46,23 +46,22 @@ from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-# ---------- Viral İçerik Optimize Sabitler ----------
+# ---------- Sabitler ----------
 OUTPUT_VIDEO = "final_shorts.mp4"
 VOICEOVER_FILE = "voiceover.mp3"
 BACKGROUND_FILE = "background_video.mp4"
 VIDEO_SIZE = (1080, 1920)
 DEFAULT_VOICE = "tr-TR-EmelNeural"
-RATE = "+15%"   # %15 daha hızlı konuşma (dinamik)
-PITCH = "-5Hz"  # Hafif pes, daha ciddi
+RATE = "+15%"
+PITCH = "-5Hz"
 FONT_URL = "https://github.com/google/fonts/raw/main/ofl/montserrat/static/Montserrat-Bold.ttf"
 FONT_DIR = Path("fonts")
 FONT_PATH = FONT_DIR / "Montserrat-Bold.ttf"
-MAX_CAPTION_WORDS = 2           # Bir seferde en fazla 2 kelime (tempolu)
-MAX_CAPTION_DURATION = 0.75     # Maksimum 0.75 sn
+MAX_CAPTION_WORDS = 2
+MAX_CAPTION_DURATION = 0.75
 FONT_SIZE = 90
 STROKE_WIDTH = 8
 
-# ---------- Niş Havuzu (Viral potansiyeli yüksek) ----------
 NICHE_POOL = [
     "Şok Edici Psikolojik Gerçekler",
     "Bilinmeyen İnsan Davranışları",
@@ -76,7 +75,7 @@ NICHE_POOL = [
     "Tuhaf ve Enteresan Yasalar"
 ]
 
-# ---------- 1. Viral Senaryo Üretimi (Gelişmiş) ----------
+# ---------- 1. Senaryo Üretimi ----------
 def generate_script(niche: str) -> str:
     logger.info(f"✍️ Viral senaryo üretiliyor: '{niche}'")
     prompt = f"""
@@ -84,15 +83,13 @@ Sen viral YouTube Shorts metinleri yazan bir uzmansın.
 Konu: {niche}
 
 Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
-1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı (pattern interrupt).
-2. Hemen ardından merak uyandıran bir boşluk bırak (curiosity gap).
-3. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
-4. Son cümle güçlü bir call-to-action içersin: "yorum yap", "beğen", "abone ol" gibi.
-5. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
-6. Cümleler kısa ve net olsun. Her cümle bir satır.
+1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı.
+2. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
+3. Son cümle güçlü bir call-to-action içersin.
+4. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
+5. Cümleler kısa ve net olsun.
 Yalnızca metni döndür.
 """
-    # Yeni g4f Client API
     from g4f.client import Client
     client = Client()
     for attempt in range(3):
@@ -114,7 +111,7 @@ Yalnızca metni döndür.
             time.sleep(3)
     raise RuntimeError("Hiçbir model senaryo üretemedi.")
 
-# ---------- 2. Seslendirme (edge-tts) + Zamanlama ----------
+# ---------- 2. Seslendirme ----------
 async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, str]]]:
     logger.info("🔊 Seslendirme oluşturuluyor...")
     communicate = edge_tts.Communicate(script, DEFAULT_VOICE, rate=RATE, pitch=PITCH)
@@ -130,14 +127,13 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
                 word_timestamps.append((start, dur, word))
 
     if not word_timestamps:
-        logger.warning("⚠️ Kelime zamanlaması alınamadı. Ses süresine göre eşit dağıtılacak.")
-        # Ses dosyasının gerçek süresini oku
+        logger.warning("⚠️ Kelime zamanlaması yok, ses süresine göre eşit dağıtılacak.")
         audio_clip = AudioFileClip(VOICEOVER_FILE)
         total_duration = audio_clip.duration
         audio_clip.close()
         words = script.split()
         if not words:
-            raise RuntimeError("Senaryo boş, seslendirme yapılamaz.")
+            raise RuntimeError("Senaryo boş.")
         dur_per_word = total_duration / len(words)
         current_time = 0.1
         for word in words:
@@ -146,12 +142,13 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
         logger.info(f"✅ {len(word_timestamps)} kelime için zamanlama hesaplandı.")
     else:
         logger.info(f"✅ {len(word_timestamps)} kelime zamanlaması alındı.")
-
     return VOICEOVER_FILE, word_timestamps
 
-# ---------- 3. Arka Plan Videosu (Dramatik, koyu tonlu) ----------
+# ---------- 3. Arka Plan Videosu ----------
 def extract_keywords(script: str, count=5) -> List[str]:
-    stop_words = {"için","gibi","kadar","ama","fakat","ancak","değil","evet","hayır","çok","daha","bir","iki","üç","dört","beş","the","and","for","with","that","this","from","are","was","were","been","being","have","has","had"}
+    stop_words = {"için","gibi","kadar","ama","fakat","ancak","değil","evet","hayır",
+                  "çok","daha","bir","iki","üç","dört","beş","the","and","for","with",
+                  "that","this","from","are","was","were","been","being","have","has","had"}
     words = re.findall(r'\b\w{4,}\b', script.lower())
     filtered = [w for w in words if w not in stop_words]
     filtered.sort(key=len, reverse=True)
@@ -182,11 +179,8 @@ def search_pexels(keywords: List[str]) -> Optional[str]:
     return None
 
 def fetch_background_video(script: str) -> str:
-    keywords = extract_keywords(script)
-    if not keywords:
-        keywords = ["dark", "mysterious", "abstract"]
-    else:
-        keywords = ["dark atmosphere"] + keywords
+    keywords = extract_keywords(script) or ["dark", "mysterious", "abstract"]
+    keywords = ["dark atmosphere"] + keywords
     url = search_pexels(keywords)
     if not url:
         url = search_pexels(["dark", "gradient", "abstract"])
@@ -200,7 +194,7 @@ def fetch_background_video(script: str) -> str:
                 f.write(chunk)
     return BACKGROUND_FILE
 
-# ---------- 4. Font İndirme ----------
+# ---------- 4. Font ----------
 def ensure_font() -> str:
     if FONT_PATH.exists():
         return str(FONT_PATH.resolve())
@@ -215,7 +209,7 @@ def ensure_font() -> str:
     except Exception:
         return "Arial-Bold"
 
-# ---------- 5. Dinamik, Tempolu Altyazı Chunking ----------
+# ---------- 5. Altyazı Chunking ----------
 def chunk_timestamps(word_ts):
     if not word_ts: return []
     chunks = []
@@ -237,7 +231,7 @@ def generate_captions(chunked_ts):
     font = ensure_font()
     clips = []
     for start, dur, text in chunked_ts:
-        dur += 0.08  # hafif taşma
+        dur += 0.08
         txt_clip = (TextClip(text,
                              fontsize=FONT_SIZE,
                              color="white",
@@ -253,17 +247,17 @@ def generate_captions(chunked_ts):
     logger.info(f"✅ {len(clips)} altyazı klibi.")
     return clips
 
-# ---------- 6. Müzik Miksajı ----------
+# ---------- 6. Müzik ----------
 def mix_background_music(audio_clip, music_path="bg_music.mp3"):
     if not os.path.exists(music_path): return None
     try:
-        bg = AudioFileClip(music_path).fx(volumex, 0.06)  # %6 ses
+        bg = AudioFileClip(music_path).fx(volumex, 0.06)
         bg = audio_loop(bg, duration=audio_clip.duration)
         return CompositeAudioClip([audio_clip, bg])
     except Exception:
         return None
 
-# ---------- 7. Video Montajı ----------
+# ---------- 7. Montaj ----------
 def assemble_video(bg_path, audio_path, chunked_ts, music_path=None):
     logger.info("🎬 Montaj başlıyor...")
     bg_clip = VideoFileClip(bg_path)
@@ -297,7 +291,7 @@ def assemble_video(bg_path, audio_path, chunked_ts, music_path=None):
                          verbose=False, logger=None)
     return OUTPUT_VIDEO
 
-# ---------- 8. YouTube Yükleme (Refresh Token ile) ----------
+# ---------- 8. YouTube ----------
 def get_youtube_service():
     with open(CLIENT_SECRETS_FILE, "r") as f:
         config = json.load(f)["installed"]
@@ -345,7 +339,7 @@ def upload_to_youtube(video_path, title, description, tags=None):
     logger.info(f"✅ Yayında: {url}")
     return url
 
-# ---------- 9. Ana İş Akışı ----------
+# ---------- 9. Ana Akış ----------
 async def run_pipeline(niche: str):
     try:
         logger.info(f"🎲 Seçilen niş: {niche}")
