@@ -120,25 +120,45 @@ Yalnızca metni döndür.
 
 # ---------- 2. Hızlı Seslendirme (Türkçe, tempolu) ----------
 async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, str]]]:
-    logger.info("🔊 Tempolu seslendirme oluşturuluyor...")
-    # edge-tts'te hız ve ton ayarı: rate ve pitch parametreleri
-    communicate = edge_tts.Communicate(script, DEFAULT_VOICE, rate=RATE, pitch=PITCH)
-    word_timestamps = []
-    with open(VOICEOVER_FILE, "wb") as f:
-        async for chunk in communicate.stream():
-            if chunk["type"] == "audio":
-                f.write(chunk["data"])
-            elif chunk["type"] == "WordBoundary":
-                start = chunk["offset"] / 10_000_000
-                dur = chunk["duration"] / 10_000_000
-                word = chunk["text"]
-                word_timestamps.append((start, dur, word))
-    if not word_timestamps:
-        logger.warning("⚠️ Kelime zamanlaması alınamadı.")
-    else:
-        logger.info(f"✅ {len(word_timestamps)} kelime zamanı.")
-    return VOICEOVER_FILE, word_timestamps
+    logger.info("🔊 Seslendirme oluşturuluyor...")
+    try:
+        # Önce edge-tts dene
+        communicate = edge_tts.Communicate(script, DEFAULT_VOICE, rate=RATE, pitch=PITCH)
+        word_timestamps = []
+        with open(VOICEOVER_FILE, "wb") as f:
+            async for chunk in communicate.stream():
+                if chunk["type"] == "audio":
+                    f.write(chunk["data"])
+                elif chunk["type"] == "WordBoundary":
+                    start = chunk["offset"] / 10_000_000
+                    dur = chunk["duration"] / 10_000_000
+                    word = chunk["text"]
+                    word_timestamps.append((start, dur, word))
+        if word_timestamps:
+            return VOICEOVER_FILE, word_timestamps
+        else:
+            logger.warning("⚠️ edge-tts çalıştı fakat kelime zamanlaması alınamadı.")
+    except Exception as e:
+        logger.warning(f"edge-tts başarısız: {e}. gTTS deneniyor...")
 
+    # Yedek: gTTS (Google TTS) – ücretsiz, kelime zamanlaması yok
+    try:
+        from gtts import gTTS
+        tts = gTTS(script, lang='tr', slow=False)
+        tts.save(VOICEOVER_FILE)
+        logger.info("✅ Seslendirme gTTS ile oluşturuldu.")
+        # Sabit altyazılar için yaklaşık süre hesapla
+        words = script.split()
+        dur_per_word = 0.35  # ortalama saniye
+        word_ts = []
+        current_time = 0.2
+        for word in words:
+            word_ts.append((current_time, dur_per_word, word))
+            current_time += dur_per_word
+        return VOICEOVER_FILE, word_ts
+    except ImportError:
+        logger.error("gTTS yüklü değil. pip install gtts")
+        raise
 # ---------- 3. Arka Plan Videosu (Dramatik, koyu tonlu) ----------
 def extract_keywords(script: str, count=5) -> List[str]:
     stop_words = {"için","gibi","kadar","ama","fakat","ancak","değil","evet","hayır","çok","daha","bir","iki","üç","dört","beş","the","and","for","with","that","this","from","are","was","were","been","being","have","has","had"}
