@@ -1,6 +1,7 @@
+g4f>=7.5.0
+nest_asyncio==1.6.0
 moviepy==1.0.3
 edge-tts==6.1.12
-g4f==0.3.2.1
 requests==2.31.0
 python-dotenv==1.0.0
 Pillow==10.4.0
