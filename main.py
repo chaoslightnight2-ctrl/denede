@@ -79,6 +79,7 @@ NICHE_POOL = [
 # ---------- 1. Viral Senaryo Üretimi (Gelişmiş) ----------
 def generate_script(niche: str) -> str:
     logger.info(f"✍️ Viral senaryo üretiliyor: '{niche}'")
+    
     prompt = f"""
 Sen viral YouTube Shorts metinleri yazan bir uzmansın.
 Konu: {niche}
@@ -92,21 +93,30 @@ Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
 6. Cümleler kısa ve net olsun. Her cümle bir satır.
 Yalnızca metni döndür.
 """
-    models = [g4f.models.default, g4f.models.gpt_4, g4f.models.gpt_35_turbo]
-    for model in models:
+    
+    # Yeni g4f istemcisi
+    from g4f.client import Client
+    client = Client()
+
+    for attempt in range(3):  # 3 deneme yap
         try:
-            resp = g4f.ChatCompletion.create(model=model,
-                                             messages=[{"role": "user", "content": prompt}],
-                                             timeout=45)
-            script = resp.strip().strip('"').strip("'")
+            response = client.chat.completions.create(
+                model="gpt-4",
+                messages=[{"role": "user", "content": prompt}],
+                timeout=60
+            )
+            script = response.choices[0].message.content.strip().strip('"').strip("'")
             if len(script) < 30:
+                logger.warning("Çok kısa yanıt, tekrar deneniyor...")
+                time.sleep(2)
                 continue
             logger.info("✅ Senaryo hazır.")
             return script
         except Exception as e:
-            logger.warning(f"Model {model} başarısız: {e}")
-            time.sleep(2)
-    raise RuntimeError("Hiçbir model senaryo üretemedi.")
+            logger.warning(f"Deneme {attempt+1} başarısız: {e}")
+            time.sleep(3)
+    
+    raise RuntimeError("Senaryo üretilemedi.")
 
 # ---------- 2. Hızlı Seslendirme (Türkçe, tempolu) ----------
 async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, str]]]:
