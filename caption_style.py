@@ -1,11 +1,11 @@
 """Caption styling and timing patch for Shorts.
 
 Goal: captions must feel locked to the voice while staying readable.
-This version avoids huge single words and avoids long unsynced phrases:
+This version keeps captions in the middle of the video, but makes them cleaner:
 - smaller font
-- 1-2 word chunks, never 3-word laggy blocks
+- 1-2 word chunks
 - no punctuation in captions
-- lower-center placement
+- centered placement
 - chunk end is based on actual word end and next chunk start
 """
 
@@ -17,8 +17,8 @@ CAPTION_FONT_SIZE = 42
 CAPTION_STROKE_WIDTH = 3
 CAPTION_MAX_WORDS = 2
 CAPTION_MAX_DURATION = 0.62
-CAPTION_Y = 1120
-CAPTION_HORIZONTAL_MARGIN = 260
+CAPTION_POSITION = ("center", "center")
+CAPTION_HORIZONTAL_MARGIN = 280
 MIN_WORD_DURATION = 0.10
 MIN_CHUNK_DURATION = 0.10
 NEXT_CHUNK_GAP = 0.012
@@ -31,9 +31,8 @@ def clean_caption_word(word: str) -> str:
 def build_caption_chunks(word_ts):
     """Build tight 1-2 word captions from Edge TTS word boundaries.
 
-    Showing three words at once can look clean, but it often feels early because
-    words 2-3 appear before they are spoken. Two words is the best compromise:
-    readable, smaller, and still very close to the voice timing.
+    Two words is the best compromise for this style: it stays readable without
+    showing too many words before they are spoken.
     """
     cleaned_words = []
     for start, dur, word in word_ts or []:
@@ -112,7 +111,7 @@ def make_caption_clips(main_module, chunked_ts):
             )
             .set_start(start)
             .set_duration(dur)
-            .set_position(("center", CAPTION_Y))
+            .set_position(CAPTION_POSITION)
         )
         clips.append(txt)
     return clips
