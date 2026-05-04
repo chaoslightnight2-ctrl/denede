@@ -1,0 +1,15 @@
+name: ChatGPT Test Workflow
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "ChatGPT GitHub Actions test is running successfully."
+      - name: Show date
+        run: date
