@@ -11,6 +11,7 @@ import asyncio
 import json
 import re
 import shutil
+import subprocess
 from pathlib import Path
 
 import main
@@ -22,6 +23,9 @@ OUTPUT_DIR = Path("generated-videos")
 OUTPUT_VIDEO = OUTPUT_DIR / "latest_short.mp4"
 OUTPUT_THUMBNAIL = OUTPUT_DIR / "latest_thumbnail.jpg"
 OUTPUT_META = OUTPUT_DIR / "latest_meta.json"
+OUTPUT_FIRST_FRAME = OUTPUT_DIR / "latest_first_frame.jpg"
+OUTPUT_PREVIEW_GIF = OUTPUT_DIR / "latest_preview.gif"
+VIDEO_COMPAT_REPORT = OUTPUT_DIR / "video_compat_report.txt"
 
 HIGH_VALUE_TAGS = [
     "mysteryshorts",
@@ -39,6 +43,58 @@ LOW_VALUE_TAGS = {"stared", "smiled", "looked", "wrong", "really", "would", "cou
 
 def first_sentence(script: str) -> str:
     return re.split(r"[.!?]", script.strip())[0].strip()
+
+
+def run_cmd(args, check=True):
+    main.logger.info("$ " + " ".join(str(x) for x in args))
+    return subprocess.run(args, check=check, text=True, capture_output=True)
+
+
+def normalize_mp4_for_mobile(input_path: str, output_path: Path) -> None:
+    """Create a phone/GitHub-compatible MP4.
+
+    MoviePy can produce H.264/AAC files that are valid but awkward for mobile
+    preview if the pixel format/profile or moov atom placement is not ideal.
+    This second pass forces yuv420p + faststart.
+    """
+    tmp = output_path.with_suffix(".tmp.mp4")
+    if tmp.exists():
+        tmp.unlink()
+    run_cmd([
+        "ffmpeg", "-y",
+        "-i", str(input_path),
+        "-c:v", "libx264",
+        "-pix_fmt", "yuv420p",
+        "-profile:v", "main",
+        "-level", "4.0",
+        "-movflags", "+faststart",
+        "-c:a", "aac",
+        "-b:a", "160k",
+        str(tmp),
+    ])
+    tmp.replace(output_path)
+
+
+def make_debug_previews(video_path: Path) -> None:
+    try:
+        run_cmd(["ffmpeg", "-y", "-ss", "00:00:02", "-i", str(video_path), "-frames:v", "1", str(OUTPUT_FIRST_FRAME)], check=False)
+        run_cmd([
+            "ffmpeg", "-y",
+            "-ss", "00:00:00",
+            "-t", "6",
+            "-i", str(video_path),
+            "-vf", "fps=8,scale=360:-1:flags=lanczos",
+            str(OUTPUT_PREVIEW_GIF),
+        ], check=False)
+        probe = run_cmd([
+            "ffprobe", "-v", "error",
+            "-show_entries", "format=format_name,duration,size:stream=codec_name,codec_type,pix_fmt,width,height",
+            "-of", "json",
+            str(video_path),
+        ], check=False)
+        VIDEO_COMPAT_REPORT.write_text(probe.stdout or probe.stderr or "ffprobe produced no output", encoding="utf-8")
+    except Exception as exc:
+        main.logger.warning(f"Debug preview generation failed: {exc}")
 
 
 def build_stronger_title(script: str, niche: str) -> str:
@@ -114,7 +170,6 @@ def build_stronger_tags(niche: str, script: str):
 
 
 def safer_script(script: str) -> str:
-    # Keep mystery tone while avoiding unnecessarily harsh wording.
     return script.replace("That was the last time anyone saw him alive.", "That was the last time anyone saw him.")
 
 
@@ -144,8 +199,10 @@ async def run() -> None:
     thumbnail_text = build_stronger_thumbnail_text(script, niche)
     tags = build_stronger_tags(niche, script)
 
-    shutil.copyfile(final_path, OUTPUT_VIDEO)
-    thumb_path = make_thumbnail(final_path, thumbnail_text, main.ensure_font(), main.logger)
+    normalize_mp4_for_mobile(final_path, OUTPUT_VIDEO)
+    make_debug_previews(OUTPUT_VIDEO)
+
+    thumb_path = make_thumbnail(str(OUTPUT_VIDEO), thumbnail_text, main.ensure_font(), main.logger)
     if thumb_path and Path(thumb_path).exists():
         shutil.copyfile(thumb_path, OUTPUT_THUMBNAIL)
 
@@ -162,12 +219,15 @@ async def run() -> None:
         "script": script,
         "video_path": str(OUTPUT_VIDEO),
         "thumbnail_path": str(OUTPUT_THUMBNAIL) if OUTPUT_THUMBNAIL.exists() else None,
+        "first_frame_path": str(OUTPUT_FIRST_FRAME) if OUTPUT_FIRST_FRAME.exists() else None,
+        "preview_gif_path": str(OUTPUT_PREVIEW_GIF) if OUTPUT_PREVIEW_GIF.exists() else None,
+        "compat_report_path": str(VIDEO_COMPAT_REPORT) if VIDEO_COMPAT_REPORT.exists() else None,
         "video_url": None,
     }
     OUTPUT_META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     horror_runner.write_runtime_meta(meta)
 
-    main.logger.info(f"✅ Video saved to repo output: {OUTPUT_VIDEO}")
+    main.logger.info(f"✅ Mobile-compatible video saved: {OUTPUT_VIDEO}")
     main.logger.info(f"🧾 Metadata saved: {OUTPUT_META}")
 
 
