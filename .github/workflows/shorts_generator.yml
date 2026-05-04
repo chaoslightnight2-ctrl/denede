@@ -64,11 +64,13 @@ jobs:
 
       - name: Commit runtime status
         if: always()
+        continue-on-error: true
         uses: EndBug/add-and-commit@v9
         with:
           add: 'runtime-status/last-run.md'
           message: 'ci: record shorts status [skip ci]'
           default_author: github_actions
+          pull: '--rebase --autostash'
 
       - name: 📦 Logları ve çıktıları sakla
         if: always()
