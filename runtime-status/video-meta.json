@@ -1,0 +1,42 @@
+{
+  "mode": "save_only_no_youtube_upload",
+  "language": "en",
+  "niche": "Disturbing Facts",
+  "title": "He stared into the lens, smiled, and said the timestamp was wrong #shorts",
+  "thumbnail_text": "THIS FACT IS DISTURBING",
+  "duration_seconds": 25.01,
+  "tags": [
+    "shorts",
+    "youtubeshorts",
+    "viralshorts",
+    "fyp",
+    "horror",
+    "disturbingfacts",
+    "darkfacts",
+    "creepyfacts",
+    "scaryfacts",
+    "mystery",
+    "police",
+    "caughtoncamera",
+    "stared",
+    "smiled",
+    "timestamp"
+  ],
+  "background_queries": [
+    "stared smiled mystery",
+    "stared dark mystery",
+    "dark forest",
+    "abandoned hallway",
+    "scary shadow",
+    "eerie night",
+    "creepy room",
+    "horror atmosphere",
+    "dark mystery",
+    "scary cinematic",
+    "foggy abandoned place"
+  ],
+  "script": "He stared into the lens, smiled, and said the timestamp was wrong. That was the last time anyone saw him alive. The video kept recording for another seventeen minutes. In those minutes, you can hear a second set of footsteps, but the room is empty. Police found his camera, but the memory card was replaced with a single photo of his own face, taken from behind. What would you have done if you were watching that footage in real time?",
+  "video_path": "generated-videos/latest_short.mp4",
+  "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
+  "video_url": null
+}
