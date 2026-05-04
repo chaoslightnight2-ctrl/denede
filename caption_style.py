@@ -1,73 +1,87 @@
 """Caption styling and timing patch for Shorts.
 
-Keeps subtitles readable without covering the scary visuals:
+Goal: captions must feel locked to the voice while staying readable.
+This version avoids huge single words and avoids long unsynced phrases:
 - smaller font
-- up to 3-word caption chunks
+- 1-2 word chunks, never 3-word laggy blocks
 - no punctuation in captions
 - lower-center placement
-- timing based on real Edge TTS word boundaries
+- chunk end is based on actual word end and next chunk start
 """
 
 from __future__ import annotations
 
 import re
 
-CAPTION_FONT_SIZE = 44
+CAPTION_FONT_SIZE = 42
 CAPTION_STROKE_WIDTH = 3
-CAPTION_MAX_WORDS = 3
-CAPTION_MAX_DURATION = 0.95
-CAPTION_Y = 1080
-CAPTION_HORIZONTAL_MARGIN = 220
+CAPTION_MAX_WORDS = 2
+CAPTION_MAX_DURATION = 0.62
+CAPTION_Y = 1120
+CAPTION_HORIZONTAL_MARGIN = 260
+MIN_WORD_DURATION = 0.10
+MIN_CHUNK_DURATION = 0.10
+NEXT_CHUNK_GAP = 0.012
 
 
 def clean_caption_word(word: str) -> str:
-    # Remove punctuation such as commas, dots, question marks, quotes, brackets.
-    # Keep letters, numbers, apostrophes and hyphens so words like don't stay readable.
     return re.sub(r"[^A-Za-z0-9'\-À-ÖØ-öø-ÿ]+", "", str(word)).strip()
 
 
 def build_caption_chunks(word_ts):
-    if not word_ts:
-        return []
+    """Build tight 1-2 word captions from Edge TTS word boundaries.
 
+    Showing three words at once can look clean, but it often feels early because
+    words 2-3 appear before they are spoken. Two words is the best compromise:
+    readable, smaller, and still very close to the voice timing.
+    """
     cleaned_words = []
-    for start, dur, word in word_ts:
+    for start, dur, word in word_ts or []:
         clean = clean_caption_word(word)
-        if clean:
-            cleaned_words.append((float(start), float(dur), clean))
+        if not clean:
+            continue
+        start = float(start)
+        dur = float(dur)
+        end = max(start + dur, start + MIN_WORD_DURATION)
+        cleaned_words.append((start, end, clean))
 
     if not cleaned_words:
         return []
 
-    chunks = []
+    raw_chunks = []
     cur_words = []
-    chunk_start = cleaned_words[0][0]
-    chunk_end = cleaned_words[0][0]
+    chunk_start = None
+    chunk_end = None
 
-    for start, dur, word in cleaned_words:
-        word_end = max(start + dur, start + 0.12)
-        projected_duration = word_end - chunk_start
-
-        if cur_words and (len(cur_words) >= CAPTION_MAX_WORDS or projected_duration > CAPTION_MAX_DURATION):
-            chunks.append((chunk_start, max(chunk_end - chunk_start, 0.16), " ".join(cur_words)))
+    for start, end, word in cleaned_words:
+        if chunk_start is None:
             cur_words = [word]
             chunk_start = start
-            chunk_end = word_end
+            chunk_end = end
+            continue
+
+        projected_duration = end - chunk_start
+        next_is_too_long = projected_duration > CAPTION_MAX_DURATION
+        next_has_too_many_words = len(cur_words) >= CAPTION_MAX_WORDS
+
+        if next_has_too_many_words or next_is_too_long:
+            raw_chunks.append((chunk_start, chunk_end, " ".join(cur_words)))
+            cur_words = [word]
+            chunk_start = start
+            chunk_end = end
         else:
             cur_words.append(word)
-            chunk_end = word_end
+            chunk_end = end
 
     if cur_words:
-        chunks.append((chunk_start, max(chunk_end - chunk_start, 0.16), " ".join(cur_words)))
+        raw_chunks.append((chunk_start, chunk_end, " ".join(cur_words)))
 
-    # Close each caption just before the next caption starts. This avoids overlap
-    # and makes subtitles feel synced with the actual speech rhythm.
     fixed = []
-    for i, (start, dur, text) in enumerate(chunks):
-        end = start + dur
-        if i + 1 < len(chunks):
-            end = min(end, chunks[i + 1][0] - 0.02)
-        fixed.append((start, max(end - start, 0.12), text))
+    for i, (start, end, text) in enumerate(raw_chunks):
+        if i + 1 < len(raw_chunks):
+            end = min(end, raw_chunks[i + 1][0] - NEXT_CHUNK_GAP)
+        duration = max(end - start, MIN_CHUNK_DURATION)
+        fixed.append((start, duration, text))
     return fixed
 
 
