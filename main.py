@@ -56,7 +56,7 @@ FONT_DIR = Path("fonts")
 FONT_PATH = FONT_DIR / "Montserrat-Bold.ttf"
 MAX_CAPTION_WORDS = 2
 MAX_CAPTION_DURATION = 0.75
-FONT_SIZE = 64
+FONT_SIZE = 56
 STROKE_WIDTH = 4
 
 NICHE_POOL = [
@@ -235,12 +235,15 @@ def ensure_font():
         return "Arial-Bold"
 
 # ---------- 5. Altyazı ----------
+def clean_caption_word(word: str) -> str:
+    return re.sub(r"[^A-Za-z0-9'\-À-ÖØ-öø-ÿ]+", "", str(word)).strip()
+
 def chunk_timestamps(word_ts):
     if not word_ts: return []
     chunks = []
     cur_words, chunk_start, chunk_end = [], word_ts[0][0], word_ts[0][0]
     for start, dur, word in word_ts:
-        word = str(word).strip()
+        word = clean_caption_word(word)
         if not word:
             continue
         word_end = max(start + dur, start + 0.18)
@@ -266,11 +269,14 @@ def generate_captions(chunked_ts):
     font = ensure_font()
     clips = []
     for start, dur, text in chunked_ts:
+        text = re.sub(r"[^A-Za-z0-9'\-À-ÖØ-öø-ÿ ]+", "", str(text)).strip()
+        if not text:
+            continue
         dur += 0.06
         txt = (TextClip(text, fontsize=FONT_SIZE, color="white", font=font,
                        stroke_color="black", stroke_width=STROKE_WIDTH,
                        method="caption" if len(text)>12 else "label",
-                       size=(VIDEO_SIZE[0]-160, None))
+                       size=(VIDEO_SIZE[0]-180, None))
                .set_start(start).set_duration(dur).set_position(("center", "center")))
         clips.append(txt)
     return clips
