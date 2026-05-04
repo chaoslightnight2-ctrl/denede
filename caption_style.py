@@ -1,27 +1,30 @@
 """Caption styling and timing patch for Shorts.
 
-Goal: captions must feel locked to the voice while staying readable.
-This version keeps captions centered and switches to true word-locked timing:
-- smaller centered font
-- one spoken word per caption for best sync
+Goal: captions must feel naturally synced with the voice while staying readable.
+This version removes the artificial positive delay and uses Edge TTS word-starts
+as the source of truth:
+- larger centered font
+- one current spoken word per caption
 - no punctuation in captions
-- tiny positive offset to compensate MP3/render latency
-- end time based on the next word start
+- starts very slightly early for human perception
+- stays visible until just before the next spoken word
 """
 
 from __future__ import annotations
 
 import re
 
-CAPTION_FONT_SIZE = 42
-CAPTION_STROKE_WIDTH = 3
+CAPTION_FONT_SIZE = 56
+CAPTION_STROKE_WIDTH = 4
 CAPTION_MAX_WORDS = 1
 CAPTION_POSITION = ("center", "center")
-CAPTION_HORIZONTAL_MARGIN = 300
-CAPTION_SYNC_OFFSET = 0.035
-MIN_WORD_DURATION = 0.11
-MAX_WORD_DURATION = 0.42
-NEXT_WORD_GAP = 0.01
+CAPTION_HORIZONTAL_MARGIN = 260
+# A tiny negative lead usually feels better than a late subtitle. Positive
+# offsets made captions visibly late on rendered MP4s.
+CAPTION_SYNC_LEAD = 0.025
+MIN_WORD_DURATION = 0.16
+MAX_WORD_HOLD = 0.78
+NEXT_WORD_GAP = 0.006
 
 
 def clean_caption_word(word: str) -> str:
@@ -29,32 +32,41 @@ def clean_caption_word(word: str) -> str:
 
 
 def build_caption_chunks(word_ts):
-    """Build one-word captions from Edge TTS word boundaries.
+    """Build one-word captions using next-word timing.
 
-    Multi-word captions are more readable but can feel out of sync because the
-    second word appears before it is spoken. One-word centered captions are the
-    safest option for near-perfect audio/subtitle lock.
+    Edge TTS gives a start time for each spoken word. The most stable subtitle
+    timing is:
+      caption_start = word_start - tiny lead
+      caption_end   = next_word_start - tiny gap
+    This avoids both late subtitles and future words appearing too early.
     """
     words = []
     for start, dur, word in word_ts or []:
         clean = clean_caption_word(word)
         if not clean:
             continue
-        start = max(float(start) + CAPTION_SYNC_OFFSET, 0.0)
-        dur = max(float(dur), MIN_WORD_DURATION)
-        end = start + min(dur, MAX_WORD_DURATION)
-        words.append((start, end, clean))
+        raw_start = float(start)
+        raw_dur = max(float(dur), MIN_WORD_DURATION)
+        start = max(raw_start - CAPTION_SYNC_LEAD, 0.0)
+        natural_end = raw_start + raw_dur
+        words.append((start, natural_end, clean))
 
     if not words:
         return []
 
     fixed = []
-    for i, (start, end, text) in enumerate(words):
+    for i, (start, natural_end, text) in enumerate(words):
         if i + 1 < len(words):
             next_start = words[i + 1][0]
-            end = min(end, next_start - NEXT_WORD_GAP)
-        duration = max(end - start, MIN_WORD_DURATION)
-        fixed.append((start, duration, text))
+            end = min(natural_end, next_start - NEXT_WORD_GAP)
+        else:
+            end = natural_end
+
+        # If Edge reports a very short duration, keep the word visible long
+        # enough to read, but never let long pauses freeze one word forever.
+        end = max(end, start + MIN_WORD_DURATION)
+        end = min(end, start + MAX_WORD_HOLD)
+        fixed.append((start, end - start, text))
     return fixed
 
 
