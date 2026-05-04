@@ -8,10 +8,10 @@
     "position_y": 1080,
     "punctuation_removed": true
   },
-  "niche": "The World's Most Disturbing Mysteries",
-  "title": "The Camera Caught Something Wrong #shorts",
-  "thumbnail_text": "THE CAMERA CAUGHT THIS",
-  "duration_seconds": 39.6,
+  "niche": "Unsolved Cases",
+  "title": "He Smiled at the Camera… Then Vanished #shorts",
+  "thumbnail_text": "HE VANISHED ON CAMERA",
+  "duration_seconds": 45.41,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -26,8 +26,8 @@
     "darkmystery",
     "creepymystery",
     "truecrime",
-    "worldmysteries",
-    "disturbingmystery"
+    "unsolvedcase",
+    "coldcase"
   ],
   "background_queries": [
     "surveillance camera dark room",
@@ -39,18 +39,18 @@
     "classified files dark desk",
     "evidence documents close up",
     "case file investigation",
-    "empty room dark",
-    "abandoned room night",
-    "dark hallway room"
+    "missing person poster",
+    "empty road at night",
+    "foggy road dark"
   ],
   "base_background_queries": [
-    "camera basement mystery",
-    "camera dark mystery",
-    "mysterious place",
-    "foggy forest",
-    "abandoned place",
-    "dark tunnel",
-    "eerie landscape",
+    "corridor camera mystery",
+    "corridor dark mystery",
+    "detective board",
+    "police investigation",
+    "evidence board",
+    "mystery documents",
+    "cold case",
     "found footage horror",
     "security camera footage",
     "cctv monitor dark room",
@@ -59,7 +59,7 @@
     "abandoned hallway dark",
     "foggy abandoned place"
   ],
-  "script": "At 3:07 AM, Camera 4-B in the Sub-Basement Archives recorded a 12-second loop of empty shelves. The official log says it was a system glitch. But the recovered audio from that loop… contains a whisper in a dead language. File 774-Ω is marked “Destroyed.” Yet a single frame from the original footage, hidden in a redacted folder, shows a door that isn’t on any building blueprint. The security guard who found it? He’s listed as “resigned” the next day. His personal laptop was wiped, but his last unsent email draft just said: “They are in the walls. They are keeping the files.” What were they trying to keep in Room 0?",
+  "script": "At 3:07 AM, the east corridor camera in the Meridian Spire recorded a 12-second gap. The footage before and after is intact. The missing frames show a door—Room 407—opening down the hall. No one is seen entering or leaving. The building’s digital log for that date shows Room 407 as vacant, sealed since the 1989 \"Project Lullaby\" shutdown. A recovered audio file from a discarded security drive, labeled \"StaticLog307,\" captures a single whisper during the gap: \"They fixed the seal.\" The official report for the incident is redacted, file number 89-Λ-7. The archived blueprint for the 4th floor shows no Room 407. What was in that room that had to be erased from the records—and from the film?",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
