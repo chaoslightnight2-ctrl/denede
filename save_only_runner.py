@@ -169,10 +169,6 @@ def build_stronger_tags(niche: str, script: str):
     return ordered[:15]
 
 
-def safer_script(script: str) -> str:
-    return script.replace("That was the last time anyone saw him alive.", "That was the last time anyone saw him.")
-
-
 async def run() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -182,7 +178,7 @@ async def run() -> None:
 
     niche = horror_runner.random.choice(horror_runner.HORROR_NICHES)
     script, audio, word_ts, duration = await horror_runner.generate_timed_script(niche)
-    script = safer_script(script)
+    # Do not modify script after voiceover generation. This keeps audio and captions perfectly aligned.
     main.logger.info("📜 Script:\n" + script)
 
     chunked = main.chunk_timestamps(word_ts)
