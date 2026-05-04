@@ -12,6 +12,8 @@ import re
 import time
 
 import main
+from googleapiclient.http import MediaFileUpload
+from thumbnail_helper import make_thumbnail, upload_thumbnail
 
 HORROR_NICHES = [
     "Komplo Teorileri ve Gizli Planlar",
@@ -118,6 +120,37 @@ def horror_title(niche: str, script: str) -> str:
     return f"{hook[:82]} #shorts"
 
 
+def upload_video_with_thumbnail(video_path: str, title: str, description: str, thumbnail_text: str) -> str:
+    youtube = main.get_youtube_service()
+    body = {
+        "snippet": {
+            "title": title[:100],
+            "description": description[:5000],
+            "tags": ["shorts", "korku", "gizem", "komplo", "çözülmemiş olay", "paranormal"],
+            "categoryId": main.YOUTUBE_CATEGORY_ID,
+        },
+        "status": {
+            "privacyStatus": "public",
+            "selfDeclaredMadeForKids": False,
+        },
+    }
+    main.logger.info(f"📤 Yükleniyor: {title}")
+    media = MediaFileUpload(video_path, mimetype="video/mp4", resumable=True, chunksize=5 * 1024 * 1024)
+    request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
+    response = None
+    while response is None:
+        status, response = request.next_chunk()
+        if status:
+            main.logger.info(f"   %{int(status.progress() * 100)}")
+    video_id = response["id"]
+    url = f"https://youtu.be/{video_id}"
+    main.logger.info(f"✅ Yayında: {url}")
+
+    thumbnail_path = make_thumbnail(video_path, thumbnail_text, main.ensure_font(), main.logger)
+    upload_thumbnail(youtube, video_id, thumbnail_path, main.logger)
+    return url
+
+
 async def run() -> None:
     main.NICHE_POOL = HORROR_NICHES
     main.NICHE_PEXELS_QUERIES = HORROR_PEXELS
@@ -131,11 +164,12 @@ async def run() -> None:
     music = "bg_music.mp3" if main.os.path.exists("bg_music.mp3") else None
     final_path = main.assemble_video(bg, audio, chunked, music)
     title = horror_title(niche, script)
-    main.upload_to_youtube(
+    thumbnail_text = THUMBNAIL_STYLE_TITLES.get(niche, "KİMSE AÇIKLAYAMIYOR")
+    upload_video_with_thumbnail(
         final_path,
         title,
-        description="Karanlık gerçekler, komplo teorileri, çözülmemiş olaylar ve tüyler ürperten gizemler. Video sonunda cevabı sana bırakıyorum.\n\n#shorts #korku #gizem #komplo",
-        tags=["shorts", "korku", "gizem", "komplo", "çözülmemiş olay", "paranormal"],
+        "Karanlık gerçekler, komplo teorileri, çözülmemiş olaylar ve tüyler ürperten gizemler. Video sonunda cevabı sana bırakıyorum.\n\n#shorts #korku #gizem #komplo",
+        thumbnail_text,
     )
     main.logger.info("🏁 Hook'lu korku/gizem videosu tamamlandı.")
 
