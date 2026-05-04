@@ -1,10 +1,17 @@
 {
   "mode": "save_only_no_youtube_upload",
   "language": "en",
-  "niche": "Unsolved Cases",
-  "title": "The Timestamp Was Wrong #shorts",
-  "thumbnail_text": "THE TIMESTAMP WAS WRONG",
-  "duration_seconds": 39.0,
+  "caption_style": {
+    "font_size": 44,
+    "stroke_width": 3,
+    "max_words": 3,
+    "position_y": 1080,
+    "punctuation_removed": true
+  },
+  "niche": "The World's Most Disturbing Mysteries",
+  "title": "The Camera Caught Something Wrong #shorts",
+  "thumbnail_text": "THE CAMERA CAUGHT THIS",
+  "duration_seconds": 39.6,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -19,16 +26,16 @@
     "darkmystery",
     "creepymystery",
     "truecrime",
-    "unsolvedcase",
-    "coldcase"
+    "worldmysteries",
+    "disturbingmystery"
   ],
   "background_queries": [
     "surveillance camera dark room",
     "security camera footage",
     "empty room security camera",
     "camera lens close up dark",
-    "digital clock dark room",
-    "cctv monitor timestamp",
+    "cctv monitor dark room",
+    "surveillance footage screen",
     "classified files dark desk",
     "evidence documents close up",
     "case file investigation",
@@ -39,11 +46,11 @@
   "base_background_queries": [
     "camera basement mystery",
     "camera dark mystery",
-    "detective board",
-    "police investigation",
-    "evidence board",
-    "mystery documents",
-    "cold case",
+    "mysterious place",
+    "foggy forest",
+    "abandoned place",
+    "dark tunnel",
+    "eerie landscape",
     "found footage horror",
     "security camera footage",
     "cctv monitor dark room",
@@ -52,7 +59,7 @@
     "abandoned hallway dark",
     "foggy abandoned place"
   ],
-  "script": "At 3:47 AM, Camera 4 in the Sub-Basement Archives recorded a 12-second loop of an empty room. The file was automatically flagged and erased. Recovery attempts show a single corrupted frame: a door that shouldn’t exist, slightly ajar. Security logs from that night list no authorized personnel in Sector 7. Yet the access panel for that hidden door shows a recent, failed entry attempt—timestamped two days ago. The official report is redacted, citing “non-standard archival procedures.” The question isn’t what they hid behind that door. It’s why the system is trying to open it again. So why did the camera fail at that exact moment?",
+  "script": "At 3:07 AM, Camera 4-B in the Sub-Basement Archives recorded a 12-second loop of empty shelves. The official log says it was a system glitch. But the recovered audio from that loop… contains a whisper in a dead language. File 774-Ω is marked “Destroyed.” Yet a single frame from the original footage, hidden in a redacted folder, shows a door that isn’t on any building blueprint. The security guard who found it? He’s listed as “resigned” the next day. His personal laptop was wiped, but his last unsent email draft just said: “They are in the walls. They are keeping the files.” What were they trying to keep in Room 0?",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
