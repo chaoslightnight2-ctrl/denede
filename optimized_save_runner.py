@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """Optimized save-only Shorts runner.
 
-This runner does NOT upload to YouTube. It is for reviewing generated videos
-without hitting YouTube API/upload limits.
-
-Focus:
-- stronger story variety with concrete creative seeds
-- no repeated prompt-template phrasing
-- tighter centered caption sync
+Does NOT upload to YouTube. Generates review videos with:
+- first-person anonymous confession style
+- realistic but fictional witnessed-event feeling
+- loose inspiration cards, not restrictive templates
+- centered tight subtitle sync
 - mobile-compatible MP4 export
 """
 
@@ -44,27 +42,10 @@ main.DEFAULT_VOICE = "en-US-JennyNeural"
 main.RATE = "+10%"
 main.PITCH = "-5Hz"
 
-TITLE_RULES = [
-    ("voicemail", "The Last Voicemail Was Not Human #shorts", "THE LAST VOICEMAIL"),
-    ("radio", "This Broadcast Should Not Exist #shorts", "THE BROADCAST RETURNED"),
-    ("mirror", "The Mirror Changed Overnight #shorts", "THE MIRROR CHANGED"),
-    ("photo", "These Photos Should Not Exist #shorts", "THE PHOTOS LIED"),
-    ("dark web", "This Page Predicted Everything #shorts", "IT PREDICTED THIS"),
-    ("cassette", "The Tape Recorded One Extra Voice #shorts", "ONE EXTRA VOICE"),
-    ("tape", "The Tape Recorded One Extra Voice #shorts", "ONE EXTRA VOICE"),
-    ("radio station", "The Broadcast Came From Nowhere #shorts", "THE SIGNAL RETURNED"),
-    ("train", "The Train Never Arrived #shorts", "THE TICKET SAID TOMORROW"),
-    ("elevator", "The Elevator Opened To Nowhere #shorts", "FLOOR -1"),
-    ("diary", "The Diary Knew Tomorrow #shorts", "THE INK WAS WET"),
-    ("file", "This Case File Should Not Exist #shorts", "THIS FILE WAS HIDDEN"),
-    ("footage", "The Missing Footage Came Back #shorts", "THE FOOTAGE RETURNED"),
-    ("timestamp", "The Timestamp Was Wrong #shorts", "THE TIMESTAMP WAS WRONG"),
-]
-
 DEFAULT_TAGS = [
     "shorts", "youtubeshorts", "viralshorts", "fyp", "horror",
     "mysteryshorts", "unexplained", "darkmystery", "creepymystery", "truecrime",
-    "conspiracy", "foundfootage", "scaryshorts", "casefile", "paranormal",
+    "conspiracy", "foundfootage", "scaryshorts", "paranormal", "firstpersonhorror",
 ]
 
 RISK_REPLACEMENTS = {
@@ -78,6 +59,13 @@ RISK_REPLACEMENTS = {
     "murdered": "erased",
 }
 
+BANNED_REPETITIONS = [
+    "camera 4", "room 314", "sub-basement archives", "project aegis",
+    "hidden archive door", "timestamp loop", "classified room log",
+    "story archetype", "must include", "avoid repeating",
+    "the timestamp was wrong", "this case file should not exist",
+]
+
 
 def clean_script(text: str) -> str:
     text = re.sub(r"[*#_`>\[\]{}]", "", text or "")
@@ -90,33 +78,38 @@ def clean_script(text: str) -> str:
 
 def build_prompt(niche: str, archetype: dict) -> str:
     return f"""
-Write an ENGLISH YouTube Shorts voiceover script as a fresh cinematic micro-horror story.
-Topic mood: {niche}
+Write an ENGLISH YouTube Shorts voiceover as a first-person horror confession.
+Mood: {niche}
 
 {archetype_prompt_block(archetype)}
 
+Core requirement:
+- Write in FIRST PERSON using I / me / my.
+- Make it feel like something the narrator personally experienced and is finally confessing.
+- It should feel believable like an anonymous story, but do not claim it is a verified real event.
+- The inspiration card is only a loose mood. Do not treat it as a checklist. Invent your own original details.
+
 Style rules:
-- Do NOT copy the wording of the prompt.
-- Do NOT say phrases like "case file" "classified room" "security camera" unless the chosen seed naturally requires them.
-- Do NOT repeat the Camera 4 timestamp hidden door formula.
-- Make it sound like a creepy story a person would actually tell, not a list of evidence.
-- Use sensory details: smell, sound, texture, weather, silence, old objects, strange messages.
-- Use one weird specific object and one impossible detail.
-- Keep conspiracy energy subtle through coverups, changed records, deleted pages, anonymous warnings, or photos that should not exist.
+- Do NOT copy prompt wording.
+- Do NOT sound like a report, evidence list, police file, or template summary.
+- Do NOT repeat old motifs: Camera 4, Room 314, Project Aegis, timestamp wrong, hidden archive door, sub-basement archives.
+- Use one ordinary place, one personal object, one sensory detail, and one impossible detail.
+- Add subtle conspiracy or coverup only if it fits naturally: changed record, deleted post, anonymous warning, missing name, altered photo.
+- The story should have a human feeling: fear, doubt, hesitation, regret, embarrassment, or the feeling that no one believed the narrator.
 
 Structure:
-- First sentence: instant hook with a concrete object, time, place, or message.
-- Middle: 2-3 unsettling details.
+- First sentence: personal hook. Start with something that happened to me, not a generic fact.
+- Middle: what happened and why it felt wrong.
 - Twist: one impossible reveal.
-- Final sentence: a specific open question.
+- Final sentence: a specific question that makes viewers comment.
 
 Rules:
 - Target 30-40 seconds spoken.
-- Aim for 70-90 words only.
+- Aim for 68-88 words only.
 - Short punchy sentences.
-- Scary, creative, different, believable.
-- Avoid graphic violence gore blood direct real-person accusations and medical/vaccine conspiracies.
-- No title no emojis no bullet points no stage directions.
+- Creative, varied, scary, believable.
+- Avoid graphic violence, gore, blood, direct real-person accusations, and medical/vaccine conspiracies.
+- No title, no emojis, no bullet points, no stage directions.
 Return only the voiceover text.
 """.strip()
 
@@ -127,30 +120,30 @@ def ensure_open_question(script: str, archetype: dict) -> str:
     if sentences and sentences[-1].endswith("?") and len(sentences[-1]) > 18:
         return script
     endings = {
-        "found_tape": "So who was holding the camera at the end?",
-        "missing_person_last_message": "So who sent the final message from their phone?",
-        "cursed_object": "So why did the object move after the room was locked?",
-        "dark_web_listing": "So how did the page know what would happen next?",
-        "small_town_broadcast": "So why does no one remember hearing the warning?",
-        "conspiracy_archive": "So who changed the record overnight?",
-        "abandoned_place_log": "So who stamped the ticket for tomorrow?",
-        "paranormal_witness_report": "So what was standing in the reflection?",
-        "family_photo_box": "So who took the photos before the trip happened?",
-        "numbers_station": "So why did the last number point to their house?",
-        "elevator_floor": "So who was drinking the fresh coffee on floor minus one?",
-        "childhood_diary": "So who wrote tomorrow's page in wet ink?",
+        "late_shift": "So why did it know I was working alone?",
+        "old_family_memory": "So who changed the memory before I found it?",
+        "roadside_encounter": "So how did he know where I was going?",
+        "rented_room": "So who wrote my name before I checked in?",
+        "deleted_message": "So who deleted it before I unlocked my phone?",
+        "small_town_secret": "So why does everyone pretend it never happened?",
+        "childhood_place": "So why was my old name still there?",
+        "ordinary_object": "So why did it move when nobody touched it?",
+        "conspiracy_hint": "So who changed the record after I saw it?",
+        "witness_confession": "So why did nobody else remember seeing it?",
+        "urban_legend_personal": "So how did the story know my private nickname?",
+        "found_recording": "So who spoke my name on the recording?",
     }
-    return script + " " + endings.get(archetype.get("name"), "So what do you think they were hiding?")
+    return script + " " + endings.get(archetype.get("name"), "So why did no one believe me?")
 
 
 def has_template_leak(script: str) -> bool:
     lowered = script.lower()
-    banned_pairs = [
-        "camera 4", "room 314", "sub-basement archives", "project aegis",
-        "hidden archive door", "timestamp loop", "classified room log",
-        "story archetype", "must include", "avoid repeating",
-    ]
-    return any(term in lowered for term in banned_pairs)
+    return any(term in lowered for term in BANNED_REPETITIONS)
+
+
+def first_person_ratio_ok(script: str) -> bool:
+    lowered = script.lower()
+    return bool(re.search(r"\b(i|me|my|mine|myself)\b", lowered))
 
 
 def generate_script(niche: str, archetype: dict) -> str:
@@ -158,7 +151,7 @@ def generate_script(niche: str, archetype: dict) -> str:
     client = Client()
     prompt = build_prompt(niche, archetype)
     last_error = None
-    for attempt in range(4):
+    for attempt in range(5):
         try:
             response = client.chat.completions.create(
                 model="gpt-4",
@@ -167,20 +160,22 @@ def generate_script(niche: str, archetype: dict) -> str:
             )
             script = ensure_open_question(response.choices[0].message.content, archetype)
             words = len(script.split())
-            if 55 <= words <= 100 and not has_template_leak(script):
+            if 55 <= words <= 100 and not has_template_leak(script) and first_person_ratio_ok(script):
                 return script
-            main.logger.warning(f"Script rejected words={words} template_leak={has_template_leak(script)}")
+            main.logger.warning(
+                f"Script rejected words={words} template_leak={has_template_leak(script)} first_person={first_person_ratio_ok(script)}"
+            )
         except Exception as exc:
             last_error = exc
             main.logger.warning(f"Script attempt {attempt + 1} failed: {exc}")
     if last_error:
         raise RuntimeError(f"Could not generate script: {last_error}")
-    raise RuntimeError("Could not generate non-repetitive script in target range")
+    raise RuntimeError("Could not generate first-person non-repetitive script in target range")
 
 
 async def choose_best_timed_script(niche: str, archetype: dict):
     candidates = []
-    for attempt in range(4):
+    for _ in range(4):
         script = generate_script(niche, archetype)
         audio, word_ts = await main.create_voiceover(script)
         clip = main.AudioFileClip(audio)
@@ -192,19 +187,27 @@ async def choose_best_timed_script(niche: str, archetype: dict):
         main.logger.warning(f"Duration outside target: {duration:.2f}s retrying")
     candidates.sort(key=lambda row: row[0])
     _, script, audio, word_ts, duration = candidates[0]
-    main.logger.warning(f"Using closest duration candidate: {duration:.2f}s")
     return script, audio, word_ts, duration
 
 
 def title_and_thumbnail(script: str, niche: str):
-    lowered = script.lower()
-    for key, title, thumb in TITLE_RULES:
-        if key in lowered:
-            return title, thumb
     first = re.split(r"[.!?]", script)[0].strip()
+    lowered = script.lower()
+    if "voicemail" in lowered:
+        return "I Shouldn't Have Opened That Voicemail #shorts", "THE VOICEMAIL"
+    if "radio" in lowered:
+        return "I Heard My Name On The Radio #shorts", "THE RADIO SAID MY NAME"
+    if "mirror" in lowered:
+        return "My Mirror Showed Yesterday #shorts", "THE MIRROR LIED"
+    if "photo" in lowered or "picture" in lowered:
+        return "I Found Photos That Shouldn't Exist #shorts", "THE PHOTOS LIED"
+    if "diary" in lowered:
+        return "My Old Diary Knew Tomorrow #shorts", "THE INK WAS WET"
+    if "elevator" in lowered:
+        return "The Elevator Went To Floor -1 #shorts", "FLOOR -1"
     if len(first) < 16:
         first = horror_runner.THUMBNAIL_STYLE_TITLES.get(niche, "No One Can Explain This")
-    return f"{first[:82]} #shorts", horror_runner.THUMBNAIL_STYLE_TITLES.get(niche, "NO ONE CAN EXPLAIN THIS")
+    return f"{first[:82]} #shorts", "NO ONE BELIEVED ME"
 
 
 def build_tags(niche: str, script: str):
@@ -281,6 +284,7 @@ async def run() -> None:
     meta = {
         "mode": "optimized_save_only_no_youtube_upload",
         "language": "en",
+        "story_mode": "first_person_anonymous_confession",
         "niche": niche,
         "archetype": archetype,
         "caption_style": {
