@@ -60,42 +60,44 @@ FONT_SIZE = 64
 STROKE_WIDTH = 4
 
 NICHE_POOL = [
-    "Şok Edici Psikolojik Gerçekler",
-    "Bilinmeyen İnsan Davranışları",
-    "Çözülememiş Tarihi Gizemler",
-    "Uzayın Korkunç Sırları",
-    "Günlük Hayatta Stoacı Felsefe",
-    "Başarı Psikolojisi ve Motivasyon",
-    "Teknolojinin Karanlık Yüzü",
-    "Mitoloji ve Efsanelerin Kökenleri",
-    "İnanılmaz Bilimsel Keşifler",
-    "Tuhaf ve Enteresan Yasalar"
+    "Komplo Teorileri ve Gizli Planlar",
+    "Korkunç Gerçekler",
+    "Korkunç Tarihi Olaylar",
+    "Çözülmemiş Davalar",
+    "Kaybolan İnsanların Gizemli Hikayeleri",
+    "Tüyler Ürperten Suç Dosyaları",
+    "Lanetli Yerler ve Korku Hikayeleri",
+    "Açıklanamayan Paranormal Olaylar",
+    "Karanlık İnternet ve Teknoloji Sırları",
+    "Dünyanın En Rahatsız Edici Gizemleri"
 ]
 
 NICHE_PEXELS_QUERIES = {
-    "Şok Edici Psikolojik Gerçekler": ["human brain psychology", "thinking person dark", "mind concept", "neural network abstract"],
-    "Bilinmeyen İnsan Davranışları": ["people walking city", "human behavior", "crowd slow motion", "person thinking"],
-    "Çözülememiş Tarihi Gizemler": ["ancient ruins", "old manuscript", "archaeology", "mysterious temple"],
-    "Uzayın Korkunç Sırları": ["deep space", "galaxy stars", "black hole", "astronaut space"],
-    "Günlük Hayatta Stoacı Felsefe": ["ancient statue", "stoic statue", "calm person nature", "roman columns"],
-    "Başarı Psikolojisi ve Motivasyon": ["person running", "mountain climb", "focused work", "success motivation"],
-    "Teknolojinin Karanlık Yüzü": ["cyber security", "phone screen dark", "data center", "hacker code"],
-    "Mitoloji ve Efsanelerin Kökenleri": ["ancient statue", "greek temple", "ancient ruins", "mythology temple"],
-    "İnanılmaz Bilimsel Keşifler": ["science laboratory", "microscope", "space telescope", "scientist experiment"],
-    "Tuhaf ve Enteresan Yasalar": ["court law", "judge gavel", "old documents", "city street rules"],
+    "Komplo Teorileri ve Gizli Planlar": ["secret files", "dark documents", "surveillance camera", "mysterious meeting", "classified papers"],
+    "Korkunç Gerçekler": ["dark forest", "abandoned hallway", "scary shadow", "eerie night", "creepy room"],
+    "Korkunç Tarihi Olaylar": ["old abandoned building", "war ruins", "dark history", "old newspaper", "historic ruins night"],
+    "Çözülmemiş Davalar": ["detective board", "crime scene", "police investigation", "evidence board", "mystery documents"],
+    "Kaybolan İnsanların Gizemli Hikayeleri": ["missing person", "empty road night", "dark forest path", "abandoned car", "foggy road"],
+    "Tüyler Ürperten Suç Dosyaları": ["crime scene tape", "detective investigation", "dark alley", "police lights night", "evidence photos"],
+    "Lanetli Yerler ve Korku Hikayeleri": ["haunted house", "abandoned mansion", "dark corridor", "creepy basement", "old cemetery fog"],
+    "Açıklanamayan Paranormal Olaylar": ["paranormal activity", "ghostly shadow", "dark room", "foggy cemetery", "mysterious light"],
+    "Karanlık İnternet ve Teknoloji Sırları": ["dark web", "hacker code", "cyber security dark", "server room dark", "phone screen night"],
+    "Dünyanın En Rahatsız Edici Gizemleri": ["mysterious place", "foggy forest", "abandoned place", "dark tunnel", "eerie landscape"],
 }
 
 # ---------- 1. Senaryo ----------
 def generate_script(niche: str) -> str:
-    logger.info(f"✍️ Viral senaryo üretiliyor: '{niche}'")
+    logger.info(f"✍️ Viral korku/gizem senaryosu üretiliyor: '{niche}'")
     prompt = f"""
-Sen viral YouTube Shorts metinleri yazan bir uzmansın.
+Sen Türkçe viral YouTube Shorts için korku, gizem ve true-crime tarzı metinler yazan bir uzmansın.
 Konu: {niche}
 Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
-1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı.
-2. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
-3. Son cümle güçlü bir call-to-action içersin.
-4. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
+1. İlk cümle tüyler ürperten bir soru veya rahatsız edici bir gerçekle başlasın.
+2. Komplo teorisi, korkunç gerçek, çözülmemiş dava, kayıp olay veya karanlık gizem havası taşısın.
+3. Şiddeti grafik anlatma; kanlı detaylara girme. Merak, gerilim ve gizem kur.
+4. Cümleler kısa, vurucu ve seslendirmeye uygun olsun.
+5. Son cümle güçlü ve doğal bir takip çağrısı içersin.
+6. Emoji, sahne yönü, efekt, başlık ve madde işareti YOK. Sadece konuşulacak metin.
 Yalnızca metni döndür.
 """
     from g4f.client import Client
@@ -198,7 +200,7 @@ def fetch_background_video(script, niche=None):
     keywords = extract_keywords(script)
     if keywords:
         queries.extend([" ".join(keywords[:2]), keywords[0]])
-    queries.extend(["cinematic vertical background", "abstract cinematic", "dark cinematic"])
+    queries.extend(["horror atmosphere", "dark mystery", "scary cinematic", "foggy abandoned place"])
 
     url = None
     for query in dict.fromkeys(queries):
@@ -350,7 +352,7 @@ def upload_to_youtube(video_path, title, description, tags=None):
         "snippet": {
             "title": title[:100],
             "description": description[:5000],
-            "tags": tags or ["shorts", "youtubeshorts", "viral"],
+            "tags": tags or ["shorts", "youtubeshorts", "viral", "korku", "gizem", "komplo teorileri", "çözülmemiş dava"],
             "categoryId": YOUTUBE_CATEGORY_ID
         },
         "status": {
@@ -385,7 +387,7 @@ async def run_pipeline(niche: str):
         first_sentence = re.split(r'[.!?]', script)[0].strip()[:50]
         title = f"{niche}: {first_sentence}"
         upload_to_youtube(final_path, title,
-                         description=f"🔥 {niche} hakkında çarpıcı gerçekler!\nHer gün yeni shorts için abone ol! 🛎️")
+                         description=f"Karanlık gerçekler, komplo teorileri, çözülmemiş davalar ve tüyler ürperten gizemler.\nYeni korku ve gizem Shorts videoları için takipte kal.\n\n#shorts #korku #gizem #komplo #truecrime")
         logger.info("🏁 Tamamlandı.")
     except Exception as e:
         logger.error(f"❌ Hata: {e}\n{traceback.format_exc()}")
