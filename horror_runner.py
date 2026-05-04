@@ -62,6 +62,55 @@ THUMBNAIL_STYLE_TITLES = {
     "Dünyanın En Rahatsız Edici Gizemleri": "KİMSE AÇIKLAYAMIYOR",
 }
 
+BASE_VIRAL_TAGS = [
+    "shorts",
+    "youtubeshorts",
+    "shortsvideo",
+    "viralshorts",
+    "keşfet",
+    "keşfetteyiz",
+    "trend",
+    "viral",
+    "korku",
+    "gizem",
+    "gerilim",
+    "korkuhikayeleri",
+    "gizemliolaylar",
+    "türkçe",
+]
+
+NICHE_TAGS = {
+    "Komplo Teorileri ve Gizli Planlar": ["komplo", "komploteorileri", "gizliplanlar", "gizlidosyalar", "saklanangerçekler", "illuminati", "derindevlet"],
+    "Korkunç Gerçekler": ["korkunçgerçekler", "rahatsızedicigerçekler", "karanlıkgerçekler", "bilinmeyengerçekler", "ürkütücü"],
+    "Korkunç Tarihi Olaylar": ["karanlıktarih", "tarihiolaylar", "korkunçtarih", "tarihingizemleri", "eskiolaylar"],
+    "Çözülmemiş Davalar": ["çözülmemişdava", "truecrime", "suçdosyası", "gizemlidava", "dedektif", "soğukdosya"],
+    "Kaybolan İnsanların Gizemli Hikayeleri": ["kayıpolayları", "kayıpinsanlar", "gizemlikayıp", "missingperson", "soniz"],
+    "Tüyler Ürperten Gizem Dosyaları": ["gizemdosyası", "tüylerürperten", "açıklanamayan", "olaydosyası", "karanlıkdosya"],
+    "Lanetli Yerler ve Korku Hikayeleri": ["lanetliyerler", "perilihikayeler", "haunted", "korkumekanları", "terkedilmişyerler"],
+    "Açıklanamayan Paranormal Olaylar": ["paranormal", "hayalet", "açıklanamayanolaylar", "doğaüstü", "korkuvideoları"],
+    "Karanlık İnternet ve Teknoloji Sırları": ["darkweb", "karanlıkinternet", "teknolojisırları", "siber", "hacker", "internetsırları"],
+    "Dünyanın En Rahatsız Edici Gizemleri": ["dünyagizemleri", "rahatsızedicigizemler", "açıklanamayangizemler", "gizemler", "karanlıkgizem"],
+}
+
+KEYWORD_TAG_MAP = {
+    "kayıp": "kayıpolayları",
+    "dosya": "gizlidosya",
+    "polis": "polis",
+    "kamera": "kamerakaydı",
+    "internet": "darkweb",
+    "orman": "karanlıkorman",
+    "ev": "lanetliev",
+    "hayalet": "hayalet",
+    "gölge": "gölge",
+    "sır": "saklanansır",
+    "gizli": "gizlidosyalar",
+    "dava": "çözülmemişdava",
+    "gece": "gece",
+    "terk": "terkedilmişyerler",
+    "paranormal": "paranormal",
+    "komplo": "komploteorileri",
+}
+
 
 def _clean(text: str) -> str:
     text = re.sub(r"[*#_`>\[\]{}]", "", text or "")
@@ -77,6 +126,34 @@ def _ensure_question_end(script: str) -> str:
     if sentences and any(x in sentences[-1].lower() for x in ["takip", "abone", "yorum", "kaçırma"]):
         sentences = sentences[:-1]
     return " ".join(sentences + [random.choice(OPEN_QUESTIONS)])
+
+
+def _tagify(text: str) -> str:
+    text = text.lower()
+    text = text.replace("ı", "i").replace("ğ", "g").replace("ü", "u").replace("ş", "s").replace("ö", "o").replace("ç", "c")
+    text = re.sub(r"[^a-z0-9]+", "", text)
+    return text[:30]
+
+
+def build_video_tags(niche: str, script: str):
+    tags = []
+    tags.extend(BASE_VIRAL_TAGS)
+    tags.extend(NICHE_TAGS.get(niche, []))
+    lowered = script.lower()
+    for keyword, tag in KEYWORD_TAG_MAP.items():
+        if keyword in lowered:
+            tags.append(tag)
+    for word in re.findall(r"\b\w{5,}\b", lowered):
+        if len(tags) >= 28:
+            break
+        if word not in {"çünkü", "sonra", "bunun", "şimdi", "sence", "gerçek", "olayın"}:
+            tags.append(_tagify(word))
+    unique = []
+    for tag in tags:
+        tag = str(tag).strip().lstrip("#")
+        if tag and tag not in unique:
+            unique.append(tag)
+    return unique[:30]
 
 
 def horror_script(niche: str) -> str:
@@ -120,13 +197,13 @@ def horror_title(niche: str, script: str) -> str:
     return f"{hook[:82]} #shorts"
 
 
-def upload_video_with_thumbnail(video_path: str, title: str, description: str, thumbnail_text: str) -> str:
+def upload_video_with_thumbnail(video_path: str, title: str, description: str, thumbnail_text: str, tags) -> str:
     youtube = main.get_youtube_service()
     body = {
         "snippet": {
             "title": title[:100],
             "description": description[:5000],
-            "tags": ["shorts", "korku", "gizem", "komplo", "çözülmemiş olay", "paranormal"],
+            "tags": tags,
             "categoryId": main.YOUTUBE_CATEGORY_ID,
         },
         "status": {
@@ -134,6 +211,7 @@ def upload_video_with_thumbnail(video_path: str, title: str, description: str, t
             "selfDeclaredMadeForKids": False,
         },
     }
+    main.logger.info(f"🏷️ Etiketler: {', '.join(tags)}")
     main.logger.info(f"📤 Yükleniyor: {title}")
     media = MediaFileUpload(video_path, mimetype="video/mp4", resumable=True, chunksize=5 * 1024 * 1024)
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
@@ -165,11 +243,13 @@ async def run() -> None:
     final_path = main.assemble_video(bg, audio, chunked, music)
     title = horror_title(niche, script)
     thumbnail_text = THUMBNAIL_STYLE_TITLES.get(niche, "KİMSE AÇIKLAYAMIYOR")
+    tags = build_video_tags(niche, script)
     upload_video_with_thumbnail(
         final_path,
         title,
         "Karanlık gerçekler, komplo teorileri, çözülmemiş olaylar ve tüyler ürperten gizemler. Video sonunda cevabı sana bırakıyorum.\n\n#shorts #korku #gizem #komplo",
         thumbnail_text,
+        tags,
     )
     main.logger.info("🏁 Hook'lu korku/gizem videosu tamamlandı.")
 
