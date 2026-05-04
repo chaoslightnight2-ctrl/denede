@@ -1,6 +1,8 @@
 name: Viral Shorts Generator
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: '0 */6 * * *'   # Her 6 saatte bir
   workflow_dispatch:         # Manuel tetikleme
