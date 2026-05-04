@@ -42,3 +42,14 @@ jobs:
 
       - name: 🤖 Botu çalıştır
         run: python main.py
+
+      - name: 📦 Logları ve çıktıları sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shorts-generator-output
+          path: |
+            bot.log
+            final_shorts.mp4
+            voiceover.mp3
+          if-no-files-found: ignore
