@@ -48,7 +48,7 @@ jobs:
       - name: 🤖 Botu çalıştır
         id: run_bot
         continue-on-error: true
-        run: python main.py
+        run: python horror_runner.py
 
       - name: 📝 Durum dosyası oluştur
         if: always()
