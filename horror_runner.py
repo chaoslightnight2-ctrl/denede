@@ -1,19 +1,29 @@
 #!/usr/bin/env python3
 """Korku/gizem odaklı Shorts runner.
 
-main.py içindeki mevcut video üretim/yükleme motorunu kullanır;
-sadece konu havuzunu, prompt davranışını ve başlık üretimini hook + açık soru
-mantığına çevirir.
+Keşfet optimizasyonları:
+- İlk 1 saniyede sert hook: olay + gizem + zaman/kanıt hissi
+- 25-38 saniye hedef ses/video süresi
+- Videoya özel ucu açık soru ile bitiş
+- Konu + senaryo anahtar kelimelerine göre arka plan sorgusu
+- Spam olmayan 5 genel + 5 niş + 5 video özel etiket yapısı
+- Her videonun üretim metadatasını runtime-status içine yazar
 """
 
 import asyncio
+import json
 import random
 import re
 import time
+from pathlib import Path
 
 import main
 from googleapiclient.http import MediaFileUpload
 from thumbnail_helper import make_thumbnail, upload_thumbnail
+
+MIN_TARGET_DURATION = 25.0
+MAX_TARGET_DURATION = 38.0
+META_FILE = Path("runtime-status/video-meta.json")
 
 HORROR_NICHES = [
     "Komplo Teorileri ve Gizli Planlar",
@@ -29,24 +39,25 @@ HORROR_NICHES = [
 ]
 
 HORROR_PEXELS = {
-    "Komplo Teorileri ve Gizli Planlar": ["secret files", "dark documents", "surveillance camera", "classified papers"],
-    "Korkunç Gerçekler": ["dark forest", "abandoned hallway", "scary shadow", "eerie night"],
-    "Korkunç Tarihi Olaylar": ["old abandoned building", "war ruins", "old newspaper", "historic ruins night"],
-    "Çözülmemiş Davalar": ["detective board", "police investigation", "evidence board", "mystery documents"],
-    "Kaybolan İnsanların Gizemli Hikayeleri": ["missing person", "empty road night", "dark forest path", "foggy road"],
-    "Tüyler Ürperten Gizem Dosyaları": ["detective investigation", "dark alley", "police lights night", "evidence photos"],
-    "Lanetli Yerler ve Korku Hikayeleri": ["haunted house", "abandoned mansion", "dark corridor", "old cemetery fog"],
-    "Açıklanamayan Paranormal Olaylar": ["paranormal activity", "ghostly shadow", "dark room", "mysterious light"],
-    "Karanlık İnternet ve Teknoloji Sırları": ["dark web", "hacker code", "cyber security dark", "server room dark"],
-    "Dünyanın En Rahatsız Edici Gizemleri": ["mysterious place", "foggy forest", "abandoned place", "dark tunnel"],
+    "Komplo Teorileri ve Gizli Planlar": ["secret files", "dark documents", "surveillance camera", "classified papers", "mysterious meeting"],
+    "Korkunç Gerçekler": ["dark forest", "abandoned hallway", "scary shadow", "eerie night", "creepy room"],
+    "Korkunç Tarihi Olaylar": ["old abandoned building", "war ruins", "old newspaper", "historic ruins night", "dark archive"],
+    "Çözülmemiş Davalar": ["detective board", "police investigation", "evidence board", "mystery documents", "cold case"],
+    "Kaybolan İnsanların Gizemli Hikayeleri": ["missing person", "empty road night", "dark forest path", "foggy road", "abandoned car"],
+    "Tüyler Ürperten Gizem Dosyaları": ["detective investigation", "dark alley", "police lights night", "evidence photos", "mystery file"],
+    "Lanetli Yerler ve Korku Hikayeleri": ["haunted house", "abandoned mansion", "dark corridor", "old cemetery fog", "creepy basement"],
+    "Açıklanamayan Paranormal Olaylar": ["paranormal activity", "ghostly shadow", "dark room", "mysterious light", "foggy cemetery"],
+    "Karanlık İnternet ve Teknoloji Sırları": ["dark web", "hacker code", "cyber security dark", "server room dark", "phone screen night"],
+    "Dünyanın En Rahatsız Edici Gizemleri": ["mysterious place", "foggy forest", "abandoned place", "dark tunnel", "eerie landscape"],
 }
 
 OPEN_QUESTIONS = [
+    "Peki kamera neden tam o anda bozuldu?",
+    "Bu notu kim bıraktı?",
+    "Dosya neden yıllarca gizli tutuldu?",
     "Sence bu sadece tesadüf müydü?",
-    "Peki sen olsaydın bu dosyayı kapatır mıydın?",
     "Sence burada saklanan şey neydi?",
     "Bu olayın gerçek cevabı hâlâ bulunmadıysa, neden?",
-    "Sence en korkunç ihtimal hangisi?",
 ]
 
 THUMBNAIL_STYLE_TITLES = {
@@ -62,33 +73,18 @@ THUMBNAIL_STYLE_TITLES = {
     "Dünyanın En Rahatsız Edici Gizemleri": "KİMSE AÇIKLAYAMIYOR",
 }
 
-BASE_VIRAL_TAGS = [
-    "shorts",
-    "youtubeshorts",
-    "shortsvideo",
-    "viralshorts",
-    "keşfet",
-    "keşfetteyiz",
-    "trend",
-    "viral",
-    "korku",
-    "gizem",
-    "gerilim",
-    "korkuhikayeleri",
-    "gizemliolaylar",
-    "türkçe",
-]
+BASE_VIRAL_TAGS = ["shorts", "youtubeshorts", "viralshorts", "keşfet", "korku"]
 
 NICHE_TAGS = {
-    "Komplo Teorileri ve Gizli Planlar": ["komplo", "komploteorileri", "gizliplanlar", "gizlidosyalar", "saklanangerçekler", "illuminati", "derindevlet"],
-    "Korkunç Gerçekler": ["korkunçgerçekler", "rahatsızedicigerçekler", "karanlıkgerçekler", "bilinmeyengerçekler", "ürkütücü"],
+    "Komplo Teorileri ve Gizli Planlar": ["komplo", "komploteorileri", "gizliplanlar", "gizlidosyalar", "saklanangerçekler"],
+    "Korkunç Gerçekler": ["korkunçgerçekler", "rahatsızedicigerçekler", "karanlıkgerçekler", "bilinmeyengerçekler", "gizem"],
     "Korkunç Tarihi Olaylar": ["karanlıktarih", "tarihiolaylar", "korkunçtarih", "tarihingizemleri", "eskiolaylar"],
-    "Çözülmemiş Davalar": ["çözülmemişdava", "truecrime", "suçdosyası", "gizemlidava", "dedektif", "soğukdosya"],
+    "Çözülmemiş Davalar": ["çözülmemişdava", "truecrime", "suçdosyası", "gizemlidava", "soğukdosya"],
     "Kaybolan İnsanların Gizemli Hikayeleri": ["kayıpolayları", "kayıpinsanlar", "gizemlikayıp", "missingperson", "soniz"],
     "Tüyler Ürperten Gizem Dosyaları": ["gizemdosyası", "tüylerürperten", "açıklanamayan", "olaydosyası", "karanlıkdosya"],
     "Lanetli Yerler ve Korku Hikayeleri": ["lanetliyerler", "perilihikayeler", "haunted", "korkumekanları", "terkedilmişyerler"],
     "Açıklanamayan Paranormal Olaylar": ["paranormal", "hayalet", "açıklanamayanolaylar", "doğaüstü", "korkuvideoları"],
-    "Karanlık İnternet ve Teknoloji Sırları": ["darkweb", "karanlıkinternet", "teknolojisırları", "siber", "hacker", "internetsırları"],
+    "Karanlık İnternet ve Teknoloji Sırları": ["darkweb", "karanlıkinternet", "teknolojisırları", "siber", "hacker"],
     "Dünyanın En Rahatsız Edici Gizemleri": ["dünyagizemleri", "rahatsızedicigizemler", "açıklanamayangizemler", "gizemler", "karanlıkgizem"],
 }
 
@@ -109,7 +105,10 @@ KEYWORD_TAG_MAP = {
     "terk": "terkedilmişyerler",
     "paranormal": "paranormal",
     "komplo": "komploteorileri",
+    "not": "gizeminotu",
 }
+
+STOP_WORDS = {"çünkü", "sonra", "bunun", "şimdi", "sence", "gerçek", "olayın", "olan", "bile", "kadar", "için", "gibi"}
 
 
 def _clean(text: str) -> str:
@@ -118,42 +117,96 @@ def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().strip('"').strip("'")
 
 
-def _ensure_question_end(script: str) -> str:
-    script = _clean(script)
-    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", script) if s.strip()]
-    if sentences and sentences[-1].endswith("?"):
-        return script
-    if sentences and any(x in sentences[-1].lower() for x in ["takip", "abone", "yorum", "kaçırma"]):
-        sentences = sentences[:-1]
-    return " ".join(sentences + [random.choice(OPEN_QUESTIONS)])
-
-
 def _tagify(text: str) -> str:
     text = text.lower()
     text = text.replace("ı", "i").replace("ğ", "g").replace("ü", "u").replace("ş", "s").replace("ö", "o").replace("ç", "c")
-    text = re.sub(r"[^a-z0-9]+", "", text)
-    return text[:30]
+    return re.sub(r"[^a-z0-9]+", "", text)[:30]
+
+
+def extract_video_keywords(script: str, limit: int = 5):
+    words = re.findall(r"\b\w{5,}\b", script.lower())
+    result = []
+    for word in words:
+        if word in STOP_WORDS:
+            continue
+        tag = _tagify(word)
+        if tag and tag not in result:
+            result.append(tag)
+        if len(result) >= limit:
+            break
+    return result
+
+
+def contextual_question(niche: str, script: str) -> str:
+    lowered = script.lower()
+    if "kamera" in lowered:
+        return "Peki kamera neden tam o anda bozuldu?"
+    if "not" in lowered or "mektup" in lowered:
+        return "Bu notu kim bıraktı?"
+    if "dosya" in lowered or "dava" in lowered:
+        return "Dosya neden yıllarca gizli tutuldu?"
+    if "kayıp" in lowered or "kaybol" in lowered:
+        return "Sence o kişi gerçekten kendi isteğiyle mi kayboldu?"
+    if "internet" in lowered or "dark" in lowered:
+        return "Sence bu iz neden internetten silindi?"
+    if "Komplo" in niche:
+        return "Sence burada saklanan şey neydi?"
+    return random.choice(OPEN_QUESTIONS)
+
+
+def ensure_question_end(script: str, niche: str) -> str:
+    script = _clean(script)
+    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", script) if s.strip()]
+    if sentences and sentences[-1].endswith("?") and len(sentences[-1]) > 20:
+        return script
+    if sentences and any(x in sentences[-1].lower() for x in ["takip", "abone", "yorum", "kaçırma"]):
+        sentences = sentences[:-1]
+    return " ".join(sentences + [contextual_question(niche, script)])
 
 
 def build_video_tags(niche: str, script: str):
     tags = []
-    tags.extend(BASE_VIRAL_TAGS)
-    tags.extend(NICHE_TAGS.get(niche, []))
+    tags.extend(BASE_VIRAL_TAGS[:5])
+    tags.extend(NICHE_TAGS.get(niche, [])[:5])
     lowered = script.lower()
+    video_tags = []
     for keyword, tag in KEYWORD_TAG_MAP.items():
-        if keyword in lowered:
-            tags.append(tag)
-    for word in re.findall(r"\b\w{5,}\b", lowered):
-        if len(tags) >= 28:
+        if keyword in lowered and tag not in video_tags:
+            video_tags.append(tag)
+        if len(video_tags) >= 5:
             break
-        if word not in {"çünkü", "sonra", "bunun", "şimdi", "sence", "gerçek", "olayın"}:
-            tags.append(_tagify(word))
+    for tag in extract_video_keywords(script, 5):
+        if len(video_tags) >= 5:
+            break
+        if tag not in video_tags:
+            video_tags.append(tag)
+    tags.extend(video_tags[:5])
     unique = []
     for tag in tags:
         tag = str(tag).strip().lstrip("#")
         if tag and tag not in unique:
             unique.append(tag)
-    return unique[:30]
+    return unique[:15]
+
+
+def build_background_queries(niche: str, script: str):
+    queries = list(HORROR_PEXELS.get(niche, []))
+    keywords = extract_video_keywords(script, 3)
+    if len(keywords) >= 2:
+        queries.insert(0, f"{keywords[0]} {keywords[1]} mystery")
+    if keywords:
+        queries.insert(1, f"{keywords[0]} dark mystery")
+    queries.extend(["horror atmosphere", "dark mystery", "scary cinematic", "foggy abandoned place"])
+    unique = []
+    for query in queries:
+        if query and query not in unique:
+            unique.append(query)
+    return unique
+
+
+def write_runtime_meta(meta: dict) -> None:
+    META_FILE.parent.mkdir(parents=True, exist_ok=True)
+    META_FILE.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def horror_script(niche: str) -> str:
@@ -162,12 +215,13 @@ def horror_script(niche: str) -> str:
 Türkçe YouTube Shorts için korku, gizem ve komplo temalı kısa metin yaz.
 Konu: {niche}
 Kurallar:
-- 30-40 saniyelik konuşma metni olsun.
-- İlk cümle güçlü bir hook olsun; ilk 3 saniyede izleyiciyi yakalasın.
-- Yavaş giriş yapma. Doğrudan merak uyandır.
+- 25-38 saniyelik konuşma metni olsun.
+- İlk cümle çok sert hook olsun: olay + gizem + zaman/kanıt hissi içersin.
+- Zayıf başlangıç yapma. İlk 1 saniyede merak uyandır.
+- Örnek ritim: "Bu adam kameraya baktıktan 7 dakika sonra kayboldu."
 - Korku, gizem, kayıp olay, karanlık sır veya açıklanamayan olay atmosferi taşısın.
 - Grafik şiddet ve kanlı detay yazma.
-- Son cümle mutlaka izleyiciye ucu açık bir soru sorsun.
+- Son cümle izleyiciye olayla ilgili ucu açık, spesifik bir soru sorsun.
 - Başlık, emoji, madde işareti ve sahne yönü yazma.
 Sadece konuşulacak metni döndür.
 """.strip()
@@ -180,7 +234,7 @@ Sadece konuşulacak metni döndür.
                 messages=[{"role": "user", "content": prompt}],
                 timeout=60,
             )
-            script = _ensure_question_end(response.choices[0].message.content)
+            script = ensure_question_end(response.choices[0].message.content, niche)
             if len(script) >= 30:
                 return script
         except Exception as exc:
@@ -195,6 +249,31 @@ def horror_title(niche: str, script: str) -> str:
     if len(hook) < 18:
         hook = THUMBNAIL_STYLE_TITLES.get(niche, niche)
     return f"{hook[:82]} #shorts"
+
+
+def create_script_and_voice(niche: str):
+    last = None
+    for attempt in range(3):
+        script = horror_script(niche)
+        audio, word_ts = asyncio.get_event_loop().run_until_complete(main.create_voiceover(script)) if False else None
+    return last
+
+
+async def generate_timed_script(niche: str):
+    last_candidate = None
+    for attempt in range(3):
+        script = horror_script(niche)
+        audio, word_ts = await main.create_voiceover(script)
+        clip = main.AudioFileClip(audio)
+        duration = float(clip.duration)
+        clip.close()
+        last_candidate = (script, audio, word_ts, duration)
+        if MIN_TARGET_DURATION <= duration <= MAX_TARGET_DURATION:
+            main.logger.info(f"⏱️ Süre hedef aralıkta: {duration:.2f}s")
+            return last_candidate
+        main.logger.warning(f"⏱️ Süre hedef dışı: {duration:.2f}s, yeniden deneniyor ({attempt + 1}/3)")
+    main.logger.warning(f"⏱️ Hedef süre tutmadı; son aday kullanılacak: {last_candidate[3]:.2f}s")
+    return last_candidate
 
 
 def upload_video_with_thumbnail(video_path: str, title: str, description: str, thumbnail_text: str, tags) -> str:
@@ -234,23 +313,37 @@ async def run() -> None:
     main.NICHE_PEXELS_QUERIES = HORROR_PEXELS
     main.generate_script = horror_script
     niche = random.choice(HORROR_NICHES)
-    script = main.generate_script(niche)
+    script, audio, word_ts, duration = await generate_timed_script(niche)
     main.logger.info("📜 Senaryo:\n" + script)
-    audio, word_ts = await main.create_voiceover(script)
     chunked = main.chunk_timestamps(word_ts)
+    background_queries = build_background_queries(niche, script)
+    main.NICHE_PEXELS_QUERIES[niche] = background_queries
     bg = main.fetch_background_video(script, niche)
     music = "bg_music.mp3" if main.os.path.exists("bg_music.mp3") else None
     final_path = main.assemble_video(bg, audio, chunked, music)
     title = horror_title(niche, script)
     thumbnail_text = THUMBNAIL_STYLE_TITLES.get(niche, "KİMSE AÇIKLAYAMIYOR")
     tags = build_video_tags(niche, script)
-    upload_video_with_thumbnail(
+    meta = {
+        "niche": niche,
+        "title": title,
+        "thumbnail_text": thumbnail_text,
+        "duration_seconds": round(duration, 2),
+        "tags": tags,
+        "background_queries": background_queries,
+        "script": script,
+        "video_url": None,
+    }
+    write_runtime_meta(meta)
+    video_url = upload_video_with_thumbnail(
         final_path,
         title,
         "Karanlık gerçekler, komplo teorileri, çözülmemiş olaylar ve tüyler ürperten gizemler. Video sonunda cevabı sana bırakıyorum.\n\n#shorts #korku #gizem #komplo",
         thumbnail_text,
         tags,
     )
+    meta["video_url"] = video_url
+    write_runtime_meta(meta)
     main.logger.info("🏁 Hook'lu korku/gizem videosu tamamlandı.")
 
 
