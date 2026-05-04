@@ -1,12 +1,12 @@
 """Caption styling and timing patch for Shorts.
 
 Goal: captions must feel locked to the voice while staying readable.
-This version keeps captions in the middle of the video, but makes them cleaner:
-- smaller font
-- 1-2 word chunks
+This version keeps captions centered and switches to true word-locked timing:
+- smaller centered font
+- one spoken word per caption for best sync
 - no punctuation in captions
-- centered placement
-- chunk end is based on actual word end and next chunk start
+- tiny positive offset to compensate MP3/render latency
+- end time based on the next word start
 """
 
 from __future__ import annotations
@@ -15,13 +15,13 @@ import re
 
 CAPTION_FONT_SIZE = 42
 CAPTION_STROKE_WIDTH = 3
-CAPTION_MAX_WORDS = 2
-CAPTION_MAX_DURATION = 0.62
+CAPTION_MAX_WORDS = 1
 CAPTION_POSITION = ("center", "center")
-CAPTION_HORIZONTAL_MARGIN = 280
-MIN_WORD_DURATION = 0.10
-MIN_CHUNK_DURATION = 0.10
-NEXT_CHUNK_GAP = 0.012
+CAPTION_HORIZONTAL_MARGIN = 300
+CAPTION_SYNC_OFFSET = 0.035
+MIN_WORD_DURATION = 0.11
+MAX_WORD_DURATION = 0.42
+NEXT_WORD_GAP = 0.01
 
 
 def clean_caption_word(word: str) -> str:
@@ -29,57 +29,31 @@ def clean_caption_word(word: str) -> str:
 
 
 def build_caption_chunks(word_ts):
-    """Build tight 1-2 word captions from Edge TTS word boundaries.
+    """Build one-word captions from Edge TTS word boundaries.
 
-    Two words is the best compromise for this style: it stays readable without
-    showing too many words before they are spoken.
+    Multi-word captions are more readable but can feel out of sync because the
+    second word appears before it is spoken. One-word centered captions are the
+    safest option for near-perfect audio/subtitle lock.
     """
-    cleaned_words = []
+    words = []
     for start, dur, word in word_ts or []:
         clean = clean_caption_word(word)
         if not clean:
             continue
-        start = float(start)
-        dur = float(dur)
-        end = max(start + dur, start + MIN_WORD_DURATION)
-        cleaned_words.append((start, end, clean))
+        start = max(float(start) + CAPTION_SYNC_OFFSET, 0.0)
+        dur = max(float(dur), MIN_WORD_DURATION)
+        end = start + min(dur, MAX_WORD_DURATION)
+        words.append((start, end, clean))
 
-    if not cleaned_words:
+    if not words:
         return []
 
-    raw_chunks = []
-    cur_words = []
-    chunk_start = None
-    chunk_end = None
-
-    for start, end, word in cleaned_words:
-        if chunk_start is None:
-            cur_words = [word]
-            chunk_start = start
-            chunk_end = end
-            continue
-
-        projected_duration = end - chunk_start
-        next_is_too_long = projected_duration > CAPTION_MAX_DURATION
-        next_has_too_many_words = len(cur_words) >= CAPTION_MAX_WORDS
-
-        if next_has_too_many_words or next_is_too_long:
-            raw_chunks.append((chunk_start, chunk_end, " ".join(cur_words)))
-            cur_words = [word]
-            chunk_start = start
-            chunk_end = end
-        else:
-            cur_words.append(word)
-            chunk_end = end
-
-    if cur_words:
-        raw_chunks.append((chunk_start, chunk_end, " ".join(cur_words)))
-
     fixed = []
-    for i, (start, end, text) in enumerate(raw_chunks):
-        if i + 1 < len(raw_chunks):
-            end = min(end, raw_chunks[i + 1][0] - NEXT_CHUNK_GAP)
-        duration = max(end - start, MIN_CHUNK_DURATION)
+    for i, (start, end, text) in enumerate(words):
+        if i + 1 < len(words):
+            next_start = words[i + 1][0]
+            end = min(end, next_start - NEXT_WORD_GAP)
+        duration = max(end - start, MIN_WORD_DURATION)
         fixed.append((start, duration, text))
     return fixed
 
@@ -119,7 +93,6 @@ def make_caption_clips(main_module, chunked_ts):
 
 def apply_caption_style(main_module) -> None:
     main_module.MAX_CAPTION_WORDS = CAPTION_MAX_WORDS
-    main_module.MAX_CAPTION_DURATION = CAPTION_MAX_DURATION
     main_module.FONT_SIZE = CAPTION_FONT_SIZE
     main_module.STROKE_WIDTH = CAPTION_STROKE_WIDTH
     main_module.clean_caption_word = clean_caption_word
