@@ -56,8 +56,8 @@ FONT_DIR = Path("fonts")
 FONT_PATH = FONT_DIR / "Montserrat-Bold.ttf"
 MAX_CAPTION_WORDS = 2
 MAX_CAPTION_DURATION = 0.75
-FONT_SIZE = 90
-STROKE_WIDTH = 8
+FONT_SIZE = 64
+STROKE_WIDTH = 4
 
 NICHE_POOL = [
     "Şok Edici Psikolojik Gerçekler",
@@ -71,6 +71,19 @@ NICHE_POOL = [
     "İnanılmaz Bilimsel Keşifler",
     "Tuhaf ve Enteresan Yasalar"
 ]
+
+NICHE_PEXELS_QUERIES = {
+    "Şok Edici Psikolojik Gerçekler": ["human brain psychology", "thinking person dark", "mind concept", "neural network abstract"],
+    "Bilinmeyen İnsan Davranışları": ["people walking city", "human behavior", "crowd slow motion", "person thinking"],
+    "Çözülememiş Tarihi Gizemler": ["ancient ruins", "old manuscript", "archaeology", "mysterious temple"],
+    "Uzayın Korkunç Sırları": ["deep space", "galaxy stars", "black hole", "astronaut space"],
+    "Günlük Hayatta Stoacı Felsefe": ["ancient statue", "stoic statue", "calm person nature", "roman columns"],
+    "Başarı Psikolojisi ve Motivasyon": ["person running", "mountain climb", "focused work", "success motivation"],
+    "Teknolojinin Karanlık Yüzü": ["cyber security", "phone screen dark", "data center", "hacker code"],
+    "Mitoloji ve Efsanelerin Kökenleri": ["ancient statue", "greek temple", "ancient ruins", "mythology temple"],
+    "İnanılmaz Bilimsel Keşifler": ["science laboratory", "microscope", "space telescope", "scientist experiment"],
+    "Tuhaf ve Enteresan Yasalar": ["court law", "judge gavel", "old documents", "city street rules"],
+}
 
 # ---------- 1. Senaryo ----------
 def generate_script(niche: str) -> str:
@@ -148,36 +161,61 @@ def extract_keywords(script, count=5):
     filtered.sort(key=len, reverse=True)
     return filtered[:count]
 
-def search_pexels(keywords):
+def search_pexels_query(query: str):
     headers = {"Authorization": PEXELS_API_KEY}
-    for i in range(min(3, len(keywords)), 0, -1):
-        query = " ".join(keywords[:i])
-        try:
-            resp = requests.get("https://api.pexels.com/videos/search", headers=headers,
-                               params={"query": query, "per_page": 4, "orientation": "portrait", "size": "large"}, timeout=15)
-            resp.raise_for_status()
-            videos = resp.json().get("videos", [])
-            if videos:
-                for vid in videos:
-                    for vf in vid["video_files"]:
-                        if vf["width"]>=1080 and vf["height"]>=1920:
-                            return vf["link"]
-                return max(videos[0]["video_files"], key=lambda x: x["width"]*x["height"])["link"]
-        except Exception:
-            time.sleep(1)
+    try:
+        resp = requests.get(
+            "https://api.pexels.com/videos/search",
+            headers=headers,
+            params={"query": query, "per_page": 8, "orientation": "portrait", "size": "large"},
+            timeout=20,
+        )
+        resp.raise_for_status()
+        videos = resp.json().get("videos", [])
+        candidates = []
+        for vid in videos:
+            for vf in vid.get("video_files", []):
+                width = int(vf.get("width") or 0)
+                height = int(vf.get("height") or 0)
+                link = vf.get("link")
+                if not link or width <= 0 or height <= 0:
+                    continue
+                vertical_bonus = 10_000_000 if height >= width else 0
+                quality_score = width * height + vertical_bonus
+                candidates.append((quality_score, link))
+        if candidates:
+            candidates.sort(reverse=True)
+            logger.info(f"🎥 Pexels arka plan seçildi: {query}")
+            return candidates[0][1]
+    except Exception as e:
+        logger.warning(f"Pexels araması başarısız ({query}): {e}")
     return None
 
-def fetch_background_video(script):
-    keywords = extract_keywords(script) or ["dark", "mysterious", "abstract"]
-    keywords = ["dark atmosphere"] + keywords
-    url = search_pexels(keywords) or search_pexels(["dark", "gradient", "abstract"])
+def fetch_background_video(script, niche=None):
+    queries = []
+    if niche and niche in NICHE_PEXELS_QUERIES:
+        queries.extend(NICHE_PEXELS_QUERIES[niche])
+    keywords = extract_keywords(script)
+    if keywords:
+        queries.extend([" ".join(keywords[:2]), keywords[0]])
+    queries.extend(["cinematic vertical background", "abstract cinematic", "dark cinematic"])
+
+    url = None
+    for query in dict.fromkeys(queries):
+        url = search_pexels_query(query)
+        if url:
+            break
     if not url:
-        raise RuntimeError("Pexels'te video bulunamadı.")
-    with requests.get(url, stream=True, timeout=60) as r:
+        raise RuntimeError("Pexels'te uygun arka plan videosu bulunamadı.")
+
+    with requests.get(url, stream=True, timeout=90) as r:
         r.raise_for_status()
         with open(BACKGROUND_FILE, "wb") as f:
             for chunk in r.iter_content(8192):
-                f.write(chunk)
+                if chunk:
+                    f.write(chunk)
+    if os.path.getsize(BACKGROUND_FILE) < 200_000:
+        raise RuntimeError("İndirilen arka plan videosu bozuk veya çok küçük.")
     return BACKGROUND_FILE
 
 # ---------- 4. Font ----------
@@ -226,11 +264,11 @@ def generate_captions(chunked_ts):
     font = ensure_font()
     clips = []
     for start, dur, text in chunked_ts:
-        dur += 0.08
+        dur += 0.06
         txt = (TextClip(text, fontsize=FONT_SIZE, color="white", font=font,
                        stroke_color="black", stroke_width=STROKE_WIDTH,
                        method="caption" if len(text)>12 else "label",
-                       size=(VIDEO_SIZE[0]-80, None))
+                       size=(VIDEO_SIZE[0]-160, None))
                .set_start(start).set_duration(dur).set_position(("center", "center")))
         clips.append(txt)
     return clips
@@ -280,7 +318,6 @@ def assemble_video(bg_path, audio_path, chunked_ts, music_path=None):
 
 # ---------- 8. YouTube ----------
 def get_youtube_service():
-    # client_secrets.json'u doğrudan Secret'tan al
     client_secrets_json = os.getenv("CLIENT_SECRETS_JSON")
     if client_secrets_json:
         config = json.loads(client_secrets_json)
@@ -290,7 +327,6 @@ def get_youtube_service():
     else:
         raise RuntimeError("CLIENT_SECRETS_JSON bulunamadı!")
 
-    # "installed" veya "web" anahtarını otomatik bul
     client_config = config.get("installed") or config.get("web") or next(iter(config.values()))
 
     creds = Credentials(
@@ -343,7 +379,7 @@ async def run_pipeline(niche: str):
         logger.info("📜 Senaryo:\n" + script)
         audio, word_ts = await create_voiceover(script)
         chunked = chunk_timestamps(word_ts)
-        bg = fetch_background_video(script)
+        bg = fetch_background_video(script, niche)
         music = "bg_music.mp3" if os.path.exists("bg_music.mp3") else None
         final_path = assemble_video(bg, audio, chunked, music)
         first_sentence = re.split(r'[.!?]', script)[0].strip()[:50]
