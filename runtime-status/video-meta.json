@@ -1,12 +1,26 @@
 {
   "mode": "optimized_save_only_no_youtube_upload",
   "language": "en",
-  "niche": "Conspiracy Theories and Hidden Plans",
+  "story_mode": "first_person_anonymous_confession",
+  "niche": "Unexplained Paranormal Events",
   "archetype": {
-    "name": "family_photo_box",
-    "direction": "a family finds a box of photos showing them in places they have never visited",
-    "must_include": "one beach photo winter clothing a stranger in every picture and a date written after tomorrow",
-    "avoid": "security camera archive timestamp hidden lab"
+    "name": "urban_legend_personal",
+    "vibe": "an urban legend the narrator thought was fake until one personal detail matched",
+    "sensory_details": [
+      "a name written in fresh dust",
+      "a stranger knowing a private nickname",
+      "a phone vibrating with no notification"
+    ],
+    "avoid": [
+      "Camera 4",
+      "Room 314",
+      "Project Aegis",
+      "sub-basement archives",
+      "the timestamp was wrong",
+      "hidden archive door",
+      "classified room log",
+      "case file should not exist"
+    ]
   },
   "caption_style": {
     "font_size": 42,
@@ -16,9 +30,9 @@
     "punctuation_removed": true,
     "timing": "edge_word_boundary_tight"
   },
-  "title": "These Photos Should Not Exist #shorts",
-  "thumbnail_text": "THE PHOTOS LIED",
-  "duration_seconds": 33.77,
+  "title": "I always mocked the tales about the timekeeper’s watch—how it halts before a death #shorts",
+  "thumbnail_text": "NO ONE BELIEVED ME",
+  "duration_seconds": 32.88,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -33,31 +47,31 @@
     "conspiracy",
     "foundfootage",
     "scaryshorts",
-    "casefile",
-    "paranormal"
+    "paranormal",
+    "firstpersonhorror"
   ],
   "background_queries": [
-    "old photo dark room",
-    "evidence photos board",
-    "photograph on table dark",
-    "classified files dark desk",
-    "surveillance camera",
-    "secret documents close up",
-    "mysterious meeting dark",
-    "secret files",
-    "dark documents",
+    "empty road at night",
+    "abandoned hallway dark",
+    "dark forest path",
+    "dark hallway shadow",
+    "haunted room night",
+    "ghostly shadow dark room",
+    "mysterious light dark room",
+    "dark room",
     "found footage horror",
     "security camera footage",
-    "cctv monitor dark room"
+    "cctv monitor dark room",
+    "classified files dark desk"
   ],
   "base_background_queries": [
-    "found attic mystery",
-    "found dark mystery",
-    "secret files",
-    "dark documents",
-    "surveillance camera",
-    "classified papers",
-    "mysterious meeting",
+    "always mocked mystery",
+    "always dark mystery",
+    "paranormal activity",
+    "ghostly shadow",
+    "dark room",
+    "mysterious light",
+    "foggy cemetery",
     "found footage horror",
     "security camera footage",
     "cctv monitor dark room",
@@ -66,7 +80,7 @@
     "abandoned hallway dark",
     "foggy abandoned place"
   ],
-  "script": "We found the box in the attic, smelling of damp wool and forgotten things. Inside, photos of our family—but at a freezing beach, all of us in heavy winter coats we never owned. And in every single shot, the same stranger, just a blur at the edge of the frame. The dates on the backs were all tomorrow. One picture showed my sister holding a strange, pearlescent shell that hummed when you touched it. The impossible part? The photos keep changing. The stranger is getting closer. The date is now yesterday. Who is taking these pictures?",
+  "script": "I always mocked the tales about the timekeeper’s watch—how it halts before a death. Then, I cleaned my grandfather’s brass pocket watch, frozen at 9:17. At the bus stop, it suddenly ticked in my hand, glass fogged. A whisper: “Sprout.” His private nickname. He died December 17th, 9:17 AM. I Googled the legend; every article vanished. Now, it ticks nightly at 3 AM. My neighbor passed yesterday at 3:05. Is the watch counting down to mine?",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
