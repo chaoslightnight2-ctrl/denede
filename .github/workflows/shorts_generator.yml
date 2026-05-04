@@ -3,9 +3,14 @@ name: Viral Shorts Generator
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'runtime-status/**'
   schedule:
     - cron: '0 */6 * * *'   # Her 6 saatte bir
   workflow_dispatch:         # Manuel tetikleme
+
+permissions:
+  contents: write
 
 jobs:
   generate:
@@ -41,7 +46,29 @@ jobs:
           echo "${CLIENT_SECRETS_JSON}" > client_secrets.json
 
       - name: 🤖 Botu çalıştır
+        id: run_bot
+        continue-on-error: true
         run: python main.py
+
+      - name: 📝 Durum dosyası oluştur
+        if: always()
+        run: |
+          mkdir -p runtime-status
+          echo "# Last run" > runtime-status/last-run.md
+          echo "result=${{ steps.run_bot.outcome }}" >> runtime-status/last-run.md
+          echo "run_id=${GITHUB_RUN_ID}" >> runtime-status/last-run.md
+          echo "commit=${GITHUB_SHA}" >> runtime-status/last-run.md
+          echo "video=$(test -f final_shorts.mp4 && echo yes || echo no)" >> runtime-status/last-run.md
+          echo "voice=$(test -f voiceover.mp3 && echo yes || echo no)" >> runtime-status/last-run.md
+          echo "log=$(test -f bot.log && echo yes || echo no)" >> runtime-status/last-run.md
+
+      - name: Commit runtime status
+        if: always()
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'runtime-status/last-run.md'
+          message: 'ci: record shorts status [skip ci]'
+          default_author: github_actions
 
       - name: 📦 Logları ve çıktıları sakla
         if: always()
@@ -52,4 +79,9 @@ jobs:
             bot.log
             final_shorts.mp4
             voiceover.mp3
+            runtime-status/last-run.md
           if-no-files-found: ignore
+
+      - name: Fail workflow if bot failed
+        if: steps.run_bot.outcome != 'success'
+        run: exit 1
