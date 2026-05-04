@@ -7,8 +7,8 @@ on:
       - 'runtime-status/**'
       - 'generated-videos/**'
   schedule:
-    - cron: '0 */6 * * *'   # Her 6 saatte bir
-  workflow_dispatch:         # Manuel tetikleme
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -31,7 +31,6 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg imagemagick
-          # ImageMagick güvenlik politikasını düzelt (metin yazmaya izin ver)
           sudo sed -i 's/rights="none"/rights="read|write"/g' /etc/ImageMagick-6/policy.xml
           pip install --upgrade pip
           pip install -r requirements.txt
@@ -49,7 +48,7 @@ jobs:
       - name: 🤖 Botu çalıştır
         id: run_bot
         continue-on-error: true
-        run: python save_only_runner.py
+        run: python optimized_save_runner.py
 
       - name: 📝 Durum dosyası oluştur
         if: always()
@@ -87,7 +86,10 @@ jobs:
             thumbnail.jpg
             generated-videos/latest_short.mp4
             generated-videos/latest_thumbnail.jpg
+            generated-videos/latest_first_frame.jpg
+            generated-videos/latest_preview.gif
             generated-videos/latest_meta.json
+            generated-videos/video_compat_report.txt
             runtime-status/last-run.md
             runtime-status/video-meta.json
           if-no-files-found: ignore
