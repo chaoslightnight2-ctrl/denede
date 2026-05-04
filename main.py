@@ -55,7 +55,7 @@ FONT_URL = "https://github.com/google/fonts/raw/main/ofl/montserrat/static/Monts
 FONT_DIR = Path("fonts")
 FONT_PATH = FONT_DIR / "Montserrat-Bold.ttf"
 MAX_CAPTION_WORDS = 2
-MAX_CAPTION_DURATION = 0.75
+MAX_CAPTION_DURATION = 0.62
 FONT_SIZE = 56
 STROKE_WIDTH = 4
 
@@ -246,22 +246,23 @@ def chunk_timestamps(word_ts):
         word = clean_caption_word(word)
         if not word:
             continue
-        word_end = max(start + dur, start + 0.18)
+        word_end = max(start + dur, start + 0.14)
         projected_duration = word_end - chunk_start
         if cur_words and (len(cur_words) >= MAX_CAPTION_WORDS or projected_duration > MAX_CAPTION_DURATION):
-            chunks.append((chunk_start, max(chunk_end - chunk_start, 0.22), " ".join(cur_words)))
+            chunks.append((chunk_start, max(chunk_end - chunk_start, 0.16), " ".join(cur_words)))
             cur_words, chunk_start, chunk_end = [word], start, word_end
         else:
             cur_words.append(word)
             chunk_end = word_end
     if cur_words:
-        chunks.append((chunk_start, max(chunk_end - chunk_start, 0.22), " ".join(cur_words)))
+        chunks.append((chunk_start, max(chunk_end - chunk_start, 0.16), " ".join(cur_words)))
     fixed = []
     for i, (start, dur, text) in enumerate(chunks):
-        end = start + dur + 0.04
+        end = start + dur
         if i + 1 < len(chunks):
-            end = min(end, chunks[i + 1][0] - 0.01)
-        fixed.append((start, max(end - start, 0.18), text))
+            next_start = chunks[i + 1][0]
+            end = min(end, next_start - 0.015)
+        fixed.append((start, max(end - start, 0.12), text))
     return fixed
 
 def generate_captions(chunked_ts):
@@ -272,7 +273,6 @@ def generate_captions(chunked_ts):
         text = re.sub(r"[^A-Za-z0-9'\-À-ÖØ-öø-ÿ ]+", "", str(text)).strip()
         if not text:
             continue
-        dur += 0.06
         txt = (TextClip(text, fontsize=FONT_SIZE, color="white", font=font,
                        stroke_color="black", stroke_width=STROKE_WIDTH,
                        method="caption" if len(text)>12 else "label",
