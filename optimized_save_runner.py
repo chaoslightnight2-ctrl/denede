@@ -5,8 +5,8 @@ This runner does NOT upload to YouTube. It is for reviewing generated videos
 without hitting YouTube API/upload limits.
 
 Focus:
-- stronger story variety with archetypes
-- no repeated Camera 4 / timestamp / hidden door formula
+- stronger story variety with concrete creative seeds
+- no repeated prompt-template phrasing
 - tighter centered caption sync
 - mobile-compatible MP4 export
 """
@@ -48,10 +48,14 @@ TITLE_RULES = [
     ("voicemail", "The Last Voicemail Was Not Human #shorts", "THE LAST VOICEMAIL"),
     ("radio", "This Broadcast Should Not Exist #shorts", "THE BROADCAST RETURNED"),
     ("mirror", "The Mirror Changed Overnight #shorts", "THE MIRROR CHANGED"),
-    ("photo", "One Face Was Not Redacted #shorts", "ONE FACE REMAINED"),
+    ("photo", "These Photos Should Not Exist #shorts", "THE PHOTOS LIED"),
     ("dark web", "This Page Predicted Everything #shorts", "IT PREDICTED THIS"),
     ("cassette", "The Tape Recorded One Extra Voice #shorts", "ONE EXTRA VOICE"),
     ("tape", "The Tape Recorded One Extra Voice #shorts", "ONE EXTRA VOICE"),
+    ("radio station", "The Broadcast Came From Nowhere #shorts", "THE SIGNAL RETURNED"),
+    ("train", "The Train Never Arrived #shorts", "THE TICKET SAID TOMORROW"),
+    ("elevator", "The Elevator Opened To Nowhere #shorts", "FLOOR -1"),
+    ("diary", "The Diary Knew Tomorrow #shorts", "THE INK WAS WET"),
     ("file", "This Case File Should Not Exist #shorts", "THIS FILE WAS HIDDEN"),
     ("footage", "The Missing Footage Came Back #shorts", "THE FOOTAGE RETURNED"),
     ("timestamp", "The Timestamp Was Wrong #shorts", "THE TIMESTAMP WAS WRONG"),
@@ -86,31 +90,32 @@ def clean_script(text: str) -> str:
 
 def build_prompt(niche: str, archetype: dict) -> str:
     return f"""
-Write an ENGLISH YouTube Shorts voiceover script in a scary realistic horror mystery and conspiracy style.
-Topic: {niche}
+Write an ENGLISH YouTube Shorts voiceover script as a fresh cinematic micro-horror story.
+Topic mood: {niche}
 
 {archetype_prompt_block(archetype)}
 
-Variety rules:
-- Do NOT repeat the same Camera 4 timestamp hidden archive door formula.
-- Each video must feel like a different case with a different object place clue and ending.
-- Vary the setting: motel room forest road radio station abandoned school old hospital train station basement apartment archive dark web forum police evidence room or family photo box.
-- Vary the evidence: voicemail photo cassette mirror diary broadcast deleted page anonymous note location ping old toy witness report or corrupted recording.
+Style rules:
+- Do NOT copy the wording of the prompt.
+- Do NOT say phrases like "case file" "classified room" "security camera" unless the chosen seed naturally requires them.
+- Do NOT repeat the Camera 4 timestamp hidden door formula.
+- Make it sound like a creepy story a person would actually tell, not a list of evidence.
+- Use sensory details: smell, sound, texture, weather, silence, old objects, strange messages.
+- Use one weird specific object and one impossible detail.
+- Keep conspiracy energy subtle through coverups, changed records, deleted pages, anonymous warnings, or photos that should not exist.
 
 Structure:
-- Hook: first sentence must instantly create fear using a concrete time object or recording.
-- Evidence: give 2-3 specific clues.
-- Escalation: reveal the impossible or disturbing detail.
-- Ending: ask one specific open question.
+- First sentence: instant hook with a concrete object, time, place, or message.
+- Middle: 2-3 unsettling details.
+- Twist: one impossible reveal.
+- Final sentence: a specific open question.
 
 Rules:
 - Target 30-40 seconds spoken.
-- Aim for 72-92 words only.
-- Use short punchy sentences.
-- Keep it believable but scary.
-- Add conspiracy energy through hidden files erased records anonymous warnings classified rooms missing footage or redacted evidence.
-- Avoid graphic violence gore blood and direct real-person accusations.
-- Avoid medical or vaccine conspiracy claims.
+- Aim for 70-90 words only.
+- Short punchy sentences.
+- Scary, creative, different, believable.
+- Avoid graphic violence gore blood direct real-person accusations and medical/vaccine conspiracies.
 - No title no emojis no bullet points no stage directions.
 Return only the voiceover text.
 """.strip()
@@ -128,10 +133,24 @@ def ensure_open_question(script: str, archetype: dict) -> str:
         "dark_web_listing": "So how did the page know what would happen next?",
         "small_town_broadcast": "So why does no one remember hearing the warning?",
         "conspiracy_archive": "So who changed the record overnight?",
-        "abandoned_place_log": "So who left the fresh mark inside the locked room?",
+        "abandoned_place_log": "So who stamped the ticket for tomorrow?",
         "paranormal_witness_report": "So what was standing in the reflection?",
+        "family_photo_box": "So who took the photos before the trip happened?",
+        "numbers_station": "So why did the last number point to their house?",
+        "elevator_floor": "So who was drinking the fresh coffee on floor minus one?",
+        "childhood_diary": "So who wrote tomorrow's page in wet ink?",
     }
     return script + " " + endings.get(archetype.get("name"), "So what do you think they were hiding?")
+
+
+def has_template_leak(script: str) -> bool:
+    lowered = script.lower()
+    banned_pairs = [
+        "camera 4", "room 314", "sub-basement archives", "project aegis",
+        "hidden archive door", "timestamp loop", "classified room log",
+        "story archetype", "must include", "avoid repeating",
+    ]
+    return any(term in lowered for term in banned_pairs)
 
 
 def generate_script(niche: str, archetype: dict) -> str:
@@ -139,7 +158,7 @@ def generate_script(niche: str, archetype: dict) -> str:
     client = Client()
     prompt = build_prompt(niche, archetype)
     last_error = None
-    for attempt in range(3):
+    for attempt in range(4):
         try:
             response = client.chat.completions.create(
                 model="gpt-4",
@@ -148,15 +167,15 @@ def generate_script(niche: str, archetype: dict) -> str:
             )
             script = ensure_open_question(response.choices[0].message.content, archetype)
             words = len(script.split())
-            if 55 <= words <= 105:
+            if 55 <= words <= 100 and not has_template_leak(script):
                 return script
-            main.logger.warning(f"Script word count off target: {words}; retrying")
+            main.logger.warning(f"Script rejected words={words} template_leak={has_template_leak(script)}")
         except Exception as exc:
             last_error = exc
             main.logger.warning(f"Script attempt {attempt + 1} failed: {exc}")
     if last_error:
         raise RuntimeError(f"Could not generate script: {last_error}")
-    raise RuntimeError("Could not generate script in target word range")
+    raise RuntimeError("Could not generate non-repetitive script in target range")
 
 
 async def choose_best_timed_script(niche: str, archetype: dict):
