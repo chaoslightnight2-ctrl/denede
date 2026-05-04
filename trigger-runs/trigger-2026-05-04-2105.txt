@@ -1,0 +1,1 @@
+Trigger Viral Shorts Generator workflow after runtime-status persistence update.
