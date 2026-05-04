@@ -2,12 +2,14 @@
 """Generate an English horror Short and save it to the repository output folder.
 
 This runner intentionally DOES NOT upload to YouTube. It uses horror_runner's
-script, timing, title, tag and metadata logic, then stores the rendered video
-plus metadata under generated-videos/ for GitHub Actions to commit/artifact.
+script/timing logic, then improves title, thumbnail text, visual background
+queries, tags and metadata before saving the rendered video under
+`generated-videos/` for GitHub Actions to commit/artifact.
 """
 
 import asyncio
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -21,6 +23,100 @@ OUTPUT_VIDEO = OUTPUT_DIR / "latest_short.mp4"
 OUTPUT_THUMBNAIL = OUTPUT_DIR / "latest_thumbnail.jpg"
 OUTPUT_META = OUTPUT_DIR / "latest_meta.json"
 
+HIGH_VALUE_TAGS = [
+    "mysteryshorts",
+    "unexplained",
+    "securityfootage",
+    "cctv",
+    "caughtoncamera",
+    "creepymystery",
+    "darkmystery",
+    "truecrime",
+]
+
+LOW_VALUE_TAGS = {"stared", "smiled", "looked", "wrong", "really", "would", "could"}
+
+
+def first_sentence(script: str) -> str:
+    return re.split(r"[.!?]", script.strip())[0].strip()
+
+
+def build_stronger_title(script: str, niche: str) -> str:
+    lowered = script.lower()
+    if "timestamp" in lowered:
+        return "The Timestamp Was Wrong #shorts"
+    if "camera" in lowered and any(word in lowered for word in ["vanished", "disappeared", "missing"]):
+        return "He Smiled at the Camera… Then Vanished #shorts"
+    if "camera" in lowered:
+        return "The Camera Caught Something Wrong #shorts"
+    if "file" in lowered or "case" in lowered:
+        return "This Case File Should Not Exist #shorts"
+    if "note" in lowered or "letter" in lowered:
+        return "The Note Should Not Have Been There #shorts"
+    if "dark web" in lowered or "internet" in lowered:
+        return "This Trace Was Erased From the Internet #shorts"
+    hook = first_sentence(script)
+    if len(hook) < 18:
+        hook = horror_runner.THUMBNAIL_STYLE_TITLES.get(niche, "No One Can Explain This")
+    return f"{hook[:82]} #shorts"
+
+
+def build_stronger_thumbnail_text(script: str, niche: str) -> str:
+    lowered = script.lower()
+    if "timestamp" in lowered:
+        return "THE TIMESTAMP WAS WRONG"
+    if "camera" in lowered and any(word in lowered for word in ["vanished", "disappeared", "missing"]):
+        return "HE VANISHED ON CAMERA"
+    if "camera" in lowered:
+        return "THE CAMERA CAUGHT THIS"
+    if "file" in lowered or "case" in lowered:
+        return "THIS FILE WAS HIDDEN"
+    if "note" in lowered or "letter" in lowered:
+        return "WHO LEFT THE NOTE?"
+    if "dark web" in lowered or "internet" in lowered:
+        return "THEY ERASED THE TRACE"
+    return horror_runner.THUMBNAIL_STYLE_TITLES.get(niche, "NO ONE CAN EXPLAIN THIS")
+
+
+def build_stronger_tags(niche: str, script: str):
+    base_tags = horror_runner.build_video_tags(niche, script)
+    lowered = script.lower()
+    tags = []
+
+    for tag in base_tags:
+        clean = str(tag).strip().lstrip("#")
+        if clean and clean not in LOW_VALUE_TAGS and clean not in tags:
+            tags.append(clean)
+
+    for tag in HIGH_VALUE_TAGS:
+        if tag not in tags:
+            tags.append(tag)
+
+    if "timestamp" in lowered and "timestamp" not in tags:
+        tags.append("timestamp")
+    if "memory card" in lowered and "memorycard" not in tags:
+        tags.append("memorycard")
+    if "footsteps" in lowered and "footsteps" not in tags:
+        tags.append("footsteps")
+    if "empty room" in lowered and "emptyroom" not in tags:
+        tags.append("emptyroom")
+
+    priority = [
+        "shorts", "youtubeshorts", "viralshorts", "fyp", "horror",
+        "mysteryshorts", "unexplained", "caughtoncamera", "securityfootage", "cctv",
+        "darkmystery", "creepymystery", "truecrime",
+    ]
+    ordered = []
+    for tag in priority + tags:
+        if tag and tag not in ordered:
+            ordered.append(tag)
+    return ordered[:15]
+
+
+def safer_script(script: str) -> str:
+    # Keep mystery tone while avoiding unnecessarily harsh wording.
+    return script.replace("That was the last time anyone saw him alive.", "That was the last time anyone saw him.")
+
 
 async def run() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -31,6 +127,7 @@ async def run() -> None:
 
     niche = horror_runner.random.choice(horror_runner.HORROR_NICHES)
     script, audio, word_ts, duration = await horror_runner.generate_timed_script(niche)
+    script = safer_script(script)
     main.logger.info("📜 Script:\n" + script)
 
     chunked = main.chunk_timestamps(word_ts)
@@ -43,9 +140,9 @@ async def run() -> None:
     music = "bg_music.mp3" if main.os.path.exists("bg_music.mp3") else None
     final_path = main.assemble_video(bg, audio, chunked, music)
 
-    title = horror_runner.horror_title(niche, script)
-    thumbnail_text = horror_runner.THUMBNAIL_STYLE_TITLES.get(niche, "NO ONE CAN EXPLAIN THIS")
-    tags = horror_runner.build_video_tags(niche, script)
+    title = build_stronger_title(script, niche)
+    thumbnail_text = build_stronger_thumbnail_text(script, niche)
+    tags = build_stronger_tags(niche, script)
 
     shutil.copyfile(final_path, OUTPUT_VIDEO)
     thumb_path = make_thumbnail(final_path, thumbnail_text, main.ensure_font(), main.logger)
