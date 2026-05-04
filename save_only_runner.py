@@ -16,6 +16,7 @@ from pathlib import Path
 
 import main
 import horror_runner
+from caption_style import apply_caption_style
 from thumbnail_helper import make_thumbnail
 from visual_query_helper import build_visual_background_queries
 
@@ -51,12 +52,6 @@ def run_cmd(args, check=True):
 
 
 def normalize_mp4_for_mobile(input_path: str, output_path: Path) -> None:
-    """Create a phone/GitHub-compatible MP4.
-
-    MoviePy can produce H.264/AAC files that are valid but awkward for mobile
-    preview if the pixel format/profile or moov atom placement is not ideal.
-    This second pass forces yuv420p + faststart.
-    """
     tmp = output_path.with_suffix(".tmp.mp4")
     if tmp.exists():
         tmp.unlink()
@@ -171,6 +166,7 @@ def build_stronger_tags(niche: str, script: str):
 
 async def run() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    apply_caption_style(main)
 
     main.NICHE_POOL = horror_runner.HORROR_NICHES
     main.NICHE_PEXELS_QUERIES = horror_runner.HORROR_PEXELS
@@ -178,7 +174,6 @@ async def run() -> None:
 
     niche = horror_runner.random.choice(horror_runner.HORROR_NICHES)
     script, audio, word_ts, duration = await horror_runner.generate_timed_script(niche)
-    # Do not modify script after voiceover generation. This keeps audio and captions perfectly aligned.
     main.logger.info("📜 Script:\n" + script)
 
     chunked = main.chunk_timestamps(word_ts)
@@ -205,6 +200,13 @@ async def run() -> None:
     meta = {
         "mode": "save_only_no_youtube_upload",
         "language": "en",
+        "caption_style": {
+            "font_size": 44,
+            "stroke_width": 3,
+            "max_words": 3,
+            "position_y": 1080,
+            "punctuation_removed": True
+        },
         "niche": niche,
         "title": title,
         "thumbnail_text": thumbnail_text,
