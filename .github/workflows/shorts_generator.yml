@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths-ignore:
       - 'runtime-status/**'
+      - 'generated-videos/**'
   schedule:
     - cron: '0 */6 * * *'   # Her 6 saatte bir
   workflow_dispatch:         # Manuel tetikleme
@@ -48,7 +49,7 @@ jobs:
       - name: 🤖 Botu çalıştır
         id: run_bot
         continue-on-error: true
-        run: python horror_runner.py
+        run: python save_only_runner.py
 
       - name: 📝 Durum dosyası oluştur
         if: always()
@@ -58,17 +59,19 @@ jobs:
           echo "result=${{ steps.run_bot.outcome }}" >> runtime-status/last-run.md
           echo "run_id=${GITHUB_RUN_ID}" >> runtime-status/last-run.md
           echo "commit=${GITHUB_SHA}" >> runtime-status/last-run.md
-          echo "video=$(test -f final_shorts.mp4 && echo yes || echo no)" >> runtime-status/last-run.md
+          echo "video=$(test -f generated-videos/latest_short.mp4 && echo yes || echo no)" >> runtime-status/last-run.md
+          echo "thumbnail=$(test -f generated-videos/latest_thumbnail.jpg && echo yes || echo no)" >> runtime-status/last-run.md
+          echo "meta=$(test -f generated-videos/latest_meta.json && echo yes || echo no)" >> runtime-status/last-run.md
           echo "voice=$(test -f voiceover.mp3 && echo yes || echo no)" >> runtime-status/last-run.md
           echo "log=$(test -f bot.log && echo yes || echo no)" >> runtime-status/last-run.md
 
-      - name: Commit runtime status
+      - name: Commit generated video and status
         if: always()
         continue-on-error: true
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'runtime-status/last-run.md'
-          message: 'ci: record shorts status [skip ci]'
+          add: 'generated-videos runtime-status'
+          message: 'ci: save generated short output [skip ci]'
           default_author: github_actions
           pull: '--rebase --autostash'
 
@@ -81,7 +84,12 @@ jobs:
             bot.log
             final_shorts.mp4
             voiceover.mp3
+            thumbnail.jpg
+            generated-videos/latest_short.mp4
+            generated-videos/latest_thumbnail.jpg
+            generated-videos/latest_meta.json
             runtime-status/last-run.md
+            runtime-status/video-meta.json
           if-no-files-found: ignore
 
       - name: Fail workflow if bot failed
