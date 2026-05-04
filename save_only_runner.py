@@ -2,9 +2,8 @@
 """Generate an English horror Short and save it to the repository output folder.
 
 This runner intentionally DOES NOT upload to YouTube. It uses horror_runner's
-script, timing, background, title, tag and metadata logic, then stores the
-rendered video plus metadata under generated-videos/ for GitHub Actions to
-commit/artifact.
+script, timing, title, tag and metadata logic, then stores the rendered video
+plus metadata under generated-videos/ for GitHub Actions to commit/artifact.
 """
 
 import asyncio
@@ -15,6 +14,7 @@ from pathlib import Path
 import main
 import horror_runner
 from thumbnail_helper import make_thumbnail
+from visual_query_helper import build_visual_background_queries
 
 OUTPUT_DIR = Path("generated-videos")
 OUTPUT_VIDEO = OUTPUT_DIR / "latest_short.mp4"
@@ -34,8 +34,11 @@ async def run() -> None:
     main.logger.info("📜 Script:\n" + script)
 
     chunked = main.chunk_timestamps(word_ts)
-    background_queries = horror_runner.build_background_queries(niche, script)
+    base_background_queries = horror_runner.build_background_queries(niche, script)
+    background_queries = build_visual_background_queries(niche, script, base_background_queries)
     main.NICHE_PEXELS_QUERIES[niche] = background_queries
+    main.logger.info("🎥 Visual background queries: " + " | ".join(background_queries))
+
     bg = main.fetch_background_video(script, niche)
     music = "bg_music.mp3" if main.os.path.exists("bg_music.mp3") else None
     final_path = main.assemble_video(bg, audio, chunked, music)
@@ -58,6 +61,7 @@ async def run() -> None:
         "duration_seconds": round(duration, 2),
         "tags": tags,
         "background_queries": background_queries,
+        "base_background_queries": base_background_queries,
         "script": script,
         "video_path": str(OUTPUT_VIDEO),
         "thumbnail_path": str(OUTPUT_THUMBNAIL) if OUTPUT_THUMBNAIL.exists() else None,
