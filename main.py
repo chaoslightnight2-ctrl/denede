@@ -119,18 +119,7 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
                 word_timestamps.append((chunk["offset"]/10_000_000, chunk["duration"]/10_000_000, chunk["text"]))
 
     if not word_timestamps:
-        logger.warning("⚠️ Zamanlama yok, eşit dağıtılacak.")
-        audio_clip = AudioFileClip(VOICEOVER_FILE)
-        total_dur = audio_clip.duration
-        audio_clip.close()
-        words = script.split()
-        if not words:
-            raise RuntimeError("Senaryo boş.")
-        dur_per_word = total_dur / len(words)
-        current = 0.1
-        for word in words:
-            word_timestamps.append((current, dur_per_word, word))
-            current += dur_per_word
+        raise RuntimeError("Edge TTS kelime zamanlaması üretmedi; sesle senkron altyazı garanti edilemez.")
     logger.info(f"✅ {len(word_timestamps)} kelime.")
     return VOICEOVER_FILE, word_timestamps
 
@@ -192,17 +181,28 @@ def ensure_font():
 def chunk_timestamps(word_ts):
     if not word_ts: return []
     chunks = []
-    cur_words, chunk_start, acc_dur = [], word_ts[0][0], 0.0
+    cur_words, chunk_start, chunk_end = [], word_ts[0][0], word_ts[0][0]
     for start, dur, word in word_ts:
-        if len(cur_words) >= MAX_CAPTION_WORDS or (cur_words and acc_dur+dur > MAX_CAPTION_DURATION):
-            chunks.append((chunk_start, acc_dur, " ".join(cur_words)))
-            cur_words, chunk_start, acc_dur = [word], start, dur
+        word = str(word).strip()
+        if not word:
+            continue
+        word_end = max(start + dur, start + 0.18)
+        projected_duration = word_end - chunk_start
+        if cur_words and (len(cur_words) >= MAX_CAPTION_WORDS or projected_duration > MAX_CAPTION_DURATION):
+            chunks.append((chunk_start, max(chunk_end - chunk_start, 0.22), " ".join(cur_words)))
+            cur_words, chunk_start, chunk_end = [word], start, word_end
         else:
             cur_words.append(word)
-            acc_dur += dur
+            chunk_end = word_end
     if cur_words:
-        chunks.append((chunk_start, acc_dur, " ".join(cur_words)))
-    return chunks
+        chunks.append((chunk_start, max(chunk_end - chunk_start, 0.22), " ".join(cur_words)))
+    fixed = []
+    for i, (start, dur, text) in enumerate(chunks):
+        end = start + dur + 0.04
+        if i + 1 < len(chunks):
+            end = min(end, chunks[i + 1][0] - 0.01)
+        fixed.append((start, max(end - start, 0.18), text))
+    return fixed
 
 def generate_captions(chunked_ts):
     if not chunked_ts: return []
