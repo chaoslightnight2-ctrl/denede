@@ -118,8 +118,25 @@ async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, s
             elif chunk["type"] == "WordBoundary":
                 word_timestamps.append((chunk["offset"]/10_000_000, chunk["duration"]/10_000_000, chunk["text"]))
 
+    if not os.path.exists(VOICEOVER_FILE) or os.path.getsize(VOICEOVER_FILE) == 0:
+        raise RuntimeError("Ses dosyası oluşturulamadı.")
+
     if not word_timestamps:
-        raise RuntimeError("Edge TTS kelime zamanlaması üretmedi; sesle senkron altyazı garanti edilemez.")
+        logger.warning("Edge TTS kelime zamanlaması vermedi; ses süresine göre hizalama yapılacak.")
+        audio_clip = AudioFileClip(VOICEOVER_FILE)
+        total_dur = max(float(audio_clip.duration), 1.0)
+        audio_clip.close()
+        words = [w for w in script.split() if w.strip()]
+        if not words:
+            raise RuntimeError("Senaryo boş, altyazı üretilemez.")
+        total_chars = sum(max(len(w), 1) for w in words)
+        current = 0.05
+        usable_dur = max(total_dur - 0.10, 0.5)
+        for word in words:
+            dur = usable_dur * (max(len(word), 1) / total_chars)
+            dur = max(dur, 0.16)
+            word_timestamps.append((current, dur, word))
+            current += dur
     logger.info(f"✅ {len(word_timestamps)} kelime.")
     return VOICEOVER_FILE, word_timestamps
 
