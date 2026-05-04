@@ -94,27 +94,25 @@ NICHE_TAGS = {
 }
 
 KEYWORD_TAG_MAP = {
-    "missing": "missingperson",
-    "vanished": "vanished",
-    "file": "casefile",
-    "police": "police",
-    "camera": "caughtoncamera",
-    "internet": "darkweb",
-    "forest": "darkforest",
-    "house": "hauntedhouse",
-    "ghost": "ghost",
-    "shadow": "shadowfigure",
-    "secret": "hiddensecret",
-    "hidden": "classified",
-    "case": "unsolvedcase",
-    "night": "nightmystery",
-    "abandoned": "abandonedplaces",
-    "paranormal": "paranormal",
-    "conspiracy": "conspiracytheory",
-    "note": "mysteriousnote",
+    "missing": "missingperson", "vanished": "vanished", "file": "casefile", "police": "police",
+    "camera": "caughtoncamera", "internet": "darkweb", "forest": "darkforest", "house": "hauntedhouse",
+    "ghost": "ghost", "shadow": "shadowfigure", "secret": "hiddensecret", "hidden": "classified",
+    "case": "unsolvedcase", "night": "nightmystery", "abandoned": "abandonedplaces", "paranormal": "paranormal",
+    "conspiracy": "conspiracytheory", "note": "mysteriousnote", "footage": "securityfootage", "cctv": "cctv",
 }
 
 STOP_WORDS = {"because", "after", "before", "their", "there", "about", "would", "could", "think", "really", "still", "again", "thing", "things", "something"}
+
+SOFT_RISK_REPLACEMENTS = {
+    "mandatory vaccines": "a mandatory public program",
+    "vaccines": "public records",
+    "vaccine": "public record",
+    "microchips": "tracking devices",
+    "microchip": "tracking device",
+    "deceased": "inactive",
+    "killed": "erased",
+    "murdered": "erased",
+}
 
 
 def _clean(text: str) -> str:
@@ -123,9 +121,16 @@ def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().strip('"').strip("'")
 
 
+def soften_platform_risk(script: str) -> str:
+    """Keep the horror tone, but avoid hard medical/real-world harm claims."""
+    script = _clean(script)
+    for risky, safer in SOFT_RISK_REPLACEMENTS.items():
+        script = re.sub(rf"\b{re.escape(risky)}\b", safer, script, flags=re.IGNORECASE)
+    return script
+
+
 def _tagify(text: str) -> str:
-    text = text.lower()
-    return re.sub(r"[^a-z0-9]+", "", text)[:30]
+    return re.sub(r"[^a-z0-9]+", "", text.lower())[:30]
 
 
 def extract_video_keywords(script: str, limit: int = 5):
@@ -144,11 +149,11 @@ def extract_video_keywords(script: str, limit: int = 5):
 
 def contextual_question(niche: str, script: str) -> str:
     lowered = script.lower()
-    if "camera" in lowered:
+    if "camera" in lowered or "footage" in lowered or "cctv" in lowered:
         return "So why did the camera fail at that exact moment?"
     if "note" in lowered or "letter" in lowered:
         return "Who left that note behind?"
-    if "file" in lowered or "case" in lowered:
+    if "file" in lowered or "case" in lowered or "record" in lowered:
         return "Why was this file hidden for so many years?"
     if "missing" in lowered or "vanished" in lowered or "disappeared" in lowered:
         return "Do you think they really disappeared by choice?"
@@ -160,7 +165,7 @@ def contextual_question(niche: str, script: str) -> str:
 
 
 def ensure_question_end(script: str, niche: str) -> str:
-    script = _clean(script)
+    script = soften_platform_risk(script)
     sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", script) if s.strip()]
     if sentences and sentences[-1].endswith("?") and len(sentences[-1]) > 20:
         return script
@@ -201,7 +206,7 @@ def build_background_queries(niche: str, script: str):
         queries.insert(0, f"{keywords[0]} {keywords[1]} mystery")
     if keywords:
         queries.insert(1, f"{keywords[0]} dark mystery")
-    queries.extend(["horror atmosphere", "dark mystery", "scary cinematic", "foggy abandoned place"])
+    queries.extend(["found footage horror", "security camera footage", "dark mystery cinematic", "abandoned hallway dark", "foggy abandoned place"])
     unique = []
     for query in queries:
         if query and query not in unique:
@@ -215,17 +220,25 @@ def write_runtime_meta(meta: dict) -> None:
 
 
 def horror_script(niche: str) -> str:
-    main.logger.info(f"✍️ Generating English hook-based horror/mystery script: {niche}")
+    main.logger.info(f"✍️ Generating realistic scary English horror/mystery script: {niche}")
     prompt = f"""
-Write an ENGLISH YouTube Shorts voiceover script in the horror, mystery, conspiracy, or true-crime style.
+Write an ENGLISH YouTube Shorts voiceover script in a realistic horror mystery style.
 Topic: {niche}
+
+Creative direction:
+- Make it feel like a real recovered case file, security camera report, police note, abandoned place recording, missing person timeline, or found-footage story.
+- The atmosphere should be darker, scarier, more tense, and cinematic, but still believable.
+- Prefer concrete details: exact time, room number, file number, camera angle, last message, old photo, locked door, footsteps, static, missing frame, hidden folder, erased account.
+- The mystery can feel like a rumor or leaked file, but do not present harmful medical claims as fact.
+
 Rules:
 - Target 25-38 seconds when spoken.
 - The first sentence must be a hard hook with event + mystery + time/evidence clue.
-- Do not start slowly. Create curiosity in the first second.
-- Example rhythm: "This man looked into the camera, and seven minutes later, he vanished."
-- Build tension around a dark secret, missing person, unexplained event, hidden file, conspiracy, or mystery.
-- Do not include graphic violence or bloody details.
+- Do not start slowly. Create fear and curiosity in the first second.
+- Example rhythm: "At 2:13 AM, the hallway camera recorded someone standing behind him, but he was alone."
+- Build tension around a dark secret, missing person, unexplained event, hidden file, conspiracy, paranormal clue, or recovered footage.
+- Avoid graphic violence, gore, blood, and direct real-person accusations.
+- Avoid vaccine/medical conspiracy claims. If there is a conspiracy, make it about files, cameras, erased records, classified rooms, or missing footage.
 - End with a specific open-ended question for the viewer.
 - No title, no emojis, no bullet points, no stage directions.
 Return only the voiceover text.
@@ -245,7 +258,7 @@ Return only the voiceover text.
         except Exception as exc:
             main.logger.warning(f"Script attempt {attempt + 1} failed: {exc}")
             time.sleep(3)
-    raise RuntimeError("Could not generate English horror/mystery script.")
+    raise RuntimeError("Could not generate realistic scary horror/mystery script.")
 
 
 def horror_title(niche: str, script: str) -> str:
@@ -282,10 +295,7 @@ def upload_video_with_thumbnail(video_path: str, title: str, description: str, t
             "tags": tags,
             "categoryId": main.YOUTUBE_CATEGORY_ID,
         },
-        "status": {
-            "privacyStatus": "public",
-            "selfDeclaredMadeForKids": False,
-        },
+        "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
     }
     main.logger.info(f"🏷️ Tags: {', '.join(tags)}")
     main.logger.info(f"📤 Uploading: {title}")
@@ -299,7 +309,6 @@ def upload_video_with_thumbnail(video_path: str, title: str, description: str, t
     video_id = response["id"]
     url = f"https://youtu.be/{video_id}"
     main.logger.info(f"✅ Published: {url}")
-
     thumbnail_path = make_thumbnail(video_path, thumbnail_text, main.ensure_font(), main.logger)
     upload_thumbnail(youtube, video_id, thumbnail_path, main.logger)
     return url
@@ -323,6 +332,7 @@ async def run() -> None:
     tags = build_video_tags(niche, script)
     meta = {
         "language": "en",
+        "style": "realistic_scary_case_file_found_footage",
         "niche": niche,
         "title": title,
         "thumbnail_text": thumbnail_text,
@@ -336,13 +346,13 @@ async def run() -> None:
     video_url = upload_video_with_thumbnail(
         final_path,
         title,
-        "Dark mysteries, hidden files, conspiracy theories, unsolved cases, and disturbing stories. The final question is yours to answer.\n\n#shorts #horror #mystery #conspiracy #truecrime",
+        "Dark mysteries, recovered footage, hidden files, unsolved cases, and disturbing stories. The final question is yours to answer.\n\n#shorts #horror #mystery #conspiracy #truecrime",
         thumbnail_text,
         tags,
     )
     meta["video_url"] = video_url
     write_runtime_meta(meta)
-    main.logger.info("🏁 English horror/mystery Short completed.")
+    main.logger.info("🏁 English realistic horror/mystery Short completed.")
 
 
 if __name__ == "__main__":
