@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "regenerate_until_clean_original_scenario_guard",
-  "niche": "Günlük Hayatta Stoacı Felsefe",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Günlük hayatta Stoacılık, büyük değişimlerden çok küçük anlarda başlar #shorts",
-  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
-  "duration_seconds": 33.17,
+  "title": "Biliyor musunuz #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 30.98,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "stoacilik",
-    "felsefe",
-    "hayatdersleri"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "ancient statue",
-    "stoic statue",
-    "calm person nature",
-    "roman columns",
-    "meditation nature cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Günlük hayatta Stoacılık, büyük değişimlerden çok küçük anlarda başlar. Sabır pratiği de tam burada devreye girer. Bir trafik sırasında, kuyruğa girerken, hatta telefonun yavaş açılmasına karşı. Bu anlarda durup, kontrolü elimizde olan tek şeye odaklanmak: kendi tepkimize. Nefes al, göğsüne odaklan. Bu basit adım, dış olayları kontrol etme çabamızı bırakıp iç huzuru bulmamızı sağlar. Her küçük bekleme, bir zihinsel kas antrenmanıdır. Siz de bugün bir sabır pratiği yapar mısınız?",
-  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Biliyor musunuz? İnanılmaz bilimsel keşifler, bazen tam olarak planlanan şeylerden değil, araştırmacıların hatalarından veya beklenmedik sonuçlardan doğar. Penisilin gibi birçok önemli keşif, bir deneyde oluşan bir kaza sonucu ortaya çıkmıştır. Bilim, bazen doğru yolu hatayla bulur. Bu durum, yenilikçi düşüncenin ve sabırlı çalışmanın önemini vurguluyor. Peki, sizce bu tür keşiflerden hangisi en çok şaşırtıcıydı? Yorumlarda fikirlerinizi paylaşın!",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/zOO4HsUU17M",
+  "video_url": "https://youtu.be/ppRosbWoKhg",
   "upload_status": "success",
   "upload_error": null,
   "script_quality_guard": {
