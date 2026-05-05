@@ -1,11 +1,9 @@
 """Caption styling and timing patch for Shorts.
 
 Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
-Actions. This version fixes two issues:
-- Turkish Edge TTS sometimes has no WordBoundary data, so we rebuild subtitle
-  timing from real audio duration with Turkish speech weights.
-- Caption words can look wrong when punctuation is stripped. We normalize
-  Turkish caption text before timing/rendering, e.g. "%5'i" becomes "yüzde beş".
+Actions. Captions now preserve Turkish words as-written while removing visual
+punctuation, and use a speech-weighted fallback when Edge TTS word timings are
+missing.
 """
 
 from __future__ import annotations
@@ -36,30 +34,38 @@ TURKISH_VOWELS = "aeıioöuüAEIİOÖUÜ"
 
 
 def normalize_caption_source(text: str) -> str:
-    """Only remove visual punctuation without changing spoken words.
+    """Remove visible punctuation without rewriting the actual words.
 
-    Important: do not rewrite words semantically. The user reported that words
-    looked written wrong, not that the topic was wrong. So captions must mirror
-    the generated script as closely as possible while removing punctuation.
+    We only do minimal symbol cleanup so subtitles do not become misspelled.
+    Apostrophes are removed but suffix letters are kept:
+      Türkiye'de -> Türkiyede
+      %5'i -> yüzde 5i
     """
     text = str(text or "")
-    text = text.replace("…", " ")
-    text = text.replace("&", " ve ")
-    text = text.replace("%", " yüzde ")
-    # Remove apostrophe markers but keep the suffix letters so words do not get
-    # cut. Example: Türkiye'de -> Türkiyede, evrenin %5'i -> evrenin yüzde 5i.
+    replacements = {
+        "…": " ",
+        "%": " yüzde ",
+        "&": " ve ",
+        "+": " artı ",
+        "=": " eşittir ",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
     text = re.sub(r"['’`]", "", text)
+    text = re.sub(r"[\"“”‘’()\[\]{}<>]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
 def clean_caption_word(word: str) -> str:
     word = normalize_caption_source(word)
-    return re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü]+", "", word).strip()
+    # Keep Turkish characters and digits. Remove only punctuation symbols.
+    return re.sub(r"[^A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+", "", word).strip()
 
 
 def _tokenize_script(script: str):
     script = normalize_caption_source(script)
+    # Punctuation tokens are timing hints only; they are not rendered.
     return re.findall(r"[A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+|[.!?;:,]", script or "")
 
 
@@ -105,17 +111,13 @@ def _build_speech_weighted_timings(script: str, audio_duration: float):
 
 
 def _looks_like_low_quality_fallback(word_ts, audio_duration: float) -> bool:
-    if not word_ts:
-        return True
-    if len(word_ts) < 4:
+    if not word_ts or len(word_ts) < 4:
         return True
     starts = [float(x[0]) for x in word_ts]
     durs = [float(x[1]) for x in word_ts]
     span = max(starts) + max(durs[-1], MIN_WORD_DURATION) - min(starts)
     avg_dur = sum(durs) / max(len(durs), 1)
-    if span > audio_duration * 0.82 and avg_dur < 0.24:
-        return True
-    return False
+    return span > audio_duration * 0.82 and avg_dur < 0.24
 
 
 def patch_voiceover_timing(main_module) -> None:
@@ -164,7 +166,7 @@ def build_caption_chunks(word_ts):
         texts = [words[i][2]]
         end = words[i][1]
         if i + 1 < len(words):
-            next_start, next_end, next_text = words[i + 1]
+            _, next_end, next_text = words[i + 1]
             projected = next_end - start
             if projected <= MAX_CHUNK_DURATION and len(next_text) <= 12:
                 texts.append(next_text)
@@ -210,24 +212,11 @@ def _render_caption_image(text: str, font_path: str, max_width: int):
     x = img_w // 2
     y = PADDING_Y - bbox[1]
 
-    draw.text(
-        (x + SHADOW_OFFSET[0], y + SHADOW_OFFSET[1]),
-        text,
-        font=font,
-        anchor="ma",
-        fill=(0, 0, 0, SHADOW_OPACITY),
-        stroke_width=SHADOW_STROKE_WIDTH,
-        stroke_fill=(0, 0, 0, SHADOW_OPACITY),
-    )
-    draw.text(
-        (x, y),
-        text,
-        font=font,
-        anchor="ma",
-        fill=(255, 255, 255, 255),
-        stroke_width=CAPTION_STROKE_WIDTH,
-        stroke_fill=(0, 0, 0, 255),
-    )
+    draw.text((x + SHADOW_OFFSET[0], y + SHADOW_OFFSET[1]), text, font=font, anchor="ma",
+              fill=(0, 0, 0, SHADOW_OPACITY), stroke_width=SHADOW_STROKE_WIDTH,
+              stroke_fill=(0, 0, 0, SHADOW_OPACITY))
+    draw.text((x, y), text, font=font, anchor="ma", fill=(255, 255, 255, 255),
+              stroke_width=CAPTION_STROKE_WIDTH, stroke_fill=(0, 0, 0, 255))
     return np.array(image)
 
 
@@ -241,7 +230,7 @@ def make_caption_clips(main_module, chunked_ts):
 
     for start, dur, text in chunked_ts:
         text = normalize_caption_source(text)
-        text = re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\- ]+", "", str(text)).strip()
+        text = re.sub(r"[^A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\- ]+", "", str(text)).strip()
         if not text:
             continue
         image = _render_caption_image(text, font_path, max_width)
