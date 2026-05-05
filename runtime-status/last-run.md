@@ -1,11 +1,9 @@
 # Last run
 result=success
-run_id=25374393272
-commit=503310555d2c46f5ffeaa8b0ae3084419fa4a3c5
+run_id=25375256564
+commit=226fea94b94e9cc2b3bdbeeaf7d1771bb4a554bb
 video=yes
 thumbnail=yes
 meta=yes
 voice=yes
 log=yes
-
-manual_trigger=2026-05-05

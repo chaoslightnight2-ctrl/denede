@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "old_general_viral_turkish",
-  "niche": "Uzayın Korkunç Sırları",
+  "niche": "Şok Edici Psikolojik Gerçekler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "speech_weighted_turkish_fallback_one_word_tight"
   },
-  "title": "Uzayda ölen bir astronot, milyonlarca yıl boyunca bozulmadan dolaşır #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 35.16,
+  "title": "Beyniniz sizi sürekli kandırıyor #shorts",
+  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
+  "duration_seconds": 29.11,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim"
+    "psikoloji",
+    "beyin",
+    "insanpsikolojisi"
   ],
   "background_queries": [
-    "deep space",
-    "galaxy stars",
-    "black hole",
-    "astronaut space",
-    "space cinematic"
+    "human brain psychology",
+    "thinking person dark",
+    "mind concept",
+    "neural network abstract",
+    "person thinking cinematic"
   ],
-  "script": "Uzayda ölen bir astronot, milyonlarca yıl boyunca bozulmadan dolaşır. Biliyor muydun? Kara delikler zamanı yutar. Işık bile kurtulamaz. Ses duyulmaz. Radyasyon öldürür. Göktaşları büyük tehlikeler. Uzayda hiçbir şey kaybolmaz. Astronotlar her hareketinde ölüm riskiyle karşılaşır. Güneş patlamaları Dünya'yı yakabilir. Uzayda bilinmeyen karanlık madde var. Kısa süreli ışık sönmesi ölümü getirebilir. Bu korkunç gerçekleri duymak istiyorsan, kanala abone ol!",
-  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Beyniniz sizi sürekli kandırıyor! Gerçek şu: Kararlarınızın çoğu bilinçaltınızdan kaynaklanıyor. Korkularınızın büyük çoğunluğu gerçek değil, sadece beyninizin yarattığı hayaletler. Alışkanlıklarınız otomatik pilotta ilerlerken, duygularınız aslında kimyasal reaksiyonlarla şekilleniyor. Gerçek özgürlük, bu mekanizmaları anlamakla başlar. Peki, zihninizin perde arkasını görmek ister misiniz? Daha fazla şok edici psikolojik gerçek için takibe kalın!",
+  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
