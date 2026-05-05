@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard",
-  "niche": "Tuhaf ve Enteresan Yasalar",
+  "niche": "Günlük Hayatta Stoacı Felsefe",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "forced_turkish_speech_weighted_one_word_tight"
   },
-  "title": "Peki ya size söylesem, Türkiye'de çikolata yemek yasak #shorts",
-  "thumbnail_text": "BU YASA GERÇEK",
-  "duration_seconds": 36.26,
+  "title": "Şunu biliyor musun: Her sabah aynı insanları, aynı olayları, aynı dünyayla yüzleşi #shorts",
+  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
+  "duration_seconds": 30.62,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "yasalar",
-    "ilginc",
-    "dunya"
+    "stoacilik",
+    "felsefe",
+    "hayatdersleri"
   ],
   "background_queries": [
-    "court law",
-    "judge gavel",
-    "old documents",
-    "city street rules",
-    "law books cinematic"
+    "ancient statue",
+    "stoic statue",
+    "calm person nature",
+    "roman columns",
+    "meditation nature cinematic"
   ],
-  "script": "Peki ya size söylesem, Türkiye'de çikolata yemek yasak? Gerçekten! 1920'lerde çikolata \"ağır yiyecek\" sayılıp satılması yasaklanmıştı. Hatta evlilik yasaşı da vardı, birçok şehirde belirli saatlerden sonra evlenmek yasaktı. İnanılmaz değil mi? Peki ya hayvanlarımız için de yasalar var: Köpeğiniz evde böğürtüyse, komşunuz sizi mahkemeye verebilir! Bu tuhaf yasaların hepsi gerçek. Daha fazlası için takipte kal!",
-  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Şunu biliyor musun: Her sabah aynı insanları, aynı olayları, aynı dünyayla yüzleşiyorsun. Peki seni mutlu eden veya üzen şey aslında ne? Olaylar değil, onlara verdiğin anlamlar seni yıkar. Kontrol edebileceğin tek şey: Senin tepkilerin. Kötümserlik seçim değil, alışkanlıktır. Mücadele etmek yerine, kabul etmeyi öğren. Sakin bir zihin, en büyük zenginliktir. Bugün ilk kez, bir olaya sinirlenmek yerine, ne yapabileceğini düşün.",
+  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
