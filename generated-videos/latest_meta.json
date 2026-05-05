@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Peki, mitolojiler sadece hayal ürünü mü #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 36.72,
+  "title": "Başarılı olmak için ne kadar çabaladığınız değil, neden çabaladığınız önemlidir #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 31.34,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "motivasyon",
+    "basari",
+    "disiplin"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "Peki, mitolojiler sadece hayal ürünü mü? Gerçekten de tanrılar ve canavarlar uydurma mı? O zaman şunu bil: Neredeyse tüm mitolojilerde bir \"tufan efsanesi\" var. Mısır'da, Mezopotamya'da, Yunan'da, hatta Amerika kıtalarında ayrı ayrı... Peki, bunlar tesadüf mü? Grekler gök gürültüsünü Zeus'ın öfkesi, Yıldırımı Thor'un çekici sanıyordu. İnsanoğlu, korktuğu ve anlamadığı her şeyi tanrılaştırdı. Efsaneler, insanlığın ilkel dönemdeki en büyük sorularına verdiği cevapların şiirsel hali. Bırakın anlamayı, sorgulayın.",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Başarılı olmak için ne kadar çabaladığınız değil, neden çabaladığınız önemlidir. Çoğu insan hedeflerine ulaşmak için doğru nedenlere sahip değil. Peki, seni motive eden şey nedir? Gerçek motivasyon içsel olarak gelir ve anlamlandırdığımız değerler tarafından yönlendirilir. Başarılı insanlar, zorlukları aşarken kendi 'neden'lerini hatırlamaya devam ederler. Şimdi, kendi 'neden'ini bulmaya hazır mısın? Hemen bir kâğıt al ve 'neden'ini yazmaya başla.",
+  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
@@ -47,5 +47,5 @@
   "compat_report_path": "generated-videos/video_compat_report.txt",
   "video_url": null,
   "upload_status": "failed",
-  "upload_error": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  "upload_error": "('unauthorized_client: Unauthorized', {'error': 'unauthorized_client', 'error_description': 'Unauthorized'})"
 }
