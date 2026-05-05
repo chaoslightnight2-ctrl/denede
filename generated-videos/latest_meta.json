@@ -2,8 +2,8 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Tuhaf ve Enteresan Yasalar",
+  "prompt_style": "regenerate_until_clean_original_scenario_guard",
+  "niche": "Günlük Hayatta Stoacı Felsefe",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Hayatınızı değiştirecek: Türkiye'de evde 1000 TL'den fazla para saklamak vergi suç #shorts",
-  "thumbnail_text": "BU YASA GERÇEK",
-  "duration_seconds": 32.76,
+  "title": "Günlük hayatta Stoacılık, büyük değişimlerden çok küçük anlarda başlar #shorts",
+  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
+  "duration_seconds": 33.17,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,32 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "yasalar",
-    "ilginc",
-    "dunya"
+    "stoacilik",
+    "felsefe",
+    "hayatdersleri"
   ],
   "background_queries": [
-    "court law",
-    "judge gavel",
-    "old documents",
-    "city street rules",
-    "law books cinematic"
+    "ancient statue",
+    "stoic statue",
+    "calm person nature",
+    "roman columns",
+    "meditation nature cinematic"
   ],
-  "script": "Hayatınızı değiştirecek: Türkiye'de evde 1000 TL'den fazla para saklamak vergi suçu! Çünkü 'saklanan para' bir gelir sayılır. Dünyanın tuhaf yasaları: Arizona'da çobanları kurtlardan korumak için kurt avı yasağı var. Almanya'da otoyol hız sınırı yok, ama sigorta zorunlu. Japonya'da oburluk yasası yok, ama 'aşırı yemek' suç sayılır mı? İngiltere'de Parlamento'da ölmek yasa dışı değil! Bu yasalar gerçek. Hangi yasayı bilmiyordunuz? Hemen yorum yap!",
-  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Günlük hayatta Stoacılık, büyük değişimlerden çok küçük anlarda başlar. Sabır pratiği de tam burada devreye girer. Bir trafik sırasında, kuyruğa girerken, hatta telefonun yavaş açılmasına karşı. Bu anlarda durup, kontrolü elimizde olan tek şeye odaklanmak: kendi tepkimize. Nefes al, göğsüne odaklan. Bu basit adım, dış olayları kontrol etme çabamızı bırakıp iç huzuru bulmamızı sağlar. Her küçük bekleme, bir zihinsel kas antrenmanıdır. Siz de bugün bir sabır pratiği yapar mısınız?",
+  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": null,
-  "upload_status": "failed",
-  "upload_error": "<HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">"
+  "video_url": "https://youtu.be/zOO4HsUU17M",
+  "upload_status": "success",
+  "upload_error": null,
+  "script_quality_guard": {
+    "regenerates_bad_online_scripts": true,
+    "uses_original_scenario_angles": true,
+    "rejects_random_lists": true,
+    "rejects_contradictory_questions": true,
+    "uses_curated_fallback_when_needed": true
+  }
 }
