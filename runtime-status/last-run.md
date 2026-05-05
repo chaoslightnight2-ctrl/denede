@@ -1,9 +1,9 @@
 # Last run
-result=failure
-run_id=25383499375
-commit=e7d6683ee64f5d8574c33b224ea54292aabb0074
+result=success
+run_id=25384285113
+commit=94b9dd11b51ac18dd3c049cc281bdac34f7a5fa9
 video=yes
 thumbnail=yes
 meta=yes
-voice=no
+voice=yes
 log=yes

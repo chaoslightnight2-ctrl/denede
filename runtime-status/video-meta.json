@@ -2,8 +2,8 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "general_viral_turkish_quality_guard",
-  "niche": "Günlük Hayatta Stoacı Felsefe",
+  "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
+  "niche": "Mitoloji ve Efsanelerin Kökenleri",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -11,11 +11,11 @@
     "position": "center",
     "punctuation_removed": true,
     "spaces_removed_inside_caption_word": true,
-    "timing": "forced_turkish_speech_weighted_one_word_tight"
+    "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Şunu biliyor musun: Her sabah aynı insanları, aynı olayları, aynı dünyayla yüzleşi #shorts",
-  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
-  "duration_seconds": 30.62,
+  "title": "Peki, mitolojiler sadece hayal ürünü mü #shorts",
+  "thumbnail_text": "EFSANENİN KÖKENİ",
+  "duration_seconds": 36.72,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "stoacilik",
-    "felsefe",
-    "hayatdersleri"
+    "mitoloji",
+    "efsane",
+    "tarih"
   ],
   "background_queries": [
     "ancient statue",
-    "stoic statue",
-    "calm person nature",
-    "roman columns",
-    "meditation nature cinematic"
+    "greek temple",
+    "ancient ruins",
+    "mythology temple",
+    "old sculpture cinematic"
   ],
-  "script": "Şunu biliyor musun: Her sabah aynı insanları, aynı olayları, aynı dünyayla yüzleşiyorsun. Peki seni mutlu eden veya üzen şey aslında ne? Olaylar değil, onlara verdiğin anlamlar seni yıkar. Kontrol edebileceğin tek şey: Senin tepkilerin. Kötümserlik seçim değil, alışkanlıktır. Mücadele etmek yerine, kabul etmeyi öğren. Sakin bir zihin, en büyük zenginliktir. Bugün ilk kez, bir olaya sinirlenmek yerine, ne yapabileceğini düşün.",
-  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Peki, mitolojiler sadece hayal ürünü mü? Gerçekten de tanrılar ve canavarlar uydurma mı? O zaman şunu bil: Neredeyse tüm mitolojilerde bir \"tufan efsanesi\" var. Mısır'da, Mezopotamya'da, Yunan'da, hatta Amerika kıtalarında ayrı ayrı... Peki, bunlar tesadüf mü? Grekler gök gürültüsünü Zeus'ın öfkesi, Yıldırımı Thor'un çekici sanıyordu. İnsanoğlu, korktuğu ve anlamadığı her şeyi tanrılaştırdı. Efsaneler, insanlığın ilkel dönemdeki en büyük sorularına verdiği cevapların şiirsel hali. Bırakın anlamayı, sorgulayın.",
+  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
