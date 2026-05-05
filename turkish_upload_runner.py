@@ -35,8 +35,8 @@ MAX_TARGET_DURATION = 40.0
 TARGET_DURATION = 35.0
 
 main.DEFAULT_VOICE = "tr-TR-EmelNeural"
-main.RATE = "+15%"
-main.PITCH = "-5Hz"
+main.RATE = "-5%"
+main.PITCH = "+0Hz"
 
 GENERAL_NICHES = [
     "Şok Edici Psikolojik Gerçekler",
@@ -107,7 +107,7 @@ def generate_script(niche: str) -> str:
         response = client.chat.completions.create(model="gpt-4", messages=[{"role": "user", "content": prompt}], timeout=60)
         script = clean_script(response.choices[0].message.content)
         words = len(script.split())
-        if 45 <= words <= 105:
+        if 52 <= words <= 82:
             return script
         main.logger.warning(f"Script word count off target: {words}; retrying")
     return script
@@ -115,7 +115,7 @@ def generate_script(niche: str) -> str:
 
 async def choose_best_timed_script(niche: str):
     candidates = []
-    for _ in range(4):
+    for _ in range(6):
         script = generate_script(niche)
         audio, word_ts = await main.create_voiceover(script)
         clip = main.AudioFileClip(audio)
@@ -159,11 +159,37 @@ def run_cmd(args, check=True):
     return subprocess.run(args, check=check, text=True, capture_output=True)
 
 
+def prepare_background_for_editing(input_path: str, duration: float) -> str:
+    """Make a clean, full-length 1080x1920 background before MoviePy assembly.
+
+    This prevents short Pexels clips from freezing on the last frame or producing
+    ffmpeg_reader read warnings during MoviePy loop/crop operations.
+    """
+    prepared = Path("background_prepared.mp4")
+    if prepared.exists():
+        prepared.unlink()
+    dur = max(float(duration) + 0.75, MIN_TARGET_DURATION)
+    run_cmd([
+        "ffmpeg", "-y", "-stream_loop", "-1", "-i", str(input_path),
+        "-t", f"{dur:.2f}",
+        "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30",
+        "-an", "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
+        str(prepared),
+    ])
+    return str(prepared)
+
+
 def normalize_mp4_for_mobile(input_path: str, output_path: Path) -> None:
     tmp = output_path.with_suffix(".tmp.mp4")
     if tmp.exists():
         tmp.unlink()
-    run_cmd(["ffmpeg", "-y", "-i", str(input_path), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "main", "-level", "4.0", "-movflags", "+faststart", "-c:a", "aac", "-b:a", "160k", str(tmp)])
+    run_cmd([
+        "ffmpeg", "-y", "-i", str(input_path),
+        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "main", "-level", "4.0",
+        "-movflags", "+faststart",
+        "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+        "-c:a", "aac", "-b:a", "192k", "-shortest", str(tmp),
+    ])
     tmp.replace(output_path)
 
 
@@ -191,6 +217,7 @@ async def run() -> None:
     script, audio, word_ts, duration = await choose_best_timed_script(niche)
     chunked = main.chunk_timestamps(word_ts)
     bg = main.fetch_background_video(script, niche)
+    bg = prepare_background_for_editing(bg, duration)
     music = "bg_music.mp3" if main.os.path.exists("bg_music.mp3") else None
     final_path = main.assemble_video(bg, audio, chunked, music)
 
@@ -209,7 +236,7 @@ async def run() -> None:
         "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
         "language": "tr",
         "voice": main.DEFAULT_VOICE,
-        "prompt_style": "old_general_viral_turkish",
+        "prompt_style": "general_viral_turkish_quality_guard",
         "niche": niche,
         "caption_style": {
             "font_size": 60,
@@ -218,7 +245,7 @@ async def run() -> None:
             "position": "center",
             "punctuation_removed": True,
             "spaces_removed_inside_caption_word": True,
-            "timing": "speech_weighted_turkish_fallback_one_word_tight",
+            "timing": "forced_turkish_speech_weighted_one_word_tight",
         },
         "title": title,
         "thumbnail_text": thumbnail_text,
