@@ -1,12 +1,12 @@
 """Caption styling and timing patch for Shorts.
 
 Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
-Actions. This makes dependency installation much faster while keeping:
+Actions. This keeps dependency installation fast while improving subtitles:
 - centered captions
-- white text with black stroke and soft shadow
+- slightly larger white text with black stroke and soft shadow
 - no punctuation
 - one current spoken word per caption
-- Edge TTS word-start timing with a small perceptual lead
+- tighter Edge TTS word-start timing with a small perceptual lead
 """
 
 from __future__ import annotations
@@ -18,20 +18,20 @@ import numpy as np
 from moviepy.editor import ImageClip
 from PIL import Image, ImageDraw, ImageFont
 
-CAPTION_FONT_SIZE = 56
-CAPTION_STROKE_WIDTH = 4
+CAPTION_FONT_SIZE = 62
+CAPTION_STROKE_WIDTH = 5
 CAPTION_MAX_WORDS = 1
 CAPTION_POSITION = ("center", "center")
-CAPTION_HORIZONTAL_MARGIN = 260
-CAPTION_SYNC_LEAD = 0.025
-MIN_WORD_DURATION = 0.16
-MAX_WORD_HOLD = 0.78
-NEXT_WORD_GAP = 0.006
-SHADOW_OFFSET = (5, 5)
-SHADOW_OPACITY = 140
-SHADOW_STROKE_WIDTH = 6
-PADDING_X = 36
-PADDING_Y = 22
+CAPTION_HORIZONTAL_MARGIN = 220
+CAPTION_SYNC_LEAD = 0.045
+MIN_WORD_DURATION = 0.18
+MAX_WORD_HOLD = 0.62
+NEXT_WORD_GAP = 0.002
+SHADOW_OFFSET = (6, 6)
+SHADOW_OPACITY = 150
+SHADOW_STROKE_WIDTH = 7
+PADDING_X = 42
+PADDING_Y = 26
 
 
 def clean_caption_word(word: str) -> str:
@@ -56,7 +56,9 @@ def build_caption_chunks(word_ts):
     fixed = []
     for i, (start, natural_end, text) in enumerate(words):
         if i + 1 < len(words):
-            next_start = words[i + 1][0]
+            # Hold current word until the next word is almost starting.
+            # This reduces visible gaps without showing the next word early.
+            next_start = max(words[i + 1][0], start + MIN_WORD_DURATION)
             end = min(natural_end, next_start - NEXT_WORD_GAP)
         else:
             end = natural_end
@@ -80,7 +82,7 @@ def _load_font(font_path: str):
 
 def _render_caption_image(text: str, font_path: str, max_width: int):
     font = _load_font(font_path)
-    probe = Image.new("RGBA", (max_width, 220), (0, 0, 0, 0))
+    probe = Image.new("RGBA", (max_width, 260), (0, 0, 0, 0))
     draw = ImageDraw.Draw(probe)
     bbox = draw.textbbox((0, 0), text, font=font, stroke_width=max(SHADOW_STROKE_WIDTH, CAPTION_STROKE_WIDTH))
     text_w = min(max_width - 2 * PADDING_X, max(1, bbox[2] - bbox[0]))
