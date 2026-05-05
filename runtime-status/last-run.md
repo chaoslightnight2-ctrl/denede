@@ -7,3 +7,5 @@ thumbnail=yes
 meta=yes
 voice=yes
 log=yes
+
+manual_trigger=2026-05-05
