@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "old_general_viral_turkish",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Uzayın Korkunç Sırları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "speech_weighted_turkish_fallback_one_word_tight"
   },
-  "title": "sorry, 您的ip已由于触发防滥用检测而被封禁，如果你使用代理 请关闭代理后再试,本服务网址是https://iai #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 22.22,
+  "title": "Uzayda ölen bir astronot, milyonlarca yıl boyunca bozulmadan dolaşır #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 35.16,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "uzay",
+    "evren",
+    "bilim"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "deep space",
+    "galaxy stars",
+    "black hole",
+    "astronaut space",
+    "space cinematic"
   ],
-  "script": "sorry, 您的ip已由于触发防滥用检测而被封禁，如果你使用代理 请关闭代理后再试,本服务网址是https://iai.aichatos8.com.cn/ 如果你不在本网站，请前往本网站使用即可 如需合作接口调用请联系微信kelemm220 或者前往 https://binjie09.shop 自助购买key, 认为是误封需要解封的请前往https://www.ip.cn/ 查询ip信息,并发送信息至邮件 admin@binjie.site ，站长会定期看邮件并处理解封和合作问题，如需调用接口请见接口文档https://apifox.com/apidoc/shared-803d9df6-a071-4b3e-9d69-ea1281614d82，如需合作接口调用请联系微信chatkf123 或者前往 https://cat.chatavx.com/ 注册使用（可付费使用gpt4 注册可免费使用3.5）",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Uzayda ölen bir astronot, milyonlarca yıl boyunca bozulmadan dolaşır. Biliyor muydun? Kara delikler zamanı yutar. Işık bile kurtulamaz. Ses duyulmaz. Radyasyon öldürür. Göktaşları büyük tehlikeler. Uzayda hiçbir şey kaybolmaz. Astronotlar her hareketinde ölüm riskiyle karşılaşır. Güneş patlamaları Dünya'yı yakabilir. Uzayda bilinmeyen karanlık madde var. Kısa süreli ışık sönmesi ölümü getirebilir. Bu korkunç gerçekleri duymak istiyorsan, kanala abone ol!",
+  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
