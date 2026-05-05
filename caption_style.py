@@ -1,12 +1,10 @@
 """Caption styling and timing patch for Shorts.
 
 Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
-Actions. This keeps dependency installation fast while improving subtitles:
-- centered captions
-- slightly larger white text with black stroke and soft shadow
-- no punctuation
-- one current spoken word per caption
-- tighter Edge TTS word-start timing with a small perceptual lead
+Actions. This version also fixes the biggest sync issue we saw in logs: Edge TTS
+sometimes returns no WordBoundary data for Turkish, so main.py falls back to a
+rough character split. Here we replace that with a speech-weighted Turkish
+fallback based on the real audio duration.
 """
 
 from __future__ import annotations
@@ -18,24 +16,113 @@ import numpy as np
 from moviepy.editor import ImageClip
 from PIL import Image, ImageDraw, ImageFont
 
-CAPTION_FONT_SIZE = 62
+CAPTION_FONT_SIZE = 60
 CAPTION_STROKE_WIDTH = 5
-CAPTION_MAX_WORDS = 1
+CAPTION_MAX_WORDS = 2
 CAPTION_POSITION = ("center", "center")
-CAPTION_HORIZONTAL_MARGIN = 220
-CAPTION_SYNC_LEAD = 0.045
-MIN_WORD_DURATION = 0.18
-MAX_WORD_HOLD = 0.62
-NEXT_WORD_GAP = 0.002
+CAPTION_HORIZONTAL_MARGIN = 200
+CAPTION_SYNC_LEAD = 0.018
+MIN_WORD_DURATION = 0.13
+MIN_CHUNK_DURATION = 0.28
+MAX_CHUNK_DURATION = 0.95
+NEXT_CHUNK_GAP = 0.006
 SHADOW_OFFSET = (6, 6)
 SHADOW_OPACITY = 150
 SHADOW_STROKE_WIDTH = 7
-PADDING_X = 42
+PADDING_X = 44
 PADDING_Y = 26
+TURKISH_VOWELS = "aeıioöuüAEIİOÖUÜ"
 
 
 def clean_caption_word(word: str) -> str:
-    return re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿ]+", "", str(word)).strip()
+    return re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü]+", "", str(word)).strip()
+
+
+def _tokenize_script(script: str):
+    # Keep sentence punctuation as timing hints, but remove it from visible text.
+    tokens = re.findall(r"[A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+|[.!?;:,]", script or "")
+    return tokens
+
+
+def _word_weight(word: str) -> float:
+    clean = clean_caption_word(word)
+    if not clean:
+        return 0.0
+    vowels = sum(1 for ch in clean if ch in TURKISH_VOWELS)
+    # Turkish TTS duration follows syllables/vowels better than raw length.
+    return max(0.75, 0.45 + vowels * 0.42 + len(clean) * 0.035)
+
+
+def _build_speech_weighted_timings(script: str, audio_duration: float):
+    tokens = _tokenize_script(script)
+    items = []
+    pending_pause = 0.0
+    for token in tokens:
+        if re.fullmatch(r"[.!?]", token):
+            pending_pause += 0.18
+            continue
+        if re.fullmatch(r"[;:,]", token):
+            pending_pause += 0.09
+            continue
+        clean = clean_caption_word(token)
+        if clean:
+            items.append({"word": clean, "weight": _word_weight(clean), "pause_before": pending_pause})
+            pending_pause = 0.0
+
+    if not items:
+        return []
+
+    total_pause = sum(item["pause_before"] for item in items)
+    usable = max(float(audio_duration) - 0.12 - total_pause, len(items) * MIN_WORD_DURATION)
+    total_weight = sum(item["weight"] for item in items) or 1.0
+
+    current = 0.04
+    timings = []
+    for item in items:
+        current += item["pause_before"]
+        dur = max(MIN_WORD_DURATION, usable * item["weight"] / total_weight)
+        timings.append((current, dur, item["word"]))
+        current += dur
+    return timings
+
+
+def _looks_like_low_quality_fallback(word_ts, audio_duration: float) -> bool:
+    # In the logs Edge returned no word boundaries, and main.py generated a full
+    # coverage proportional fallback. Use our stronger Turkish fallback whenever
+    # timing density/coverage looks synthetic or too short for readable captions.
+    if not word_ts:
+        return True
+    if len(word_ts) < 4:
+        return True
+    starts = [float(x[0]) for x in word_ts]
+    durs = [float(x[1]) for x in word_ts]
+    span = max(starts) + max(durs[-1], MIN_WORD_DURATION) - min(starts)
+    avg_dur = sum(durs) / max(len(durs), 1)
+    if span > audio_duration * 0.82 and avg_dur < 0.24:
+        return True
+    return False
+
+
+def patch_voiceover_timing(main_module) -> None:
+    original = getattr(main_module, "create_voiceover", None)
+    if not original or getattr(original, "_caption_patch_applied", False):
+        return
+
+    async def create_voiceover_with_better_timing(script: str):
+        audio_path, word_ts = await original(script)
+        try:
+            clip = main_module.AudioFileClip(audio_path)
+            audio_duration = float(clip.duration)
+            clip.close()
+        except Exception:
+            audio_duration = 0.0
+        if audio_duration > 0 and _looks_like_low_quality_fallback(word_ts, audio_duration):
+            main_module.logger.warning("Using speech-weighted Turkish subtitle timing fallback.")
+            word_ts = _build_speech_weighted_timings(script, audio_duration)
+        return audio_path, word_ts
+
+    create_voiceover_with_better_timing._caption_patch_applied = True
+    main_module.create_voiceover = create_voiceover_with_better_timing
 
 
 def build_caption_chunks(word_ts):
@@ -47,23 +134,36 @@ def build_caption_chunks(word_ts):
         raw_start = float(start)
         raw_dur = max(float(dur), MIN_WORD_DURATION)
         start = max(raw_start - CAPTION_SYNC_LEAD, 0.0)
-        natural_end = raw_start + raw_dur
-        words.append((start, natural_end, clean))
+        end = raw_start + raw_dur
+        words.append((start, end, clean))
 
     if not words:
         return []
 
-    fixed = []
-    for i, (start, natural_end, text) in enumerate(words):
+    chunks = []
+    i = 0
+    while i < len(words):
+        start = words[i][0]
+        texts = [words[i][2]]
+        end = words[i][1]
+        # Group two short neighbouring words. This reads better and hides tiny
+        # artificial timing errors, while still staying close to the voice.
         if i + 1 < len(words):
-            # Hold current word until the next word is almost starting.
-            # This reduces visible gaps without showing the next word early.
-            next_start = max(words[i + 1][0], start + MIN_WORD_DURATION)
-            end = min(natural_end, next_start - NEXT_WORD_GAP)
-        else:
-            end = natural_end
-        end = max(end, start + MIN_WORD_DURATION)
-        end = min(end, start + MAX_WORD_HOLD)
+            next_start, next_end, next_text = words[i + 1]
+            projected = next_end - start
+            if projected <= MAX_CHUNK_DURATION and len(next_text) <= 12:
+                texts.append(next_text)
+                end = next_end
+                i += 1
+        chunks.append((start, end, " ".join(texts)))
+        i += 1
+
+    fixed = []
+    for idx, (start, end, text) in enumerate(chunks):
+        if idx + 1 < len(chunks):
+            end = min(end, chunks[idx + 1][0] - NEXT_CHUNK_GAP)
+        end = max(end, start + MIN_CHUNK_DURATION)
+        end = min(end, start + MAX_CHUNK_DURATION)
         fixed.append((start, end - start, text))
     return fixed
 
@@ -125,7 +225,7 @@ def make_caption_clips(main_module, chunked_ts):
     max_width = main_module.VIDEO_SIZE[0] - CAPTION_HORIZONTAL_MARGIN
 
     for start, dur, text in chunked_ts:
-        text = re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿ ]+", "", str(text)).strip()
+        text = re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\- ]+", "", str(text)).strip()
         if not text:
             continue
         image = _render_caption_image(text, font_path, max_width)
@@ -141,3 +241,4 @@ def apply_caption_style(main_module) -> None:
     main_module.clean_caption_word = clean_caption_word
     main_module.chunk_timestamps = build_caption_chunks
     main_module.generate_captions = lambda chunked_ts: make_caption_clips(main_module, chunked_ts)
+    patch_voiceover_timing(main_module)
