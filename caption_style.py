@@ -20,10 +20,10 @@ CAPTION_STROKE_WIDTH = 5
 CAPTION_MAX_WORDS = 1
 CAPTION_POSITION = ("center", "center")
 CAPTION_HORIZONTAL_MARGIN = 180
-CAPTION_SYNC_LEAD = 0.026
-MIN_WORD_DURATION = 0.16
-MAX_WORD_DURATION = 0.74
-NEXT_WORD_GAP = 0.001
+CAPTION_SYNC_LEAD = 0.0
+MIN_WORD_DURATION = 0.12
+MAX_WORD_DURATION = 0.62
+NEXT_WORD_GAP = 0.008
 SHADOW_OFFSET = (6, 6)
 SHADOW_OPACITY = 150
 SHADOW_STROKE_WIDTH = 7
@@ -107,14 +107,33 @@ def _build_speech_weighted_timings(script: str, audio_duration: float):
     return timings
 
 
-def _looks_like_low_quality_fallback(word_ts, audio_duration: float) -> bool:
-    if not word_ts or len(word_ts) < 4:
+def _script_caption_words(script: str):
+    return [clean_caption_word(token) for token in _tokenize_script(script) if clean_caption_word(token)]
+
+
+def _looks_like_low_quality_fallback(word_ts, audio_duration: float, script: str = "") -> bool:
+    """Detect MoviePy/edge-tts fallback timings and rebuild them.
+
+    On GitHub Actions, Edge TTS often does not emit WordBoundary events for
+    Turkish voices. main.create_voiceover then creates artificial timings by
+    spreading raw script.split() words across the full audio. Those timings are
+    the reason subtitles look late/early and linger incorrectly, so treat them
+    as low quality and replace them with our Turkish speech-weighted timings.
+    """
+    if not word_ts or len(word_ts) < 4 or audio_duration <= 0:
         return True
+
     starts = [float(x[0]) for x in word_ts]
     durs = [float(x[1]) for x in word_ts]
     span = max(starts) + max(durs[-1], MIN_WORD_DURATION) - min(starts)
-    avg_dur = sum(durs) / max(len(durs), 1)
-    return span > audio_duration * 0.82 and avg_dur < 0.24
+    script_words = _script_caption_words(script)
+    ts_words = [clean_caption_word(x[2]) for x in word_ts if clean_caption_word(x[2])]
+    same_count = bool(script_words) and abs(len(script_words) - len(ts_words)) <= 2
+    starts_near_zero = min(starts) <= 0.08
+    fills_audio = span >= audio_duration * 0.68
+    artificial_full_span = same_count and starts_near_zero and fills_audio
+    very_short_avg = (sum(durs) / max(len(durs), 1)) < 0.24
+    return artificial_full_span or (fills_audio and very_short_avg)
 
 
 def patch_voiceover_timing(main_module) -> None:
@@ -130,8 +149,8 @@ def patch_voiceover_timing(main_module) -> None:
             clip.close()
         except Exception:
             audio_duration = 0.0
-        if audio_duration > 0 and _looks_like_low_quality_fallback(word_ts, audio_duration):
-            main_module.logger.warning("Using speech-weighted Turkish subtitle timing fallback.")
+        if audio_duration > 0 and _looks_like_low_quality_fallback(word_ts, audio_duration, script):
+            main_module.logger.warning("Using forced Turkish speech-weighted subtitle timing fallback.")
             word_ts = _build_speech_weighted_timings(script, audio_duration)
         else:
             word_ts = [(s, d, clean_caption_word(w)) for s, d, w in word_ts if clean_caption_word(w)]
@@ -180,8 +199,16 @@ def _render_caption_image(text: str, font_path: str, max_width: int):
     font = _load_font(font_path)
     probe = Image.new("RGBA", (max_width, 260), (0, 0, 0, 0))
     draw = ImageDraw.Draw(probe)
-    bbox = draw.textbbox((0, 0), text, font=font, stroke_width=max(SHADOW_STROKE_WIDTH, CAPTION_STROKE_WIDTH))
-    text_w = min(max_width - 2 * PADDING_X, max(1, bbox[2] - bbox[0]))
+    stroke_probe = max(SHADOW_STROKE_WIDTH, CAPTION_STROKE_WIDTH)
+    bbox = draw.textbbox((0, 0), text, font=font, stroke_width=stroke_probe)
+
+    # Never clip long Turkish words; shrink slightly until the word fits.
+    available = max_width - 2 * PADDING_X - SHADOW_OFFSET[0] - 8
+    while bbox[2] - bbox[0] > available and getattr(font, "size", CAPTION_FONT_SIZE) > 38:
+        font = ImageFont.truetype(getattr(font, "path", "DejaVuSans-Bold.ttf"), getattr(font, "size", CAPTION_FONT_SIZE) - 4)
+        bbox = draw.textbbox((0, 0), text, font=font, stroke_width=stroke_probe)
+
+    text_w = max(1, bbox[2] - bbox[0])
     text_h = max(1, bbox[3] - bbox[1])
     img_w = min(max_width, text_w + 2 * PADDING_X + SHADOW_OFFSET[0])
     img_h = text_h + 2 * PADDING_Y + SHADOW_OFFSET[1]
