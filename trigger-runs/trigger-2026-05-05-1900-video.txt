@@ -1,0 +1,2 @@
+Trigger new Turkish Shorts video generation.
+Requested by user from ChatGPT project.
