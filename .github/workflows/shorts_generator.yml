@@ -45,6 +45,69 @@ jobs:
           echo "YOUTUBE_REFRESH_TOKEN=${YOUTUBE_REFRESH_TOKEN}" >> .env
           echo "${CLIENT_SECRETS_JSON}" > client_secrets.json
 
+      - name: Improve Turkish script quality rules
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('turkish_upload_runner.py')
+          s = p.read_text(encoding='utf-8')
+          old_prompt = '''def build_prompt(niche: str) -> str:
+              return f"""
+          Sen viral YouTube Shorts metinleri yazan bir uzmansın.
+          Konu: {niche}
+          Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
+          1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı.
+          2. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
+          3. Son cümle güçlü bir call-to-action içersin.
+          4. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
+          Yalnızca metni döndür.
+          """.strip()
+          '''
+          new_prompt = '''def build_prompt(niche: str) -> str:
+              return f"""
+          Sen Türkçe YouTube Shorts için güçlü ama düzgün anlatımlı metin yazan bir editörsün.
+          Konu: {niche}
+
+          30-40 saniyelik, 55-75 kelimelik, tek parça TÜRKÇE konuşma metni yaz.
+
+          Zorunlu yapı:
+          1. İlk cümle doğal bir merak cümlesi olsun; boş clickbait kullanma.
+          2. Metin tek ana fikre bağlı ilerlesin; rastgele ülke, olay veya bilgi listesi gibi sıralama yapma.
+          3. Her cümle bir önceki cümleye anlamca bağlansın; ani konu atlaması olmasın.
+          4. Bir iddia söyledikten sonra hemen bağlamını ver; havada kalan soru bırakma.
+          5. Son cümle kısa ve doğal bir yorum ya da takip çağrısı olsun.
+
+          Kesin yasaklar:
+          - Klişe iki noktalı girişler kullanma.
+          - Kendi içinde çelişen soru cümleleri kurma.
+          - Başlık gibi başlayıp cümleye bağlanmayan ifadeler kullanma.
+          - Aynı metinde üçten fazla soru işareti kullanma.
+          - Almanya, Japonya, İngiltere gibi kopuk ülke listeleri yapma.
+          - Kesin sayı, ceza, yasa veya tıbbi iddia uydurma.
+          - Anlatım bozukluğu, düşük cümle, çeviri kokan ifade ve gereksiz iki nokta kullanımı yapma.
+          - Emoji, sahne yönü, markdown, başlık veya açıklama yazma.
+
+          Sadece konuşulacak metni döndür.
+          """.strip()
+          '''
+          if old_prompt in s:
+              s = s.replace(old_prompt, new_prompt, 1)
+          old_accept = '''if 52 <= words <= 82:
+                          return script'''
+          new_accept = '''bad = script.count(':') > 1 or script.count('?') > 3 or 'Hayatınızı değiştirecek:' in script
+                      country_hits = sum(1 for w in ['almanya', 'japonya', 'ingiltere', 'arizona', 'türkiye'] if w in script.lower())
+                      if country_hits > 3:
+                          bad = True
+                      if 52 <= words <= 82 and not bad:
+                          return script
+                      if bad:
+                          main.logger.warning('Script rejected by grammar and logic guard')'''
+          if old_accept in s:
+              s = s.replace(old_accept, new_accept, 1)
+          s = s.replace('"prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback"', '"prompt_style": "story_arc_grammar_logic_guard_with_curated_fallback"')
+          p.write_text(s, encoding='utf-8')
+          PY
+
       - name: 🤖 Botu çalıştır
         id: run_bot
         continue-on-error: true
