@@ -29,6 +29,7 @@ OUTPUT_PREVIEW_GIF = OUTPUT_DIR / "latest_preview.gif"
 VIDEO_COMPAT_REPORT = OUTPUT_DIR / "video_compat_report.txt"
 RUNTIME_DIR = Path("runtime-status")
 RUNTIME_META = RUNTIME_DIR / "video-meta.json"
+VOICE_CANDIDATE_DIR = Path("voice-candidates")
 
 MIN_TARGET_DURATION = 30.0
 MAX_TARGET_DURATION = 40.0
@@ -113,20 +114,67 @@ def generate_script(niche: str) -> str:
     return script
 
 
+def _reset_voice_candidates() -> None:
+    VOICE_CANDIDATE_DIR.mkdir(parents=True, exist_ok=True)
+    for old_file in VOICE_CANDIDATE_DIR.glob("voiceover_candidate_*.mp3"):
+        try:
+            old_file.unlink()
+        except OSError:
+            pass
+
+
+def _copy_selected_voiceover(candidate_audio: str) -> str:
+    """Freeze the selected candidate into the canonical voiceover.mp3 path.
+
+    main.create_voiceover always writes the same voiceover.mp3 file. During
+    candidate selection that file gets overwritten several times. Without this
+    copy-back step, the chosen script/timestamps can point to a different audio
+    take. That creates the exact symptom: voice says one script, subtitles show
+    another script.
+    """
+    target = Path(main.VOICEOVER_FILE)
+    source = Path(candidate_audio)
+    if source.resolve() != target.resolve():
+        shutil.copyfile(source, target)
+    return str(target)
+
+
 async def choose_best_timed_script(niche: str):
+    _reset_voice_candidates()
     candidates = []
-    for _ in range(6):
+
+    for idx in range(6):
         script = generate_script(niche)
         audio, word_ts = await main.create_voiceover(script)
-        clip = main.AudioFileClip(audio)
+
+        candidate_audio = VOICE_CANDIDATE_DIR / f"voiceover_candidate_{idx:02d}.mp3"
+        shutil.copyfile(audio, candidate_audio)
+
+        clip = main.AudioFileClip(str(candidate_audio))
         duration = float(clip.duration)
         clip.close()
-        candidates.append((abs(TARGET_DURATION - duration), script, audio, word_ts, duration))
+
+        candidate = (abs(TARGET_DURATION - duration), script, str(candidate_audio), word_ts, duration)
+        candidates.append(candidate)
+        main.logger.info(
+            "Voice candidate %02d: duration=%.2fs words=%d file=%s",
+            idx,
+            duration,
+            len(script.split()),
+            candidate_audio,
+        )
+
         if MIN_TARGET_DURATION <= duration <= MAX_TARGET_DURATION:
-            return script, audio, word_ts, duration
+            _, selected_script, selected_audio, selected_ts, selected_duration = candidate
+            selected_audio = _copy_selected_voiceover(selected_audio)
+            main.logger.info("Selected voice candidate %02d without later overwrite.", idx)
+            return selected_script, selected_audio, selected_ts, selected_duration
+
     candidates.sort(key=lambda row: row[0])
-    _, script, audio, word_ts, duration = candidates[0]
-    return script, audio, word_ts, duration
+    _, selected_script, selected_audio, selected_ts, selected_duration = candidates[0]
+    selected_audio = _copy_selected_voiceover(selected_audio)
+    main.logger.info("Selected closest voice candidate and restored matching audio file.")
+    return selected_script, selected_audio, selected_ts, selected_duration
 
 
 def title_and_thumbnail(niche: str, script: str):
