@@ -45,73 +45,169 @@ jobs:
           echo "YOUTUBE_REFRESH_TOKEN=${YOUTUBE_REFRESH_TOKEN}" >> .env
           echo "${CLIENT_SECRETS_JSON}" > client_secrets.json
 
-      - name: Improve Turkish script quality rules
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p = Path('turkish_upload_runner.py')
-          s = p.read_text(encoding='utf-8')
-          old_prompt = '''def build_prompt(niche: str) -> str:
-              return f"""
-          Sen viral YouTube Shorts metinleri yazan bir uzmansın.
-          Konu: {niche}
-          Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
-          1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı.
-          2. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
-          3. Son cümle güçlü bir call-to-action içersin.
-          4. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
-          Yalnızca metni döndür.
-          """.strip()
-          '''
-          new_prompt = '''def build_prompt(niche: str) -> str:
-              return f"""
-          Sen Türkçe YouTube Shorts için güçlü ama düzgün anlatımlı metin yazan bir editörsün.
-          Konu: {niche}
-
-          30-40 saniyelik, 55-75 kelimelik, tek parça TÜRKÇE konuşma metni yaz.
-
-          Zorunlu yapı:
-          1. İlk cümle doğal bir merak cümlesi olsun; boş clickbait kullanma.
-          2. Metin tek ana fikre bağlı ilerlesin; rastgele ülke, olay veya bilgi listesi gibi sıralama yapma.
-          3. Her cümle bir önceki cümleye anlamca bağlansın; ani konu atlaması olmasın.
-          4. Bir iddia söyledikten sonra hemen bağlamını ver; havada kalan soru bırakma.
-          5. Son cümle kısa ve doğal bir yorum ya da takip çağrısı olsun.
-
-          Kesin yasaklar:
-          - Klişe iki noktalı girişler kullanma.
-          - Kendi içinde çelişen soru cümleleri kurma.
-          - Başlık gibi başlayıp cümleye bağlanmayan ifadeler kullanma.
-          - Aynı metinde üçten fazla soru işareti kullanma.
-          - Almanya, Japonya, İngiltere gibi kopuk ülke listeleri yapma.
-          - Kesin sayı, ceza, yasa veya tıbbi iddia uydurma.
-          - Anlatım bozukluğu, düşük cümle, çeviri kokan ifade ve gereksiz iki nokta kullanımı yapma.
-          - Emoji, sahne yönü, markdown, başlık veya açıklama yazma.
-
-          Sadece konuşulacak metni döndür.
-          """.strip()
-          '''
-          if old_prompt in s:
-              s = s.replace(old_prompt, new_prompt, 1)
-          old_accept = '''if 52 <= words <= 82:
-                          return script'''
-          new_accept = '''bad = script.count(':') > 1 or script.count('?') > 3 or 'Hayatınızı değiştirecek:' in script
-                      country_hits = sum(1 for w in ['almanya', 'japonya', 'ingiltere', 'arizona', 'türkiye'] if w in script.lower())
-                      if country_hits > 3:
-                          bad = True
-                      if 52 <= words <= 82 and not bad:
-                          return script
-                      if bad:
-                          main.logger.warning('Script rejected by grammar and logic guard')'''
-          if old_accept in s:
-              s = s.replace(old_accept, new_accept, 1)
-          s = s.replace('"prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback"', '"prompt_style": "story_arc_grammar_logic_guard_with_curated_fallback"')
-          p.write_text(s, encoding='utf-8')
-          PY
-
       - name: 🤖 Botu çalıştır
         id: run_bot
         continue-on-error: true
-        run: python turkish_upload_runner.py
+        run: |
+          python - <<'PY'
+          import asyncio
+          import random
+          import re
+          import turkish_upload_runner as runner
+
+          SCENARIOS = {
+              "Şok Edici Psikolojik Gerçekler": ["tanıdıklık yanılgısı", "zihnin boşluk doldurması", "karar yorgunluğu", "sessiz sosyal baskı"],
+              "Bilinmeyen İnsan Davranışları": ["kalabalıkta sorumluluk dağılması", "erteleyerek öncelik gösterme", "ilk izlenim tuzağı", "taklit davranışları"],
+              "Çözülememiş Tarihi Gizemler": ["unutulmuş kayıtlar", "kaybolan topluluklar", "okunamayan semboller", "yarım kalan keşifler"],
+              "Uzayın Korkunç Sırları": ["görünmeyen evren", "zamanın bükülmesi", "yıldızların ölümü", "kozmik sessizlik"],
+              "Günlük Hayatta Stoacı Felsefe": ["tepkiyi seçmek", "kontrol ayrımı", "küçük sabır pratiği", "iç sakinlik"],
+              "Başarı Psikolojisi ve Motivasyon": ["tekrarın gücü", "görünmeyen disiplin", "erken vazgeçme", "küçük alışkanlıklar"],
+              "Teknolojinin Karanlık Yüzü": ["dikkat ekonomisi", "veri izleri", "bildirim bağımlılığı", "algoritmik yönlendirme"],
+              "Mitoloji ve Efsanelerin Kökenleri": ["ortak insan korkuları", "kahraman yolculuğu", "doğaya anlam verme", "yasak bilgi efsaneleri"],
+              "İnanılmaz Bilimsel Keşifler": ["hatalardan doğan keşifler", "görünmeyeni gösteren araçlar", "merakın etkisi", "eski soruya yeni bakış"],
+              "Tuhaf ve Enteresan Yasalar": ["kuralların arkasındaki hikaye", "kültür farkı", "şehir efsanesi sanılan kurallar", "günlük davranışların anlamı"],
+          }
+
+          CURATED = {
+              "Şok Edici Psikolojik Gerçekler": [
+                  "Beyninin bazen gerçeği değil, tanıdık olanı seçtiğini biliyor musun? Bir cümleyi ne kadar sık duyarsan, ona inanman o kadar kolaylaşır. Bu yüzden tekrar eden fikirler zihninde güçlü görünür. Ama tanıdık olmak doğru olmak demek değildir. Bugün bir şeye inanmadan önce kendine şunu sor: Bunu gerçekten biliyor muyum, yoksa sadece çok mu duydum?",
+                  "Zihnin eksik bilgiyi sessizce tamamlar. Kısa bir mesajı, bir yüz ifadesini veya tek bir bakışı görür ve hemen hikaye kurar. Çoğu yanlış anlaşılma olaydan değil, zihnin eklediği anlamdan büyür. Bu yüzden hızlı karar vermeden önce dur. Belki gördüğün şey gerçek değil, beyninin boşluğu doldurma şeklidir."
+              ],
+              "Bilinmeyen İnsan Davranışları": [
+                  "İnsanların kalabalıkta daha az yardım ettiğini fark ettin mi? Çünkü herkes sorumluluğu bir başkasının alacağını düşünür. Etrafta insan sayısı arttıkça ilk adımı atmak daha zorlaşır. Ama sessizliği bozan kişi çoğu zaman olayı değiştirir. Bir gün böyle bir an yaşarsan kalabalığa değil, kendi kararına bak. Bazen tek hareket, herkesin beklediği cesareti başlatır."
+              ],
+              "Çözülememiş Tarihi Gizemler": [
+                  "Geçmiş her zaman kitaplarda yazdığı kadar net değildir. Bazı yerleşimler bir anda sessizleşir, bazı yazıtlar hâlâ tam okunamaz, bazı yolculukların sonu kayıtlarda kaybolur. Bu gizemleri ilginç yapan şey sadece cevap eksikliği değildir. Her biri bize insanlığın ne kadar kırılgan bir hafızaya sahip olduğunu gösterir. Belki de tarih, eksik sayfaları hâlâ aranan büyük bir arşivdir."
+              ],
+              "Uzayın Korkunç Sırları": [
+                  "Uzay boş gibi görünür ama aslında akıl almaz güçlerle doludur. Bir yıldız doğar, milyonlarca yıl parlar ve sonunda çevresindeki her şeyi değiştirecek bir patlamayla yok olabilir. Biz ise bu dev sahnenin küçük bir köşesinde yaşıyoruz. Korkutucu olan sadece uzaklık değil, ne kadar az şey bildiğimizdir. Gökyüzüne baktığında yalnızca yıldız görme; orada cevabını bekleyen dev sorular var."
+              ],
+              "Günlük Hayatta Stoacı Felsefe": [
+                  "Seni yoran şey çoğu zaman olayın kendisi değil, ona verdiğin anlamdır. Kontrol edemediğin şeyi zorladıkça zihnin daha çok yorulur. Ama kendi tepkini seçtiğinde güç geri gelir. Bugün biri seni sinirlendirirse hemen cevap verme. Önce dur, nefes al ve şunu sor: Bu benim kontrolümde mi? Cevap hayırsa, enerjini geri al."
+              ],
+              "Başarı Psikolojisi ve Motivasyon": [
+                  "Başarının en gizli tarafı motivasyon değil, tekrar gücüdür. Motivasyon gelir ve gider ama küçük alışkanlıklar sessizce karakterini değiştirir. Her gün biraz daha iyi olmak, uzun vadede büyük fark yaratır. İnsanlar sonucu görünce şans sanır; görünmeyen yerde ise yüzlerce küçük seçim vardır. Bugün büyük bir plan yapma. Sadece yarın da tekrarlayabileceğin küçük bir adım at."
+              ],
+              "Teknolojinin Karanlık Yüzü": [
+                  "Telefonun seni dinleyip dinlemediği kadar önemli bir soru daha var: Sen ona ne kadar veri veriyorsun? Her tıklama, izleme süren ve kaydırmadan geçtiğin içerik bir davranış izine dönüşür. Teknoloji seni tanımak zorunda değildir; bir sonraki hareketini tahmin etmesi yeterlidir. En korkutucu taraf kameralar değil, alışkanlıklarının ölçülmesidir. Bugün bir uygulamayı açmadan önce sor: Bunu ben mi seçtim, bana mı seçtirildi?"
+              ],
+              "Mitoloji ve Efsanelerin Kökenleri": [
+                  "Mitolojiler sadece eski masallar değildir. İnsanların korkularını, umutlarını ve doğayı anlama çabasını taşır. Gök gürültüsü bir tanrının öfkesi, fırtına ise bilinmeyen bir gücün işareti gibi anlatılırdı. Çünkü insan, anlamadığı şeye hikaye vererek dayanır. Bugün de aynı şeyi farklı kelimelerle yapıyoruz. Belki efsaneler geçmişin kalıntısı değil, insan zihninin aynasıdır."
+              ],
+              "İnanılmaz Bilimsel Keşifler": [
+                  "Bilimde büyük keşifler bazen bir hata gibi başlar. Beklenmeyen bir sonuç, yanlış görünen bir iz veya tutmayan bir deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok fikir, birinin garip görünen bir ayrıntıyı görmezden gelmemesiyle gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, keşfin ilk adımıdır."
+              ],
+              "Tuhaf ve Enteresan Yasalar": [
+                  "Dünyada bazı kurallar ilk duyduğunda şaka gibi gelir. Ama çoğunun arkasında unutulmuş bir olay, eski bir alışkanlık veya toplumun çözmeye çalıştığı gerçek bir sorun vardır. Bir yerde sessizlik, başka bir yerde hayvanlar, başka bir yerde kamusal düzen yasa konusu olabilir. Bu kurallar bize sadece hukuku değil, insanların neye önem verdiğini de gösterir. Garip görünen bir kural bazen bir toplumun hafızasını taşır."
+              ],
+          }
+
+          def prompt_for(niche, angle):
+              return f"""
+          Türkçe YouTube Shorts için tek parça konuşma metni yaz.
+          Konu: {niche}
+          Özgün açı: {angle}
+          Süre hedefi: 30-40 saniye.
+          Kelime hedefi: 55-75 kelime.
+
+          Kurallar:
+          - Tek ana fikir üzerinden ilerle.
+          - Cümleler birbirine anlamca bağlı olsun.
+          - Rastgele ülke, olay veya bilgi listesi yapma.
+          - Boş clickbait, çeviri kokan ifade, düşük cümle ve anlatım bozukluğu kullanma.
+          - Kesin sayı, ceza, yasa veya tıbbi iddia uydurma.
+          - En fazla iki soru cümlesi kullan.
+          - Son cümle doğal bir yorum veya takip çağrısı olsun.
+          - Sadece konuşulacak metni yaz.
+          """.strip()
+
+          def clean(text):
+              text = re.sub(r"[*#_`>\[\]{}]", "", text or "")
+              text = re.sub(r"(?i)^(senaryo|metin|cevap|script|text|answer)\s*:\s*", "", text.strip())
+              return re.sub(r"\s+", " ", text).strip().strip('"').strip("'")
+
+          def issues(text, niche):
+              t = clean(text)
+              low = t.lower()
+              words = t.split()
+              out = []
+              if len(words) < 50 or len(words) > 86:
+                  out.append(f"word_count={len(words)}")
+              if t.count(":") > 1:
+                  out.append("too_many_colons")
+              if t.count("?") > 2:
+                  out.append("too_many_questions")
+              if re.search(r"^[^.!?]{0,28}:\s*", t):
+                  out.append("headline_colon_opening")
+              if re.search(r"\b(yok|değil)\b.{0,35}\b(ama|fakat)\b.{0,45}\?", low):
+                  out.append("contradictory_question")
+              if any(x in low for x in ["vergi suçu", "oburluk yasası", "hayatınızı değiştirecek:"]):
+                  out.append("known_bad_phrase")
+              countries = ["almanya", "japonya", "ingiltere", "amerika", "arizona", "türkiye"]
+              if sum(1 for c in countries if c in low) > 3:
+                  out.append("random_country_list")
+              sentence_count = len([s for s in re.split(r"[.!?]+", t) if s.strip()])
+              if sentence_count < 5:
+                  out.append("too_few_sentences")
+              return out
+
+          def fallback_script(niche):
+              script = clean(random.choice(CURATED.get(niche) or sum(CURATED.values(), [])))
+              runner.main.logger.warning("Using curated original scenario fallback for niche: %s", niche)
+              return script
+
+          def generate_script(niche):
+              best = ""
+              best_count = 999
+              try:
+                  from g4f.client import Client
+                  client = Client()
+              except Exception as exc:
+                  runner.main.logger.warning("generator unavailable, using curated fallback: %s", exc)
+                  return fallback_script(niche)
+
+              for attempt in range(7):
+                  angle = random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
+                  try:
+                      response = client.chat.completions.create(
+                          model="gpt-4",
+                          messages=[{"role": "user", "content": prompt_for(niche, angle)}],
+                          timeout=60,
+                      )
+                      script = clean(response.choices[0].message.content)
+                      bad = issues(script, niche)
+                      if len(bad) < best_count:
+                          best = script
+                          best_count = len(bad)
+                      if not bad:
+                          runner.main.logger.info("Accepted original scenario script after %d try: %s", attempt + 1, angle)
+                          return script
+                      runner.main.logger.warning("Rejected weak script; regenerating. issues=%s angle=%s", ",".join(bad), angle)
+                  except Exception as exc:
+                      runner.main.logger.warning("Script generation try %d failed; regenerating/fallback: %s", attempt + 1, exc)
+
+              if best and best_count <= 1:
+                  runner.main.logger.warning("Using closest script after regeneration guard. issues=%d", best_count)
+                  return best
+              return fallback_script(niche)
+
+          original_write_meta = runner.write_meta
+          def write_meta(meta):
+              meta["prompt_style"] = "regenerate_until_clean_original_scenario_guard"
+              meta["script_quality_guard"] = {
+                  "regenerates_bad_online_scripts": True,
+                  "uses_original_scenario_angles": True,
+                  "rejects_random_lists": True,
+                  "rejects_contradictory_questions": True,
+                  "uses_curated_fallback_when_needed": True,
+              }
+              original_write_meta(meta)
+
+          runner.generate_script = generate_script
+          runner.fallback_script = fallback_script
+          runner.write_meta = write_meta
+          asyncio.run(runner.run())
+          PY
 
       - name: 📝 Durum dosyası oluştur
         if: always()
