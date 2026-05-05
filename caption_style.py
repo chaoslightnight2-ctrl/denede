@@ -1,19 +1,22 @@
 """Caption styling and timing patch for Shorts.
 
-Goal: captions must feel naturally synced with the voice while staying readable.
-This version uses Edge TTS word-starts as the source of truth and adds a subtle
-shadow layer behind each subtitle for better contrast:
-- larger centered font
+Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
+Actions. This makes dependency installation much faster while keeping:
+- centered captions
+- white text with black stroke and soft shadow
+- no punctuation
 - one current spoken word per caption
-- no punctuation in captions
-- starts very slightly early for human perception
-- stays visible until just before the next spoken word
-- white text + black stroke + soft black shadow
+- Edge TTS word-start timing with a small perceptual lead
 """
 
 from __future__ import annotations
 
 import re
+from pathlib import Path
+
+import numpy as np
+from moviepy.editor import ImageClip
+from PIL import Image, ImageDraw, ImageFont
 
 CAPTION_FONT_SIZE = 56
 CAPTION_STROKE_WIDTH = 4
@@ -25,24 +28,17 @@ MIN_WORD_DURATION = 0.16
 MAX_WORD_HOLD = 0.78
 NEXT_WORD_GAP = 0.006
 SHADOW_OFFSET = (5, 5)
-SHADOW_OPACITY = 0.55
+SHADOW_OPACITY = 140
 SHADOW_STROKE_WIDTH = 6
+PADDING_X = 36
+PADDING_Y = 22
 
 
 def clean_caption_word(word: str) -> str:
-    # Turkish videos do not need apostrophes; remove punctuation and symbols.
     return re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿ]+", "", str(word)).strip()
 
 
 def build_caption_chunks(word_ts):
-    """Build one-word captions using next-word timing.
-
-    Edge TTS gives a start time for each spoken word. The most stable subtitle
-    timing is:
-      caption_start = word_start - tiny lead
-      caption_end   = next_word_start - tiny gap
-    This avoids both late subtitles and future words appearing too early.
-    """
     words = []
     for start, dur, word in word_ts or []:
         clean = clean_caption_word(word)
@@ -64,45 +60,65 @@ def build_caption_chunks(word_ts):
             end = min(natural_end, next_start - NEXT_WORD_GAP)
         else:
             end = natural_end
-
         end = max(end, start + MIN_WORD_DURATION)
         end = min(end, start + MAX_WORD_HOLD)
         fixed.append((start, end - start, text))
     return fixed
 
 
-def _caption_textclip(main_module, text: str, font: str, max_width: int, *, shadow: bool):
-    if shadow:
-        return main_module.TextClip(
-            text,
-            fontsize=CAPTION_FONT_SIZE,
-            color="black",
-            font=font,
-            stroke_color="black",
-            stroke_width=SHADOW_STROKE_WIDTH,
-            method="caption",
-            size=(max_width, None),
-            align="center",
-        ).set_opacity(SHADOW_OPACITY)
+def _load_font(font_path: str):
+    try:
+        if font_path and Path(font_path).exists():
+            return ImageFont.truetype(font_path, CAPTION_FONT_SIZE)
+    except Exception:
+        pass
+    try:
+        return ImageFont.truetype("DejaVuSans-Bold.ttf", CAPTION_FONT_SIZE)
+    except Exception:
+        return ImageFont.load_default()
 
-    return main_module.TextClip(
+
+def _render_caption_image(text: str, font_path: str, max_width: int):
+    font = _load_font(font_path)
+    probe = Image.new("RGBA", (max_width, 220), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(probe)
+    bbox = draw.textbbox((0, 0), text, font=font, stroke_width=max(SHADOW_STROKE_WIDTH, CAPTION_STROKE_WIDTH))
+    text_w = min(max_width - 2 * PADDING_X, max(1, bbox[2] - bbox[0]))
+    text_h = max(1, bbox[3] - bbox[1])
+    img_w = min(max_width, text_w + 2 * PADDING_X + SHADOW_OFFSET[0])
+    img_h = text_h + 2 * PADDING_Y + SHADOW_OFFSET[1]
+
+    image = Image.new("RGBA", (img_w, img_h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(image)
+    x = img_w // 2
+    y = PADDING_Y - bbox[1]
+
+    draw.text(
+        (x + SHADOW_OFFSET[0], y + SHADOW_OFFSET[1]),
         text,
-        fontsize=CAPTION_FONT_SIZE,
-        color="white",
         font=font,
-        stroke_color="black",
-        stroke_width=CAPTION_STROKE_WIDTH,
-        method="caption",
-        size=(max_width, None),
-        align="center",
+        anchor="ma",
+        fill=(0, 0, 0, SHADOW_OPACITY),
+        stroke_width=SHADOW_STROKE_WIDTH,
+        stroke_fill=(0, 0, 0, SHADOW_OPACITY),
     )
+    draw.text(
+        (x, y),
+        text,
+        font=font,
+        anchor="ma",
+        fill=(255, 255, 255, 255),
+        stroke_width=CAPTION_STROKE_WIDTH,
+        stroke_fill=(0, 0, 0, 255),
+    )
+    return np.array(image)
 
 
 def make_caption_clips(main_module, chunked_ts):
     if not chunked_ts:
         return []
 
-    font = main_module.ensure_font()
+    font_path = main_module.ensure_font()
     clips = []
     max_width = main_module.VIDEO_SIZE[0] - CAPTION_HORIZONTAL_MARGIN
 
@@ -110,24 +126,9 @@ def make_caption_clips(main_module, chunked_ts):
         text = re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿ ]+", "", str(text)).strip()
         if not text:
             continue
-
-        shadow_position = (CAPTION_POSITION[0], CAPTION_POSITION[1])
-        if CAPTION_POSITION == ("center", "center"):
-            shadow_position = ("center", main_module.VIDEO_SIZE[1] // 2 + SHADOW_OFFSET[1])
-
-        shadow_clip = (
-            _caption_textclip(main_module, text, font, max_width, shadow=True)
-            .set_start(start)
-            .set_duration(dur)
-            .set_position(shadow_position)
-        )
-        text_clip = (
-            _caption_textclip(main_module, text, font, max_width, shadow=False)
-            .set_start(start)
-            .set_duration(dur)
-            .set_position(CAPTION_POSITION)
-        )
-        clips.extend([shadow_clip, text_clip])
+        image = _render_caption_image(text, font_path, max_width)
+        clip = ImageClip(image, transparent=True).set_start(start).set_duration(dur).set_position(CAPTION_POSITION)
+        clips.append(clip)
     return clips
 
 
