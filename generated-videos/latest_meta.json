@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Tuhaf ve Enteresan Yasalar",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "forced_turkish_speech_weighted_one_word_tight"
   },
-  "title": "Peki, tüm dünya mitolojileri aynı temel hikayeyi anlatıyor, biliyor musunuz #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 31.46,
+  "title": "Peki ya size söylesem, Türkiye'de çikolata yemek yasak #shorts",
+  "thumbnail_text": "BU YASA GERÇEK",
+  "duration_seconds": 36.26,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "yasalar",
+    "ilginc",
+    "dunya"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "court law",
+    "judge gavel",
+    "old documents",
+    "city street rules",
+    "law books cinematic"
   ],
-  "script": "Peki, tüm dünya mitolojileri aynı temel hikayeyi anlatıyor, biliyor musunuz? Joseph Campbell, 'kahraman yolculuğu' adlı ortak yapıyı keşfetti. Jung, bunların kolektif bilinçaltından geldiğini söyledi. Grek, Hindu ve Yerli Amerikan mitolojilerinde aynı temalar: doğum, ölüm, yeniden doğuş. O zaman bu benzerlikler sadece tesadüf mü, yoksa insanlığın ortak mirası mı? Düşünün ve yorumlara yazın!",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Peki ya size söylesem, Türkiye'de çikolata yemek yasak? Gerçekten! 1920'lerde çikolata \"ağır yiyecek\" sayılıp satılması yasaklanmıştı. Hatta evlilik yasaşı da vardı, birçok şehirde belirli saatlerden sonra evlenmek yasaktı. İnanılmaz değil mi? Peki ya hayvanlarımız için de yasalar var: Köpeğiniz evde böğürtüyse, komşunuz sizi mahkemeye verebilir! Bu tuhaf yasaların hepsi gerçek. Daha fazlası için takipte kal!",
+  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
@@ -47,5 +47,5 @@
   "compat_report_path": "generated-videos/video_compat_report.txt",
   "video_url": null,
   "upload_status": "failed",
-  "upload_error": "<HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">"
+  "upload_error": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
 }
