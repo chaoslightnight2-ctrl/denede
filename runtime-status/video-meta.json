@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "old_general_viral_turkish",
-  "niche": "Şok Edici Psikolojik Gerçekler",
+  "niche": "Çözülememiş Tarihi Gizemler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "speech_weighted_turkish_fallback_one_word_tight"
   },
-  "title": "Beyniniz sizi sürekli kandırıyor #shorts",
-  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
-  "duration_seconds": 29.11,
+  "title": "1587'de 115 kişi kayboldu #shorts",
+  "thumbnail_text": "TARİHTE GİZLİ KALDI",
+  "duration_seconds": 28.68,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "psikoloji",
-    "beyin",
-    "insanpsikolojisi"
+    "tarih",
+    "gizem",
+    "tarihgizemleri"
   ],
   "background_queries": [
-    "human brain psychology",
-    "thinking person dark",
-    "mind concept",
-    "neural network abstract",
-    "person thinking cinematic"
+    "ancient ruins",
+    "old manuscript",
+    "archaeology",
+    "mysterious temple",
+    "ancient history cinematic"
   ],
-  "script": "Beyniniz sizi sürekli kandırıyor! Gerçek şu: Kararlarınızın çoğu bilinçaltınızdan kaynaklanıyor. Korkularınızın büyük çoğunluğu gerçek değil, sadece beyninizin yarattığı hayaletler. Alışkanlıklarınız otomatik pilotta ilerlerken, duygularınız aslında kimyasal reaksiyonlarla şekilleniyor. Gerçek özgürlük, bu mekanizmaları anlamakla başlar. Peki, zihninizin perde arkasını görmek ister misiniz? Daha fazla şok edici psikolojik gerçek için takibe kalın!",
-  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "1587'de 115 kişi kayboldu! Roanoke Adası'ndaki ilk İngiliz kolonisi neden yok oldu? Kemikler yok. Taşlar sessiz. Sadece o kelime: CROATOAN. Ne anlama geliyor? Kızılderililer mi aldı? Yoksa kendileri mi gittiler? 500 yıldır cevapsız! Tarihin bu gizemini çözmeye hazır mısın? Videoyu beğen, abone ol, çözümü ilk sen öğren!",
+  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
