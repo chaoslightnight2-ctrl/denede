@@ -48,7 +48,7 @@ jobs:
       - name: 🤖 Botu çalıştır
         id: run_bot
         continue-on-error: true
-        run: python optimized_save_runner.py
+        run: python turkish_upload_runner.py
 
       - name: 📝 Durum dosyası oluştur
         if: always()
