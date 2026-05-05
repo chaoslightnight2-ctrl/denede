@@ -1,13 +1,14 @@
-"""Caption styling and timing patch for Shorts.
+"""Caption styling, timing, and Turkish TTS patch for Shorts.
 
 Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
 Actions. Captions preserve Turkish words as-written while removing visual
-punctuation. To avoid bad-looking gaps between words, subtitles now show one
-clean word at a time again, with tighter timing.
+punctuation. Voiceover generation requests Edge TTS WordBoundary metadata so
+caption timing can use real word timings instead of a rough fallback.
 """
 
 from __future__ import annotations
 
+import os
 import re
 from pathlib import Path
 
@@ -20,16 +21,18 @@ CAPTION_STROKE_WIDTH = 5
 CAPTION_MAX_WORDS = 1
 CAPTION_POSITION = ("center", "center")
 CAPTION_HORIZONTAL_MARGIN = 180
-CAPTION_SYNC_LEAD = 0.0
-MIN_WORD_DURATION = 0.12
-MAX_WORD_DURATION = 0.62
-NEXT_WORD_GAP = 0.008
+CAPTION_SYNC_LEAD = 0.015
+MIN_WORD_DURATION = 0.10
+MAX_WORD_DURATION = 0.56
+NEXT_WORD_GAP = 0.006
 SHADOW_OFFSET = (6, 6)
 SHADOW_OPACITY = 150
 SHADOW_STROKE_WIDTH = 7
 PADDING_X = 44
 PADDING_Y = 26
 TURKISH_VOWELS = "aeıioöuüAEIİOÖUÜ"
+FORCED_TTS_RATE = "+10%"
+FORCED_TTS_PITCH = "+0Hz"
 
 
 def normalize_caption_source(text: str) -> str:
@@ -80,10 +83,10 @@ def _build_speech_weighted_timings(script: str, audio_duration: float):
     pending_pause = 0.0
     for token in tokens:
         if re.fullmatch(r"[.!?]", token):
-            pending_pause += 0.16
+            pending_pause += 0.12
             continue
         if re.fullmatch(r"[;:,]", token):
-            pending_pause += 0.07
+            pending_pause += 0.05
             continue
         clean = clean_caption_word(token)
         if clean:
@@ -112,14 +115,6 @@ def _script_caption_words(script: str):
 
 
 def _looks_like_low_quality_fallback(word_ts, audio_duration: float, script: str = "") -> bool:
-    """Detect MoviePy/edge-tts fallback timings and rebuild them.
-
-    On GitHub Actions, Edge TTS often does not emit WordBoundary events for
-    Turkish voices. main.create_voiceover then creates artificial timings by
-    spreading raw script.split() words across the full audio. Those timings are
-    the reason subtitles look late/early and linger incorrectly, so treat them
-    as low quality and replace them with our Turkish speech-weighted timings.
-    """
     if not word_ts or len(word_ts) < 4 or audio_duration <= 0:
         return True
 
@@ -132,17 +127,73 @@ def _looks_like_low_quality_fallback(word_ts, audio_duration: float, script: str
     starts_near_zero = min(starts) <= 0.08
     fills_audio = span >= audio_duration * 0.68
     artificial_full_span = same_count and starts_near_zero and fills_audio
-    very_short_avg = (sum(durs) / max(len(durs), 1)) < 0.24
+    very_short_avg = (sum(durs) / max(len(durs), 1)) < 0.20
     return artificial_full_span or (fills_audio and very_short_avg)
 
 
+async def _create_voiceover_with_word_boundary(main_module, script: str):
+    """Create Turkish voiceover with real Edge TTS WordBoundary metadata.
+
+    Newer edge-tts defaults to sentence metadata unless WordBoundary is
+    requested explicitly. The old main.create_voiceover wrapper only accepted
+    WordBoundary chunks, so it often fell back to rough artificial timings.
+    """
+    import edge_tts
+
+    voice_file = getattr(main_module, "VOICEOVER_FILE", "voiceover.mp3")
+    word_timestamps = []
+
+    kwargs = {
+        "rate": getattr(main_module, "RATE", FORCED_TTS_RATE),
+        "pitch": getattr(main_module, "PITCH", FORCED_TTS_PITCH),
+    }
+    try:
+        communicate = edge_tts.Communicate(
+            script,
+            getattr(main_module, "DEFAULT_VOICE", "tr-TR-EmelNeural"),
+            boundary="WordBoundary",
+            **kwargs,
+        )
+    except TypeError:
+        main_module.logger.warning("edge-tts boundary option unavailable; using compatibility mode.")
+        communicate = edge_tts.Communicate(
+            script,
+            getattr(main_module, "DEFAULT_VOICE", "tr-TR-EmelNeural"),
+            **kwargs,
+        )
+
+    with open(voice_file, "wb") as audio_file:
+        async for chunk in communicate.stream():
+            chunk_type = chunk.get("type")
+            if chunk_type == "audio":
+                audio_file.write(chunk["data"])
+            elif chunk_type == "WordBoundary":
+                clean = clean_caption_word(chunk.get("text", ""))
+                if clean:
+                    word_timestamps.append((chunk["offset"] / 10_000_000, chunk["duration"] / 10_000_000, clean))
+
+    if not os.path.exists(voice_file) or os.path.getsize(voice_file) == 0:
+        raise RuntimeError("Ses dosyası oluşturulamadı.")
+
+    clip = main_module.AudioFileClip(voice_file)
+    audio_duration = float(clip.duration)
+    clip.close()
+
+    if word_timestamps:
+        main_module.logger.info("Using Edge TTS WordBoundary subtitle timing: %d words.", len(word_timestamps))
+        return voice_file, word_timestamps
+
+    main_module.logger.warning("Edge TTS WordBoundary unavailable; using Turkish speech-weighted fallback.")
+    return voice_file, _build_speech_weighted_timings(script, audio_duration)
+
+
 def patch_voiceover_timing(main_module) -> None:
-    original = getattr(main_module, "create_voiceover", None)
-    if not original or getattr(original, "_caption_patch_applied", False):
+    current = getattr(main_module, "create_voiceover", None)
+    if not current or getattr(current, "_caption_patch_applied", False):
         return
 
     async def create_voiceover_with_better_timing(script: str):
-        audio_path, word_ts = await original(script)
+        audio_path, word_ts = await _create_voiceover_with_word_boundary(main_module, script)
         try:
             clip = main_module.AudioFileClip(audio_path)
             audio_duration = float(clip.duration)
@@ -150,7 +201,7 @@ def patch_voiceover_timing(main_module) -> None:
         except Exception:
             audio_duration = 0.0
         if audio_duration > 0 and _looks_like_low_quality_fallback(word_ts, audio_duration, script):
-            main_module.logger.warning("Using forced Turkish speech-weighted subtitle timing fallback.")
+            main_module.logger.warning("Using Turkish speech-weighted subtitle timing guard.")
             word_ts = _build_speech_weighted_timings(script, audio_duration)
         else:
             word_ts = [(s, d, clean_caption_word(w)) for s, d, w in word_ts if clean_caption_word(w)]
@@ -202,7 +253,6 @@ def _render_caption_image(text: str, font_path: str, max_width: int):
     stroke_probe = max(SHADOW_STROKE_WIDTH, CAPTION_STROKE_WIDTH)
     bbox = draw.textbbox((0, 0), text, font=font, stroke_width=stroke_probe)
 
-    # Never clip long Turkish words; shrink slightly until the word fits.
     available = max_width - 2 * PADDING_X - SHADOW_OFFSET[0] - 8
     while bbox[2] - bbox[0] > available and getattr(font, "size", CAPTION_FONT_SIZE) > 38:
         font = ImageFont.truetype(getattr(font, "path", "DejaVuSans-Bold.ttf"), getattr(font, "size", CAPTION_FONT_SIZE) - 4)
@@ -246,6 +296,9 @@ def make_caption_clips(main_module, chunked_ts):
 
 
 def apply_caption_style(main_module) -> None:
+    main_module.DEFAULT_VOICE = "tr-TR-EmelNeural"
+    main_module.RATE = FORCED_TTS_RATE
+    main_module.PITCH = FORCED_TTS_PITCH
     main_module.MAX_CAPTION_WORDS = CAPTION_MAX_WORDS
     main_module.FONT_SIZE = CAPTION_FONT_SIZE
     main_module.STROKE_WIDTH = CAPTION_STROKE_WIDTH
