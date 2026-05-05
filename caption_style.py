@@ -1,10 +1,11 @@
 """Caption styling and timing patch for Shorts.
 
 Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
-Actions. This version also fixes the biggest sync issue we saw in logs: Edge TTS
-sometimes returns no WordBoundary data for Turkish, so main.py falls back to a
-rough character split. Here we replace that with a speech-weighted Turkish
-fallback based on the real audio duration.
+Actions. This version fixes two issues:
+- Turkish Edge TTS sometimes has no WordBoundary data, so we rebuild subtitle
+  timing from real audio duration with Turkish speech weights.
+- Caption words can look wrong when punctuation is stripped. We normalize
+  Turkish caption text before timing/rendering, e.g. "%5'i" becomes "yüzde beş".
 """
 
 from __future__ import annotations
@@ -34,14 +35,32 @@ PADDING_Y = 26
 TURKISH_VOWELS = "aeıioöuüAEIİOÖUÜ"
 
 
+def normalize_caption_source(text: str) -> str:
+    """Only remove visual punctuation without changing spoken words.
+
+    Important: do not rewrite words semantically. The user reported that words
+    looked written wrong, not that the topic was wrong. So captions must mirror
+    the generated script as closely as possible while removing punctuation.
+    """
+    text = str(text or "")
+    text = text.replace("…", " ")
+    text = text.replace("&", " ve ")
+    text = text.replace("%", " yüzde ")
+    # Remove apostrophe markers but keep the suffix letters so words do not get
+    # cut. Example: Türkiye'de -> Türkiyede, evrenin %5'i -> evrenin yüzde 5i.
+    text = re.sub(r"['’`]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
 def clean_caption_word(word: str) -> str:
-    return re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü]+", "", str(word)).strip()
+    word = normalize_caption_source(word)
+    return re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü]+", "", word).strip()
 
 
 def _tokenize_script(script: str):
-    # Keep sentence punctuation as timing hints, but remove it from visible text.
-    tokens = re.findall(r"[A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+|[.!?;:,]", script or "")
-    return tokens
+    script = normalize_caption_source(script)
+    return re.findall(r"[A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+|[.!?;:,]", script or "")
 
 
 def _word_weight(word: str) -> float:
@@ -49,7 +68,6 @@ def _word_weight(word: str) -> float:
     if not clean:
         return 0.0
     vowels = sum(1 for ch in clean if ch in TURKISH_VOWELS)
-    # Turkish TTS duration follows syllables/vowels better than raw length.
     return max(0.75, 0.45 + vowels * 0.42 + len(clean) * 0.035)
 
 
@@ -87,9 +105,6 @@ def _build_speech_weighted_timings(script: str, audio_duration: float):
 
 
 def _looks_like_low_quality_fallback(word_ts, audio_duration: float) -> bool:
-    # In the logs Edge returned no word boundaries, and main.py generated a full
-    # coverage proportional fallback. Use our stronger Turkish fallback whenever
-    # timing density/coverage looks synthetic or too short for readable captions.
     if not word_ts:
         return True
     if len(word_ts) < 4:
@@ -119,6 +134,8 @@ def patch_voiceover_timing(main_module) -> None:
         if audio_duration > 0 and _looks_like_low_quality_fallback(word_ts, audio_duration):
             main_module.logger.warning("Using speech-weighted Turkish subtitle timing fallback.")
             word_ts = _build_speech_weighted_timings(script, audio_duration)
+        else:
+            word_ts = [(s, d, clean_caption_word(w)) for s, d, w in word_ts if clean_caption_word(w)]
         return audio_path, word_ts
 
     create_voiceover_with_better_timing._caption_patch_applied = True
@@ -146,8 +163,6 @@ def build_caption_chunks(word_ts):
         start = words[i][0]
         texts = [words[i][2]]
         end = words[i][1]
-        # Group two short neighbouring words. This reads better and hides tiny
-        # artificial timing errors, while still staying close to the voice.
         if i + 1 < len(words):
             next_start, next_end, next_text = words[i + 1]
             projected = next_end - start
@@ -225,6 +240,7 @@ def make_caption_clips(main_module, chunked_ts):
     max_width = main_module.VIDEO_SIZE[0] - CAPTION_HORIZONTAL_MARGIN
 
     for start, dur, text in chunked_ts:
+        text = normalize_caption_source(text)
         text = re.sub(r"[^A-Za-z0-9\-À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\- ]+", "", str(text)).strip()
         if not text:
             continue
