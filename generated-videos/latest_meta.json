@@ -2,8 +2,8 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "old_general_viral_turkish",
-  "niche": "Çözülememiş Tarihi Gizemler",
+  "prompt_style": "general_viral_turkish_quality_guard",
+  "niche": "Mitoloji ve Efsanelerin Kökenleri",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -11,11 +11,11 @@
     "position": "center",
     "punctuation_removed": true,
     "spaces_removed_inside_caption_word": true,
-    "timing": "speech_weighted_turkish_fallback_one_word_tight"
+    "timing": "forced_turkish_speech_weighted_one_word_tight"
   },
-  "title": "1587'de 115 kişi kayboldu #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 28.68,
+  "title": "Peki, tüm dünya mitolojileri aynı temel hikayeyi anlatıyor, biliyor musunuz #shorts",
+  "thumbnail_text": "EFSANENİN KÖKENİ",
+  "duration_seconds": 31.46,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,19 +27,19 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri"
+    "mitoloji",
+    "efsane",
+    "tarih"
   ],
   "background_queries": [
+    "ancient statue",
+    "greek temple",
     "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "mythology temple",
+    "old sculpture cinematic"
   ],
-  "script": "1587'de 115 kişi kayboldu! Roanoke Adası'ndaki ilk İngiliz kolonisi neden yok oldu? Kemikler yok. Taşlar sessiz. Sadece o kelime: CROATOAN. Ne anlama geliyor? Kızılderililer mi aldı? Yoksa kendileri mi gittiler? 500 yıldır cevapsız! Tarihin bu gizemini çözmeye hazır mısın? Videoyu beğen, abone ol, çözümü ilk sen öğren!",
-  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Peki, tüm dünya mitolojileri aynı temel hikayeyi anlatıyor, biliyor musunuz? Joseph Campbell, 'kahraman yolculuğu' adlı ortak yapıyı keşfetti. Jung, bunların kolektif bilinçaltından geldiğini söyledi. Grek, Hindu ve Yerli Amerikan mitolojilerinde aynı temalar: doğum, ölüm, yeniden doğuş. O zaman bu benzerlikler sadece tesadüf mü, yoksa insanlığın ortak mirası mı? Düşünün ve yorumlara yazın!",
+  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
