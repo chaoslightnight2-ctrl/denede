@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Turkish general viral Shorts upload runner.
 
-Generates one Turkish general viral Short, saves outputs, and uploads it to YouTube.
+Generates one Turkish general viral Short, saves outputs, writes metadata before
+upload, then tries YouTube upload. If upload limit is reached, the video and
+metadata still stay saved in the repo.
 """
 
 from __future__ import annotations
@@ -25,6 +27,8 @@ OUTPUT_META = OUTPUT_DIR / "latest_meta.json"
 OUTPUT_FIRST_FRAME = OUTPUT_DIR / "latest_first_frame.jpg"
 OUTPUT_PREVIEW_GIF = OUTPUT_DIR / "latest_preview.gif"
 VIDEO_COMPAT_REPORT = OUTPUT_DIR / "video_compat_report.txt"
+RUNTIME_DIR = Path("runtime-status")
+RUNTIME_META = RUNTIME_DIR / "video-meta.json"
 
 MIN_TARGET_DURATION = 30.0
 MAX_TARGET_DURATION = 40.0
@@ -170,8 +174,15 @@ def make_debug_previews(video_path: Path) -> None:
     VIDEO_COMPAT_REPORT.write_text(probe.stdout or probe.stderr or "ffprobe produced no output", encoding="utf-8")
 
 
+def write_meta(meta: dict) -> None:
+    OUTPUT_META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+    RUNTIME_DIR.mkdir(parents=True, exist_ok=True)
+    RUNTIME_META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 async def run() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    RUNTIME_DIR.mkdir(parents=True, exist_ok=True)
     apply_caption_style(main)
     main.NICHE_POOL = GENERAL_NICHES
     main.NICHE_PEXELS_QUERIES = GENERAL_PEXELS_QUERIES
@@ -194,31 +205,50 @@ async def run() -> None:
         shutil.copyfile(thumb_path, OUTPUT_THUMBNAIL)
 
     description = f"{niche} hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts"
-    video_url = main.upload_to_youtube(str(OUTPUT_VIDEO), title, description, tags)
-
     meta = {
-        "mode": "turkish_general_viral_youtube_upload",
+        "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
         "language": "tr",
         "voice": main.DEFAULT_VOICE,
         "prompt_style": "old_general_viral_turkish",
         "niche": niche,
+        "caption_style": {
+            "font_size": 60,
+            "stroke_width": 5,
+            "max_words": 1,
+            "position": "center",
+            "punctuation_removed": True,
+            "spaces_removed_inside_caption_word": True,
+            "timing": "speech_weighted_turkish_fallback_one_word_tight",
+        },
         "title": title,
         "thumbnail_text": thumbnail_text,
         "duration_seconds": round(duration, 2),
         "tags": tags,
         "background_queries": GENERAL_PEXELS_QUERIES.get(niche, []),
         "script": script,
+        "description": description,
         "video_path": str(OUTPUT_VIDEO),
         "thumbnail_path": str(OUTPUT_THUMBNAIL) if OUTPUT_THUMBNAIL.exists() else None,
         "first_frame_path": str(OUTPUT_FIRST_FRAME) if OUTPUT_FIRST_FRAME.exists() else None,
         "preview_gif_path": str(OUTPUT_PREVIEW_GIF) if OUTPUT_PREVIEW_GIF.exists() else None,
         "compat_report_path": str(VIDEO_COMPAT_REPORT) if VIDEO_COMPAT_REPORT.exists() else None,
-        "video_url": video_url,
+        "video_url": None,
+        "upload_status": "not_attempted",
+        "upload_error": None,
     }
-    OUTPUT_META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    Path("runtime-status").mkdir(parents=True, exist_ok=True)
-    Path("runtime-status/video-meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    main.logger.info(f"Published video: {video_url}")
+    write_meta(meta)
+
+    try:
+        video_url = main.upload_to_youtube(str(OUTPUT_VIDEO), title, description, tags)
+        meta["video_url"] = video_url
+        meta["upload_status"] = "success"
+        main.logger.info(f"Published video: {video_url}")
+    except Exception as exc:
+        meta["upload_status"] = "failed"
+        meta["upload_error"] = str(exc)
+        main.logger.error(f"YouTube upload failed but video is saved: {exc}")
+    finally:
+        write_meta(meta)
 
 
 if __name__ == "__main__":
