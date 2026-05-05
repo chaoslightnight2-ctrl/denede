@@ -1,9 +1,9 @@
 """Caption styling and timing patch for Shorts.
 
 Pillow/ImageClip based captions remove the need for ImageMagick in GitHub
-Actions. Captions now preserve Turkish words as-written while removing visual
-punctuation, and use a speech-weighted fallback when Edge TTS word timings are
-missing.
+Actions. Captions preserve Turkish words as-written while removing visual
+punctuation. To avoid bad-looking gaps between words, subtitles now show one
+clean word at a time again, with tighter timing.
 """
 
 from __future__ import annotations
@@ -17,14 +17,13 @@ from PIL import Image, ImageDraw, ImageFont
 
 CAPTION_FONT_SIZE = 60
 CAPTION_STROKE_WIDTH = 5
-CAPTION_MAX_WORDS = 2
+CAPTION_MAX_WORDS = 1
 CAPTION_POSITION = ("center", "center")
-CAPTION_HORIZONTAL_MARGIN = 200
-CAPTION_SYNC_LEAD = 0.018
-MIN_WORD_DURATION = 0.13
-MIN_CHUNK_DURATION = 0.28
-MAX_CHUNK_DURATION = 0.95
-NEXT_CHUNK_GAP = 0.006
+CAPTION_HORIZONTAL_MARGIN = 180
+CAPTION_SYNC_LEAD = 0.026
+MIN_WORD_DURATION = 0.16
+MAX_WORD_DURATION = 0.74
+NEXT_WORD_GAP = 0.001
 SHADOW_OFFSET = (6, 6)
 SHADOW_OPACITY = 150
 SHADOW_STROKE_WIDTH = 7
@@ -36,8 +35,7 @@ TURKISH_VOWELS = "aeıioöuüAEIİOÖUÜ"
 def normalize_caption_source(text: str) -> str:
     """Remove visible punctuation without rewriting the actual words.
 
-    We only do minimal symbol cleanup so subtitles do not become misspelled.
-    Apostrophes are removed but suffix letters are kept:
+    Keep suffix letters. Example:
       Türkiye'de -> Türkiyede
       %5'i -> yüzde 5i
     """
@@ -59,13 +57,12 @@ def normalize_caption_source(text: str) -> str:
 
 def clean_caption_word(word: str) -> str:
     word = normalize_caption_source(word)
-    # Keep Turkish characters and digits. Remove only punctuation symbols.
-    return re.sub(r"[^A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+", "", word).strip()
+    word = re.sub(r"[^A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+", "", word)
+    return word.strip()
 
 
 def _tokenize_script(script: str):
     script = normalize_caption_source(script)
-    # Punctuation tokens are timing hints only; they are not rendered.
     return re.findall(r"[A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+|[.!?;:,]", script or "")
 
 
@@ -74,7 +71,7 @@ def _word_weight(word: str) -> float:
     if not clean:
         return 0.0
     vowels = sum(1 for ch in clean if ch in TURKISH_VOWELS)
-    return max(0.75, 0.45 + vowels * 0.42 + len(clean) * 0.035)
+    return max(0.78, 0.46 + vowels * 0.43 + len(clean) * 0.036)
 
 
 def _build_speech_weighted_timings(script: str, audio_duration: float):
@@ -83,10 +80,10 @@ def _build_speech_weighted_timings(script: str, audio_duration: float):
     pending_pause = 0.0
     for token in tokens:
         if re.fullmatch(r"[.!?]", token):
-            pending_pause += 0.18
+            pending_pause += 0.16
             continue
         if re.fullmatch(r"[;:,]", token):
-            pending_pause += 0.09
+            pending_pause += 0.07
             continue
         clean = clean_caption_word(token)
         if clean:
@@ -97,10 +94,10 @@ def _build_speech_weighted_timings(script: str, audio_duration: float):
         return []
 
     total_pause = sum(item["pause_before"] for item in items)
-    usable = max(float(audio_duration) - 0.12 - total_pause, len(items) * MIN_WORD_DURATION)
+    usable = max(float(audio_duration) - 0.08 - total_pause, len(items) * MIN_WORD_DURATION)
     total_weight = sum(item["weight"] for item in items) or 1.0
 
-    current = 0.04
+    current = 0.03
     timings = []
     for item in items:
         current += item["pause_before"]
@@ -145,6 +142,7 @@ def patch_voiceover_timing(main_module) -> None:
 
 
 def build_caption_chunks(word_ts):
+    fixed = []
     words = []
     for start, dur, word in word_ts or []:
         clean = clean_caption_word(word)
@@ -156,31 +154,11 @@ def build_caption_chunks(word_ts):
         end = raw_start + raw_dur
         words.append((start, end, clean))
 
-    if not words:
-        return []
-
-    chunks = []
-    i = 0
-    while i < len(words):
-        start = words[i][0]
-        texts = [words[i][2]]
-        end = words[i][1]
-        if i + 1 < len(words):
-            _, next_end, next_text = words[i + 1]
-            projected = next_end - start
-            if projected <= MAX_CHUNK_DURATION and len(next_text) <= 12:
-                texts.append(next_text)
-                end = next_end
-                i += 1
-        chunks.append((start, end, " ".join(texts)))
-        i += 1
-
-    fixed = []
-    for idx, (start, end, text) in enumerate(chunks):
-        if idx + 1 < len(chunks):
-            end = min(end, chunks[idx + 1][0] - NEXT_CHUNK_GAP)
-        end = max(end, start + MIN_CHUNK_DURATION)
-        end = min(end, start + MAX_CHUNK_DURATION)
+    for idx, (start, end, text) in enumerate(words):
+        if idx + 1 < len(words):
+            end = min(end, words[idx + 1][0] - NEXT_WORD_GAP)
+        end = max(end, start + MIN_WORD_DURATION)
+        end = min(end, start + MAX_WORD_DURATION)
         fixed.append((start, end - start, text))
     return fixed
 
@@ -198,6 +176,7 @@ def _load_font(font_path: str):
 
 
 def _render_caption_image(text: str, font_path: str, max_width: int):
+    text = re.sub(r"\s+", "", str(text)).strip()
     font = _load_font(font_path)
     probe = Image.new("RGBA", (max_width, 260), (0, 0, 0, 0))
     draw = ImageDraw.Draw(probe)
@@ -230,7 +209,7 @@ def make_caption_clips(main_module, chunked_ts):
 
     for start, dur, text in chunked_ts:
         text = normalize_caption_source(text)
-        text = re.sub(r"[^A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\- ]+", "", str(text)).strip()
+        text = re.sub(r"[^A-Za-z0-9À-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü\-]+", "", str(text)).strip()
         if not text:
             continue
         image = _render_caption_image(text, font_path, max_width)
