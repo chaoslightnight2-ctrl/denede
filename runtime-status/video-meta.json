@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "regenerate_until_clean_original_scenario_guard",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "niche": "Bilinmeyen İnsan Davranışları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Biliyor musunuz #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 30.98,
+  "title": "Kalabalıkta sorumluluk dağılması, insanların bir arada olduğunda bireysel sorumlul #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 33.14,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "bilim",
-    "kesif",
-    "bilgiler"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Biliyor musunuz? İnanılmaz bilimsel keşifler, bazen tam olarak planlanan şeylerden değil, araştırmacıların hatalarından veya beklenmedik sonuçlardan doğar. Penisilin gibi birçok önemli keşif, bir deneyde oluşan bir kaza sonucu ortaya çıkmıştır. Bilim, bazen doğru yolu hatayla bulur. Bu durum, yenilikçi düşüncenin ve sabırlı çalışmanın önemini vurguluyor. Peki, sizce bu tür keşiflerden hangisi en çok şaşırtıcıydı? Yorumlarda fikirlerinizi paylaşın!",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Kalabalıkta sorumluluk dağılması, insanların bir arada olduğunda bireysel sorumluluk hissinin azalmasıdır. Acil durumlarda \"biri müdahale eder\" düşüncesi, herkesin harekete geçmemesine neden olur. Bu psikolojik fenomene rağmen, küçük bir adım bile fark yaratır. Peki, siz kalabalıkta bir sorun gördüğünüzde ne yapıyorsunuz? Biliyorsunuz ki, ilk adımı atmak cesaret ister. Bu konuyu düşünün ve bir sonraki fırsatta harekete geçmeye hazır olun. Unutmayın, toplumda değişim tek bir kişiden başlar.",
+  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/ppRosbWoKhg",
+  "video_url": "https://youtu.be/-zunYTqKGdY",
   "upload_status": "success",
   "upload_error": null,
   "script_quality_guard": {
