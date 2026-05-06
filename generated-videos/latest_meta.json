@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "regenerate_until_clean_original_scenario_guard",
-  "niche": "Başarı Psikolojisi ve Motivasyon",
+  "niche": "Çözülememiş Tarihi Gizemler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Görünmeyen disiplin, dışarıda görünmeyen ama her gün seni şekillendiren alışkanlık #shorts",
-  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
-  "duration_seconds": 31.94,
+  "title": "Tarihin en büyüyücü yanlarından biri, yarım kalan keşiflerin gizemidir #shorts",
+  "thumbnail_text": "TARİHTE GİZLİ KALDI",
+  "duration_seconds": 37.58,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "motivasyon",
-    "basari",
-    "disiplin"
+    "tarih",
+    "gizem",
+    "tarihgizemleri"
   ],
   "background_queries": [
-    "person running",
-    "mountain climb",
-    "focused work",
-    "success motivation",
-    "athlete training cinematic"
+    "ancient ruins",
+    "old manuscript",
+    "archaeology",
+    "mysterious temple",
+    "ancient history cinematic"
   ],
-  "script": "Görünmeyen disiplin, dışarıda görünmeyen ama her gün seni şekillendiren alışkanlıklardır. Başarı psikolojisi burada devreye girer: motivasyon sadece bir his değil, sürekli bir eylemdir. Her gün aynı ritimle ilerlemek, küçük hedeflere odaklanmak... İşte gerçek başarı bu görünmez çabadan doğar. Bu disiplin, motivasyonun ateşini sönürmeyen birer kıvılcımdır. Peki sen bu disiplini günlük hayatında hissediyor musun? Hikayen paylaşmaya hazır mısın?",
-  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Tarihin en büyüyücü yanlarından biri, yarım kalan keşiflerin gizemidir. Bazı antik bulgular sadece parçalarıyla karşımıza çıkar, tam metni asla ortaya çıkamaz. Örneğin, antik bir dönemdeki bir denizcinin kayıp seyahat defteri yalnızca kırık parçalar halinde bulundu. Bu da o dönemin denizcilik bilgisinin tamamını anlamamızı engelliyor. Bu tür gizemler, tarihçileri yıllardır cevaplar aramaya devam ediyor. Peki, bu sırları bir gün çözecek miyiz? Tarihin bu derinliklerine dalmak için bizi takipte kalın ve bildiğiniz diğer gizemleri yorumlarda paylaşın.",
+  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/81ATE1Sn1Zg",
+  "video_url": "https://youtu.be/1cwuOrQ3Mug",
   "upload_status": "success",
   "upload_error": null,
   "script_quality_guard": {
