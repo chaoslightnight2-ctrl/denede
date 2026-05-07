@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "regenerate_until_clean_original_scenario_guard",
-  "niche": "Çözülememiş Tarihi Gizemler",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Tarihin en büyüyücü yanlarından biri, yarım kalan keşiflerin gizemidir #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 37.58,
+  "title": "Bilimsel araçlar, gözle görülemeyeni göstererek dünyamızı değiştiriyor #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 31.99,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Tarihin en büyüyücü yanlarından biri, yarım kalan keşiflerin gizemidir. Bazı antik bulgular sadece parçalarıyla karşımıza çıkar, tam metni asla ortaya çıkamaz. Örneğin, antik bir dönemdeki bir denizcinin kayıp seyahat defteri yalnızca kırık parçalar halinde bulundu. Bu da o dönemin denizcilik bilgisinin tamamını anlamamızı engelliyor. Bu tür gizemler, tarihçileri yıllardır cevaplar aramaya devam ediyor. Peki, bu sırları bir gün çözecek miyiz? Tarihin bu derinliklerine dalmak için bizi takipte kalın ve bildiğiniz diğer gizemleri yorumlarda paylaşın.",
-  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilimsel araçlar, gözle görülemeyeni göstererek dünyamızı değiştiriyor. En küçük parçacıklardan en uzak galaksilere, her şeyi aydınlatıyorlar. Modern teknoloji, beynimizin ve evrenin gizemlerini çözüyor. Bu araçlar, gerçekliğin sınırlarını genişletiyor. Her keşif, merakımızı besliyor ve yeni sorular doğuruyor. Görünmeyen dünya artık bizim için bir sır değil. Peki, bu bilimsel maceralara siz de katılmak ister misiniz? Takip edin, çünkü keşifler hiç bitmiyor!",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/1cwuOrQ3Mug",
+  "video_url": "https://youtu.be/fCl_8U9t3b8",
   "upload_status": "success",
   "upload_error": null,
   "script_quality_guard": {
