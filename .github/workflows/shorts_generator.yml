@@ -1,11 +1,6 @@
 name: Viral Shorts Generator
 
 on:
-  push:
-    branches: [ main ]
-    paths-ignore:
-      - 'runtime-status/**'
-      - 'generated-videos/**'
   schedule:
     # 00:10 Turkey time = 21:10 UTC
     - cron: '10 21 * * *'
