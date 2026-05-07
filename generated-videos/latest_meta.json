@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "regenerate_until_clean_original_scenario_guard",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "niche": "Teknolojinin Karanlık Yüzü",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilimsel araçlar, gözle görülemeyeni göstererek dünyamızı değiştiriyor #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 31.99,
+  "title": "Teknolojinin ışıltılı yüzünün ardında, her hareketimizde bıraktığımız görünmez izl #shorts",
+  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
+  "duration_seconds": 37.15,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "bilim",
-    "kesif",
-    "bilgiler"
+    "teknoloji",
+    "yapayzeka",
+    "siber"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "cyber security",
+    "phone screen dark",
+    "data center",
+    "hacker code",
+    "technology dark cinematic"
   ],
-  "script": "Bilimsel araçlar, gözle görülemeyeni göstererek dünyamızı değiştiriyor. En küçük parçacıklardan en uzak galaksilere, her şeyi aydınlatıyorlar. Modern teknoloji, beynimizin ve evrenin gizemlerini çözüyor. Bu araçlar, gerçekliğin sınırlarını genişletiyor. Her keşif, merakımızı besliyor ve yeni sorular doğuruyor. Görünmeyen dünya artık bizim için bir sır değil. Peki, bu bilimsel maceralara siz de katılmak ister misiniz? Takip edin, çünkü keşifler hiç bitmiyor!",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Teknolojinin ışıltılı yüzünün ardında, her hareketimizde bıraktığımız görünmez izler var. Bu veri izleri, kimliğimizi, alışkanlıklarımızı ve hatta düşüncelerimizi bile yakından izleyebiliyor. Toplanıp satılıyor, manipüle ediliyor ve kontrol altına alınıyor. Peki, bu izler nereye gidiyor? Her tıklama, her arama, her beğeni bir parça oluyor bu büyük puzzle'da. Bu izler, sadece reklamları kişiselleştirmek için kullanılmıyor; hayatımızın en özel köşelerine bile sızıyor. Bu konuyu daha derinlemesine ele alacağım bir sonraki videoda, takipte kalın ve düşüncelerinizi yorumlarda paylaşın.",
+  "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/fCl_8U9t3b8",
+  "video_url": "https://youtu.be/jmqGTlAuYcc",
   "upload_status": "success",
   "upload_error": null,
   "script_quality_guard": {
