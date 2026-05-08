@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "Uzayın Korkunç Sırları",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Uzayın en korkunç sırrı belki de hiçbir şey duyamamanız #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 34.85,
+  "title": "Bazen en derin sorular, en basit cevapları bekler #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 35.62,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "deep space",
-    "galaxy stars",
-    "black hole",
-    "astronaut space",
-    "space cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Uzayın en korkunç sırrı belki de hiçbir şey duyamamanız. Kozmik sessizlik, uzayın vakum yapısından kaynaklanır. Ses dalgaları madde gerektirir, ancak uzayda maddesi bir ortam yoktur. Bu yüzden astronotlararası iletişim için radyo kullanılır. Dünya'da her an bir ses vardır, ama uzayda tamamen sessiz. Bu sessizlik, evrenin sonsuzluğunda yalnızlığımızı hissettirir. Astronotlar için bile bu sessizlik bir zorluk, çünkü insan doğası seslerle çevrili. Bu korkunç sessizliği hayal edin, keşiflerimizi nasıl şekillendiriyor?",
-  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bazen en derin sorular, en basit cevapları bekler. Uzay ve zamanın doğasını anlamak için aslında evrenin gençlik dönemine bakıyoruz. Bu eski soruya, gökadaların hareketinden elde edilen yeni verilerle bakıyoruz. Sonuç, evrenin hızla genişlediği ve bu genişlemenin nasıl başladığına dair beklenmedik bir resim. Peki bu keşif, bilimin en büyük gizemi olan 'başlangıç' hakkında neyi değiştiriyor? Bilim, bazen geçmişin en karanlık köşelerini aydınlatmak için en parlak teknolojileri kullanır. Daha fazlasını öğrenmek için takipte kalın.",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/M5nnX935Ws4",
+  "video_url": "https://youtu.be/i7mtFB88ZJ0",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 1,

@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "Teknolojinin Karanlık Yüzü",
+  "niche": "Çözülememiş Tarihi Gizemler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Teknoloji hayatımızı kolaylaştırdı, evet #shorts",
-  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
-  "duration_seconds": 33.29,
+  "title": "Tarihin en büyük gizemleri bazen kayıtlara değil, unutulanlara saklanır #shorts",
+  "thumbnail_text": "TARİHTE GİZLİ KALDI",
+  "duration_seconds": 31.9,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "teknoloji",
-    "yapayzeka",
-    "siber"
+    "tarih",
+    "gizem",
+    "tarihgizemleri"
   ],
   "background_queries": [
-    "cyber security",
-    "phone screen dark",
-    "data center",
-    "hacker code",
-    "technology dark cinematic"
+    "ancient ruins",
+    "old manuscript",
+    "archaeology",
+    "mysterious temple",
+    "ancient history cinematic"
   ],
-  "script": "Teknoloji hayatımızı kolaylaştırdı, evet. Ama bildirim uyarılarının bizi nasıl sürekli meşgul ettiğini düşündünüz mü? Her telefon titreşimimizde bir heyecan, bir kaygı doğuyor. Bu durum odaklanımızı dağıtıyor, anksiyeteyi artırıyor. Asıl ilişkilerimiz bile dijital ekranların ardında kalıyor. Bildirim bağımlılığı, teknolojinin karanlık yüzü. Peki, bu döngüyü kırabilir miyiz? Teknolojiyi bilinçli kullanmak, kendi zamanımızı geri almaktan geçiyor. Daha fazlasını öğrenmek için takipte kalın!",
-  "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Tarihin en büyük gizemleri bazen kayıtlara değil, unutulanlara saklanır. Peki, bu unutulan kayıtlar neden çözülemiyor? Çünkü zamanla parçalanan, ya da bilinçli olarak gizlenmiş izler sadece birkaç ipucu bırakıyor. Her bulgu, yeni soruları tetikliyor. Bu gizemli olaylar, tarihçiler için süregelen bir merak kaynağı. Unutulan bu parçaları bir araya getirmek, büyük bir bulmacayı çözmek gibidir. Sizce bu kayıpların ardında ne gizliyor? Belki de cevabı siz bulacaksınız.",
+  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/0nqg2J9xPAo",
+  "video_url": "https://youtu.be/NGxOW6Qwr-w",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 3,

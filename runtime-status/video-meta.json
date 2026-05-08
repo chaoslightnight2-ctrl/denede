@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Bilinmeyen İnsan Davranışları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Mitoloji ve efsaneler, insanlığın ortak kahraman yolculuğu hikayeleridir #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 36.79,
+  "title": "Bilinmeyen bir davranışımız var: kendimiz farkında olmadan başkalarını kopyalıyoru #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 37.18,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Mitoloji ve efsaneler, insanlığın ortak kahraman yolculuğu hikayeleridir. Her kültürde, bir kahramanın dış tehlikeleri ve iç çatışmaları aşarak dönüşüm geçirdiği görülür. Bu evrensel desen neden var? İnsan zihni, mücadele ve kazanım temalarını bu şekilde anlar. Kahraman yolculuğu, kendi potansiyelimizi keşfetmemizin bir yansıması. Efsaneler bize zorluklarda cesaretimizi korumamızı öğretir. Mitoloji, bugünümüzü anlamamız için bir rehber. Kahraman yolculuğu sizi nasıl etkiliyor? Takip edin, daha fazlasını keşfedin.",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilinmeyen bir davranışımız var: kendimiz farkında olmadan başkalarını kopyalıyoruz. Bu, taklit davranışı olarak bilinir. Konuşma tarzımızı, jestlerimizi, hatta alışkanlıklarımızı çevremizdekilere görünürce benzer hale getiriyoruz. Bunun temelinde, empati kurma ve sosyal birliğe katılma içgüdümüz yatıyor. Birini sevdiğimizde onun ifadelerini, hareketlerini otomatik olmanın taklit ediyoruz. Bu, bağlarımızı güçlendiren doğal bir sosyal araçtır. Peki, siz son ne zaman birini bilinçsizce taklit ettiniz? Daha fazla psikoloji sırrı için takipte kalın.",
+  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/DvyGj64xej8",
+  "video_url": "https://youtu.be/XpFUfH-KII8",
   "upload_status": "success",
   "upload_error": null
 }

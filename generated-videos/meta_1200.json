@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Mitoloji ve efsaneler, insanlığın en eski anlatıları #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 30.89,
+  "title": "Erken vazgeçmek, başarı psikolojisindeki en büyük düşmandır #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 32.04,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "motivasyon",
+    "basari",
+    "disiplin"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "Mitoloji ve efsaneler, insanlığın en eski anlatıları. Asıl önemli olan şu: hepsinin altında yatan ortak korkularımız. Karanlıktan, doğal afetlerden, bilinmeyenden korkarız. Bu evrensel korklar, dünyanın her yerinde benzer hikayelere ilham veriyor. Yani farklı kültürlerdeki mitler, temelde aynı insanlık sorununa cevap veriyor. Peki sen bu derin korkuları keşfediyor musun? Çünkü her hikayenin ardında, insanın yüzleştiği bir korku var.",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Erken vazgeçmek, başarı psikolojisindeki en büyük düşmandır. İlk engeller karşısında motivasyonumuz düşer ve hedefimizden uzaklaşırız. Bu, doğal bir psikolojik tepkidir. Ancak bu noktada vazgeçmemek, fark yaratır. Küçük adımlarla ilerleyerek, büyük sonuçlara ulaşabiliriz. Her gün bir adım atın, zamanla bu adımlar bir yol haline gelir. Sabırlı ve kararlı olun, başarı sizi bulacaktır. Siz de bu motivasyonla ilerleyin, başarı sizinle olsun.",
+  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/qQ6p8-Z40kY",
+  "video_url": "https://youtu.be/kJ6Gok-RTMg",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 2,
