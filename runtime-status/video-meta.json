@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Bilinmeyen İnsan Davranışları",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Kalabalık bir ortamda birisi düşünce veya acil bir sorun çıktığında neden kimse il #shorts",
-  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-  "duration_seconds": 31.61,
+  "title": "Bilimciler yıllardır cevaplamaya çalıştığı kara deliklerin parçacıklarını yutup yu #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 37.18,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "insandavranisi",
-    "psikoloji",
-    "sosyoloji"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "people walking city",
-    "human behavior",
-    "crowd slow motion",
-    "person thinking",
-    "urban people cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Kalabalık bir ortamda birisi düşünce veya acil bir sorun çıktığında neden kimse ilk adımı atmıyor düşündünüz mü? Bu durumun arka planında bilinmeyen bir insan davranışı yatıyor: kalabalıkta sorumluluk dağılması. Herkesin başkasının müdahale edeceğini varsayması, yardım etme eyleminin gecikmesine ya da hiç gerçekleşmemesine neden oluyor. Bazen toplumsal refleks olarak da adlandırılan bu davranış, büyük kalabalıklarda daha belirgin hale geliyor. Peki siz de kalabalıkta böyle bir anda ilk adımı atmaya çalışıyor musunuz?",
-  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilimciler yıllardır cevaplamaya çalıştığı kara deliklerin parçacıklarını yutup yutmadığı eski sorusuna, yeni nesil teleskop verileriyle net bir cevap buldu. Bu soru, evrimleşmiş kara delik teorisinin en büyük eksiklerinden biriydi, uzun yıllar bilimciler tarafından tartışılıyordu. Ayrıca bu keşif, yıllardır varılan yanlış varsayımları da ortadan kaldırıyor. Bu keşif, evrenin çalışma prensiplerini tamamen yeniden yazıyor zaten. Peki bu yeni bilgi insanlığın uzay yolculuğunu nasıl şekillendirecek? Yorumlara fikirlerinizi yazın, bir sonraki video'da konuşalım.",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/1IY0ncbjcSc",
+  "video_url": "https://youtu.be/gj29woc8XKQ",
   "upload_status": "success",
   "upload_error": null
 }
