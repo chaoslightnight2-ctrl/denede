@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Teknolojinin karanlık yüzü aslında bakıldığı yerde değil, kullandığımız her uygula #shorts",
+  "title": "Günlük hayatta kullandığımız her uygulama, her akıllı cihaz adım adım bıraktığımız #shorts",
   "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
-  "duration_seconds": 30.43,
+  "duration_seconds": 35.64,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -38,14 +38,14 @@
     "hacker code",
     "technology dark cinematic"
   ],
-  "script": "Teknolojinin karanlık yüzü aslında bakıldığı yerde değil, kullandığımız her uygulamada gizli. Her gün ekranlarımıza baktığımızda aslında kendi seçimlerimizi değil, algoritmaların bize özel olarak yönlendirdiği içerikleri görüyoruz. Saniyesi saniyesine tüm davranışlarımızı analiz edip, ne izleyeceğimizi, hatta neleri düşüneceğimizi bile şekillendiriyorlar. Bu yönlendirme gerçekten bizim özgür seçimimiz mi, yoksa görünmez bir psikolojik kontrol mü? Düşünelim, sonra konuşalım.",
+  "script": "Günlük hayatta kullandığımız her uygulama, her akıllı cihaz adım adım bıraktığımız veri izlerini kaydediyor aslında. Bu izler sadece ne tür siteleri ziyaret ettiğimizi değil, konumumuzu, alışkanlıklarımızı, hatta duygusal durumumuzu bile ortaya çıkarabiliyor. Düşündünüz mü hiç, bu veriler sizce kimlerin elinde olabilir? Paylaştığımız her içerik, yaptığımız her arama aslında dijital dünyada kalıcı izler bırakıyor. Ne kadar dikkatli olursanız olun, bu izlerden tamamen kurtulmak neredeyse imkansız. Bu durum hakkında ne düşünüyorsunuz, yorumlara yazın.",
   "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/uRiPqbZmpTg",
+  "video_url": "https://youtu.be/5AfregcXdeM",
   "upload_status": "success",
   "upload_error": null
 }

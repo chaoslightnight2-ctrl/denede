@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "Bilinmeyen İnsan Davranışları",
+  "niche": "Çözülememiş Tarihi Gizemler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilinmeyen insan davranışları arasında dikkat çekenlerden biri, etrafımızdaki kişi #shorts",
-  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-  "duration_seconds": 32.88,
+  "title": "Tarihin sadece yazılı kayıtlara değil, unutulmuş ses kayıtlarına, nesilden nesile  #shorts",
+  "thumbnail_text": "TARİHTE GİZLİ KALDI",
+  "duration_seconds": 35.11,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "insandavranisi",
-    "psikoloji",
-    "sosyoloji"
+    "tarih",
+    "gizem",
+    "tarihgizemleri"
   ],
   "background_queries": [
-    "people walking city",
-    "human behavior",
-    "crowd slow motion",
-    "person thinking",
-    "urban people cinematic"
+    "ancient ruins",
+    "old manuscript",
+    "archaeology",
+    "mysterious temple",
+    "ancient history cinematic"
   ],
-  "script": "Bilinmeyen insan davranışları arasında dikkat çekenlerden biri, etrafımızdaki kişilerin yaptığı eylemleri bilmeden taklit etme eğilimidir. Çoğu zaman çocukluk döneminde başlayan bu durum, yetişkinliğe de sıklıkla yansır. Mesela sınav öncesi arkadaşınızın sürekli kalemini çevirmesini, siz de fark etmeden yapmaya başladıysanız bunun çok yaygın bir örneğidir. Bu davranışın aslında sosyal bağ kurma yöntemlerimizden biri olduğunu biliyor muydunuz? Siz de benzer bir taklit davranışı fark ettiniz mi? Yorumlara bekliyorum.",
-  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Tarihin sadece yazılı kayıtlara değil, unutulmuş ses kayıtlarına, nesilden nesile aktarılmış kaybolmuş hikayelere de sığdıramadığımız çözülememiş gizemler var. 1912 yılında kaybolan kütüphane arşivlerindeki kayıplar, kayıp hazinelerin haritalarını içeren mektuplar bile bu sırların içinde. Bazı kayıtlarda bu kayıpların bir geminin battığı sırada kurtarıldığı yazıyor ama hiçbir kanıtına rastlanamıyor. Bu kayıplar neden hiçbir yerde görünmüyor, acaba bilinçli olarak saklanıyor mu? Böyle unutulmuş tarihi sırları birlikte araştıralım, yorum kısmına düşündüklerinizi yazın.",
+  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/pt4epEQwSl0",
+  "video_url": "https://youtu.be/GKDOM2jvODA",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 1,
