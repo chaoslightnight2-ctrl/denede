@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Teknolojinin Karanlık Yüzü",
+  "niche": "Mitoloji ve Efsanelerin Kökenleri",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Günlük hayatta kullandığımız her uygulama, her akıllı cihaz adım adım bıraktığımız #shorts",
-  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
-  "duration_seconds": 35.64,
+  "title": "İnsanlığın en eski anlatıları mitoloji ve efsaneler, aslında doğa olaylarını anlam #shorts",
+  "thumbnail_text": "EFSANENİN KÖKENİ",
+  "duration_seconds": 37.92,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "teknoloji",
-    "yapayzeka",
-    "siber"
+    "mitoloji",
+    "efsane",
+    "tarih"
   ],
   "background_queries": [
-    "cyber security",
-    "phone screen dark",
-    "data center",
-    "hacker code",
-    "technology dark cinematic"
+    "ancient statue",
+    "greek temple",
+    "ancient ruins",
+    "mythology temple",
+    "old sculpture cinematic"
   ],
-  "script": "Günlük hayatta kullandığımız her uygulama, her akıllı cihaz adım adım bıraktığımız veri izlerini kaydediyor aslında. Bu izler sadece ne tür siteleri ziyaret ettiğimizi değil, konumumuzu, alışkanlıklarımızı, hatta duygusal durumumuzu bile ortaya çıkarabiliyor. Düşündünüz mü hiç, bu veriler sizce kimlerin elinde olabilir? Paylaştığımız her içerik, yaptığımız her arama aslında dijital dünyada kalıcı izler bırakıyor. Ne kadar dikkatli olursanız olun, bu izlerden tamamen kurtulmak neredeyse imkansız. Bu durum hakkında ne düşünüyorsunuz, yorumlara yazın.",
-  "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "İnsanlığın en eski anlatıları mitoloji ve efsaneler, aslında doğa olaylarını anlamlandırma çabasının ürünü değil mi? Gökyüzü şimşek çaktığında, toprak depremle sarsıldığında, ilk insanlar bunların nedenini bilemiyordu. Bilinmezlikten korktukları için her olayın arkasında bir tanrı, bir canavar ya da gizli bir güç olduğunu düşündüler. Böylece ilk mitolojik hikayeler, doğaya anlam vererek korkularını azaltma, dünyayı anlama çabası doğuştu. Sence bu ilk anlatılar bugünkü efsanelerimizle bağlantılı mı? Yorumlara fikirlerini yaz, bir sonraki videoda bu bağlantıyı detaylı anlatalım.",
+  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/5AfregcXdeM",
+  "video_url": "https://youtu.be/Z5Vpx1zDtaU",
   "upload_status": "success",
   "upload_error": null
 }
