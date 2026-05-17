@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Günlük Hayatta Stoacı Felsefe",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "İnsanlığın en eski anlatıları mitoloji ve efsaneler, aslında doğa olaylarını anlam #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 37.92,
+  "title": "Şunu biliyor musun #shorts",
+  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
+  "duration_seconds": 28.61,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "stoacilik",
+    "felsefe",
+    "hayatdersleri"
   ],
   "background_queries": [
     "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "stoic statue",
+    "calm person nature",
+    "roman columns",
+    "meditation nature cinematic"
   ],
-  "script": "İnsanlığın en eski anlatıları mitoloji ve efsaneler, aslında doğa olaylarını anlamlandırma çabasının ürünü değil mi? Gökyüzü şimşek çaktığında, toprak depremle sarsıldığında, ilk insanlar bunların nedenini bilemiyordu. Bilinmezlikten korktukları için her olayın arkasında bir tanrı, bir canavar ya da gizli bir güç olduğunu düşündüler. Böylece ilk mitolojik hikayeler, doğaya anlam vererek korkularını azaltma, dünyayı anlama çabası doğuştu. Sence bu ilk anlatılar bugünkü efsanelerimizle bağlantılı mı? Yorumlara fikirlerini yaz, bir sonraki videoda bu bağlantıyı detaylı anlatalım.",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Şunu biliyor musun? Seni yoran şey çoğu zaman olayın kendisi değil, ona verdiğin anlamdır. Stoacılar bunu yüzyıllar önce fark etti. Kontrol edemediğin şeyi zorladıkça zihnin yorulur. Ama kendi tepkini seçtiğinde güç geri gelir. Bugün biri seni sinirlendirirse hemen cevap verme. Önce dur, nefes al ve şunu sor: Bu benim kontrolümde mi? Cevap hayırsa, enerjini geri al.",
+  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/Z5Vpx1zDtaU",
+  "video_url": "https://youtu.be/MlunVtbYw3M",
   "upload_status": "success",
   "upload_error": null
 }
