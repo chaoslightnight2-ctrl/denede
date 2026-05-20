@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "İnsanlar binlerce yıldır mitoloji ve efsaneleri neden yaratıyor sence #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 30.14,
+  "title": "Çoğumuz başarıya ulaşma yolunda en kritik engelin ne olduğunu düşünürken genellikl #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 31.75,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "motivasyon",
+    "basari",
+    "disiplin"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "İnsanlar binlerce yıldır mitoloji ve efsaneleri neden yaratıyor sence? Asıl nedeni doğaya anlam verme çabası. Gök gürültüsü, yağmur, fırtına gibi korkutucu doğa olaylarını açıklamak için tanrılar, yaratıcılar ve efsanevi kahramanlar uydurdu. Bu hikayeler sadece eğlence değil, insanların çevresini anlamaya, korkularına anlam yakalama çabasının bir izi. Hangi efsane doğa olayıyla bağlantılı olduğunu biliyorsan yorumlara yaz, yeni videolarda da bu konuyu konuşuruz!",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Çoğumuz başarıya ulaşma yolunda en kritik engelin ne olduğunu düşünürken genellikle yeterince çalışmamıza veya şanssızlığımıza suçlarız ya? Aslında en büyük engel, hedeflerimize ulaşmadan önce azıcık zorlandığımız anlarda vazgeçme alışkanlığımız. Peki neden hemen pes ediyoruz? Çünkü başarıyı aniden gelen bir şey sanıyoruz, unutuyoruz ki her büyük başarı, küçük adımların birikmesiyle ortaya çıkıyor. Bir sonraki videomuzda küçük adımlarla motivasyonu nasıl koruruz onu anlatacağım, takipte kalın.",
+  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/wAhcIo717Xc",
+  "video_url": "https://youtu.be/Bm7s2qvrJEA",
   "upload_status": "success",
   "upload_error": null
 }
