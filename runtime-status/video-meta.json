@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Başarı Psikolojisi ve Motivasyon",
+  "niche": "Uzayın Korkunç Sırları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Başarının en gizli tarafı motivasyon değildir, tekrar gücüdür #shorts",
-  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
-  "duration_seconds": 27.84,
+  "title": "Uzayın en çok korkutucu sırlarından biri, bizim neredeyse hiç bilmediğimiz görünme #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 31.54,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "motivasyon",
-    "basari",
-    "disiplin"
+    "uzay",
+    "evren",
+    "bilim"
   ],
   "background_queries": [
-    "person running",
-    "mountain climb",
-    "focused work",
-    "success motivation",
-    "athlete training cinematic"
+    "deep space",
+    "galaxy stars",
+    "black hole",
+    "astronaut space",
+    "space cinematic"
   ],
-  "script": "Başarının en gizli tarafı motivasyon değildir, tekrar gücüdür. Motivasyon gelir ve gider. Ama küçük alışkanlıklar sessizce karakterini değiştirir. Her gün sadece biraz daha iyi olmak, uzun vadede büyük fark yaratır. İnsanlar sonucu görünce şans sanır, ama görünmeyen yerde yüzlerce küçük seçim vardır. Bugün büyük bir plan yapma. Sadece yarın da tekrarlayabileceğin küçük bir adım at.",
-  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Uzayın en çok korkutucu sırlarından biri, bizim neredeyse hiç bilmediğimiz görünmeyen evren değil mi? Tüm evrendeki maddenin ve enerjinin tam %95'ini oluşturan bu karanlık maddeler ve enerji, hiç görünmüyor, bizimle hiçbir şekilde etkileşime girmiyor. Bilim adamları onun ne olduğunu, neden evrende bu kadar yaygın olduğunu henüz tam olarak çözemedi. Acaba bu sırlı varlığın gerçek yüzü bir gün tam olarak ortaya çıkacak mı? Yorumlarında bu konudaki düşüncelerini ve tahminlerini paylaşmayı unutma.",
+  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/sEp9fkF-gEo",
+  "video_url": "https://youtu.be/iGiukFJ-JoI",
   "upload_status": "success",
   "upload_error": null
 }

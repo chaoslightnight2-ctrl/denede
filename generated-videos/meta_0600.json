@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "niche": "Şok Edici Psikolojik Gerçekler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 27.58,
+  "title": "Gün içinde kaç küçük, kaç büyük karar verdiğini hiç saydın mı #shorts",
+  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
+  "duration_seconds": 32.16,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "bilim",
-    "kesif",
-    "bilgiler"
+    "psikoloji",
+    "beyin",
+    "insanpsikolojisi"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "human brain psychology",
+    "thinking person dark",
+    "mind concept",
+    "neural network abstract",
+    "person thinking cinematic"
   ],
-  "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Gün içinde kaç küçük, kaç büyük karar verdiğini hiç saydın mı? Mesela ne giyeceğine, ne yiyeceğine, hangi yoldan gideceğine karar verirken zihrimin sürekli çalıştığını gör. Her tek karar için bile enerji harcıyor, akşam yorgunluğun bazen fiziksel değil tamamen psikolojik, karar yorgunluğundan kaynaklanıyor. Bütün gün verdiğin kararlar zihini yorduğu için keyifli şeyler yapmak istemiyorsun, bu da karar yorgunluğuna bağlı. Günlük alışkanlıkları otomatik hale getirerek enerjini korumak çok daha iyi hissettiriyor, sen de denedin mi?",
+  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/KvpHUvDKPdQ",
+  "video_url": "https://youtu.be/VjDO95hprQA",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 1,
