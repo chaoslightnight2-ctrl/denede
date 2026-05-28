@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilim insanları yıllardır Mars'ta yaşam izi aramak için büyük çaba harcıyordu, değ #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 30.19,
+  "title": "Dünyadaki tüm üstün başarıların arkasında aslında görünmez bir sır var: tekrarın g #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 37.8,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "bilim",
-    "kesif",
-    "bilgiler"
+    "motivasyon",
+    "basari",
+    "disiplin"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "Bilim insanları yıllardır Mars'ta yaşam izi aramak için büyük çaba harcıyordu, değil mi? Son yapılan kaya örnekleri analizlerine aslında yanlış yere bakıyorduk demek ki! Dünyadaki çok eski çağlardan kalma fosil örnekler, gezegenler arası hareketliliğe dair hiç bilmediğimiz yeni ipuçları taşıyor. Bu yeni bakış, uzay keşiflerinin sadece yeni cihazlarla değil, eski verileri yeniden yorumlayarak da büyüdüğünü gözler önüne seriyor. Hangi eski bilgiyi en çok şaşırdın, yorumlara yaz!",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Dünyadaki tüm üstün başarıların arkasında aslında görünmez bir sır var: tekrarın gücü. Bence hiçbir doğuştan gelen yetenek, sabırla yapılan binlerce küçük tekrarı yenemez. Hatta başarısız olmadığını sandığın o insanlar da aslında senin görmediğin binlerce tekrarın ardından oraya ulaştılar. Unutma, her küçük tekrar seni hedefine bir adım daha yaklaştırıyor. Bazen yorulduğunda bile vazgeçme, o anki tekrarın seni bir sonraki seviyeye taşıyacak. Peki sen bugün hangi konuda kendini tekrar ederek geliştiriyorsun? Yorumlara yaz, birlikte motivasyonumuzu yükseltelim.",
+  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/nh10OiI-tdA",
+  "video_url": "https://youtu.be/mL_xIVRc12c",
   "upload_status": "success",
   "upload_error": null
 }
