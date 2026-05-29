@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Başarı Psikolojisi ve Motivasyon",
+  "niche": "Uzayın Korkunç Sırları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Dünyadaki tüm üstün başarıların arkasında aslında görünmez bir sır var: tekrarın g #shorts",
-  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
-  "duration_seconds": 37.8,
+  "title": "Uzayın en korkunç sırlarından biri aslında yıldızların ölümü, değil mi #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 32.21,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "motivasyon",
-    "basari",
-    "disiplin"
+    "uzay",
+    "evren",
+    "bilim"
   ],
   "background_queries": [
-    "person running",
-    "mountain climb",
-    "focused work",
-    "success motivation",
-    "athlete training cinematic"
+    "deep space",
+    "galaxy stars",
+    "black hole",
+    "astronaut space",
+    "space cinematic"
   ],
-  "script": "Dünyadaki tüm üstün başarıların arkasında aslında görünmez bir sır var: tekrarın gücü. Bence hiçbir doğuştan gelen yetenek, sabırla yapılan binlerce küçük tekrarı yenemez. Hatta başarısız olmadığını sandığın o insanlar da aslında senin görmediğin binlerce tekrarın ardından oraya ulaştılar. Unutma, her küçük tekrar seni hedefine bir adım daha yaklaştırıyor. Bazen yorulduğunda bile vazgeçme, o anki tekrarın seni bir sonraki seviyeye taşıyacak. Peki sen bugün hangi konuda kendini tekrar ederek geliştiriyorsun? Yorumlara yaz, birlikte motivasyonumuzu yükseltelim.",
-  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Uzayın en korkunç sırlarından biri aslında yıldızların ölümü, değil mi? Güneşimizden on milyon kat daha büyük dev yıldızlar 10 milyon yıl yaşadıktan sonra içi çöküp süpernova denen devasa patlamalar yapıyor. Bu patlama, dünya'daki tüm nükleer silahların toplam gücünden milyon kat daha güçlü. Bu enerji çevresindeki tüm gezegenleri bile yok ediyor, acaba bizim güneş sistemimiz de bir gün böyle bir sonla karşılaşacak mı? Uzayın bu sırlarını öğrenmek istiyorsan, kanala abone ol, sonra videolarda daha fazla detay paylaşacağım.",
+  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/mL_xIVRc12c",
+  "video_url": "https://youtu.be/V9xAPlr4eQ4",
   "upload_status": "success",
   "upload_error": null
 }
