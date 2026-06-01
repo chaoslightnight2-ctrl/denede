@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Çözülememiş Tarihi Gizemler",
+  "niche": "Tuhaf ve Enteresan Yasalar",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Tarihin en büyüleyici çözülememiş gizemlerinden biri, dünya çapında dağılmış hiç k #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 32.81,
+  "title": "Biliyor musunuz, bazı ülkelerin yasaları kendi kültür değerlerine öyle bağlı ki, i #shorts",
+  "thumbnail_text": "BU YASA GERÇEK",
+  "duration_seconds": 30.26,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri"
+    "yasalar",
+    "ilginc",
+    "dunya"
   ],
   "background_queries": [
-    "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "court law",
+    "judge gavel",
+    "old documents",
+    "city street rules",
+    "law books cinematic"
   ],
-  "script": "Tarihin en büyüleyici çözülememiş gizemlerinden biri, dünya çapında dağılmış hiç kimsenin okuyamadığı eski semboller. Bu işaretler ne zaman, kim tarafından yapıldığını, ne anlama geldiğini bilemeden yüzyıllardır kayıplar arasında duruyor. Peki bu semboller gerçekten uzaylıların bize gönderdiği mesaj mı, yoksa kayıp bir uygarlığın kendi dilinin harfleri mi? Tüm dünyadaki araştırmacılar yıllardır çalışsa da hiçbirini tam olarak çözemedi. Bu tarihi sırların çözülmesi için sen ne düşünüyorsun, yorumlara fikirlerini yazabilir misin?",
-  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Biliyor musunuz, bazı ülkelerin yasaları kendi kültür değerlerine öyle bağlı ki, ilk duyduğunuzda şaşırıyorsunuz? Örneğin Avustralya'nın Perth şehrinde, cuma akşamı 6'dan sonra çıplak yürüyüş kesinlikle yasak. Çünkü o bölgedeki dini ve aile değerleriyle tam uyumlu olduğunu düşünüyor yetkililer. Yani bu yasalar aslında o ülkenin yaşadığı kültürü doğrudan yansıtıyor, hiç rastgele değil. Siz böyle tuhaf yasalar daha önce duydunuz mu, yorumlara yazın!",
+  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/NqzCIrGNY-I",
+  "video_url": "https://youtu.be/2mpcJuYs2cU",
   "upload_status": "success",
   "upload_error": null
 }
