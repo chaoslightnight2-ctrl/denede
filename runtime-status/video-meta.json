@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Çözülememiş Tarihi Gizemler",
+  "niche": "Tuhaf ve Enteresan Yasalar",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Tarihte bazı olaylar vardır, üzerinden yüzyıllar geçse de tek bir net cevap buluna #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 27.53,
+  "title": "Şehirlerde dolaşan tuhaf kurallar genellikle efsane zannedilir değil mi #shorts",
+  "thumbnail_text": "BU YASA GERÇEK",
+  "duration_seconds": 32.42,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri"
+    "yasalar",
+    "ilginc",
+    "dunya"
   ],
   "background_queries": [
-    "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "court law",
+    "judge gavel",
+    "old documents",
+    "city street rules",
+    "law books cinematic"
   ],
-  "script": "Tarihte bazı olaylar vardır, üzerinden yüzyıllar geçse de tek bir net cevap bulunamaz. Kayıp koloniler, çözülemeyen yazıtlar ve aniden yok olan topluluklar bize şunu hatırlatır: Geçmiş tamamen bitmiş değildir. Toprağın altında, eski belgelerde ve unutulmuş haritalarda hâlâ cevap bekleyen izler var. Belki de tarih, bize anlatılandan çok daha karmaşık. Bir sonraki gizemde hangi parçanın eksik olduğunu düşün.",
-  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Şehirlerde dolaşan tuhaf kurallar genellikle efsane zannedilir değil mi? Bunların çoğu aslında geçmişte yaşanan olaylardan sonra çıkarılan gerçek yasalardan kalıyor. Bazıları da sadece halk arasında dolaşan bir laf gibi görünse de resmi kayıtlarda da yer alıyor. Mesela bazı Avrupa şehirlerinde hala yürürlükte olan, sokak hayvanlarına yemek vermeyle ilgili eski düzenlemeler bile var. Peki siz şehrinizde dolaşan tuhaf kurallardan birini duydunuz mu? Yorumlara yazın, en ilginç olanı bir sonraki videoda konuşalım.",
+  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/mna9qU9NMe8",
+  "video_url": "https://youtu.be/Qn2AS4F-JKk",
   "upload_status": "success",
   "upload_error": null
 }
