@@ -3,46 +3,80 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-  "niche": "İnanılmaz Bilimsel Keşifler",
-  "angle": "hatalardan doğan keşifler",
+  "niche": "Uzayın Korkunç Sırları",
+  "angle": "görünmeyen evren",
   "channel_analysis": {
     "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
     "handle": "@ilgiçekici15",
     "observed_date": "2026-06-07",
+    "source_scope": "all_available_channel_shorts_via_yt_dlp_flat_playlist",
+    "video_count_scanned": 148,
+    "videos_with_public_view_counts": 81,
     "summary": [
-      "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
-      "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
-      "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+      "Full-channel scan found higher-view outliers in weird laws, urban legend rules, human behavior, invisible universe/space, daily decisions, stoic calm, and achievement discipline.",
+      "Recent uploads still repeat exact titles and scripts, which weakens browse and Shorts testing signals.",
+      "Optimization should lean into proven curiosity topics while keeping no-repeat packaging and stronger retention hooks."
     ],
     "view_signals": [
       {
+        "niche": "Tuhaf ve Enteresan Yasalar",
+        "top_public_views": 1800,
+        "signal": "highest observed Short; weird local law packaging worked"
+      },
+      {
+        "niche": "Tuhaf ve Enteresan Yasalar",
+        "top_public_views": 1300,
+        "signal": "urban-legend city rules also overperformed"
+      },
+      {
         "niche": "Bilinmeyen İnsan Davranışları",
-        "recent_public_views": 1,
-        "signal": "one of the only non-zero recent RSS entries"
+        "top_public_views": 1500,
+        "signal": "anticipation and everyday behavior hooks performed strongly"
+      },
+      {
+        "niche": "Bilinmeyen İnsan Davranışları",
+        "top_public_views": 1200,
+        "signal": "social behavior and bystander-style framing performed strongly"
       },
       {
         "niche": "Uzayın Korkunç Sırları",
-        "recent_public_views": 1,
-        "signal": "one of the only non-zero recent RSS entries"
+        "top_public_views": 1100,
+        "signal": "invisible universe / unseen reality hook performed strongly"
       },
       {
-        "niche": "Çözülememiş Tarihi Gizemler",
-        "recent_public_views": 0,
-        "signal": "repeated exact titles underperformed"
+        "niche": "Teknolojinin Karanlık Yüzü",
+        "top_public_views": 1000,
+        "signal": "daily decision overload / attention framing performed strongly"
       },
       {
-        "niche": "İnanılmaz Bilimsel Keşifler",
-        "recent_public_views": 0,
-        "signal": "fresh but no visible traction yet"
+        "niche": "Günlük Hayatta Stoacı Felsefe",
+        "top_public_views": 424,
+        "signal": "small daily calm/action framing beat most recent uploads"
+      },
+      {
+        "niche": "Başarı Psikolojisi ve Motivasyon",
+        "top_public_views": 344,
+        "signal": "invisible discipline and routine framing showed traction"
       }
     ],
+    "algorithm_reference_video": {
+      "url": "https://youtu.be/N-q-XLQymnU",
+      "title": "The Entire Shorts Algorithm Explained in 180 Seconds…",
+      "public_views_observed": 336790,
+      "applied_takeaways": [
+        "optimize the first seconds for a clear hook",
+        "use one focused story arc instead of list-like facts",
+        "avoid repeated packaging so Shorts can test each upload separately",
+        "favor retention and curiosity over generic hashtags"
+      ]
+    },
     "priority_niches": [
+      "Tuhaf ve Enteresan Yasalar",
       "Bilinmeyen İnsan Davranışları",
+      "Uzayın Korkunç Sırları",
       "Teknolojinin Karanlık Yüzü",
-      "Şok Edici Psikolojik Gerçekler",
-      "İnanılmaz Bilimsel Keşifler",
-      "Çözülememiş Tarihi Gizemler",
-      "Uzayın Korkunç Sırları"
+      "Günlük Hayatta Stoacı Felsefe",
+      "Başarı Psikolojisi ve Motivasyon"
     ]
   },
   "caption_style": {
@@ -54,9 +88,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bu keşif çöpe atılmayan bir sonuçtu #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 30.31,
+  "title": "Evrenin göremediğimiz kısmı ürkütüyor #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 29.11,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -68,23 +102,21 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
+    "uzay",
+    "evren",
     "bilim",
-    "kesif",
-    "bilgiler",
-    "keşif",
-    "deney",
-    "merak",
-    "teknoloji"
+    "karadelik",
+    "galaksi"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "galaxy stars night sky",
+    "space galaxy stars",
+    "nebula stars",
+    "astronaut outer space",
+    "black hole animation"
   ],
-  "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
-  "description": "Bu keşif çöpe atılmayan bir sonuçtu\n\nİnanılmaz Bilimsel Keşifler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: bilim, keşif, deney, merak, teknoloji.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Evrenin büyük kısmını göremiyoruz. Bilim insanları karanlık madde ve karanlık enerji olduğunu söylüyor ama tam olarak ne olduklarını bilmiyoruz. Yani gördüğümüz yıldızlar, galaksiler ve gezegenler evrenin sadece küçük bir parçası. Asıl büyük sahne görünmez durumda. Bu düşünce ürkütücü ama büyüleyici. Belki de evrenin en büyük sırrı uzaklarda değil, göremediğimiz şeylerde saklı.",
+  "description": "Evrenin göremediğimiz kısmı ürkütüyor\n\nUzayın Korkunç Sırları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: uzay, evren, kara delik, galaksi, bilim.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
   "viral_packaging_score": {
     "score": 100,
     "notes": []
@@ -94,14 +126,14 @@
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/kOBU0g4bd88",
+  "video_url": "https://youtu.be/8_PopdZfPtI",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 2,
   "schedule_slot_turkey": "1200",
   "scheduled_publish_at_turkey": "2026-06-08T12:00:00+03:00",
   "scheduled_publish_at_utc": "2026-06-08T09:00:00Z",
-  "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
+  "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
   "slot_video_path": "generated-videos/short_1200.mp4",
   "slot_thumbnail_path": "generated-videos/thumbnail_1200.jpg",
   "slot_preview_gif_path": "generated-videos/preview_1200.gif"
