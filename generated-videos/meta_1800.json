@@ -3,8 +3,8 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-  "niche": "Şok Edici Psikolojik Gerçekler",
-  "angle": "tanıdıklık yanılgısı",
+  "niche": "Günlük Hayatta Stoacı Felsefe",
+  "angle": "tepkiyi seçmek",
   "channel_analysis": {
     "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
     "handle": "@ilgiçekici15",
@@ -54,9 +54,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Zihnin bunu gerçek sanıyor #shorts",
-  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
-  "duration_seconds": 32.95,
+  "title": "Stoacılar bunu çok önce çözmüştü #shorts",
+  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
+  "duration_seconds": 31.46,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -68,22 +68,23 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "psikoloji",
-    "beyin",
-    "insanpsikolojisi",
-    "zihin",
-    "algı",
-    "karar"
+    "stoacilik",
+    "felsefe",
+    "hayatdersleri",
+    "stoacılık",
+    "sakinlik",
+    "kontrol",
+    "hayatdersi"
   ],
   "background_queries": [
-    "human brain psychology",
-    "thinking person dark",
-    "mind concept",
-    "neural network abstract",
-    "person thinking cinematic"
+    "ancient statue",
+    "stoic statue",
+    "calm person nature",
+    "roman columns",
+    "meditation nature cinematic"
   ],
-  "script": "Bazen bir yere ilk kez gittiğinde sanki daha önce gelmiş gibi hissettiğin oldu mu? Aslında bu, tanıdıklık yanılgısı olarak bilinen şok edici bir psikolojik gerçek. Beynimiz, karşılaştığımız küçük tanıdık detayla geçmiş bir anıyı yanlış eşleştiriyor ve bize sanki daha önce buradaymışız gibi hissettiriyor. En çok da yeni gördüğümüz bir yerde yaşanan bu durum, beynin hatırlama mekanizmasının tuhaflığını gösteriyor. Sen de son zamanlarda bu duyguyu yaşadıysan yorumlara ne olduğunu yaz, tartışalım.",
-  "description": "Zihnin bunu gerçek sanıyor\n\nŞok Edici Psikolojik Gerçekler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: psikoloji, beyin, zihin, algı, karar.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Şunu biliyor musun? Seni yoran şey çoğu zaman olayın kendisi değil, ona verdiğin anlamdır. Stoacılar bunu yüzyıllar önce fark etti. Kontrol edemediğin şeyi zorladıkça zihnin yorulur. Ama kendi tepkini seçtiğinde güç geri gelir. Bugün biri seni sinirlendirirse hemen cevap verme. Önce dur, nefes al ve şunu sor: Bu benim kontrolümde mi? Cevap hayırsa, enerjini geri al.",
+  "description": "Stoacılar bunu çok önce çözmüştü\n\nGünlük Hayatta Stoacı Felsefe konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: stoacılık, felsefe, sakinlik, kontrol, hayat dersi.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
   "viral_packaging_score": {
     "score": 100,
     "notes": []
@@ -93,7 +94,7 @@
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/eEXH_xtaOpg",
+  "video_url": "https://youtu.be/7RkDydq3u_g",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 3,

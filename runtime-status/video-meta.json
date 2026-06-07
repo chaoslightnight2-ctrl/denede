@@ -3,8 +3,8 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Çözülememiş Tarihi Gizemler",
-  "angle": "unutulmuş kayıtlar",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
+  "angle": "tekrarın gücü",
   "channel_analysis": {
     "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
     "handle": "@ilgiçekici15",
@@ -54,9 +54,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Geçmişte eksik kalan parça #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 31.42,
+  "title": "Başarı motivasyonla başlamıyor #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 30.6,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -68,22 +68,22 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri",
-    "arkeoloji",
-    "eskikayıtlar",
-    "sırlar"
+    "motivasyon",
+    "basari",
+    "disiplin",
+    "başarı",
+    "alışkanlık",
+    "odak"
   ],
   "background_queries": [
-    "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "M.Ö. 1200'lerde Anadolu'da yok edilen Hitit kentinin tüm resmi kayıtları, bir gecede ortadan kayboldu. Arkeologlar yıllardır bu kayıpların izini sürüyor, ancak buldukları her yeni parça sadece gizemini daha da artırıyor. Ya bu kayıtlar aslında saklandığı yerde hala güvende? Unutulmuş her bir kayıt, tarihin açtığı en büyük kapıyı biraz daha açıyor. Yeni çözümlenmemiş tarihi gizemler için kanala abone olmayı unutmayın.",
-  "description": "Geçmişte eksik kalan parça\n\nÇözülememiş Tarihi Gizemler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: tarih, gizem, arkeoloji, eski kayıtlar, sırlar.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Başarının en gizli tarafı motivasyon değildir, tekrar gücüdür. Motivasyon gelir ve gider. Ama küçük alışkanlıklar sessizce karakterini değiştirir. Her gün sadece biraz daha iyi olmak, uzun vadede büyük fark yaratır. İnsanlar sonucu görünce şans sanır, ama görünmeyen yerde yüzlerce küçük seçim vardır. Bugün büyük bir plan yapma. Sadece yarın da tekrarlayabileceğin küçük bir adım at.",
+  "description": "Başarı motivasyonla başlamıyor\n\nBaşarı Psikolojisi ve Motivasyon konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: başarı, disiplin, motivasyon, alışkanlık, odak.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
   "viral_packaging_score": {
     "score": 100,
     "notes": []
@@ -93,7 +93,7 @@
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/ov3v8nB1On4",
+  "video_url": "https://youtu.be/tH0eEPC_vc8",
   "upload_status": "success",
   "upload_error": null
 }
