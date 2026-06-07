@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import random
 import re
 import shutil
@@ -134,8 +135,10 @@ def fallback_script(niche: str) -> str:
 
 
 def generate_script(niche: str) -> str:
-    best = ""
-    best_count = 999
+    if os.getenv("USE_ONLINE_SCRIPT_GENERATOR", "").lower() not in {"1", "true", "yes"}:
+        runner.main.logger.info("Using curated fallback script; online generator disabled for stable batch runtime.")
+        return fallback_script(niche)
+
     try:
         from g4f.client import Client
         client = Client()
@@ -143,33 +146,21 @@ def generate_script(niche: str) -> str:
         runner.main.logger.warning("generator unavailable, fallback used: %s", exc)
         return fallback_script(niche)
 
-    repeated_bad = 0
-    for attempt in range(4):
-        angle = runner.FORCED_ANGLE or random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
-        try:
-            response = client.chat.completions.create(
-                model="gpt-4",
-                messages=[{"role": "user", "content": prompt_for(niche, angle)}],
-                timeout=60,
-            )
-            script = clean(response.choices[0].message.content)
-            bad = issues(script)
-            if len(bad) < best_count:
-                best = script
-                best_count = len(bad)
-            if not bad:
-                runner.main.logger.info("Accepted script try=%d angle=%s", attempt + 1, angle)
-                return script
-            runner.main.logger.warning("Rejected script, regenerating: %s", ",".join(bad))
-            if "word_count=16" in bad and "too_many_colons" in bad:
-                repeated_bad += 1
-                if repeated_bad >= 2:
-                    runner.main.logger.warning("Generator is repeating short colon-form output; using curated fallback.")
-                    break
-        except Exception as exc:
-            runner.main.logger.warning("Script generation failed try=%d: %s", attempt + 1, exc)
-    if best and best_count <= 1:
-        return best
+    angle = runner.FORCED_ANGLE or random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[{"role": "user", "content": prompt_for(niche, angle)}],
+            timeout=12,
+        )
+        script = clean(response.choices[0].message.content)
+        bad = issues(script)
+        if not bad:
+            runner.main.logger.info("Accepted online script angle=%s", angle)
+            return script
+        runner.main.logger.warning("Rejected online script, fallback used: %s", ",".join(bad))
+    except Exception as exc:
+        runner.main.logger.warning("Online script generation failed fast; fallback used: %s", exc)
     return fallback_script(niche)
 
 
