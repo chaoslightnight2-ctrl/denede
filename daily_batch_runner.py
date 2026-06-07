@@ -30,6 +30,58 @@ SCENARIOS = {
     "Tuhaf ve Enteresan Yasalar": ["kuralların arkasındaki hikaye", "kültür farkı", "şehir efsanesi sanılan kurallar", "günlük davranışların anlamı"],
 }
 
+CHANNEL_VIEW_WEIGHTED_NICHES = [
+    "Bilinmeyen İnsan Davranışları",
+    "Uzayın Korkunç Sırları",
+    "Teknolojinin Karanlık Yüzü",
+    "Şok Edici Psikolojik Gerçekler",
+    "İnanılmaz Bilimsel Keşifler",
+    "Çözülememiş Tarihi Gizemler",
+]
+
+
+def _norm_key(text: str) -> str:
+    text = clean(text).casefold()
+    text = re.sub(r"#shorts", "", text, flags=re.I)
+    return re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]+", "", text)
+
+
+def _recent_manifest_rows() -> list[dict]:
+    path = OUT / "daily_batch_manifest.json"
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    return data if isinstance(data, list) else []
+
+
+def choose_daily_plan() -> list[dict]:
+    recent = _recent_manifest_rows()
+    recent_niches = [row.get("niche") for row in recent if isinstance(row, dict)]
+    recent_angles = {_norm_key(row.get("angle") or row.get("title") or "") for row in recent if isinstance(row, dict)}
+
+    ordered = CHANNEL_VIEW_WEIGHTED_NICHES + [n for n in SCENARIOS if n not in CHANNEL_VIEW_WEIGHTED_NICHES]
+    plan = []
+    for niche in ordered:
+        if len(plan) >= len(SLOTS):
+            break
+        if niche in [item["niche"] for item in plan]:
+            continue
+        if niche in recent_niches[-4:] and len(SCENARIOS) - len(set(recent_niches[-4:])) >= len(SLOTS):
+            continue
+        angles = SCENARIOS.get(niche) or ["tek ana fikir"]
+        angle = next((a for a in angles if _norm_key(a) not in recent_angles), random.choice(angles))
+        recent_angles.add(_norm_key(angle))
+        plan.append({"niche": niche, "angle": angle})
+
+    while len(plan) < len(SLOTS):
+        niche = random.choice([n for n in SCENARIOS if n not in [item["niche"] for item in plan]])
+        angle = random.choice(SCENARIOS[niche])
+        plan.append({"niche": niche, "angle": angle})
+    return plan
+
 
 def clean(text: str) -> str:
     text = re.sub(r"[*#_`>\[\]{}]", "", text or "")
@@ -45,6 +97,7 @@ Konu: {niche}
 Süre hedefi: 30-40 saniye.
 Kelime hedefi: 55-75 kelime.
 Kurallar: Tek ana fikir üzerinden ilerle. Cümleler birbirine anlamca bağlı olsun. Rastgele ülke, olay veya bilgi listesi yapma. Boş clickbait, çeviri kokan ifade, düşük cümle ve anlatım bozukluğu kullanma. Kesin sayı, ceza, yasa veya tıbbi iddia uydurma. En fazla iki soru cümlesi kullan. Son cümle doğal bir yorum veya takip çağrısı olsun. Sadece konuşulacak metni yaz.
+Kanal optimizasyonu: Daha önce tekrar eden "biliyor musun" tarzı açılışları kopyalama. İlk iki saniyede tek ve net merak boşluğu aç. Aynı başlık gibi okunacak ilk cümle yazma; bu videoya özel yeni bir kanca kur.
 """.strip()
 
 
@@ -90,7 +143,7 @@ def generate_script(niche: str) -> str:
         return fallback_script(niche)
 
     for attempt in range(7):
-        angle = random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
+        angle = runner.FORCED_ANGLE or random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
         try:
             response = client.chat.completions.create(
                 model="gpt-4",
@@ -170,7 +223,8 @@ def copy_slot_files(slot: str, publish_at: datetime, index: int) -> dict:
         "schedule_slot_turkey": slot,
         "scheduled_publish_at_turkey": publish_at.isoformat(),
         "scheduled_publish_at_utc": publish_at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
+        "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+        "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
         "slot_video_path": str(OUT / f"short_{slot}.mp4"),
         "slot_thumbnail_path": str(OUT / f"thumbnail_{slot}.jpg"),
         "slot_preview_gif_path": str(OUT / f"preview_{slot}.gif"),
@@ -184,10 +238,21 @@ async def main() -> None:
     runner.generate_script = generate_script
     runner.fallback_script = fallback_script
     manifest = []
+    daily_plan = choose_daily_plan()
+    runner.main.logger.info("Daily channel-optimized plan: %s", daily_plan)
     for index, (slot, hour) in enumerate(SLOTS, start=1):
+        plan_item = daily_plan[index - 1]
+        runner.FORCED_NICHE = plan_item["niche"]
+        runner.FORCED_ANGLE = plan_item["angle"]
         publish_at = publish_time(hour)
         runner.main.upload_to_youtube = scheduled_uploader(publish_at, slot)
-        runner.main.logger.info("Starting daily batch video %d/4 slot=%s", index, slot)
+        runner.main.logger.info(
+            "Starting daily batch video %d/4 slot=%s niche=%s angle=%s",
+            index,
+            slot,
+            runner.FORCED_NICHE,
+            runner.FORCED_ANGLE,
+        )
         await runner.run()
         manifest.append(copy_slot_files(slot, publish_at, index))
     (OUT / "daily_batch_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")

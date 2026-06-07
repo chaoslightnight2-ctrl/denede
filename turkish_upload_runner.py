@@ -38,7 +38,7 @@ MAX_TARGET_DURATION = 40.0
 TARGET_DURATION = 35.0
 
 main.DEFAULT_VOICE = "tr-TR-EmelNeural"
-main.RATE = "+10%"
+main.RATE = "+0%"
 main.PITCH = "+0Hz"
 
 GENERAL_NICHES = [
@@ -68,6 +68,101 @@ GENERAL_PEXELS_QUERIES = {
 }
 
 DEFAULT_TAGS = ["shorts", "youtubeshorts", "viral", "viralshorts", "fyp", "bilgi", "ilgincbilgiler", "turkceshorts", "shortsturkiye", "merakedilenler"]
+
+FORCED_NICHE = None
+FORCED_ANGLE = None
+RECENT_TITLE_MEMORY = []
+
+CHANNEL_ANALYSIS = {
+    "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+    "handle": "@ilgiçekici15",
+    "observed_date": "2026-06-07",
+    "summary": [
+        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot.",
+    ],
+    "view_signals": [
+        {"niche": "Bilinmeyen İnsan Davranışları", "recent_public_views": 1, "signal": "one of the only non-zero recent RSS entries"},
+        {"niche": "Uzayın Korkunç Sırları", "recent_public_views": 1, "signal": "one of the only non-zero recent RSS entries"},
+        {"niche": "Çözülememiş Tarihi Gizemler", "recent_public_views": 0, "signal": "repeated exact titles underperformed"},
+        {"niche": "İnanılmaz Bilimsel Keşifler", "recent_public_views": 0, "signal": "fresh but no visible traction yet"},
+    ],
+    "priority_niches": [
+        "Bilinmeyen İnsan Davranışları",
+        "Teknolojinin Karanlık Yüzü",
+        "Şok Edici Psikolojik Gerçekler",
+        "İnanılmaz Bilimsel Keşifler",
+        "Çözülememiş Tarihi Gizemler",
+        "Uzayın Korkunç Sırları",
+    ],
+}
+
+TITLE_TEMPLATES = {
+    "Şok Edici Psikolojik Gerçekler": [
+        "Beynin seni böyle kandırıyor",
+        "Bu psikolojik tuzağı çoğu kişi fark etmiyor",
+        "Zihnin bunu gerçek sanıyor",
+    ],
+    "Bilinmeyen İnsan Davranışları": [
+        "Kalabalıkta kimse neden adım atmıyor",
+        "İnsanlar bunu fark etmeden yapıyor",
+        "Davranışların gizli sebebi bu",
+    ],
+    "Çözülememiş Tarihi Gizemler": [
+        "Tarihin cevap veremediği iz",
+        "Bu eski kayıt hala açıklanamıyor",
+        "Geçmişte eksik kalan parça",
+    ],
+    "Uzayın Korkunç Sırları": [
+        "Evrenin görünmeyen tarafı ürkütüyor",
+        "Uzayda bilmediğimiz şey bu",
+        "Karanlık evrenin en garip sırrı",
+    ],
+    "Günlük Hayatta Stoacı Felsefe": [
+        "Sakin kalmanın eski formülü",
+        "Stoacılar bunu çok önce çözmüştü",
+        "Kontrolü geri almanın yolu",
+    ],
+    "Başarı Psikolojisi ve Motivasyon": [
+        "Başarı motivasyonla başlamıyor",
+        "Disiplinin görünmeyen etkisi",
+        "Vazgeçmeden önce bunu düşün",
+    ],
+    "Teknolojinin Karanlık Yüzü": [
+        "Algoritma zayıf anını da öğreniyor",
+        "Telefonundan daha çok veri sızıyor",
+        "Teknoloji dikkatini böyle tutuyor",
+    ],
+    "Mitoloji ve Efsanelerin Kökenleri": [
+        "Efsaneler neden birbirine benziyor",
+        "Mitolojinin sakladığı ortak korku",
+        "Eski hikayelerin gerçek sebebi",
+    ],
+    "İnanılmaz Bilimsel Keşifler": [
+        "Bilim bazen hatayla başlar",
+        "Bu keşif çöpe atılmayan bir sonuçtu",
+        "Merak dünyayı böyle değiştirdi",
+    ],
+    "Tuhaf ve Enteresan Yasalar": [
+        "Bu kural şaka gibi ama gerçek",
+        "Garip yasaların sakladığı hikaye",
+        "Normal sandığın şey burada yasak",
+    ],
+}
+
+DESCRIPTION_KEYWORDS = {
+    "Şok Edici Psikolojik Gerçekler": ["psikoloji", "beyin", "zihin", "algı", "karar"],
+    "Bilinmeyen İnsan Davranışları": ["insan davranışı", "sosyoloji", "psikoloji", "kalabalık", "alışkanlık"],
+    "Çözülememiş Tarihi Gizemler": ["tarih", "gizem", "arkeoloji", "eski kayıtlar", "sırlar"],
+    "Uzayın Korkunç Sırları": ["uzay", "evren", "kara delik", "galaksi", "bilim"],
+    "Günlük Hayatta Stoacı Felsefe": ["stoacılık", "felsefe", "sakinlik", "kontrol", "hayat dersi"],
+    "Başarı Psikolojisi ve Motivasyon": ["başarı", "disiplin", "motivasyon", "alışkanlık", "odak"],
+    "Teknolojinin Karanlık Yüzü": ["teknoloji", "algoritma", "veri", "dikkat ekonomisi", "yapay zeka"],
+    "Mitoloji ve Efsanelerin Kökenleri": ["mitoloji", "efsane", "sembol", "antik tarih", "kültür"],
+    "İnanılmaz Bilimsel Keşifler": ["bilim", "keşif", "deney", "merak", "teknoloji"],
+    "Tuhaf ve Enteresan Yasalar": ["yasalar", "hukuk", "ülkeler", "kültür", "ilginç bilgiler"],
+}
 
 THUMBNAIL_TEXTS = {
     "Şok Edici Psikolojik Gerçekler": "BEYNİN BUNU YAPIYOR",
@@ -245,9 +340,60 @@ async def choose_best_timed_script(niche: str):
     return selected_script, selected_audio, selected_ts, selected_duration
 
 
+def _norm_key(text: str) -> str:
+    text = clean_script(text).casefold()
+    text = re.sub(r"#shorts", "", text, flags=re.I)
+    text = re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]+", "", text)
+    return text
+
+
+def _load_recent_titles() -> list[str]:
+    titles = list(RECENT_TITLE_MEMORY)
+    for path in [OUTPUT_META, OUTPUT_DIR / "daily_batch_manifest.json", RUNTIME_META]:
+        if not path.exists():
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        rows = data if isinstance(data, list) else [data]
+        for row in rows:
+            if isinstance(row, dict) and row.get("title"):
+                titles.append(str(row["title"]))
+    return titles[-24:]
+
+
+def _compact_title(title: str) -> str:
+    title = re.sub(r"#shorts", "", clean_script(title), flags=re.I).strip(" -:|")
+    title = re.sub(r"\bbiliyor musun\b", "", title, flags=re.I).strip(" ?")
+    title = re.sub(r"\s+", " ", title).strip()
+    max_base = 91
+    if len(title) > max_base:
+        title = title[:max_base].rsplit(" ", 1)[0].strip(" ,.-")
+    return f"{title} #shorts"
+
+
+def _template_title(niche: str, script: str, recent_titles: list[str]) -> str:
+    templates = TITLE_TEMPLATES.get(niche) or []
+    if not templates:
+        first = re.split(r"[.!?]", script)[0].strip()
+        return _compact_title(first)
+
+    recent_keys = {_norm_key(t) for t in recent_titles}
+    seed = sum(ord(ch) for ch in clean_script(script)) % len(templates)
+    ordered = templates[seed:] + templates[:seed]
+    for option in ordered:
+        title = _compact_title(option)
+        if _norm_key(title) not in recent_keys:
+            return title
+    return _compact_title(f"{ordered[0]} {random.choice(['şimdi', 'bugün', 'aslında'])}")
+
+
 def title_and_thumbnail(niche: str, script: str):
-    first = re.split(r"[.!?]", script)[0].strip()
-    return f"{first[:82]} #shorts", THUMBNAIL_TEXTS.get(niche, "BUNU BİLİYOR MUYDUN")
+    recent_titles = _load_recent_titles()
+    title = _template_title(niche, script, recent_titles)
+    RECENT_TITLE_MEMORY.append(title)
+    return title, THUMBNAIL_TEXTS.get(niche, "BUNU BİLİYOR MUYDUN")
 
 
 def build_tags(niche: str):
@@ -267,7 +413,46 @@ def build_tags(niche: str):
     for tag in DEFAULT_TAGS + niche_tags.get(niche, []):
         if tag not in out:
             out.append(tag)
-    return out[:15]
+    for tag in DESCRIPTION_KEYWORDS.get(niche, []):
+        tag = re.sub(r"\s+", "", tag.casefold())
+        if tag and tag not in out:
+            out.append(tag)
+    return out[:18]
+
+
+def build_description(niche: str, title: str, tags: list[str]) -> str:
+    keywords = DESCRIPTION_KEYWORDS.get(niche, ["ilginç bilgiler", "shorts"])
+    hook = re.sub(r"#shorts", "", title, flags=re.I).strip()
+    hashtag_line = " ".join(f"#{tag}" for tag in tags[:8] if tag)
+    return (
+        f"{hook}\n\n"
+        f"{niche} konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\n"
+        f"Odak kelimeler: {', '.join(keywords[:5])}.\n"
+        "Yeni ilginç bilgiler için takipte kal.\n\n"
+        f"{hashtag_line}"
+    )[:5000]
+
+
+def viral_packaging_score(title: str, description: str, tags: list[str], duration: float, duplicate_title: bool) -> dict:
+    score = 100
+    notes = []
+    title_no_hash = re.sub(r"#shorts", "", title, flags=re.I).strip()
+    if duplicate_title:
+        score -= 30
+        notes.append("recent_title_duplicate")
+    if not (28.0 <= duration <= 42.0):
+        score -= 18
+        notes.append("duration_outside_shorts_target")
+    if len(title_no_hash) > 72:
+        score -= 10
+        notes.append("title_too_long_for_browse")
+    if len(set(tags)) < 12:
+        score -= 8
+        notes.append("thin_tag_set")
+    if "Odak kelimeler:" not in description:
+        score -= 8
+        notes.append("description_missing_keywords")
+    return {"score": max(score, 0), "notes": notes}
 
 
 def run_cmd(args, check=True):
@@ -324,7 +509,7 @@ async def run() -> None:
     main.NICHE_POOL = GENERAL_NICHES
     main.NICHE_PEXELS_QUERIES = GENERAL_PEXELS_QUERIES
 
-    niche = random.choice(GENERAL_NICHES)
+    niche = FORCED_NICHE or random.choice(GENERAL_NICHES)
     script, audio, word_ts, duration = await choose_best_timed_script(niche)
     chunked = main.chunk_timestamps(word_ts)
     bg = main.fetch_background_video(script, niche)
@@ -332,6 +517,7 @@ async def run() -> None:
     music = "bg_music.mp3" if main.os.path.exists("bg_music.mp3") else None
     final_path = main.assemble_video(bg, audio, chunked, music)
 
+    recent_titles_before = _load_recent_titles()
     title, thumbnail_text = title_and_thumbnail(niche, script)
     tags = build_tags(niche)
 
@@ -342,13 +528,17 @@ async def run() -> None:
     if thumb_path and Path(thumb_path).exists():
         shutil.copyfile(thumb_path, OUTPUT_THUMBNAIL)
 
-    description = f"{niche} hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts"
+    description = build_description(niche, title, tags)
+    duplicate_title = _norm_key(title) in {_norm_key(t) for t in recent_titles_before}
+    viral_score = viral_packaging_score(title, description, tags, duration, duplicate_title)
     meta = {
         "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
         "language": "tr",
         "voice": main.DEFAULT_VOICE,
         "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
         "niche": niche,
+        "angle": FORCED_ANGLE,
+        "channel_analysis": CHANNEL_ANALYSIS,
         "caption_style": {
             "font_size": 60,
             "stroke_width": 5,
@@ -365,6 +555,7 @@ async def run() -> None:
         "background_queries": GENERAL_PEXELS_QUERIES.get(niche, []),
         "script": script,
         "description": description,
+        "viral_packaging_score": viral_score,
         "video_path": str(OUTPUT_VIDEO),
         "thumbnail_path": str(OUTPUT_THUMBNAIL) if OUTPUT_THUMBNAIL.exists() else None,
         "first_frame_path": str(OUTPUT_FIRST_FRAME) if OUTPUT_FIRST_FRAME.exists() else None,
