@@ -98,6 +98,7 @@ Süre hedefi: 30-40 saniye.
 Kelime hedefi: 55-75 kelime.
 Kurallar: Tek ana fikir üzerinden ilerle. Cümleler birbirine anlamca bağlı olsun. Rastgele ülke, olay veya bilgi listesi yapma. Boş clickbait, çeviri kokan ifade, düşük cümle ve anlatım bozukluğu kullanma. Kesin sayı, ceza, yasa veya tıbbi iddia uydurma. En fazla iki soru cümlesi kullan. Son cümle doğal bir yorum veya takip çağrısı olsun. Sadece konuşulacak metni yaz.
 Kanal optimizasyonu: Daha önce tekrar eden "biliyor musun" tarzı açılışları kopyalama. İlk iki saniyede tek ve net merak boşluğu aç. Aynı başlık gibi okunacak ilk cümle yazma; bu videoya özel yeni bir kanca kur.
+Güven filtresi: Kaynak gerektiren kesin tarih, yüzde, ceza, suç, tıbbi veya tarihi olay iddiası uydurma. Emin değilsen genel anlat; merakı iddia değil soru ve bağlamla kur.
 """.strip()
 
 
@@ -118,6 +119,8 @@ def issues(text: str) -> list[str]:
         out.append("contradictory_question")
     if any(x in low for x in ["vergi suçu", "oburluk yasası", "hayatınızı değiştirecek:"]):
         out.append("known_bad_phrase")
+    if re.search(r"\b(m\.ö\.|mö|m\.s\.|ms|\d{3,4}'lerde|\d{3,4}lerde|tek gecede|tamamen ortadan kayboldu)\b", low):
+        out.append("over_specific_unverified_claim")
     countries = ["almanya", "japonya", "ingiltere", "amerika", "arizona", "türkiye"]
     if sum(1 for c in countries if c in low) > 3:
         out.append("random_country_list")

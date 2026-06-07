@@ -58,7 +58,7 @@ GENERAL_PEXELS_QUERIES = {
     "Şok Edici Psikolojik Gerçekler": ["human brain psychology", "thinking person dark", "mind concept", "neural network abstract", "person thinking cinematic"],
     "Bilinmeyen İnsan Davranışları": ["people walking city", "human behavior", "crowd slow motion", "person thinking", "urban people cinematic"],
     "Çözülememiş Tarihi Gizemler": ["ancient ruins", "old manuscript", "archaeology", "mysterious temple", "ancient history cinematic"],
-    "Uzayın Korkunç Sırları": ["deep space", "galaxy stars", "black hole", "astronaut space", "space cinematic"],
+    "Uzayın Korkunç Sırları": ["galaxy stars night sky", "space galaxy stars", "nebula stars", "astronaut outer space", "black hole animation"],
     "Günlük Hayatta Stoacı Felsefe": ["ancient statue", "stoic statue", "calm person nature", "roman columns", "meditation nature cinematic"],
     "Başarı Psikolojisi ve Motivasyon": ["person running", "mountain climb", "focused work", "success motivation", "athlete training cinematic"],
     "Teknolojinin Karanlık Yüzü": ["cyber security", "phone screen dark", "data center", "hacker code", "technology dark cinematic"],
