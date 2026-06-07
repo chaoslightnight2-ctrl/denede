@@ -3,8 +3,49 @@
     "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
-    "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-    "niche": "İnanılmaz Bilimsel Keşifler",
+    "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+    "niche": "Uzayın Korkunç Sırları",
+    "angle": "görünmeyen evren",
+    "channel_analysis": {
+      "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+      "handle": "@ilgiçekici15",
+      "observed_date": "2026-06-07",
+      "summary": [
+        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+      ],
+      "view_signals": [
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Uzayın Korkunç Sırları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Çözülememiş Tarihi Gizemler",
+          "recent_public_views": 0,
+          "signal": "repeated exact titles underperformed"
+        },
+        {
+          "niche": "İnanılmaz Bilimsel Keşifler",
+          "recent_public_views": 0,
+          "signal": "fresh but no visible traction yet"
+        }
+      ],
+      "priority_niches": [
+        "Bilinmeyen İnsan Davranışları",
+        "Teknolojinin Karanlık Yüzü",
+        "Şok Edici Psikolojik Gerçekler",
+        "İnanılmaz Bilimsel Keşifler",
+        "Çözülememiş Tarihi Gizemler",
+        "Uzayın Korkunç Sırları"
+      ]
+    },
     "caption_style": {
       "font_size": 60,
       "stroke_width": 5,
@@ -14,9 +55,9 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
-    "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-    "duration_seconds": 27.58,
+    "title": "Evrenin görünmeyen tarafı ürkütüyor #shorts",
+    "thumbnail_text": "UZAY BUNU SAKLIYOR",
+    "duration_seconds": 33.17,
     "tags": [
       "shorts",
       "youtubeshorts",
@@ -28,31 +69,38 @@
       "turkceshorts",
       "shortsturkiye",
       "merakedilenler",
+      "uzay",
+      "evren",
       "bilim",
-      "kesif",
-      "bilgiler"
+      "karadelik",
+      "galaksi"
     ],
     "background_queries": [
-      "science laboratory",
-      "microscope",
-      "space telescope",
-      "scientist experiment",
-      "laboratory cinematic"
+      "deep space",
+      "galaxy stars",
+      "black hole",
+      "astronaut space",
+      "space cinematic"
     ],
-    "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
-    "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+    "script": "Gördüğümüz tüm yıldızlar, gezegenler, hatta galaksiler bile tüm evrenin sadece %5’i. Gökyüzünde gördüğümüz her şey, aslında evrenin sadece küçük bir parçası. Geri kalan %95’in tamamen görünmeyen evreninde, ne olduğunu henüz kimse bilmiyor. Karanlık madde mi, yoksa bizim henüz keşfedemediğimiz başka bir şey mi? Bence bu sırrı çözen ilk kişi, insanlığın bakış açısını tamamen değiştirecek. Sen de ne olduğunu düşünüyorsun?",
+    "description": "Evrenin görünmeyen tarafı ürkütüyor\n\nUzayın Korkunç Sırları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: uzay, evren, kara delik, galaksi, bilim.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "viral_packaging_score": {
+      "score": 100,
+      "notes": []
+    },
     "video_path": "generated-videos/latest_short.mp4",
     "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/KseRt-1tRPU",
+    "video_url": "https://youtu.be/VaLncedjbtU",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 1,
     "schedule_slot_turkey": "0600",
-    "scheduled_publish_at_turkey": "2026-06-07T06:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-06-07T03:00:00Z",
+    "scheduled_publish_at_turkey": "2026-06-08T06:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-06-08T03:00:00Z",
+    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_0600.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_0600.jpg",
     "slot_preview_gif_path": "generated-videos/preview_0600.gif"
@@ -61,8 +109,49 @@
     "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
-    "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-    "niche": "Bilinmeyen İnsan Davranışları",
+    "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+    "niche": "Teknolojinin Karanlık Yüzü",
+    "angle": "dikkat ekonomisi",
+    "channel_analysis": {
+      "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+      "handle": "@ilgiçekici15",
+      "observed_date": "2026-06-07",
+      "summary": [
+        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+      ],
+      "view_signals": [
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Uzayın Korkunç Sırları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Çözülememiş Tarihi Gizemler",
+          "recent_public_views": 0,
+          "signal": "repeated exact titles underperformed"
+        },
+        {
+          "niche": "İnanılmaz Bilimsel Keşifler",
+          "recent_public_views": 0,
+          "signal": "fresh but no visible traction yet"
+        }
+      ],
+      "priority_niches": [
+        "Bilinmeyen İnsan Davranışları",
+        "Teknolojinin Karanlık Yüzü",
+        "Şok Edici Psikolojik Gerçekler",
+        "İnanılmaz Bilimsel Keşifler",
+        "Çözülememiş Tarihi Gizemler",
+        "Uzayın Korkunç Sırları"
+      ]
+    },
     "caption_style": {
       "font_size": 60,
       "stroke_width": 5,
@@ -72,9 +161,9 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
-    "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-    "duration_seconds": 27.65,
+    "title": "Teknoloji dikkatini böyle tutuyor #shorts",
+    "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
+    "duration_seconds": 33.7,
     "tags": [
       "shorts",
       "youtubeshorts",
@@ -86,31 +175,39 @@
       "turkceshorts",
       "shortsturkiye",
       "merakedilenler",
-      "insandavranisi",
-      "psikoloji",
-      "sosyoloji"
+      "teknoloji",
+      "yapayzeka",
+      "siber",
+      "algoritma",
+      "veri",
+      "dikkatekonomisi"
     ],
     "background_queries": [
-      "people walking city",
-      "human behavior",
-      "crowd slow motion",
-      "person thinking",
-      "urban people cinematic"
+      "cyber security",
+      "phone screen dark",
+      "data center",
+      "hacker code",
+      "technology dark cinematic"
     ],
-    "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
-    "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+    "script": "Uygulamalar neden seni ekranda tutmak için tüm kuralları deliyor? Çünkü dikkatin artık en değerli para birimi, dikkat ekonomisi bunu kanıtlıyor. Sosyal medya, oyunlar, hatta haber siteleri bile seni ne kadar çok ekranda tutarsa o kadar reklam geliri ve kullanıcı verisi kazanıyor. Beğeni, bildirim, sonsuz kaydırma… Hepsi senin dikkatini çalmak için özel olarak tasarlandı. Sıradaki videoda bu tuzağa düşmeden nasıl teknoloji kullanacağını anlatacağım, takip etmeyi unutma.",
+    "description": "Teknoloji dikkatini böyle tutuyor\n\nTeknolojinin Karanlık Yüzü konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: teknoloji, algoritma, veri, dikkat ekonomisi, yapay zeka.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "viral_packaging_score": {
+      "score": 100,
+      "notes": []
+    },
     "video_path": "generated-videos/latest_short.mp4",
     "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/cigJoXrCSgQ",
+    "video_url": "https://youtu.be/-MTTHYRyPJM",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 2,
     "schedule_slot_turkey": "1200",
-    "scheduled_publish_at_turkey": "2026-06-07T12:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-06-07T09:00:00Z",
+    "scheduled_publish_at_turkey": "2026-06-08T12:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-06-08T09:00:00Z",
+    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_1200.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_1200.jpg",
     "slot_preview_gif_path": "generated-videos/preview_1200.gif"
@@ -119,8 +216,49 @@
     "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
-    "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-    "niche": "Bilinmeyen İnsan Davranışları",
+    "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+    "niche": "Şok Edici Psikolojik Gerçekler",
+    "angle": "tanıdıklık yanılgısı",
+    "channel_analysis": {
+      "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+      "handle": "@ilgiçekici15",
+      "observed_date": "2026-06-07",
+      "summary": [
+        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+      ],
+      "view_signals": [
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Uzayın Korkunç Sırları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Çözülememiş Tarihi Gizemler",
+          "recent_public_views": 0,
+          "signal": "repeated exact titles underperformed"
+        },
+        {
+          "niche": "İnanılmaz Bilimsel Keşifler",
+          "recent_public_views": 0,
+          "signal": "fresh but no visible traction yet"
+        }
+      ],
+      "priority_niches": [
+        "Bilinmeyen İnsan Davranışları",
+        "Teknolojinin Karanlık Yüzü",
+        "Şok Edici Psikolojik Gerçekler",
+        "İnanılmaz Bilimsel Keşifler",
+        "Çözülememiş Tarihi Gizemler",
+        "Uzayın Korkunç Sırları"
+      ]
+    },
     "caption_style": {
       "font_size": 60,
       "stroke_width": 5,
@@ -130,9 +268,9 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
-    "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-    "duration_seconds": 27.65,
+    "title": "Zihnin bunu gerçek sanıyor #shorts",
+    "thumbnail_text": "BEYNİN BUNU YAPIYOR",
+    "duration_seconds": 32.95,
     "tags": [
       "shorts",
       "youtubeshorts",
@@ -144,31 +282,39 @@
       "turkceshorts",
       "shortsturkiye",
       "merakedilenler",
-      "insandavranisi",
       "psikoloji",
-      "sosyoloji"
+      "beyin",
+      "insanpsikolojisi",
+      "zihin",
+      "algı",
+      "karar"
     ],
     "background_queries": [
-      "people walking city",
-      "human behavior",
-      "crowd slow motion",
-      "person thinking",
-      "urban people cinematic"
+      "human brain psychology",
+      "thinking person dark",
+      "mind concept",
+      "neural network abstract",
+      "person thinking cinematic"
     ],
-    "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
-    "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+    "script": "Bazen bir yere ilk kez gittiğinde sanki daha önce gelmiş gibi hissettiğin oldu mu? Aslında bu, tanıdıklık yanılgısı olarak bilinen şok edici bir psikolojik gerçek. Beynimiz, karşılaştığımız küçük tanıdık detayla geçmiş bir anıyı yanlış eşleştiriyor ve bize sanki daha önce buradaymışız gibi hissettiriyor. En çok da yeni gördüğümüz bir yerde yaşanan bu durum, beynin hatırlama mekanizmasının tuhaflığını gösteriyor. Sen de son zamanlarda bu duyguyu yaşadıysan yorumlara ne olduğunu yaz, tartışalım.",
+    "description": "Zihnin bunu gerçek sanıyor\n\nŞok Edici Psikolojik Gerçekler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: psikoloji, beyin, zihin, algı, karar.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "viral_packaging_score": {
+      "score": 100,
+      "notes": []
+    },
     "video_path": "generated-videos/latest_short.mp4",
     "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/U6P_Wjunpgc",
+    "video_url": "https://youtu.be/eEXH_xtaOpg",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 3,
     "schedule_slot_turkey": "1800",
     "scheduled_publish_at_turkey": "2026-06-07T18:00:00+03:00",
     "scheduled_publish_at_utc": "2026-06-07T15:00:00Z",
+    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_1800.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_1800.jpg",
     "slot_preview_gif_path": "generated-videos/preview_1800.gif"
@@ -177,8 +323,49 @@
     "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
-    "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-    "niche": "Mitoloji ve Efsanelerin Kökenleri",
+    "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+    "niche": "Çözülememiş Tarihi Gizemler",
+    "angle": "unutulmuş kayıtlar",
+    "channel_analysis": {
+      "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+      "handle": "@ilgiçekici15",
+      "observed_date": "2026-06-07",
+      "summary": [
+        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+      ],
+      "view_signals": [
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Uzayın Korkunç Sırları",
+          "recent_public_views": 1,
+          "signal": "one of the only non-zero recent RSS entries"
+        },
+        {
+          "niche": "Çözülememiş Tarihi Gizemler",
+          "recent_public_views": 0,
+          "signal": "repeated exact titles underperformed"
+        },
+        {
+          "niche": "İnanılmaz Bilimsel Keşifler",
+          "recent_public_views": 0,
+          "signal": "fresh but no visible traction yet"
+        }
+      ],
+      "priority_niches": [
+        "Bilinmeyen İnsan Davranışları",
+        "Teknolojinin Karanlık Yüzü",
+        "Şok Edici Psikolojik Gerçekler",
+        "İnanılmaz Bilimsel Keşifler",
+        "Çözülememiş Tarihi Gizemler",
+        "Uzayın Korkunç Sırları"
+      ]
+    },
     "caption_style": {
       "font_size": 60,
       "stroke_width": 5,
@@ -188,9 +375,9 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "Mitolojiler sadece eski masallar değildir #shorts",
-    "thumbnail_text": "EFSANENİN KÖKENİ",
-    "duration_seconds": 30.07,
+    "title": "Geçmişte eksik kalan parça #shorts",
+    "thumbnail_text": "TARİHTE GİZLİ KALDI",
+    "duration_seconds": 31.42,
     "tags": [
       "shorts",
       "youtubeshorts",
@@ -202,31 +389,39 @@
       "turkceshorts",
       "shortsturkiye",
       "merakedilenler",
-      "mitoloji",
-      "efsane",
-      "tarih"
+      "tarih",
+      "gizem",
+      "tarihgizemleri",
+      "arkeoloji",
+      "eskikayıtlar",
+      "sırlar"
     ],
     "background_queries": [
-      "ancient statue",
-      "greek temple",
       "ancient ruins",
-      "mythology temple",
-      "old sculpture cinematic"
+      "old manuscript",
+      "archaeology",
+      "mysterious temple",
+      "ancient history cinematic"
     ],
-    "script": "Mitolojiler sadece eski masallar değildir. İnsanların korkularını, umutlarını ve doğayı anlama çabasını taşır. Gök gürültüsü bir tanrının öfkesi, deniz fırtınası bir yaratığın nefesi gibi anlatılırdı. Çünkü insan bilmediği şeye hikaye vererek dayanır. Bugün bile modern dünyada aynı şeyi yapıyoruz. Sadece tanrıların yerini teoriler, semboller ve kahramanlar aldı. Belki efsaneler geçmiş değil, insan zihninin aynasıdır.",
-    "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+    "script": "M.Ö. 1200'lerde Anadolu'da yok edilen Hitit kentinin tüm resmi kayıtları, bir gecede ortadan kayboldu. Arkeologlar yıllardır bu kayıpların izini sürüyor, ancak buldukları her yeni parça sadece gizemini daha da artırıyor. Ya bu kayıtlar aslında saklandığı yerde hala güvende? Unutulmuş her bir kayıt, tarihin açtığı en büyük kapıyı biraz daha açıyor. Yeni çözümlenmemiş tarihi gizemler için kanala abone olmayı unutmayın.",
+    "description": "Geçmişte eksik kalan parça\n\nÇözülememiş Tarihi Gizemler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: tarih, gizem, arkeoloji, eski kayıtlar, sırlar.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "viral_packaging_score": {
+      "score": 100,
+      "notes": []
+    },
     "video_path": "generated-videos/latest_short.mp4",
     "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/P_Ra0lIRzUc",
+    "video_url": "https://youtu.be/ov3v8nB1On4",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 4,
     "schedule_slot_turkey": "2300",
     "scheduled_publish_at_turkey": "2026-06-07T23:00:00+03:00",
     "scheduled_publish_at_utc": "2026-06-07T20:00:00Z",
+    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_2300.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_2300.jpg",
     "slot_preview_gif_path": "generated-videos/preview_2300.gif"

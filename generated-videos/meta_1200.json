@@ -2,8 +2,49 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "Bilinmeyen İnsan Davranışları",
+  "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+  "niche": "Teknolojinin Karanlık Yüzü",
+  "angle": "dikkat ekonomisi",
+  "channel_analysis": {
+    "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+    "handle": "@ilgiçekici15",
+    "observed_date": "2026-06-07",
+    "summary": [
+      "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+      "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+      "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+    ],
+    "view_signals": [
+      {
+        "niche": "Bilinmeyen İnsan Davranışları",
+        "recent_public_views": 1,
+        "signal": "one of the only non-zero recent RSS entries"
+      },
+      {
+        "niche": "Uzayın Korkunç Sırları",
+        "recent_public_views": 1,
+        "signal": "one of the only non-zero recent RSS entries"
+      },
+      {
+        "niche": "Çözülememiş Tarihi Gizemler",
+        "recent_public_views": 0,
+        "signal": "repeated exact titles underperformed"
+      },
+      {
+        "niche": "İnanılmaz Bilimsel Keşifler",
+        "recent_public_views": 0,
+        "signal": "fresh but no visible traction yet"
+      }
+    ],
+    "priority_niches": [
+      "Bilinmeyen İnsan Davranışları",
+      "Teknolojinin Karanlık Yüzü",
+      "Şok Edici Psikolojik Gerçekler",
+      "İnanılmaz Bilimsel Keşifler",
+      "Çözülememiş Tarihi Gizemler",
+      "Uzayın Korkunç Sırları"
+    ]
+  },
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +54,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
-  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-  "duration_seconds": 27.65,
+  "title": "Teknoloji dikkatini böyle tutuyor #shorts",
+  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
+  "duration_seconds": 33.7,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,31 +68,39 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "insandavranisi",
-    "psikoloji",
-    "sosyoloji"
+    "teknoloji",
+    "yapayzeka",
+    "siber",
+    "algoritma",
+    "veri",
+    "dikkatekonomisi"
   ],
   "background_queries": [
-    "people walking city",
-    "human behavior",
-    "crowd slow motion",
-    "person thinking",
-    "urban people cinematic"
+    "cyber security",
+    "phone screen dark",
+    "data center",
+    "hacker code",
+    "technology dark cinematic"
   ],
-  "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
-  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Uygulamalar neden seni ekranda tutmak için tüm kuralları deliyor? Çünkü dikkatin artık en değerli para birimi, dikkat ekonomisi bunu kanıtlıyor. Sosyal medya, oyunlar, hatta haber siteleri bile seni ne kadar çok ekranda tutarsa o kadar reklam geliri ve kullanıcı verisi kazanıyor. Beğeni, bildirim, sonsuz kaydırma… Hepsi senin dikkatini çalmak için özel olarak tasarlandı. Sıradaki videoda bu tuzağa düşmeden nasıl teknoloji kullanacağını anlatacağım, takip etmeyi unutma.",
+  "description": "Teknoloji dikkatini böyle tutuyor\n\nTeknolojinin Karanlık Yüzü konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: teknoloji, algoritma, veri, dikkat ekonomisi, yapay zeka.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "viral_packaging_score": {
+    "score": 100,
+    "notes": []
+  },
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/cigJoXrCSgQ",
+  "video_url": "https://youtu.be/-MTTHYRyPJM",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 2,
   "schedule_slot_turkey": "1200",
-  "scheduled_publish_at_turkey": "2026-06-07T12:00:00+03:00",
-  "scheduled_publish_at_utc": "2026-06-07T09:00:00Z",
+  "scheduled_publish_at_turkey": "2026-06-08T12:00:00+03:00",
+  "scheduled_publish_at_utc": "2026-06-08T09:00:00Z",
+  "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
   "slot_video_path": "generated-videos/short_1200.mp4",
   "slot_thumbnail_path": "generated-videos/thumbnail_1200.jpg",
   "slot_preview_gif_path": "generated-videos/preview_1200.gif"

@@ -2,8 +2,49 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+  "niche": "Çözülememiş Tarihi Gizemler",
+  "angle": "unutulmuş kayıtlar",
+  "channel_analysis": {
+    "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+    "handle": "@ilgiçekici15",
+    "observed_date": "2026-06-07",
+    "summary": [
+      "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+      "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+      "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+    ],
+    "view_signals": [
+      {
+        "niche": "Bilinmeyen İnsan Davranışları",
+        "recent_public_views": 1,
+        "signal": "one of the only non-zero recent RSS entries"
+      },
+      {
+        "niche": "Uzayın Korkunç Sırları",
+        "recent_public_views": 1,
+        "signal": "one of the only non-zero recent RSS entries"
+      },
+      {
+        "niche": "Çözülememiş Tarihi Gizemler",
+        "recent_public_views": 0,
+        "signal": "repeated exact titles underperformed"
+      },
+      {
+        "niche": "İnanılmaz Bilimsel Keşifler",
+        "recent_public_views": 0,
+        "signal": "fresh but no visible traction yet"
+      }
+    ],
+    "priority_niches": [
+      "Bilinmeyen İnsan Davranışları",
+      "Teknolojinin Karanlık Yüzü",
+      "Şok Edici Psikolojik Gerçekler",
+      "İnanılmaz Bilimsel Keşifler",
+      "Çözülememiş Tarihi Gizemler",
+      "Uzayın Korkunç Sırları"
+    ]
+  },
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +54,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Mitolojiler sadece eski masallar değildir #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 30.07,
+  "title": "Geçmişte eksik kalan parça #shorts",
+  "thumbnail_text": "TARİHTE GİZLİ KALDI",
+  "duration_seconds": 31.42,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,31 +68,39 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "tarih",
+    "gizem",
+    "tarihgizemleri",
+    "arkeoloji",
+    "eskikayıtlar",
+    "sırlar"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
     "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "old manuscript",
+    "archaeology",
+    "mysterious temple",
+    "ancient history cinematic"
   ],
-  "script": "Mitolojiler sadece eski masallar değildir. İnsanların korkularını, umutlarını ve doğayı anlama çabasını taşır. Gök gürültüsü bir tanrının öfkesi, deniz fırtınası bir yaratığın nefesi gibi anlatılırdı. Çünkü insan bilmediği şeye hikaye vererek dayanır. Bugün bile modern dünyada aynı şeyi yapıyoruz. Sadece tanrıların yerini teoriler, semboller ve kahramanlar aldı. Belki efsaneler geçmiş değil, insan zihninin aynasıdır.",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "M.Ö. 1200'lerde Anadolu'da yok edilen Hitit kentinin tüm resmi kayıtları, bir gecede ortadan kayboldu. Arkeologlar yıllardır bu kayıpların izini sürüyor, ancak buldukları her yeni parça sadece gizemini daha da artırıyor. Ya bu kayıtlar aslında saklandığı yerde hala güvende? Unutulmuş her bir kayıt, tarihin açtığı en büyük kapıyı biraz daha açıyor. Yeni çözümlenmemiş tarihi gizemler için kanala abone olmayı unutmayın.",
+  "description": "Geçmişte eksik kalan parça\n\nÇözülememiş Tarihi Gizemler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: tarih, gizem, arkeoloji, eski kayıtlar, sırlar.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "viral_packaging_score": {
+    "score": 100,
+    "notes": []
+  },
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/P_Ra0lIRzUc",
+  "video_url": "https://youtu.be/ov3v8nB1On4",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 4,
   "schedule_slot_turkey": "2300",
   "scheduled_publish_at_turkey": "2026-06-07T23:00:00+03:00",
   "scheduled_publish_at_utc": "2026-06-07T20:00:00Z",
+  "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
   "slot_video_path": "generated-videos/short_2300.mp4",
   "slot_thumbnail_path": "generated-videos/thumbnail_2300.jpg",
   "slot_preview_gif_path": "generated-videos/preview_2300.gif"

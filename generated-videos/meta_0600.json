@@ -2,8 +2,49 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+  "niche": "Uzayın Korkunç Sırları",
+  "angle": "görünmeyen evren",
+  "channel_analysis": {
+    "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+    "handle": "@ilgiçekici15",
+    "observed_date": "2026-06-07",
+    "summary": [
+      "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
+      "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
+      "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+    ],
+    "view_signals": [
+      {
+        "niche": "Bilinmeyen İnsan Davranışları",
+        "recent_public_views": 1,
+        "signal": "one of the only non-zero recent RSS entries"
+      },
+      {
+        "niche": "Uzayın Korkunç Sırları",
+        "recent_public_views": 1,
+        "signal": "one of the only non-zero recent RSS entries"
+      },
+      {
+        "niche": "Çözülememiş Tarihi Gizemler",
+        "recent_public_views": 0,
+        "signal": "repeated exact titles underperformed"
+      },
+      {
+        "niche": "İnanılmaz Bilimsel Keşifler",
+        "recent_public_views": 0,
+        "signal": "fresh but no visible traction yet"
+      }
+    ],
+    "priority_niches": [
+      "Bilinmeyen İnsan Davranışları",
+      "Teknolojinin Karanlık Yüzü",
+      "Şok Edici Psikolojik Gerçekler",
+      "İnanılmaz Bilimsel Keşifler",
+      "Çözülememiş Tarihi Gizemler",
+      "Uzayın Korkunç Sırları"
+    ]
+  },
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +54,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 27.58,
+  "title": "Evrenin görünmeyen tarafı ürkütüyor #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 33.17,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,31 +68,38 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
+    "uzay",
+    "evren",
     "bilim",
-    "kesif",
-    "bilgiler"
+    "karadelik",
+    "galaksi"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "deep space",
+    "galaxy stars",
+    "black hole",
+    "astronaut space",
+    "space cinematic"
   ],
-  "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Gördüğümüz tüm yıldızlar, gezegenler, hatta galaksiler bile tüm evrenin sadece %5’i. Gökyüzünde gördüğümüz her şey, aslında evrenin sadece küçük bir parçası. Geri kalan %95’in tamamen görünmeyen evreninde, ne olduğunu henüz kimse bilmiyor. Karanlık madde mi, yoksa bizim henüz keşfedemediğimiz başka bir şey mi? Bence bu sırrı çözen ilk kişi, insanlığın bakış açısını tamamen değiştirecek. Sen de ne olduğunu düşünüyorsun?",
+  "description": "Evrenin görünmeyen tarafı ürkütüyor\n\nUzayın Korkunç Sırları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: uzay, evren, kara delik, galaksi, bilim.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "viral_packaging_score": {
+    "score": 100,
+    "notes": []
+  },
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/KseRt-1tRPU",
+  "video_url": "https://youtu.be/VaLncedjbtU",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 1,
   "schedule_slot_turkey": "0600",
-  "scheduled_publish_at_turkey": "2026-06-07T06:00:00+03:00",
-  "scheduled_publish_at_utc": "2026-06-07T03:00:00Z",
+  "scheduled_publish_at_turkey": "2026-06-08T06:00:00+03:00",
+  "scheduled_publish_at_utc": "2026-06-08T03:00:00Z",
+  "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
   "slot_video_path": "generated-videos/short_0600.mp4",
   "slot_thumbnail_path": "generated-videos/thumbnail_0600.jpg",
   "slot_preview_gif_path": "generated-videos/preview_0600.gif"
