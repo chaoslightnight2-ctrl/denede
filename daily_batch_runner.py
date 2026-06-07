@@ -31,12 +31,12 @@ SCENARIOS = {
 }
 
 CHANNEL_VIEW_WEIGHTED_NICHES = [
+    "Tuhaf ve Enteresan Yasalar",
     "Bilinmeyen İnsan Davranışları",
     "Uzayın Korkunç Sırları",
     "Teknolojinin Karanlık Yüzü",
-    "Şok Edici Psikolojik Gerçekler",
-    "İnanılmaz Bilimsel Keşifler",
-    "Çözülememiş Tarihi Gizemler",
+    "Günlük Hayatta Stoacı Felsefe",
+    "Başarı Psikolojisi ve Motivasyon",
 ]
 
 
@@ -97,7 +97,8 @@ Konu: {niche}
 Süre hedefi: 30-40 saniye.
 Kelime hedefi: 55-75 kelime.
 Kurallar: Tek ana fikir üzerinden ilerle. Cümleler birbirine anlamca bağlı olsun. Rastgele ülke, olay veya bilgi listesi yapma. Boş clickbait, çeviri kokan ifade, düşük cümle ve anlatım bozukluğu kullanma. Kesin sayı, ceza, yasa veya tıbbi iddia uydurma. En fazla iki soru cümlesi kullan. Son cümle doğal bir yorum veya takip çağrısı olsun. Sadece konuşulacak metni yaz.
-Kanal optimizasyonu: Daha önce tekrar eden "biliyor musun" tarzı açılışları kopyalama. İlk iki saniyede tek ve net merak boşluğu aç. Aynı başlık gibi okunacak ilk cümle yazma; bu videoya özel yeni bir kanca kur.
+Kanal optimizasyonu: Tüm kanal analizinde en iyi giden kalıplara yaklaş: tuhaf yasa/şehir efsanesi, günlük insan davranışı, görünmeyen evren, karar yorgunluğu, küçük stoacı an ve görünmeyen disiplin. Daha önce tekrar eden "biliyor musun" tarzı açılışları kopyalama. İlk iki saniyede tek ve net merak boşluğu aç. Aynı başlık gibi okunacak ilk cümle yazma; bu videoya özel yeni bir kanca kur.
+Retention kuralı: İlk cümlede açık döngü kur, ortada tek hikaye yayıyla merakı büyüt, son 1-2 cümlede net payoff ver. Liste gibi bilgi sıralama; her cümle bir sonrakini izletmeli.
 Güven filtresi: Kaynak gerektiren kesin tarih, yüzde, ceza, suç, tıbbi veya tarihi olay iddiası uydurma. Emin değilsen genel anlat; merakı iddia değil soru ve bağlamla kur.
 """.strip()
 
@@ -227,7 +228,7 @@ def copy_slot_files(slot: str, publish_at: datetime, index: int) -> dict:
         "scheduled_publish_at_turkey": publish_at.isoformat(),
         "scheduled_publish_at_utc": publish_at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z"),
         "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-        "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
+        "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
         "slot_video_path": str(OUT / f"short_{slot}.mp4"),
         "slot_thumbnail_path": str(OUT / f"thumbnail_{slot}.jpg"),
         "slot_preview_gif_path": str(OUT / f"preview_{slot}.gif"),
