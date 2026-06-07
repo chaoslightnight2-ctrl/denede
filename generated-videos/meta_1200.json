@@ -3,8 +3,8 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-  "niche": "Uzayın Korkunç Sırları",
-  "angle": "görünmeyen evren",
+  "niche": "Bilinmeyen İnsan Davranışları",
+  "angle": "erteleyerek öncelik gösterme",
   "channel_analysis": {
     "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
     "handle": "@ilgiçekici15",
@@ -88,9 +88,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Evrenin göremediğimiz kısmı ürkütüyor #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 29.11,
+  "title": "Kalabalıkta kimse neden adım atmıyor #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 30.43,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -102,21 +102,22 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim",
-    "karadelik",
-    "galaksi"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji",
+    "insandavranışı",
+    "kalabalık",
+    "alışkanlık"
   ],
   "background_queries": [
-    "galaxy stars night sky",
-    "space galaxy stars",
-    "nebula stars",
-    "astronaut outer space",
-    "black hole animation"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Evrenin büyük kısmını göremiyoruz. Bilim insanları karanlık madde ve karanlık enerji olduğunu söylüyor ama tam olarak ne olduklarını bilmiyoruz. Yani gördüğümüz yıldızlar, galaksiler ve gezegenler evrenin sadece küçük bir parçası. Asıl büyük sahne görünmez durumda. Bu düşünce ürkütücü ama büyüleyici. Belki de evrenin en büyük sırrı uzaklarda değil, göremediğimiz şeylerde saklı.",
-  "description": "Evrenin göremediğimiz kısmı ürkütüyor\n\nUzayın Korkunç Sırları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: uzay, evren, kara delik, galaksi, bilim.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
+  "description": "Kalabalıkta kimse neden adım atmıyor\n\nBilinmeyen İnsan Davranışları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: insan davranışı, sosyoloji, psikoloji, kalabalık, alışkanlık.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
   "viral_packaging_score": {
     "score": 100,
     "notes": []
@@ -126,7 +127,7 @@
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/8_PopdZfPtI",
+  "video_url": "https://youtu.be/TbKjKvcDuWM",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 2,

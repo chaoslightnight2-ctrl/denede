@@ -4,46 +4,80 @@
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
     "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-    "niche": "Bilinmeyen İnsan Davranışları",
-    "angle": "kalabalıkta sorumluluk dağılması",
+    "niche": "Tuhaf ve Enteresan Yasalar",
+    "angle": "kuralların arkasındaki hikaye",
     "channel_analysis": {
       "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
       "handle": "@ilgiçekici15",
       "observed_date": "2026-06-07",
+      "source_scope": "all_available_channel_shorts_via_yt_dlp_flat_playlist",
+      "video_count_scanned": 148,
+      "videos_with_public_view_counts": 81,
       "summary": [
-        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
-        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
-        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+        "Full-channel scan found higher-view outliers in weird laws, urban legend rules, human behavior, invisible universe/space, daily decisions, stoic calm, and achievement discipline.",
+        "Recent uploads still repeat exact titles and scripts, which weakens browse and Shorts testing signals.",
+        "Optimization should lean into proven curiosity topics while keeping no-repeat packaging and stronger retention hooks."
       ],
       "view_signals": [
         {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1800,
+          "signal": "highest observed Short; weird local law packaging worked"
+        },
+        {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1300,
+          "signal": "urban-legend city rules also overperformed"
+        },
+        {
           "niche": "Bilinmeyen İnsan Davranışları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
+          "top_public_views": 1500,
+          "signal": "anticipation and everyday behavior hooks performed strongly"
+        },
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "top_public_views": 1200,
+          "signal": "social behavior and bystander-style framing performed strongly"
         },
         {
           "niche": "Uzayın Korkunç Sırları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
+          "top_public_views": 1100,
+          "signal": "invisible universe / unseen reality hook performed strongly"
         },
         {
-          "niche": "Çözülememiş Tarihi Gizemler",
-          "recent_public_views": 0,
-          "signal": "repeated exact titles underperformed"
+          "niche": "Teknolojinin Karanlık Yüzü",
+          "top_public_views": 1000,
+          "signal": "daily decision overload / attention framing performed strongly"
         },
         {
-          "niche": "İnanılmaz Bilimsel Keşifler",
-          "recent_public_views": 0,
-          "signal": "fresh but no visible traction yet"
+          "niche": "Günlük Hayatta Stoacı Felsefe",
+          "top_public_views": 424,
+          "signal": "small daily calm/action framing beat most recent uploads"
+        },
+        {
+          "niche": "Başarı Psikolojisi ve Motivasyon",
+          "top_public_views": 344,
+          "signal": "invisible discipline and routine framing showed traction"
         }
       ],
+      "algorithm_reference_video": {
+        "url": "https://youtu.be/N-q-XLQymnU",
+        "title": "The Entire Shorts Algorithm Explained in 180 Seconds…",
+        "public_views_observed": 336790,
+        "applied_takeaways": [
+          "optimize the first seconds for a clear hook",
+          "use one focused story arc instead of list-like facts",
+          "avoid repeated packaging so Shorts can test each upload separately",
+          "favor retention and curiosity over generic hashtags"
+        ]
+      },
       "priority_niches": [
+        "Tuhaf ve Enteresan Yasalar",
         "Bilinmeyen İnsan Davranışları",
+        "Uzayın Korkunç Sırları",
         "Teknolojinin Karanlık Yüzü",
-        "Şok Edici Psikolojik Gerçekler",
-        "İnanılmaz Bilimsel Keşifler",
-        "Çözülememiş Tarihi Gizemler",
-        "Uzayın Korkunç Sırları"
+        "Günlük Hayatta Stoacı Felsefe",
+        "Başarı Psikolojisi ve Motivasyon"
       ]
     },
     "caption_style": {
@@ -55,7 +89,149 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "Davranışların gizli sebebi bu #shorts",
+    "title": "Normal sandığın şey başka yerde yasak #shorts",
+    "thumbnail_text": "BU YASA GERÇEK",
+    "duration_seconds": 32.52,
+    "tags": [
+      "shorts",
+      "youtubeshorts",
+      "viral",
+      "viralshorts",
+      "fyp",
+      "bilgi",
+      "ilgincbilgiler",
+      "turkceshorts",
+      "shortsturkiye",
+      "merakedilenler",
+      "yasalar",
+      "ilginc",
+      "dunya",
+      "hukuk",
+      "ülkeler",
+      "kültür",
+      "ilginçbilgiler"
+    ],
+    "background_queries": [
+      "court law",
+      "judge gavel",
+      "old documents",
+      "city street rules",
+      "law books cinematic"
+    ],
+    "script": "Dünyada bazı yasalar o kadar tuhaf ki şaka gibi görünür. Ama çoğu, geçmişte yaşanmış garip bir olaydan sonra ortaya çıkmıştır. Bir şehirde sessizlik, başka bir yerde hayvanlar, başka bir ülkede günlük davranışlar yasa konusu olabilir. Hukuk sadece adalet değil, toplumların korkularını ve alışkanlıklarını da gösterir. Bir yasa sana saçma geliyorsa, arkasında unutulmuş bir hikaye olabilir. Bazen en garip kurallar, en ilginç tarihi saklar.",
+    "description": "Normal sandığın şey başka yerde yasak\n\nTuhaf ve Enteresan Yasalar konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: yasalar, hukuk, ülkeler, kültür, ilginç bilgiler.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "viral_packaging_score": {
+      "score": 100,
+      "notes": []
+    },
+    "video_path": "generated-videos/latest_short.mp4",
+    "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
+    "first_frame_path": "generated-videos/latest_first_frame.jpg",
+    "preview_gif_path": "generated-videos/latest_preview.gif",
+    "compat_report_path": "generated-videos/video_compat_report.txt",
+    "video_url": "https://youtu.be/64wZGvEOS3A",
+    "upload_status": "success",
+    "upload_error": null,
+    "batch_index": 1,
+    "schedule_slot_turkey": "0600",
+    "scheduled_publish_at_turkey": "2026-06-08T06:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-06-08T03:00:00Z",
+    "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
+    "slot_video_path": "generated-videos/short_0600.mp4",
+    "slot_thumbnail_path": "generated-videos/thumbnail_0600.jpg",
+    "slot_preview_gif_path": "generated-videos/preview_0600.gif"
+  },
+  {
+    "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
+    "language": "tr",
+    "voice": "tr-TR-EmelNeural",
+    "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+    "niche": "Bilinmeyen İnsan Davranışları",
+    "angle": "erteleyerek öncelik gösterme",
+    "channel_analysis": {
+      "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+      "handle": "@ilgiçekici15",
+      "observed_date": "2026-06-07",
+      "source_scope": "all_available_channel_shorts_via_yt_dlp_flat_playlist",
+      "video_count_scanned": 148,
+      "videos_with_public_view_counts": 81,
+      "summary": [
+        "Full-channel scan found higher-view outliers in weird laws, urban legend rules, human behavior, invisible universe/space, daily decisions, stoic calm, and achievement discipline.",
+        "Recent uploads still repeat exact titles and scripts, which weakens browse and Shorts testing signals.",
+        "Optimization should lean into proven curiosity topics while keeping no-repeat packaging and stronger retention hooks."
+      ],
+      "view_signals": [
+        {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1800,
+          "signal": "highest observed Short; weird local law packaging worked"
+        },
+        {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1300,
+          "signal": "urban-legend city rules also overperformed"
+        },
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "top_public_views": 1500,
+          "signal": "anticipation and everyday behavior hooks performed strongly"
+        },
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "top_public_views": 1200,
+          "signal": "social behavior and bystander-style framing performed strongly"
+        },
+        {
+          "niche": "Uzayın Korkunç Sırları",
+          "top_public_views": 1100,
+          "signal": "invisible universe / unseen reality hook performed strongly"
+        },
+        {
+          "niche": "Teknolojinin Karanlık Yüzü",
+          "top_public_views": 1000,
+          "signal": "daily decision overload / attention framing performed strongly"
+        },
+        {
+          "niche": "Günlük Hayatta Stoacı Felsefe",
+          "top_public_views": 424,
+          "signal": "small daily calm/action framing beat most recent uploads"
+        },
+        {
+          "niche": "Başarı Psikolojisi ve Motivasyon",
+          "top_public_views": 344,
+          "signal": "invisible discipline and routine framing showed traction"
+        }
+      ],
+      "algorithm_reference_video": {
+        "url": "https://youtu.be/N-q-XLQymnU",
+        "title": "The Entire Shorts Algorithm Explained in 180 Seconds…",
+        "public_views_observed": 336790,
+        "applied_takeaways": [
+          "optimize the first seconds for a clear hook",
+          "use one focused story arc instead of list-like facts",
+          "avoid repeated packaging so Shorts can test each upload separately",
+          "favor retention and curiosity over generic hashtags"
+        ]
+      },
+      "priority_niches": [
+        "Tuhaf ve Enteresan Yasalar",
+        "Bilinmeyen İnsan Davranışları",
+        "Uzayın Korkunç Sırları",
+        "Teknolojinin Karanlık Yüzü",
+        "Günlük Hayatta Stoacı Felsefe",
+        "Başarı Psikolojisi ve Motivasyon"
+      ]
+    },
+    "caption_style": {
+      "font_size": 60,
+      "stroke_width": 5,
+      "max_words": 1,
+      "position": "center",
+      "punctuation_removed": true,
+      "spaces_removed_inside_caption_word": true,
+      "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
+    },
+    "title": "Kalabalıkta kimse neden adım atmıyor #shorts",
     "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
     "duration_seconds": 30.43,
     "tags": [
@@ -84,7 +260,7 @@
       "urban people cinematic"
     ],
     "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
-    "description": "Davranışların gizli sebebi bu\n\nBilinmeyen İnsan Davranışları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: insan davranışı, sosyoloji, psikoloji, kalabalık, alışkanlık.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "description": "Kalabalıkta kimse neden adım atmıyor\n\nBilinmeyen İnsan Davranışları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: insan davranışı, sosyoloji, psikoloji, kalabalık, alışkanlık.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
     "viral_packaging_score": {
       "score": 100,
       "notes": []
@@ -94,122 +270,14 @@
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/SVnGcdjVSnU",
-    "upload_status": "success",
-    "upload_error": null,
-    "batch_index": 1,
-    "schedule_slot_turkey": "0600",
-    "scheduled_publish_at_turkey": "2026-06-08T06:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-06-08T03:00:00Z",
-    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
-    "slot_video_path": "generated-videos/short_0600.mp4",
-    "slot_thumbnail_path": "generated-videos/thumbnail_0600.jpg",
-    "slot_preview_gif_path": "generated-videos/preview_0600.gif"
-  },
-  {
-    "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
-    "language": "tr",
-    "voice": "tr-TR-EmelNeural",
-    "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-    "niche": "İnanılmaz Bilimsel Keşifler",
-    "angle": "hatalardan doğan keşifler",
-    "channel_analysis": {
-      "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
-      "handle": "@ilgiçekici15",
-      "observed_date": "2026-06-07",
-      "summary": [
-        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
-        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
-        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
-      ],
-      "view_signals": [
-        {
-          "niche": "Bilinmeyen İnsan Davranışları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
-        },
-        {
-          "niche": "Uzayın Korkunç Sırları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
-        },
-        {
-          "niche": "Çözülememiş Tarihi Gizemler",
-          "recent_public_views": 0,
-          "signal": "repeated exact titles underperformed"
-        },
-        {
-          "niche": "İnanılmaz Bilimsel Keşifler",
-          "recent_public_views": 0,
-          "signal": "fresh but no visible traction yet"
-        }
-      ],
-      "priority_niches": [
-        "Bilinmeyen İnsan Davranışları",
-        "Teknolojinin Karanlık Yüzü",
-        "Şok Edici Psikolojik Gerçekler",
-        "İnanılmaz Bilimsel Keşifler",
-        "Çözülememiş Tarihi Gizemler",
-        "Uzayın Korkunç Sırları"
-      ]
-    },
-    "caption_style": {
-      "font_size": 60,
-      "stroke_width": 5,
-      "max_words": 1,
-      "position": "center",
-      "punctuation_removed": true,
-      "spaces_removed_inside_caption_word": true,
-      "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
-    },
-    "title": "Bu keşif çöpe atılmayan bir sonuçtu #shorts",
-    "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-    "duration_seconds": 30.31,
-    "tags": [
-      "shorts",
-      "youtubeshorts",
-      "viral",
-      "viralshorts",
-      "fyp",
-      "bilgi",
-      "ilgincbilgiler",
-      "turkceshorts",
-      "shortsturkiye",
-      "merakedilenler",
-      "bilim",
-      "kesif",
-      "bilgiler",
-      "keşif",
-      "deney",
-      "merak",
-      "teknoloji"
-    ],
-    "background_queries": [
-      "science laboratory",
-      "microscope",
-      "space telescope",
-      "scientist experiment",
-      "laboratory cinematic"
-    ],
-    "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
-    "description": "Bu keşif çöpe atılmayan bir sonuçtu\n\nİnanılmaz Bilimsel Keşifler konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: bilim, keşif, deney, merak, teknoloji.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
-    "viral_packaging_score": {
-      "score": 100,
-      "notes": []
-    },
-    "video_path": "generated-videos/latest_short.mp4",
-    "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
-    "first_frame_path": "generated-videos/latest_first_frame.jpg",
-    "preview_gif_path": "generated-videos/latest_preview.gif",
-    "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/kOBU0g4bd88",
+    "video_url": "https://youtu.be/TbKjKvcDuWM",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 2,
     "schedule_slot_turkey": "1200",
     "scheduled_publish_at_turkey": "2026-06-08T12:00:00+03:00",
     "scheduled_publish_at_utc": "2026-06-08T09:00:00Z",
-    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
+    "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_1200.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_1200.jpg",
     "slot_preview_gif_path": "generated-videos/preview_1200.gif"
@@ -219,46 +287,80 @@
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
     "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-    "niche": "Günlük Hayatta Stoacı Felsefe",
-    "angle": "tepkiyi seçmek",
+    "niche": "Uzayın Korkunç Sırları",
+    "angle": "görünmeyen evren",
     "channel_analysis": {
       "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
       "handle": "@ilgiçekici15",
       "observed_date": "2026-06-07",
+      "source_scope": "all_available_channel_shorts_via_yt_dlp_flat_playlist",
+      "video_count_scanned": 148,
+      "videos_with_public_view_counts": 81,
       "summary": [
-        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
-        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
-        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+        "Full-channel scan found higher-view outliers in weird laws, urban legend rules, human behavior, invisible universe/space, daily decisions, stoic calm, and achievement discipline.",
+        "Recent uploads still repeat exact titles and scripts, which weakens browse and Shorts testing signals.",
+        "Optimization should lean into proven curiosity topics while keeping no-repeat packaging and stronger retention hooks."
       ],
       "view_signals": [
         {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1800,
+          "signal": "highest observed Short; weird local law packaging worked"
+        },
+        {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1300,
+          "signal": "urban-legend city rules also overperformed"
+        },
+        {
           "niche": "Bilinmeyen İnsan Davranışları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
+          "top_public_views": 1500,
+          "signal": "anticipation and everyday behavior hooks performed strongly"
+        },
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "top_public_views": 1200,
+          "signal": "social behavior and bystander-style framing performed strongly"
         },
         {
           "niche": "Uzayın Korkunç Sırları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
+          "top_public_views": 1100,
+          "signal": "invisible universe / unseen reality hook performed strongly"
         },
         {
-          "niche": "Çözülememiş Tarihi Gizemler",
-          "recent_public_views": 0,
-          "signal": "repeated exact titles underperformed"
+          "niche": "Teknolojinin Karanlık Yüzü",
+          "top_public_views": 1000,
+          "signal": "daily decision overload / attention framing performed strongly"
         },
         {
-          "niche": "İnanılmaz Bilimsel Keşifler",
-          "recent_public_views": 0,
-          "signal": "fresh but no visible traction yet"
+          "niche": "Günlük Hayatta Stoacı Felsefe",
+          "top_public_views": 424,
+          "signal": "small daily calm/action framing beat most recent uploads"
+        },
+        {
+          "niche": "Başarı Psikolojisi ve Motivasyon",
+          "top_public_views": 344,
+          "signal": "invisible discipline and routine framing showed traction"
         }
       ],
+      "algorithm_reference_video": {
+        "url": "https://youtu.be/N-q-XLQymnU",
+        "title": "The Entire Shorts Algorithm Explained in 180 Seconds…",
+        "public_views_observed": 336790,
+        "applied_takeaways": [
+          "optimize the first seconds for a clear hook",
+          "use one focused story arc instead of list-like facts",
+          "avoid repeated packaging so Shorts can test each upload separately",
+          "favor retention and curiosity over generic hashtags"
+        ]
+      },
       "priority_niches": [
+        "Tuhaf ve Enteresan Yasalar",
         "Bilinmeyen İnsan Davranışları",
+        "Uzayın Korkunç Sırları",
         "Teknolojinin Karanlık Yüzü",
-        "Şok Edici Psikolojik Gerçekler",
-        "İnanılmaz Bilimsel Keşifler",
-        "Çözülememiş Tarihi Gizemler",
-        "Uzayın Korkunç Sırları"
+        "Günlük Hayatta Stoacı Felsefe",
+        "Başarı Psikolojisi ve Motivasyon"
       ]
     },
     "caption_style": {
@@ -270,9 +372,9 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "Stoacılar bunu çok önce çözmüştü #shorts",
-    "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
-    "duration_seconds": 31.46,
+    "title": "Evrenin göremediğimiz kısmı ürkütüyor #shorts",
+    "thumbnail_text": "UZAY BUNU SAKLIYOR",
+    "duration_seconds": 29.11,
     "tags": [
       "shorts",
       "youtubeshorts",
@@ -284,23 +386,21 @@
       "turkceshorts",
       "shortsturkiye",
       "merakedilenler",
-      "stoacilik",
-      "felsefe",
-      "hayatdersleri",
-      "stoacılık",
-      "sakinlik",
-      "kontrol",
-      "hayatdersi"
+      "uzay",
+      "evren",
+      "bilim",
+      "karadelik",
+      "galaksi"
     ],
     "background_queries": [
-      "ancient statue",
-      "stoic statue",
-      "calm person nature",
-      "roman columns",
-      "meditation nature cinematic"
+      "galaxy stars night sky",
+      "space galaxy stars",
+      "nebula stars",
+      "astronaut outer space",
+      "black hole animation"
     ],
-    "script": "Şunu biliyor musun? Seni yoran şey çoğu zaman olayın kendisi değil, ona verdiğin anlamdır. Stoacılar bunu yüzyıllar önce fark etti. Kontrol edemediğin şeyi zorladıkça zihnin yorulur. Ama kendi tepkini seçtiğinde güç geri gelir. Bugün biri seni sinirlendirirse hemen cevap verme. Önce dur, nefes al ve şunu sor: Bu benim kontrolümde mi? Cevap hayırsa, enerjini geri al.",
-    "description": "Stoacılar bunu çok önce çözmüştü\n\nGünlük Hayatta Stoacı Felsefe konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: stoacılık, felsefe, sakinlik, kontrol, hayat dersi.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "script": "Evrenin büyük kısmını göremiyoruz. Bilim insanları karanlık madde ve karanlık enerji olduğunu söylüyor ama tam olarak ne olduklarını bilmiyoruz. Yani gördüğümüz yıldızlar, galaksiler ve gezegenler evrenin sadece küçük bir parçası. Asıl büyük sahne görünmez durumda. Bu düşünce ürkütücü ama büyüleyici. Belki de evrenin en büyük sırrı uzaklarda değil, göremediğimiz şeylerde saklı.",
+    "description": "Evrenin göremediğimiz kısmı ürkütüyor\n\nUzayın Korkunç Sırları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: uzay, evren, kara delik, galaksi, bilim.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
     "viral_packaging_score": {
       "score": 100,
       "notes": []
@@ -310,14 +410,14 @@
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/7RkDydq3u_g",
+    "video_url": "https://youtu.be/gfRG84yeNUA",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 3,
     "schedule_slot_turkey": "1800",
     "scheduled_publish_at_turkey": "2026-06-07T18:00:00+03:00",
     "scheduled_publish_at_utc": "2026-06-07T15:00:00Z",
-    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
+    "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_1800.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_1800.jpg",
     "slot_preview_gif_path": "generated-videos/preview_1800.gif"
@@ -327,46 +427,80 @@
     "language": "tr",
     "voice": "tr-TR-EmelNeural",
     "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-    "niche": "Başarı Psikolojisi ve Motivasyon",
-    "angle": "tekrarın gücü",
+    "niche": "Teknolojinin Karanlık Yüzü",
+    "angle": "dikkat ekonomisi",
     "channel_analysis": {
       "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
       "handle": "@ilgiçekici15",
       "observed_date": "2026-06-07",
+      "source_scope": "all_available_channel_shorts_via_yt_dlp_flat_playlist",
+      "video_count_scanned": 148,
+      "videos_with_public_view_counts": 81,
       "summary": [
-        "Recent uploads are Turkish Shorts in the 06:00, 12:00, 18:00, 23:00 Turkey slots.",
-        "The feed repeats exact titles and scripts across slots, which weakens browse and Shorts testing signals.",
-        "Public RSS view counts are mostly 0-1, so the safest optimization is stronger packaging and less repetition, not a hard pivot."
+        "Full-channel scan found higher-view outliers in weird laws, urban legend rules, human behavior, invisible universe/space, daily decisions, stoic calm, and achievement discipline.",
+        "Recent uploads still repeat exact titles and scripts, which weakens browse and Shorts testing signals.",
+        "Optimization should lean into proven curiosity topics while keeping no-repeat packaging and stronger retention hooks."
       ],
       "view_signals": [
         {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1800,
+          "signal": "highest observed Short; weird local law packaging worked"
+        },
+        {
+          "niche": "Tuhaf ve Enteresan Yasalar",
+          "top_public_views": 1300,
+          "signal": "urban-legend city rules also overperformed"
+        },
+        {
           "niche": "Bilinmeyen İnsan Davranışları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
+          "top_public_views": 1500,
+          "signal": "anticipation and everyday behavior hooks performed strongly"
+        },
+        {
+          "niche": "Bilinmeyen İnsan Davranışları",
+          "top_public_views": 1200,
+          "signal": "social behavior and bystander-style framing performed strongly"
         },
         {
           "niche": "Uzayın Korkunç Sırları",
-          "recent_public_views": 1,
-          "signal": "one of the only non-zero recent RSS entries"
+          "top_public_views": 1100,
+          "signal": "invisible universe / unseen reality hook performed strongly"
         },
         {
-          "niche": "Çözülememiş Tarihi Gizemler",
-          "recent_public_views": 0,
-          "signal": "repeated exact titles underperformed"
+          "niche": "Teknolojinin Karanlık Yüzü",
+          "top_public_views": 1000,
+          "signal": "daily decision overload / attention framing performed strongly"
         },
         {
-          "niche": "İnanılmaz Bilimsel Keşifler",
-          "recent_public_views": 0,
-          "signal": "fresh but no visible traction yet"
+          "niche": "Günlük Hayatta Stoacı Felsefe",
+          "top_public_views": 424,
+          "signal": "small daily calm/action framing beat most recent uploads"
+        },
+        {
+          "niche": "Başarı Psikolojisi ve Motivasyon",
+          "top_public_views": 344,
+          "signal": "invisible discipline and routine framing showed traction"
         }
       ],
+      "algorithm_reference_video": {
+        "url": "https://youtu.be/N-q-XLQymnU",
+        "title": "The Entire Shorts Algorithm Explained in 180 Seconds…",
+        "public_views_observed": 336790,
+        "applied_takeaways": [
+          "optimize the first seconds for a clear hook",
+          "use one focused story arc instead of list-like facts",
+          "avoid repeated packaging so Shorts can test each upload separately",
+          "favor retention and curiosity over generic hashtags"
+        ]
+      },
       "priority_niches": [
+        "Tuhaf ve Enteresan Yasalar",
         "Bilinmeyen İnsan Davranışları",
+        "Uzayın Korkunç Sırları",
         "Teknolojinin Karanlık Yüzü",
-        "Şok Edici Psikolojik Gerçekler",
-        "İnanılmaz Bilimsel Keşifler",
-        "Çözülememiş Tarihi Gizemler",
-        "Uzayın Korkunç Sırları"
+        "Günlük Hayatta Stoacı Felsefe",
+        "Başarı Psikolojisi ve Motivasyon"
       ]
     },
     "caption_style": {
@@ -378,9 +512,9 @@
       "spaces_removed_inside_caption_word": true,
       "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
     },
-    "title": "Başarı motivasyonla başlamıyor #shorts",
-    "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
-    "duration_seconds": 30.6,
+    "title": "Teknoloji kararlarını böyle etkiliyor #shorts",
+    "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
+    "duration_seconds": 29.9,
     "tags": [
       "shorts",
       "youtubeshorts",
@@ -392,22 +526,22 @@
       "turkceshorts",
       "shortsturkiye",
       "merakedilenler",
-      "motivasyon",
-      "basari",
-      "disiplin",
-      "başarı",
-      "alışkanlık",
-      "odak"
+      "teknoloji",
+      "yapayzeka",
+      "siber",
+      "algoritma",
+      "veri",
+      "dikkatekonomisi"
     ],
     "background_queries": [
-      "person running",
-      "mountain climb",
-      "focused work",
-      "success motivation",
-      "athlete training cinematic"
+      "cyber security",
+      "phone screen dark",
+      "data center",
+      "hacker code",
+      "technology dark cinematic"
     ],
-    "script": "Başarının en gizli tarafı motivasyon değildir, tekrar gücüdür. Motivasyon gelir ve gider. Ama küçük alışkanlıklar sessizce karakterini değiştirir. Her gün sadece biraz daha iyi olmak, uzun vadede büyük fark yaratır. İnsanlar sonucu görünce şans sanır, ama görünmeyen yerde yüzlerce küçük seçim vardır. Bugün büyük bir plan yapma. Sadece yarın da tekrarlayabileceğin küçük bir adım at.",
-    "description": "Başarı motivasyonla başlamıyor\n\nBaşarı Psikolojisi ve Motivasyon konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: başarı, disiplin, motivasyon, alışkanlık, odak.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+    "script": "Algoritmalar sadece ne izlediğini değil, ne zaman zayıf olduğunu da öğrenir. Yorgunken, sıkılmışken veya yalnızken ekrana daha uzun bakarsın. Platformlar bunu ölçer ve seni tutacak içerikleri öne çıkarır. Bu yüzden teknoloji bazen araç gibi değil, görünmez bir alışkanlık yöneticisi gibi çalışır. Kontrolü geri almak istiyorsan bildirimleri azalt. Küçük bir ayar, dikkatini geri kazanmanın ilk adımı olabilir.",
+    "description": "Teknoloji kararlarını böyle etkiliyor\n\nTeknolojinin Karanlık Yüzü konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: teknoloji, algoritma, veri, dikkat ekonomisi, yapay zeka.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
     "viral_packaging_score": {
       "score": 100,
       "notes": []
@@ -417,14 +551,14 @@
     "first_frame_path": "generated-videos/latest_first_frame.jpg",
     "preview_gif_path": "generated-videos/latest_preview.gif",
     "compat_report_path": "generated-videos/video_compat_report.txt",
-    "video_url": "https://youtu.be/tH0eEPC_vc8",
+    "video_url": "https://youtu.be/EjwsCZmqBJ4",
     "upload_status": "success",
     "upload_error": null,
     "batch_index": 4,
     "schedule_slot_turkey": "2300",
     "scheduled_publish_at_turkey": "2026-06-07T23:00:00+03:00",
     "scheduled_publish_at_utc": "2026-06-07T20:00:00Z",
-    "daily_plan_source": "channel_rss_views_and_recent_title_repetition",
+    "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
     "slot_video_path": "generated-videos/short_2300.mp4",
     "slot_thumbnail_path": "generated-videos/thumbnail_2300.jpg",
     "slot_preview_gif_path": "generated-videos/preview_2300.gif"

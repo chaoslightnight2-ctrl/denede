@@ -3,8 +3,8 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
-  "niche": "Teknolojinin Karanlık Yüzü",
-  "angle": "dikkat ekonomisi",
+  "niche": "Uzayın Korkunç Sırları",
+  "angle": "görünmeyen evren",
   "channel_analysis": {
     "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
     "handle": "@ilgiçekici15",
@@ -88,9 +88,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Teknoloji kararlarını böyle etkiliyor #shorts",
-  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
-  "duration_seconds": 29.9,
+  "title": "Evrenin göremediğimiz kısmı ürkütüyor #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 29.11,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -102,22 +102,21 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "teknoloji",
-    "yapayzeka",
-    "siber",
-    "algoritma",
-    "veri",
-    "dikkatekonomisi"
+    "uzay",
+    "evren",
+    "bilim",
+    "karadelik",
+    "galaksi"
   ],
   "background_queries": [
-    "cyber security",
-    "phone screen dark",
-    "data center",
-    "hacker code",
-    "technology dark cinematic"
+    "galaxy stars night sky",
+    "space galaxy stars",
+    "nebula stars",
+    "astronaut outer space",
+    "black hole animation"
   ],
-  "script": "Algoritmalar sadece ne izlediğini değil, ne zaman zayıf olduğunu da öğrenir. Yorgunken, sıkılmışken veya yalnızken ekrana daha uzun bakarsın. Platformlar bunu ölçer ve seni tutacak içerikleri öne çıkarır. Bu yüzden teknoloji bazen araç gibi değil, görünmez bir alışkanlık yöneticisi gibi çalışır. Kontrolü geri almak istiyorsan bildirimleri azalt. Küçük bir ayar, dikkatini geri kazanmanın ilk adımı olabilir.",
-  "description": "Teknoloji kararlarını böyle etkiliyor\n\nTeknolojinin Karanlık Yüzü konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: teknoloji, algoritma, veri, dikkat ekonomisi, yapay zeka.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Evrenin büyük kısmını göremiyoruz. Bilim insanları karanlık madde ve karanlık enerji olduğunu söylüyor ama tam olarak ne olduklarını bilmiyoruz. Yani gördüğümüz yıldızlar, galaksiler ve gezegenler evrenin sadece küçük bir parçası. Asıl büyük sahne görünmez durumda. Bu düşünce ürkütücü ama büyüleyici. Belki de evrenin en büyük sırrı uzaklarda değil, göremediğimiz şeylerde saklı.",
+  "description": "Evrenin göremediğimiz kısmı ürkütüyor\n\nUzayın Korkunç Sırları konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: uzay, evren, kara delik, galaksi, bilim.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
   "viral_packaging_score": {
     "score": 100,
     "notes": []
@@ -127,7 +126,7 @@
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/crz7SozTSaE",
+  "video_url": "https://youtu.be/gfRG84yeNUA",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 3,
