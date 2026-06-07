@@ -59,7 +59,6 @@ def _recent_manifest_rows() -> list[dict]:
 
 def choose_daily_plan() -> list[dict]:
     recent = _recent_manifest_rows()
-    recent_niches = [row.get("niche") for row in recent if isinstance(row, dict)]
     recent_angles = {_norm_key(row.get("angle") or row.get("title") or "") for row in recent if isinstance(row, dict)}
 
     ordered = CHANNEL_VIEW_WEIGHTED_NICHES + [n for n in SCENARIOS if n not in CHANNEL_VIEW_WEIGHTED_NICHES]
@@ -68,8 +67,6 @@ def choose_daily_plan() -> list[dict]:
         if len(plan) >= len(SLOTS):
             break
         if niche in [item["niche"] for item in plan]:
-            continue
-        if niche in recent_niches[-4:] and len(SCENARIOS) - len(set(recent_niches[-4:])) >= len(SLOTS):
             continue
         angles = SCENARIOS.get(niche) or ["tek ana fikir"]
         angle = next((a for a in angles if _norm_key(a) not in recent_angles), random.choice(angles))
@@ -146,7 +143,8 @@ def generate_script(niche: str) -> str:
         runner.main.logger.warning("generator unavailable, fallback used: %s", exc)
         return fallback_script(niche)
 
-    for attempt in range(7):
+    repeated_bad = 0
+    for attempt in range(4):
         angle = runner.FORCED_ANGLE or random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
         try:
             response = client.chat.completions.create(
@@ -163,6 +161,11 @@ def generate_script(niche: str) -> str:
                 runner.main.logger.info("Accepted script try=%d angle=%s", attempt + 1, angle)
                 return script
             runner.main.logger.warning("Rejected script, regenerating: %s", ",".join(bad))
+            if "word_count=16" in bad and "too_many_colons" in bad:
+                repeated_bad += 1
+                if repeated_bad >= 2:
+                    runner.main.logger.warning("Generator is repeating short colon-form output; using curated fallback.")
+                    break
         except Exception as exc:
             runner.main.logger.warning("Script generation failed try=%d: %s", attempt + 1, exc)
     if best and best_count <= 1:
