@@ -2,8 +2,83 @@
   "mode": "turkish_general_viral_youtube_upload_with_safe_metadata",
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
-  "prompt_style": "daily_4_video_regenerate_until_clean_scheduled_publish",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "prompt_style": "daily_4_video_channel_view_weighted_no_repeat_scheduled_publish",
+  "niche": "Tuhaf ve Enteresan Yasalar",
+  "angle": "kuralların arkasındaki hikaye",
+  "channel_analysis": {
+    "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+    "handle": "@ilgiçekici15",
+    "observed_date": "2026-06-07",
+    "source_scope": "all_available_channel_shorts_via_yt_dlp_flat_playlist",
+    "video_count_scanned": 148,
+    "videos_with_public_view_counts": 81,
+    "summary": [
+      "Full-channel scan found higher-view outliers in weird laws, urban legend rules, human behavior, invisible universe/space, daily decisions, stoic calm, and achievement discipline.",
+      "Recent uploads still repeat exact titles and scripts, which weakens browse and Shorts testing signals.",
+      "Optimization should lean into proven curiosity topics while keeping no-repeat packaging and stronger retention hooks."
+    ],
+    "view_signals": [
+      {
+        "niche": "Tuhaf ve Enteresan Yasalar",
+        "top_public_views": 1800,
+        "signal": "highest observed Short; weird local law packaging worked"
+      },
+      {
+        "niche": "Tuhaf ve Enteresan Yasalar",
+        "top_public_views": 1300,
+        "signal": "urban-legend city rules also overperformed"
+      },
+      {
+        "niche": "Bilinmeyen İnsan Davranışları",
+        "top_public_views": 1500,
+        "signal": "anticipation and everyday behavior hooks performed strongly"
+      },
+      {
+        "niche": "Bilinmeyen İnsan Davranışları",
+        "top_public_views": 1200,
+        "signal": "social behavior and bystander-style framing performed strongly"
+      },
+      {
+        "niche": "Uzayın Korkunç Sırları",
+        "top_public_views": 1100,
+        "signal": "invisible universe / unseen reality hook performed strongly"
+      },
+      {
+        "niche": "Teknolojinin Karanlık Yüzü",
+        "top_public_views": 1000,
+        "signal": "daily decision overload / attention framing performed strongly"
+      },
+      {
+        "niche": "Günlük Hayatta Stoacı Felsefe",
+        "top_public_views": 424,
+        "signal": "small daily calm/action framing beat most recent uploads"
+      },
+      {
+        "niche": "Başarı Psikolojisi ve Motivasyon",
+        "top_public_views": 344,
+        "signal": "invisible discipline and routine framing showed traction"
+      }
+    ],
+    "algorithm_reference_video": {
+      "url": "https://youtu.be/N-q-XLQymnU",
+      "title": "The Entire Shorts Algorithm Explained in 180 Seconds…",
+      "public_views_observed": 336790,
+      "applied_takeaways": [
+        "optimize the first seconds for a clear hook",
+        "use one focused story arc instead of list-like facts",
+        "avoid repeated packaging so Shorts can test each upload separately",
+        "favor retention and curiosity over generic hashtags"
+      ]
+    },
+    "priority_niches": [
+      "Tuhaf ve Enteresan Yasalar",
+      "Bilinmeyen İnsan Davranışları",
+      "Uzayın Korkunç Sırları",
+      "Teknolojinin Karanlık Yüzü",
+      "Günlük Hayatta Stoacı Felsefe",
+      "Başarı Psikolojisi ve Motivasyon"
+    ]
+  },
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +88,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 27.58,
+  "title": "Normal sandığın şey başka yerde yasak #shorts",
+  "thumbnail_text": "BU YASA GERÇEK",
+  "duration_seconds": 32.52,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,31 +102,40 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "bilim",
-    "kesif",
-    "bilgiler"
+    "yasalar",
+    "ilginc",
+    "dunya",
+    "hukuk",
+    "ülkeler",
+    "kültür",
+    "ilginçbilgiler"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "court law",
+    "judge gavel",
+    "old documents",
+    "city street rules",
+    "law books cinematic"
   ],
-  "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Dünyada bazı yasalar o kadar tuhaf ki şaka gibi görünür. Ama çoğu, geçmişte yaşanmış garip bir olaydan sonra ortaya çıkmıştır. Bir şehirde sessizlik, başka bir yerde hayvanlar, başka bir ülkede günlük davranışlar yasa konusu olabilir. Hukuk sadece adalet değil, toplumların korkularını ve alışkanlıklarını da gösterir. Bir yasa sana saçma geliyorsa, arkasında unutulmuş bir hikaye olabilir. Bazen en garip kurallar, en ilginç tarihi saklar.",
+  "description": "Normal sandığın şey başka yerde yasak\n\nTuhaf ve Enteresan Yasalar konusunda kısa, vurucu ve merak uyandıran bir Türkçe Shorts.\nOdak kelimeler: yasalar, hukuk, ülkeler, kültür, ilginç bilgiler.\nYeni ilginç bilgiler için takipte kal.\n\n#shorts #youtubeshorts #viral #viralshorts #fyp #bilgi #ilgincbilgiler #turkceshorts",
+  "viral_packaging_score": {
+    "score": 100,
+    "notes": []
+  },
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/KseRt-1tRPU",
+  "video_url": "https://youtu.be/Vpgf4hEmq08",
   "upload_status": "success",
   "upload_error": null,
   "batch_index": 1,
   "schedule_slot_turkey": "0600",
-  "scheduled_publish_at_turkey": "2026-06-07T06:00:00+03:00",
-  "scheduled_publish_at_utc": "2026-06-07T03:00:00Z",
+  "scheduled_publish_at_turkey": "2026-06-08T06:00:00+03:00",
+  "scheduled_publish_at_utc": "2026-06-08T03:00:00Z",
+  "daily_plan_source": "all_channel_view_rankings_reference_algorithm_video_and_recent_title_repetition",
   "slot_video_path": "generated-videos/short_0600.mp4",
   "slot_thumbnail_path": "generated-videos/thumbnail_0600.jpg",
   "slot_preview_gif_path": "generated-videos/preview_0600.gif"

@@ -75,7 +75,7 @@ def make_thumbnail(video_path: str, thumbnail_text: str, font_path: str, logger=
             draw.text((x, y), line, font=font, fill="white", stroke_width=6, stroke_fill="black")
             y += 96
 
-        footer = "KORKU • GİZEM • DOSYA"
+        footer = "BİLGİ • MERAK • SHORTS"
         box = draw.textbbox((0, 0), footer, font=small_font, stroke_width=2)
         draw.text(
             ((THUMBNAIL_SIZE[0] - (box[2] - box[0])) // 2, THUMBNAIL_SIZE[1] - 78),
