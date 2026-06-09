@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Uzayın Korkunç Sırları",
+  "niche": "Şok Edici Psikolojik Gerçekler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Uzayın gördüğümüz kısmı sadece evrenin küçük bir parçasını oluşturur; geriye kalan #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 35.83,
+  "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
+  "duration_seconds": 26.28,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim"
+    "psikoloji",
+    "beyin",
+    "insanpsikolojisi"
   ],
   "background_queries": [
-    "deep space",
-    "galaxy stars",
-    "black hole",
-    "astronaut space",
-    "space cinematic"
+    "human brain psychology",
+    "thinking person dark",
+    "mind concept",
+    "neural network abstract",
+    "person thinking cinematic"
   ],
-  "script": "Uzayın gördüğümüz kısmı sadece evrenin küçük bir parçasını oluşturur; geriye kalan büyük bölüm, görülemez ve dokunulamaz bir karanlık maddedir. Bu görünmeyen materyal, galaksileri birarada tutarken, üzerlerindeki etkisini tam olarak açıklayamıyoruz. Ayrıca, evrenin hızlıca genleşmesini yönlendiren gizli enerji, bilimimizin mevcut modellerini sarsan bir gizemdir. Bu iki görünmez kuvvet, uzayın yapısını şekillendirirken, insanlığın en derin sorularından birini hâlâ cevapsız bırakıyor. Bu korkunç sırları birlikte keşfetmek için videoyu beğenip kanalımıza abone olabilirsin.",
-  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Beyninin seni kandırdığını biliyor musun? Bir şeyi ne kadar sık duyarsan, doğru olduğuna o kadar kolay inanırsın. Psikolojide buna tanıdıklık etkisi denir. Bu yüzden reklamlar, tekrar eden sözler ve kalabalığın fikri zihninde güçlü görünür. Ama gerçek her zaman en çok duyduğun şey değildir. Bugün bir şeye inanmadan önce kendine şunu sor: Bunu biliyor muyum, yoksa sadece çok mu duydum?",
+  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/8DYC_Ml_rXY",
+  "video_url": "https://youtu.be/OeIsySkR_RE",
   "upload_status": "success",
   "upload_error": null
 }
