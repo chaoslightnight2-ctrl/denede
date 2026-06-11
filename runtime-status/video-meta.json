@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Bilinmeyen İnsan Davranışları",
+  "niche": "Teknolojinin Karanlık Yüzü",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
-  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-  "duration_seconds": 27.65,
+  "title": "Algoritmalar sadece ne izlediğini değil, ne zaman zayıf olduğunu da öğrenir #shorts",
+  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
+  "duration_seconds": 27.19,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "insandavranisi",
-    "psikoloji",
-    "sosyoloji"
+    "teknoloji",
+    "yapayzeka",
+    "siber"
   ],
   "background_queries": [
-    "people walking city",
-    "human behavior",
-    "crowd slow motion",
-    "person thinking",
-    "urban people cinematic"
+    "cyber security",
+    "phone screen dark",
+    "data center",
+    "hacker code",
+    "technology dark cinematic"
   ],
-  "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
-  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Algoritmalar sadece ne izlediğini değil, ne zaman zayıf olduğunu da öğrenir. Yorgunken, sıkılmışken veya yalnızken ekrana daha uzun bakarsın. Platformlar bunu ölçer ve seni tutacak içerikleri öne çıkarır. Bu yüzden teknoloji bazen araç gibi değil, görünmez bir alışkanlık yöneticisi gibi çalışır. Kontrolü geri almak istiyorsan bildirimleri azalt. Küçük bir ayar, dikkatini geri kazanmanın ilk adımı olabilir.",
+  "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/Zln5TZC-id4",
+  "video_url": "https://youtu.be/Y68GYKa43GU",
   "upload_status": "success",
   "upload_error": null
 }
