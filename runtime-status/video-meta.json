@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Teknolojinin Karanlık Yüzü",
+  "niche": "Şok Edici Psikolojik Gerçekler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bildirimler artık sadece bilgi vermiyor; dikkatimizi yönetiyor #shorts",
-  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
-  "duration_seconds": 28.56,
+  "title": "Sessiz sosyal baskı, çoğu zaman fark etmediğimiz en güçlü yönlendirme biçimidir #shorts",
+  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
+  "duration_seconds": 28.44,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "teknoloji",
-    "yapayzeka",
-    "siber"
+    "psikoloji",
+    "beyin",
+    "insanpsikolojisi"
   ],
   "background_queries": [
-    "cyber security",
-    "phone screen dark",
-    "data center",
-    "hacker code",
-    "technology dark cinematic"
+    "human brain psychology",
+    "thinking person dark",
+    "mind concept",
+    "neural network abstract",
+    "person thinking cinematic"
   ],
-  "script": "Bildirimler artık sadece bilgi vermiyor; dikkatimizi yönetiyor. Her küçük titreşim, beynimize “bir şey kaçırıyorsun” hissi gönderiyor ve biz fark etmeden ona koşuyoruz. Peki gerçekten ihtiyacımız olduğu için mi açıyoruz, yoksa alışkanlık bizi mi sürüklüyor? Sürekli uyarılmak, düşünme alanımızı daraltıyor ve sessizliği unutturuyor. Teknolojiyi seviyorum ama kontrolü ona bırakmak istemem. Böyle konular hoşuna gidiyorsa takipte kal.",
-  "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Sessiz sosyal baskı, çoğu zaman fark etmediğimiz en güçlü yönlendirme biçimidir. İnsanlar, açık bir zorlamaya gerek duymadan, sadece ortamın sessiz beklentilerine uyum sağlamak için davranışlarını değiştirir. Bir bakış, kısa bir duraksama ya da hafif bir onaylamama ifadesi bile bizi kendi tercihlerimizden uzaklaştırabilir. Asıl soru şu: Sessizliği gerçekten kendi kararımız sanıyor muyuz? Bu tür içerikleri seviyorsan takipte kal.",
+  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/JdxgwBAz_4c",
+  "video_url": "https://youtu.be/9s1eUzN917o",
   "upload_status": "success",
   "upload_error": null
 }
