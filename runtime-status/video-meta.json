@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Şok Edici Psikolojik Gerçekler",
+  "niche": "Mitoloji ve Efsanelerin Kökenleri",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Psikologların yıllardır vurguladığı şok gerçek şu: Sessiz sosyal baskı, sadece dış #shorts",
-  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
-  "duration_seconds": 32.16,
+  "title": "Mitler ve efsaneler, insanların doğayı anlamlandırma çabasının en eski izleridir #shorts",
+  "thumbnail_text": "EFSANENİN KÖKENİ",
+  "duration_seconds": 28.63,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "psikoloji",
-    "beyin",
-    "insanpsikolojisi"
+    "mitoloji",
+    "efsane",
+    "tarih"
   ],
   "background_queries": [
-    "human brain psychology",
-    "thinking person dark",
-    "mind concept",
-    "neural network abstract",
-    "person thinking cinematic"
+    "ancient statue",
+    "greek temple",
+    "ancient ruins",
+    "mythology temple",
+    "old sculpture cinematic"
   ],
-  "script": "Psikologların yıllardır vurguladığı şok gerçek şu: Sessiz sosyal baskı, sadece dışlanmış hissetmekle kalmaz, uzun vadede özgüveninizi bile sistematik olarak düşürüyor. Düşüncelerinizi hiç ifade etmeden her şeye katlanarak yaşadığınızda, çevrenizle aranızda görünmez ama aşılmaz bir duvar örüyorsunuz. Zamanla bu duvar, sizi sevdiklerinizden bile uzaklaştırıyor, kendinizle olan bağınızı zayıflatıyor. Bunu günlük hayatta fark eden var mı? Yaşadığın deneyimleri yorumlarda paylaş, birlikte farkındalığı artıralım.",
-  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Mitler ve efsaneler, insanların doğayı anlamlandırma çabasının en eski izleridir. Gök gürültüsünü bir tanrının öfkesiyle, rüzgârı görünmez bir ruhun nefesiyle açıklamak, bilinmeyeni daha yakın ve anlaşılır kılar. Bu hikâyeler zamanla kültürleri şekillendirir, doğayla kurulan bağı derinleştirir. Bugün hâlâ aynı soruyu soruyoruz: Doğayı anlamak için hangi öykülere ihtiyaç duyuyoruz? Böyle içerikler hoşuna gidiyorsa takipte kal.",
+  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/MG3ZRyGmFK4",
+  "video_url": "https://youtu.be/TAHr1sz1LQE",
   "upload_status": "success",
   "upload_error": null
 }
