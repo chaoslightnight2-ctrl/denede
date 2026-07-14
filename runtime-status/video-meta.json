@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Çözülememiş Tarihi Gizemler",
+  "niche": "Uzayın Korkunç Sırları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Kaybolan toplulukların ardında bıraktığı sessizlik, tarihin en sarsıcı gizemlerind #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 28.18,
+  "title": "Uzayın en korkunç sırrı aslında çok yakınımızda: kozmik sessizlik #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 32.57,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri"
+    "uzay",
+    "evren",
+    "bilim"
   ],
   "background_queries": [
-    "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "deep space",
+    "galaxy stars",
+    "black hole",
+    "astronaut space",
+    "space cinematic"
   ],
-  "script": "Kaybolan toplulukların ardında bıraktığı sessizlik, tarihin en sarsıcı gizemlerinden biri. Bazı yerleşimler bir anda boşalmış gibi görünür; sanki insanlar aceleyle uzaklaşmış, ama nedenini açıklayacak tek bir iz bile bırakmamıştır. Bu yok oluşların ardında çevresel değişimler mi vardı, yoksa topluluklar bilinmeyen bir yere mi göçtü? Bu tür sırlar, geçmişi anlamaya çalışırken bizi hâlâ düşündürüyor. Böyle konular ilginizi çekiyorsa takipte kalın.",
-  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Uzayın en korkunç sırrı aslında çok yakınımızda: kozmik sessizlik. Çok derin uzaya gönderdiğimiz tüm sinyaller hiçbir yanıt almadan sonsuz boşluğa karışıyor, bunun nedenini hiç düşündünüz mü? Bilim insanları yıllardır bu sessizliğin arkasında yatan nedeni araştırıyor, bazı teoriler evrende bizden başka hiç yaşam olmadığını söylüyor, bazıları ise sinyallerimizin henüz ulaşamadığı bir boyut olduğunu savunuyor. Sence bu kozmik sessizliğin arkasında ne gizli? Yorumlara fikirlerini yaz, abone olarak daha fazla uzay sırrını kaçırma.",
+  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/DDId6LlYNzQ",
+  "video_url": "https://youtu.be/I93ckrp_joI",
   "upload_status": "success",
   "upload_error": null
 }
