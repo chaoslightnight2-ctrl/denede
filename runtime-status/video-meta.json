@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Şok Edici Psikolojik Gerçekler",
+  "niche": "Tuhaf ve Enteresan Yasalar",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Karar yorgunluğu, zihnin görünmez bir ağırlığıdır #shorts",
-  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
-  "duration_seconds": 28.44,
+  "title": "Bazı ülkelerde hâlâ yürürlükte olan tuhaf yasaların arkasında aslında beklenmedik  #shorts",
+  "thumbnail_text": "BU YASA GERÇEK",
+  "duration_seconds": 30.34,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "psikoloji",
-    "beyin",
-    "insanpsikolojisi"
+    "yasalar",
+    "ilginc",
+    "dunya"
   ],
   "background_queries": [
-    "human brain psychology",
-    "thinking person dark",
-    "mind concept",
-    "neural network abstract",
-    "person thinking cinematic"
+    "court law",
+    "judge gavel",
+    "old documents",
+    "city street rules",
+    "law books cinematic"
   ],
-  "script": "Karar yorgunluğu, zihnin görünmez bir ağırlığıdır. Gün boyunca verdiğimiz küçük kararlar bile zihinsel enerjimizi tüketir ve fark etmeden daha kolay, hatta bazen yanlış seçeneklere yöneliriz. Peki neden akşam saatlerinde irademiz daha zayıf hissedilir? Çünkü zihnimiz de tıpkı bedenimiz gibi dinlenmeye ihtiyaç duyar. Bu gerçeği bilmek, seçimlerimizi daha bilinçli yapmamıza yardımcı olur. Daha fazla psikolojik içgörü için takipte kal.",
-  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bazı ülkelerde hâlâ yürürlükte olan tuhaf yasaların arkasında aslında beklenmedik hikâyeler var. Mesela bir kural, yıllar önce yaşanan küçük bir anlaşmazlığı büyütmemek için konmuş olabilir. Zamanla kimse o olayın detaylarını hatırlamaz ama kural yerinde durur. Böyle olunca da insanlar “Bu neden hâlâ geçerli?” diye sorar. İşte beni en çok etkileyen şey de bu unutulmuş hikâyelerin sessizce yaşamaya devam etmesi. Daha fazlası için takipte kal.",
+  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/zKeeWnuv_GM",
+  "video_url": "https://youtu.be/_I9PN2I38uM",
   "upload_status": "success",
   "upload_error": null
 }
