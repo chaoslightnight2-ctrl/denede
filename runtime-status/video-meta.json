@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Çözülememiş Tarihi Gizemler",
+  "niche": "Teknolojinin Karanlık Yüzü",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Kaybolan toplulukların ardında bıraktığı sessizlik, tarihin en sarsıcı gizemlerind #shorts",
-  "thumbnail_text": "TARİHTE GİZLİ KALDI",
-  "duration_seconds": 26.16,
+  "title": "Teknolojinin karanlık yüzü bazen ekranın parlaklığında saklanır #shorts",
+  "thumbnail_text": "TEKNOLOJİ BUNU GİZLİYOR",
+  "duration_seconds": 28.34,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "tarih",
-    "gizem",
-    "tarihgizemleri"
+    "teknoloji",
+    "yapayzeka",
+    "siber"
   ],
   "background_queries": [
-    "ancient ruins",
-    "old manuscript",
-    "archaeology",
-    "mysterious temple",
-    "ancient history cinematic"
+    "cyber security",
+    "phone screen dark",
+    "data center",
+    "hacker code",
+    "technology dark cinematic"
   ],
-  "script": "Kaybolan toplulukların ardında bıraktığı sessizlik, tarihin en sarsıcı gizemlerinden biri. Bir zamanlar canlı bir yaşamın sürdüğü bu yerler, nasıl oldu da bir anda boşluğa dönüştü? Bazı izler, toplulukların kendi kararlarıyla uzaklaştığını düşündürürken, diğerleri ani bir kırılmanın işaretlerini taşır. Bu sessizliğin nedeni belirsiz kalsa da bıraktığı merak hâlâ diri. Böyle konular hoşuna gidiyorsa takipte kal.",
-  "description": "Çözülememiş Tarihi Gizemler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Teknolojinin karanlık yüzü bazen ekranın parlaklığında saklanır. Dikkat ekonomisi, bizi durmadan kaydırmaya zorlayan görünmez bir yarışa dönüştü. Ne kadar çok izlersek o kadar fazla içerik önümüze düşüyor; ama gerçekten ne kadarını seçiyoruz? Zamanımız, fark etmeden küçük parçalara ayrılıyor ve odak duygumuz yavaşça eriyor. Bu döngüyü kırmak için bilinçli bir duraklama bile büyük fark yaratır. Daha fazla böyle içerik için takipte kal.",
+  "description": "Teknolojinin Karanlık Yüzü hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/nWT0v68FOEc",
+  "video_url": "https://youtu.be/SUtsu75_YZA",
   "upload_status": "success",
   "upload_error": null
 }
