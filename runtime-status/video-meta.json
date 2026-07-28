@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Günlük Hayatta Stoacı Felsefe",
+  "niche": "Şok Edici Psikolojik Gerçekler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Günlük hayatta stoacı felsefe, kontrol ayrımını hatırladığımızda gerçekten işe yar #shorts",
-  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
-  "duration_seconds": 29.14,
+  "title": "Tanıdıklık yanılgısı, zihnin en sessiz ama en güçlü oyunlarından biridir #shorts",
+  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
+  "duration_seconds": 32.02,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "stoacilik",
-    "felsefe",
-    "hayatdersleri"
+    "psikoloji",
+    "beyin",
+    "insanpsikolojisi"
   ],
   "background_queries": [
-    "ancient statue",
-    "stoic statue",
-    "calm person nature",
-    "roman columns",
-    "meditation nature cinematic"
+    "human brain psychology",
+    "thinking person dark",
+    "mind concept",
+    "neural network abstract",
+    "person thinking cinematic"
   ],
-  "script": "Günlük hayatta stoacı felsefe, kontrol ayrımını hatırladığımızda gerçekten işe yarar. Her şeyi yönetemeyiz; ama düşüncelerimizi, tepkilerimizi ve seçimlerimizi yönlendirebiliriz. Peki, başkalarının davranışlarını değiştirmeye çalışmak yerine kendi tutumunu korumayı denedin mi? Kontrol edebildiğine odaklandığında yükün hafifler, zihnin berraklaşır. Bu yaklaşımı benimsersen günlük stresin nasıl azaldığını fark edersin. Takipte kal, birlikte düşünelim.",
-  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Tanıdıklık yanılgısı, zihnin en sessiz ama en güçlü oyunlarından biridir. Bir şeyi ne kadar çok görürsek, ona o kadar güvenmeye başlarız. Bu yüzden bazı insanlar bize aslında hiç yakın olmadıkları hâlde tanıdık gelir. Beyin, tekrar eden yüzleri ve fikirleri otomatik olarak “güvenli” kategorisine atar. Gerçek tehlike de burada başlar: alıştığımız her şey doğru mudur? Bu yanılgıyı fark etmek, düşünme biçimimizi keskinleştirir. Eğer hoşuna gittiyse yorum bırak.",
+  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/4l7KkFPhbGY",
+  "video_url": "https://youtu.be/Df7kYwjNihE",
   "upload_status": "success",
   "upload_error": null
 }

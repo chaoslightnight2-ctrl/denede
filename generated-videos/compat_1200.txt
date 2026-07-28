@@ -17,7 +17,7 @@
     ],
     "format": {
         "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
-        "duration": "26.703000",
-        "size": "5043010"
+        "duration": "28.043000",
+        "size": "9168490"
     }
 }
