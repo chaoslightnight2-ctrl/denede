@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Uzayın Korkunç Sırları",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Yıldızlar ölürken aslında evrenin en sessiz çığlıklarını bırakıyor #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 27.24,
+  "title": "Tekrarın gücü, başarı psikolojisinin en sessiz ama en etkili aracıdır #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 28.68,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim"
+    "motivasyon",
+    "basari",
+    "disiplin"
   ],
   "background_queries": [
-    "deep space",
-    "galaxy stars",
-    "black hole",
-    "astronaut space",
-    "space cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "Yıldızlar ölürken aslında evrenin en sessiz çığlıklarını bırakıyor. Çekirdekleri çöktükçe ışıkları titriyor ve sonunda karanlığa karışıyor. Peki bir yıldızın son nefesi neden bu kadar ürkütücü? Çünkü o an, dev bir yapının kendi ağırlığına yenildiği kozmik bir çöküş yaşanıyor. Bu ölüm, yeni yıldızların doğumuna zemin hazırlıyor ve evreni sürekli yeniden şekillendiriyor. Böyle konular hoşuna gidiyorsa takipte kal.",
-  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Tekrarın gücü, başarı psikolojisinin en sessiz ama en etkili aracıdır. Bir düşünceyi, bir hedefi ya da küçük bir alışkanlığı tekrar ettikçe zihnin onu gerçek kabul etmeye başlar. Peki neden bazı insanlar aynı sözü her gün kendine hatırlamayı seçer? Çünkü tekrar, motivasyonu sabitleyen görünmez bir çerçeve oluşturur. Sen de kendi cümleni seç ve ona sadık kal; etkisini zamanla hissedersin. Daha fazla içerik için takipte kal.",
+  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/mlhq4kwWuWw",
+  "video_url": "https://youtu.be/U4OCuYEgNj0",
   "upload_status": "success",
   "upload_error": null
 }
