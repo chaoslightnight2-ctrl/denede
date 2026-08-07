@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Günlük Hayatta Stoacı Felsefe",
+  "niche": "Bilinmeyen İnsan Davranışları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Günlük hayatın koşuşturmasında iç sakinliği korumak aslında küçük bir seçimle başl #shorts",
-  "thumbnail_text": "BUNU BİLEN SAKİN KALIR",
-  "duration_seconds": 27.36,
+  "title": "Kalabalıkta insanların neden yardım etmeye daha az eğilimli olduğunu hiç düşündün  #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 29.21,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "stoacilik",
-    "felsefe",
-    "hayatdersleri"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji"
   ],
   "background_queries": [
-    "ancient statue",
-    "stoic statue",
-    "calm person nature",
-    "roman columns",
-    "meditation nature cinematic"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Günlük hayatın koşuşturmasında iç sakinliği korumak aslında küçük bir seçimle başlar: Tepki vermek yerine durup nefesi fark etmek. Her zorlukta “Bunu kontrol edebilir miyim?” diye sormak, zihni gereksiz yüklerden arındırır. Böylece dış gürültü artsa bile içindeki alan genişler, düşüncelerin berraklaşır. Stoacı duruş tam da bu dengeyi hatırlatır. Eğer bu yaklaşım hoşuna gittiyse, devamını birlikte keşfedebiliriz.",
-  "description": "Günlük Hayatta Stoacı Felsefe hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Kalabalıkta insanların neden yardım etmeye daha az eğilimli olduğunu hiç düşündün mü? Buna sorumluluk dağılması deniyor. Bir durumla karşılaştığımızda, çevremizde başkaları varsa harekete geçme görevini onlara atıyoruz. “Birisi mutlaka müdahale eder” diye düşünüyoruz ve geri çekiliyoruz. Oysa bazen tek bir adım bile fark yaratır. Bu davranışı tanımak, daha bilinçli hareket etmemizi sağlar. Böyle içerikler için takipte kal.",
+  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/nZHZdlHF534",
+  "video_url": "https://youtu.be/nwGlPI7pM0s",
   "upload_status": "success",
   "upload_error": null
 }
