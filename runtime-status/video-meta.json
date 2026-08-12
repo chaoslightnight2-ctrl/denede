@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Başarı Psikolojisi ve Motivasyon",
+  "niche": "Bilinmeyen İnsan Davranışları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Erken vazgeçmek çoğu zaman başarısızlıktan değil, sabrın kırılmasından doğar #shorts",
-  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
-  "duration_seconds": 29.09,
+  "title": "Bilinmeyen insan davranışlarından biri de erteleyerek öncelik gösterme alışkanlığı #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 31.94,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "motivasyon",
-    "basari",
-    "disiplin"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji"
   ],
   "background_queries": [
-    "person running",
-    "mountain climb",
-    "focused work",
-    "success motivation",
-    "athlete training cinematic"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Erken vazgeçmek çoğu zaman başarısızlıktan değil, sabrın kırılmasından doğar. Bir hedefe başlarken heyecan yüksektir ama ilk zorlukta geri adım atmak, potansiyelin kapısını kendi elinle kapatmaktır. Peki gerçekten denemeden pes etmek seni nereye götürür? Küçük ilerlemeleri görmezden gelme; onlar büyük dönüşümlerin habercisidir. Devam et, çünkü yarım bırakılan her adım geleceğini eksiltir. Daha fazla içerik için takipte kal.",
-  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilinmeyen insan davranışlarından biri de erteleyerek öncelik gösterme alışkanlığı, değil mi? Aslında bu davranış beynin öncelik sıralama mekanizmasının aksine çalıştığı durumlarda ortaya çıkıyor. Mesela acil bir işi tamamlaman gerektiğinde, daha kolay ve hızlı biten küçük görevleri öne taşımak, beynin anlık stresini azaltmak için kullandığı bir özellik. Sen de bazen önemli işleri sona atmak için kendini ikna ediyor musun? Yorumlara neden böyle davrandığını yaz, takip et ki daha fazla ilginç davranış sırrını öğrenelim.",
+  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/oijHGm3sL54",
+  "video_url": "https://youtu.be/85QCltDOivw",
   "upload_status": "success",
   "upload_error": null
 }
