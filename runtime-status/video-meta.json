@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Uzayın Korkunç Sırları",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Uzayın en korkunç sırlarından biri, gökyüzünde gördüğümüz her parlayan yıldızın bi #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 31.78,
+  "title": "Bilimde çoktan cevaplanmış sandığımız sorular, yeni teknolojiyle sürekli yeniden y #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 33.34,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "deep space",
-    "galaxy stars",
-    "black hole",
-    "astronaut space",
-    "space cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Uzayın en korkunç sırlarından biri, gökyüzünde gördüğümüz her parlayan yıldızın bir gün öleceğidir. Özellikle dev kütleli yıldızların ölümü sırasında evrendeki en güçlü patlamalardan biri olan süpernova meydana gelir. Güneşimiz de 5 milyar yıl sonra içindeki yakıtı bitirdiğinde devasa bir kırmızı dev yıldıza dönüşecek, sonra da dış katmanlarını uzaya saçarak sona erecek. Peki bu süreçte gezegenimiz ne olacak düşündünüz mü? Tüm detayları bir sonraki videomda konuşuyoruz, kanala abone olmayı unutmayın.",
-  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilimde çoktan cevaplanmış sandığımız sorular, yeni teknolojiyle sürekli yeniden yazılıyor. Örneğin bin yıldır \"neden bu bölgedeki antik hayvanlar aniden yok oldu\" diye sorduğumuz fosil katmanları, son dönem karbon ve DNA analizleriyle aslında o dönemki insan topluluklarının avlanma stratejilerinin değişmesinden kaynaklandığını net olarak kanıtladı. Bu tür keşifler bize geçmişi anlamamızı sağlarken, gelecekteki soruları da şimdiden çözmemize yardımcı oluyor. Peki senin bildiğin eski soruya yeni bakış örneği var mı? Yorumlarda paylaşabilirsin!",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/Ltpi4-w8qDQ",
+  "video_url": "https://youtu.be/ViRSzHyfQhk",
   "upload_status": "success",
   "upload_error": null
 }
