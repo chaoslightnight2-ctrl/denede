@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Mitoloji ve Efsanelerin Kökenleri",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Mitolojiler sadece eski masallar değildir #shorts",
-  "thumbnail_text": "EFSANENİN KÖKENİ",
-  "duration_seconds": 30.07,
+  "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 27.58,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "mitoloji",
-    "efsane",
-    "tarih"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "ancient statue",
-    "greek temple",
-    "ancient ruins",
-    "mythology temple",
-    "old sculpture cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Mitolojiler sadece eski masallar değildir. İnsanların korkularını, umutlarını ve doğayı anlama çabasını taşır. Gök gürültüsü bir tanrının öfkesi, deniz fırtınası bir yaratığın nefesi gibi anlatılırdı. Çünkü insan bilmediği şeye hikaye vererek dayanır. Bugün bile modern dünyada aynı şeyi yapıyoruz. Sadece tanrıların yerini teoriler, semboller ve kahramanlar aldı. Belki efsaneler geçmiş değil, insan zihninin aynasıdır.",
-  "description": "Mitoloji ve Efsanelerin Kökenleri hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/rtkACZL43vk",
+  "video_url": "https://youtu.be/ClVvlN_uXyo",
   "upload_status": "success",
   "upload_error": null
 }
