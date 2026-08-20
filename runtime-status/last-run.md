@@ -1,7 +1,7 @@
 # Last run
-result=failure
-run_id=32304782441
-commit=bc7672a0ffb27ebaa9e48a5baddd795bf0a34e79
+result=success
+run_id=32420568232
+commit=95c5e4192bb278ae52908da106fd0a9d5dbfccbf
 video=yes
 video_0600=yes
 video_1200=yes
