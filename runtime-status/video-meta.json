@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Uzayın Korkunç Sırları",
+  "niche": "İnanılmaz Bilimsel Keşifler",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Görünmeyen evren, uzayın en korkunç sırrı aslında #shorts",
-  "thumbnail_text": "UZAY BUNU SAKLIYOR",
-  "duration_seconds": 31.44,
+  "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
+  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
+  "duration_seconds": 27.58,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "uzay",
-    "evren",
-    "bilim"
+    "bilim",
+    "kesif",
+    "bilgiler"
   ],
   "background_queries": [
-    "deep space",
-    "galaxy stars",
-    "black hole",
-    "astronaut space",
-    "space cinematic"
+    "science laboratory",
+    "microscope",
+    "space telescope",
+    "scientist experiment",
+    "laboratory cinematic"
   ],
-  "script": "Görünmeyen evren, uzayın en korkunç sırrı aslında. Biliyor musunuz? Sadece %5'i ışık ve bilinen maddelerden oluşuyor, geri kalan %95'i ise bizim hiç algılayamadığımız karanlık madde ve karanlık enerji. Bu karanlık katman ne olduğunu, nasıl çalıştığını hatta nerede başlayıp bittiğini bile bilmiyoruz. Evrende bu kadar çok şeyin bizden saklanması hiç ürkütücü değil mi? Bu gizemli katmandan bahseden diğer içeriklerimizi görmek için profilimizi ziyaret etmeyi unutmayın.",
-  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilimde en büyük keşifler bazen bir hata gibi başlar. Yanlış sonuç, beklenmeyen leke veya tutmayan deney yeni bir kapı açabilir. Çünkü bilim sadece doğru cevabı bulmak değil, şaşırmayı ciddiye almaktır. Bugün kullandığımız birçok teknoloji, birinin garip görünen bir sonucu çöpe atmaması sayesinde gelişti. Bu yüzden merak küçük görünse de dünyayı değiştirebilir. Bir soruyu önemsemek, bazen keşfin ilk adımıdır.",
+  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/xG676KO1qYM",
+  "video_url": "https://youtu.be/0h4Ty9A9Aao",
   "upload_status": "success",
   "upload_error": null
 }
