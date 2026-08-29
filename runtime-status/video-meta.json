@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Tuhaf ve Enteresan Yasalar",
+  "niche": "Bilinmeyen İnsan Davranışları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bazı ülkelerde sıradan davranışlar bile beklenmedik kurallara bağlanmıştır #shorts",
-  "thumbnail_text": "BU YASA GERÇEK",
-  "duration_seconds": 29.76,
+  "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 27.65,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "yasalar",
-    "ilginc",
-    "dunya"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji"
   ],
   "background_queries": [
-    "court law",
-    "judge gavel",
-    "old documents",
-    "city street rules",
-    "law books cinematic"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Bazı ülkelerde sıradan davranışlar bile beklenmedik kurallara bağlanmıştır. Parkta ne yaptığın, sokakta nasıl davrandığın veya hangi saatte gürültü çıkardığın ceza sebebi olabilir. Bu yasalar bize şunu gösterir: Normal dediğimiz şey her yerde aynı değildir. Kültür değişince kurallar da değişir. Seyahat ederken sadece haritaya değil, alışkanlıklara da dikkat et. Çünkü bazen en küçük davranış bile başka yerde büyük anlam taşır.",
-  "description": "Tuhaf ve Enteresan Yasalar hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
+  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/vUdIqGJmpEU",
+  "video_url": "https://youtu.be/YOFPbfR7llE",
   "upload_status": "success",
   "upload_error": null
 }
