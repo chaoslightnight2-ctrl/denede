@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Bilinmeyen İnsan Davranışları",
+  "niche": "Başarı Psikolojisi ve Motivasyon",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
-  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
-  "duration_seconds": 27.65,
+  "title": "Herkes başarı hikayelerindeki ateşli motivasyonu görür, ama asıl işi kimsenin görm #shorts",
+  "thumbnail_text": "BAŞARI BÖYLE BAŞLAR",
+  "duration_seconds": 31.25,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "insandavranisi",
-    "psikoloji",
-    "sosyoloji"
+    "motivasyon",
+    "basari",
+    "disiplin"
   ],
   "background_queries": [
-    "people walking city",
-    "human behavior",
-    "crowd slow motion",
-    "person thinking",
-    "urban people cinematic"
+    "person running",
+    "mountain climb",
+    "focused work",
+    "success motivation",
+    "athlete training cinematic"
   ],
-  "script": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun? Çünkü herkes sorumluluğu başkasına bırakır. Buna seyirci etkisi denir. Etrafta ne kadar çok kişi varsa, biri harekete geçsin diye bekleme ihtimalimiz artar. Bu yüzden gerçek farkı çoğu zaman ilk adımı atan kişi yaratır. Bir olay gördüğünde kalabalığa bakma, kendi kararına bak. Çünkü bazen tek hareket bütün sessizliği bozar.",
-  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Herkes başarı hikayelerindeki ateşli motivasyonu görür, ama asıl işi kimsenin görmediği günlük küçük alışkanlıklar yapar. Görünmeyen disiplin, küçük adımları tekrar tekrar atarak biriktirdiğin güçlüğün ta kendisi, büyük sonuçları da o kendi gizli katkısıyla getirir. Kimsenin görmeyeceği bu çabalar biriktikçe, başarı da kendini hissettirmeye başlar. Sen de bugün kendi görünmez disiplinini nasıl inşa ediyorsun? Yorumlara fikirlerini yaz, çok yakında ikinci bölümde en pratik, kanıtlanmış yöntemleri anlatacağım.",
+  "description": "Başarı Psikolojisi ve Motivasyon hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/YOFPbfR7llE",
+  "video_url": "https://youtu.be/nbhbVEUrt8k",
   "upload_status": "success",
   "upload_error": null
 }
