@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "İnanılmaz Bilimsel Keşifler",
+  "niche": "Bilinmeyen İnsan Davranışları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Bilim insanları yıllarca görünmeyeni görmek için mücadele etti, şimdi özel araçlar #shorts",
-  "thumbnail_text": "BİLİM BUNU DEĞİŞTİRDİ",
-  "duration_seconds": 33.6,
+  "title": "Bilinmeyen birçok insan davranışının ardında sıklıkla ilk izlenim tuzağı yatıyor #shorts",
+  "thumbnail_text": "İNSANLAR NEDEN BÖYLE",
+  "duration_seconds": 30.24,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "bilim",
-    "kesif",
-    "bilgiler"
+    "insandavranisi",
+    "psikoloji",
+    "sosyoloji"
   ],
   "background_queries": [
-    "science laboratory",
-    "microscope",
-    "space telescope",
-    "scientist experiment",
-    "laboratory cinematic"
+    "people walking city",
+    "human behavior",
+    "crowd slow motion",
+    "person thinking",
+    "urban people cinematic"
   ],
-  "script": "Bilim insanları yıllarca görünmeyeni görmek için mücadele etti, şimdi özel araçlarla en karmaşık gizemleri bile çözüyoruz. Örneğin karanlıkta bile çalışan termal kameralar, ormandaki kayıp hayvanları bulurken, uzaydaki karanlık maddeyi haritalamak için kullanılan özel teleskoplar bile var. Hatta bazı cihazlar, su altındaki en küçük canlıları bile tespit edebiliyor, volkanik aktivitelerin erken uyarısını da veriyor. Peki bu araçların en çarpıcı keşfinden haberdar mısın? Videoya beğeni atıp, diğer inanılmaz bilimsel keşifleri kaçırma!",
-  "description": "İnanılmaz Bilimsel Keşifler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Bilinmeyen birçok insan davranışının ardında sıklıkla ilk izlenim tuzağı yatıyor. Beynimiz tanımadığımız biriyle ilk karşılaştığımızda saniye içinde onun hakkında kestirimler üretiyor, bu kestirimlerin çoğu yanlış olsa da sonradan düzeltmek için çaba sarf etmiyoruz. Hatta bu tuzağa düşmeden önce yaptığımız küçük alışkanlıklar bile bu ilk izlenimi pekiştiriyor. Siz de ilk görüşte birini yanlış değerlendirdiğinizi sonradan fark ettiniz mi? Benzer davranış sırlarını paylaşmak için takipte kalın.",
+  "description": "Bilinmeyen İnsan Davranışları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/mYhZvaywdww",
+  "video_url": "https://youtu.be/IxrCvDrzEL0",
   "upload_status": "success",
   "upload_error": null
 }
