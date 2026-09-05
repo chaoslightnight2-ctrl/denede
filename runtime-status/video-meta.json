@@ -3,7 +3,7 @@
   "language": "tr",
   "voice": "tr-TR-EmelNeural",
   "prompt_style": "general_viral_turkish_quality_guard_with_offline_fallback",
-  "niche": "Şok Edici Psikolojik Gerçekler",
+  "niche": "Uzayın Korkunç Sırları",
   "caption_style": {
     "font_size": 60,
     "stroke_width": 5,
@@ -13,9 +13,9 @@
     "spaces_removed_inside_caption_word": true,
     "timing": "edge_wordboundary_or_pause_aware_audio_fallback"
   },
-  "title": "Beyninin seni kandırdığını biliyor musun #shorts",
-  "thumbnail_text": "BEYNİN BUNU YAPIYOR",
-  "duration_seconds": 26.28,
+  "title": "Uzayın en korkunç sırrı aslında hiç duymadığımız o sonsuz kozmik sessizlik değil m #shorts",
+  "thumbnail_text": "UZAY BUNU SAKLIYOR",
+  "duration_seconds": 30.98,
   "tags": [
     "shorts",
     "youtubeshorts",
@@ -27,25 +27,25 @@
     "turkceshorts",
     "shortsturkiye",
     "merakedilenler",
-    "psikoloji",
-    "beyin",
-    "insanpsikolojisi"
+    "uzay",
+    "evren",
+    "bilim"
   ],
   "background_queries": [
-    "human brain psychology",
-    "thinking person dark",
-    "mind concept",
-    "neural network abstract",
-    "person thinking cinematic"
+    "deep space",
+    "galaxy stars",
+    "black hole",
+    "astronaut space",
+    "space cinematic"
   ],
-  "script": "Beyninin seni kandırdığını biliyor musun? Bir şeyi ne kadar sık duyarsan, doğru olduğuna o kadar kolay inanırsın. Psikolojide buna tanıdıklık etkisi denir. Bu yüzden reklamlar, tekrar eden sözler ve kalabalığın fikri zihninde güçlü görünür. Ama gerçek her zaman en çok duyduğun şey değildir. Bugün bir şeye inanmadan önce kendine şunu sor: Bunu biliyor muyum, yoksa sadece çok mu duydum?",
-  "description": "Şok Edici Psikolojik Gerçekler hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
+  "script": "Uzayın en korkunç sırrı aslında hiç duymadığımız o sonsuz kozmik sessizlik değil mi? Sesler uzayda yayılmadığı için bu sessizlik, bize doğru gelen tehlikeyi hiç haber vermiyor. Güneş patlamaları, kozmik ışınlar, hatta görünmeyen asteroit parçacıkları tüm bu sessizliğin içinde hiç uyarı yapmadan size çarpabilir. Bu sessizliğin aslında sizi koruyan hiçbir şey olmadığı anlamına geldiğini düşününce ürperiyor insan değil mi? Sen de bu korkunç sırrı daha çok kişiyle paylaşmak için videoyu beğenmeyi unutma.",
+  "description": "Uzayın Korkunç Sırları hakkında çarpıcı gerçekler ve ilginç bilgiler.\nHer gün yeni Shorts için takipte kal.\n\n#shorts #bilgi #ilgincbilgiler #turkceshorts",
   "video_path": "generated-videos/latest_short.mp4",
   "thumbnail_path": "generated-videos/latest_thumbnail.jpg",
   "first_frame_path": "generated-videos/latest_first_frame.jpg",
   "preview_gif_path": "generated-videos/latest_preview.gif",
   "compat_report_path": "generated-videos/video_compat_report.txt",
-  "video_url": "https://youtu.be/mohLi3G3T_Y",
+  "video_url": "https://youtu.be/iZdxwoH7MUw",
   "upload_status": "success",
   "upload_error": null
 }
