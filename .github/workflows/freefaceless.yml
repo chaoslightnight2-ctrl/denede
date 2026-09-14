@@ -25,6 +25,11 @@ on:
           - 'Mitoloji ve Efsanelerin Kökenleri'
           - 'İnanılmaz Bilimsel Keşifler'
           - 'Tuhaf ve Enteresan Yasalar'
+      dry_run:
+        description: 'Kuru test (YouTube yüklemesi YOK, kota harcamaz)'
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -66,14 +71,16 @@ jobs:
         run: |
           echo "GROQ_API_KEY=${GROQ_API_KEY}" > .env
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" >> .env
+          EXTRA=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
           if [ -z "${{ inputs.niche }}" ]; then
-            python -m src.pipeline
+            python -m src.pipeline $EXTRA
           else
-            python -m src.pipeline --niche "${{ inputs.niche }}"
+            python -m src.pipeline --niche "${{ inputs.niche }}" $EXTRA
           fi
 
       - name: Konu tekrarını önlemek için state.json'u commit'le
-        if: always()
+        if: ${{ always() && inputs.dry_run != true }}
         continue-on-error: true
         uses: EndBug/add-and-commit@v9
         with:
