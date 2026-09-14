@@ -47,9 +47,9 @@ def classify(comments: list[dict]) -> list[dict]:
         return []
     user_msg = "\n".join(f"{i+1}. {c['text']}" for i, c in enumerate(comments))
     resp = client.chat.completions.create(
-        model=CONFIG["comments"].get("model", "llama-3.1-8b-instant"),
-        max_tokens=2000,
-        response_format={"type": "json_object"},
+        model=CONFIG["comments"].get("model", "openai/gpt-oss-20b"),
+        max_tokens=4000,
+        reasoning_effort="low",
         messages=[
             {"role": "system", "content": CLASSIFY_SYSTEM},
             {"role": "user", "content": user_msg},

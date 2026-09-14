@@ -104,7 +104,8 @@ def generate(niche: str | None = None):
     for attempt in range(3):
         resp = client.chat.completions.create(
             model=CONFIG["script"]["model"],
-            max_tokens=2000,
+            max_tokens=8000,
+            reasoning_effort="low",  # gpt-oss akıl yürütmeye takılıp boş dönmesin
             messages=[
                 {"role": "system", "content": _system_prompt()},
                 {"role": "user", "content": user_msg},
