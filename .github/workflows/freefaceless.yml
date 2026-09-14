@@ -1,0 +1,97 @@
+name: FreeFaceless TR (manuel)
+
+# NOT: Mevcut günlük 4'lü botla (shorts_generator.yml) YouTube kotası çakışmasın
+# diye bu workflow SADECE manuel çalışır. Zamanlayıcı istersen alttaki
+# schedule bloğunu aç (günde 1 videoyu geçirme: 4'lü bot ~6400 ünite harcar).
+on:
+  # schedule:
+  #   - cron: '30 09 * * *'
+  workflow_dispatch:
+    inputs:
+      niche:
+        description: 'Niş (boş = otomatik rotasyon)'
+        required: false
+        default: ''
+        type: choice
+        options:
+          - ''
+          - 'Şok Edici Psikolojik Gerçekler'
+          - 'Bilinmeyen İnsan Davranışları'
+          - 'Çözülememiş Tarihi Gizemler'
+          - 'Uzayın Korkunç Sırları'
+          - 'Günlük Hayatta Stoacı Felsefe'
+          - 'Başarı Psikolojisi ve Motivasyon'
+          - 'Teknolojinin Karanlık Yüzü'
+          - 'Mitoloji ve Efsanelerin Kökenleri'
+          - 'İnanılmaz Bilimsel Keşifler'
+          - 'Tuhaf ve Enteresan Yasalar'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: freefaceless
+
+    steps:
+      - name: Repoyu klonla
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: freefaceless/requirements.txt
+
+      - name: Bağımlılıklar
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Tek Türkçe Shorts üret ve yükle
+        id: run_bot
+        continue-on-error: true
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          echo "GROQ_API_KEY=${GROQ_API_KEY}" > .env
+          echo "PEXELS_API_KEY=${PEXELS_API_KEY}" >> .env
+          if [ -z "${{ inputs.niche }}" ]; then
+            python -m src.pipeline
+          else
+            python -m src.pipeline --niche "${{ inputs.niche }}"
+          fi
+
+      - name: Konu tekrarını önlemek için state.json'u commit'le
+        if: always()
+        continue-on-error: true
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'freefaceless/state.json'
+          message: 'ci: freefaceless state [skip ci]'
+          default_author: github_actions
+          pull: '--rebase --autostash'
+
+      - name: Çıktıları sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: freefaceless-output
+          path: |
+            freefaceless/output/**/*.mp4
+            freefaceless/logs/*.log
+          if-no-files-found: ignore
+
+      - name: Bot hata verdiyse workflow'u düşür
+        if: steps.run_bot.outcome != 'success'
+        run: exit 1

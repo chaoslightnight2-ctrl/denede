@@ -1,0 +1,43 @@
+# Türkçe uyarlama — ilginçgerçekler kanalı (10 niş).
+# Groq her çalışta kullanılmamış taze bir konu seçer (state.json ile tekrar önlenir).
+niche: "Türkçe ilginç bilgiler kanalı. Dönüşümlü nişler: Şok Edici Psikolojik Gerçekler, Bilinmeyen İnsan Davranışları, Çözülememiş Tarihi Gizemler, Uzayın Korkunç Sırları, Günlük Hayatta Stoacı Felsefe, Başarı Psikolojisi ve Motivasyon, Teknolojinin Karanlık Yüzü, Mitoloji ve Efsanelerin Kökenleri, İnanılmaz Bilimsel Keşifler, Tuhaf ve Enteresan Yasalar"
+audience: "Türkçe konuşan, psikoloji/bilim/tarih merakı olan 18-45 yaş Shorts izleyicisi"
+language: tr
+
+script:
+  model: llama-3.3-70b-versatile
+  target_seconds: 35
+  words_per_second: 2.2
+
+voice:
+  provider: edge
+  voice: tr-TR-EmelNeural
+  rate: "+10%"
+  pitch: "+0Hz"
+
+captions:
+  whisper_model: base
+  font: "DejaVu Sans"
+  font_size: 90
+  primary_color: "&H00FFFFFF"
+  outline_color: "&H00000000"
+  outline: 6
+  words_per_caption: 1
+  position_y: 0.55
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+
+upload:
+  privacy: "public"
+  category_id: "22"
+  made_for_kids: false
+  default_tags: ["shorts", "youtubeshorts", "turkceshorts", "bilgi", "ilgincbilgiler", "shortsturkiye", "merakedilenler"]
+
+comments:
+  model: llama-3.1-8b-instant
+  poll_interval_minutes: 180
+  auto_reply: true
+  delete_spam: true
