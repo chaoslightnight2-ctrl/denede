@@ -5,7 +5,7 @@ audience: "Türkçe konuşan, psikoloji/bilim/tarih merakı olan 18-45 yaş Shor
 language: tr
 
 script:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   target_seconds: 35
   words_per_second: 2.2
 
@@ -37,7 +37,7 @@ upload:
   default_tags: ["shorts", "youtubeshorts", "turkceshorts", "bilgi", "ilgincbilgiler", "shortsturkiye", "merakedilenler"]
 
 comments:
-  model: llama-3.1-8b-instant
+  model: openai/gpt-oss-20b
   poll_interval_minutes: 180
   auto_reply: true
   delete_spam: true
