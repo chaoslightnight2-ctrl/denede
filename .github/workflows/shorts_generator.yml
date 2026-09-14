@@ -1,9 +1,12 @@
 name: Viral Shorts Generator
 
 on:
-  schedule:
-    # 00:10 Turkey time = 21:10 UTC
-    - cron: '10 21 * * *'
+  # Zamanlayıcı KAPALI: günlük üretim freefaceless.yml'e taşındı.
+  # İki bot aynı gün çalışırsa YouTube kotası aşılır (10.000 ünite/gün).
+  # Gerekirse Actions'tan manuel çalıştır.
+  # schedule:
+  #   # 00:10 Turkey time = 21:10 UTC
+  #   - cron: '10 21 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

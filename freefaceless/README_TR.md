@@ -14,6 +14,8 @@ Copy-Item .env.example .env   # içine GROQ + PEXELS anahtarlarını yaz
 .\.venv\Scripts\python.exe -m src.authorize
 # Kuru çalıştırma (yüklemez):
 .\.venv\Scripts\python.exe -m src.pipeline --no-upload
+# Günlük 4'lü (kuru test):
+.\.venv\Scripts\python.exe -m src.daily_batch --no-upload
 # Gerçek çalıştırma:
 .\run_daily.ps1
 # Tek nişe zorla:
@@ -26,9 +28,13 @@ Gerekenler: **Python 3.11+**, **ffmpeg** (`winget install Gyan.FFmpeg`),
 
 ## GitHub Actions
 
-`.github/workflows/freefaceless.yml` — sadece **manuel** tetiklenir
-(`workflow_dispatch`, niş seçimli). Mevcut günlük 4'lü botla kota çakışmasın
-diye zamanlayıcı kapalı gelir.
+`.github/workflows/freefaceless.yml` — her gün 00:30 TR'de otomatik çalışır:
+`src.daily_batch` 4 farklı nişte video üretir, 06:00 / 12:00 / 18:00 / 23:00
+slotlarına zamanlı yayınlar (private + publishAt). Nişler gün gün döner,
+5 günde 10 nişin tamamı kapsanır; bozulan slot diğerlerini engellemez.
+`state.json` + `daily_manifest.json` her çalışta commit'lenir.
+
+Manuel test: Actions → Run workflow → `dry_run: true` (yükleme YOK).
 
 Gerekli Actions secrets: `GROQ_API_KEY`, `PEXELS_API_KEY`,
 `CLIENT_SECRETS_JSON`, `YOUTUBE_REFRESH_TOKEN`.

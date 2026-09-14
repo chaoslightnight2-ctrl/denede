@@ -1,7 +1,8 @@
 # FreeFaceless (freefaceless/) — yerelde üretilenler, repoya girmez.
+# NOT: state.json ve daily_manifest.json konu tekrarını önlemek için
+# CI tarafından commit'lenir, o yüzden ignore'da DEĞİLLER.
 .env
 output/
-state.json
 last_upload_date.txt
 logs/
 client_secret.json
