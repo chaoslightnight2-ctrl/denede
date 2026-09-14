@@ -88,10 +88,13 @@ def _extract_json(text: str) -> dict:
     raise ValueError("Yanıt JSON içermiyor")
 
 
-def generate(niche: str | None = None):
+def generate(niche: str | None = None, avoid_extra: str = ""):
     used = state.load()["used_topics"]
-    avoid = ("\n\nZaten işlenenler (farklı bir şey seç): "
-             + ", ".join(used[-50:])) if used else ""
+    banned = [u for u in used[-50:]]
+    if avoid_extra and avoid_extra not in banned:
+        banned.append(avoid_extra)
+    avoid = ("\n\nYASAKLI konular — bunları ve benzerlerini ASLA seçme, tamamen farklı bir açı bul: "
+             + " | ".join(banned)) if banned else ""
 
     focus = niche or CONFIG["niche"]
     user_msg = (

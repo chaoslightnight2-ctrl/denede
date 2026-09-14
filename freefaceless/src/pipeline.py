@@ -9,21 +9,44 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60] or "short"
 
 
+MIN_VOICE_SECONDS = 28.0
+MAX_VOICE_SECONDS = 38.0
+TARGET_VOICE_SECONDS = 32.0
+MAX_SCRIPT_TRIES = 3
+
+
+def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object, list, float, object]:
+    """Süre hedefini tutturan senaryo+seslendirme seçimi (en fazla 3 deneme)."""
+    best = None
+    for attempt in range(1, MAX_SCRIPT_TRIES + 1):
+        data = script.generate(niche=niche, avoid_extra=avoid_extra if attempt > 1 else "")
+        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
+        work.mkdir(parents=True, exist_ok=True)
+        voice_mp3 = voice.synth(data["full_text"], work / "voice.mp3")
+        words = captions.transcribe_words(voice_mp3)
+        duration = float(words[-1]["end"]) if words else 0.0
+        print(f"      deneme {attempt}: topic={data['topic']} sure={duration:.1f}sn kelime={len(data['full_text'].split())}", flush=True)
+        cand = (abs(TARGET_VOICE_SECONDS - duration), data, work, voice_mp3, words, duration)
+        if best is None or cand[0] < best[0]:
+            best = cand
+        if MIN_VOICE_SECONDS <= duration <= MAX_VOICE_SECONDS:
+            return data, work, voice_mp3, words, duration
+    _, data, work, voice_mp3, words, duration = best
+    if not words:
+        raise RuntimeError("Seslendirmeden kelime zaman damgası çıkarılamadı.")
+    print(f"      en yakın aday seçildi: sure={duration:.1f}sn", flush=True)
+    return data, work, voice_mp3, words, duration
+
+
 def run_once(niche: str | None = None, publish_at: str | None = None,
-             upload_to_youtube: bool = True) -> dict:
+             upload_to_youtube: bool = True, avoid_extra: str = "") -> dict:
     print("[1/7] Groq ile senaryo üretiliyor")
-    data = script.generate(niche=niche)
-    print(f"      topic: {data['topic']}")
+    data, work, voice_mp3, words, duration = _pick_script(niche, avoid_extra)
+    print(f"      topic: {data['topic']} ({duration:.1f}sn)")
+    stamp = work.name.split("_")[0] + "_" + work.name.split("_")[1]
 
-    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
-    work.mkdir(parents=True, exist_ok=True)
-
-    print("[2/7] Seslendirme")
-    voice_mp3 = voice.synth(data["full_text"], work / "voice.mp3")
-
-    print("[3/7] faster-whisper kelime zaman damgası")
-    words = captions.transcribe_words(voice_mp3)
+    print("[2-3/7] Seslendirme + kelime zaman damgası hazır")
 
     print("[4/7] Pexels b-roll")
     scene_videos = visuals.fetch_for_scenes(data["scenes"], work / "broll")

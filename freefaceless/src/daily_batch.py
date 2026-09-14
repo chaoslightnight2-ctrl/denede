@@ -45,16 +45,28 @@ def main() -> None:
 
     niches = pick_niches()
     manifest = []
+    seen_topics: set[str] = set()
     for (slot, hour), niche in zip(SLOTS, niches):
         at = publish_time(hour)
         utc = at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         print(f"[{slot}] {niche} -> {at.isoformat()}", flush=True)
+        res = None
         try:
             res = pipeline.run_once(
                 niche=niche,
                 publish_at=None if args.no_upload else utc,
                 upload_to_youtube=not args.no_upload,
             )
+            # Aynı gün içinde konu tekrarı olursa tek seferlik yeniden üret.
+            if res["topic"] in seen_topics:
+                print(f"[{slot}] konu tekrarı ({res['topic']}), yeniden üretiliyor...", flush=True)
+                res = pipeline.run_once(
+                    niche=niche,
+                    publish_at=None if args.no_upload else utc,
+                    upload_to_youtube=not args.no_upload,
+                    avoid_extra=res["topic"],
+                )
+            seen_topics.add(res["topic"])
         except Exception as exc:
             print(f"[{slot}] HATA (diğer slotlar devam edecek): {exc}", flush=True)
             manifest.append({"slot": slot, "niche": niche, "ok": False, "error": str(exc)})

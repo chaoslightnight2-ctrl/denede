@@ -74,7 +74,8 @@ jobs:
         with:
           name: freefaceless-output
           path: |
-            freefaceless/output/**/*.mp4
+            freefaceless/output/**/final.mp4
+            freefaceless/daily_manifest.json
             freefaceless/logs/*.log
           if-no-files-found: ignore
 
