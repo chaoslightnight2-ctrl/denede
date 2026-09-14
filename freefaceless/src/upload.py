@@ -71,8 +71,10 @@ def upload_video(video_path: Path, title: str, description: str, tags: list[str]
         status["publishAt"] = publish_at
     else:
         status["privacyStatus"] = up["privacy"]
-    if "#shorts" not in title.lower():
-        title = f"{title} #shorts"
+    # Başlık Groq'tan ≤60 karakter, anahtar kelime önde gelir; hashtag başlıkta
+    # karakter yer (araştırma: hashtag açıklamaya). #shorts açıklamaya garanti edilir.
+    if "#shorts" not in description.lower():
+        description = description.rstrip() + " #shorts"
 
     body = {
         "snippet": {

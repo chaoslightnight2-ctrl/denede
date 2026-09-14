@@ -6,7 +6,7 @@ language: tr
 
 script:
   model: openai/gpt-oss-120b
-  target_seconds: 35
+  target_seconds: 32
   words_per_second: 2.2
 
 voice:
@@ -34,7 +34,7 @@ upload:
   privacy: "public"
   category_id: "22"
   made_for_kids: false
-  default_tags: ["shorts", "youtubeshorts", "turkceshorts", "bilgi", "ilgincbilgiler", "shortsturkiye", "merakedilenler"]
+  default_tags: ["shorts", "turkceshorts", "bilgi"]
 
 comments:
   model: openai/gpt-oss-20b

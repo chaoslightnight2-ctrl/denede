@@ -20,3 +20,7 @@ Türkçe uyarlamada değişenler (orijinal mantık aynı):
    atlanır (orijinalde klasörün varlığı varsayılırdı).
 5. `src/pipeline.py` — `--niche "..."` argümanı: 10 nişten birine zorlamak için.
 6. `src/comments.py` — moderasyon yanıtları Türkçe, tek kısa cümle.
+7. Algoritma güncellemesi (2026 Shorts araştırması): hook-first yapı, iddia-tarzı açılış
+   (soru değil), anahtar kelime üçlü teyidi (başlık + açıklama + ilk 2 cümle),
+   ≤60 karakter başlık (hashtag'siz), tam 4 hashtag, 5 odaklı etiket, loop kapanış,
+   60-70 kelime / ~32 sn hedef.

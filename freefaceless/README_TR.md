@@ -2,7 +2,7 @@
 
 Ücretsiz pipeline: `senaryo (Groq) → ses (edge-tts) → altyazı (faster-whisper, lokal) → b-roll (Pexels) → montaj (ffmpeg) → yükleme (YouTube Data API)`.
 
-Çıktı: 1080x1920, 30fps, ~35 sn Türkçe Short.
+Çıktı: 1080x1920, 30fps, ~32-35 sn Türkçe Short.
 
 ## Hızlı başlangıç (Windows)
 
