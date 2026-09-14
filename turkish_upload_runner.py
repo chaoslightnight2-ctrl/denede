@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import random
 import re
 import shutil
@@ -132,17 +133,56 @@ def clean_script(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().strip('"').strip("'")
 
 
-def build_prompt(niche: str) -> str:
+def build_prompt(niche: str, avoid: str = "") -> str:
+    avoid_block = f"\nBunlardan farklı, taze bir açı seç (işlenenler): {avoid}" if avoid else ""
     return f"""
-Sen viral YouTube Shorts metinleri yazan bir uzmansın.
+Türkçe YouTube Shorts için tek parça konuşma metni yaz.
 Konu: {niche}
-Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
-1. İlk cümle şok edici bir soru veya çarpıcı bir gerçekle başlamalı.
-2. Orta kısımda kısa, vurucu cümlelerle ilginç bilgiler ver.
-3. Son cümle güçlü bir call-to-action içersin.
-4. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
+Süre hedefi: 30-40 saniye. Kelime hedefi: 55-75 kelime (60-70 ideal).{avoid_block}
+Kurallar:
+1. İlk cümle SORU DEĞİL, cesur ve merak uyandıran bir iddia olsun. Selamlaşma ve intro YOK.
+2. Konu anahtar ifadesi ilk 2 cümlede aynen geçsin.
+3. Tek ana fikir; kısa vurucu cümleler; en az 1 ters-köşe bilgi.
+4. Metnin tamamında en fazla 1 soru cümlesi (sonda yorum tetikleyen soru olabilir).
+5. Son cümle açılış iddiasına bağlansın + doğal takip çağrısı.
+6. Boş clickbait, çeviri kokan ifade, anlatım bozukluğu YOK. Sayı/yasa/tıbbi iddia uydurma.
+7. Emoji, sahne yönü, efekt YOK. Sadece konuşulacak metin.
 Yalnızca metni döndür.
 """.strip()
+
+
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+TOPIC_STATE_FILE = OUTPUT_DIR / "groq_topics.json"
+
+
+def load_used_topics() -> list[str]:
+    try:
+        data = json.loads(TOPIC_STATE_FILE.read_text(encoding="utf-8"))
+        topics = data.get("used", []) if isinstance(data, dict) else []
+        return [str(t) for t in topics][-50:]
+    except Exception:
+        return []
+
+
+def save_used_topic(script: str) -> None:
+    try:
+        head = " ".join(clean_script(script).split()[:12])
+        if not head:
+            return
+        used = load_used_topics()
+        if head not in used:
+            used.append(head)
+        TOPIC_STATE_FILE.write_text(json.dumps({"used": used[-50:]}, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as exc:
+        main.logger.warning("Topic state yazılamadı: %s", exc)
+
+
+def _groq_client():
+    from openai import OpenAI
+    api_key = os.environ.get("GROQ_API_KEY", "")
+    if not api_key:
+        raise RuntimeError("GROQ_API_KEY tanımlı değil")
+    return OpenAI(api_key=api_key, base_url="https://api.groq.com/openai/v1")
 
 
 def fallback_script(niche: str) -> str:
@@ -153,23 +193,25 @@ def fallback_script(niche: str) -> str:
 
 
 def generate_script(niche: str) -> str:
-    prompt = build_prompt(niche)
+    avoid = ", ".join(load_used_topics())
+    prompt = build_prompt(niche, avoid)
     best_script = ""
     best_distance = 10_000
 
     try:
-        from g4f.client import Client
-        client = Client()
+        client = _groq_client()
     except Exception as exc:
-        main.logger.warning("g4f client unavailable; using fallback script: %s", exc)
+        main.logger.warning("Groq client unavailable; using fallback script: %s", exc)
         return fallback_script(niche)
 
     for attempt in range(4):
         try:
             response = client.chat.completions.create(
-                model="gpt-4",
+                model=GROQ_MODEL,
                 messages=[{"role": "user", "content": prompt}],
-                timeout=60,
+                max_tokens=8000,
+                reasoning_effort="low",
+                timeout=120,
             )
             script = clean_script(response.choices[0].message.content)
             words = len(script.split())
@@ -326,6 +368,7 @@ async def run() -> None:
 
     niche = random.choice(GENERAL_NICHES)
     script, audio, word_ts, duration = await choose_best_timed_script(niche)
+    save_used_topic(script)
     chunked = main.chunk_timestamps(word_ts)
     bg = main.fetch_background_video(script, niche)
     bg = prepare_background_for_editing(bg, duration)
@@ -375,6 +418,12 @@ async def run() -> None:
         "upload_error": None,
     }
     write_meta(meta)
+
+    if os.environ.get("DRY_RUN", "").lower() in ("1", "true"):
+        meta["upload_status"] = "skipped_dry_run"
+        main.logger.info("DRY_RUN: YouTube yüklemesi atlandı, video+meta kaydedildi.")
+        write_meta(meta)
+        return
 
     try:
         video_url = main.upload_to_youtube(str(OUTPUT_VIDEO), title, description, tags)

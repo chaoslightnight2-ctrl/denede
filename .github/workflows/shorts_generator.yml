@@ -5,6 +5,12 @@ on:
     # 00:10 Turkey time = 21:10 UTC
     - cron: '10 21 * * *'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Kuru test (YouTube yüklemesi YOK, kota harcamaz)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -36,14 +42,18 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" > .env
           echo "YOUTUBE_REFRESH_TOKEN=${YOUTUBE_REFRESH_TOKEN}" >> .env
+          echo "GROQ_API_KEY=${GROQ_API_KEY}" >> .env
           echo "${CLIENT_SECRETS_JSON}" > client_secrets.json
 
       - name: 🤖 4 Türkçe Shorts üret ve zamanlı yayınla
         id: run_bot
         continue-on-error: true
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
         run: python daily_batch_runner.py
 
       - name: 📝 Durum dosyası oluştur

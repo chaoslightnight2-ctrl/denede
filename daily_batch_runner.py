@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import random
 import re
 import shutil
@@ -37,14 +38,15 @@ def clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().strip('"').strip("'")
 
 
-def prompt_for(niche: str, angle: str) -> str:
+def prompt_for(niche: str, angle: str, avoid: str = "") -> str:
+    avoid_block = f"\nBunlardan farklı, taze bir açı seç (işlenenler): {avoid}" if avoid else ""
     return f"""
 Türkçe YouTube Shorts için tek parça konuşma metni yaz.
 Konu: {niche}
 Özgün açı: {angle}
 Süre hedefi: 30-40 saniye.
-Kelime hedefi: 55-75 kelime.
-Kurallar: Tek ana fikir üzerinden ilerle. Cümleler birbirine anlamca bağlı olsun. Rastgele ülke, olay veya bilgi listesi yapma. Boş clickbait, çeviri kokan ifade, düşük cümle ve anlatım bozukluğu kullanma. Kesin sayı, ceza, yasa veya tıbbi iddia uydurma. En fazla iki soru cümlesi kullan. Son cümle doğal bir yorum veya takip çağrısı olsun. Sadece konuşulacak metni yaz.
+Kelime hedefi: 55-75 kelime.{avoid_block}
+Kurallar: Tek ana fikir üzerinden ilerle. Cümleler birbirine anlamca bağlı olsun. Rastgele ülke, olay veya bilgi listesi yapma. Boş clickbait, çeviri kokan ifade, düşük cümle ve anlatım bozukluğu kullanma. Kesin sayı, ceza, yasa veya tıbbi iddia uydurma. İlk cümle SORU DEĞİL, cesur ve merak uyandıran bir iddia olsun; selamlaşma ve intro YOK. Konu anahtar ifadesi ilk 2 cümlede aynen geçsin. En fazla bir soru cümlesi kullan. Son cümle açılış iddiasına bağlansın ve doğal bir yorum veya takip çağrısı olsun. Sadece konuşulacak metni yaz.
 """.strip()
 
 
@@ -83,19 +85,26 @@ def generate_script(niche: str) -> str:
     best = ""
     best_count = 999
     try:
-        from g4f.client import Client
-        client = Client()
+        from openai import OpenAI
+        api_key = os.environ.get("GROQ_API_KEY", "")
+        if not api_key:
+            raise RuntimeError("GROQ_API_KEY tanımlı değil")
+        client = OpenAI(api_key=api_key, base_url="https://api.groq.com/openai/v1")
+        model = runner.GROQ_MODEL
     except Exception as exc:
         runner.main.logger.warning("generator unavailable, fallback used: %s", exc)
         return fallback_script(niche)
 
+    avoid = ", ".join(runner.load_used_topics())
     for attempt in range(7):
         angle = random.choice(SCENARIOS.get(niche) or ["tek ana fikir"])
         try:
             response = client.chat.completions.create(
-                model="gpt-4",
-                messages=[{"role": "user", "content": prompt_for(niche, angle)}],
-                timeout=60,
+                model=model,
+                messages=[{"role": "user", "content": prompt_for(niche, angle, avoid)}],
+                max_tokens=8000,
+                reasoning_effort="low",
+                timeout=120,
             )
             script = clean(response.choices[0].message.content)
             bad = issues(script)
