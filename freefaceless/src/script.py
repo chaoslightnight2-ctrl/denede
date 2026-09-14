@@ -51,7 +51,7 @@ AÇIKLAMA (Türkçe):
 
 ETİKETLER: tam 5 adet, küçük harf, içeriye özel; ilki başlıktaki anahtar ifade.
 
-SADECE geçerli JSON döndür, açıklama ve kod bloğu yok. Şema:
+SADECE geçerli JSON döndür: yanıtın tamamı tek JSON objesi olsun, önce/sonra hiçbir kelime yazma. Şema:
 {{
   "topic": "konunun kısa slug hali",
   "title": "60 karakteri geçmeyen Türkçe başlık",
@@ -76,8 +76,16 @@ def _system_prompt():
 def _extract_json(text: str) -> dict:
     text = text.strip()
     if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE)
-    return json.loads(text)
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    # Model başa/sona kelime eklediyse ilk { ile son } arasını al.
+    start, end = text.find("{"), text.rfind("}")
+    if start >= 0 and end > start:
+        return json.loads(text[start:end + 1])
+    raise ValueError("Yanıt JSON içermiyor")
 
 
 def generate(niche: str | None = None):
@@ -92,16 +100,23 @@ def generate(niche: str | None = None):
         f"Şimdi TEK taze Short üret.{avoid}"
     )
 
-    resp = client.chat.completions.create(
-        model=CONFIG["script"]["model"],
-        max_tokens=2000,
-        response_format={"type": "json_object"},
-        messages=[
-            {"role": "system", "content": _system_prompt()},
-            {"role": "user", "content": user_msg},
-        ],
-    )
-    raw = resp.choices[0].message.content
-    data = _extract_json(raw)
-    data["full_text"] = " ".join(s["text"] for s in data["scenes"])
-    return data
+    last_err: Exception | None = None
+    for attempt in range(3):
+        resp = client.chat.completions.create(
+            model=CONFIG["script"]["model"],
+            max_tokens=2000,
+            messages=[
+                {"role": "system", "content": _system_prompt()},
+                {"role": "user", "content": user_msg},
+            ],
+        )
+        raw = resp.choices[0].message.content
+        try:
+            data = _extract_json(raw)
+            data["full_text"] = " ".join(s["text"] for s in data["scenes"])
+            if not data["scenes"] or not data.get("title"):
+                raise ValueError("Eksik alan: scenes/title")
+            return data
+        except Exception as exc:  # bozuk JSON → aynı kuralla tekrar dene
+            last_err = exc
+    raise RuntimeError(f"3 denemede geçerli senaryo JSON'u alınamadı: {last_err}")
