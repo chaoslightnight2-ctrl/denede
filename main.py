@@ -31,7 +31,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-import g4f
 import edge_tts
 from moviepy.editor import (VideoFileClip, AudioFileClip, CompositeVideoClip,
                             CompositeAudioClip, TextClip)
@@ -384,7 +383,7 @@ def upload_to_youtube(video_path, title, description, tags=None):
         "snippet": {
             "title": title[:100],
             "description": description[:5000],
-            "tags": tags or ["shorts", "youtubeshorts", "viral", "korku", "gizem", "komplo teorileri", "çözülmemiş dava"],
+            "tags": tags or ["shorts", "Denede", "merak", "bilim", "tarih", "gizem"],
             "categoryId": YOUTUBE_CATEGORY_ID
         },
         "status": {
@@ -421,10 +420,10 @@ async def run_pipeline(niche: str):
         source_name = GENERATED_PACKAGE.get("source_name", "")
         source_url = GENERATED_PACKAGE.get("source_url", "")
         if source_name:
-            description += f"\\n\\nKaynak: {source_name}"
+            description += f"\n\nKaynak: {source_name}"
         if source_url.startswith("https://"):
-            description += f"\\nKaynak bağlantısı: {source_url}"
-        description += "\\n\\n#shorts #Denede #Merak"
+            description += f"\nKaynak bağlantısı: {source_url}"
+        description += "\n\n#shorts #Denede #Merak"
         upload_to_youtube(final_path, title, description=description, tags=GENERATED_PACKAGE.get("tags"))
         logger.info("🏁 Tamamlandı.")
     except Exception as e:
