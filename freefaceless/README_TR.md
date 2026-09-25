@@ -1,52 +1,34 @@
-# FreeFaceless Türkçe Uyarlama (freefaceless/)
+# Denede — Türkçe Merak Shorts Botu
 
-Ücretsiz pipeline: `senaryo (Groq) → ses (edge-tts) → altyazı (faster-whisper, lokal) → b-roll (Pexels) → montaj (ffmpeg) → yükleme (YouTube Data API)`.
+Üretim hattı: `Groq senaryosu → Türkçe ses → kelime zamanlı altyazı → Pexels dikey b-roll → ffmpeg montaj → YouTube Shorts yüklemesi`.
 
-Çıktı: 1080x1920, 30fps, ~32-35 sn Türkçe Short.
+Çıktı 1080×1920 dikey, yaklaşık 32 saniyedir. Otomatik yayın hattı yalnızca YouTube'a yükleme yapar; başka sosyal platformlara çapraz paylaşım yapmaz.
+
+## İçerik yaklaşımı
+
+Denede tek bir dar alt nişe bağlı değildir. Günlük üretim; psikoloji, gündelik bilim, uzay, hayvanlar ve doğa, teknoloji ve yapay zekâ, tarih ve arkeoloji, coğrafya, diller, kültür, yemeklerin kökenleri, mitoloji, mantık ve günlük eşyaların çalışma biçimi gibi 15 geniş konu alanı arasında döner.
+
+Her Short için senaryo paketi ayrı ayrı üretir: merak uyandıran ama videoda karşılığı bulunan başlık, ilk sahnede güçlü hook, konunun cevabını veren kısa anlatım, izleyiciye konuya özel yorum sorusu ve doğal Denede abonelik çağrısı, konuya özel açıklama/etiketler. Başlık, sahne, etiket ve açıklama biçimleri yüklemeden önce kod tarafından doğrulanır. Yanlış istatistik, kaynağı belirsiz iddia ve vaat edilen cevabı vermeyen clickbait istemi engellenir.
 
 ## Hızlı başlangıç (Windows)
 
 ```powershell
 cd freefaceless
-Copy-Item .env.example .env   # içine GROQ + PEXELS anahtarlarını yaz
+Copy-Item .env.example .env   # GROQ + PEXELS anahtarları
 .\setup.ps1
-# YouTube yetkisi (bir kez, tarayıcı açılır):
+# YouTube yetkisi (bir kez):
 .\.venv\Scripts\python.exe -m src.authorize
-# Kuru çalıştırma (yüklemez):
+# Üret, yükleme yapma:
 .\.venv\Scripts\python.exe -m src.pipeline --no-upload
-# Günlük 4'lü (kuru test):
+# Dört videonun kuru üretim provası:
 .\.venv\Scripts\python.exe -m src.daily_batch --no-upload
-# Gerçek çalıştırma:
-.\run_daily.ps1
-# Tek nişe zorla:
-.\.venv\Scripts\python.exe -m src.pipeline --niche "Uzayın Korkunç Sırları"
 ```
 
-Gerekenler: **Python 3.11+**, **ffmpeg** (`winget install Gyan.FFmpeg`),
-ücretsiz **Groq** + **Pexels** anahtarı, `client_secret.json`
-(Google Cloud → YouTube Data API v3 → OAuth Desktop).
+Gerekenler: Python 3.11+, ffmpeg, Groq ve Pexels anahtarı, YouTube Data API OAuth bilgileri.
 
 ## GitHub Actions
 
-`.github/workflows/freefaceless.yml` — her gün 00:30 TR'de otomatik çalışır:
-`src.daily_batch` 4 farklı nişte video üretir, 06:00 / 12:00 / 18:00 / 23:00
-slotlarına zamanlı yayınlar (private + publishAt). Nişler gün gün döner,
-5 günde 10 nişin tamamı kapsanır; bozulan slot diğerlerini engellemez.
-`state.json` + `daily_manifest.json` her çalışta commit'lenir.
+`.github/workflows/freefaceless.yml` her gün 00:30 Türkiye saatinde çalışır. Dört ayrı konu alanından Shorts üretir ve 06:00 / 12:00 / 18:00 / 23:00 saatlerine zamanlar. YouTube'a önce private olarak yükleyip `publishAt` ile planlar. Actions'ı elle başlatmadık; kodu GitHub üzerinden güncelledik.
 
-Manuel test: Actions → Run workflow → `dry_run: true` (yükleme YOK).
+Gerekli Actions secrets: `GROQ_API_KEY`, `PEXELS_API_KEY`, `CLIENT_SECRETS_JSON`, `YOUTUBE_REFRESH_TOKEN`.
 
-Gerekli Actions secrets: `GROQ_API_KEY`, `PEXELS_API_KEY`,
-`CLIENT_SECRETS_JSON`, `YOUTUBE_REFRESH_TOKEN`.
-
-## Mevcut bottan farkı
-
-| Konu | `main.py` + runner'lar | `freefaceless/` |
-|---|---|---|
-| Senaryo | g4f (kararsız, ücretsiz) | Groq API (ücretsiz katman, stabil) |
-| Tekrar önleme | yok (aynı fallback metinler dönüyor) | `state.json` ile kullanılmış konular elenir |
-| Altyazı zamanlama | Edge WordBoundary / enerji analizi | faster-whisper word-timestamps (lokal) |
-| Görsel | sahne başına 1 Pexels videosu | sahne başına Pexels + süre eşleme (ffmpeg concat) |
-| Caption | PIL tek kelime | ASS karaoke altyazı (ffmpeg burn-in) |
-
-Not: faster-whisper ilk çalışta ~140MB model indirir; CPU'da çalışır.
