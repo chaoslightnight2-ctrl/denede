@@ -60,66 +60,92 @@ FONT_SIZE = 56
 STROKE_WIDTH = 4
 
 NICHE_POOL = [
-    "Komplo Teorileri ve Gizli Planlar",
-    "Korkunç Gerçekler",
-    "Korkunç Tarihi Olaylar",
-    "Çözülmemiş Davalar",
-    "Kaybolan İnsanların Gizemli Hikayeleri",
-    "Tüyler Ürperten Suç Dosyaları",
-    "Lanetli Yerler ve Korku Hikayeleri",
-    "Açıklanamayan Paranormal Olaylar",
-    "Karanlık İnternet ve Teknoloji Sırları",
-    "Dünyanın En Rahatsız Edici Gizemleri"
+    "Bilim ve doğadaki şaşırtıcı olaylar",
+    "Uzay, gezegenler ve evrenin gizemleri",
+    "Az bilinen tarih olayları ve arkeolojik keşifler",
+    "Psikoloji ve insan davranışındaki ilginç yanılgılar",
+    "Dünya coğrafyası ve sıra dışı yerler",
+    "Teknoloji, yapay zeka ve dijital dünyanın bilinmeyenleri",
+    "Efsaneler, folklor ve şehir hikayeleri (efsane olduğu açıkça belirtilerek)",
+    "Çözülmemiş tarihi vakalar (kanıt ve belirsizlik ayrılarak)",
+    "Günlük hayattaki şaşırtıcı ama doğrulanabilir gerçekler",
+    "Popüler iddiaların ve komplo teorilerinin kanıta dayalı açıklaması",
 ]
-
 NICHE_PEXELS_QUERIES = {
-    "Komplo Teorileri ve Gizli Planlar": ["secret files", "dark documents", "surveillance camera", "mysterious meeting", "classified papers"],
-    "Korkunç Gerçekler": ["dark forest", "abandoned hallway", "scary shadow", "eerie night", "creepy room"],
-    "Korkunç Tarihi Olaylar": ["old abandoned building", "war ruins", "dark history", "old newspaper", "historic ruins night"],
-    "Çözülmemiş Davalar": ["detective board", "crime scene", "police investigation", "evidence board", "mystery documents"],
-    "Kaybolan İnsanların Gizemli Hikayeleri": ["missing person", "empty road night", "dark forest path", "abandoned car", "foggy road"],
-    "Tüyler Ürperten Suç Dosyaları": ["crime scene tape", "detective investigation", "dark alley", "police lights night", "evidence photos"],
-    "Lanetli Yerler ve Korku Hikayeleri": ["haunted house", "abandoned mansion", "dark corridor", "creepy basement", "old cemetery fog"],
-    "Açıklanamayan Paranormal Olaylar": ["paranormal activity", "ghostly shadow", "dark room", "foggy cemetery", "mysterious light"],
-    "Karanlık İnternet ve Teknoloji Sırları": ["dark web", "hacker code", "cyber security dark", "server room dark", "phone screen night"],
-    "Dünyanın En Rahatsız Edici Gizemleri": ["mysterious place", "foggy forest", "abandoned place", "dark tunnel", "eerie landscape"],
+    "Bilim ve doğadaki şaşırtıcı olaylar": ["science laboratory", "wildlife nature documentary", "microscope research", "deep ocean nature"],
+    "Uzay, gezegenler ve evrenin gizemleri": ["space stars galaxy", "planet earth from space", "astronomy telescope night", "solar system animation"],
+    "Az bilinen tarih olayları ve arkeolojik keşifler": ["museum artifacts history", "archaeological excavation", "ancient ruins documentary", "historic archive documents"],
+    "Psikoloji ve insan davranışındaki ilginç yanılgılar": ["human behavior psychology", "crowd people city", "brain neuroscience research", "decision making concept"],
+    "Dünya coğrafyası ve sıra dışı yerler": ["mountain landscape aerial", "remote island coastline", "desert landscape documentary", "world city aerial"],
+    "Teknoloji, yapay zeka ve dijital dünyanın bilinmeyenleri": ["technology data center", "artificial intelligence abstract", "computer science lab", "cybersecurity computer screen"],
+    "Efsaneler, folklor ve şehir hikayeleri (efsane olduğu açıkça belirtilerek)": ["folklore book illustration", "old village night", "historic castle mist", "mythology museum art"],
+    "Çözülmemiş tarihi vakalar (kanıt ve belirsizlik ayrılarak)": ["historical archive documents", "old newspaper archive", "museum historical evidence", "researcher archives"],
+    "Günlük hayattaki şaşırtıcı ama doğrulanabilir gerçekler": ["everyday life slow motion", "science experiment demonstration", "curious people thinking", "museum exhibit"],
+    "Popüler iddiaların ve komplo teorilerinin kanıta dayalı açıklaması": ["fact checking research documents", "scientist explaining evidence", "news archive documents", "research library"],
 }
+GENERATED_PACKAGE = {}
 
 # ---------- 1. Senaryo ----------
+GENERATED_PACKAGE = {}
+
 def generate_script(niche: str) -> str:
-    logger.info(f"✍️ Viral korku/gizem senaryosu üretiliyor: '{niche}'")
+    api_key = os.getenv("GROQ_API_KEY")
+    if not api_key:
+        raise RuntimeError("GROQ_API_KEY tanımlı değil; yedek anlatım kapalı.")
     prompt = f"""
-Sen Türkçe viral YouTube Shorts için korku, gizem ve true-crime tarzı metinler yazan bir uzmansın.
-Konu: {niche}
-Aşağıdaki kurallara uygun, 30-40 saniyelik bir TÜRKÇE metin yaz:
-1. İlk cümle tüyler ürperten bir soru veya rahatsız edici bir gerçekle başlasın.
-2. Komplo teorisi, korkunç gerçek, çözülmemiş dava, kayıp olay veya karanlık gizem havası taşısın.
-3. Şiddeti grafik anlatma; kanlı detaylara girme. Merak, gerilim ve gizem kur.
-4. Cümleler kısa, vurucu ve seslendirmeye uygun olsun.
-5. Son cümle güçlü ve doğal bir takip çağrısı içersin.
-6. Emoji, sahne yönü, efekt, başlık ve madde işareti YOK. Sadece konuşulacak metin.
-Yalnızca metni döndür.
+Denede adlı Türkçe YouTube Shorts kanalı için izlenebilir, merak uyandıran bir video paketi yaz:
+{niche}
+Kapsam bilim/doğa, uzay, tarih, psikoloji, coğrafya, teknoloji, folklor ve doğrulanabilir gündelik bilgileri
+içerir. Kapsamı geniş tut. Başlık güçlü merak uyandırsın ve doğru olsun; kanıtsız oranlar, sahte gizlilik,
+"herkes yanılıyor" iddiaları kullanma. Folkloru gerçek olay gibi anlatma. Suç ve yaşayan kişiler hakkında
+kanıtsız isnat, özel bilgi veya grafik şiddet üretme. Olgusal iddialar için güvenilir kaynak adı ve doğru
+makale bağlantısı ver; bilmiyorsan source_url boş kalsın ve kaynak dışı ayrıntı ekleme.
+JSON'da title, hook (6-12 kelime), narration, cta (abone olmaya açık doğal çağrı), description (1-2 cümle),
+tags (en fazla 7 alakalı terim), source_name, source_url alanları olsun. Hook + narration + CTA 35-65
+Türkçe kelime olsun. Hook ilk 2 saniyede gelsin ve vaadi videoda yanıtlanmalı. Yalnızca JSON döndür.
 """
-    from g4f.client import Client
-    client = Client()
-    for attempt in range(3):
-        try:
-            response = client.chat.completions.create(
-                model="gpt-4",
-                messages=[{"role": "user", "content": prompt}],
-                timeout=60
-            )
-            script = response.choices[0].message.content.strip().strip('"').strip("'")
-            if len(script) < 30:
-                logger.warning("Çok kısa, tekrar deneniyor...")
-                time.sleep(2)
-                continue
-            logger.info("✅ Senaryo hazır.")
-            return script
-        except Exception as e:
-            logger.warning(f"Deneme {attempt+1}: {e}")
-            time.sleep(3)
-    raise RuntimeError("Senaryo üretilemedi.")
+    model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+    response = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        json={"model": model, "messages": [
+            {"role": "system", "content": "Sen Denede kanalı için Türkçe, merak uyandıran ama olguyla kurguyu ayıran bir editörsün."},
+            {"role": "user", "content": prompt}],
+            "temperature": 0.3, "max_completion_tokens": 620,
+            "response_format": {"type": "json_object"}},
+        timeout=90,
+    )
+    try:
+        response.raise_for_status()
+    except requests.HTTPError as exc:
+        details = re.sub(r"\s+", " ", response.text or "")[:500]
+        raise RuntimeError(f"Groq başarısız: HTTP {response.status_code}, model={model}, {details}") from exc
+    choices = response.json().get("choices") or []
+    if not choices:
+        raise RuntimeError("Groq boş yanıt döndürdü.")
+    raw = choices[0].get("message", {}).get("content", "")
+    start, end = raw.find("{"), raw.rfind("}")
+    if start < 0 or end < start:
+        raise RuntimeError("Groq geçerli JSON döndürmedi.")
+    data = json.loads(raw[start:end + 1])
+    title, hook = str(data.get("title", "")).strip(), str(data.get("hook", "")).strip()
+    narration, cta = str(data.get("narration", "")).strip(), str(data.get("cta", "")).strip()
+    description = str(data.get("description", "")).strip()
+    script = " ".join(x for x in [hook, narration, cta] if x)
+    if not title or len(title) > 78 or not hook or not narration or not cta or not description:
+        raise RuntimeError("Groq gerekli başlık/hook/anlatım/CTA/açıklama alanlarını üretmedi.")
+    if not 35 <= len(script.split()) <= 65 or not 5 <= len(hook.split()) <= 13:
+        raise RuntimeError("Groq metni Shorts uzunluk/hook doğrulamasını geçemedi.")
+    GENERATED_PACKAGE.clear()
+    GENERATED_PACKAGE.update({
+        "title": title, "hook": hook, "narration": narration, "cta": cta,
+        "description": description,
+        "tags": [str(x).strip()[:45] for x in (data.get("tags") or []) if str(x).strip()][:7],
+        "source_name": str(data.get("source_name", "")).strip(),
+        "source_url": str(data.get("source_url", "")).strip(),
+    })
+    return script
+
 
 # ---------- 2. Seslendirme ----------
 async def create_voiceover(script: str) -> Tuple[str, List[Tuple[float, float, str]]]:
@@ -390,10 +416,16 @@ async def run_pipeline(niche: str):
         bg = fetch_background_video(script, niche)
         music = "bg_music.mp3" if os.path.exists("bg_music.mp3") else None
         final_path = assemble_video(bg, audio, chunked, music)
-        first_sentence = re.split(r'[.!?]', script)[0].strip()[:50]
-        title = f"{niche}: {first_sentence}"
-        upload_to_youtube(final_path, title,
-                         description=f"Karanlık gerçekler, komplo teorileri, çözülmemiş davalar ve tüyler ürperten gizemler.\nYeni korku ve gizem Shorts videoları için takipte kal.\n\n#shorts #korku #gizem #komplo #truecrime")
+        title = GENERATED_PACKAGE["title"]
+        description = GENERATED_PACKAGE["description"]
+        source_name = GENERATED_PACKAGE.get("source_name", "")
+        source_url = GENERATED_PACKAGE.get("source_url", "")
+        if source_name:
+            description += f"\\n\\nKaynak: {source_name}"
+        if source_url.startswith("https://"):
+            description += f"\\nKaynak bağlantısı: {source_url}"
+        description += "\\n\\n#shorts #Denede #Merak"
+        upload_to_youtube(final_path, title, description=description, tags=GENERATED_PACKAGE.get("tags"))
         logger.info("🏁 Tamamlandı.")
     except Exception as e:
         logger.error(f"❌ Hata: {e}\n{traceback.format_exc()}")
