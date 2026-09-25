@@ -28,7 +28,7 @@ Gerekenler: Python 3.11+, ffmpeg, Groq ve Pexels anahtarı, YouTube Data API OAu
 
 ## GitHub Actions
 
-`.github/workflows/freefaceless.yml` her gün 00:30 Türkiye saatinde çalışır. Dört ayrı konu alanından Shorts üretir ve 06:00 / 12:00 / 18:00 / 23:00 saatlerine zamanlar. YouTube'a önce private olarak yükleyip `publishAt` ile planlar. Actions'ı elle başlatmadık; kodu GitHub üzerinden güncelledik.
+`.github/workflows/freefaceless.yml` her gün 00:30 Türkiye saatinde çalışır. Dört ayrı konu alanından Shorts üretir ve 06:00 / 12:00 / 18:00 / 23:00 saatlerine zamanlar. YouTube'a önce private olarak yükleyip `publishAt` ile planlar.
 
 Gerekli Actions secrets: `GROQ_API_KEY`, `PEXELS_API_KEY`, `CLIENT_SECRETS_JSON`, `YOUTUBE_REFRESH_TOKEN`.
 
