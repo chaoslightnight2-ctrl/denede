@@ -1,7 +1,7 @@
-# Türkçe uyarlama — ilginçgerçekler kanalı (10 niş).
-# Groq her çalışta kullanılmamış taze bir konu seçer (state.json ile tekrar önlenir).
-niche: "Türkçe ilginç bilgiler kanalı. Dönüşümlü nişler: Şok Edici Psikolojik Gerçekler, Bilinmeyen İnsan Davranışları, Çözülememiş Tarihi Gizemler, Uzayın Korkunç Sırları, Günlük Hayatta Stoacı Felsefe, Başarı Psikolojisi ve Motivasyon, Teknolojinin Karanlık Yüzü, Mitoloji ve Efsanelerin Kökenleri, İnanılmaz Bilimsel Keşifler, Tuhaf ve Enteresan Yasalar"
-audience: "Türkçe konuşan, psikoloji/bilim/tarih merakı olan 18-45 yaş Shorts izleyicisi"
+# Denede: tek bir dar niş yerine geniş Türkçe merak ve bilgi kanalı.
+# Groq her çalıştırmada taze konu seçer; state.json son konuların tekrarını önler.
+niche: "Türkçe merak ve bilgi kanalı. Psikoloji, bilim, uzay, doğa, teknoloji, tarih, arkeoloji, coğrafya, kültür, dil, icatlar ve gündelik yaşam konuları arasında dönüşümlü içerik üret."
+audience: "Türkçe konuşan, meraklı ve kısa videolarda hızlı, şaşırtıcı ama güvenilir bilgi arayan geniş izleyici kitlesi"
 language: tr
 
 script:
@@ -34,7 +34,7 @@ upload:
   privacy: "public"
   category_id: "22"
   made_for_kids: false
-  default_tags: ["shorts", "turkceshorts", "bilgi"]
+  default_tags: ["denede", "turkce bilgi", "shorts"]
 
 comments:
   model: openai/gpt-oss-20b
