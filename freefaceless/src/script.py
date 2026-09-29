@@ -42,7 +42,9 @@ KONUŞMA METNİ:
 - 5-7 kısa sahne; ilk sahnenin ilk kelimeleri doğrudan güçlü hook olsun. Selam, intro ve
   “bugün anlatacağım” yok.
 - Hook cesur bir soru, şaşırtıcı ama doğru bir bilgi ya da tanıdık bir şeye ters açı olabilir.
-  Boş “inanamayacaksın” ve cevabı vermeyen clickbait kullanma.
+  İlk 1-2 saniyede iddialı, konuya özgü ve merak uyandıran bir kanca kur. Cesur soru, ters köşe,
+  gündelik bir alışkanlığı sorgulama ve “çoğu kişinin gözden kaçırdığı...” gibi merak boşluğu kalıplarını
+  kullanabilirsin. Tıklama vaadini videonun sonunda mutlaka karşıla; olgu, sayı, alıntı veya sonucu uydurma.
 - İlk 2 sahnede ana konu/varlığın adı açıkça geçsin.
 - Hızlı ritim: kısa cümleler, her sahnede yeni bilgi, ortada somut açıklama/ters köşe,
   sonda vaat edilen cevabın payoff'u. Gereksiz tekrar ve dolgu yok.
@@ -53,10 +55,11 @@ KONUŞMA METNİ:
   Soyut kavram yerine görülebilir nesne/eylem yaz.
 
 BAŞLIK:
-- Türkçe, en fazla 60 karakter; konuyu ilk bölümde anlaşılır kıl, merak boşluğu ve güçlü fiil kullan.
-- Yanlış izlenim, kanıtlanmamış “şok”, sahte sayı ve alakasız gündem kelimesi yok.
-- Her içerikte aynı kalıbı tekrarlama. Soru, karşılaştırma, “neden/nasıl” ve şaşırtıcı sonuç
-  kalıpları arasından konuya en uygun olanı seç.
+- Türkçe, en fazla 60 karakter; güçlü fiille ve merak boşluğuyla ilk bakışta durdurucu olsun.
+- Konuya özel şaşırtıcı sonuç, meydan okuma, “neden/nasıl” ya da ters köşe açısı seç; başlığın
+  verdiği vaadi senaryoda açıkça karşıla.
+- Cesur ve clickbait sunum serbest; uydurma olay, sahte sayı, yanlış nedensellik veya videoda
+  karşılanmayan vaat yasak. Aynı başlık kalıbını art arda tekrarlama.
 
 AÇIKLAMA VE ETİKETLER:
 - Açıklama 1-2 kısa, videoya özel cümle olsun; ilk cümlede konu adı bulunsun.
@@ -135,7 +138,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
         f"Kanal: Denede\n"
         f"Geniş konu alanı: {focus}\n"
         f"Hedef izleyici: {CONFIG['audience']}\n"
-        f"Bu alanda somut, taze ve doğru tek bir konu seç; izleyici merakını güçlü aç ama payoff'u ver. "
+        f"Bu alanda somut, taze ve doğrulanabilir tek bir konu seç; mümkün olan en güçlü merak boşluğunu ve payoff'u kur. "
         f"Yalnızca bir Short üret.{avoid}"
     )
 
