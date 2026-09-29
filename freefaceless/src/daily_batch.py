@@ -45,28 +45,62 @@ def main() -> None:
                     help="Sadece ilk N slotu çalıştır")
     ap.add_argument("--private-smoke", action="store_true",
                     help="Tek bir videoyu gizli yükle, yayın zamanı ayarlama")
+    ap.add_argument("--retry-failed", action="store_true",
+                    help="Manifestte başarısız olan slotları tekrar dene; başarılı yüklemelere dokunma")
     args = ap.parse_args()
 
+    if args.private_smoke and args.retry_failed:
+        ap.error("--private-smoke ile --retry-failed birlikte kullanılamaz")
+    if args.retry_failed and args.no_upload:
+        ap.error("--retry-failed gerçek yükleme içindir; --no-upload ile kullanılamaz")
     if args.private_smoke:
         args.limit = 1
-    niches = pick_niches(args.limit)
-    manifest = []
+
+    previous = []
+    if args.retry_failed and MANIFEST.exists():
+        try:
+            previous = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as exc:
+            raise SystemExit(f"Başarısız slot manifesti okunamadı; yükleme durduruldu: {exc}")
+        if not isinstance(previous, list):
+            raise SystemExit("Başarısız slot manifesti liste değil; yükleme durduruldu.")
+        targets = [row for row in previous if not row.get("ok")]
+        manifest = list(previous)
+        if not targets:
+            print("Yeniden denenecek başarısız slot yok; yeni video yüklenmedi.", flush=True)
+            return
+    else:
+        targets = None
+        manifest = []
+
+    if args.retry_failed:
+        selected_targets = []
+        for row in targets:
+            slot = str(row.get("slot", ""))
+            match = next(((key, hour) for key, hour in SLOTS if key == slot), None)
+            niche = row.get("niche")
+            if not match or not niche:
+                raise SystemExit(f"Başarısız manifest satırı eksik/geçersiz: slot={slot!r}, niche={niche!r}")
+            selected_targets.append((slot, match[1], publish_time(match[1]), niche))
+    else:
+        niches = pick_niches(args.limit)
+        planned_slots = sorted(
+            ((slot, hour, publish_time(hour)) for slot, hour in SLOTS[:args.limit]),
+            key=lambda entry: entry[2],
+        )
+        selected_targets = [(slot, hour, at, niche)
+                            for (slot, hour, at), niche in zip(planned_slots, niches)]
+
     seen_topics: set[str] = set()
-    planned_slots = sorted(
-        ((slot, hour, publish_time(hour)) for slot, hour in SLOTS[:args.limit]),
-        key=lambda entry: entry[2],
-    )
-    for (slot, hour, at), niche in zip(planned_slots, niches):
+    for slot, hour, at, niche in selected_targets:
         utc = at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         print(f"[{slot}] {niche} -> {at.isoformat()}", flush=True)
-        res = None
         try:
             res = pipeline.run_once(
                 niche=niche,
                 publish_at=None if args.no_upload or args.private_smoke else utc,
                 upload_to_youtube=not args.no_upload,
             )
-            # Aynı gün içinde konu tekrarı olursa tek seferlik yeniden üret.
             if res["topic"] in seen_topics:
                 print(f"[{slot}] konu tekrarı ({res['topic']}), yeniden üretiliyor...", flush=True)
                 res = pipeline.run_once(
@@ -76,25 +110,34 @@ def main() -> None:
                     avoid_extra=res["topic"],
                 )
             seen_topics.add(res["topic"])
+            result_row = {
+                "slot": slot,
+                "niche": niche,
+                "ok": True,
+                "scheduled_publish_at_turkey": at.isoformat(),
+                "scheduled_publish_at_utc": None if args.no_upload else utc,
+                **res,
+            }
         except Exception as exc:
             print(f"[{slot}] HATA (diğer slotlar devam edecek): {exc}", flush=True)
-            manifest.append({"slot": slot, "niche": niche, "ok": False, "error": str(exc)})
-            continue
-        manifest.append({
-            "slot": slot,
-            "niche": niche,
-            "ok": True,
-            "scheduled_publish_at_turkey": at.isoformat(),
-            "scheduled_publish_at_utc": None if args.no_upload else utc,
-            **res,
-        })
+            result_row = {"slot": slot, "niche": niche, "ok": False, "error": str(exc)}
+
+        if args.retry_failed:
+            index = next(i for i, row in enumerate(manifest) if row.get("slot") == slot and not row.get("ok"))
+            manifest[index] = result_row
+        else:
+            manifest.append(result_row)
+
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    ok = sum(1 for m in manifest if m["ok"])
-    print(f"Bitti: {ok}/{args.limit} video.")
-    if ok != args.limit:
-        failed = [f"{m['slot']}: {m.get('error', 'video tamamlanmadı')}" for m in manifest if not m.get("ok")]
-        details = "; ".join(failed)
-        raise SystemExit(f"İstenen {args.limit} videonun tamamı yüklenmedi ({ok}/{args.limit}). Hatalı slotlar: {details}")
+    ok = sum(1 for row in manifest if row.get("ok"))
+    print(f"Bitti: {ok}/{len(manifest)} video.", flush=True)
+    if ok != len(manifest):
+        failed = [f"{row.get('slot')}: {row.get('error', 'video tamamlanmadı')}"
+                  for row in manifest if not row.get("ok")]
+        raise SystemExit(
+            f"İstenen {len(manifest)} videonun tamamı yüklenmedi ({ok}/{len(manifest)}). "
+            f"Hatalı slotlar: {'; '.join(failed)}"
+        )
 
 
 if __name__ == "__main__":
