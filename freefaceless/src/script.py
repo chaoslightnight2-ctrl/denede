@@ -101,6 +101,36 @@ def _extract_json(text: str) -> dict:
     raise ValueError("Yanıt JSON içermiyor")
 
 
+def _normalize_description_hashtags(description: str, topic: str) -> str:
+    """Keep Groq's copy, but enforce the upload contract with topic-relevant tags."""
+    hashtag_pattern = r"(?<!\w)#[\wçğıöşüÇĞİÖŞÜ]+"
+    existing = re.findall(hashtag_pattern, description, flags=re.UNICODE)
+    body = re.sub(hashtag_pattern, " ", description, flags=re.UNICODE)
+    body = re.sub(r"\s+", " ", body).strip()
+
+    chosen: list[str] = []
+    seen: set[str] = set()
+    for tag in existing:
+        if tag.lower() == "#shorts":
+            continue
+        key = tag.casefold()
+        if key not in seen and len(chosen) < 3:
+            chosen.append(tag)
+            seen.add(key)
+
+    topic_words = re.findall(r"[\wçğıöşüÇĞİÖŞÜ]+", topic, flags=re.UNICODE)
+    defaults = [f"#{topic_words[0].capitalize()}" if topic_words else "#Bilgi", "#Merak", "#Bilgi", "#Denede"]
+    for tag in defaults:
+        if len(chosen) == 3:
+            break
+        if tag.casefold() not in seen:
+            chosen.append(tag)
+            seen.add(tag.casefold())
+
+    suffix = " ".join(["#shorts", *chosen])
+    return f"{body}\n\n{suffix}" if body else suffix
+
+
 def _validate_package(data: dict) -> dict:
     scenes = data.get("scenes")
     if not isinstance(scenes, list) or not 5 <= len(scenes) <= 7:
@@ -114,6 +144,7 @@ def _validate_package(data: dict) -> dict:
     if not isinstance(tags, list) or len(tags) != 5 or any(not isinstance(t, str) or not t.strip() or "#" in t for t in tags):
         raise ValueError("Tam 5 adet # işaretsiz etiket gerekli")
     description = str(data.get("description", "")).strip()
+    description = _normalize_description_hashtags(description, str(data.get("topic") or title))
     hashtags = re.findall(r"(?<!\w)#[\wçğıöşüÇĞİÖŞÜ]+", description, flags=re.UNICODE)
     if len(hashtags) != 4 or "#shorts" not in {h.lower() for h in hashtags}:
         raise ValueError("Açıklamada #shorts dahil tam 4 hashtag olmalı")
