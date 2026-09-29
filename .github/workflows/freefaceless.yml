@@ -1,4 +1,4 @@
-name: FreeFaceless TR (günlük 4 video)
+name: FreeFaceless TR (günlük 6 video)
 
 # Her gün 00:00 TR (= 21:00 UTC): 6 Shorts, 04/08/12/16/20/00 slotlarına zamanlı yayın.
 # YouTube Data API'nin güncel videos.insert sınırı 100 yükleme/gün; dört kanalın 24 yüklemesi bu sınırın altında;
