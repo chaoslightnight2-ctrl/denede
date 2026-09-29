@@ -88,6 +88,13 @@ NICHE_PEXELS_QUERIES = {
     "Çözülmemiş tarihi vakalar (kanıt ve belirsizlik ayrılarak)": ["historical archive documents", "old newspaper archive", "museum historical evidence", "researcher archives"],
     "Günlük hayattaki şaşırtıcı ama doğrulanabilir gerçekler": ["everyday life slow motion", "science experiment demonstration", "curious people thinking", "museum exhibit"],
     "Popüler iddiaların ve komplo teorilerinin kanıta dayalı açıklaması": ["fact checking research documents", "scientist explaining evidence", "news archive documents", "research library"],
+    "Yemeklerin, içeceklerin ve gündelik ürünlerin arkasındaki bilim": ["food science laboratory", "cooking science kitchen", "coffee beans macro", "fresh food market"],
+    "Diller, kelimelerin kökeni ve iletişimdeki ilginç ayrıntılar": ["typography letters", "dictionary open book", "language learning classroom", "handwriting notebook"],
+    "Mühendislik, tasarım ve günlük hayatta kullandığımız icatlar": ["engineering workshop", "robotics laboratory", "bridge construction", "mechanical invention close up"],
+    "Denizler, derin okyanus ve sıra dışı canlılar": ["deep ocean underwater", "marine wildlife documentary", "coral reef fish", "ocean research submarine"],
+    "Mimari, şehir planlama ve dünyanın dikkat çeken yapıları": ["modern architecture city", "historic building exterior", "urban planning model", "city aerial skyline"],
+    "Sporun arkasındaki bilim ve insan performansı": ["athlete training slow motion", "sports science laboratory", "running track workout", "basketball training"],
+    "Tüketici alışkanlıkları ve para hakkında şaşırtıcı gerçekler": ["grocery store shopping", "coins budget notebook", "small business checkout", "consumer products close up"],
 }
 GENERATED_PACKAGE = {}
 
