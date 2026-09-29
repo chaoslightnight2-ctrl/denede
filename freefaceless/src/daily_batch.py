@@ -1,11 +1,11 @@
-"""Günde 4 farklı nişte Türkçe Shorts üretir ve zamanlı yayınlar.
+"""Günde 6 farklı nişte Türkçe Shorts üretir ve zamanlı yayınlar.
 
-Her gün 06:00 / 12:00 / 18:00 / 23:00 (Türkiye) slotlarına birer video planlar;
+Her gün 04:00 / 08:00 / 12:00 / 16:00 / 20:00 / 00:00 (Türkiye) slotlarına birer video planlar;
 YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır.
 Nişler gün gün dönerek 10 nişin tamamı kapsanır; biten slot diğerlerini bozmaz.
 
 Kullanım (freefaceless/ içinde):
-  python -m src.daily_batch              # 4 video üret + zamanlı yayınla
+  python -m src.daily_batch              # 6 video üret + zamanlı yayınla
   python -m src.daily_batch --no-upload  # kuru test, yükleme YOK
 """
 from __future__ import annotations
@@ -20,11 +20,11 @@ from .config import ROOT
 from .script import TURKISH_NICHES
 
 TZ = ZoneInfo("Europe/Istanbul")
-SLOTS = [("0600", 6), ("1200", 12), ("1800", 18), ("2300", 23)]
+SLOTS = [("0400", 4), ("0800", 8), ("1200", 12), ("1600", 16), ("2000", 20), ("0000", 0)]
 MANIFEST = ROOT / "daily_manifest.json"
 
 
-def pick_niches(count: int = 4) -> list[str]:
+def pick_niches(count: int = 6) -> list[str]:
     """Her gün kayan 4'lü niş seti; 5 günde 10 nişin tamamı dönülür."""
     start = (datetime.now(TZ).date().toordinal() * count) % len(TURKISH_NICHES)
     return [TURKISH_NICHES[(start + i) % len(TURKISH_NICHES)] for i in range(count)]
@@ -41,12 +41,14 @@ def publish_time(hour: int) -> datetime:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-upload", action="store_true", help="Yükleme yapma (kuru test)")
-    ap.add_argument("--limit", type=int, choices=range(1, 5), default=4,
+    ap.add_argument("--limit", type=int, choices=range(1, 7), default=6,
                     help="Sadece ilk N slotu çalıştır")
     ap.add_argument("--private-smoke", action="store_true",
                     help="Tek bir videoyu gizli yükle, yayın zamanı ayarlama")
     args = ap.parse_args()
 
+    if args.private_smoke:
+        args.limit = 1
     niches = pick_niches(args.limit)
     manifest = []
     seen_topics: set[str] = set()
