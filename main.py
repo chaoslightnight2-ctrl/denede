@@ -69,6 +69,13 @@ NICHE_POOL = [
     "Çözülmemiş tarihi vakalar (kanıt ve belirsizlik ayrılarak)",
     "Günlük hayattaki şaşırtıcı ama doğrulanabilir gerçekler",
     "Popüler iddiaların ve komplo teorilerinin kanıta dayalı açıklaması",
+    "Yemeklerin, içeceklerin ve gündelik ürünlerin arkasındaki bilim",
+    "Diller, kelimelerin kökeni ve iletişimdeki ilginç ayrıntılar",
+    "Mühendislik, tasarım ve günlük hayatta kullandığımız icatlar",
+    "Denizler, derin okyanus ve sıra dışı canlılar",
+    "Mimari, şehir planlama ve dünyanın dikkat çeken yapıları",
+    "Sporun arkasındaki bilim ve insan performansı",
+    "Tüketici alışkanlıkları ve para hakkında şaşırtıcı gerçekler",
 ]
 NICHE_PEXELS_QUERIES = {
     "Bilim ve doğadaki şaşırtıcı olaylar": ["science laboratory", "wildlife nature documentary", "microscope research", "deep ocean nature"],
@@ -92,16 +99,29 @@ def generate_script(niche: str) -> str:
     if not api_key:
         raise RuntimeError("GROQ_API_KEY tanımlı değil; yedek anlatım kapalı.")
     prompt = f"""
-Denede adlı Türkçe YouTube Shorts kanalı için izlenebilir, merak uyandıran bir video paketi yaz:
+Denede adlı Türkçe YouTube Shorts kanalı için izleyiciyi durduracak, videonun sonuna kadar merakta tutacak viral bir video paketi yaz:
 {niche}
-Kapsam bilim/doğa, uzay, tarih, psikoloji, coğrafya, teknoloji, folklor ve doğrulanabilir gündelik bilgileri
-içerir. Kapsamı geniş tut. Başlık güçlü merak uyandırsın ve doğru olsun; kanıtsız oranlar, sahte gizlilik,
-"herkes yanılıyor" iddiaları kullanma. Folkloru gerçek olay gibi anlatma. Suç ve yaşayan kişiler hakkında
-kanıtsız isnat, özel bilgi veya grafik şiddet üretme. Olgusal iddialar için güvenilir kaynak adı ve doğru
-makale bağlantısı ver; bilmiyorsan source_url boş kalsın ve kaynak dışı ayrıntı ekleme.
-JSON'da title, hook (6-12 kelime), narration, cta (abone olmaya açık doğal çağrı), description (1-2 cümle),
-tags (en fazla 7 alakalı terim), source_name, source_url alanları olsun. Hook + narration + CTA 35-65
-Türkçe kelime olsun. Hook ilk 2 saniyede gelsin ve vaadi videoda yanıtlanmalı. Yalnızca JSON döndür.
+Kanalın alanı geniş: bilim ve doğa, uzay, tarih ve arkeoloji, psikoloji, coğrafya, teknoloji ve yapay zeka,
+folklor, doğrulanabilir gündelik gerçekler, yemek bilimi, dil, icatlar, mimari, spor bilimi ve tüketici alışkanlıkları.
+Her videoda bu niş içinden tek, görselle anlatılabilir ve şaşırtıcı bir fikir seç; aynı genel kalıba dönme.
+
+VİRAL AKIŞ:
+- İlk cümlede sert bir merak kancası kullan: ters köşe, beklenmedik karşılaştırma, az bilinen ayrıntı,
+  “neden?” sorusu veya izleyiciyi sınayan kısa bir meydan okuma.
+- İlk 2 saniyede konuya gir; uzun selamlama ve bağlam girişi yapma.
+- Bilgiyi küçük adımlarla aç, en güçlü açıklamayı/cevabı sona yakın ver ve baştaki merak vaadini mutlaka karşıla.
+- Başlık cesur, kısa, konuşma dilinde ve yüksek tıklanma isteği uyandırsın. Clickbait tonu serbest:
+  iddialı soru, şaşırtıcı sonuç veya “bildiğini sandığın şey” yaklaşımı kullan; başlık videoda gerçek bir karşılık bulsun.
+- “Yetişkinlerin yüzde 90'ı”, “bilim insanları şokta” gibi kaynağı olmayan istatistik ve otorite iddiaları uydurma.
+- Folklor, efsane ve komplo iddiasını açıkça öyle tanımla; yaşayan kişiler hakkında isnat/özel bilgi ve grafik şiddet verme.
+- Olgusal iddia için yalnızca güvenilir kaynağı ve bağlantıyı gerçekten biliyorsan ekle; emin değilsen source_name ve source_url boş kalsın.
+
+JSON'da title, hook (6-12 kelime), narration, cta (kısa, doğal ve abone olmaya açık çağrı), description
+(iki kısa, konuya özgü cümle), tags (en fazla 7 alakalı arama terimi), source_name, source_url alanları olsun.
+Hook + narration + CTA toplamı 35-65 Türkçe kelime olsun. Açıklamanın ilk cümlesi videonun somut konusunu
+ve aranabilir anahtar kelimesini doğal biçimde söylesin; hashtag yığını ve başlık tekrarı yapma.
+Sadece geçerli JSON döndür:
+{{"title":"...","hook":"...","narration":"...","cta":"...","description":"...","tags":["..."],"source_name":"...","source_url":"..."}}
 """
     model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
     response = requests.post(
@@ -110,7 +130,8 @@ Türkçe kelime olsun. Hook ilk 2 saniyede gelsin ve vaadi videoda yanıtlanmal�
         json={"model": model, "messages": [
             {"role": "system", "content": "Sen Denede kanalı için Türkçe, merak uyandıran ama olguyla kurguyu ayıran bir editörsün."},
             {"role": "user", "content": prompt}],
-            "temperature": 0.3, "max_completion_tokens": 620,
+            "temperature": 0.45, "max_completion_tokens": 2048,
+            "reasoning_effort": "low",
             "response_format": {"type": "json_object"}},
         timeout=90,
     )
@@ -131,9 +152,9 @@ Türkçe kelime olsun. Hook ilk 2 saniyede gelsin ve vaadi videoda yanıtlanmal�
     narration, cta = str(data.get("narration", "")).strip(), str(data.get("cta", "")).strip()
     description = str(data.get("description", "")).strip()
     script = " ".join(x for x in [hook, narration, cta] if x)
-    if not title or len(title) > 78 or not hook or not narration or not cta or not description:
+    if not title or len(title) > 70 or not hook or not narration or not cta or not description:
         raise RuntimeError("Groq gerekli başlık/hook/anlatım/CTA/açıklama alanlarını üretmedi.")
-    if not 35 <= len(script.split()) <= 65 or not 5 <= len(hook.split()) <= 13:
+    if not 35 <= len(script.split()) <= 65 or not 6 <= len(hook.split()) <= 12:
         raise RuntimeError("Groq metni Shorts uzunluk/hook doğrulamasını geçemedi.")
     GENERATED_PACKAGE.clear()
     GENERATED_PACKAGE.update({
