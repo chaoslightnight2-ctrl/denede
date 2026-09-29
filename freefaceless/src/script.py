@@ -177,10 +177,14 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
     )
 
     last_err: Exception | None = None
-    for attempt in range(3):
+    for attempt in range(5):
         correction = ""
         if last_err:
-            correction = f"\nÖnceki deneme şu doğrulama hatasını verdi; bu kez düzelt: {last_err}"
+            correction = (\n                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Baştan, eksiksiz ve yalnızca geçerli JSON üret. "
+                "title boş olmasın ve en fazla 60 karakter olsun; 5-7 sahnenin text alanları toplamı 65-78 Türkçe kelime olsun; "
+                "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 4 hashtag bulunsun. "
+                "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
+            )
         try:
             resp = client.chat.completions.create(
                 model=CONFIG["script"]["model"],
@@ -196,4 +200,4 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             return _validate_package(data)
         except Exception as exc:
             last_err = exc
-    raise RuntimeError(f"3 denemede geçerli senaryo paketi alınamadı: {last_err}")
+    raise RuntimeError(f"5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: {last_err}")
