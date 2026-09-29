@@ -3,6 +3,7 @@ import re
 from openai import OpenAI
 from .config import GROQ_API_KEY, GROQ_BASE_URL, CONFIG
 from . import state
+from .quality import validate_and_prepare
 
 client = OpenAI(api_key=GROQ_API_KEY, base_url=GROQ_BASE_URL)
 
@@ -51,9 +52,12 @@ KONUŞMA METNİ:
   gereksiz yere saklama; dolgu, tekrar ve konu dışı cümle kullanma. Her cümle bir sonrakine merak taşısın.
 - Son cümlede izleyiciye konuya özel, kolay cevaplanır tek soru sor ve doğal, kısa bir
   “Denede için abone ol” çağrısı ekle. Genel “beğen-abone ol” listesi yazma.
-- Emoji, sahne talimatı, efekt ve madde işareti yok; yalnızca seslendirilecek cümleler.
+- Emoji, sahne talimatı, efekt, kaynak, kaynakça, site adı, URL, markdown, hashtag ve madde işareti yok.
+- text alanlarında noktalama işareti kullanma; yalnızca doğrudan seslendirilecek temiz Türkçe kelimeleri yaz.
+- Kanal adı yalnızca son sahnedeki tek CTA içinde geçsin; CTA veya başka cümleyi tekrarlama.
 - Her sahnenin visual_query alanı Pexels'te aranabilir 2-4 İngilizce görsel sözcük olsun.
-  Soyut kavram yerine görülebilir nesne/eylem yaz.
+  Soyut kavram yerine konuya özgü görülebilir kişi, yer, nesne veya eylem yaz. Aynı sorguyu tekrarlama.
+  Genel "ancient history", "abstract background" veya alakasız ülke/tapınak görüntüsü isteme.
 
 BAŞLIK:
 - Türkçe, en fazla 60 karakter; konunun/nesnenin adı başlarda, tek bir net vaat ve güçlü merak boşluğu bulunsun.
@@ -151,7 +155,7 @@ def _validate_package(data: dict) -> dict:
     data["title"] = title
     data["description"] = description
     data["tags"] = [t.strip().lower() for t in tags]
-    data["full_text"] = " ".join(s["text"].strip() for s in scenes)
+    data = validate_and_prepare(data)
     if not 55 <= len(data["full_text"].split()) <= 90:
         raise ValueError("Konuşma metni hedef süre için 55-90 kelime aralığında olmalı")
     return data

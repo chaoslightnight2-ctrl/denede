@@ -1,6 +1,7 @@
 from pathlib import Path
 from faster_whisper import WhisperModel
 from .config import CONFIG
+from .quality import clean_spoken
 
 _model = None
 
@@ -16,12 +17,23 @@ def _get_model() -> WhisperModel:
 def transcribe_words(audio_path: Path) -> list[dict]:
     model = _get_model()
     # faster-whisper dili otomatik algılar; Türkçe seste Türkçe zaman damgası üretir.
-    segments, _ = model.transcribe(str(audio_path), word_timestamps=True)
+    segments, _ = model.transcribe(str(audio_path), language="tr", word_timestamps=True)
     words = []
     for seg in segments:
         for w in (seg.words or []):
-            words.append({"word": w.word, "start": float(w.start), "end": float(w.end)})
-    return words
+            clean = clean_spoken(w.word)
+            if clean:
+                words.append({"word": clean, "start": float(w.start), "end": float(w.end)})
+    canonical = []
+    index = 0
+    while index < len(words):
+        if index + 1 < len(words) and words[index]["word"].casefold() == "dene" and words[index + 1]["word"].casefold() == "de":
+            canonical.append({"word": "Denede", "start": words[index]["start"], "end": words[index + 1]["end"]})
+            index += 2
+            continue
+        canonical.append(words[index])
+        index += 1
+    return canonical
 
 
 def _fmt_ts(t: float) -> str:
@@ -51,12 +63,15 @@ Style: Default,{c['font']},{c['font_size']},{c['primary_color']},&H00FFFFFF,{c['
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 
+    chunks = [words[i:i + chunk_size] for i in range(0, len(words), chunk_size)]
+    if len(chunks) >= 2 and len(chunks[-1]) == 1 and len(chunks[-2]) > 2:
+        chunks[-1].insert(0, chunks[-2].pop())
+
     lines = []
-    for i in range(0, len(words), chunk_size):
-        chunk = words[i:i + chunk_size]
+    for chunk in chunks:
         start = _fmt_ts(chunk[0]["start"])
         end = _fmt_ts(chunk[-1]["end"])
-        text = " ".join(w["word"].strip() for w in chunk).upper()
+        text = " ".join(clean_spoken(w["word"]) for w in chunk).upper()
         lines.append(f"Dialogue: 0,{start},{end},Default,,0,0,0,,{text}")
 
     out_path.write_text(header + "\n".join(lines), encoding="utf-8")

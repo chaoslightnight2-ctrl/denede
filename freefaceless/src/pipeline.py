@@ -2,6 +2,7 @@ import argparse
 import re
 from datetime import datetime
 from . import script, voice, captions, visuals, assemble, upload, state
+from .quality import validate_rendered_video
 from .config import OUTPUT_DIR
 
 
@@ -23,7 +24,7 @@ def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
         work.mkdir(parents=True, exist_ok=True)
-        voice_mp3 = voice.synth(data["full_text"], work / "voice.mp3")
+        voice_mp3 = voice.synth(data["tts_text"], work / "voice.mp3")
         words = captions.transcribe_words(voice_mp3)
         duration = float(words[-1]["end"]) if words else 0.0
         print(f"      deneme {attempt}: topic={data['topic']} sure={duration:.1f}sn kelime={len(data['full_text'].split())}", flush=True)
@@ -66,6 +67,7 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
         out_path=work / "final.mp4",
         work_dir=work / "ffmpeg",
     )
+    validate_rendered_video(final)
     print(f"      output: {final}")
 
     video_id = None

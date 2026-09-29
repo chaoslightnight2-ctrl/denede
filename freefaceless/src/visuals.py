@@ -40,8 +40,6 @@ def fetch_for_scenes(scenes: list[dict], out_dir: Path) -> list[Path]:
     for i, scene in enumerate(scenes):
         url = search_vertical(scene["visual_query"])
         if url is None:
-            url = search_vertical("abstract background")
-        if url is None:
-            raise RuntimeError(f"No Pexels result for scene {i}: {scene['visual_query']}")
+            raise RuntimeError(f"Konuya uygun Pexels sonucu yok; genel fallback kapalı. Sahne {i}: {scene['visual_query']}")
         paths.append(download(url, out_dir / f"scene_{i:02d}.mp4"))
     return paths

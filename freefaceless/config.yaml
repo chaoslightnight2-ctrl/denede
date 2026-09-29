@@ -22,7 +22,7 @@ captions:
   primary_color: "&H00FFFFFF"
   outline_color: "&H00000000"
   outline: 6
-  words_per_caption: 1
+  words_per_caption: 3
   position_y: 0.55
 
 video:
