@@ -1,7 +1,7 @@
 """Günde 6 farklı nişte Türkçe Shorts üretir ve zamanlı yayınlar.
 
 Her gün 04:00 / 08:00 / 12:00 / 16:00 / 20:00 / 00:00 (Türkiye) slotlarına birer video planlar;
-YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır.
+YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır; 4 kanalda günlük toplam 24 yükleme planlanır.
 Nişler gün gün dönerek 15 konu alanının tamamını kapsar; biten slot diğerlerini bozmaz.
 
 Kullanım (freefaceless/ içinde):
