@@ -2,7 +2,7 @@
 
 Her gün 04:00 / 08:00 / 12:00 / 16:00 / 20:00 / 00:00 (Türkiye) slotlarına birer video planlar;
 YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır.
-Nişler gün gün dönerek 10 nişin tamamı kapsanır; biten slot diğerlerini bozmaz.
+Nişler gün gün dönerek 15 konu alanının tamamını kapsar; biten slot diğerlerini bozmaz.
 
 Kullanım (freefaceless/ içinde):
   python -m src.daily_batch              # 6 video üret + zamanlı yayınla
@@ -52,8 +52,11 @@ def main() -> None:
     niches = pick_niches(args.limit)
     manifest = []
     seen_topics: set[str] = set()
-    for (slot, hour), niche in zip(SLOTS[:args.limit], niches):
-        at = publish_time(hour)
+    planned_slots = sorted(
+        ((slot, hour, publish_time(hour)) for slot, hour in SLOTS[:args.limit]),
+        key=lambda entry: entry[2],
+    )
+    for (slot, hour, at), niche in zip(planned_slots, niches):
         utc = at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         print(f"[{slot}] {niche} -> {at.isoformat()}", flush=True)
         res = None
