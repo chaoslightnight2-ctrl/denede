@@ -63,7 +63,10 @@ def upload_video(video_path: Path, title: str, description: str, tags: list[str]
     all_tags = list({*tags, *up["default_tags"]})
 
     status = {"selfDeclaredMadeForKids": up["made_for_kids"]}
-    if publish_at:
+    if os.getenv("YOUTUBE_UPLOAD_SMOKE") == "1":
+        # CI smoke test: exercise videos.insert without making the video public.
+        status["privacyStatus"] = "private"
+    elif publish_at:
         status["privacyStatus"] = "private"
         status["publishAt"] = publish_at
     else:
