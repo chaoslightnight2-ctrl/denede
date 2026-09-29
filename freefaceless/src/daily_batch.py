@@ -41,12 +41,16 @@ def publish_time(hour: int) -> datetime:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-upload", action="store_true", help="Yükleme yapma (kuru test)")
+    ap.add_argument("--limit", type=int, choices=range(1, 5), default=4,
+                    help="Sadece ilk N slotu çalıştır")
+    ap.add_argument("--private-smoke", action="store_true",
+                    help="Tek bir videoyu gizli yükle, yayın zamanı ayarlama")
     args = ap.parse_args()
 
-    niches = pick_niches()
+    niches = pick_niches(args.limit)
     manifest = []
     seen_topics: set[str] = set()
-    for (slot, hour), niche in zip(SLOTS, niches):
+    for (slot, hour), niche in zip(SLOTS[:args.limit], niches):
         at = publish_time(hour)
         utc = at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         print(f"[{slot}] {niche} -> {at.isoformat()}", flush=True)
@@ -54,7 +58,7 @@ def main() -> None:
         try:
             res = pipeline.run_once(
                 niche=niche,
-                publish_at=None if args.no_upload else utc,
+                publish_at=None if args.no_upload or args.private_smoke else utc,
                 upload_to_youtube=not args.no_upload,
             )
             # Aynı gün içinde konu tekrarı olursa tek seferlik yeniden üret.
@@ -62,7 +66,7 @@ def main() -> None:
                 print(f"[{slot}] konu tekrarı ({res['topic']}), yeniden üretiliyor...", flush=True)
                 res = pipeline.run_once(
                     niche=niche,
-                    publish_at=None if args.no_upload else utc,
+                    publish_at=None if args.no_upload or args.private_smoke else utc,
                     upload_to_youtube=not args.no_upload,
                     avoid_extra=res["topic"],
                 )
@@ -81,7 +85,7 @@ def main() -> None:
         })
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     ok = sum(1 for m in manifest if m["ok"])
-    print(f"Bitti: {ok}/4 video.")
+    print(f"Bitti: {ok}/{args.limit} video.")
     if ok == 0:
         raise SystemExit(1)
 
