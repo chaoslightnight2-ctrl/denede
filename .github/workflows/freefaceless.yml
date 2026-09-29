@@ -4,9 +4,6 @@ name: FreeFaceless TR (günlük 4 video)
 # YouTube kotası (10.000 ünite/gün, yükleme başına ~1600) 4 videoya yeter;
 # eski botun zamanlayıcısı bu yüzden manuele alındı (shorts_generator.yml).
 on:
-  push:
-    paths:
-      - .github/workflows/freefaceless-dry-run-trigger.marker
   schedule:
     - cron: '30 21 * * *'
   workflow_dispatch:
