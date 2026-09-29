@@ -4,11 +4,6 @@ name: FreeFaceless TR (günlük 6 video)
 # YouTube Data API'nin güncel videos.insert sınırı 100 yükleme/gün; dört kanalın 24 yüklemesi bu sınırın altında;
 # eski botun zamanlayıcısı bu yüzden manuele alındı (shorts_generator.yml).
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "codex-live-trigger-20260929.txt"
   schedule:
     - cron: '0 21 * * *'
   workflow_dispatch:
@@ -60,7 +55,7 @@ jobs:
           echo "GROQ_API_KEY=${GROQ_API_KEY}" > .env
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" >> .env
           EXTRA=""
-          if [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
           python -m src.daily_batch $EXTRA
 
       - name: Konu tekrarını önlemek için state'i commit'le
