@@ -59,7 +59,7 @@ jobs:
           python -m src.daily_batch $EXTRA
 
       - name: Konu tekrarını önlemek için state'i commit'le
-        if: ${{ always() && inputs.dry_run != true && github.event_name != 'push' }}
+        if: ${{ always() && inputs.dry_run != true }}
         continue-on-error: true
         uses: EndBug/add-and-commit@v9
         with:
