@@ -1,0 +1,54 @@
+[
+  {
+    "slot": "2000",
+    "niche": "Hayvanlar ve doğa",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-29T20:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-29T17:00:00Z",
+    "video_id": "EfYUcRj6t6c",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150052_mavi-balina-kalbi/final.mp4",
+    "topic": "Mavi Balina Kalbi"
+  },
+  {
+    "slot": "0000",
+    "niche": "Teknoloji, yapay zekâ ve icatlar",
+    "ok": false,
+    "error": "3 denemede geçerli senaryo paketi alınamadı: Başlık boş veya 60 karakterden uzun"
+  },
+  {
+    "slot": "0400",
+    "niche": "Tarih ve arkeoloji",
+    "ok": false,
+    "error": "3 denemede geçerli senaryo paketi alınamadı: Konuşma metni hedef süre için 55-90 kelime aralığında olmalı"
+  },
+  {
+    "slot": "0800",
+    "niche": "Coğrafya ve dünyadaki sıra dışı yerler",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-30T08:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-30T05:00:00Z",
+    "video_id": "4ZulUBjuI1M",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150341_baykal-g-l-n-n-dev-ukuru/final.mp4",
+    "topic": "Baykal Gölü’nün dev çukuru"
+  },
+  {
+    "slot": "1200",
+    "niche": "Diller, kelimelerin kökeni ve iletişim",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-30T12:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-30T09:00:00Z",
+    "video_id": "4Q2enxs1zSo",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150526_kelimenin-k-keni-ve-evrimi/final.mp4",
+    "topic": "kelimenin kökeni ve evrimi"
+  },
+  {
+    "slot": "1600",
+    "niche": "Kültürler, gelenekler ve gündelik yaşam",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-30T16:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-30T13:00:00Z",
+    "video_id": "OidPmxH-vX0",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150708_k-pr-alt-ay-bah-esi/final.mp4",
+    "topic": "köprü altı çay bahçesi"
+  }
+]

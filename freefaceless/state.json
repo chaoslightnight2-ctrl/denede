@@ -1,0 +1,42 @@
+{
+  "used_topics": [
+    "Mavi Balina Kalbi",
+    "Baykal Gölü’nün dev çukuru",
+    "kelimenin kökeni ve evrimi",
+    "köprü altı çay bahçesi"
+  ],
+  "published": [
+    {
+      "ts": "20260929_150052",
+      "topic": "Mavi Balina Kalbi",
+      "title": "Mavi balinanın kalbi neden 2 metreden büyük?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150052_mavi-balina-kalbi/final.mp4",
+      "video_id": "EfYUcRj6t6c",
+      "publish_at": "2026-09-29T17:00:00Z"
+    },
+    {
+      "ts": "20260929_150341",
+      "topic": "Baykal Gölü’nün dev çukuru",
+      "title": "Baykal Gölü’nün 300 m Derin Çukuru Neden Özel?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150341_baykal-g-l-n-n-dev-ukuru/final.mp4",
+      "video_id": "4ZulUBjuI1M",
+      "publish_at": "2026-09-30T05:00:00Z"
+    },
+    {
+      "ts": "20260929_150526",
+      "topic": "kelimenin kökeni ve evrimi",
+      "title": "‘Köpek’ kelimesi aslında bir uzay terimi miydi?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150526_kelimenin-k-keni-ve-evrimi/final.mp4",
+      "video_id": "4Q2enxs1zSo",
+      "publish_at": "2026-09-30T09:00:00Z"
+    },
+    {
+      "ts": "20260929_150708",
+      "topic": "köprü altı çay bahçesi",
+      "title": "Köprü Altındaki Gizli Çay Bahçesi Nasıl Keşfedildi?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150708_k-pr-alt-ay-bah-esi/final.mp4",
+      "video_id": "OidPmxH-vX0",
+      "publish_at": "2026-09-30T13:00:00Z"
+    }
+  ]
+}
