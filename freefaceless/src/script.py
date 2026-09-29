@@ -180,7 +180,8 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
     for attempt in range(5):
         correction = ""
         if last_err:
-            correction = (\n                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Baştan, eksiksiz ve yalnızca geçerli JSON üret. "
+            correction = (
+                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Baştan, eksiksiz ve yalnızca geçerli JSON üret. "
                 "title boş olmasın ve en fazla 60 karakter olsun; 5-7 sahnenin text alanları toplamı 65-78 Türkçe kelime olsun; "
                 "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 4 hashtag bulunsun. "
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
