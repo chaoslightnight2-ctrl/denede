@@ -12,14 +12,22 @@
   {
     "slot": "0000",
     "niche": "Teknoloji, yapay zekâ ve icatlar",
-    "ok": false,
-    "error": "3 denemede geçerli senaryo paketi alınamadı: Başlık boş veya 60 karakterden uzun"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-30T00:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-29T21:00:00Z",
+    "video_id": "nZdrijRWkVk",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151514_gpt-4-g-rsel-yetene-i/final.mp4",
+    "topic": "GPT-4 görsel yeteneği"
   },
   {
     "slot": "0400",
     "niche": "Tarih ve arkeoloji",
-    "ok": false,
-    "error": "3 denemede geçerli senaryo paketi alınamadı: Konuşma metni hedef süre için 55-90 kelime aralığında olmalı"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-30T04:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-30T01:00:00Z",
+    "video_id": "G3L8TvOxIxk",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151704_g-beklitepe-s-tunu-takvimi/final.mp4",
+    "topic": "Göbeklitepe Sütunu Takvimi"
   },
   {
     "slot": "0800",

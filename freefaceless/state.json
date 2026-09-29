@@ -3,7 +3,9 @@
     "Mavi Balina Kalbi",
     "Baykal Gölü’nün dev çukuru",
     "kelimenin kökeni ve evrimi",
-    "köprü altı çay bahçesi"
+    "köprü altı çay bahçesi",
+    "GPT-4 görsel yeteneği",
+    "Göbeklitepe Sütunu Takvimi"
   ],
   "published": [
     {
@@ -37,6 +39,22 @@
       "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150708_k-pr-alt-ay-bah-esi/final.mp4",
       "video_id": "OidPmxH-vX0",
       "publish_at": "2026-09-30T13:00:00Z"
+    },
+    {
+      "ts": "20260929_151514",
+      "topic": "GPT-4 görsel yeteneği",
+      "title": "GPT-4'ün 2 saniyede fotoğrafı nasıl oluşturduğunu görün",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151514_gpt-4-g-rsel-yetene-i/final.mp4",
+      "video_id": "nZdrijRWkVk",
+      "publish_at": "2026-09-29T21:00:00Z"
+    },
+    {
+      "ts": "20260929_151704",
+      "topic": "Göbeklitepe Sütunu Takvimi",
+      "title": "Göbeklitepe Sütunu: Gizli Takvim Nasıl Çalışıyor?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151704_g-beklitepe-s-tunu-takvimi/final.mp4",
+      "video_id": "G3L8TvOxIxk",
+      "publish_at": "2026-09-30T01:00:00Z"
     }
   ]
 }
