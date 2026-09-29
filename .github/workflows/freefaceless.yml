@@ -4,6 +4,9 @@ name: FreeFaceless TR (günlük 4 video)
 # YouTube kotası (10.000 ünite/gün, yükleme başına ~1600) 4 videoya yeter;
 # eski botun zamanlayıcısı bu yüzden manuele alındı (shorts_generator.yml).
 on:
+  push:
+    paths:
+      - .github/workflows/freefaceless-dry-run-trigger.marker
   schedule:
     - cron: '30 21 * * *'
   workflow_dispatch:
@@ -55,11 +58,11 @@ jobs:
           echo "GROQ_API_KEY=${GROQ_API_KEY}" > .env
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" >> .env
           EXTRA=""
-          if [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
           python -m src.daily_batch $EXTRA
 
       - name: Konu tekrarını önlemek için state'i commit'le
-        if: ${{ always() && inputs.dry_run != true }}
+        if: ${{ always() && inputs.dry_run != true && github.event_name != 'push' }}
         continue-on-error: true
         uses: EndBug/add-and-commit@v9
         with:
