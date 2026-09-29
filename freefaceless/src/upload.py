@@ -8,10 +8,7 @@ from googleapiclient.discovery import build as gbuild
 from googleapiclient.http import MediaFileUpload
 from .config import ROOT, CONFIG
 
-SCOPES = [
-    "https://www.googleapis.com/auth/youtube.upload",
-    "https://www.googleapis.com/auth/youtube.force-ssl",
-]
+SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 CLIENT_SECRET = ROOT / "client_secret.json"
 TOKEN = ROOT / "token.json"
 YOUTUBE_SCOPES = SCOPES
