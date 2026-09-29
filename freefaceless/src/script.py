@@ -41,13 +41,14 @@ KONUŞMA METNİ:
 - 65-78 Türkçe kelime; hedef ses süresi yaklaşık {target_seconds} saniye.
 - 5-7 kısa sahne; ilk sahnenin ilk kelimeleri doğrudan güçlü hook olsun. Selam, intro ve
   “bugün anlatacağım” yok.
-- Hook cesur bir soru, şaşırtıcı ama doğru bir bilgi ya da tanıdık bir şeye ters açı olabilir.
-  İlk 1-2 saniyede iddialı, konuya özgü ve merak uyandıran bir kanca kur. Cesur soru, ters köşe,
-  gündelik bir alışkanlığı sorgulama ve “çoğu kişinin gözden kaçırdığı...” gibi merak boşluğu kalıplarını
-  kullanabilirsin. Tıklama vaadini videonun sonunda mutlaka karşıla; olgu, sayı, alıntı veya sonucu uydurma.
-- İlk 2 sahnede ana konu/varlığın adı açıkça geçsin.
-- Hızlı ritim: kısa cümleler, her sahnede yeni bilgi, ortada somut açıklama/ters köşe,
-  sonda vaat edilen cevabın payoff'u. Gereksiz tekrar ve dolgu yok.
+- İlk 1-2 saniyede konuya özgü, somut bir merak kancası kur: şaşırtıcı ama doğru bir bilgi,
+  güçlü bir soru, beklenmedik karşılaştırma veya gündelik bir alışkanlığa ters açı. Her videoda
+  farklı bir hook biçimi seç; “şok olacaksın”, “inanamayacaksın” gibi boş kalıpları kullanma.
+  Tıklama vaadini mutlaka videoda karşıla; olgu, sayı, alıntı veya sonucu uydurma.
+- İlk 2 sahnede ana konu/varlığın adı geçsin ve izleyici neden izlemeyi sürdürmesi gerektiğini anlasın.
+- Retention akışı kur: ilk sahnede merak boşluğu, sonraki sahnelerde her seferinde yeni ve kısa bir
+  ipucu, orta bölümde açıklama/ters köşe, son sahnede net cevap ve tatmin edici payoff. Yanıtı
+  gereksiz yere saklama; dolgu, tekrar ve konu dışı cümle kullanma. Her cümle bir sonrakine merak taşısın.
 - Son cümlede izleyiciye konuya özel, kolay cevaplanır tek soru sor ve doğal, kısa bir
   “Denede için abone ol” çağrısı ekle. Genel “beğen-abone ol” listesi yazma.
 - Emoji, sahne talimatı, efekt ve madde işareti yok; yalnızca seslendirilecek cümleler.
@@ -55,14 +56,16 @@ KONUŞMA METNİ:
   Soyut kavram yerine görülebilir nesne/eylem yaz.
 
 BAŞLIK:
-- Türkçe, en fazla 60 karakter; güçlü fiille ve merak boşluğuyla ilk bakışta durdurucu olsun.
+- Türkçe, en fazla 60 karakter; konunun/nesnenin adı başlarda, tek bir net vaat ve güçlü merak boşluğu bulunsun.
+- Aynı kalıbı art arda kullanma; kısa, konuşma dilinde ve videodaki belirli sonuca bağlı yaz.
 - Konuya özel şaşırtıcı sonuç, meydan okuma, “neden/nasıl” ya da ters köşe açısı seç; başlığın
   verdiği vaadi senaryoda açıkça karşıla.
 - Cesur ve clickbait sunum serbest; uydurma olay, sahte sayı, yanlış nedensellik veya videoda
   karşılanmayan vaat yasak. Aynı başlık kalıbını art arda tekrarlama.
 
 AÇIKLAMA VE ETİKETLER:
-- Açıklama 1-2 kısa, videoya özel cümle olsun; ilk cümlede konu adı bulunsun.
+- Açıklama 1-2 kısa, videoya özel cümle olsun; ilk cümlede konu adı bulunsun ve ikinci cümle
+  konuya özel, kolay cevaplanır bir yorum sorusu sorarak etkileşim başlatsın.
   Videoda bulunmayan bilgi, genel SEO anahtar kelime yığını ve tekrar eden abone çağrısı ekleme.
 - Açıklama tam 4 alakalı hashtag ile bitsin; bunlardan biri #shorts, diğerleri konuya özel olsun.
 - 5 küçük harfli etiket üret: önce ana konu, sonra yakın alt konular; # işareti ekleme.
