@@ -57,7 +57,9 @@ def main() -> None:
         args.limit = 1
 
     previous = []
-    if args.retry_failed and MANIFEST.exists():
+    if args.retry_failed:
+        if not MANIFEST.exists():
+            raise SystemExit("Başarısız slot manifesti yok; yükleme durduruldu.")
         try:
             previous = json.loads(MANIFEST.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError) as exc:
