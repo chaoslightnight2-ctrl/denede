@@ -6,9 +6,6 @@ name: FreeFaceless TR (günlük 4 video)
 on:
   schedule:
     - cron: '30 21 * * *'
-  push:
-    paths:
-      - .github/workflows/denede-private-upload-smoke.trigger
   workflow_dispatch:
     inputs:
       dry_run:
@@ -54,16 +51,11 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          YOUTUBE_UPLOAD_SMOKE: ${{ github.event_name == 'push' && '1' || '0' }}
         run: |
           echo "GROQ_API_KEY=${GROQ_API_KEY}" > .env
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" >> .env
           EXTRA=""
-          if [ "${{ github.event_name }}" = "push" ]; then
-            EXTRA="--limit 1 --private-smoke"
-          elif [ "${{ inputs.dry_run }}" = "true" ]; then
-            EXTRA="--no-upload"
-          fi
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
           python -m src.daily_batch $EXTRA
 
       - name: Konu tekrarını önlemek için state'i commit'le
