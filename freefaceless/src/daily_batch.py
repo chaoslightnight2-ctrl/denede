@@ -94,7 +94,7 @@ def main() -> None:
     if ok != args.limit:
         failed = [f"{m['slot']}: {m.get('error', 'video tamamlanmadı')}" for m in manifest if not m.get("ok")]
         details = "; ".join(failed)
-        raise SystemExit(f"6 videonun tamamı yüklenmedi ({ok}/{args.limit}). Hatalı slotlar: {details}")
+        raise SystemExit(f"İstenen {args.limit} videonun tamamı yüklenmedi ({ok}/{args.limit}). Hatalı slotlar: {details}")
 
 
 if __name__ == "__main__":
