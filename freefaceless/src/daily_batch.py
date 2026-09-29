@@ -91,8 +91,10 @@ def main() -> None:
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     ok = sum(1 for m in manifest if m["ok"])
     print(f"Bitti: {ok}/{args.limit} video.")
-    if ok == 0:
-        raise SystemExit(1)
+    if ok != args.limit:
+        failed = [f"{m['slot']}: {m.get('error', 'video tamamlanmadı')}" for m in manifest if not m.get("ok")]
+        details = "; ".join(failed)
+        raise SystemExit(f"6 videonun tamamı yüklenmedi ({ok}/{args.limit}). Hatalı slotlar: {details}")
 
 
 if __name__ == "__main__":
