@@ -1,11 +1,11 @@
 name: FreeFaceless TR (günlük 4 video)
 
-# Her gün 00:30 TR (= 21:30 UTC): 4 farklı niş, 06/12/18/23 slotlarına zamanlı yayın.
-# YouTube kotası (10.000 ünite/gün, yükleme başına ~1600) 4 videoya yeter;
+# Her gün 00:00 TR (= 21:00 UTC): 6 Shorts, 04/08/12/16/20/00 slotlarına zamanlı yayın.
+# YouTube kotası (10.000 ünite/gün, yükleme başına ~1600) altı video için sınırlı pay bırakır;
 # eski botun zamanlayıcısı bu yüzden manuele alındı (shorts_generator.yml).
 on:
   schedule:
-    - cron: '30 21 * * *'
+    - cron: '0 21 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -20,7 +20,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-22.04
-    timeout-minutes: 60
+    timeout-minutes: 180
     defaults:
       run:
         working-directory: freefaceless
@@ -43,7 +43,7 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 4 Türkçe Shorts üret ve zamanlı yayınla
+      - name: 6 Türkçe Shorts üret ve zamanlı yayınla
         id: run_bot
         continue-on-error: true
         env:
