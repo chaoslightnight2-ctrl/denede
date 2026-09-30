@@ -10,6 +10,8 @@ os.environ.setdefault("GROQ_MODEL", CONFIG["script"]["model"])
 
 PACKAGE_SCHEMA = object_schema({
     **{key: {"type": "string"} for key in ("topic", "title", "description")},
+    "closing_question": {"type": "string"}, "closing_visual_query": {"type": "string"},
+    "cta": {"type": "string", "enum": ["Denede kanalına abone ol"]},
     "tags": {"type": "array", "items": {"type": "string"}},
     "scenes": {"type": "array", "items": object_schema({
         "text": {"type": "string"}, "visual_query": {"type": "string"}})}})
@@ -48,7 +50,7 @@ KONU:
 
 KONUŞMA METNİ:
 - 65-78 Türkçe kelime; hedef ses süresi yaklaşık {target_seconds} saniye.
-- 5-7 kısa sahne; ilk sahnenin ilk kelimeleri doğrudan güçlü hook olsun. Selam, intro ve
+- 5-6 kısa anlatım sahnesi; bunlara kapanış sorusu ve CTA alanları eklenecek. İlk sahnenin ilk kelimeleri doğrudan güçlü hook olsun. Selam, intro ve
   “bugün anlatacağım” yok.
 - İlk 1-2 saniyede konuya özgü, somut bir merak kancası kur: şaşırtıcı ama doğru bir bilgi,
   güçlü bir soru, beklenmedik karşılaştırma veya gündelik bir alışkanlığa ters açı. Her videoda
@@ -58,8 +60,10 @@ KONUŞMA METNİ:
 - Retention akışı kur: ilk sahnede merak boşluğu, sonraki sahnelerde her seferinde yeni ve kısa bir
   ipucu, orta bölümde açıklama/ters köşe, son sahnede net cevap ve tatmin edici payoff. Yanıtı
   gereksiz yere saklama; dolgu, tekrar ve konu dışı cümle kullanma. Her cümle bir sonrakine merak taşısın.
-- Son cümlede izleyiciye konuya özel, kolay cevaplanır tek soru sor ve doğal, kısa bir
-  “Denede için abone ol” çağrısı ekle. Genel “beğen-abone ol” listesi yazma.
+- closing_question alanında konuya özel kolay cevaplanır kısa bir yorum sorusu yaz.
+- cta alanında tam olarak Denede kanalına abone ol yaz. closing_visual_query kapanışta
+  gösterilecek konuya özgü üç İngilizce kelime olsun ve diğer sorgulardan farklı olsun.
+- scenes text alanlarında kanal adı veya abonelik çağrısı yazma. Kapanış tek ayrı sahneye dönüşecek.
 - Emoji, sahne talimatı, efekt, kaynak, kaynakça, site adı, URL, markdown, hashtag ve madde işareti yok.
 - Sayıları konuşmada Türkçe sözcüklerle yaz; birim ve kısaltmaları da okunuşuyla ver.
 - text alanlarında noktalama işareti kullanma; yalnızca doğrudan seslendirilecek temiz Türkçe kelimeleri yaz.
@@ -166,12 +170,20 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
         if last_err:
             correction = (
                 f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Baştan, eksiksiz ve yalnızca geçerli JSON üret. "
-                "title boş olmasın ve en fazla 60 karakter olsun; 5-7 sahnenin text alanları toplamı 65-78 Türkçe kelime olsun; "
+                "title boş olmasın ve en fazla 60 karakter olsun; 5-6 anlatım sahnesi ve kapanış toplamı 65-78 Türkçe kelime olsun; "
                 "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 4 hashtag bulunsun. "
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
             data = chat_json(user_msg + correction, system=_system_prompt(), max_tokens=2600, schema=PACKAGE_SCHEMA)
+            if not isinstance(data.get('scenes'), list) or not 5 <= len(data['scenes']) <= 6:
+                raise ValueError('Kapanış dışında 5-6 anlatım sahnesi gerekli')
+            if any('abone' in str(scene.get('text', '')).casefold() or 'denede' in str(scene.get('text', '')).casefold() for scene in data['scenes']):
+                raise ValueError('Anlatım sahnelerine CTA koyma Sadece cta alanını kullan')
+            if not str(data.get('closing_question', '')).strip():
+                raise ValueError('Kapanış yorum sorusu boş')
+            data['scenes'].append({'text': data['closing_question'] + ' ' + data['cta'],
+                                   'visual_query': data['closing_visual_query']})
             data = _validate_package(data)
             if data["topic"].casefold() in {str(topic).casefold() for topic in banned}:
                 raise ValueError("Konu tekrar ediyor; başka olgu seç")

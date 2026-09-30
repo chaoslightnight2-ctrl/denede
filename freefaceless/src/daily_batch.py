@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -106,6 +107,7 @@ def main() -> None:
             )
             seen_topics.add(res["topic"])
             result_row = {
+                "run_id": os.getenv('GITHUB_RUN_ID'),
                 "slot": slot,
                 "niche": niche,
                 "ok": args.no_upload or res.get("upload_status") in ("api_insert_confirmed", "youtube_processed"),
@@ -123,6 +125,9 @@ def main() -> None:
         else:
             manifest.append(result_row)
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+        if not args.no_upload:
+            from .upload_checkpoint import checkpoint
+            checkpoint([MANIFEST, ROOT / 'state.json'])
 
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     ok = sum(1 for row in manifest if row.get("ok"))

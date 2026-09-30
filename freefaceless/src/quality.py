@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 FORBIDDEN_SPOKEN = (
-    "kaynak", "kaynakça", "haber sitesi", "sitesine göre", "google news",
+    "kaynak:", "kaynakça", "kaynaklar:", "haber sitesi", "sitesine göre", "google news",
     "http://", "https://", "www.", ".com", "başlık:", "metin:",
     "senaryo:", "açıklama:", "hashtag:", "```",
 )

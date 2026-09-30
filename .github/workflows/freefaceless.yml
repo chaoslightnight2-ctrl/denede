@@ -58,6 +58,7 @@ jobs:
         continue-on-error: true
         env:
           GROQ_MODEL: openai/gpt-oss-120b
+          PUBLISH_UPLOAD_CHECKPOINTS: "1"
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}

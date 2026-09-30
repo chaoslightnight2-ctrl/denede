@@ -1,4 +1,5 @@
 import os
+import copy
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -12,6 +13,27 @@ from src.assemble import _scene_durations
 
 
 class DenedeQualityTests(unittest.TestCase):
+    def test_generated_cta_stays_in_one_separate_closing_scene(self):
+        from src import script
+        texts = ['Deniz yüzeyinde dalgalar ilerlerken su bütünüyle kıyıya doğru taşınmaz',
+                 'Rüzgar suya enerji aktarır ve yüzeyde görülen dalgaları oluşturur',
+                 'Su parçacıkları dalga geçerken çoğunlukla ileri geri döngüsel hareket eder',
+                 'Sığ kıyılara yaklaşan dalgaların biçimi ve hareketi derinlikle birlikte değişir',
+                 'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
+        queries = ['ocean surface waves', 'wind sea waves', 'water circular motion', 'shallow coastal waves', 'beach breaking waves']
+        package = {'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
+                   'description': 'Deniz dalgalarının hareketi #shorts #Dalga #Deniz #Rüzgar',
+                   'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
+                   'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts, queries)],
+                   'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
+                   'closing_visual_query': 'shore ocean foam', 'cta': 'Denede kanalına abone ol'}
+        with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), {'valid': True, 'reason': 'correct'}]), \
+             patch.object(script.state, 'load', return_value={'used_topics': []}):
+            result = script.generate()
+        self.assertEqual(len(result['scenes']), 6)
+        self.assertEqual(result['spoken_text'].count('abone ol'), 1)
+        self.assertTrue(result['scenes'][-1]['text'].endswith('Denede kanalına abone ol'))
+
     def test_rejected_youtube_video_is_never_reported_as_success(self):
         from src import pipeline
         data = {'topic': 'deney', 'title': 'deney', 'description': 'deney', 'tags': [], 'scenes': [], 'spoken_text': 'temiz metin'}

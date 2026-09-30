@@ -1,5 +1,6 @@
 import argparse
 import re
+import os
 from datetime import datetime
 from . import script, voice, captions, visuals, assemble, upload, state
 from .quality import validate_rendered_video
@@ -88,9 +89,13 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
         "path": str(final),
         "video_id": video_id,
         "publish_at": publish_at,
+        "upload_status": "api_insert_confirmed",
+        "run_id": os.getenv('GITHUB_RUN_ID'),
     })
     receipt = {}
     if upload_to_youtube:
+        from .upload_checkpoint import checkpoint
+        checkpoint(['state.json'])
         from .youtube_receipt import confirm
         # ID already persisted above; a failed readback must not repeat insert.
         try:
