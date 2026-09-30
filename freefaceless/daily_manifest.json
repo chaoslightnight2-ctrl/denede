@@ -2,61 +2,25 @@
   {
     "slot": "0400",
     "niche": "Yemeklerin ve nesnelerin şaşırtıcı kökenleri",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-30T04:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-30T01:00:00Z",
-    "video_id": "xD-XfMxqFMs",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_000747_tavuk-orbas-n-n-k-keni/final.mp4",
-    "topic": "tavuk çorbasının kökeni"
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: abonelik çağrısı tam bir kez geçmeli"
   },
   {
     "slot": "0800",
     "niche": "Mitoloji ve efsanelerin gerçek kökenleri",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-30T08:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-30T05:00:00Z",
-    "video_id": "9GIIEgFAg5c",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001010_kay-p-amanlar-n-g-lgesi/final.mp4",
-    "topic": "Kayıp Şamanların Gölgesi"
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: konuşma metninde kanal adı yok"
   },
   {
     "slot": "1200",
     "niche": "Matematik ve mantık paradoksları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-30T12:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-30T09:00:00Z",
-    "video_id": "WnikBM7mznM",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001151_zeno-paradoksu/final.mp4",
-    "topic": "Zeno paradoksu"
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 1681s cooldown; model=openai/gpt-oss-120b"
   },
   {
     "slot": "1600",
     "niche": "Denizler, hava olayları ve Dünya",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-30T16:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-30T13:00:00Z",
-    "video_id": "bgQMXtXgg_8",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001323_denizalt-ak-nt-s/final.mp4",
-    "topic": "Denizaltı akıntısı"
-  },
-  {
-    "slot": "2000",
-    "niche": "Günlük eşyalar nasıl çalışır",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-30T20:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-30T17:00:00Z",
-    "video_id": "beECWZnh5vE",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001455_buzdolab-so-utma-prensibi/final.mp4",
-    "topic": "buzdolabı soğutma prensibi"
-  },
-  {
-    "slot": "0000",
-    "niche": "Doğrulanabilir sıra dışı kurallar ve tarihî olaylar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-01T00:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-30T21:00:00Z",
-    "video_id": "zHYkHyqDH-w",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001653_roma-d-nemi-su-m-hendisli-i-ve-ta-dengesi/final.mp4",
-    "topic": "Roma dönemi su mühendisliği ve taş dengesi"
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 905s cooldown; model=openai/gpt-oss-120b"
   }
 ]
