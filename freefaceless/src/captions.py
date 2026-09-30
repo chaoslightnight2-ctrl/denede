@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 from .config import CONFIG
 from .quality import clean_spoken
+from .speech_timing import align_caption_starts
 
 
 def transcribe_words(audio_path: Path) -> list[dict]:
@@ -38,7 +39,7 @@ def turkish_upper(text):
     return text.replace('i', 'İ').replace('ı', 'I').upper()
 
 
-def write_ass(words: list[dict], out_path: Path, video_w: int, video_h: int) -> Path:
+def write_ass(words: list[dict], out_path: Path, video_w: int, video_h: int, audio_path: Path | None = None) -> Path:
     c = CONFIG["captions"]
     chunk_size = c["words_per_caption"]
     margin_v = int(video_h * (1 - c["position_y"]))
@@ -62,12 +63,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     if len(chunks) >= 2 and len(chunks[-1]) == 1 and len(chunks[-2]) > 2:
         chunks[-1].insert(0, chunks[-2].pop())
 
-    lines = []
-    for chunk in chunks:
-        start = _fmt_ts(chunk[0]["start"])
-        end = _fmt_ts(chunk[-1]["end"])
-        text = turkish_upper(" ".join(clean_spoken(w["word"]) for w in chunk))
-        lines.append(f"Dialogue: 0,{start},{end},Default,,0,0,0,,{text}")
+    rows = [(chunk[0]["start"], chunk[-1]["end"] - chunk[0]["start"],
+             turkish_upper(" ".join(clean_spoken(w["word"]) for w in chunk))) for chunk in chunks]
+    if audio_path is not None:
+        rows = align_caption_starts(audio_path, rows)
+    lines = [f"Dialogue: 0,{_fmt_ts(start)},{_fmt_ts(start + duration)},Default,,0,0,0,,{text}"
+             for start, duration, text in rows]
 
     out_path.write_text(header + "\n".join(lines), encoding="utf-8")
     return out_path

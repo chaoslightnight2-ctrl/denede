@@ -52,7 +52,7 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
     print("[5/7] Altyazı dosyası")
     from .config import CONFIG as CFG
     ass_path = captions.write_ass(words, work / "captions.ass",
-                                  CFG["video"]["width"], CFG["video"]["height"])
+                                  CFG["video"]["width"], CFG["video"]["height"], audio_path=voice_mp3)
 
     print("[6/7] ffmpeg montaj")
     final = assemble.build(
