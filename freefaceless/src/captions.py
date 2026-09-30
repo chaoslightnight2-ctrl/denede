@@ -48,7 +48,7 @@ def write_ass(words: list[dict], out_path: Path, video_w: int, video_h: int, aud
 ScriptType: v4.00+
 PlayResX: {video_w}
 PlayResY: {video_h}
-WrapStyle: 2
+WrapStyle: 0
 ScaledBorderAndShadow: yes
 
 [V4+ Styles]
