@@ -10,7 +10,7 @@ permissions:
   contents: read
 concurrency:
   group: one-video-quality-audit
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   audit:
     runs-on: ubuntu-22.04

@@ -197,8 +197,11 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. "
                 "Emin olmadığın olguyu ve uydurma gizem veya tarihsel olayı reddet. "
                 "Başlıkta verilen vaat sahnelerde açıkça yanıtlanmış olmalı. "
+                "Konuşma yalnızca scenes içindeki text alanıdır visual_query İngilizce arama metnidir. "
+                "description metadata alanıdır burada istenen hashtagler hata değildir. "
                 "Konuşmada kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa reddet. "
-                "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(data, ensure_ascii=False),
+                "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
+                    {key: data[key] for key in ('topic', 'title', 'description', 'scenes')}, ensure_ascii=False),
                 temperature=0, max_tokens=1024, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
@@ -207,3 +210,4 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
         except (ValueError, KeyError, TypeError) as exc:
             last_err = exc
     raise RuntimeError(f"5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: {last_err}")
+
