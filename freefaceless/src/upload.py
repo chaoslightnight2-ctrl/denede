@@ -33,7 +33,6 @@ def _service_from_refresh_token():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=client_config["client_id"],
         client_secret=client_config["client_secret"],
-        scopes=SCOPES,
     )
     creds.refresh(Request())
     return gbuild("youtube", "v3", credentials=creds)

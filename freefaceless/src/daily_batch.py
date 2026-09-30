@@ -108,7 +108,7 @@ def main() -> None:
             result_row = {
                 "slot": slot,
                 "niche": niche,
-                "ok": args.no_upload or res.get("upload_status") == "youtube_processed",
+                "ok": args.no_upload or res.get("upload_status") in ("api_insert_confirmed", "youtube_processed"),
                 "scheduled_publish_at_turkey": at.isoformat(),
                 "scheduled_publish_at_utc": None if args.no_upload else utc,
                 **res,
