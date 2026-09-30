@@ -1,62 +1,62 @@
 [
   {
-    "slot": "2000",
-    "niche": "Hayvanlar ve doğa",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-29T20:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-29T17:00:00Z",
-    "video_id": "EfYUcRj6t6c",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150052_mavi-balina-kalbi/final.mp4",
-    "topic": "Mavi Balina Kalbi"
-  },
-  {
-    "slot": "0000",
-    "niche": "Teknoloji, yapay zekâ ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-09-30T00:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-09-29T21:00:00Z",
-    "video_id": "nZdrijRWkVk",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151514_gpt-4-g-rsel-yetene-i/final.mp4",
-    "topic": "GPT-4 görsel yeteneği"
-  },
-  {
     "slot": "0400",
-    "niche": "Tarih ve arkeoloji",
+    "niche": "Yemeklerin ve nesnelerin şaşırtıcı kökenleri",
     "ok": true,
     "scheduled_publish_at_turkey": "2026-09-30T04:00:00+03:00",
     "scheduled_publish_at_utc": "2026-09-30T01:00:00Z",
-    "video_id": "G3L8TvOxIxk",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151704_g-beklitepe-s-tunu-takvimi/final.mp4",
-    "topic": "Göbeklitepe Sütunu Takvimi"
+    "video_id": "xD-XfMxqFMs",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_000747_tavuk-orbas-n-n-k-keni/final.mp4",
+    "topic": "tavuk çorbasının kökeni"
   },
   {
     "slot": "0800",
-    "niche": "Coğrafya ve dünyadaki sıra dışı yerler",
+    "niche": "Mitoloji ve efsanelerin gerçek kökenleri",
     "ok": true,
     "scheduled_publish_at_turkey": "2026-09-30T08:00:00+03:00",
     "scheduled_publish_at_utc": "2026-09-30T05:00:00Z",
-    "video_id": "4ZulUBjuI1M",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150341_baykal-g-l-n-n-dev-ukuru/final.mp4",
-    "topic": "Baykal Gölü’nün dev çukuru"
+    "video_id": "9GIIEgFAg5c",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001010_kay-p-amanlar-n-g-lgesi/final.mp4",
+    "topic": "Kayıp Şamanların Gölgesi"
   },
   {
     "slot": "1200",
-    "niche": "Diller, kelimelerin kökeni ve iletişim",
+    "niche": "Matematik ve mantık paradoksları",
     "ok": true,
     "scheduled_publish_at_turkey": "2026-09-30T12:00:00+03:00",
     "scheduled_publish_at_utc": "2026-09-30T09:00:00Z",
-    "video_id": "4Q2enxs1zSo",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150526_kelimenin-k-keni-ve-evrimi/final.mp4",
-    "topic": "kelimenin kökeni ve evrimi"
+    "video_id": "WnikBM7mznM",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001151_zeno-paradoksu/final.mp4",
+    "topic": "Zeno paradoksu"
   },
   {
     "slot": "1600",
-    "niche": "Kültürler, gelenekler ve gündelik yaşam",
+    "niche": "Denizler, hava olayları ve Dünya",
     "ok": true,
     "scheduled_publish_at_turkey": "2026-09-30T16:00:00+03:00",
     "scheduled_publish_at_utc": "2026-09-30T13:00:00Z",
-    "video_id": "OidPmxH-vX0",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_150708_k-pr-alt-ay-bah-esi/final.mp4",
-    "topic": "köprü altı çay bahçesi"
+    "video_id": "bgQMXtXgg_8",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001323_denizalt-ak-nt-s/final.mp4",
+    "topic": "Denizaltı akıntısı"
+  },
+  {
+    "slot": "2000",
+    "niche": "Günlük eşyalar nasıl çalışır",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-09-30T20:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-30T17:00:00Z",
+    "video_id": "beECWZnh5vE",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001455_buzdolab-so-utma-prensibi/final.mp4",
+    "topic": "buzdolabı soğutma prensibi"
+  },
+  {
+    "slot": "0000",
+    "niche": "Doğrulanabilir sıra dışı kurallar ve tarihî olaylar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-01T00:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-09-30T21:00:00Z",
+    "video_id": "zHYkHyqDH-w",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001653_roma-d-nemi-su-m-hendisli-i-ve-ta-dengesi/final.mp4",
+    "topic": "Roma dönemi su mühendisliği ve taş dengesi"
   }
 ]

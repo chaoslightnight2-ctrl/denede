@@ -5,7 +5,13 @@
     "kelimenin kökeni ve evrimi",
     "köprü altı çay bahçesi",
     "GPT-4 görsel yeteneği",
-    "Göbeklitepe Sütunu Takvimi"
+    "Göbeklitepe Sütunu Takvimi",
+    "tavuk çorbasının kökeni",
+    "Kayıp Şamanların Gölgesi",
+    "Zeno paradoksu",
+    "Denizaltı akıntısı",
+    "buzdolabı soğutma prensibi",
+    "Roma dönemi su mühendisliği ve taş dengesi"
   ],
   "published": [
     {
@@ -55,6 +61,54 @@
       "path": "/home/runner/work/denede/denede/freefaceless/output/20260929_151704_g-beklitepe-s-tunu-takvimi/final.mp4",
       "video_id": "G3L8TvOxIxk",
       "publish_at": "2026-09-30T01:00:00Z"
+    },
+    {
+      "ts": "20260930_000747",
+      "topic": "tavuk çorbasının kökeni",
+      "title": "Tavuk Çorbası Neden İlk Çağ’da Şifa Kaynağı Oldu?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_000747_tavuk-orbas-n-n-k-keni/final.mp4",
+      "video_id": "xD-XfMxqFMs",
+      "publish_at": "2026-09-30T01:00:00Z"
+    },
+    {
+      "ts": "20260930_001010",
+      "topic": "Kayıp Şamanların Gölgesi",
+      "title": "Kayıp Şamanların Gölgesi Çölde Ayakları Neden Alıyor",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001010_kay-p-amanlar-n-g-lgesi/final.mp4",
+      "video_id": "9GIIEgFAg5c",
+      "publish_at": "2026-09-30T05:00:00Z"
+    },
+    {
+      "ts": "20260930_001151",
+      "topic": "Zeno paradoksu",
+      "title": "Zeno’nun Achilles‑kaplumbağa paradoksu neden asla buluşmaz",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001151_zeno-paradoksu/final.mp4",
+      "video_id": "WnikBM7mznM",
+      "publish_at": "2026-09-30T09:00:00Z"
+    },
+    {
+      "ts": "20260930_001323",
+      "topic": "Denizaltı akıntısı",
+      "title": "Dünyanın En Hızlı Su Akışı 300 km/s Hıza Ulaşıyor",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001323_denizalt-ak-nt-s/final.mp4",
+      "video_id": "bgQMXtXgg_8",
+      "publish_at": "2026-09-30T13:00:00Z"
+    },
+    {
+      "ts": "20260930_001455",
+      "topic": "buzdolabı soğutma prensibi",
+      "title": "Buzdolabının Soğutma Sırrı Neden İçindeki Buz Erir",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001455_buzdolab-so-utma-prensibi/final.mp4",
+      "video_id": "beECWZnh5vE",
+      "publish_at": "2026-09-30T17:00:00Z"
+    },
+    {
+      "ts": "20260930_001653",
+      "topic": "Roma dönemi su mühendisliği ve taş dengesi",
+      "title": "30 kg Taşın Sıra Dışı Kullanımı ve Roma Mühendisliği Sırrı",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001653_roma-d-nemi-su-m-hendisli-i-ve-ta-dengesi/final.mp4",
+      "video_id": "zHYkHyqDH-w",
+      "publish_at": "2026-09-30T21:00:00Z"
     }
   ]
 }
