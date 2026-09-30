@@ -1,12 +1,19 @@
 import json
 import re
 import os
-from .groq_client import chat_json
+from .groq_client import chat_json, object_schema
 from .config import GROQ_API_KEY, GROQ_BASE_URL, CONFIG
 from . import state
 from .quality import validate_and_prepare
 
 os.environ.setdefault("GROQ_MODEL", CONFIG["script"]["model"])
+
+PACKAGE_SCHEMA = object_schema({
+    **{key: {"type": "string"} for key in ("topic", "title", "description")},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "scenes": {"type": "array", "items": object_schema({
+        "text": {"type": "string"}, "visual_query": {"type": "string"}})}})
+REVIEW_SCHEMA = object_schema({"valid": {"type": "boolean"}, "reason": {"type": "string"}})
 
 # Denede adina uygun, geniş merak alanları. Günlük akış bunları dönüşümlü kullanır.
 TURKISH_NICHES = [
@@ -107,36 +114,6 @@ def _extract_json(text: str) -> dict:
     raise ValueError("Yanıt JSON içermiyor")
 
 
-def _normalize_description_hashtags(description: str, topic: str) -> str:
-    """Keep Groq's copy, but enforce the upload contract with topic-relevant tags."""
-    hashtag_pattern = r"(?<!\w)#[\wçğıöşüÇĞİÖŞÜ]+"
-    existing = re.findall(hashtag_pattern, description, flags=re.UNICODE)
-    body = re.sub(hashtag_pattern, " ", description, flags=re.UNICODE)
-    body = re.sub(r"\s+", " ", body).strip()
-
-    chosen: list[str] = []
-    seen: set[str] = set()
-    for tag in existing:
-        if tag.lower() == "#shorts":
-            continue
-        key = tag.casefold()
-        if key not in seen and len(chosen) < 3:
-            chosen.append(tag)
-            seen.add(key)
-
-    topic_words = re.findall(r"[\wçğıöşüÇĞİÖŞÜ]+", topic, flags=re.UNICODE)
-    defaults = [f"#{topic_words[0].capitalize()}" if topic_words else "#Bilgi", "#Merak", "#Bilgi", "#Denede"]
-    for tag in defaults:
-        if len(chosen) == 3:
-            break
-        if tag.casefold() not in seen:
-            chosen.append(tag)
-            seen.add(tag.casefold())
-
-    suffix = " ".join(["#shorts", *chosen])
-    return f"{body}\n\n{suffix}" if body else suffix
-
-
 def _validate_package(data: dict) -> dict:
     scenes = data.get("scenes")
     if not isinstance(scenes, list) or not 5 <= len(scenes) <= 7:
@@ -194,7 +171,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
-            data = chat_json(user_msg + correction, system=_system_prompt(), max_tokens=2600)
+            data = chat_json(user_msg + correction, system=_system_prompt(), max_tokens=2600, schema=PACKAGE_SCHEMA)
             data = _validate_package(data)
             if data["topic"].casefold() in {str(topic).casefold() for topic in banned}:
                 raise ValueError("Konu tekrar ediyor; başka olgu seç")
@@ -205,7 +182,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Emin olmadığın olguyu ve uydurma gizem veya tarihsel olayı reddet. "
                 "Başlıkta verilen vaat sahnelerde açıkça yanıtlanmış olmalı. "
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(data, ensure_ascii=False),
-                temperature=0, max_tokens=1024)
+                temperature=0, max_tokens=1024, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
             data["editorial_review"] = verdict

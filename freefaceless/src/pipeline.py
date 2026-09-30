@@ -96,7 +96,8 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
         try:
             receipt = confirm(upload.get_service(), video_id)
         except Exception as exc:
-            receipt = {"upload_status": "api_insert_confirmed", "verification_error": str(exc)}
+            receipt = {"upload_status": "youtube_rejected" if isinstance(exc, ValueError) else "api_insert_confirmed",
+                       "verification_error": str(exc)}
     if upload_to_youtube:
         current = state.load()
         for row in current["published"]:
