@@ -34,6 +34,10 @@ def _fmt_ts(t: float) -> str:
     return f"{h:01d}:{m:02d}:{s:05.2f}"
 
 
+def turkish_upper(text):
+    return text.replace('i', 'İ').replace('ı', 'I').upper()
+
+
 def write_ass(words: list[dict], out_path: Path, video_w: int, video_h: int) -> Path:
     c = CONFIG["captions"]
     chunk_size = c["words_per_caption"]
@@ -62,7 +66,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for chunk in chunks:
         start = _fmt_ts(chunk[0]["start"])
         end = _fmt_ts(chunk[-1]["end"])
-        text = " ".join(clean_spoken(w["word"]) for w in chunk).upper()
+        text = turkish_upper(" ".join(clean_spoken(w["word"]) for w in chunk))
         lines.append(f"Dialogue: 0,{start},{end},Default,,0,0,0,,{text}")
 
     out_path.write_text(header + "\n".join(lines), encoding="utf-8")

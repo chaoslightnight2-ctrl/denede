@@ -13,6 +13,9 @@ from src.assemble import _scene_durations
 
 
 class DenedeQualityTests(unittest.TestCase):
+    def test_turkish_caption_casing_preserves_dotted_and_dotless_i(self):
+        self.assertEqual(captions.turkish_upper('İzmir ışığı kim bilir'), 'İZMİR IŞIĞI KİM BİLİR')
+
     def test_generated_cta_stays_in_one_separate_closing_scene(self):
         from src import script
         texts = ['Deniz yüzeyinde dalgalar ilerlerken su bütünüyle kıyıya doğru taşınmaz',
