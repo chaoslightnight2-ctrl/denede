@@ -1,0 +1,26 @@
+{
+  "source_run": "36708904477",
+  "verified_at": "2026-09-30T11:37:18.008763+00:00",
+  "videos": [],
+  "errors": [
+    {
+      "index": 1,
+      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: abonelik çağrısı tam bir kez geçmeli"
+    },
+    {
+      "index": 2,
+      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: konuşma metninde kanal adı yok"
+    },
+    {
+      "index": 3,
+      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 1681s cooldown; model=openai/gpt-oss-120b"
+    },
+    {
+      "index": 4,
+      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 905s cooldown; model=openai/gpt-oss-120b"
+    }
+  ],
+  "accepted_count": 0,
+  "processed_count": 0,
+  "complete": false
+}
