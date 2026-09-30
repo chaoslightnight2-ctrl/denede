@@ -1,0 +1,27 @@
+{
+  "http_status": 200,
+  "limits": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-remaining-tokens": "7832",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-reset-tokens": "1.26s"
+  },
+  "usage": {
+    "queue_time": 0.124253078,
+    "prompt_tokens": 127,
+    "prompt_time": 0.029318558,
+    "completion_tokens": 41,
+    "completion_time": 0.085893457,
+    "total_tokens": 168,
+    "total_time": 0.115212015,
+    "completion_tokens_details": {
+      "reasoning_tokens": 10
+    }
+  },
+  "result": {
+    "ready": true,
+    "visual_query": "moon surface space"
+  }
+}
