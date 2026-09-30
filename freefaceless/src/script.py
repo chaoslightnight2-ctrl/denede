@@ -2,6 +2,7 @@ import json
 import re
 import os
 from .groq_client import chat_json, object_schema
+from .prompt_contract import CLEAN_OUTPUT_RULES
 from .config import GROQ_API_KEY, GROQ_BASE_URL, CONFIG
 from . import state
 from .quality import validate_and_prepare
@@ -93,7 +94,10 @@ SADECE geçerli JSON döndür; başına veya sonuna başka metin ekleme. Şema:
   "topic": "kısa, tekrar denetimine uygun konu adı",
   "title": "en fazla 60 karakter Türkçe başlık",
   "description": "konuya özel 1-2 cümle ve tam 4 hashtag",
-  "tags": ["5 küçük harfli, konuya özel etiket"],
+  "tags": ["ana konu", "alt konu", "nesne", "alan", "ilgili olgu"],
+  "closing_question": "noktalamasız kısa Türkçe yorum sorusu",
+  "closing_visual_query": "three english words",
+  "cta": "Denede kanalına abone ol",
   "scenes": [
     {{"text": "seslendirilecek Türkçe cümle", "visual_query": "2-4 English visual words"}}
   ]
@@ -101,7 +105,7 @@ SADECE geçerli JSON döndür; başına veya sonuna başka metin ekleme. Şema:
 
 
 def _system_prompt():
-    return SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"])
+    return CLEAN_OUTPUT_RULES + "\n" + SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"])
 
 
 def _extract_json(text: str) -> dict:
@@ -193,6 +197,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. "
                 "Emin olmadığın olguyu ve uydurma gizem veya tarihsel olayı reddet. "
                 "Başlıkta verilen vaat sahnelerde açıkça yanıtlanmış olmalı. "
+                "Konuşmada kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa reddet. "
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(data, ensure_ascii=False),
                 temperature=0, max_tokens=1024, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
