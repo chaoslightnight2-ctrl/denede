@@ -22,21 +22,24 @@ def probe_duration(path: Path) -> float:
     return float(json.loads(r.stdout)["format"]["duration"])
 
 
-def _scene_durations(words: list[dict], scenes: list[dict]) -> list[float]:
-    spoken = [s["text"].lower() for s in scenes]
-    flat = [w["word"].strip().lower().strip(".,!?;:\"'") for w in words]
-    durations = []
+def _scene_durations(words: list[dict], scenes: list[dict], audio_duration: float | None = None) -> list[float]:
+    if not words or not scenes:
+        raise ValueError("Sahne veya gerçek kelime zamanı yok")
+    from .quality import clean_spoken
+    expected = clean_spoken(" ".join(scene["text"] for scene in scenes)).casefold().split()
+    actual = clean_spoken(" ".join(word["word"] for word in words)).casefold().split()
+    if actual != expected:
+        raise ValueError("Sahne metni gerçek TTS kelimeleriyle uyuşmuyor")
+    starts = [0.0]
     cursor = 0
-    for i, sentence in enumerate(spoken):
-        scene_words = [w.strip(".,!?;:\"'") for w in sentence.split()]
-        start_idx = cursor
-        end_idx = min(cursor + len(scene_words), len(words))
-        if i == len(spoken) - 1:
-            end_idx = len(words)
-        start_t = words[start_idx]["start"] if start_idx < len(words) else words[-1]["end"]
-        end_t = words[end_idx - 1]["end"] if end_idx > 0 else start_t
-        durations.append(max(0.5, end_t - start_t))
-        cursor = end_idx
+    for scene in scenes[:-1]:
+        cursor += len(clean_spoken(scene["text"]).split())
+        starts.append(float(words[cursor]["start"]))
+    end = audio_duration if audio_duration is not None else float(words[-1]["end"])
+    boundaries = starts + [end]
+    durations = [stop - start for start, stop in zip(boundaries, boundaries[1:])]
+    if any(duration <= 0 for duration in durations):
+        raise ValueError("Sahne süreleri geçersiz")
     return durations
 
 
@@ -75,7 +78,8 @@ def build(
     w, h, fps = v["width"], v["height"], v["fps"]
     work_dir.mkdir(parents=True, exist_ok=True)
 
-    durations = _scene_durations(words, scenes)
+    audio_duration = probe_duration(voice_audio)
+    durations = _scene_durations(words, scenes, audio_duration)
     prepped = []
     for i, (src, dur) in enumerate(zip(scene_videos, durations)):
         out = work_dir / f"prep_{i:02d}.mp4"
@@ -96,7 +100,7 @@ def build(
 
     # Uyarlama: assets/fonts yoksa fontsdir atlanır (orijinalde klasör varsayılırdı).
     ass_arg = str(captions_ass).replace("\\", "/").replace(":", "\\:")
-    vf_sub = f"subtitles='{ass_arg}'"
+    vf_sub = f"tpad=stop_mode=clone:stop_duration=1,subtitles='{ass_arg}'"
     fonts_dir = ROOT / "assets" / "fonts"
     if fonts_dir.exists():
         fonts_arg = str(fonts_dir).replace("\\", "/").replace(":", "\\:")
@@ -106,7 +110,9 @@ def build(
         "-vf", vf_sub,
         "-c:v", "libx264", "-preset", "medium", "-crf", "20",
         "-c:a", "aac", "-b:a", "192k", "-pix_fmt", "yuv420p",
-        "-shortest", "-movflags", "+faststart",
+        "-t", f"{audio_duration:.3f}", "-movflags", "+faststart",
         str(out_path),
     ])
+    if probe_duration(out_path) < audio_duration - 0.2:
+        raise ValueError("Final video sesin sonunu kesiyor; yükleme engellendi")
     return out_path
