@@ -199,6 +199,6 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
             data["editorial_review"] = verdict
             return data
-        except Exception as exc:
+        except (ValueError, KeyError, TypeError) as exc:
             last_err = exc
     raise RuntimeError(f"5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: {last_err}")
