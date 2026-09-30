@@ -20,7 +20,7 @@ def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object
     """Süre hedefini tutturan senaryo+seslendirme seçimi (en fazla 3 deneme)."""
     best = None
     for attempt in range(1, MAX_SCRIPT_TRIES + 1):
-        data = script.generate(niche=niche, avoid_extra=avoid_extra if attempt > 1 else "")
+        data = script.generate(niche=niche, avoid_extra=avoid_extra)
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
         work.mkdir(parents=True, exist_ok=True)
@@ -33,11 +33,7 @@ def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object
             best = cand
         if MIN_VOICE_SECONDS <= duration <= MAX_VOICE_SECONDS:
             return data, work, voice_mp3, words, duration
-    _, data, work, voice_mp3, words, duration = best
-    if not words:
-        raise RuntimeError("Seslendirmeden kelime zaman damgası çıkarılamadı.")
-    print(f"      en yakın aday seçildi: sure={duration:.1f}sn", flush=True)
-    return data, work, voice_mp3, words, duration
+    raise RuntimeError(f"Üç aynı Groq denemesi ses süresini 28-38 saniyeye sığdıramadı; en yakın aday kullanılmadı")
 
 
 def run_once(niche: str | None = None, publish_at: str | None = None,
@@ -82,8 +78,10 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
         )
         print(f"      video_id: {video_id} -> https://youtube.com/shorts/{video_id}")
 
-    state.add_topic(data["topic"])
-    state.add_published({
+    if upload_to_youtube:
+        state.add_topic(data["topic"])
+    if upload_to_youtube:
+        state.add_published({
         "ts": stamp,
         "topic": data["topic"],
         "title": data["title"],
@@ -91,7 +89,21 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
         "video_id": video_id,
         "publish_at": publish_at,
     })
-    return {"video_id": video_id, "path": str(final), "topic": data["topic"]}
+    receipt = {}
+    if upload_to_youtube:
+        from .youtube_receipt import confirm
+        # ID already persisted above; a failed readback must not repeat insert.
+        try:
+            receipt = confirm(upload.get_service(), video_id)
+        except Exception as exc:
+            receipt = {"upload_status": "api_insert_confirmed", "verification_error": str(exc)}
+    if upload_to_youtube:
+        current = state.load()
+        for row in current["published"]:
+            if row.get("video_id") == video_id:
+                row.update(receipt)
+        state.save(current)
+    return {"video_id": video_id, "path": str(final), "topic": data["topic"], "title": data["title"], "narration": data["spoken_text"], **receipt}
 
 
 def main():

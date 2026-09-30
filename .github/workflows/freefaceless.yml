@@ -4,6 +4,9 @@ name: FreeFaceless TR (günlük 6 video)
 # YouTube Data API'nin güncel videos.insert sınırı 100 yükleme/gün; dört kanalın 24 yüklemesi bu sınırın altında;
 # eski botun zamanlayıcısı bu yüzden manuele alındı (shorts_generator.yml).
 on:
+  push:
+    branches: [main]
+    paths: [".github/maintenance/run-*.json"]
   schedule:
     - cron: '0 21 * * *'
   workflow_dispatch:
@@ -16,6 +19,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: denede-shorts
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -43,10 +50,14 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Quality regression checks
+        run: python -m unittest test_quality_regressions.py
+
       - name: 6 Türkçe Shorts üret ve zamanlı yayınla
         id: run_bot
         continue-on-error: true
         env:
+          GROQ_MODEL: openai/gpt-oss-120b
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
@@ -55,7 +66,7 @@ jobs:
           echo "GROQ_API_KEY=${GROQ_API_KEY}" > .env
           echo "PEXELS_API_KEY=${PEXELS_API_KEY}" >> .env
           EXTRA=""
-          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
           python -m src.daily_batch $EXTRA
 
       - name: Konu tekrarını önlemek için state'i commit'le
@@ -75,6 +86,8 @@ jobs:
           name: freefaceless-output
           path: |
             freefaceless/output/**/final.mp4
+            freefaceless/output/**/voice.words.json
+            freefaceless/output/**/captions.ass
             freefaceless/daily_manifest.json
             freefaceless/logs/*.log
           if-no-files-found: ignore

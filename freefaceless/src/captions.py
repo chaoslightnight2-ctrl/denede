@@ -1,29 +1,20 @@
 from pathlib import Path
-from faster_whisper import WhisperModel
+import json
 from .config import CONFIG
 from .quality import clean_spoken
 
-_model = None
-
-
-def _get_model() -> WhisperModel:
-    global _model
-    if _model is None:
-        size = CONFIG["captions"].get("whisper_model", "base")
-        _model = WhisperModel(size, device="cpu", compute_type="int8")
-    return _model
-
 
 def transcribe_words(audio_path: Path) -> list[dict]:
-    model = _get_model()
-    # faster-whisper dili otomatik algılar; Türkçe seste Türkçe zaman damgası üretir.
-    segments, _ = model.transcribe(str(audio_path), language="tr", word_timestamps=True)
-    words = []
-    for seg in segments:
-        for w in (seg.words or []):
-            clean = clean_spoken(w.word)
-            if clean:
-                words.append({"word": clean, "start": float(w.start), "end": float(w.end)})
+    sidecar = audio_path.with_suffix(".words.json")
+    if not sidecar.exists():
+        raise ValueError("TTS kelime zamanları bulunamadı; tahmini/Whisper altyazı yok")
+    words = json.loads(sidecar.read_text(encoding="utf-8"))
+    if not words:
+        raise ValueError("TTS kelime zamanları boş")
+    for index, word in enumerate(words):
+        word["word"] = clean_spoken(word["word"])
+        if word["end"] <= word["start"] or (index and word["start"] < words[index - 1]["end"] - .05):
+            raise ValueError("TTS kelime zamanları çakışıyor")
     canonical = []
     index = 0
     while index < len(words):

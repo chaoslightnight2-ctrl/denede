@@ -1,11 +1,12 @@
 import json
 import re
-from openai import OpenAI
+import os
+from .groq_client import chat_json
 from .config import GROQ_API_KEY, GROQ_BASE_URL, CONFIG
 from . import state
 from .quality import validate_and_prepare
 
-client = OpenAI(api_key=GROQ_API_KEY, base_url=GROQ_BASE_URL)
+os.environ.setdefault("GROQ_MODEL", CONFIG["script"]["model"])
 
 # Denede adina uygun, geniş merak alanları. Günlük akış bunları dönüşümlü kullanır.
 TURKISH_NICHES = [
@@ -53,9 +54,10 @@ KONUŞMA METNİ:
 - Son cümlede izleyiciye konuya özel, kolay cevaplanır tek soru sor ve doğal, kısa bir
   “Denede için abone ol” çağrısı ekle. Genel “beğen-abone ol” listesi yazma.
 - Emoji, sahne talimatı, efekt, kaynak, kaynakça, site adı, URL, markdown, hashtag ve madde işareti yok.
+- Sayıları konuşmada Türkçe sözcüklerle yaz; birim ve kısaltmaları da okunuşuyla ver.
 - text alanlarında noktalama işareti kullanma; yalnızca doğrudan seslendirilecek temiz Türkçe kelimeleri yaz.
 - Kanal adı yalnızca son sahnedeki tek CTA içinde geçsin; CTA veya başka cümleyi tekrarlama.
-- Her sahnenin visual_query alanı Pexels'te aranabilir 2-4 İngilizce görsel sözcük olsun.
+- Her sahnenin visual_query alanı Pexels'te aranabilir 2-4 küçük harfli ASCII İngilizce görsel sözcük; Türkçe karakter yok olsun.
   Soyut kavram yerine konuya özgü görülebilir kişi, yer, nesne veya eylem yaz. Aynı sorguyu tekrarlama.
   Genel "ancient history", "abstract background" veya alakasız ülke/tapınak görüntüsü isteme.
 
@@ -148,10 +150,11 @@ def _validate_package(data: dict) -> dict:
     if not isinstance(tags, list) or len(tags) != 5 or any(not isinstance(t, str) or not t.strip() or "#" in t for t in tags):
         raise ValueError("Tam 5 adet # işaretsiz etiket gerekli")
     description = str(data.get("description", "")).strip()
-    description = _normalize_description_hashtags(description, str(data.get("topic") or title))
     hashtags = re.findall(r"(?<!\w)#[\wçğıöşüÇĞİÖŞÜ]+", description, flags=re.UNICODE)
     if len(hashtags) != 4 or "#shorts" not in {h.lower() for h in hashtags}:
         raise ValueError("Açıklamada #shorts dahil tam 4 hashtag olmalı")
+    if len({h.casefold() for h in hashtags}) != 4:
+        raise ValueError("Hashtagler tekrar etmemeli; aynı Groq modeli düzeltmeli")
     data["title"] = title
     data["description"] = description
     data["tags"] = [t.strip().lower() for t in tags]
@@ -191,18 +194,22 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
-            resp = client.chat.completions.create(
-                model=CONFIG["script"]["model"],
-                max_tokens=8000,
-                reasoning_effort="low",
-                messages=[
-                    {"role": "system", "content": _system_prompt()},
-                    {"role": "user", "content": user_msg + correction},
-                ],
-            )
-            raw = resp.choices[0].message.content or ""
-            data = _extract_json(raw)
-            return _validate_package(data)
+            data = chat_json(user_msg + correction, system=_system_prompt(), max_tokens=2600)
+            data = _validate_package(data)
+            if data["topic"].casefold() in {str(topic).casefold() for topic in banned}:
+                raise ValueError("Konu tekrar ediyor; başka olgu seç")
+            verdict = chat_json(
+                "Bağımsız Türkçe bilim ve kültür editörüsün. Aşağıdaki başlık açıklama ve sahneleri incele. "
+                "Türkçesi doğal mı, başlıkla konu uyumlu mu, iddialar yerleşik doğru bilgi mi, "
+                "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. "
+                "Emin olmadığın olguyu ve uydurma gizem veya tarihsel olayı reddet. "
+                "Başlıkta verilen vaat sahnelerde açıkça yanıtlanmış olmalı. "
+                "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(data, ensure_ascii=False),
+                temperature=0, max_tokens=1024)
+            if verdict.get("valid") is not True:
+                raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
+            data["editorial_review"] = verdict
+            return data
         except Exception as exc:
             last_err = exc
     raise RuntimeError(f"5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: {last_err}")

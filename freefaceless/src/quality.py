@@ -24,11 +24,12 @@ def clean_spoken(text: str) -> str:
     value = re.sub(r"https?://\S+|www\.\S+", " ", value, flags=re.I)
     value = re.sub(r"[#*_`~<>\[\]{}()|\\/]", " ", value)
     value = re.sub(r"[“”„«»\"'’‘:;,.!?…—–\-]+", " ", value)
-    return compact(value)
+    return compact(re.sub(r"[^\w\s]", " ", value))
 
 
 def validate_visual_query(query: str) -> str:
     value = compact(query).lower()
+    value = compact(re.sub(r"[\"'’‘“”,.:;!?_/-]+", " ", value))
     words = re.findall(r"[a-z0-9]+", value)
     if not 2 <= len(words) <= 6:
         raise ValueError("visual_query 2-6 İngilizce kelime olmalı")
@@ -48,7 +49,10 @@ def validate_and_prepare(data: dict) -> dict:
     for scene in scenes:
         if not isinstance(scene, dict):
             raise ValueError("sahne nesne olmalı")
-        text = clean_spoken(scene.get("text", ""))
+        raw = str(scene.get("text", ""))
+        if any(marker in raw.casefold() for marker in FORBIDDEN_SPOKEN):
+            raise ValueError("Ham sahne metninde kaynak veya çıktı etiketi var")
+        text = clean_spoken(raw)
         query = validate_visual_query(scene.get("visual_query", ""))
         if len(text.split()) < 4:
             raise ValueError("sahne konuşması en az 4 kelime olmalı")

@@ -15,7 +15,7 @@ import json
 from datetime import datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-from . import pipeline
+from . import pipeline, state
 from .config import ROOT
 from .script import TURKISH_NICHES
 
@@ -33,7 +33,8 @@ def pick_niches(count: int = 6) -> list[str]:
 def publish_time(hour: int) -> datetime:
     now = datetime.now(TZ)
     target = datetime.combine(now.date(), time(hour, 0), TZ)
-    if target <= now + timedelta(minutes=15):
+    reserved = {row.get("publish_at") for row in state.load().get("published", []) if row.get("video_id")}
+    while target <= now + timedelta(minutes=30) or target.astimezone(timezone.utc).isoformat().replace("+00:00", "Z") in reserved:
         target += timedelta(days=1)
     return target
 
@@ -66,7 +67,7 @@ def main() -> None:
             raise SystemExit(f"Başarısız slot manifesti okunamadı; yükleme durduruldu: {exc}")
         if not isinstance(previous, list):
             raise SystemExit("Başarısız slot manifesti liste değil; yükleme durduruldu.")
-        targets = [row for row in previous if not row.get("ok")]
+        targets = [row for row in previous if not row.get("ok") and not row.get("video_id")]
         manifest = list(previous)
         if not targets:
             print("Yeniden denenecek başarısız slot yok; yeni video yüklenmedi.", flush=True)
@@ -103,19 +104,11 @@ def main() -> None:
                 publish_at=None if args.no_upload or args.private_smoke else utc,
                 upload_to_youtube=not args.no_upload,
             )
-            if res["topic"] in seen_topics:
-                print(f"[{slot}] konu tekrarı ({res['topic']}), yeniden üretiliyor...", flush=True)
-                res = pipeline.run_once(
-                    niche=niche,
-                    publish_at=None if args.no_upload or args.private_smoke else utc,
-                    upload_to_youtube=not args.no_upload,
-                    avoid_extra=res["topic"],
-                )
             seen_topics.add(res["topic"])
             result_row = {
                 "slot": slot,
                 "niche": niche,
-                "ok": True,
+                "ok": args.no_upload or res.get("upload_status") == "youtube_processed",
                 "scheduled_publish_at_turkey": at.isoformat(),
                 "scheduled_publish_at_utc": None if args.no_upload else utc,
                 **res,
@@ -129,6 +122,7 @@ def main() -> None:
             manifest[index] = result_row
         else:
             manifest.append(result_row)
+        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     ok = sum(1 for row in manifest if row.get("ok"))
