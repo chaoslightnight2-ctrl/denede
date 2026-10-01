@@ -59,8 +59,13 @@ Style: Default,{c['font']},{c['font_size']},{c['primary_color']},&H00FFFFFF,{c['
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 
-    chunks = [words[i:i + chunk_size] for i in range(0, len(words), chunk_size)]
-    if len(chunks) >= 2 and len(chunks[-1]) == 1 and len(chunks[-2]) > 2:
+    chunks = []
+    for word in words:
+        if not chunks or len(chunks[-1]) >= chunk_size or word['start'] - chunks[-1][-1]['end'] > .35:
+            chunks.append([])
+        chunks[-1].append(word)
+    if (len(chunks) >= 2 and len(chunks[-1]) == 1 and len(chunks[-2]) > 2
+            and chunks[-1][0]['start'] - chunks[-2][-1]['end'] <= .35):
         chunks[-1].insert(0, chunks[-2].pop())
 
     rows = [(chunk[0]["start"], chunk[-1]["end"] - chunk[0]["start"],
