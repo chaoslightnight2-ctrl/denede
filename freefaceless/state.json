@@ -11,7 +11,8 @@
     "Zeno paradoksu",
     "Denizaltı akıntısı",
     "buzdolabı soğutma prensibi",
-    "Roma dönemi su mühendisliği ve taş dengesi"
+    "Roma dönemi su mühendisliği ve taş dengesi",
+    "günlük kararların bilinç dışı etkisi"
   ],
   "published": [
     {
@@ -109,6 +110,16 @@
       "path": "/home/runner/work/denede/denede/freefaceless/output/20260930_001653_roma-d-nemi-su-m-hendisli-i-ve-ta-dengesi/final.mp4",
       "video_id": "zHYkHyqDH-w",
       "publish_at": "2026-09-30T21:00:00Z"
+    },
+    {
+      "ts": "20261001_004705",
+      "topic": "günlük kararların bilinç dışı etkisi",
+      "title": "Günde 505 Karar Veriyoruz ve Yarıları Bilinç Dışı",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261001_004705_g-nl-k-kararlar-n-bilin-d-etkisi/final.mp4",
+      "video_id": "IRLRyryp8CE",
+      "publish_at": "2026-10-01T01:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "36796049045"
     }
   ]
 }
