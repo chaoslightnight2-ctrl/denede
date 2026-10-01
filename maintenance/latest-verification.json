@@ -1,26 +1,27 @@
 {
-  "source_run": "36708904477",
-  "verified_at": "2026-09-30T11:37:18.008763+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "36796049045",
+  "verified_at": "2026-10-01T03:25:52.546807+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: abonelik çağrısı tam bir kez geçmeli"
-    },
-    {
-      "index": 2,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: konuşma metninde kanal adı yok"
-    },
-    {
-      "index": 3,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 1681s cooldown; model=openai/gpt-oss-120b"
-    },
-    {
-      "index": 4,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 905s cooldown; model=openai/gpt-oss-120b"
+      "video_id": "IRLRyryp8CE",
+      "youtube_url": "https://youtu.be/IRLRyryp8CE",
+      "title": "Günde 505 Karar Veriyoruz ve Yarıları Bilinç Dışı",
+      "narration": "Bir insan bir dakikada kaç karar verir hiç tahmin edebildiniz mi Araştırmalara göre ortalama beş yüz beş karar alırız ve bu sayı gün içinde değişebilir Bu kararların yüzde doksanı bilinç dışı yani farkında olmadan yönlendirilir İşte bu yüzden bir anlık seçim bile hayatınızın yönünü değiştirebilir Peki siz en son ne zaman farkında olmadan bir karar verdiniz Şimdi bir düşünün o karar sizi nereye götürdü ve sonuçlarını hatırlıyor musunuz Siz de bilinç dışı bir karar verdiniz mi Denede kanalına abone ol",
+      "publish_at": "2026-10-01T01:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "media_check": {
+        "duration": 34.266667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/IRLRyryp8CE.jpg"
     }
   ],
-  "accepted_count": 0,
+  "errors": [],
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false
 }
