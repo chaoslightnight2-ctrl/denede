@@ -1,6 +1,7 @@
 from pathlib import Path
 import requests
 from .config import PEXELS_API_KEY
+from .stock_relevance import relevance
 
 API = "https://api.pexels.com/videos/search"
 
@@ -14,6 +15,7 @@ def search_vertical(query: str, min_duration: float = 3.0) -> str | None:
     )
     r.raise_for_status()
     videos = r.json().get("videos", [])
+    videos.sort(key=lambda v: (relevance(query, v), min(float(v.get("duration") or 0), 30)), reverse=True)
     for v in videos:
         if v.get("duration", 0) < min_duration:
             continue

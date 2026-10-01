@@ -21,6 +21,7 @@ def compact(text: str) -> str:
 
 def clean_spoken(text: str) -> str:
     value = compact(text)
+    value = re.sub(r"(?<=\w)['’‘](?=\w)", "", value)
     value = re.sub(r"https?://\S+|www\.\S+", " ", value, flags=re.I)
     value = re.sub(r"[#*_`~<>\[\]{}()|\\/]", " ", value)
     value = re.sub(r"[“”„«»\"'’‘:;,.!?…—–\-]+", " ", value)
@@ -102,3 +103,4 @@ def validate_rendered_video(path: str | Path) -> None:
         raise ValueError("final video dikey değil")
     if not 25 <= duration <= 45:
         raise ValueError(f"final video süresi uygunsuz: {duration:.1f} saniye")
+
