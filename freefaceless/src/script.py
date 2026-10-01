@@ -51,6 +51,14 @@ KONU:
 
 KONUŞMA METNİ:
 - 65-78 Türkçe kelime; hedef ses süresi yaklaşık {target_seconds} saniye.
+- Kelime hedefi sahne başına kota değildir Anlatım kapanış sorusu ve CTA toplamını kapsar.
+  Her sahne anlamı tamamlanmış doğal bir cümle olsun Kelime sayısını tutturmak için cümle sonuna
+  tek başına güçlü büyük kritik büyüleyici düzenli gerçekten gibi dolgu kelimeler ekleme.
+  Yanlış: Güneş patlaması enerji yayar güçlü
+  Doğru: Güneş patlaması uzaya büyük miktarda enerji yayar
+  Yanlış: Bilim insanları bu olayları izler düzenli
+  Doğru: Bilim insanları bu olayları düzenli olarak izler
+  Uzunluk eksikse aynı olguyu açıklayan yeni ve tamamlanmış bir cümle yaz Cümleyi bozma.
 - 5-6 kısa anlatım sahnesi; bunlara kapanış sorusu ve CTA alanları eklenecek. İlk sahnenin ilk kelimeleri doğrudan güçlü hook olsun. Selam, intro ve
   “bugün anlatacağım” yok.
 - İlk 1-2 saniyede konuya özgü, somut bir merak kancası kur: şaşırtıcı ama doğru bir bilgi,
@@ -175,6 +183,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             correction = (
                 f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Baştan, eksiksiz ve yalnızca geçerli JSON üret. "
                 "title boş olmasın ve en fazla 60 karakter olsun; 5-6 anlatım sahnesi ve kapanış toplamı 65-78 Türkçe kelime olsun; "
+                "Bu toplam hedef için sahne sonuna kopuk sıfat veya zarf ekleme Her cümleyi doğal ve tamamlanmış yaz; "
                 "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 4 hashtag bulunsun. "
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
