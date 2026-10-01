@@ -119,7 +119,8 @@
       "video_id": "IRLRyryp8CE",
       "publish_at": "2026-10-01T01:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "36796049045"
+      "run_id": "36796049045",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }

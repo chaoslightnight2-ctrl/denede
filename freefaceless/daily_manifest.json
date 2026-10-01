@@ -1,26 +1,17 @@
 [
   {
+    "run_id": "36796049045",
     "slot": "0400",
-    "niche": "Yemeklerin ve nesnelerin şaşırtıcı kökenleri",
-    "ok": false,
-    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: abonelik çağrısı tam bir kez geçmeli"
-  },
-  {
-    "slot": "0800",
-    "niche": "Mitoloji ve efsanelerin gerçek kökenleri",
-    "ok": false,
-    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: konuşma metninde kanal adı yok"
-  },
-  {
-    "slot": "1200",
-    "niche": "Matematik ve mantık paradoksları",
-    "ok": false,
-    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 1681s cooldown; model=openai/gpt-oss-120b"
-  },
-  {
-    "slot": "1600",
-    "niche": "Denizler, hava olayları ve Dünya",
-    "ok": false,
-    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Groq quota requires 905s cooldown; model=openai/gpt-oss-120b"
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-01T04:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-10-01T01:00:00Z",
+    "video_id": "IRLRyryp8CE",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261001_004705_g-nl-k-kararlar-n-bilin-d-etkisi/final.mp4",
+    "topic": "günlük kararların bilinç dışı etkisi",
+    "title": "Günde 505 Karar Veriyoruz ve Yarıları Bilinç Dışı",
+    "narration": "Bir insan bir dakikada kaç karar verir hiç tahmin edebildiniz mi Araştırmalara göre ortalama beş yüz beş karar alırız ve bu sayı gün içinde değişebilir Bu kararların yüzde doksanı bilinç dışı yani farkında olmadan yönlendirilir İşte bu yüzden bir anlık seçim bile hayatınızın yönünü değiştirebilir Peki siz en son ne zaman farkında olmadan bir karar verdiniz Şimdi bir düşünün o karar sizi nereye götürdü ve sonuçlarını hatırlıyor musunuz Siz de bilinç dışı bir karar verdiniz mi Denede kanalına abone ol",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
