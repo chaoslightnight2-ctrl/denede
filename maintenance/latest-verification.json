@@ -1,27 +1,14 @@
 {
-  "source_run": "36796049045",
-  "verified_at": "2026-10-01T03:25:52.546807+00:00",
-  "videos": [
+  "source_run": "36946709585",
+  "verified_at": "2026-10-02T03:35:58.995167+00:00",
+  "videos": [],
+  "errors": [
     {
       "index": 1,
-      "video_id": "IRLRyryp8CE",
-      "youtube_url": "https://youtu.be/IRLRyryp8CE",
-      "title": "Günde 505 Karar Veriyoruz ve Yarıları Bilinç Dışı",
-      "narration": "Bir insan bir dakikada kaç karar verir hiç tahmin edebildiniz mi Araştırmalara göre ortalama beş yüz beş karar alırız ve bu sayı gün içinde değişebilir Bu kararların yüzde doksanı bilinç dışı yani farkında olmadan yönlendirilir İşte bu yüzden bir anlık seçim bile hayatınızın yönünü değiştirebilir Peki siz en son ne zaman farkında olmadan bir karar verdiniz Şimdi bir düşünün o karar sizi nereye götürdü ve sonuçlarını hatırlıyor musunuz Siz de bilinç dışı bir karar verdiniz mi Denede kanalına abone ol",
-      "publish_at": "2026-10-01T01:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "media_check": {
-        "duration": 34.266667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/IRLRyryp8CE.jpg"
+      "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "errors": [],
-  "accepted_count": 1,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false
 }
