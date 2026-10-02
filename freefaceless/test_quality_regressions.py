@@ -24,18 +24,23 @@ class DenedeQualityTests(unittest.TestCase):
                  'Sığ kıyılara yaklaşan dalgaların biçimi ve hareketi derinlikle birlikte değişir',
                  'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
         queries = ['ocean surface waves', 'wind sea waves', 'water circular motion', 'shallow coastal waves', 'beach breaking waves']
-        package = {'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
+        package = {'source_id': '123', 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
                    'description': 'Deniz dalgalarının hareketi #shorts #Dalga #Deniz #Rüzgar',
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
                    'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts, queries)],
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
                    'closing_visual_query': 'shore ocean foam', 'cta': 'Denede kanalına abone ol'}
-        with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), {'valid': True, 'reason': 'correct'}]), \
-             patch.object(script.state, 'load', return_value={'used_topics': []}):
+        sources = [{'id': '123', 'title': 'Wave reference', 'url': 'https://example.test/reference', 'text': ' '.join(texts)}]
+        with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), {'valid': True, 'reason': 'correct'}]) as request, \
+             patch.object(script.state, 'load', return_value={'used_topics': []}), \
+             patch.object(script, 'fetch_sources', return_value=sources):
             result = script.generate()
         self.assertEqual(len(result['scenes']), 6)
         self.assertEqual(result['spoken_text'].count('abone ol'), 1)
         self.assertTrue(result['scenes'][-1]['text'].endswith('Denede kanalına abone ol'))
+        self.assertEqual(result['reference_source'], sources[0])
+        self.assertIn(sources[0]['text'], request.call_args_list[1].args[0])
+        self.assertNotIn('example.test', result['spoken_text'])
 
     def test_rejected_youtube_video_is_never_reported_as_success(self):
         from src import pipeline
