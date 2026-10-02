@@ -164,7 +164,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             verdict = chat_json(
                 "Bağımsız Türkçe bilim ve kültür editörüsün. Aşağıdaki başlık açıklama ve sahneleri incele. "
                 "Türkçesi doğal mı, başlıkla konu uyumlu mu, iddialar verilen kaynakta açıkça destekleniyor mu, "
-                "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. Sayı sözcüklerinin ayrı yazıldığını ve her basamağın kaynakla aynı kaldığını kontrol et. Sıradan yabancı sözcükler veya bozuk Türkçe çekimler varsa geçerli sayma. "
+                "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. Sayı sözcüklerinin ayrı yazıldığını ve her basamağın kaynakla aynı kaldığını kontrol et. Sıradan yabancı sözcükler bozuk Türkçe çekimler rakamlar veya metinde yazıyor türü kaynak inceleme notları varsa geçerli sayma. Kaynağın yaklaşık veya yakın dediği ölçüyü kesin sayı diye anlatmayı onaylama. "
                 "Emin olmadığın olguyu ve uydurma gizem veya tarihsel olayı reddet. "
                 "Önce aşağıdaki kaynakta özne eylem zaman sayı kapsam ve neden sonuç ilişkisini "
                 "çıkar Ardından her sahneyi bu gerçeklerle karşılaştır Üreticinin metnini kendi "
