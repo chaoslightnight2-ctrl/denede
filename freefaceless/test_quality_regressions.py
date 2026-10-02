@@ -19,7 +19,7 @@ class DenedeQualityTests(unittest.TestCase):
     def test_generated_cta_stays_in_one_separate_closing_scene(self):
         from src import script
         texts = ['Deniz yüzeyinde dalgalar ilerlerken su bütünüyle kıyıya doğru taşınmaz',
-                 'Rüzgar suya enerji aktarır ve yüzeyde görülen dalgaları oluşturur',
+                 'Rüzgar suya enerji aktarır ve yüzeyde görülen dalgaları oluşturur.',
                  'Su parçacıkları dalga geçerken çoğunlukla ileri geri döngüsel hareket eder',
                  'Sığ kıyılara yaklaşan dalgaların biçimi ve hareketi derinlikle birlikte değişir',
                  'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
@@ -40,6 +40,8 @@ class DenedeQualityTests(unittest.TestCase):
         self.assertTrue(result['scenes'][-1]['text'].endswith('Denede kanalına abone ol'))
         self.assertEqual(result['reference_source'], sources[0])
         self.assertIn(sources[0]['text'], request.call_args_list[1].args[0])
+        self.assertIn(texts[1], request.call_args_list[1].args[0])
+        self.assertNotIn('.', result['scenes'][1]['text'])
         self.assertNotIn('example.test', result['spoken_text'])
 
     def test_rejected_youtube_video_is_never_reported_as_success(self):

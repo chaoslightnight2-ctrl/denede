@@ -1,3 +1,4 @@
+import copy
 import json
 import re
 import os
@@ -156,13 +157,14 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 raise ValueError('Kapanış yorum sorusu boş')
             data['scenes'].append({'text': data['closing_question'] + ' ' + data['cta'],
                                    'visual_query': data['closing_visual_query']})
+            raw_package = copy.deepcopy(data)
             data = _validate_package(data)
             if data["topic"].casefold() in {str(topic).casefold() for topic in banned}:
                 raise ValueError("Konu tekrar ediyor; başka olgu seç")
             verdict = chat_json(
                 "Bağımsız Türkçe bilim ve kültür editörüsün. Aşağıdaki başlık açıklama ve sahneleri incele. "
                 "Türkçesi doğal mı, başlıkla konu uyumlu mu, iddialar verilen kaynakta açıkça destekleniyor mu, "
-                "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. "
+                "sayı birim nedensellik ve zaman hatası var mı kontrol et. İnternet araştırması yapmış gibi davranma. Sayı sözcüklerinin ayrı yazıldığını ve her basamağın kaynakla aynı kaldığını kontrol et. Sıradan yabancı sözcükler veya bozuk Türkçe çekimler varsa geçerli sayma. "
                 "Emin olmadığın olguyu ve uydurma gizem veya tarihsel olayı reddet. "
                 "Önce aşağıdaki kaynakta özne eylem zaman sayı kapsam ve neden sonuç ilişkisini "
                 "çıkar Ardından her sahneyi bu gerçeklerle karşılaştır Üreticinin metnini kendi "
@@ -174,7 +176,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "description metadata alanıdır burada istenen hashtagler hata değildir. "
                 "Konuşmada kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa reddet. "
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
-                    {key: data[key] for key in ('topic', 'title', 'description', 'scenes')}, ensure_ascii=False)
+                    {key: raw_package[key] for key in ('topic', 'title', 'description', 'scenes')}, ensure_ascii=False)
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
                 temperature=0, max_tokens=1024, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
