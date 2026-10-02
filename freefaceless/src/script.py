@@ -107,6 +107,8 @@ def _validate_package(data: dict) -> dict:
 
 def generate(niche: str | None = None, avoid_extra: str = ""):
     sources = fetch_sources()
+    schema = json.loads(json.dumps(PACKAGE_SCHEMA))
+    schema['properties']['source_id']['enum'] = [s['id'] for s in sources]
     used = state.load()["used_topics"]
     banned = list(used[-50:])
     if avoid_extra and avoid_extra not in banned:
@@ -145,7 +147,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
-            data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=2600, schema=PACKAGE_SCHEMA)
+            data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=2600, schema=schema)
             if not isinstance(data.get('scenes'), list) or not 5 <= len(data['scenes']) <= 6:
                 raise ValueError('Kapanış dışında 5-6 anlatım sahnesi gerekli')
             if any('abone' in str(scene.get('text', '')).casefold() or 'denede' in str(scene.get('text', '')).casefold() for scene in data['scenes']):
