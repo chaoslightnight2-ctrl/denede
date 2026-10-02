@@ -1,17 +1,8 @@
 [
   {
-    "run_id": "36796049045",
-    "slot": "0400",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-01T04:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-10-01T01:00:00Z",
-    "video_id": "IRLRyryp8CE",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261001_004705_g-nl-k-kararlar-n-bilin-d-etkisi/final.mp4",
-    "topic": "günlük kararların bilinç dışı etkisi",
-    "title": "Günde 505 Karar Veriyoruz ve Yarıları Bilinç Dışı",
-    "narration": "Bir insan bir dakikada kaç karar verir hiç tahmin edebildiniz mi Araştırmalara göre ortalama beş yüz beş karar alırız ve bu sayı gün içinde değişebilir Bu kararların yüzde doksanı bilinç dışı yani farkında olmadan yönlendirilir İşte bu yüzden bir anlık seçim bile hayatınızın yönünü değiştirebilir Peki siz en son ne zaman farkında olmadan bir karar verdiniz Şimdi bir düşünün o karar sizi nereye götürdü ve sonuçlarını hatırlıyor musunuz Siz de bilinç dışı bir karar verdiniz mi Denede kanalına abone ol",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "slot": "0800",
+    "niche": "Coğrafya ve dünyadaki sıra dışı yerler",
+    "ok": false,
+    "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
