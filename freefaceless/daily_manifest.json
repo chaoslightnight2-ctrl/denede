@@ -1,7 +1,7 @@
 [
   {
-    "slot": "0800",
-    "niche": "Coğrafya ve dünyadaki sıra dışı yerler",
+    "slot": "0400",
+    "niche": "Denizler, hava olayları ve Dünya",
     "ok": false,
     "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
   }
