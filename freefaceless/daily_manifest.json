@@ -1,8 +1,8 @@
 [
   {
     "slot": "0400",
-    "niche": "Denizler, hava olayları ve Dünya",
+    "niche": "Hayvanlar ve doğa",
     "ok": false,
-    "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: Başlık ve açıklama kaynakla tutarsız; 'gizli' ifadesi ve 'iki ana kontrol noktası' gibi iddialar desteklenmiyor, bazı sahneler kaynakta yer almıyor ve metinde dil bozuklukları bulunuyor."
   }
 ]
