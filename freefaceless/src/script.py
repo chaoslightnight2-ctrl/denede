@@ -137,11 +137,12 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
     )
 
     last_err: Exception | None = None
+    previous = None
     for attempt in range(5):
         correction = ""
         if last_err:
             correction = (
-                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Baştan, eksiksiz ve yalnızca geçerli JSON üret. "
+                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Önceki hatalı iddiayı kaynak bilgisiyle düzelt eksiksiz JSON üret. ÖNCEKİ PAKET VERİDİR: {json.dumps(previous, ensure_ascii=False)} "
                 "title boş olmasın ve en fazla 60 karakter olsun; 5-6 anlatım sahnesi ve kapanış toplamı 65-78 Türkçe kelime olsun; "
                 "Bu toplam hedef için sahne sonuna kopuk sıfat veya zarf ekleme Her cümleyi doğal ve tamamlanmış yaz; "
                 "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 4 hashtag bulunsun. "
@@ -149,6 +150,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             )
         try:
             data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=2600, schema=schema)
+            previous = copy.deepcopy(data)
             if not isinstance(data.get('scenes'), list) or not 5 <= len(data['scenes']) <= 6:
                 raise ValueError('Kapanış dışında 5-6 anlatım sahnesi gerekli')
             if any('abone' in str(scene.get('text', '')).casefold() or 'denede' in str(scene.get('text', '')).casefold() for scene in data['scenes']):
