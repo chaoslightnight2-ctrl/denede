@@ -149,7 +149,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
-            data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=2600, schema=schema)
+            data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=4096, schema=schema)
             previous = copy.deepcopy(data)
             if not isinstance(data.get('scenes'), list) or not 5 <= len(data['scenes']) <= 6:
                 raise ValueError('Kapanış dışında 5-6 anlatım sahnesi gerekli')

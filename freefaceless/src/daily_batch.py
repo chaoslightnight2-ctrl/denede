@@ -1,11 +1,11 @@
-"""Günde 6 farklı nişte Türkçe Shorts üretir ve zamanlı yayınlar.
+"""Günde 3 farklı nişte Türkçe Shorts üretir ve zamanlı yayınlar.
 
-Her gün 04:00 / 08:00 / 12:00 / 16:00 / 20:00 / 00:00 (Türkiye) slotlarına birer video planlar;
-YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır; 4 kanalda günlük toplam 24 yükleme planlanır.
+Her gün 00:00 / 08:00 / 16:00 (Türkiye) slotlarına birer video planlar;
+YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır; 4 kanalda günlük toplam 12 yükleme planlanır.
 Nişler gün gün dönerek 15 konu alanının tamamını kapsar; biten slot diğerlerini bozmaz.
 
 Kullanım (freefaceless/ içinde):
-  python -m src.daily_batch              # 6 video üret + zamanlı yayınla
+  python -m src.daily_batch              # 3 video üret + zamanlı yayınla
   python -m src.daily_batch --no-upload  # kuru test, yükleme YOK
 """
 from __future__ import annotations
@@ -32,24 +32,21 @@ def pick_niches(count: int = 6) -> list[str]:
 
 
 def publish_time(hour: int) -> datetime:
-    now = datetime.now(TZ)
-    target = datetime.combine(now.date(), time(hour, 0), TZ)
-    reserved = {row.get("publish_at") for row in state.load().get("published", []) if row.get("video_id")}
-    while target <= now + timedelta(minutes=30) or target.astimezone(timezone.utc).isoformat().replace("+00:00", "Z") in reserved:
-        target += timedelta(days=1)
-    return target
+    from .publish_schedule import next_slot
+    return next_slot(datetime.now(TZ), state.load().get('published', []), int(os.getenv('DAILY_VIDEO_COUNT', '3')), hour=hour)
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-upload", action="store_true", help="Yükleme yapma (kuru test)")
-    ap.add_argument("--limit", type=int, choices=range(1, 7), default=6,
+    ap.add_argument("--limit", type=int, choices=range(1, 7), default=int(os.getenv('DAILY_VIDEO_COUNT', '3')),
                     help="Sadece ilk N slotu çalıştır")
     ap.add_argument("--private-smoke", action="store_true",
                     help="Tek bir videoyu gizli yükle, yayın zamanı ayarlama")
     ap.add_argument("--retry-failed", action="store_true",
                     help="Manifestte başarısız olan slotları tekrar dene; başarılı yüklemelere dokunma")
     args = ap.parse_args()
+    configured_slots = [(f'{hour:02}00', hour) for hour in range(0, 24, 8)] if args.limit == 3 else SLOTS
 
     if args.private_smoke and args.retry_failed:
         ap.error("--private-smoke ile --retry-failed birlikte kullanılamaz")
@@ -89,12 +86,14 @@ def main() -> None:
     else:
         niches = pick_niches(args.limit)
         planned_slots = sorted(
-            ((slot, hour, publish_time(hour)) for slot, hour in SLOTS[:args.limit]),
+            ((slot, hour, publish_time(hour)) for slot, hour in configured_slots[:args.limit]),
             key=lambda entry: entry[2],
         )
         selected_targets = [(slot, hour, at, niche)
                             for (slot, hour, at), niche in zip(planned_slots, niches)]
 
+    # An interrupted run must not upload an old checkout manifest as new evidence.
+    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
     seen_topics: set[str] = set()
     for slot, hour, at, niche in selected_targets:
         utc = at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
@@ -112,12 +111,12 @@ def main() -> None:
                 "niche": niche,
                 "ok": args.no_upload or res.get("upload_status") in ("api_insert_confirmed", "youtube_processed"),
                 "scheduled_publish_at_turkey": at.isoformat(),
-                "scheduled_publish_at_utc": None if args.no_upload else utc,
+                "scheduled_publish_at_utc": None if args.no_upload else res.get("publish_at", utc),
                 **res,
             }
         except Exception as exc:
             print(f"[{slot}] HATA (diğer slotlar devam edecek): {exc}", flush=True)
-            result_row = {"slot": slot, "niche": niche, "ok": False, "error": str(exc)}
+            result_row = {"run_id": os.getenv("GITHUB_RUN_ID"), "slot": slot, "niche": niche, "ok": False, "error": str(exc)}
 
         if args.retry_failed:
             index = next(i for i, row in enumerate(manifest) if row.get("slot") == slot and not row.get("ok"))

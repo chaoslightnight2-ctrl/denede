@@ -2,6 +2,8 @@ import argparse
 import re
 import os
 from datetime import datetime
+from zoneinfo import ZoneInfo
+from .publish_schedule import next_slot
 from . import script, voice, captions, visuals, assemble, upload, state
 from .quality import validate_rendered_video
 from .config import OUTPUT_DIR
@@ -69,6 +71,12 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
 
     video_id = None
     if upload_to_youtube:
+        # Refresh stale scheduled times after any provider wait and rendering.
+        if publish_at:
+            at = next_slot(datetime.now(ZoneInfo('Europe/Istanbul')), state.load().get('published', []),
+                           int(os.getenv('DAILY_VIDEO_COUNT', '3')),
+                           preferred=datetime.fromisoformat(publish_at.replace('Z', '+00:00')))
+            publish_at = at.astimezone(ZoneInfo('UTC')).isoformat().replace('+00:00', 'Z')
         print("[7/7] YouTube yükleme")
         video_id = upload.upload_video(
             video_path=final,
@@ -109,7 +117,7 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
             if row.get("video_id") == video_id:
                 row.update(receipt)
         state.save(current)
-    return {"video_id": video_id, "path": str(final), "topic": data["topic"], "title": data["title"], "narration": data["spoken_text"], **receipt}
+    return {"video_id": video_id, "path": str(final), "topic": data["topic"], "title": data["title"], "narration": data["spoken_text"], "publish_at": publish_at, **receipt}
 
 
 def main():

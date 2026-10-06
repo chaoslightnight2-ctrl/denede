@@ -1,7 +1,7 @@
-name: FreeFaceless TR (günlük 6 video)
+name: FreeFaceless TR (günlük 3 video)
 
-# Her gün 00:00 TR (= 21:00 UTC): 6 Shorts, 04/08/12/16/20/00 slotlarına zamanlı yayın.
-# YouTube Data API'nin güncel videos.insert sınırı 100 yükleme/gün; dört kanalın 24 yüklemesi bu sınırın altında;
+# Her gün 00:00 TR (= 21:00 UTC): 3 Shorts, 00/08/16 slotlarına zamanlı yayın.
+# YouTube Data API'nin güncel videos.insert sınırı 100 yükleme/gün; dört kanalın 12 yüklemesi bu sınırın altında;
 # eski botun zamanlayıcısı bu yüzden manuele alındı (shorts_generator.yml).
 on:
   push:
@@ -28,6 +28,8 @@ jobs:
   generate:
     runs-on: ubuntu-22.04
     timeout-minutes: 180
+    env:
+      DAILY_VIDEO_COUNT: "3"
     defaults:
       run:
         working-directory: freefaceless
@@ -51,9 +53,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Quality regression checks
-        run: python -m unittest test_quality_regressions.py
+        run: python -m unittest discover -p "test_*.py"
 
-      - name: 6 Türkçe Shorts üret ve zamanlı yayınla
+      - name: 3 Türkçe Shorts üret ve zamanlı yayınla
         id: run_bot
         continue-on-error: true
         env:
