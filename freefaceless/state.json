@@ -12,7 +12,8 @@
     "Denizaltı akıntısı",
     "buzdolabı soğutma prensibi",
     "Roma dönemi su mühendisliği ve taş dengesi",
-    "günlük kararların bilinç dışı etkisi"
+    "günlük kararların bilinç dışı etkisi",
+    "Mimari"
   ],
   "published": [
     {
@@ -121,6 +122,16 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "36796049045",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261006_164306",
+      "topic": "Mimari",
+      "title": "Peace Tower: Kanada’nın Simgesel Saat Kulesi Neden Önemli",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261006_164306_mimari/final.mp4",
+      "video_id": "xjBcMXd_7-M",
+      "publish_at": "2026-10-06T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "37496387559"
     }
   ]
 }
