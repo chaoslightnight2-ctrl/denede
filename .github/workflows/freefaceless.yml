@@ -30,6 +30,7 @@ jobs:
     timeout-minutes: 360
     env:
       DAILY_VIDEO_COUNT: "3"
+      PYTHONUNBUFFERED: "1"
     defaults:
       run:
         working-directory: freefaceless

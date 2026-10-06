@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 from datetime import datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -37,6 +38,7 @@ def publish_time(hour: int) -> datetime:
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-upload", action="store_true", help="Yükleme yapma (kuru test)")
     ap.add_argument("--limit", type=int, choices=range(1, 7), default=int(os.getenv('DAILY_VIDEO_COUNT', '3')),

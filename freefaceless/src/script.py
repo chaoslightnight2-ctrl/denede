@@ -1,4 +1,5 @@
 import copy
+import logging
 import json
 import re
 import os
@@ -7,6 +8,8 @@ from .prompt_contract import CLEAN_OUTPUT_RULES
 from .knowledge_sources import fetch_sources
 from .config import GROQ_API_KEY, GROQ_BASE_URL, CONFIG
 from . import state
+
+log = logging.getLogger(__name__)
 from .quality import validate_and_prepare
 
 os.environ.setdefault("GROQ_MODEL", CONFIG["script"]["model"])
@@ -189,5 +192,6 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             return data
         except (ValueError, KeyError, TypeError) as exc:
             last_err = exc
+            log.warning('Groq script attempt %s/5 failed existing validation: %s', attempt + 1, exc)
     raise RuntimeError(f"5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: {last_err}")
 
