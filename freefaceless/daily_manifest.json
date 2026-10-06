@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "run_id": "37496387559",
+    "slot": "0000",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-07T00:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-10-06T21:00:00Z",
+    "video_id": "xjBcMXd_7-M",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261006_164306_mimari/final.mp4",
+    "topic": "Mimari",
+    "title": "Peace Tower: Kanada’nın Simgesel Saat Kulesi Neden Önemli",
+    "narration": "Kanada başkentinin kalbinde yer alan dev bir saat ve çan kulesi var Peace Tower Ottawa Parlamento binasının tam ortasında yükselir bin dokuz yüz on altı yılında yanıp sönen Victoria Towerın yerini alarak elli beş metre yüksekliğe ulaştı Sadece Parlamento kütüphanesi yangından kurtulmuş tek bölüm oldu Kule eski Kanada yirmi dolarlık banknotunda da yer alıyordu Bu ikonik kule hakkında daha fazla şey öğrenmek ister misiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-06T21:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
+  }
+]
