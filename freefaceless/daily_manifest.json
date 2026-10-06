@@ -30,5 +30,12 @@
     "publish_at": "2026-10-07T05:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "37496387559",
+    "slot": "1600",
+    "niche": "Uzay ve astronomi",
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: İlk sahnedeki \"en büyük\" iddiası kaynakta yer almıyor, açıklamadaki bazı ifadeler (ör. \"bilgiye aç kapı\") bozuk Türkçe ve doğal akışa uymuyor; bu nedenle metin tutarlı değil."
   }
 ]
