@@ -185,6 +185,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
             data["editorial_review"] = verdict
             data['reference_source'] = next((s for s in sources if s['id'] == data.get('source_id')), None)
+            data['raw_groq_package'] = previous
             return data
         except (ValueError, KeyError, TypeError) as exc:
             last_err = exc

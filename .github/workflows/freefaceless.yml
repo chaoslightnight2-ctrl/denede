@@ -91,6 +91,7 @@ jobs:
             freefaceless/output/**/final.mp4
             freefaceless/output/**/voice.words.json
             freefaceless/output/**/captions.ass
+            freefaceless/output/**/script.json
             freefaceless/daily_manifest.json
             freefaceless/logs/*.log
           if-no-files-found: ignore

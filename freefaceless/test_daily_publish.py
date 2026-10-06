@@ -14,6 +14,20 @@ TZ = timezone(timedelta(hours=3))
 
 
 class DailyPublishingTests(unittest.TestCase):
+    def test_voice_failure_keeps_exact_source_and_original_groq_response(self):
+        package = {'topic': 'audit', 'tts_text': 'test speech',
+                   'reference_source': {'id': 'source-id', 'text': 'exact source input'},
+                   'raw_groq_package': {'scenes': [{'text': 'original response'}]}}
+        with TemporaryDirectory() as folder, patch.object(pipeline, 'OUTPUT_DIR', Path(folder)), \
+             patch.object(pipeline.script, 'generate', return_value=package), \
+             patch.object(pipeline.voice, 'synth', side_effect=RuntimeError('voice failure')):
+            with self.assertRaisesRegex(RuntimeError, 'voice failure'):
+                pipeline._pick_script(None)
+            files = list(Path(folder).glob('*/script.json'))
+            self.assertEqual(len(files), 1)
+            saved = json.loads(files[0].read_text(encoding='utf-8'))
+            self.assertEqual(saved, package)
+
     def test_three_default_videos_use_eight_hour_publication_slots(self):
         fixed = datetime(2026, 10, 6, 6, tzinfo=TZ)
         calls = []

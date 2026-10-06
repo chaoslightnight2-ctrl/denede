@@ -1,4 +1,5 @@
 import argparse
+import json
 import re
 import os
 from datetime import datetime
@@ -27,6 +28,9 @@ def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
         work.mkdir(parents=True, exist_ok=True)
+        # Preserve the exact source, original response and prepared speech before
+        # TTS, so a render failure cannot erase the evidence for manual review.
+        (work / 'script.json').write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
         voice_mp3 = voice.synth(data["tts_text"], work / "voice.mp3")
         words = captions.transcribe_words(voice_mp3)
         duration = float(words[-1]["end"]) if words else 0.0
