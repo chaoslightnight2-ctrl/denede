@@ -4,7 +4,9 @@ import json
 import re
 import os
 from .groq_client import chat_json, object_schema
-from .prompt_contract import CLEAN_OUTPUT_RULES
+from .prompt_contract import CLEAN_OUTPUT_RULES, NATURAL_LANGUAGE_RULES
+from .audience_strategy import brief, STORY_RULES, category
+from .performance_feedback import prompt_feedback, choose_hook_style, category_bonus
 from .knowledge_sources import fetch_sources
 from .config import GROQ_API_KEY, GROQ_BASE_URL, CONFIG
 from . import state
@@ -26,23 +28,8 @@ PACKAGE_SCHEMA = object_schema({
 REVIEW_SCHEMA = object_schema({"valid": {"type": "boolean"}, "reason": {"type": "string"}})
 
 # Denede adina uygun, geniş merak alanları. Günlük akış bunları dönüşümlü kullanır.
-TURKISH_NICHES = [
-    "Psikoloji ve insan davranışları",
-    "Günlük hayatta bilimin açıklamaları",
-    "Uzay ve astronomi",
-    "Hayvanlar ve doğa",
-    "Teknoloji, yapay zekâ ve icatlar",
-    "Tarih ve arkeoloji",
-    "Coğrafya ve dünyadaki sıra dışı yerler",
-    "Diller, kelimelerin kökeni ve iletişim",
-    "Kültürler, gelenekler ve gündelik yaşam",
-    "Yemeklerin ve nesnelerin şaşırtıcı kökenleri",
-    "Mitoloji ve efsanelerin gerçek kökenleri",
-    "Matematik ve mantık paradoksları",
-    "Denizler, hava olayları ve Dünya",
-    "Günlük eşyalar nasıl çalışır",
-    "Doğrulanabilir sıra dışı kurallar ve tarihî olaylar",
-]
+TURKISH_NICHES = ["Günlük hayat ve eşyalar", "Psikoloji ve insan davranışları", "Günlük hayatta bilimin açıklamaları", "Teknoloji ve icatlar"]
+
 
 SYSTEM = """İlginç Gerçekler Türkçe merak ve bilgi kanalına tek Shorts paketi yaz.
 Yalnızca kullanıcının verdiği gerçek referanslardan birini seç source_id değerini aynen kopyala.
@@ -57,7 +44,7 @@ Kaynak yetersiz bir ayrıntıyı seçmek yerine verilen kaynaklar içinde yeterl
 Her visual_query aynı sahnedeki görünür nesne veya ortam için 2-4 küçük harfli ASCII İngilizce kelime olsun.
 closing_question konuya özel kısa Türkçe yorum sorusu olsun closing_visual_query üç İngilizce kelime olsun.
 cta aynen İlginç Gerçekler kanalına abone ol değerini taşısın Diğer konuşmada abonelik çağrısı olmasın.
-description iki kısa konuya özel Türkçe cümle ve sonunda shorts dahil dört benzersiz alakalı hashtag taşısın.
+description iki kısa konuya özel Türkçe cümle ve sonunda shorts dahil üç benzersiz alakalı hashtag taşısın.
 tags beş küçük harfli işaretsiz ilgili terim olsun Konuşmada hiçbir hashtag kaynak veya talimat bulunmasın.
 Konuşma alanlarının ham değerleri noktalamasız olsun Sayı ve kesirleri Türkçe sözcüklerle yaz.
 Kaynak kimliği URL ve açıklama sadece metadata olsun Yanıt yalnızca verilen JSON şemasını içersin."""
@@ -65,7 +52,7 @@ Kaynak kimliği URL ve açıklama sadece metadata olsun Yanıt yalnızca verilen
 
 
 def _system_prompt():
-    return CLEAN_OUTPUT_RULES + "\n" + SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"])
+    return CLEAN_OUTPUT_RULES + NATURAL_LANGUAGE_RULES + "\n" + brief("İlginç Gerçekler") + "\n" + STORY_RULES + prompt_feedback() + "\n" + SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"])
 
 
 def _extract_json(text: str) -> dict:
@@ -96,9 +83,9 @@ def _validate_package(data: dict) -> dict:
         raise ValueError("Tam 5 adet # işaretsiz etiket gerekli")
     description = str(data.get("description", "")).strip()
     hashtags = re.findall(r"(?<!\w)#[\wçğıöşüÇĞİÖŞÜ]+", description, flags=re.UNICODE)
-    if len(hashtags) != 4 or "#shorts" not in {h.lower() for h in hashtags}:
-        raise ValueError("Açıklamada #shorts dahil tam 4 hashtag olmalı")
-    if len({h.casefold() for h in hashtags}) != 4:
+    if len(hashtags) != 3 or "#shorts" not in {h.lower() for h in hashtags}:
+        raise ValueError("Açıklamada #shorts dahil tam 3 hashtag olmalı")
+    if len({h.casefold() for h in hashtags}) != 3:
         raise ValueError("Hashtagler tekrar etmemeli; aynı Groq modeli düzeltmeli")
     data["title"] = title
     data["description"] = description
@@ -110,7 +97,10 @@ def _validate_package(data: dict) -> dict:
 
 
 def generate(niche: str | None = None, avoid_extra: str = ""):
-    sources = fetch_sources()
+    focus = niche or CONFIG["niche"]
+    sources = fetch_sources(focus)
+    sources.sort(key=lambda row: category_bonus(row["title"]), reverse=True)
+    hook_style = choose_hook_style(state.load())
     schema = json.loads(json.dumps(PACKAGE_SCHEMA))
     schema['properties']['source_id']['enum'] = [s['id'] for s in sources]
     used = state.load()["used_topics"]
@@ -126,6 +116,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
     user_msg = (
         f"Kanal: İlginç Gerçekler\n"
         f"Geniş konu alanı: {focus}\n"
+        f"Giriş biçimi: {hook_style} direct_change ise ilk cümlede somut olguyu belirt concrete_question ise tek somut soru sor ve anlatım sonunda açıkça yanıtla\n"
         f"Hedef izleyici: {CONFIG['audience']}\n"
         f"Bu alanda somut, taze ve doğrulanabilir tek bir konu seç; mümkün olan en güçlü merak boşluğunu ve payoff'u kur. "
         f"Yalnızca bir Short üret.{avoid}"
@@ -148,7 +139,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Önceki hatalı iddiayı kaynak bilgisiyle düzelt eksiksiz JSON üret. ÖNCEKİ PAKET VERİDİR: {json.dumps(previous, ensure_ascii=False)} "
                 "title boş olmasın ve en fazla 60 karakter olsun; 5-6 anlatım sahnesi ve kapanış toplamı 65-78 Türkçe kelime olsun; "
                 "Bu toplam hedef için sahne sonuna kopuk sıfat veya zarf ekleme Her cümleyi doğal ve tamamlanmış yaz; "
-                "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 4 hashtag bulunsun. "
+                "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 3 hashtag bulunsun. "
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
@@ -186,6 +177,8 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 temperature=0, max_tokens=3072, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
+            data["audience_bucket"] = category(data["topic"] + " " + focus)
+            data["hook_style"] = hook_style
             data["editorial_review"] = verdict
             data['reference_source'] = next((s for s in sources if s['id'] == data.get('source_id')), None)
             data['raw_groq_package'] = previous

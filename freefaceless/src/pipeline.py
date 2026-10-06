@@ -97,6 +97,8 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
         state.add_published({
         "ts": stamp,
         "topic": data["topic"],
+        "audience_bucket": data.get("audience_bucket"),
+        "hook_style": data.get("hook_style"),
         "title": data["title"],
         "path": str(final),
         "video_id": video_id,

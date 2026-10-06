@@ -1,6 +1,6 @@
 # Denede: tek bir dar niş yerine geniş Türkçe merak ve bilgi kanalı.
 # Groq her çalıştırmada taze konu seçer; state.json son konuların tekrarını önler.
-niche: "Türkçe merak ve bilgi kanalı. Psikoloji, bilim, uzay, doğa, teknoloji, tarih, arkeoloji, coğrafya, kültür, dil, icatlar ve gündelik yaşam konuları arasında dönüşümlü içerik üret."
+niche: "Günlük hayat, insan davranışı, bilim ve teknoloji. Tanıdık bir olgunun anlaşılır ve doğrulanabilir açıklamasını üret."
 audience: "Türkçe konuşan, meraklı ve kısa videolarda hızlı, şaşırtıcı ama güvenilir bilgi arayan geniş izleyici kitlesi"
 language: tr
 

@@ -25,7 +25,7 @@ class DenedeQualityTests(unittest.TestCase):
                  'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
         queries = ['ocean surface waves', 'wind sea waves', 'water circular motion', 'shallow coastal waves', 'beach breaking waves']
         package = {'source_id': '123', 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
-                   'description': 'Deniz dalgalarının hareketi #shorts #Dalga #Deniz #Rüzgar',
+                   'description': 'Deniz dalgalarının hareketi #shorts #Dalga #Deniz',
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
                    'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts, queries)],
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',

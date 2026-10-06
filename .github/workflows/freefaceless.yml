@@ -53,6 +53,20 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Restore real audience measurements
+        uses: actions/cache@v4
+        with:
+          path: freefaceless/performance
+          key: audience-feedback-production-${{ github.run_id }}
+          restore-keys: audience-feedback-
+
+      - name: Refresh real audience measurements
+        env:
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+        run: python -m src.collect_performance
+
       - name: Quality regression checks
         run: python -m unittest discover -p "test_*.py"
 
