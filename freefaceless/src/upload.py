@@ -88,5 +88,5 @@ def upload_video(video_path: Path, title: str, description: str, tags: list[str]
     req = yt.videos().insert(part="snippet,status", body=body, media_body=media)
     resp = None
     while resp is None:
-        _, resp = req.next_chunk()
+        _, resp = req.next_chunk(num_retries=3)
     return resp["id"]
