@@ -71,7 +71,7 @@ def validate_and_prepare(data: dict) -> dict:
         raise ValueError("konuşma metni 55-90 kelime olmalı")
     if low.count("abone ol") != 1:
         raise ValueError("abonelik çağrısı tam bir kez geçmeli")
-    if "denede" not in low:
+    if "İlginç Gerçekler".casefold() not in low:
         raise ValueError("konuşma metninde kanal adı yok")
 
     data["scenes"] = clean_scenes
@@ -80,7 +80,6 @@ def validate_and_prepare(data: dict) -> dict:
     # Pauses are internal to TTS and never displayed as captions or stored as the
     # AI narration field. This keeps the requested punctuation-free spoken text.
     data["tts_text"] = ". ".join(scene["text"] for scene in clean_scenes) + "."
-    data["tts_text"] = re.sub(r"\bDenede\b", "Dene de", data["tts_text"], flags=re.I)
     return data
 
 

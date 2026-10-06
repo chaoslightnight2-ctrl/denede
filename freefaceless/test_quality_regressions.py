@@ -29,7 +29,7 @@ class DenedeQualityTests(unittest.TestCase):
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
                    'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts, queries)],
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
-                   'closing_visual_query': 'shore ocean foam', 'cta': 'Denede kanalına abone ol'}
+                   'closing_visual_query': 'shore ocean foam', 'cta': 'İlginç Gerçekler kanalına abone ol'}
         sources = [{'id': '123', 'title': 'Wave reference', 'url': 'https://example.test/reference', 'text': ' '.join(texts)}]
         with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), {'valid': True, 'reason': 'correct'}]) as request, \
              patch.object(script.state, 'load', return_value={'used_topics': []}), \
@@ -37,7 +37,7 @@ class DenedeQualityTests(unittest.TestCase):
             result = script.generate()
         self.assertEqual(len(result['scenes']), 6)
         self.assertEqual(result['spoken_text'].count('abone ol'), 1)
-        self.assertTrue(result['scenes'][-1]['text'].endswith('Denede kanalına abone ol'))
+        self.assertTrue(result['scenes'][-1]['text'].endswith('İlginç Gerçekler kanalına abone ol'))
         self.assertEqual(result['reference_source'], sources[0])
         self.assertIn(sources[0]['text'], request.call_args_list[1].args[0])
         self.assertIn(texts[1], request.call_args_list[1].args[0])

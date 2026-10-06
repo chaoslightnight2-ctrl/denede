@@ -15,7 +15,7 @@ PACKAGE_SCHEMA = object_schema({
     "source_id": {"type": "string", "description": "Exact id of the supplied reference; metadata only"},
     **{key: {"type": "string"} for key in ("topic", "title", "description")},
     "closing_question": {"type": "string"}, "closing_visual_query": {"type": "string"},
-    "cta": {"type": "string", "enum": ["Denede kanalına abone ol"]},
+    "cta": {"type": "string", "enum": ["İlginç Gerçekler kanalına abone ol"]},
     "tags": {"type": "array", "items": {"type": "string"}},
     "scenes": {"type": "array", "items": object_schema({
         "text": {"type": "string", "description": "A complete natural Turkish spoken sentence supported by the selected reference. No punctuation, numerical digits, source references, production instructions or filler."},
@@ -41,7 +41,7 @@ TURKISH_NICHES = [
     "Doğrulanabilir sıra dışı kurallar ve tarihî olaylar",
 ]
 
-SYSTEM = """Denede Türkçe merak ve bilgi kanalına tek Shorts paketi yaz.
+SYSTEM = """İlginç Gerçekler Türkçe merak ve bilgi kanalına tek Shorts paketi yaz.
 Yalnızca kullanıcının verdiği gerçek referanslardan birini seç source_id değerini aynen kopyala.
 Kaynakta açıkça bulunan tek somut olguyu anlat Kendi belleğinden ayrıntı ekleme.
 Başlık en fazla 60 karakter ve konunun adıyla ilgili net bir merak vaadi taşısın.
@@ -53,7 +53,7 @@ Kelime hedefi için yeni bilgi uydurma veya cümle sonuna dolgu koyma Konuyu tü
 Kaynak yetersiz bir ayrıntıyı seçmek yerine verilen kaynaklar içinde yeterli açıklaması olan olguyu seç.
 Her visual_query aynı sahnedeki görünür nesne veya ortam için 2-4 küçük harfli ASCII İngilizce kelime olsun.
 closing_question konuya özel kısa Türkçe yorum sorusu olsun closing_visual_query üç İngilizce kelime olsun.
-cta aynen Denede kanalına abone ol değerini taşısın Diğer konuşmada abonelik çağrısı olmasın.
+cta aynen İlginç Gerçekler kanalına abone ol değerini taşısın Diğer konuşmada abonelik çağrısı olmasın.
 description iki kısa konuya özel Türkçe cümle ve sonunda shorts dahil dört benzersiz alakalı hashtag taşısın.
 tags beş küçük harfli işaretsiz ilgili terim olsun Konuşmada hiçbir hashtag kaynak veya talimat bulunmasın.
 Konuşma alanlarının ham değerleri noktalamasız olsun Sayı ve kesirleri Türkçe sözcüklerle yaz.
@@ -121,7 +121,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
 
     focus = niche or CONFIG["niche"]
     user_msg = (
-        f"Kanal: Denede\n"
+        f"Kanal: İlginç Gerçekler\n"
         f"Geniş konu alanı: {focus}\n"
         f"Hedef izleyici: {CONFIG['audience']}\n"
         f"Bu alanda somut, taze ve doğrulanabilir tek bir konu seç; mümkün olan en güçlü merak boşluğunu ve payoff'u kur. "
@@ -153,7 +153,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             previous = copy.deepcopy(data)
             if not isinstance(data.get('scenes'), list) or not 5 <= len(data['scenes']) <= 6:
                 raise ValueError('Kapanış dışında 5-6 anlatım sahnesi gerekli')
-            if any('abone' in str(scene.get('text', '')).casefold() or 'denede' in str(scene.get('text', '')).casefold() for scene in data['scenes']):
+            if any('abone' in str(scene.get('text', '')).casefold() or 'İlginç Gerçekler'.casefold() in str(scene.get('text', '')).casefold() for scene in data['scenes']):
                 raise ValueError('Anlatım sahnelerine CTA koyma Sadece cta alanını kullan')
             if not str(data.get('closing_question', '')).strip():
                 raise ValueError('Kapanış yorum sorusu boş')
