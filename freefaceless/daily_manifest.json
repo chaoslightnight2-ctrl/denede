@@ -14,5 +14,21 @@
     "publish_at": "2026-10-06T21:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "37496387559",
+    "slot": "0800",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-07T08:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-10-07T05:00:00Z",
+    "video_id": "7KrX5fj_9Lg",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261006_170706_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
+    "topic": "Günlük hayatta bilimin açıklamaları",
+    "title": "Kanada’nın Barış Kulesi Neden Önemli",
+    "narration": "Kanada başkenti Ottawa da barış kulesi gökyüzünü süsler Bu kule bir çan ve saat içerir ve parlamentonun kalbinde yer alır Bin dokuz yüz on altı yılında Victoria Kulesi yanarken bu kule yeniden inşa edildi Yangından sadece Parlamento Kütüphanesi ayakta kaldı Barış Kulesi Kanada yirmi dolarlık banknotunda da yer alır Bu yapı Kanada ulusal simgesi olarak tanınır Bu çan kulesi ülkenin kimliğine nasıl katkı sağlar İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-07T05:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
