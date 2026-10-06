@@ -183,7 +183,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
                     {key: raw_package[key] for key in ('topic', 'title', 'description', 'scenes')}, ensure_ascii=False)
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
-                temperature=0, max_tokens=1024, schema=REVIEW_SCHEMA)
+                temperature=0, max_tokens=3072, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
             data["editorial_review"] = verdict
