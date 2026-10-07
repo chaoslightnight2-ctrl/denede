@@ -1,41 +1,18 @@
 [
   {
-    "run_id": "37496387559",
-    "slot": "0000",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-07T00:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-10-06T21:00:00Z",
-    "video_id": "xjBcMXd_7-M",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261006_164306_mimari/final.mp4",
-    "topic": "Mimari",
-    "title": "Peace Tower: Kanada’nın Simgesel Saat Kulesi Neden Önemli",
-    "narration": "Kanada başkentinin kalbinde yer alan dev bir saat ve çan kulesi var Peace Tower Ottawa Parlamento binasının tam ortasında yükselir bin dokuz yüz on altı yılında yanıp sönen Victoria Towerın yerini alarak elli beş metre yüksekliğe ulaştı Sadece Parlamento kütüphanesi yangından kurtulmuş tek bölüm oldu Kule eski Kanada yirmi dolarlık banknotunda da yer alıyordu Bu ikonik kule hakkında daha fazla şey öğrenmek ister misiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-06T21:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "37496387559",
-    "slot": "0800",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-07T08:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-10-07T05:00:00Z",
-    "video_id": "7KrX5fj_9Lg",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261006_170706_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
-    "topic": "Günlük hayatta bilimin açıklamaları",
-    "title": "Kanada’nın Barış Kulesi Neden Önemli",
-    "narration": "Kanada başkenti Ottawa da barış kulesi gökyüzünü süsler Bu kule bir çan ve saat içerir ve parlamentonun kalbinde yer alır Bin dokuz yüz on altı yılında Victoria Kulesi yanarken bu kule yeniden inşa edildi Yangından sadece Parlamento Kütüphanesi ayakta kaldı Barış Kulesi Kanada yirmi dolarlık banknotunda da yer alır Bu yapı Kanada ulusal simgesi olarak tanınır Bu çan kulesi ülkenin kimliğine nasıl katkı sağlar İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-07T05:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "37496387559",
+    "run_id": "37551955683",
     "slot": "1600",
-    "niche": "Uzay ve astronomi",
-    "ok": false,
-    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: İlk sahnedeki \"en büyük\" iddiası kaynakta yer almıyor, açıklamadaki bazı ifadeler (ör. \"bilgiye aç kapı\") bozuk Türkçe ve doğal akışa uymuyor; bu nedenle metin tutarlı değil."
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-07T16:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-10-07T13:00:00Z",
+    "video_id": "kHMYeELrulo",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261007_003907_uyku/final.mp4",
+    "topic": "Uyku",
+    "title": "Uyku iki aşamada nasıl gerçekleşir",
+    "narration": "Uyku iki farklı aşamadan oluşur İlk aşama hızlı göz hareketli uyku olarak bilinir ve beyin aktivitesi en yoğundur Bu aşamada beyin aktivitesi en yüksek seviyededir bu sırada beyin dalgaları değişir İkinci aşama derin uyku ve vücudun dinlenmesidir Rüyalar genellikle hızlı göz hareketli uyku aşamasında görülür Uyku sırasında kas aktivitesi azalır ve beyin farklı dalga desenleri gösterir Rüyalar hangi uyku aşamasında ortaya çıkar İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-07T13:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]

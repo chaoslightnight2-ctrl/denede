@@ -157,7 +157,8 @@
       "video_id": "kHMYeELrulo",
       "publish_at": "2026-10-07T13:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "37551955683"
+      "run_id": "37551955683",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
