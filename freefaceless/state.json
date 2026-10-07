@@ -171,7 +171,8 @@
       "video_id": "koeWYXvPozo",
       "publish_at": "2026-10-07T21:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "37551955683"
+      "run_id": "37551955683",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
