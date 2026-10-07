@@ -2,6 +2,6 @@
   "run_id": "37551955683",
   "http_status": 429,
   "code": "rate_limit_exceeded",
-  "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `[account]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198625, Requested 4598. Please try again in 23m12.336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
-  "retry_after": "1393"
+  "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `[account]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198622, Requested 4607. Please try again in 23m14.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+  "retry_after": "1395"
 }
