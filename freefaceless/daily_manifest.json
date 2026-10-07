@@ -30,5 +30,12 @@
     "publish_at": "2026-10-07T21:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "37551955683",
+    "slot": "0800",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": false,
+    "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
