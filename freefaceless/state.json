@@ -15,7 +15,8 @@
     "günlük kararların bilinç dışı etkisi",
     "Mimari",
     "Günlük hayatta bilimin açıklamaları",
-    "Uyku"
+    "Uyku",
+    "Psikoloji"
   ],
   "published": [
     {
@@ -159,6 +160,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "37551955683",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261007_005506",
+      "topic": "Psikoloji",
+      "audience_bucket": "human_behavior",
+      "hook_style": "concrete_question",
+      "title": "Eidetik Hafıza Gerçek mi Çocuklarda Görülen Sır",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261007_005506_psikoloji/final.mp4",
+      "video_id": "koeWYXvPozo",
+      "publish_at": "2026-10-07T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "37551955683"
     }
   ]
 }
