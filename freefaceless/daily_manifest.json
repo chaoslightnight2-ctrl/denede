@@ -14,5 +14,21 @@
     "publish_at": "2026-10-08T05:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "37709502910",
+    "slot": "1600",
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-08T16:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-10-08T13:00:00Z",
+    "video_id": "dRv2xmpZSE4",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261008_013106_g-da-bilimi/final.mp4",
+    "topic": "Gıda Bilimi",
+    "title": "Gıdalardaki Kimyasal Bileşenler Nasıl İncelenir",
+    "narration": "Gıda bilimi yiyeceklerin kimyasal bileşenlerini analiz eder ve güvenliğini kontrol eder Mikrobiyoloji kimya ve fizikle etkileşimli araştırmalar yapılarak raf ömrü uzatılır Koruyucu maddeler geliştirilir ve gıdalara güvenli şekilde eklenir Yeni teknolojilerle besin değerleri ölçülür ve kalite kontrolü sağlanır Bu bilgilerle daha sağlıklı ürünler tasarlanır ve tüketicilere sunulur Araştırmacılar laboratuvarlarda tat ve doku analizleri yaparak ürünleri iyileştirir Gıdaların kimyasal yapısını öğrenmek ister misiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-08T13:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
