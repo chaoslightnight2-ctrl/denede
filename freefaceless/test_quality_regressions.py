@@ -27,7 +27,7 @@ class DenedeQualityTests(unittest.TestCase):
         package = {'source_id': '123', 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
                    'description': 'Deniz dalgalarının hareketi #shorts #Dalga #Deniz',
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
-                   'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts, queries)],
+                   'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts[:4], queries[:4])],
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
                    'closing_visual_query': 'shore ocean foam', 'cta': 'İlginç Gerçekler kanalına abone ol'}
         sources = [{'id': '123', 'title': 'Wave reference', 'url': 'https://example.test/reference', 'text': ' '.join(texts)}]
@@ -35,7 +35,7 @@ class DenedeQualityTests(unittest.TestCase):
              patch.object(script.state, 'load', return_value={'used_topics': []}), \
              patch.object(script, 'fetch_sources', return_value=sources):
             result = script.generate()
-        self.assertEqual(len(result['scenes']), 6)
+        self.assertEqual(len(result['scenes']), 5)
         self.assertEqual(result['spoken_text'].count('abone ol'), 1)
         self.assertTrue(result['scenes'][-1]['text'].endswith('İlginç Gerçekler kanalına abone ol'))
         self.assertEqual(result['reference_source'], sources[0])

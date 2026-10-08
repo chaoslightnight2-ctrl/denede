@@ -1,12 +1,13 @@
 from pathlib import Path
 import requests
 from .config import PEXELS_API_KEY
-from .stock_relevance import relevance
+from .stock_relevance import select_assets
+import json
 
 API = "https://api.pexels.com/videos/search"
 
 
-def search_vertical(query: str, min_duration: float = 3.0) -> str | None:
+def candidates(query: str, min_duration: float = 3.0) -> list[dict]:
     r = requests.get(
         API,
         headers={"Authorization": PEXELS_API_KEY},
@@ -15,16 +16,20 @@ def search_vertical(query: str, min_duration: float = 3.0) -> str | None:
     )
     r.raise_for_status()
     videos = r.json().get("videos", [])
-    videos.sort(key=lambda v: (relevance(query, v), min(float(v.get("duration") or 0), 30)), reverse=True)
+    eligible = []
     for v in videos:
         if v.get("duration", 0) < min_duration:
             continue
         files = [f for f in v["video_files"] if f.get("width", 0) >= 1080 and f.get("height", 0) > f.get("width", 0)]
         if not files:
             continue
-        files.sort(key=lambda f: f.get("height", 0))
-        return files[0]["link"]
-    return None
+        eligible.append({**v, 'eligible_files': files})
+    return eligible
+
+
+def search_vertical(query: str, min_duration: float = 3.0) -> str | None:
+    selected = select_assets([{'query': query, 'assets': candidates(query, min_duration)}])[0]
+    return min(selected['eligible_files'], key=lambda f: f['height'])['link']
 
 
 def download(url: str, out_path: Path) -> Path:
@@ -38,10 +43,17 @@ def download(url: str, out_path: Path) -> Path:
 
 def fetch_for_scenes(scenes: list[dict], out_dir: Path) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
+    requested = [{'query': s['visual_query'], 'text': s['text'],
+                  'assets': candidates(s['visual_query'])} for s in scenes]
+    chosen = select_assets(requested)
     paths = []
-    for i, scene in enumerate(scenes):
-        url = search_vertical(scene["visual_query"])
-        if url is None:
-            raise RuntimeError(f"Konuya uygun Pexels sonucu yok; genel fallback kapalı. Sahne {i}: {scene['visual_query']}")
+    evidence = Path('output/stock-selections.jsonl')
+    evidence.parent.mkdir(exist_ok=True)
+    for i, (scene, asset) in enumerate(zip(scenes, chosen)):
+        url = min(asset['eligible_files'], key=lambda f: f['height'])['link']
+        with evidence.open('a', encoding='utf-8') as out:
+            out.write(json.dumps({'scene': i, 'query': scene['visual_query'], 'narration': scene['text'],
+                                  'asset': {k: asset.get(k) for k in ('id', 'url', 'title', 'description')},
+                                  'file': url}, ensure_ascii=False) + '\n')
         paths.append(download(url, out_dir / f"scene_{i:02d}.mp4"))
     return paths

@@ -43,8 +43,8 @@ def validate_visual_query(query: str) -> str:
 
 def validate_and_prepare(data: dict) -> dict:
     scenes = data.get("scenes")
-    if not isinstance(scenes, list) or not 5 <= len(scenes) <= 7:
-        raise ValueError("scenes 5-7 sahne olmalı")
+    if not isinstance(scenes, list) or not 4 <= len(scenes) <= 5:
+        raise ValueError("scenes 4-5 sahne olmalı")
     seen_queries = set()
     clean_scenes = []
     for scene in scenes:
@@ -67,8 +67,8 @@ def validate_and_prepare(data: dict) -> dict:
     forbidden = [marker for marker in FORBIDDEN_SPOKEN if marker in low]
     if forbidden:
         raise ValueError("konuşma metninde kaynak/çıktı kalıntısı var: " + ", ".join(forbidden))
-    if not 55 <= len(spoken.split()) <= 90:
-        raise ValueError("konuşma metni 55-90 kelime olmalı")
+    if not 35 <= len(spoken.split()) <= 65:
+        raise ValueError("konuşma metni 35-65 kelime olmalı")
     if low.count("abone ol") != 1:
         raise ValueError("abonelik çağrısı tam bir kez geçmeli")
     if "İlginç Gerçekler".casefold() not in low:
@@ -100,6 +100,6 @@ def validate_rendered_video(path: str | Path) -> None:
         raise ValueError("final videoda görüntü veya ses yok")
     if int(picture.get("height") or 0) <= int(picture.get("width") or 0):
         raise ValueError("final video dikey değil")
-    if not 25 <= duration <= 45:
+    if not 15 <= duration <= 35:
         raise ValueError(f"final video süresi uygunsuz: {duration:.1f} saniye")
 

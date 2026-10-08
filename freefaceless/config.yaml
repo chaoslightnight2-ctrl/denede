@@ -6,7 +6,7 @@ language: tr
 
 script:
   model: openai/gpt-oss-120b
-  target_seconds: 32
+  target_seconds: 24
   words_per_second: 2.2
 
 voice:

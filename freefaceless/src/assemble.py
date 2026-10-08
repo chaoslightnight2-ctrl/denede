@@ -45,6 +45,14 @@ def _scene_durations(words: list[dict], scenes: list[dict], audio_duration: floa
 
 def _prep_scene_clip(src: Path, target_dur: float, out_path: Path, w: int, h: int, fps: int):
     src_dur = probe_duration(src)
+    from .stock_frames import visible_start
+    offset = visible_start(src, src_dur)
+    if offset:
+        trimmed = out_path.with_name(out_path.stem + '_visible.mp4')
+        _run(['ffmpeg', '-y', '-ss', str(offset), '-i', str(src), '-an',
+              '-c:v', 'libx264', '-preset', 'fast', '-crf', '20', str(trimmed)])
+        src = trimmed
+        src_dur = probe_duration(src)
     vf = (
         f"scale={w}:{h}:force_original_aspect_ratio=increase,"
         f"crop={w}:{h},setsar=1,fps={fps}"

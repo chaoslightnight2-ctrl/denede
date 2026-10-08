@@ -14,9 +14,9 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60] or "short"
 
 
-MIN_VOICE_SECONDS = 28.0
-MAX_VOICE_SECONDS = 38.0
-TARGET_VOICE_SECONDS = 32.0
+MIN_VOICE_SECONDS = 18.0
+MAX_VOICE_SECONDS = 30.0
+TARGET_VOICE_SECONDS = 24.0
 MAX_SCRIPT_TRIES = 3
 
 
@@ -40,7 +40,7 @@ def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object
             best = cand
         if MIN_VOICE_SECONDS <= duration <= MAX_VOICE_SECONDS:
             return data, work, voice_mp3, words, duration
-    raise RuntimeError(f"Üç aynı Groq denemesi ses süresini 28-38 saniyeye sığdıramadı; en yakın aday kullanılmadı")
+    raise RuntimeError(f"Üç aynı Groq denemesi ses süresini 18-30 saniyeye sığdıramadı; en yakın aday kullanılmadı")
 
 
 def run_once(niche: str | None = None, publish_at: str | None = None,

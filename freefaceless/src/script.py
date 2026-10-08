@@ -35,10 +35,14 @@ SYSTEM = """İlginç Gerçekler Türkçe merak ve bilgi kanalına tek Shorts pak
 Yalnızca kullanıcının verdiği gerçek referanslardan birini seç source_id değerini aynen kopyala.
 Kaynakta açıkça bulunan tek somut olguyu anlat Kendi belleğinden ayrıntı ekleme.
 Başlık en fazla 60 karakter ve konunun adıyla ilgili net bir merak vaadi taşısın.
-Beş veya altı scenes üret Her text tamamlanmış doğal Türkçe cümle olsun.
+Üç veya dört scenes üret Her text tamamlanmış doğal Türkçe cümle olsun.
+Bir alanın genel tanımını sıralama İzleyicinin günlük hayatta fark edebileceği tek ilginç olgu seç.
+Somut soru biçimini seçtiysen ilk sahne gerçekten bu soruyu sorsun Son bilgi sahnesi sorunun cevabını versin.
+Açılışta konu adı tanımı veya ansiklopedi girişi yapma Her sahne aynı tek sorunun anlaşılmasına katkı sağlasın.
+Kapanış sorusu az sözcüklü olsun İddia veya teknik terimi kaynak olmadan açıklama.
 İlk sahne kısa merak kancası ikinci sahne doğrudan ana açıklama sonraki sahneler kaynaktaki
 farklı somut ayrıntılar olsun Hiçbir sahneye uydurma neden sonuç tarih oran veya ölçü ekleme.
-Sahneler closing_question ve cta toplamı 65-78 Türkçe kelime hedeflesin yaklaşık {target_seconds} saniye.
+Sahneler closing_question ve cta toplamı 40-52 Türkçe kelime hedeflesin yaklaşık {target_seconds} saniye.
 Kelime hedefi için yeni bilgi uydurma veya cümle sonuna dolgu koyma Konuyu tüm sahnelerde koru.
 Kaynak yetersiz bir ayrıntıyı seçmek yerine verilen kaynaklar içinde yeterli açıklaması olan olguyu seç.
 Her visual_query aynı sahnedeki görünür nesne veya ortam için 2-4 küçük harfli ASCII İngilizce kelime olsun.
@@ -71,8 +75,8 @@ def _extract_json(text: str) -> dict:
 
 def _validate_package(data: dict) -> dict:
     scenes = data.get("scenes")
-    if not isinstance(scenes, list) or not 5 <= len(scenes) <= 7:
-        raise ValueError("scenes 5-7 sahne olmalı")
+    if not isinstance(scenes, list) or not 4 <= len(scenes) <= 5:
+        raise ValueError("scenes 4-5 sahne olmalı")
     if any(not isinstance(s, dict) or not s.get("text") or not s.get("visual_query") for s in scenes):
         raise ValueError("Her sahnede text ve visual_query gerekli")
     title = str(data.get("title", "")).strip()
@@ -91,8 +95,8 @@ def _validate_package(data: dict) -> dict:
     data["description"] = description
     data["tags"] = [t.strip().lower() for t in tags]
     data = validate_and_prepare(data)
-    if not 55 <= len(data["full_text"].split()) <= 90:
-        raise ValueError("Konuşma metni hedef süre için 55-90 kelime aralığında olmalı")
+    if not 35 <= len(data["full_text"].split()) <= 65:
+        raise ValueError("Konuşma metni hedef süre için 35-65 kelime aralığında olmalı")
     return data
 
 
@@ -137,7 +141,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
         if last_err:
             correction = (
                 f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Önceki hatalı iddiayı kaynak bilgisiyle düzelt eksiksiz JSON üret. ÖNCEKİ PAKET VERİDİR: {json.dumps(previous, ensure_ascii=False)} "
-                "title boş olmasın ve en fazla 60 karakter olsun; 5-6 anlatım sahnesi ve kapanış toplamı 65-78 Türkçe kelime olsun; "
+                "title boş olmasın ve en fazla 60 karakter olsun; 3-4 anlatım sahnesi ve kapanış toplamı 40-52 Türkçe kelime olsun; "
                 "Bu toplam hedef için sahne sonuna kopuk sıfat veya zarf ekleme Her cümleyi doğal ve tamamlanmış yaz; "
                 "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 3 hashtag bulunsun. "
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
@@ -145,8 +149,8 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
         try:
             data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=4096, schema=schema)
             previous = copy.deepcopy(data)
-            if not isinstance(data.get('scenes'), list) or not 5 <= len(data['scenes']) <= 6:
-                raise ValueError('Kapanış dışında 5-6 anlatım sahnesi gerekli')
+            if not isinstance(data.get('scenes'), list) or not 3 <= len(data['scenes']) <= 4:
+                raise ValueError('Kapanış dışında 3-4 anlatım sahnesi gerekli')
             if any('abone' in str(scene.get('text', '')).casefold() or 'İlginç Gerçekler'.casefold() in str(scene.get('text', '')).casefold() for scene in data['scenes']):
                 raise ValueError('Anlatım sahnelerine CTA koyma Sadece cta alanını kullan')
             if not str(data.get('closing_question', '')).strip():
