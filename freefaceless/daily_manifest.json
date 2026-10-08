@@ -30,5 +30,12 @@
     "publish_at": "2026-10-08T13:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "37709502910",
+    "slot": "0000",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Konu tekrar ediyor; başka olgu seç"
   }
 ]
