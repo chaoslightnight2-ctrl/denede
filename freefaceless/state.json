@@ -16,7 +16,8 @@
     "Mimari",
     "Günlük hayatta bilimin açıklamaları",
     "Uyku",
-    "Psikoloji"
+    "Psikoloji",
+    "Teknoloji"
   ],
   "published": [
     {
@@ -173,6 +174,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "37551955683",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261008_010706",
+      "topic": "Teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "İnternet nasıl dünya çapında milyarlarca cihazı bağlar",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261008_010706_teknoloji/final.mp4",
+      "video_id": "uQdwUc-_0HI",
+      "publish_at": "2026-10-08T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "37709502910"
     }
   ]
 }
