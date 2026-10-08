@@ -134,6 +134,8 @@ def denede():
     def record(*args, **kwargs):
         result = original(*args, **kwargs)
         report['content'] = result[0]
+        shutil.copyfile(result[2], OUT / 'voice.mp3')
+        shutil.copyfile(Path(result[2]).with_suffix('.words.json'), OUT / 'voice.words.json')
         save()
         return result
     pipeline._pick_script = record

@@ -11,7 +11,7 @@ def candidates(query: str, min_duration: float = 3.0) -> list[dict]:
     r = requests.get(
         API,
         headers={"Authorization": PEXELS_API_KEY},
-        params={"query": query, "orientation": "portrait", "per_page": 15, "size": "medium"},
+        params={"query": query, "per_page": 20, "size": "medium"},
         timeout=30,
     )
     r.raise_for_status()
@@ -20,7 +20,7 @@ def candidates(query: str, min_duration: float = 3.0) -> list[dict]:
     for v in videos:
         if v.get("duration", 0) < min_duration:
             continue
-        files = [f for f in v["video_files"] if f.get("width", 0) >= 1080 and f.get("height", 0) > f.get("width", 0)]
+        files = [f for f in v["video_files"] if min(f.get("width", 0), f.get("height", 0)) >= 720]
         if not files:
             continue
         eligible.append({**v, 'eligible_files': files})

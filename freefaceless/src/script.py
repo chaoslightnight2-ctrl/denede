@@ -18,10 +18,12 @@ os.environ.setdefault("GROQ_MODEL", CONFIG["script"]["model"])
 
 PACKAGE_SCHEMA = object_schema({
     "source_id": {"type": "string", "description": "Exact id of the supplied reference; metadata only"},
-    **{key: {"type": "string"} for key in ("topic", "title", "description")},
+    "topic": {"type": "string", "description": "Kısa doğal Türkçe konu adı; İngilizce kaynak başlığını kopyalama"},
+    "title": {"type": "string", "description": "Doğru yazılmış doğal Türkçe başlık; en fazla 60 karakter"},
+    "description": {"type": "string", "description": "Konuya özel Türkçe açıklama; Türkçe harfleri koruyan tam üç hashtag"},
     "closing_question": {"type": "string"}, "closing_visual_query": {"type": "string"},
     "cta": {"type": "string", "enum": ["İlginç Gerçekler kanalına abone ol"]},
-    "tags": {"type": "array", "items": {"type": "string"}},
+    "tags": {"type": "array", "items": {"type": "string", "description": "Tam ve doğru yazılmış küçük harfli Türkçe sözcük veya sözcük öbeği; harf atma veya kök kesme"}},
     "scenes": {"type": "array", "items": object_schema({
         "text": {"type": "string", "description": "A complete natural Turkish spoken sentence supported by the selected reference. No punctuation, numerical digits, source references, production instructions or filler."},
         "visual_query": {"type": "string", "description": "Two to four lowercase ASCII English words naming a visible object relevant to this sentence"}})}})
@@ -49,7 +51,7 @@ Her visual_query aynı sahnedeki görünür nesne veya ortam için 2-4 küçük 
 closing_question konuya özel kısa Türkçe yorum sorusu olsun closing_visual_query üç İngilizce kelime olsun.
 cta aynen İlginç Gerçekler kanalına abone ol değerini taşısın Diğer konuşmada abonelik çağrısı olmasın.
 description iki kısa konuya özel Türkçe cümle ve sonunda shorts dahil üç benzersiz alakalı hashtag taşısın.
-tags beş küçük harfli işaretsiz ilgili terim olsun Konuşmada hiçbir hashtag kaynak veya talimat bulunmasın.
+tags beş küçük harfli ilgili Türkçe sözcük veya sözcük öbeği olsun # işareti kullanma Türkçe harfleri koru Konuşmada hiçbir hashtag kaynak veya talimat bulunmasın.
 Konuşma alanlarının ham değerleri noktalamasız olsun Sayı ve kesirleri Türkçe sözcüklerle yaz.
 Kaynak kimliği URL ve açıklama sadece metadata olsun Yanıt yalnızca verilen JSON şemasını içersin."""
 
@@ -171,12 +173,12 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "belleğinle doğru sayma Kaynakta bulunan terimlerin farklı olay veya ölçeğe "
                 "taşınmasını onaylama reason alanında karşılaştırdığın kaynak bilgisini ve "
                 "ilgili anlatım iddiasını açıkça belirt Onay için sadece tutarlı demek yeterli değildir. "
-                "Başlıkta verilen vaat sahnelerde açıkça yanıtlanmış olmalı. "
+                "Başlıkta verilen vaat sahnelerde açıkça yanıtlanmış olmalı. Konu adı etiketler ve hashtagler doğru yazılmış tam Türkçe sözcükler olmalı Harf eksiltilmiş veya İngilizce kaynak başlığı kopyalanmış metadata üreticiye düzeltme olarak bildir. "
                 "Konuşma yalnızca scenes içindeki text alanıdır visual_query İngilizce arama metnidir. "
                 "description metadata alanıdır burada istenen hashtagler hata değildir. "
                 "Konuşmada kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa reddet. "
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
-                    {key: raw_package[key] for key in ('topic', 'title', 'description', 'scenes')}, ensure_ascii=False)
+                    {key: raw_package[key] for key in ('topic', 'title', 'description', 'tags', 'scenes')}, ensure_ascii=False)
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
                 temperature=0, max_tokens=3072, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
