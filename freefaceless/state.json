@@ -17,7 +17,8 @@
     "Günlük hayatta bilimin açıklamaları",
     "Uyku",
     "Psikoloji",
-    "Teknoloji"
+    "Teknoloji",
+    "Gıda Bilimi"
   ],
   "published": [
     {
@@ -187,6 +188,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "37709502910",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261008_013106",
+      "topic": "Gıda Bilimi",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Gıdalardaki Kimyasal Bileşenler Nasıl İncelenir",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261008_013106_g-da-bilimi/final.mp4",
+      "video_id": "dRv2xmpZSE4",
+      "publish_at": "2026-10-08T13:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "37709502910"
     }
   ]
 }
