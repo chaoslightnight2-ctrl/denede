@@ -1,41 +1,18 @@
 [
   {
-    "run_id": "37551955683",
-    "slot": "1600",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-07T16:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-10-07T13:00:00Z",
-    "video_id": "kHMYeELrulo",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261007_003907_uyku/final.mp4",
-    "topic": "Uyku",
-    "title": "Uyku iki aşamada nasıl gerçekleşir",
-    "narration": "Uyku iki farklı aşamadan oluşur İlk aşama hızlı göz hareketli uyku olarak bilinir ve beyin aktivitesi en yoğundur Bu aşamada beyin aktivitesi en yüksek seviyededir bu sırada beyin dalgaları değişir İkinci aşama derin uyku ve vücudun dinlenmesidir Rüyalar genellikle hızlı göz hareketli uyku aşamasında görülür Uyku sırasında kas aktivitesi azalır ve beyin farklı dalga desenleri gösterir Rüyalar hangi uyku aşamasında ortaya çıkar İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-07T13:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "37551955683",
-    "slot": "0000",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-08T00:00:00+03:00",
-    "scheduled_publish_at_utc": "2026-10-07T21:00:00Z",
-    "video_id": "koeWYXvPozo",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261007_005506_psikoloji/final.mp4",
-    "topic": "Psikoloji",
-    "title": "Eidetik Hafıza Gerçek mi Çocuklarda Görülen Sır",
-    "narration": "Eidetik hafıza çocuklarda görülen nadir bir yetenektir Bir resmi bir kez gördükten sonra birkaç dakika ayrıntılı hatırlayabilirler ve renkleri de hatırlayabilirler Bu yetenek genellikle çocuklarda sınırlı bir süreyle ortaya çıkar Yetişkinlerde gerçek fotoğrafik hafıza ise hiç kanıtlanmamıştır bu yüzden bilim insanları şüpheyle yaklaşır Araştırmalar gösteriyor ki sadece çok az çocuk bu özelliği sergiler Dolayısıyla eidetik hafıza bir süper güçten çok geçici bir algıdır Sizce bu yetenek geliştirilebilir mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-07T21:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "37551955683",
+    "run_id": "37709502910",
     "slot": "0800",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-08T08:00:00+03:00",
+    "scheduled_publish_at_utc": "2026-10-08T05:00:00Z",
+    "video_id": "uQdwUc-_0HI",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261008_010706_teknoloji/final.mp4",
+    "topic": "Teknoloji",
+    "title": "İnternet nasıl dünya çapında milyarlarca cihazı bağlar",
+    "narration": "Dünya çapında milyarlarca cihazı bir araya getiren küresel ağ İnternet İnternet farklı kurumların ağlarını birleştirerek ortak bir iletişim platformu oluşturur TCP IP protokol takımı sayesinde cihazlar veri paketlerini güvenli bir şekilde değiş tokuş eder Ağlar kablolu kablosuz ve optik teknolojilerle birbirine bağlanarak veri akışını sağlar İnternet üzerinden web sayfaları eposta anlık mesajlaşma ve video akışı gibi hizmetler sunulur İnternet olmasaydı günlük yaşam nasıl değişirdi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-08T05:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
