@@ -18,6 +18,8 @@ os.environ.setdefault("GROQ_MODEL", CONFIG["script"]["model"])
 
 PACKAGE_SCHEMA = object_schema({
     "source_id": {"type": "string", "description": "Exact id of the supplied reference; metadata only"},
+    "source_fact_quote": {"type": "string", "description": "Copy one to three related complete sentences verbatim from the selected reference. They must support the one fact and all details narrated. Evidence metadata only, never speech."},
+    "fact_scope": {"type": "string", "description": "Identify the exact entity, conditions and scope of the copied fact. For any quantity preserve the population, denominator, unit and bounds. Metadata only, never speech."},
     "topic": {"type": "string", "description": "Kısa doğal Türkçe konu adı; İngilizce kaynak başlığını kopyalama"},
     "title": {"type": "string", "description": "Doğru yazılmış doğal Türkçe başlık; en fazla 60 karakter"},
     "description": {"type": "string", "description": "Konuya özel Türkçe açıklama; Türkçe harfleri koruyan tam üç hashtag"},
@@ -36,6 +38,14 @@ TURKISH_NICHES = ["Günlük hayat ve eşyalar", "Psikoloji ve insan davranışla
 SYSTEM = """İlginç Gerçekler Türkçe merak ve bilgi kanalına tek Shorts paketi yaz.
 Yalnızca kullanıcının verdiği gerçek referanslardan birini seç source_id değerini aynen kopyala.
 Kaynakta açıkça bulunan tek somut olguyu anlat Kendi belleğinden ayrıntı ekleme.
+Senaryodan önce source_fact_quote alanına seçtiğin olguyu ve anlatacağın ayrıntıları destekleyen
+birbiriyle ilgili bir ila üç tam kaynak cümlesini değiştirmeden kopyala fact_scope alanında
+bu cümlelerin hangi varlık koşul ve kapsam hakkında olduğunu belirle Sonra sadece bu
+aynı olguyu anlaşılır Türkçeyle anlat Bu kanıt alanları metadata olarak kalır seslendirilmez.
+Bir oran seçersen payı ve paydayı birimi ve kapsanan varlık kümesini açıkça ayır Kaynaktaki
+bir alt kümenin ölçüsünü daha geniş kümenin ölçüsü gibi anlatma Kaynakta farklı sayımlar
+varsa bunları birleştirme Sayı veya oran ana açıklama için gerekli değilse sayısız somut
+olgu seç Kaynakta desteklenmeyen mekanizma veya sonuçla kısa olguyu uzatma.
 Başlık en fazla 60 karakter ve konunun adıyla ilgili net bir merak vaadi taşısın.
 Üç veya dört scenes üret Her text tamamlanmış doğal Türkçe cümle olsun.
 Bir alanın genel tanımını sıralama İzleyicinin günlük hayatta fark edebileceği tek ilginç olgu seç.
