@@ -25,7 +25,8 @@ class DenedeQualityTests(unittest.TestCase):
                  'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
         queries = ['ocean surface waves', 'wind sea waves', 'water circular motion', 'shallow coastal waves', 'beach breaking waves']
         package = {'source_id': '123', 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
-                   'description': 'Deniz dalgalarının hareketi #shorts #Dalga #Deniz',
+                   'description': 'Deniz dalgalarının hareketi',
+                   'hashtags': {'primary': 'Dalga', 'secondary': 'Deniz'},
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
                    'scenes': [{'text': t, 'visual_query': q} for t, q in zip(texts[:4], queries[:4])],
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
@@ -39,6 +40,8 @@ class DenedeQualityTests(unittest.TestCase):
         self.assertEqual(result['spoken_text'].count('abone ol'), 1)
         self.assertTrue(result['scenes'][-1]['text'].endswith('İlginç Gerçekler kanalına abone ol'))
         self.assertEqual(result['reference_source'], sources[0])
+        self.assertTrue(result['description'].endswith('#shorts #Dalga #Deniz'))
+        self.assertEqual(result['spoken_text'].count('#'), 0)
         self.assertIn(sources[0]['text'], request.call_args_list[1].args[0])
         self.assertIn(texts[1], request.call_args_list[1].args[0])
         self.assertNotIn('.', result['scenes'][1]['text'])

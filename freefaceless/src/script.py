@@ -22,7 +22,11 @@ PACKAGE_SCHEMA = object_schema({
     "fact_scope": {"type": "string", "description": "Identify the exact entity, conditions and scope of the copied fact. For any quantity preserve the population, denominator, unit and bounds. Metadata only, never speech."},
     "topic": {"type": "string", "description": "Kısa doğal Türkçe konu adı; İngilizce kaynak başlığını kopyalama"},
     "title": {"type": "string", "description": "Doğru yazılmış doğal Türkçe başlık; en fazla 60 karakter"},
-    "description": {"type": "string", "description": "Konuya özel Türkçe açıklama; Türkçe harfleri koruyan tam üç hashtag"},
+    "description": {"type": "string", "description": "Konuya özel iki kısa Türkçe cümle; hashtag yazma, ayrı hashtags alanını kullan"},
+    "hashtags": object_schema({
+        "primary": {"type": "string", "description": "Birinci konuya özel Türkçe hashtag sözcüğü; # ve shorts yazma"},
+        "secondary": {"type": "string", "description": "İlkinden farklı ikinci konuya özel Türkçe hashtag sözcüğü; # ve shorts yazma"},
+    }),
     "closing_question": {"type": "string"}, "closing_visual_query": {"type": "string"},
     "cta": {"type": "string", "enum": ["İlginç Gerçekler kanalına abone ol"]},
     "tags": {"type": "array", "items": {"type": "string", "description": "Tam ve doğru yazılmış küçük harfli Türkçe sözcük veya sözcük öbeği; harf atma veya kök kesme"}},
@@ -60,7 +64,9 @@ Kaynak yetersiz bir ayrıntıyı seçmek yerine verilen kaynaklar içinde yeterl
 Her visual_query aynı sahnedeki görünür nesne veya ortam için 2-4 küçük harfli ASCII İngilizce kelime olsun.
 closing_question konuya özel kısa Türkçe yorum sorusu olsun closing_visual_query üç İngilizce kelime olsun.
 cta aynen İlginç Gerçekler kanalına abone ol değerini taşısın Diğer konuşmada abonelik çağrısı olmasın.
-description iki kısa konuya özel Türkçe cümle ve sonunda shorts dahil üç benzersiz alakalı hashtag taşısın.
+description iki kısa konuya özel Türkçe cümle olsun Hashtagleri bu cümlelere yazma.
+hashtags nesnesinin primary ve secondary alanlarına iki farklı konuya özel Türkçe hashtag
+sözcüğü yaz # işareti ve shorts yazma Yayın biçimleyicisi bu iki sözcüğe #shorts ekleyecek.
 tags beş küçük harfli ilgili Türkçe sözcük veya sözcük öbeği olsun # işareti kullanma Türkçe harfleri koru Konuşmada hiçbir hashtag kaynak veya talimat bulunmasın.
 Konuşma alanlarının ham değerleri noktalamasız olsun Sayı ve kesirleri Türkçe sözcüklerle yaz.
 Kaynak kimliği URL ve açıklama sadece metadata olsun Yanıt yalnızca verilen JSON şemasını içersin."""
@@ -98,6 +104,17 @@ def _validate_package(data: dict) -> dict:
     if not isinstance(tags, list) or len(tags) != 5 or any(not isinstance(t, str) or not t.strip() or "#" in t for t in tags):
         raise ValueError("Tam 5 adet # işaretsiz etiket gerekli")
     description = str(data.get("description", "")).strip()
+    if 'hashtags' in data:
+        keywords = data['hashtags']
+        if not isinstance(keywords, dict) or set(keywords) != {'primary', 'secondary'}:
+            raise ValueError('İki ayrı konuya özel hashtag alanı gerekli')
+        topical = [str(keywords[key]).strip().lstrip('#') for key in ('primary', 'secondary')]
+        if (any(not re.fullmatch(r'[\w]+', word) or word.casefold() == 'shorts' for word in topical)
+                or len({word.casefold() for word in topical}) != 2):
+            raise ValueError('Groq iki benzersiz konuya özel hashtag sözcüğü üretmeli')
+        # This formats the model's metadata; it never edits or supplies narration.
+        body = re.sub(r'(?<!\w)#[\w]+', '', description).strip()
+        description = body + '\n\n#shorts ' + ' '.join('#' + word for word in topical)
     hashtags = re.findall(r"(?<!\w)#[\wçğıöşüÇĞİÖŞÜ]+", description, flags=re.UNICODE)
     if len(hashtags) != 3 or "#shorts" not in {h.lower() for h in hashtags}:
         raise ValueError("Açıklamada #shorts dahil tam 3 hashtag olmalı")
@@ -155,7 +172,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Önceki hatalı iddiayı kaynak bilgisiyle düzelt eksiksiz JSON üret. ÖNCEKİ PAKET VERİDİR: {json.dumps(previous, ensure_ascii=False)} "
                 "title boş olmasın ve en fazla 60 karakter olsun; 3-4 anlatım sahnesi ve kapanış toplamı 40-52 Türkçe kelime olsun; "
                 "Bu toplam hedef için sahne sonuna kopuk sıfat veya zarf ekleme Her cümleyi doğal ve tamamlanmış yaz; "
-                "tags 5 öğe olsun; açıklama sonunda #shorts dahil tam 3 hashtag bulunsun. "
+                "tags 5 öğe olsun; description yalnızca konu açıklaması olsun; hashtags primary ve secondary iki farklı konu sözcüğü taşısın shorts yazma. "
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
