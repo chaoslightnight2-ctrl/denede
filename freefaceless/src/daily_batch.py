@@ -39,15 +39,19 @@ def publish_time(hour: int) -> datetime:
 
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
+    from .upload_recovery import requested
+    recovery = requested()
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-upload", action="store_true", help="Yükleme yapma (kuru test)")
-    ap.add_argument("--limit", type=int, choices=range(1, 7), default=int(os.getenv('DAILY_VIDEO_COUNT', '3')),
+    ap.add_argument("--limit", type=int, choices=range(1, 7), default=1 if recovery else int(os.getenv('DAILY_VIDEO_COUNT', '3')),
                     help="Sadece ilk N slotu çalıştır")
     ap.add_argument("--private-smoke", action="store_true",
                     help="Tek bir videoyu gizli yükle, yayın zamanı ayarlama")
     ap.add_argument("--retry-failed", action="store_true",
                     help="Manifestte başarısız olan slotları tekrar dene; başarılı yüklemelere dokunma")
     args = ap.parse_args()
+    if recovery:
+        args.private_smoke = True
     configured_slots = [(f'{hour:02}00', hour) for hour in range(0, 24, 8)] if args.limit == 3 else SLOTS
 
     if args.private_smoke and args.retry_failed:
@@ -56,6 +60,7 @@ def main() -> None:
         ap.error("--retry-failed gerçek yükleme içindir; --no-upload ile kullanılamaz")
     if args.private_smoke:
         args.limit = 1
+        os.environ['YOUTUBE_UPLOAD_SMOKE'] = '1'
 
     previous = []
     if args.retry_failed:
@@ -112,7 +117,8 @@ def main() -> None:
                 "slot": slot,
                 "niche": niche,
                 "ok": args.no_upload or res.get("upload_status") in ("api_insert_confirmed", "youtube_processed"),
-                "scheduled_publish_at_turkey": at.isoformat(),
+                "scheduled_publish_at_turkey": None if args.private_smoke else at.isoformat(),
+                "private_recovery": recovery,
                 "scheduled_publish_at_utc": None if args.no_upload else res.get("publish_at", utc),
                 **res,
             }
