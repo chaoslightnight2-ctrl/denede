@@ -1,9 +1,1 @@
-[
-  {
-    "run_id": "38465517383",
-    "slot": "0800",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: Kaynak, Jüpiter ve Satürn'ün Güneş Sistemi toplam kütlesinin %90'ını oluşturduğunu desteklemiyor; sadece yıldız dışı kütlenin %90'ı olarak belirtilmiş, diğer iddialar da kaynakta yer almıyor."
-  }
-]
+[]
