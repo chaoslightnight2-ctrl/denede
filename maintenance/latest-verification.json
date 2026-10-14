@@ -1,18 +1,11 @@
 {
-  "source_run": "38520821816",
-  "verified_at": "2026-10-14T06:13:42.541648+00:00",
+  "source_run": "38521217313",
+  "verified_at": "2026-10-14T08:22:15.180810+00:00",
   "videos": [],
-  "errors": [
-    {
-      "index": 1,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: Başlık ve açıklama kaynakla tutarsız; 'gizli' ifadesi ve 'iki ana kontrol noktası' gibi iddialar desteklenmiyor, bazı sahneler kaynakta yer almıyor ve metinde dil bozuklukları bulunuyor."
-    },
-    "Older manifest receipts are not proof of uploads in this run"
-  ],
+  "errors": [],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
