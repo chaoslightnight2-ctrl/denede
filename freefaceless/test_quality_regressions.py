@@ -40,6 +40,15 @@ class DenedeQualityTests(unittest.TestCase):
         self.assertEqual(result['spoken_text'].count('abone ol'), 1)
         self.assertTrue(result['scenes'][-1]['text'].endswith('İlginç Gerçekler kanalına abone ol'))
         self.assertEqual(result['reference_source'], sources[0])
+        # The actual assembled video has five scenes, but only four factual
+        # scenes may be sent for source entailment; the fifth contains the CTA.
+        review_prompt = request.call_args_list[1].args[0]
+        marker = 'JSON döndür: {"valid":true,"reason":"kısa gerekçe"}\n'
+        review_data = __import__('json').loads(review_prompt.split(marker, 1)[1].split('\nKAYNAK:\n', 1)[0])
+        self.assertEqual(review_data['scenes'], package['scenes'])
+        self.assertEqual(review_data['closing_question'], package['closing_question'])
+        self.assertEqual(review_data['cta'], package['cta'])
+        self.assertTrue(all('abone ol' not in scene['text'] for scene in review_data['scenes']))
         self.assertTrue(result['description'].endswith('#shorts #Dalga #Deniz'))
         self.assertEqual(result['spoken_text'].count('#'), 0)
         self.assertIn(sources[0]['text'], request.call_args_list[1].args[0])
