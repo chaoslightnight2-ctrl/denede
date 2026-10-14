@@ -53,7 +53,10 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
     print("[2-3/7] Seslendirme + kelime zaman damgası hazır")
 
     print("[4/7] Pexels b-roll")
-    scene_videos = visuals.fetch_for_scenes(data["scenes"], work / "broll")
+    visual_context = json.dumps({'topic': data['topic'], 'narration': data['spoken_text'],
+                                 'main_fact': data.get('raw_groq_package', {}).get('source_fact_quote', '')},
+                                ensure_ascii=False)
+    scene_videos = visuals.fetch_for_scenes(data["scenes"], work / "broll", context=visual_context)
 
     print("[5/7] Altyazı dosyası")
     from .config import CONFIG as CFG

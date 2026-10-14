@@ -42,9 +42,9 @@ def download(url: str, out_path: Path) -> Path:
     return out_path
 
 
-def fetch_for_scenes(scenes: list[dict], out_dir: Path) -> list[Path]:
+def fetch_for_scenes(scenes: list[dict], out_dir: Path, *, context: str = '') -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
-    requested = [{'query': s['visual_query'], 'text': s['text']} for s in scenes]
+    requested = [{'query': s['visual_query'], 'text': s['text'], 'context': context} for s in scenes]
     chosen, used_queries = select_with_query_repair(requested, candidates)
     paths = []
     evidence = Path('output/stock-selections.jsonl')

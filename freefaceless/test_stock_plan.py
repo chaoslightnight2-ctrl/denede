@@ -11,7 +11,8 @@ except ImportError:
 
 class VisualPlanRepairTests(unittest.TestCase):
     def test_repair_changes_only_search_and_selected_asset_is_still_checked(self):
-        scenes = [{'query': 'microscopic cell types', 'text': 'Bilim insanı hücreleri mikroskopla inceliyor'}]
+        scenes = [{'query': 'microscopic cell types', 'text': 'Bilim insanı hücreleri mikroskopla inceliyor',
+                   'context': 'Bütün video hücrelerin mikroskopla incelenmesini anlatır'}]
         original = copy.deepcopy(scenes)
         microscope = {'id': 8, 'url': 'https://www.pexels.com/video/microscope-lab-experiment-8/'}
         searches = []
@@ -21,13 +22,15 @@ class VisualPlanRepairTests(unittest.TestCase):
         with patch.object(plan, 'chat_json', return_value={'queries': [
                 {'scene_id': '0', 'query': 'microscope lab experiment'}]}) as repair, \
              patch.object(stock, 'chat_json', return_value={'selections': [
-                {'scene_id': '0', 'asset_id': '8', 'reason': 'microscope'}]}):
+                {'scene_id': '0', 'asset_id': '8', 'reason': 'microscope'}]}) as select:
             selected, queries = plan.select_with_query_repair(scenes, fetch)
         self.assertEqual(scenes, original)
         self.assertEqual(selected, [microscope])
         self.assertEqual(queries, ['microscope lab experiment'])
         self.assertEqual(searches, ['microscopic cell types', 'microscope lab experiment'])
         self.assertEqual(repair.call_count, 1)
+        self.assertIn(scenes[0]['context'], repair.call_args.args[0])
+        self.assertIn(scenes[0]['context'], select.call_args.args[0])
 
     def test_repeated_rejected_query_stops_instead_of_looping(self):
         with patch.object(plan, 'chat_json', return_value={'queries': [

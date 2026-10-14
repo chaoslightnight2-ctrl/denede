@@ -57,9 +57,18 @@ def select_assets(scenes):
         if not options:
             raise ValueError(f'No described asset matches scene {scene_id}: {scene["query"]}')
         offered.append({'scene_id': scene_id, 'query': scene['query'],
-                        'narration': scene.get('text', ''), 'candidates': options})
+                        'narration': scene.get('text', ''), 'video_context': scene.get('context', ''),
+                        'candidates': options})
     answer = chat_json(
-        'Her sahne için aşağıdaki GERÇEK klip açıklamalarını anlatımla karşılaştır. '
+        'Önce video_context içinden videonun ana öznesini alanını ve olgusunu belirle. '
+        'Sonra her sahne için aşağıdaki GERÇEK klip açıklamalarını bu tam bağlamda karşılaştır. '
+        'Tek sahnede araştırma öğrenme yıl veya gelişme sözcüğü geçmesi başka bir bilim '
+        'alanının nesnesini uygun yapmaz. Ana konu bütün sahnelerde korunmalı. '
+        'Mecaz veya soyut yöntem adını başka alanın fiziksel nesnesi diye yorumlama. '
+        'Anıt plaket tarihsel bina ve kişi görüntüsü ancak bu videonun aynı olgusuyla '
+        'açıkça ilgiliyse seçilebilir Genel tarih dekoru uygunluk kanıtı değildir. '
+        'Özne görünmez bir süreçse aynı konunun doğrudan kullanılan fiziksel aracını '
+        'seçebilirsin ancak başka konu veya olayın nesnesini kullanamazsın. '
         'Arama sonucu gelmesi uygunluk kanıtı değildir. Başlıkta veya açıklamada açıkça '
         'görülen nesne ve eylem konuşmayı göstermeli. Ortak tek kelime yeterli değildir. '
         'Anlatımın anlaşma, laboratuvar veya gök cismi gibi bağlamı da korunmalı. '

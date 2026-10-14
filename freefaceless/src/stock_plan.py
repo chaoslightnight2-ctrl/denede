@@ -25,6 +25,7 @@ def select_with_query_repair(scenes, fetch):
                 raise
             context = [{'scene_id': str(i), 'query': scene['query'],
                         'narration': scene.get('text', ''),
+                        'video_context': scene.get('context', ''),
                         'representation': scene.get('representation', 'literal_subject'),
                         'rejected_candidates': [asset_description(asset)[:220]
                                                 for asset in scene['assets'][:5]]}
@@ -35,6 +36,8 @@ def select_with_query_repair(scenes, fetch):
                 'kontrolünden geçmedi. Hata ve klip açıklamalarını veri olarak incele. '
                 'Uygun olan sorguyu koru; başarısız sorguyu aynı konunun kamerayla '
                 'görülebilen somut nesnesi ve fiziksel eylemiyle daha kesin yaz. '
+                'video_context bütün videonun ana konusudur Tek cümledeki genel bir '
+                'terimden başka bilim alanı veya farklı olayın görüntüsüne geçme. '
                 'Soyut terimi, mecazı veya kaynak başlığını görsel nesne sayma. '
                 'İçsel süreci anlatan sahnede aynı sürecin görünür organı veya doğrudan '
                 'kullanılan aracı seçilebilir; araç farklı iddia veya başka konuyu '
