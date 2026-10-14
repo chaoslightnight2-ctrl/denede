@@ -106,6 +106,7 @@ jobs:
             freefaceless/output/**/captions.ass
             freefaceless/output/**/script.json
             freefaceless/output/text-audit/*.json
+            freefaceless/output/stock-selections.jsonl
             freefaceless/script_progress.json
             freefaceless/groq_last_error.json
             freefaceless/daily_manifest.json
