@@ -20,7 +20,8 @@
     "Teknoloji",
     "Gıda Bilimi",
     "Yapay Zeka Tarihi",
-    "Yapay Zekâ Tarihi"
+    "Yapay Zekâ Tarihi",
+    "Yapay zekâ"
   ],
   "published": [
     {
@@ -229,6 +230,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38565865952",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261014_150308",
+      "topic": "Yapay zekâ",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "Yapay zekâ 1956’da nasıl kuruldu ve bugün ne yapıyor",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_150308_yapay-zek/final.mp4",
+      "video_id": "yR-L4HgfzeM",
+      "publish_at": null,
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38581083432"
     }
   ]
 }
