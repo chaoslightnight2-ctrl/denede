@@ -88,15 +88,11 @@ jobs:
           if [ "${{ inputs.dry_run }}" = "true" ]; then EXTRA="--no-upload"; fi
           python -m src.daily_batch $EXTRA
 
-      - name: Konu tekrarını önlemek için state'i commit'le
-        if: ${{ always() && inputs.dry_run != true }}
-        continue-on-error: true
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: 'freefaceless/state.json freefaceless/daily_manifest.json'
-          message: 'ci: freefaceless state [skip ci]'
-          default_author: github_actions
-          pull: '--rebase --autostash'
+      - name: Preserve actual upload receipts without changing checkout
+        if: ${{ always() && !cancelled() && inputs.dry_run != true }}
+        env:
+          PUBLISH_UPLOAD_CHECKPOINTS: "1"
+        run: python -m src.upload_checkpoint state.json daily_manifest.json
 
       - name: Çıktıları sakla
         if: always()
