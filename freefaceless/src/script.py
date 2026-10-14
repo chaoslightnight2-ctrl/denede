@@ -133,6 +133,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
     focus = niche or CONFIG["niche"]
     sources = fetch_sources(focus)
     sources.sort(key=lambda row: category_bonus(row["title"]), reverse=True)
+    sources = sources[:4]
     hook_style = choose_hook_style(state.load())
     schema = json.loads(json.dumps(PACKAGE_SCHEMA))
     schema['properties']['source_id']['enum'] = [s['id'] for s in sources]
@@ -176,7 +177,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Alanları atlama veya boş bırakma; JSON şemasının tüm alanlarını tekrar ver."
             )
         try:
-            data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=4096, schema=schema)
+            data = chat_json(user_msg + correction, system=_system_prompt(), temperature=.15, max_tokens=3072, schema=schema)
             previous = copy.deepcopy(data)
             if not isinstance(data.get('scenes'), list) or not 3 <= len(data['scenes']) <= 4:
                 raise ValueError('Kapanış dışında 3-4 anlatım sahnesi gerekli')
@@ -207,7 +208,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
                     {key: raw_package[key] for key in ('topic', 'title', 'description', 'tags', 'scenes')}, ensure_ascii=False)
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
-                temperature=0, max_tokens=3072, schema=REVIEW_SCHEMA)
+                temperature=0, max_tokens=1800, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
             data["audience_bucket"] = category(data["topic"] + " " + focus)
