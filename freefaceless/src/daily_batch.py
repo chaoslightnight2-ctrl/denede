@@ -1,6 +1,6 @@
 """Günde 3 farklı nişte Türkçe Shorts üretir ve zamanlı yayınlar.
 
-Her gün 00:00 / 08:00 / 16:00 (Türkiye) slotlarına birer video planlar;
+Her gün 12:00 / 19:00 / 21:00 (Türkiye) slotlarına birer video planlar;
 YouTube'a private + publishAt ile yükler, vaktinde otomatik yayınlanır; 4 kanalda günlük toplam 12 yükleme planlanır.
 Nişler gün gün dönerek 15 konu alanının tamamını kapsar; biten slot diğerlerini bozmaz.
 
@@ -19,6 +19,7 @@ from zoneinfo import ZoneInfo
 
 from . import pipeline, state
 from .config import ROOT
+from .publish_schedule import publication_hours
 from .script import TURKISH_NICHES
 
 TZ = ZoneInfo("Europe/Istanbul")
@@ -52,7 +53,7 @@ def main() -> None:
     args = ap.parse_args()
     if recovery:
         args.private_smoke = True
-    configured_slots = [(f'{hour:02}00', hour) for hour in range(0, 24, 8)] if args.limit == 3 else SLOTS
+    configured_slots = [(f'{hour:02}00', hour) for hour in publication_hours(3 if args.limit == 3 else 6)]
 
     if args.private_smoke and args.retry_failed:
         ap.error("--private-smoke ile --retry-failed birlikte kullanılamaz")
@@ -85,7 +86,7 @@ def main() -> None:
         selected_targets = []
         for row in targets:
             slot = str(row.get("slot", ""))
-            match = next(((key, hour) for key, hour in SLOTS if key == slot), None)
+            match = next(((key, hour) for key, hour in configured_slots + SLOTS if key == slot), None)
             niche = row.get("niche")
             if not match or not niche:
                 raise SystemExit(f"Başarısız manifest satırı eksik/geçersiz: slot={slot!r}, niche={niche!r}")
