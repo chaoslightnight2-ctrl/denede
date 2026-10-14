@@ -18,7 +18,8 @@
     "Uyku",
     "Psikoloji",
     "Teknoloji",
-    "Gıda Bilimi"
+    "Gıda Bilimi",
+    "Yapay Zeka Tarihi"
   ],
   "published": [
     {
@@ -201,6 +202,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "37709502910",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261014_102708",
+      "topic": "Yapay Zeka Tarihi",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "Yapay Zeka Ne Zaman Bilim Dalı Oldu",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_102708_yapay-zeka-tarihi/final.mp4",
+      "video_id": "YwAIxQbwSdg",
+      "publish_at": null,
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38545291271"
     }
   ]
 }
