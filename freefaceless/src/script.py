@@ -89,7 +89,13 @@ def _system_prompt():
         'Use visible objects from the selected source as English search terms. '
         'Do not translate these search metadata fields into Turkish. '
         'source_fact_quote stays verbatim in its original source language; '
-        'source_id stays identical to the supplied identifier.')
+        'source_id stays identical to the supplied identifier. '
+        'Numerical digits may appear in source evidence and title metadata only, '
+        'never in scenes.text, closing_question or cta. In these spoken fields '
+        'write every necessary number fully in Turkish words using the supplied '
+        'source-derived number spellings. Never introduce a named person, place, '
+        'institution or event absent from the supplied reference text, even if '
+        'you remember it as true.')
     return CLEAN_OUTPUT_RULES + NATURAL_LANGUAGE_RULES + "\n" + brief("İlginç Gerçekler") + "\n" + STORY_RULES + prompt_feedback() + "\n" + SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"]) + language_contract
 
 
@@ -250,6 +256,25 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
                     {key: raw_package[key] for key in ('topic', 'title', 'description', 'tags', 'scenes', 'closing_question', 'cta')}, ensure_ascii=False)
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
+                system=(
+                    'You are a source-bound editor, not a general knowledge checker. '
+                    'The supplied KAYNAK text is the sole evidence. First compare '
+                    'every factual clause, named entity, date, causal link and scope '
+                    'against literal supporting words in that text. Facts recalled '
+                    'from your memory, however familiar or historically true, are '
+                    'unsupported if those details are absent from this input. '
+                    'Your Turkish reason must identify the narrated claim and its '
+                    'supporting source words, or the exact unsupported addition. '
+                    'Then evaluate field roles: scenes.text and closing_question '
+                    'are intentionally punctuation-free Turkish speech. Missing '
+                    'punctuation is required and NEVER a rejection reason. A '
+                    'contextually understood omitted subject is normal Turkish. '
+                    'Description/title are metadata; punctuation is optional there. '
+                    'Numerical digits in speech are invalid; title digits are allowed. '
+                    'The separate cta is channel promotion and does not need source '
+                    'support. A personal viewer question does not need a factual '
+                    'source unless it presupposes an unsupported factual claim. '
+                    'Return only the requested valid/reason JSON schema.'),
                 temperature=0, max_tokens=1800, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 model_audit.update(audit, 'editor_rejected', verdict=verdict)
