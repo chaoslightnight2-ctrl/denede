@@ -28,13 +28,19 @@ PACKAGE_SCHEMA = object_schema({
         "primary": {"type": "string", "description": "Birinci konuya özel Türkçe hashtag sözcüğü; # ve shorts yazma"},
         "secondary": {"type": "string", "description": "İlkinden farklı ikinci konuya özel Türkçe hashtag sözcüğü; # ve shorts yazma"},
     }),
-    "closing_question": {"type": "string"}, "closing_visual_query": {"type": "string"},
+    "closing_question": {"type": "string", "description": "Short complete natural Turkish viewer question. Use Turkish terms rather than foreign abbreviations. No punctuation or digits."}, "closing_visual_query": {"type": "string"},
     "cta": {"type": "string", "enum": ["İlginç Gerçekler kanalına abone ol"]},
     "tags": {"type": "array", "items": {"type": "string", "description": "Tam ve doğru yazılmış küçük harfli Türkçe sözcük veya sözcük öbeği; harf atma veya kök kesme"}},
     "scenes": {"type": "array", "items": object_schema({
         "text": {"type": "string", "description": "A complete natural Turkish spoken sentence supported by the selected reference. No punctuation, numerical digits, source references, production instructions or filler."},
         "visual_query": {"type": "string", "description": "Two to four lowercase ASCII English words naming a visible object relevant to this sentence"}})}})
 REVIEW_SCHEMA = object_schema({"valid": {"type": "boolean"}, "reason": {"type": "string"}})
+
+# Write the evidence and spoken story before its derived publishing metadata.
+# Corrections must not retain a title from an earlier, different narration.
+PACKAGE_SCHEMA['properties'] = {key: PACKAGE_SCHEMA['properties'][key] for key in (
+    'source_id', 'source_fact_quote', 'fact_scope', 'scenes', 'closing_question',
+    'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags')}
 
 # Denede adina uygun, geniş merak alanları. Günlük akış bunları dönüşümlü kullanır.
 TURKISH_NICHES = ["Günlük hayat ve eşyalar", "Psikoloji ve insan davranışları", "Günlük hayatta bilimin açıklamaları", "Teknoloji ve icatlar"]
@@ -76,6 +82,14 @@ hashtags nesnesinin primary ve secondary alanlarına iki farklı konuya özel T�
 sözcüğü yaz # işareti ve shorts yazma Yayın biçimleyicisi bu iki sözcüğe #shorts ekleyecek.
 tags beş küçük harfli ilgili Türkçe sözcük veya sözcük öbeği olsun # işareti kullanma Türkçe harfleri koru Konuşmada hiçbir hashtag kaynak veya talimat bulunmasın.
 Konuşma alanlarının ham değerleri noktalamasız olsun Sayı ve kesirleri Türkçe sözcüklerle yaz.
+Önce ana olgunun sorusunu ve kaynaktaki açık yanıtını anlatımda tamamla Sonra topic title ve
+description alanlarını yalnızca tamamladığın bu anlatımdan türet Önceki denemeden kalan
+başlık veya açıklamayı yeni konuşmaya taşımak yerine yeniden yaz Konuşmanın yanıtlamadığı
+soru metadata alanında bulunmasın Konu değişmişse eski ana olgunun metadata değerlerini koruma.
+source_fact_quote ve fact_scope aynı son konuşmanın ana olgusunu desteklesin Ana olgunun
+yanıtını bir iddiayı düzeltirken metinden silme Başlıktaki yanıtı yalnızca açıklamada vermek
+yeterli değildir Yanıt konuşmanın içinde açıkça bulunsun Konuşmada yabancı dil kısaltması
+kullanmak yerine terimin doğal Türkçe karşılığını yaz Kapanış sorusunda da aynı kural geçerlidir.
 Kaynak kimliği URL ve açıklama sadece metadata olsun Yanıt yalnızca verilen JSON şemasını içersin."""
 
 
@@ -254,11 +268,18 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "description metadata alanıdır burada istenen hashtagler hata değildir. "
                 "Konuşmada kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa reddet. "
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
-                    {key: raw_package[key] for key in ('topic', 'title', 'description', 'tags', 'scenes', 'closing_question', 'cta')}, ensure_ascii=False)
+                    {key: raw_package[key] for key in ('topic', 'title', 'description', 'tags', 'scenes', 'closing_question', 'cta', 'source_fact_quote', 'fact_scope') if key in raw_package}, ensure_ascii=False)
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
                 system=(
                     'You are a source-bound editor, not a general knowledge checker. '
-                    'The supplied KAYNAK text is the sole evidence. First compare '
+                    'The supplied KAYNAK text is the sole evidence. Before judging '
+                    'general truth, identify the precise question or promise in '
+                    'title and the exact spoken scene answering it. Only scenes.text '
+                    'can fulfill that promise; source quotes, fact_scope and description '
+                    'are not spoken and cannot serve as its answer. A supported '
+                    'title is still invalid when its answer is absent from speech. '
+                    'Evidence metadata must describe the final narrated main fact, '
+                    'not an earlier draft. Compare '
                     'every factual clause, named entity, date, causal link and scope '
                     'against literal supporting words in that text. Facts recalled '
                     'from your memory, however familiar or historically true, are '
@@ -271,6 +292,8 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                     'contextually understood omitted subject is normal Turkish. '
                     'Description/title are metadata; punctuation is optional there. '
                     'Numerical digits in speech are invalid; title digits are allowed. '
+                    'English acronyms in spoken fields must be replaced by natural '
+                    'Turkish terms by the producer, not silently approved as Turkish. '
                     'The separate cta is channel promotion and does not need source '
                     'support. A personal viewer question does not need a factual '
                     'source unless it presupposes an unsupported factual claim. '
