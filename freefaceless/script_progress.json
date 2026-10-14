@@ -1,42 +1,42 @@
 {
-  "run_id": "38536357597",
+  "run_id": "38541184132",
   "attempt": 1,
-  "stage": "validation_failed",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "1164",
-    "source_fact_quote": "Artificial intelligence was founded as an academic discipline in 1956. Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making.",
-    "fact_scope": "Varlık: yapay zeka; koşul: akademik disiplin olarak kurulması; kapsam: 1956 yılında Dartmouth konferansı kapsamında",
-    "topic": "Yapay zeka tarihi",
-    "title": "Yapay zekanın doğuşu 1956’da nasıl gerçekleşti?",
-    "description": "Yapay zekanın akademik bir alan olarak ortaya çıkışı şaşırtıcıdır. Bu videoda 1956 yılındaki kökenine bakıyoruz.",
+    "source_id": "19174720",
+    "source_fact_quote": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices.",
+    "fact_scope": "Bu cümle, bir elektrik pilinin tanımını verir; bir ya da daha fazla elektrokimyasal hücreden oluşur, dış bağlantılarla elektrikli cihazları besler ve tüm pil tiplerini kapsar.",
+    "topic": "Elektrik Pilleri",
+    "title": "Bir Pil Nasıl Elektrik Üretiyor?",
+    "description": "Elektrik pilleri, cihazlarımızı çalıştıran temel enerji kaynaklarıdır. Bu videoda pilin iç yapısını ve nasıl çalıştığını öğreniyoruz.",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "tarih"
+      "primary": "piltekniği",
+      "secondary": "elektrikbilimi"
     },
-    "tags": [
-      "yapayzeka",
-      "dijital",
-      "bilisim",
-      "akademi",
-      "inovasyon"
-    ],
     "scenes": [
       {
-        "text": "Yapay zeka ne zaman akademik disiplin olarak kuruldu",
-        "visual_query": "kitap masası"
+        "text": "Bir pil gerçekten nasıl elektrik üretir",
+        "visual_query": "battery cell"
       },
       {
-        "text": "bin doksan altı yılında Dartmouth konferansında bilgisayar bilimcileri yapay zekayı akademik alan olarak tanımladılar",
-        "visual_query": "konferans odasi"
+        "text": "Bir pil bir ya da daha fazla elektrokimyasal hücreden oluşur ve dış bağlantılarla cihazları besler",
+        "visual_query": "circuit board"
       },
       {
-        "text": "Yapay zeka sistemleri insan zekasına benzer öğrenme akıl yürütme ve problem çözme yetenekleri kazanabilir",
-        "visual_query": "bilgisayar ekranı"
+        "text": "Pozitif terminal katot, negatif terminal ise anot olarak adlandırılır ve elektronlar negatif uçtan akar",
+        "visual_query": "battery terminals"
       }
     ],
-    "closing_question": "Yapay zeka gelecekte ne yapacak",
-    "closing_visual_query": "future robot lab",
-    "cta": "İlginç Gerçekler kanalına abone ol"
+    "closing_question": "Sizce pil ömrü ne kadar",
+    "closing_visual_query": "charging station icon",
+    "cta": "İlginç Gerçekler kanalına abone ol",
+    "tags": [
+      "pil",
+      "elektrik",
+      "hücre",
+      "enerji",
+      "teknoloji"
+    ]
   },
   "reference_sources": [
     {
@@ -64,5 +64,5 @@
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
-  "error": "visual_query yalnızca İngilizce arama kelimeleri içermeli"
+  "error": null
 }
