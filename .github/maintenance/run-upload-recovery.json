@@ -1,5 +1,5 @@
 {
+  "request_id": "2026-10-14-private-recovery-isolated-tests-4",
   "enabled": true,
-  "mode": "verify_one_private_upload",
-  "request_id": "2026-10-14-private-recovery-real-event-3"
+  "mode": "verify_one_private_upload"
 }

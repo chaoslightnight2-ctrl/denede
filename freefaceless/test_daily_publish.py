@@ -14,6 +14,21 @@ TZ = timezone(timedelta(hours=3))
 
 
 class DailyPublishingTests(unittest.TestCase):
+    def test_explicit_recovery_upload_is_one_private_video_without_publication_time(self):
+        calls = []
+        def run(**kwargs):
+            calls.append(kwargs)
+            self.assertEqual(os.environ['YOUTUBE_UPLOAD_SMOKE'], '1')
+            return {'topic': 'test', 'video_id': 'test-only-id',
+                    'upload_status': 'api_insert_confirmed', 'publish_at': None}
+        with TemporaryDirectory() as folder, patch.object(daily_batch, 'MANIFEST', Path(folder) / 'manifest.json'), \
+             patch('sys.argv', ['daily_batch']), patch('src.upload_recovery.requested', return_value=True), \
+             patch.object(daily_batch.state, 'load', return_value={'published': []}), \
+             patch.object(daily_batch.pipeline, 'run_once', side_effect=run):
+            daily_batch.main()
+        self.assertEqual(len(calls), 1)
+        self.assertIsNone(calls[0]['publish_at'])
+
     def test_voice_failure_keeps_exact_source_and_original_groq_response(self):
         package = {'topic': 'audit', 'tts_text': 'test speech',
                    'reference_source': {'id': 'source-id', 'text': 'exact source input'},
@@ -85,6 +100,23 @@ class DailyPublishingTests(unittest.TestCase):
         self.assertEqual(upload.call_args.kwargs['publish_at'], '2026-10-06T13:00:00Z')
         self.assertEqual(result['publish_at'], '2026-10-06T13:00:00Z')
 
+
+
+
+# Regression fixtures must not inherit the production push or publish checkpoints.
+_runtime_environment = None
+
+
+def setUpModule():
+    global _runtime_environment
+    _runtime_environment = patch.dict(os.environ, {
+        'GITHUB_EVENT_NAME': 'unit_test', 'PUBLISH_UPLOAD_CHECKPOINTS': '0',
+        'YOUTUBE_UPLOAD_SMOKE': '0'})
+    _runtime_environment.start()
+
+
+def tearDownModule():
+    _runtime_environment.stop()
 
 if __name__ == '__main__':
     unittest.main()
