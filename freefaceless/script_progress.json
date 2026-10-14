@@ -1,31 +1,31 @@
 {
   "run_id": "38581083432",
-  "attempt": 1,
-  "stage": "validation_failed",
+  "attempt": 2,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "1164",
     "source_fact_quote": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. Artificial intelligence was founded as an academic discipline in 1956.",
-    "fact_scope": "Yapay zekâ; bilgisayar sistemleri; öğrenme, akıl yürütme, problem çözme, algı ve karar verme gibi insan zekâsına özgü görevleri yerine getirme yeteneği; akademik disiplin olarak 1956 yılında kurulmuş; araştırma alanı",
+    "fact_scope": "Yapay zekâ; bilgisayar sistemleri; öğrenme akıl yürütme problem çözme algı ve karar verme gibi insan zekâsına özgü görevleri yerine getirme yeteneği; akademik disiplin olarak bin dokuz yüz elli altı yılında kurulmuş; araştırma alanı",
     "scenes": [
       {
-        "text": "Yapay zekâ insan gibi düşünebilir mi",
-        "visual_query": "robot face"
+        "text": "Yapay zekâ akademik disiplin olarak bin dokuz yüz elli altı yılında kuruldu",
+        "visual_query": "lab notebook"
       },
       {
         "text": "Yapay zekâ bilgisayarların öğrenme akıl yürütme ve karar verme yeteneklerini taklit eder",
         "visual_query": "computer brain"
       },
       {
-        "text": "Bu alan bin dokuz yüz elli altı yılında doğdu",
-        "visual_query": "lab notebook"
+        "text": "Günümüzde yapay zekâ sohbet botları otonom araçlar ve görüntü tanıma gibi alanlarda kullanılır",
+        "visual_query": "autonomous vehicle"
       }
     ],
     "closing_question": "Sizce gelecekte ne olur",
     "closing_visual_query": "future ai impact",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "Yapay zekâ",
-    "title": "Yapay zekâ nasıl insan gibi düşünür?",
-    "description": "Yapay zekânın ne işe yaradığını ve tarihçesini öğrenin. Bilgisayarların insan zekâsını nasıl taklit ettiğini keşfedin.",
+    "title": "Yapay zekâ 1956’da akademik disiplin olarak kuruldu",
+    "description": "Yapay zekânın tarihçesini ve temel yeteneklerini öğrenin. Günlük yaşamda nasıl kullanıldığını keşfedin",
     "hashtags": {
       "primary": "teknoloji",
       "secondary": "bilim"
@@ -40,33 +40,11 @@
   },
   "reference_sources": [
     {
-      "id": "14539",
-      "title": "Internet",
-      "url": "https://en.wikipedia.org/wiki/Internet",
-      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
-    },
-    {
-      "id": "7878457",
-      "title": "Computer",
-      "url": "https://en.wikipedia.org/wiki/Computer",
-      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
-    },
-    {
-      "id": "19174720",
-      "title": "Electric battery",
-      "url": "https://en.wikipedia.org/wiki/Electric_battery",
-      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
-    },
-    {
       "id": "1164",
       "title": "Artificial intelligence",
       "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
-  "error": "Editör reddetti: Başlık ‘Yapay zekâ nasıl insan gibi düşünür?’ sorusuna sahnelerde açık bir yanıt yok. İlk sahne sadece soru soruyor, ikinci sahne AI’nın insan zekâsını taklit ettiğini söylüyor ancak nasıl düşündüğüne dair açıklama içermiyor. Üçüncü sahnede ‘Bu alan bin dokuz yüz elli altı yılında doğdu’ deniyor ki kaynak AI’nın akademik disiplin olarak 1956’da kurulduğunu belirtiyor; tarih ve sayısal ifade kaynakla uyuşmuyor. Bu nedenle iddialar kaynakta desteklenmiyor ve sahneler başlık vaatini karşılamıyor.",
-  "editorial_review": {
-    "valid": false,
-    "reason": "Başlık ‘Yapay zekâ nasıl insan gibi düşünür?’ sorusuna sahnelerde açık bir yanıt yok. İlk sahne sadece soru soruyor, ikinci sahne AI’nın insan zekâsını taklit ettiğini söylüyor ancak nasıl düşündüğüne dair açıklama içermiyor. Üçüncü sahnede ‘Bu alan bin dokuz yüz elli altı yılında doğdu’ deniyor ki kaynak AI’nın akademik disiplin olarak 1956’da kurulduğunu belirtiyor; tarih ve sayısal ifade kaynakla uyuşmuyor. Bu nedenle iddialar kaynakta desteklenmiyor ve sahneler başlık vaatini karşılamıyor."
-  }
+  "error": null
 }
