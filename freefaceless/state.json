@@ -227,7 +227,8 @@
       "video_id": "OPAO7ad2qvM",
       "publish_at": null,
       "upload_status": "api_insert_confirmed",
-      "run_id": "38565865952"
+      "run_id": "38565865952",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
