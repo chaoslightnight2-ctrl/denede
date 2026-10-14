@@ -41,6 +41,7 @@ REVIEW_SCHEMA = object_schema({"valid": {"type": "boolean"}, "reason": {"type": 
 PACKAGE_SCHEMA['properties'] = {key: PACKAGE_SCHEMA['properties'][key] for key in (
     'source_id', 'source_fact_quote', 'fact_scope', 'scenes', 'closing_question',
     'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags')}
+PACKAGE_SCHEMA['required'] = list(PACKAGE_SCHEMA['properties'])
 
 # Denede adina uygun, geniş merak alanları. Günlük akış bunları dönüşümlü kullanır.
 TURKISH_NICHES = ["Günlük hayat ve eşyalar", "Psikoloji ve insan davranışları", "Günlük hayatta bilimin açıklamaları", "Teknoloji ve icatlar"]
