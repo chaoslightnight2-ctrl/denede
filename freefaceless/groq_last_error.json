@@ -1,7 +1,7 @@
 {
   "run_id": "38569814172",
-  "http_status": 400,
-  "code": "json_validate_failed",
-  "message": "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "retry_after": null
+  "http_status": 413,
+  "code": "rate_limit_exceeded",
+  "message": "Request too large for model `openai/gpt-oss-120b` in organization `[account]` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8486, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+  "retry_after": "4"
 }
