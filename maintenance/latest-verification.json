@@ -1,12 +1,40 @@
 {
-  "source_run": "38543873472",
-  "verified_at": "2026-10-14T09:51:23.879437+00:00",
-  "videos": [],
+  "source_run": "38545291271",
+  "verified_at": "2026-10-14T10:32:53.200262+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "YwAIxQbwSdg",
+      "youtube_url": "https://youtu.be/YwAIxQbwSdg",
+      "title": "Yapay Zeka Ne Zaman Bilim Dalı Oldu",
+      "narration": "Yapay zeka bilgisayarların öğrenme ve problem çözme gibi insan zekâsına benzer görevleri yerine getirmesini sağlar Araştırmacılar sinir ağları ve istatistiksel yöntemler gibi tekniklerle yapay zekayı geliştirir Bugün yapay zeka web arama sohbet botları ve otonom araçlar gibi günlük yaşamda yaygın olarak kullanılıyor Gelecekte AI nasıl değişir İlginç Gerçekler kanalına abone ol",
+      "publish_at": null,
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "not_verified",
+      "media_check": {
+        "duration": 24.466667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/YwAIxQbwSdg.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 3,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
