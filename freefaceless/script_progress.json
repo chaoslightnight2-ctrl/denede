@@ -1,14 +1,14 @@
 {
   "run_id": "38545291271",
-  "attempt": 2,
-  "stage": "validation_failed",
+  "attempt": 3,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "1164",
     "source_fact_quote": "Artificial intelligence was founded as an academic discipline in 1956.",
-    "fact_scope": "The fact refers to the entity 'Artificial intelligence', the condition that it was established as an academic discipline, and the scope is the year 1956, indicating the point in time when it became a recognized field of study.",
+    "fact_scope": "The fact refers to the entity Artificial intelligence, the condition that it was established as an academic discipline, and the scope is the year 1956 indicating when it became a recognized field of study.",
     "topic": "Yapay Zeka Tarihi",
     "title": "Yapay Zeka Ne Zaman Bilim Dalı Oldu",
-    "description": "Yapay zekanın akademik kökeni 1956 yılına dayanıyor. Bu tarih, alandaki resmi tanımın başlangıcıdır.",
+    "description": "Yapay zekanın akademik kökeni bin dokuz yüz elli altı yılına dayanıyor Bu tarih alandaki resmi tanımın başlangıcıdır",
     "hashtags": {
       "primary": "yapayzeka",
       "secondary": "tarih"
@@ -22,7 +22,7 @@
     ],
     "scenes": [
       {
-        "text": "Yapay zekanın bilim dalı olarak ne zaman ortaya çıktığını merak ediyor musun",
+        "text": "Yapay zekanın akademik bir disiplin olarak ortaya çıktığını merak ediyor musun",
         "visual_query": "old book"
       },
       {
@@ -30,12 +30,12 @@
         "visual_query": "lecture hall"
       },
       {
-        "text": "Bu tanım yapay zekanın akademik alanda bağımsız bir çalışma konusu olmasını sağladı",
-        "visual_query": "research lab"
+        "text": "O günden beri yapay zeka web arama sohbet botları ve otonom araçlar gibi alanlarda kullanılmaktadır",
+        "visual_query": "computer screen"
       }
     ],
-    "closing_question": "Sizce bu ne kadar etkili",
-    "closing_visual_query": "future screen display",
+    "closing_question": "Sizce geleceği nasıl şekillendirir",
+    "closing_visual_query": "future tech display",
     "cta": "İlginç Gerçekler kanalına abone ol"
   },
   "reference_sources": [
@@ -46,9 +46,5 @@
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
-  "error": "Editör reddetti: Scene 3'te \"Bu tanım yapay zekanın akademik alanda bağımsız bir çalışma konusu olmasını sağladı\" ifadesi kaynakta açıkça yer almıyor; kaynak sadece 1956'da disiplinin kurulduğunu belirtiyor, nedensellik belirtilmemiş.",
-  "editorial_review": {
-    "valid": false,
-    "reason": "Scene 3'te \"Bu tanım yapay zekanın akademik alanda bağımsız bir çalışma konusu olmasını sağladı\" ifadesi kaynakta açıkça yer almıyor; kaynak sadece 1956'da disiplinin kurulduğunu belirtiyor, nedensellik belirtilmemiş."
-  }
+  "error": null
 }
