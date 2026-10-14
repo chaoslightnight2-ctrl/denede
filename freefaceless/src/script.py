@@ -4,7 +4,7 @@ import json
 import re
 import os
 from .groq_client import chat_json, object_schema
-from .prompt_contract import CLEAN_OUTPUT_RULES, NATURAL_LANGUAGE_RULES
+from .prompt_contract import CROSS_LANGUAGE_SOURCE_RULES
 from .audience_strategy import brief, STORY_RULES, category
 from .performance_feedback import prompt_feedback, choose_hook_style, category_bonus
 from .knowledge_sources import fetch_sources
@@ -111,7 +111,17 @@ def _system_prompt():
         'source-derived number spellings. Never introduce a named person, place, '
         'institution or event absent from the supplied reference text, even if '
         'you remember it as true.')
-    return CLEAN_OUTPUT_RULES + NATURAL_LANGUAGE_RULES + "\n" + brief("İlginç Gerçekler") + "\n" + STORY_RULES + prompt_feedback() + "\n" + SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"]) + language_contract
+    grammar = (
+        '\nKonuşma alanları scenes.text closing_question ve cta doğrudan okunacak doğal Türkçe cümlelerdir. '
+        'Bu alanlarda noktalama rakam URL site adı kaynakça kontrol notu üretim talimatı ve hashtag bulunmaz. '
+        'JSON sözdizimi ve metadata bundan etkilenmez. Türkçe harfleri bütün Türkçe alanlarda koru. '
+        'Sıradan yabancı terimleri doğal Türkçeye çevir özel kişi kurum ve marka kimliğini değiştirme. '
+        'Her cümle tek tamamlanmış bilgi taşısın kelime hedefi için dolgu tekrar veya kopuk niteleyici ekleme. '
+        'Görsel arama aynı olgunun gerçekten kullanılan somut nesne ve fiziksel eylemiyle ilgili olsun '
+        'mecazı başka bilim alanının nesnesine dönüştürme.')
+    # The source, schema and guards remain unchanged. Avoid repeating the same
+    # field/source/style policy in three long blocks within one producer call.
+    return CROSS_LANGUAGE_SOURCE_RULES + grammar + "\n" + brief("İlginç Gerçekler") + "\n" + STORY_RULES + prompt_feedback() + "\n" + SYSTEM.format(target_seconds=CONFIG["script"]["target_seconds"]) + language_contract
 
 
 def _extract_json(text: str) -> dict:
@@ -273,6 +283,13 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
                 system=(
                     'You are a source-bound editor, not a general knowledge checker. '
+                    'Sources may be English or another language. Spoken narration '
+                    'is a faithful natural Turkish translation or paraphrase, not '
+                    'a verbatim source quote. Its Turkish words do not need to '
+                    'appear in the original foreign-language text. Literal quoting '
+                    'applies only to evidence metadata; factual review compares '
+                    'meaning, roles, scope and qualifiers across languages. Never '
+                    'reject solely because narration and source use different languages. '
                     'The supplied KAYNAK text is the sole evidence. Before judging '
                     'general truth, identify the precise question or promise in '
                     'title and the exact spoken scene answering it. Only scenes.text '
