@@ -43,7 +43,7 @@ class DailyPublishingTests(unittest.TestCase):
             saved = json.loads(files[0].read_text(encoding='utf-8'))
             self.assertEqual(saved, package)
 
-    def test_three_default_videos_use_lunch_and_evening_publication_slots(self):
+    def test_three_default_videos_use_evening_publication_slots(self):
         fixed = datetime(2026, 10, 6, 6, tzinfo=TZ)
         calls = []
         def run(**kwargs):
@@ -57,8 +57,8 @@ class DailyPublishingTests(unittest.TestCase):
             daily_batch.main()
         self.assertEqual(len(calls), 3)
         times = [datetime.fromisoformat(row['publish_at'].replace('Z', '+00:00')).astimezone(TZ) for row in calls]
-        self.assertEqual([at.hour for at in times], [12, 19, 21])
-        self.assertEqual(times[1] - times[0], timedelta(hours=7))
+        self.assertEqual([at.hour for at in times], [19, 21, 23])
+        self.assertEqual(times[1] - times[0], timedelta(hours=2))
         self.assertEqual(times[2] - times[1], timedelta(hours=2))
 
     def test_new_manifest_does_not_claim_old_receipts_after_failure(self):
@@ -97,8 +97,8 @@ class DailyPublishingTests(unittest.TestCase):
              patch.object(pipeline.state, 'add_published'), patch.object(pipeline.state, 'load', return_value=saved), \
              patch.object(pipeline.state, 'save'), patch('src.youtube_receipt.confirm', return_value={'upload_status': 'api_insert_confirmed'}):
             result = pipeline.run_once(publish_at='2026-10-06T05:00:00Z')
-        self.assertEqual(upload.call_args.kwargs['publish_at'], '2026-10-06T09:00:00Z')
-        self.assertEqual(result['publish_at'], '2026-10-06T09:00:00Z')
+        self.assertEqual(upload.call_args.kwargs['publish_at'], '2026-10-06T16:00:00Z')
+        self.assertEqual(result['publish_at'], '2026-10-06T16:00:00Z')
 
 
 
