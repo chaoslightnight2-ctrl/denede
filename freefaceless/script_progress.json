@@ -1,54 +1,68 @@
 {
-  "run_id": "38617387040",
-  "attempt": 4,
-  "stage": "review_passed",
+  "run_id": "38655983689",
+  "attempt": 1,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "1164",
-    "source_fact_quote": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos).",
-    "fact_scope": "entity: Artificial intelligence; condition: includes high-profile applications; scope: web search engines, chatbots, virtual assistants, autonomous vehicles, and content generation such as text, images, audio, videos.",
+    "source_id": "33978",
+    "source_fact_quote": "On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually.",
+    "fact_scope": "Bu cümle, Dünya yüzeyindeki sıcaklıkların yıllık olarak eksi kırk derece ile yüz dört derece arasında değiştiğini, yani ±40 °C (−40 °F ila 104 °F) aralığında olduğunu belirtir; bu değerler atmosferik koşullara bağlı olarak değişebilir.",
     "scenes": [
       {
-        "text": "Yapay zekâ öğrenme akıl yürütme problem çözme algı ve karar verme görevlerini yerine getirir",
-        "visual_query": "computer desk"
+        "text": "Dünya yüzeyinde sıcaklıklar geniş bir aralıkta",
+        "visual_query": "sky cloud"
       },
       {
-        "text": "Web arama motorları sohbet botları sanal asistanlar ve sürücüsüz araçlar yüksek profilli uygulamalardır",
-        "visual_query": "search engine logo"
+        "text": "Yıllık ortalama sıcaklıklar genellikle eksi kırk dereceden yüz dört dereceye kadar değişir",
+        "visual_query": "thermometer gauge"
       },
       {
-        "text": "Metin görsel ses ve video üretiminde yapay zekâ kullanılır",
-        "visual_query": "content creation software"
+        "text": "Bu geniş sıcaklık farkı iklim çeşitliliğine ve bölgesel hava koşullarına etki eder",
+        "visual_query": "map climate"
       }
     ],
-    "closing_question": "Sizce en etkileyici hangisi",
-    "closing_visual_query": "ai icon screen",
+    "closing_question": "Sizce en sıcak gün hangisi",
+    "closing_visual_query": "sun heat day",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Yapay zekâ uygulamaları",
-    "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
-    "description": "Yapay zekâ, insan zekâsına benzer görevleri yerine getirir ve çeşitli alanlarda kullanılmaktadır. Özellikle arama motorları, sohbet botları ve içerik üretiminde önemli rol oynar",
+    "topic": "Hava Durumu",
+    "title": "Dünya yüzeyindeki sıcaklıklar kırk ile yüz dört derece arasında",
+    "description": "Dünya yüzeyindeki sıcaklıklar geniş bir aralıkta değişir. Bu aralık eksi kırk dereceden yüz dört dereceye kadar uzanır.",
     "hashtags": {
-      "primary": "bilim",
-      "secondary": "teknoloji"
+      "primary": "iklim",
+      "secondary": "sıcaklık"
     },
     "tags": [
-      "yapayzekâ",
-      "uygulama",
-      "arama",
-      "sohbetbotu",
-      "içerik"
+      "hava",
+      "iklim",
+      "sıcaklık",
+      "dünya",
+      "meteoroloji"
     ]
   },
   "reference_sources": [
     {
-      "id": "1164",
-      "title": "Artificial intelligence",
-      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
-      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
+    },
+    {
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+    },
+    {
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+    },
+    {
+      "id": "27709",
+      "title": "Semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Semiconductor",
+      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
     }
   ],
-  "error": null,
-  "editorial_review": {
-    "valid": true,
-    "reason": "Tüm sahneler başlıkta vaat edilen popüler AI uygulamalarını kaynakla tutarlı şekilde anlatıyor, dil doğal ve gereksinimlere uygun."
-  }
+  "error": null
 }
