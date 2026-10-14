@@ -19,7 +19,8 @@
     "Psikoloji",
     "Teknoloji",
     "Gıda Bilimi",
-    "Yapay Zeka Tarihi"
+    "Yapay Zeka Tarihi",
+    "Yapay Zekâ Tarihi"
   ],
   "published": [
     {
@@ -215,6 +216,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38545291271",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261014_125509",
+      "topic": "Yapay Zekâ Tarihi",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Yapay zekâ akademik disiplin ne zaman kuruldu",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_125509_yapay-zek-tarihi/final.mp4",
+      "video_id": "OPAO7ad2qvM",
+      "publish_at": null,
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38565865952"
     }
   ]
 }
