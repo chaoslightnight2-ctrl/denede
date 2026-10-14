@@ -102,8 +102,12 @@ jobs:
           path: |
             freefaceless/output/**/final.mp4
             freefaceless/output/**/voice.words.json
+            freefaceless/output/**/voice.mp3
             freefaceless/output/**/captions.ass
             freefaceless/output/**/script.json
+            freefaceless/output/text-audit/*.json
+            freefaceless/script_progress.json
+            freefaceless/groq_last_error.json
             freefaceless/daily_manifest.json
             freefaceless/logs/*.log
           if-no-files-found: ignore
