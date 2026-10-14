@@ -1,31 +1,31 @@
 {
   "run_id": "38617387040",
-  "attempt": 3,
-  "stage": "validation_failed",
+  "attempt": 4,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "1164",
     "source_fact_quote": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos).",
     "fact_scope": "entity: Artificial intelligence; condition: includes high-profile applications; scope: web search engines, chatbots, virtual assistants, autonomous vehicles, and content generation such as text, images, audio, videos.",
     "scenes": [
       {
-        "text": "Yapay zekâ günlük hayatı gerçekten şekillendiriyor",
+        "text": "Yapay zekâ öğrenme akıl yürütme problem çözme algı ve karar verme görevlerini yerine getirir",
         "visual_query": "computer desk"
       },
       {
-        "text": "Arama motorları sohbet botları sanal asistanlar ve sürücüsüz araçlar yapay zekânın popüler kullanım alanlarıdır",
+        "text": "Web arama motorları sohbet botları sanal asistanlar ve sürücüsüz araçlar yüksek profilli uygulamalardır",
         "visual_query": "search engine logo"
       },
       {
-        "text": "Metin resim ses ve video üretimi gibi içerik oluşturma görevlerinde de yapay zekâ kullanılmaktadır",
+        "text": "Metin görsel ses ve video üretiminde yapay zekâ kullanılır",
         "visual_query": "content creation software"
       }
     ],
-    "closing_question": "En çok hangi uygulama",
-    "closing_visual_query": "smartphone screen icon",
+    "closing_question": "Sizce en etkileyici hangisi",
+    "closing_visual_query": "ai icon screen",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "Yapay zekâ uygulamaları",
     "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
-    "description": "Yapay zekâ arama motorlarından sohbet botlarına kadar birçok alanda kullanılıyor Ayrıca metin resim ses ve video gibi içerik üretiminde de yer alıyor",
+    "description": "Yapay zekâ, insan zekâsına benzer görevleri yerine getirir ve çeşitli alanlarda kullanılmaktadır. Özellikle arama motorları, sohbet botları ve içerik üretiminde önemli rol oynar",
     "hashtags": {
       "primary": "bilim",
       "secondary": "teknoloji"
@@ -46,9 +46,5 @@
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
-  "error": "Editör reddetti: İlk sahnedeki \"Yapay zekâ günlük hayatı gerçekten şekillendiriyor\" ifadesi, kaynakta doğrudan yer almıyor; kaynak yalnızca AI’nın yüksek profilli uygulamalarını (arama motorları, sohbet botları, sanal asistanlar, sürücüsüz araçlar, içerik üretimi) listeliyor, günlük hayatı şekillendirdiği yönünde bir iddia bulunmuyor. Bu nedenle sahneler kaynakla tam olarak tutarlı değil.",
-  "editorial_review": {
-    "valid": false,
-    "reason": "İlk sahnedeki \"Yapay zekâ günlük hayatı gerçekten şekillendiriyor\" ifadesi, kaynakta doğrudan yer almıyor; kaynak yalnızca AI’nın yüksek profilli uygulamalarını (arama motorları, sohbet botları, sanal asistanlar, sürücüsüz araçlar, içerik üretimi) listeliyor, günlük hayatı şekillendirdiği yönünde bir iddia bulunmuyor. Bu nedenle sahneler kaynakla tam olarak tutarlı değil."
-  }
+  "error": null
 }
