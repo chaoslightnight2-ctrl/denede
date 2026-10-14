@@ -1,9 +1,19 @@
 [
   {
-    "run_id": "38472266288",
-    "slot": "0800",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions"
+    "run_id": "38545291271",
+    "slot": "0400",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": null,
+    "private_recovery": true,
+    "scheduled_publish_at_utc": null,
+    "video_id": "YwAIxQbwSdg",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_102708_yapay-zeka-tarihi/final.mp4",
+    "topic": "Yapay Zeka Tarihi",
+    "title": "Yapay Zeka Ne Zaman Bilim Dalı Oldu",
+    "narration": "Yapay zeka bilgisayarların öğrenme ve problem çözme gibi insan zekâsına benzer görevleri yerine getirmesini sağlar Araştırmacılar sinir ağları ve istatistiksel yöntemler gibi tekniklerle yapay zekayı geliştirir Bugün yapay zeka web arama sohbet botları ve otonom araçlar gibi günlük yaşamda yaygın olarak kullanılıyor Gelecekte AI nasıl değişir İlginç Gerçekler kanalına abone ol",
+    "publish_at": null,
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
