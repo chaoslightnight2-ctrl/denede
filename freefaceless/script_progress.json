@@ -1,41 +1,41 @@
 {
   "run_id": "38617387040",
-  "attempt": 2,
-  "stage": "validation_failed",
+  "attempt": 3,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "1164",
-    "source_fact_quote": "Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters.",
-    "fact_scope": "entity: Artificial intelligence; condition: founded as an academic discipline; time: 1956; scope: establishment of AI as a scholarly field. entity: AI field; condition: experienced cycles of optimism and disappointment (AI winters); scope: historical development of the field.",
+    "source_fact_quote": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos).",
+    "fact_scope": "entity: Artificial intelligence; condition: includes high-profile applications; scope: web search engines, chatbots, virtual assistants, autonomous vehicles, and content generation such as text, images, audio, videos.",
     "scenes": [
       {
-        "text": "Yapay zekâ akademik disiplin olarak kuruldu",
-        "visual_query": "computer lab"
+        "text": "Yapay zekâ günlük hayatı gerçekten şekillendiriyor",
+        "visual_query": "computer desk"
       },
       {
-        "text": "Kuruluş yılı bin dokuz yüz elli altı olarak tarih kitaplarında yer alıyor",
-        "visual_query": "calendar page"
+        "text": "Arama motorları sohbet botları sanal asistanlar ve sürücüsüz araçlar yapay zekânın popüler kullanım alanlarıdır",
+        "visual_query": "search engine logo"
       },
       {
-        "text": "Alan tarih boyunca iyimserlik dalgaları ve soğuma dönemleri yani AI kışları sık sık yaşadı",
-        "visual_query": "graph chart"
+        "text": "Metin resim ses ve video üretimi gibi içerik oluşturma görevlerinde de yapay zekâ kullanılmaktadır",
+        "visual_query": "content creation software"
       }
     ],
-    "closing_question": "Yapay zekâ geleceği nasıl",
-    "closing_visual_query": "future robot",
+    "closing_question": "En çok hangi uygulama",
+    "closing_visual_query": "smartphone screen icon",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Yapay zekâ tarihi",
-    "title": "Yapay zekâ 1956’da akademik disiplin olarak kuruldu mu",
-    "description": "Yapay zekâ akademik bir disiplin olarak bin dokuz yüz elli altı yılında ortaya çıktı. Tarih boyunca iyimserlik ve soğuma dönemleri yaşadı",
+    "topic": "Yapay zekâ uygulamaları",
+    "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
+    "description": "Yapay zekâ arama motorlarından sohbet botlarına kadar birçok alanda kullanılıyor Ayrıca metin resim ses ve video gibi içerik üretiminde de yer alıyor",
     "hashtags": {
       "primary": "bilim",
       "secondary": "teknoloji"
     },
     "tags": [
       "yapayzekâ",
-      "tarih",
-      "bilim",
-      "teknoloji",
-      "akademi"
+      "uygulama",
+      "arama",
+      "sohbetbotu",
+      "içerik"
     ]
   },
   "reference_sources": [
@@ -46,5 +46,5 @@
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
-  "error": "Konu tekrar ediyor; başka olgu seç"
+  "error": null
 }
