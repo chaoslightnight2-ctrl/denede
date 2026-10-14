@@ -1,12 +1,40 @@
 {
-  "source_run": "38614935086",
-  "verified_at": "2026-10-14T18:43:18.981879+00:00",
-  "videos": [],
+  "source_run": "38617387040",
+  "verified_at": "2026-10-14T19:12:33.385148+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "4QM1WuzlESg",
+      "youtube_url": "https://youtu.be/4QM1WuzlESg",
+      "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
+      "narration": "Yapay zekâ öğrenme akıl yürütme problem çözme algı ve karar verme görevlerini yerine getirir Web arama motorları sohbet botları sanal asistanlar ve sürücüsüz araçlar yüksek profilli uygulamalardır Metin görsel ses ve video üretiminde yapay zekâ kullanılır Sizce en etkileyici hangisi İlginç Gerçekler kanalına abone ol",
+      "publish_at": null,
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "not_verified",
+      "media_check": {
+        "duration": 22.333333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/4QM1WuzlESg.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 3,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
