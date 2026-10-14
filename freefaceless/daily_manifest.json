@@ -1,19 +1,9 @@
 [
   {
-    "run_id": "38565865952",
+    "run_id": "38569814172",
     "slot": "0400",
     "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": null,
-    "private_recovery": true,
-    "scheduled_publish_at_utc": null,
-    "video_id": "OPAO7ad2qvM",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_125509_yapay-zek-tarihi/final.mp4",
-    "topic": "Yapay Zekâ Tarihi",
-    "title": "Yapay zekâ akademik disiplin ne zaman kuruldu",
-    "narration": "Yapay zekâ akademik disiplin olarak ne zaman kuruldu Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu Araştırmalar öğrenme akıl yürütme ve karar verme görevlerini kapsar Yapay zekâ sistemleri web arama sohbet robotları ve otonom araçlar gibi uygulamalara sahiptir Gelecekte yapay zekâ nasıl evrimleşir İlginç Gerçekler kanalına abone ol",
-    "publish_at": null,
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "ok": false,
+    "error": "413 Client Error: Payload Too Large for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
