@@ -21,7 +21,8 @@
     "Gıda Bilimi",
     "Yapay Zeka Tarihi",
     "Yapay Zekâ Tarihi",
-    "Yapay zekâ"
+    "Yapay zekâ",
+    "Yapay zekâ uygulamaları"
   ],
   "published": [
     {
@@ -243,6 +244,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38581083432",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261014_191108",
+      "topic": "Yapay zekâ uygulamaları",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_191108_yapay-zek-uygulamalar/final.mp4",
+      "video_id": "4QM1WuzlESg",
+      "publish_at": null,
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38617387040"
     }
   ]
 }
