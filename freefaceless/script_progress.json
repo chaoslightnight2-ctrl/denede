@@ -1,7 +1,7 @@
 {
   "run_id": "38655983689",
   "attempt": 1,
-  "stage": "received_unvalidated",
+  "stage": "validation_failed",
   "raw_groq_package": {
     "source_id": "68753",
     "source_fact_quote": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways.",
@@ -64,5 +64,5 @@
       "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
     }
   ],
-  "error": null
+  "error": "Konu tekrar ediyor; başka olgu seç"
 }
