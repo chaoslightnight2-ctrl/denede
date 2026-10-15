@@ -5,5 +5,12 @@
     "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "Daily Groq quota cooldown 1262s saved; resume in a later scheduled run"
+  },
+  {
+    "run_id": "38779598935",
+    "slot": "1900",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "Saved provider cooldown still active; a later scheduled run must resume"
   }
 ]
