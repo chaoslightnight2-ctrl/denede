@@ -1,45 +1,45 @@
 {
   "run_id": "38770079766",
-  "attempt": 2,
-  "stage": "validation_failed",
+  "attempt": 3,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "33978",
     "source_fact_quote": "On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually.",
     "fact_scope": "Earth surface temperature range measured annually global scope",
-    "title": "Dünya yüzeyindeki sıcaklık aralığı eksi kırtandan artı kırk derece",
-    "description": "Yüzey sıcaklıkları yıllık olarak eksi kırtandan artı kırka kadar değişir Bu geniş dalgalanma iklimi belirler",
-    "topic": "Günlük hava durumu",
+    "title": "Dünya yüzeyindeki sıcaklıklar yıllık ± kırk derece",
+    "description": "Dünya yüzeyinde sıcaklıklar eksi kırk ile artı kırk derece arasında değişir Bu geniş aralık iklimi şekillendirir",
+    "topic": "Hava Durumu",
     "tags": [
       "iklim",
       "sıcaklık",
       "troposfer",
-      "hava",
-      "dünya"
+      "basınç",
+      "nem"
     ],
     "hashtags": {
       "primary": "iklim",
-      "secondary": "sıcaklık"
+      "secondary": "hava"
     },
     "scenes": [
       {
-        "text": "Dünya yüzeyinde sıcaklıklar eksi kırtandan artı kırka kadar gün içinde değişir",
+        "text": "Dünya yüzeyinde sıcaklıklar eksi kırk ile artı kırk derece arasında değişir",
         "visual_query": "cloud sky"
       },
       {
-        "text": "Bu değişim yıllık ortalama olarak gözlemlenir ve dünya çapında iklimi şekillendirir",
+        "text": "Bu aralık yıllık olarak gözlemlenir ve iklimi şekillendirir",
         "visual_query": "thermometer graph"
       },
       {
-        "text": "Sıcaklık farkları troposferdeki basınç ve nem farklılıklarından küresel ölçekte kaynaklanır",
+        "text": "Sıcaklık farkları troposferdeki basınç ve nem farklılıklarından kaynaklanır",
         "visual_query": "air pressure"
       },
       {
-        "text": "Bu geniş aralık günlük hava durumunu etkileyen temel faktördür ve yaşam koşullarını belirler",
+        "text": "Bu geniş sıcaklık dalgalanması günlük hava durumunu belirler ve yaşam koşullarını etkiler dünya",
         "visual_query": "weather icon"
       }
     ],
-    "closing_question": "Sizce sıcaklık neyi etkiler",
-    "closing_visual_query": "weather map icon",
+    "closing_question": "Sıcaklık seni şaşırtıyor mu",
+    "closing_visual_query": "temperature map sky",
     "cta": "İlginç Gerçekler kanalına abone ol"
   },
   "reference_sources": [
@@ -50,5 +50,5 @@
       "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     }
   ],
-  "error": "Başlık boş veya 60 karakterden uzun"
+  "error": null
 }
