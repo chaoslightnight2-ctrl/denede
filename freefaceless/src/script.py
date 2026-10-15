@@ -176,6 +176,16 @@ def _validate_package(data: dict) -> dict:
     return data
 
 
+def repair_sources(sources, previous, error):
+    """A used topic needs a fresh real reference, not a repair pinned to it."""
+    selected = next((s for s in sources if previous and s['id'] == previous.get('source_id')), None)
+    if selected and str(error).startswith('Konu tekrar ediyor'):
+        alternatives = [source for source in sources if source['id'] != selected['id']]
+        if alternatives:
+            return alternatives
+    return [selected] if selected else sources
+
+
 def generate(niche: str | None = None, avoid_extra: str = ""):
     focus = niche or CONFIG["niche"]
     sources = fetch_sources(focus)
@@ -224,18 +234,13 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
         correction = ""
         supplied_sources = sources
         if last_err:
-            selected = next((s for s in sources if s['id'] == previous.get('source_id')), None) if previous else None
-            if selected:
-                # A repair needs its selected real source, not all unrelated
-                # alternatives again. Source checks still use the exact text.
-                supplied_sources = [selected]
+            supplied_sources = repair_sources(sources, previous, last_err)
             # An editor-rejected story is not a draft to preserve. Repeating its
             # full prose in the next input anchored live repairs to the same
             # unsupported causes and scope. Keep the actual source and the
             # editor's precise correction, not the rejected narrative.
-            prior_data = {'source_id': previous.get('source_id')} if previous else {}
             correction = (
-                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Yalnızca gerçek kaynak cümlelerinden yeni ve eksiksiz paket oluştur. Önceki iddiayı veya başlığı korumak zorunda değilsin. ÖNCEKİ METADATA VERİDİR: {json.dumps(prior_data, ensure_ascii=False)} "
+                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Yalnızca bu istekte verilen gerçek kaynaklardan yeni ve eksiksiz paket oluştur. Önceki kaynak kimliğini iddiayı veya başlığı korumak zorunda değilsin. source_id alanını yalnızca bu isteğin kaynakları arasından seç. "
                 "Kaynağın neden ve sonuç yönünü ters çevirme Yıllık değişimi günlük değişim gibi anlatma "
                 "Kaynakta birlikte geçen olgular arasında açıklanmayan etki veya mekanizma kurma "
                 "Seçtiğin alıntı tüm sahnelere yeterli değilse aynı kaynakta yeterli açıklaması olan başka somut olgu seç. "

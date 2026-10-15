@@ -49,6 +49,22 @@ class QuotaDeferralTests(unittest.TestCase):
         self.assertEqual([body['reasoning_effort'] for body in bodies], ['low', 'medium'])
         self.assertTrue(all(body['model'] == 'openai/gpt-oss-120b' for body in bodies))
 
+    def test_json_error_keeps_a_bounded_redacted_failed_output_for_diagnosis(self):
+        response = types.SimpleNamespace(status_code=400, headers={}, json=lambda: {'error': {
+            'code': 'json_validate_failed', 'message': 'invalid JSON',
+            'failed_generation': 'unit-only-key invalid field ' + 'x' * 5000}})
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder) / 'error.json'
+            with patch.dict(os.environ, {'PUBLISH_UPLOAD_CHECKPOINTS': '1'}), \
+                 patch.object(client, 'Path', return_value=target), \
+                 patch.object(client.importlib, 'import_module', return_value=types.SimpleNamespace(checkpoint=lambda *args: None)):
+                client.record_error(response, 'unit-only-key')
+            saved = json.loads(target.read_text())
+        self.assertEqual(saved['code'], 'json_validate_failed')
+        self.assertIn('invalid field', saved['failed_generation_excerpt'])
+        self.assertNotIn('unit-only-key', saved['failed_generation_excerpt'])
+        self.assertLessEqual(len(saved['failed_generation_excerpt']), 4000)
+
 
 if __name__ == '__main__':
     unittest.main()

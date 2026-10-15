@@ -48,6 +48,8 @@ def record_error(response, key):
         error = response.json().get('error', {})
         message = str(error.get('message', '')).replace(key, '[redacted]')
         message = re.sub(r'org_[a-zA-Z0-9_]+', '[account]', message)
+        failed = str(error.get('failed_generation') or '').replace(key, '[redacted]')
+        failed = re.sub(r'gsk_[A-Za-z0-9_-]{10,}', '[redacted]', failed)
         path = Path('groq_last_error.json')
         cooldown = {}
         if response.status_code == 429:
@@ -56,6 +58,7 @@ def record_error(response, key):
                         'model': os.getenv('GROQ_MODEL', 'openai/gpt-oss-120b')}
         path.write_text(json.dumps({**cooldown, 'run_id': os.getenv('GITHUB_RUN_ID'), 'http_status': response.status_code,
                                    'code': error.get('code'), 'message': message,
+                                   'observed_at': time.time(), 'failed_generation_excerpt': failed[:4000],
                                    'retry_after': response.headers.get('retry-after')}, indent=2), encoding='utf-8')
         module = importlib.import_module('.upload_checkpoint', __package__) if __package__ else importlib.import_module('upload_checkpoint')
         module.checkpoint([path], log)
