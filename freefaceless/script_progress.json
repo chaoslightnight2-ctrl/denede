@@ -1,7 +1,7 @@
 {
   "run_id": "38774532549",
   "attempt": 3,
-  "stage": "received_unvalidated",
+  "stage": "validation_failed",
   "raw_groq_package": {
     "source_id": "1164",
     "source_fact_quote": "Artificial intelligence was founded as an academic discipline in 1956.",
@@ -50,5 +50,5 @@
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
-  "error": null
+  "error": "Konu tekrar ediyor; başka olgu seç"
 }
