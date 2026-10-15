@@ -1,54 +1,68 @@
 {
-  "run_id": "38770079766",
-  "attempt": 5,
-  "stage": "validation_failed",
+  "run_id": "38774532549",
+  "attempt": 1,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "33978",
     "source_fact_quote": "On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually.",
-    "fact_scope": "Earth surface temperature range measured annually global scope",
-    "title": "Dünya yüzeyindeki sıcaklıklar yıllık ± kırk derece",
-    "description": "Yüzeydeki sıcaklıklar eksi kırk ile artı kırk arasında değişir. Bu değişim hava durumunu belirler.",
-    "topic": "Hava Durumu",
-    "tags": [
-      "sıcaklık",
-      "yüzey",
-      "basınç",
-      "nem",
-      "güneş"
-    ],
-    "hashtags": {
-      "primary": "iklim",
-      "secondary": "meteoroloji"
-    },
+    "fact_scope": "Bu cümle Dünya yüzeyindeki sıcaklıkların yıllık olarak artı kırk santigrat derece ile eksi kırk santigrat derece arasında, ayrıca yaklaşık yüz dört fahrenhayt değerine kadar değiştiğini belirtir.",
     "scenes": [
       {
-        "text": "Yüzeyde sıcaklıklar eksi kırk ile artı kırk arasında değişir",
-        "visual_query": "thermometer"
+        "text": "Dünya sıcaklıkları gerçekten ne kadar değişir",
+        "visual_query": "globe thermometer"
       },
       {
-        "text": "Bu sıcaklık aralığı atmosferik hareketleri ve bulut oluşumunu yönlendirir",
-        "visual_query": "clouds sky"
+        "text": "Dünya yüzeyinde sıcaklıklar genellikle artı kırk santigrat ile eksi kırk santigrat arasında yıllık olarak değişir",
+        "visual_query": "earth surface"
       },
       {
-        "text": "Güneş ışınımının enlem farkı sıcaklık kontrastı yaratarak büyük hava hücrelerini tetikler",
-        "visual_query": "sunlight globe"
-      },
-      {
-        "text": "Bu değişim yıllık iklim eğilimlerini şekillendirir",
-        "visual_query": "climate chart"
+        "text": "Ayrıca bu aralık yaklaşık yüz dört fahrenhayt değerine kadar uzanır dünya genelinde sıcaklık",
+        "visual_query": "temperature chart"
       }
     ],
-    "closing_question": "Senin günün nasıl etkilenir",
-    "closing_visual_query": "temperature map sky",
-    "cta": "İlginç Gerçekler kanalına abone ol"
+    "closing_question": "Sıcaklık değişimi sizi şaşırttı mı",
+    "closing_visual_query": "heat map globe",
+    "cta": "İlginç Gerçekler kanalına abone ol",
+    "topic": "iklim",
+    "title": "Dünya Yüzeyindeki Sıcaklıklar ±40°C ile ±104°F Arasında",
+    "description": "Dünya yüzeyindeki sıcaklıklar geniş bir aralıkta değişir. Bu aralık hem santigrat hem fahrenhayt cinsinden ölçülür.",
+    "hashtags": {
+      "primary": "iklim",
+      "secondary": "sıcaklık"
+    },
+    "tags": [
+      "iklim",
+      "sıcaklık",
+      "dünya",
+      "meteoroloji",
+      "çevre"
+    ]
   },
   "reference_sources": [
+    {
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+    },
     {
       "id": "33978",
       "title": "Weather",
       "url": "https://en.wikipedia.org/wiki/Weather",
       "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+    },
+    {
+      "id": "27709",
+      "title": "Semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Semiconductor",
+      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
+    },
+    {
+      "id": "23416874",
+      "title": "Sense",
+      "url": "https://en.wikipedia.org/wiki/Sense",
+      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
     }
   ],
-  "error": "visual_query 2-6 İngilizce kelime olmalı"
+  "error": null
 }
