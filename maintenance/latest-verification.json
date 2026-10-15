@@ -1,17 +1,41 @@
 {
-  "source_run": "38770079766",
-  "verified_at": "2026-10-15T17:06:18.809251+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "38774532549",
+  "verified_at": "2026-10-15T17:43:48.307808+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: visual_query 2-6 İngilizce kelime olmalı"
+      "video_id": "UbkZuza2lQc",
+      "youtube_url": "https://youtu.be/UbkZuza2lQc",
+      "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
+      "narration": "Hava durumu neden farklı yerlerde değişir Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-15T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-15T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.1,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/UbkZuza2lQc.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
