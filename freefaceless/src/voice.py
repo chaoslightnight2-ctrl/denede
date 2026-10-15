@@ -11,7 +11,7 @@ def synth(text: str, out_path: Path) -> Path:
     async def generate():
         v = CONFIG["voice"]
         last_error = None
-        for attempt in range(3):
+        for attempt in range(5):
             words = []
             try:
                 stream = edge_tts.Communicate(text, voice=v["voice"], rate=v.get("rate", "+0%"), pitch=v.get("pitch", "+0Hz"), boundary="WordBoundary")
@@ -30,9 +30,11 @@ def synth(text: str, out_path: Path) -> Path:
                 out_path.with_suffix(".words.json").write_text(json.dumps(words, ensure_ascii=False), encoding="utf-8")
                 return
             except Exception as exc:
+                out_path.unlink(missing_ok=True)
+                out_path.with_suffix(".words.json").unlink(missing_ok=True)
                 last_error = exc
-                if attempt < 2:
-                    await asyncio.sleep(5 * (attempt + 1))
-        raise RuntimeError(f"Aynı sesle üç deneme başarısız: {last_error}")
+                if attempt < 4:
+                    await asyncio.sleep((15, 30, 60, 120)[attempt])
+        raise RuntimeError(f"Aynı sesle beş deneme başarısız: {last_error}")
     asyncio.run(generate())
     return out_path
