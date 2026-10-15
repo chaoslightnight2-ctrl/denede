@@ -1,41 +1,41 @@
 {
   "run_id": "38655983689",
-  "attempt": 4,
-  "stage": "validation_failed",
+  "attempt": 5,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "68753",
-    "source_fact_quote": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways.",
-    "fact_scope": "Varlık: dikkat (psikolojik süreç). Koşul: farkındalığın belirli bir görev ya da olguya yönelerek diğerlerini büyük ölçüde dışlaması. Kapsam: tanım psikoloji, sinirbilim ve sosyal bilimlerde geçerlidir.",
+    "source_fact_quote": "Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness.",
+    "fact_scope": "Varlık: dikkat (psikolojik süreç). Koşul: birden fazla ilişkili süreç içerir; seçici, sürdürülen, bölünmüş ve yönlendiren alt süreçler. Kapsam: tanım psikoloji, sinirbilim ve bilişsel bilimlerde geçerlidir.",
     "scenes": [
       {
-        "text": "Dikkat bir göreve odaklanır ve diğerlerini dışlar",
-        "visual_query": "brain focus"
+        "text": "Dikkat tek bir süreç değildir birden fazla",
+        "visual_query": "brain diagram"
       },
       {
-        "text": "Zihinsel kaynaklar sınırlıdır dikkat bu kaynakları belirli bilgi parçacıklarına dağıtarak etkili çalışır",
+        "text": "Seçici sürdürülen bölünmüş ve yönlendiren alt süreçler dikkat içinde farklı görevleri yönetir",
         "visual_query": "brain network"
       },
       {
-        "text": "Dikkat seçici sürdürülen bölünmüş ve yönlendiren alt süreçleri kapsayan bir bütün olarak işlev görür",
-        "visual_query": "mind map"
+        "text": "Bu süreçler ön parietal ve subkortikal bölgelerdeki ağlarla çalışır ve bellekle bağlantılıdır",
+        "visual_query": "brain scan"
       }
     ],
-    "closing_question": "Siz nasıl odaklanıyorsunuz",
+    "closing_question": "Siz hangi dikkat türünü kullanıyorsunuz",
     "closing_visual_query": "attention study brain",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "Psikoloji",
-    "title": "Dikkat nasıl odaklanır ve diğerleri nasıl dışlanır",
-    "description": "Dikkat, farkındalığın belirli bir hedefe yönelmesidir. Bu süreç farklı bilim dallarında çeşitli biçimlerde incelenir",
+    "title": "Dikkat birden fazla süreçten oluşur",
+    "description": "Dikkat, farklı alt süreçleri kapsayan bir bütündür. Bu süreçler beyin bölgelerindeki ağlarla desteklenir",
     "hashtags": {
       "primary": "psikoloji",
       "secondary": "biliş"
     },
     "tags": [
       "dikkat",
-      "odaklanma",
       "psikoloji",
       "bilişsel",
-      "zihin"
+      "zihin",
+      "beyin"
     ]
   },
   "reference_sources": [
@@ -46,5 +46,5 @@
       "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
     }
   ],
-  "error": "Konu tekrar ediyor; başka olgu seç"
+  "error": null
 }
