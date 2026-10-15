@@ -1,19 +1,9 @@
 [
   {
-    "run_id": "38774532549",
-    "slot": "2100",
+    "run_id": "38779598935",
+    "slot": "2300",
     "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-15T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-15T18:00:00Z",
-    "video_id": "UbkZuza2lQc",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261015_172309_hava-durumu/final.mp4",
-    "topic": "Hava Durumu",
-    "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
-    "narration": "Hava durumu neden farklı yerlerde değişir Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-15T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "ok": false,
+    "error": "Daily Groq quota cooldown 1262s saved; resume in a later scheduled run"
   }
 ]
