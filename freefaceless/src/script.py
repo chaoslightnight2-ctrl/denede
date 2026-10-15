@@ -181,6 +181,11 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
     sources = fetch_sources(focus)
     sources.sort(key=lambda row: category_bonus(row["title"]), reverse=True)
     sources = sources[:4]
+    from . import validated_draft
+    cached = validated_draft.load(focus, sources, state.load().get('used_topics', []), avoid_extra)
+    if cached is not None:
+        log.info('Resuming editorially approved Groq text; live reference unchanged')
+        return cached
     hook_style = choose_hook_style(state.load())
     schema = json.loads(json.dumps(PACKAGE_SCHEMA))
     schema['properties']['source_id']['enum'] = [s['id'] for s in sources]
@@ -240,7 +245,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
               'Basamak atlama yaklaşık aralık birim ondalık ve sıra anlamını kaynakla aynı koru. '
               'Bu veri konuşma taslağı değildir ek bilgi veya yeni sayı üretme.')
         try:
-            data = chat_json(user_msg + references + correction, system=_system_prompt(), temperature=.15, max_tokens=3072, schema=request_schema)
+            data = chat_json(user_msg + references + correction, system=_system_prompt(), temperature=.15, max_tokens=3072, schema=request_schema, reasoning_effort="low")
             from . import model_audit
             audit = model_audit.received(data, supplied_sources, attempt + 1)
             previous = copy.deepcopy(data)
@@ -326,6 +331,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             data["editorial_review"] = verdict
             data['reference_source'] = next((s for s in sources if s['id'] == data.get('source_id')), None)
             data['raw_groq_package'] = previous
+            validated_draft.save(focus, data)
             return data
         except (ValueError, KeyError, TypeError) as exc:
             if audit is not None:

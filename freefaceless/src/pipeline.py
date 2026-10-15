@@ -40,6 +40,8 @@ def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object
             best = cand
         if MIN_VOICE_SECONDS <= duration <= MAX_VOICE_SECONDS:
             return data, work, voice_mp3, words, duration
+        from .validated_draft import clear
+        clear()
     raise RuntimeError(f"Üç aynı Groq denemesi ses süresini 18-30 saniyeye sığdıramadı; en yakın aday kullanılmadı")
 
 

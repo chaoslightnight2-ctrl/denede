@@ -19,7 +19,7 @@ from zoneinfo import ZoneInfo
 
 from . import pipeline, state
 from .config import ROOT
-from .publish_schedule import publication_hours
+from .publish_schedule import publication_hours, daily_receipts
 from .script import TURKISH_NICHES
 
 TZ = ZoneInfo("Europe/Istanbul")
@@ -53,7 +53,20 @@ def main() -> None:
     args = ap.parse_args()
     if recovery:
         args.private_smoke = True
-    configured_slots = [(f'{hour:02}00', hour) for hour in publication_hours(3 if args.limit == 3 else 6)]
+    if not args.private_smoke and not args.no_upload and not args.retry_failed:
+        existing = daily_receipts(datetime.now(TZ), state.load().get('published', []))
+        args.limit = min(args.limit, max(0, int(os.getenv('DAILY_VIDEO_COUNT', '3')) - len(existing)))
+        if os.getenv('PUBLISH_UPLOAD_CHECKPOINTS') == '1':
+            summary = ROOT / 'daily_batch_report.json'
+            summary.write_text(json.dumps({'run_id': os.getenv('GITHUB_RUN_ID'),
+                                          'target_count': args.limit, 'daily_existing_count': len(existing),
+                                          'daily_limit': int(os.getenv('DAILY_VIDEO_COUNT', '3'))}), encoding='utf-8')
+            from .upload_checkpoint import checkpoint
+            checkpoint([summary])
+        if args.limit == 0:
+            print('Daily publication target already accepted; no model or upload calls', flush=True)
+            return
+    configured_slots = [(f'{hour:02}00', hour) for hour in publication_hours(int(os.getenv('DAILY_VIDEO_COUNT', '3')))]
 
     if args.private_smoke and args.retry_failed:
         ap.error("--private-smoke ile --retry-failed birlikte kullanılamaz")
@@ -94,11 +107,11 @@ def main() -> None:
     else:
         niches = pick_niches(args.limit)
         planned_slots = sorted(
-            ((slot, hour, publish_time(hour)) for slot, hour in configured_slots[:args.limit]),
+            ((slot, hour, publish_time(hour)) for slot, hour in configured_slots),
             key=lambda entry: entry[2],
         )
         selected_targets = [(slot, hour, at, niche)
-                            for (slot, hour, at), niche in zip(planned_slots, niches)]
+                            for (slot, hour, at), niche in zip(planned_slots[:args.limit], niches)]
 
     # An interrupted run must not upload an old checkout manifest as new evidence.
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')

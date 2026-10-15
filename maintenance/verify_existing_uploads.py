@@ -78,6 +78,17 @@ def main():
     reports = list(root.rglob('run_report.json'))
     manifests = list(root.rglob('daily_manifest.json'))
     rows = []
+    # A retry with an already filled day intentionally creates no new media.
+    for marker in root.rglob('daily_batch_report.json'):
+        summary = json.loads(marker.read_text(encoding='utf-8'))
+        if (str(summary.get('run_id')) == args.source_run and summary.get('target_count') == 0
+                and summary.get('daily_existing_count', 0) >= summary.get('daily_limit', 3)):
+            result.update(skipped='daily_target_already_accepted', target_count=0,
+                          daily_existing_count=summary['daily_existing_count'], accepted_complete=True)
+            Path('maintenance').mkdir(exist_ok=True)
+            Path('maintenance/latest-verification.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+            print('No new uploads requested; daily target was already accepted')
+            return
     target_count = 3
     if reports:
         data = json.loads(reports[0].read_text(encoding='utf-8'))
