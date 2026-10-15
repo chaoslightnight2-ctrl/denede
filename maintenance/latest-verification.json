@@ -1,22 +1,17 @@
 {
-  "source_run": "38655983689",
-  "verified_at": "2026-10-15T05:46:23.159598+00:00",
+  "source_run": "38770079766",
+  "verified_at": "2026-10-15T17:06:18.809251+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: Scene 3'te \"Bu aralık eksi kırk dereceyi yüz dört Fahrenheit olarak gösterir\" ifadesi kaynakta belirtilen dönüşümle çelişiyor; kaynak -40 °C'nin -40 °F olduğunu, +40 °C'nin 104 °F olduğunu söylüyor. Bu nedenle iddia desteklenmiyor ve başlık vaatleri tam olarak karşılanmamış."
-    },
-    {
-      "index": 2,
-      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Konu tekrar ediyor; başka olgu seç"
+      "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
