@@ -23,7 +23,8 @@
     "Yapay Zekâ Tarihi",
     "Yapay zekâ",
     "Yapay zekâ uygulamaları",
-    "Hava Durumu"
+    "Hava Durumu",
+    "Batarya terminalleri"
   ],
   "published": [
     {
@@ -271,6 +272,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38774532549",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261015_212710",
+      "topic": "Batarya terminalleri",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Bataryanın pozitif ucu neden katottur",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261015_212710_batarya-terminalleri/final.mp4",
+      "video_id": "tmeXnILg25A",
+      "publish_at": "2026-10-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38809231079"
     }
   ]
 }
