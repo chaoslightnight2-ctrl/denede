@@ -1,68 +1,50 @@
 {
   "run_id": "38774532549",
-  "attempt": 1,
-  "stage": "validation_failed",
+  "attempt": 2,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "1164",
     "source_fact_quote": "Artificial intelligence was founded as an academic discipline in 1956.",
-    "fact_scope": "Yapay zekâ – akademik disiplin – 1956 yılı",
+    "fact_scope": "Artificial intelligence akademik disiplin olarak bin dokuz yüz elli altı yılında kuruldu; bu tarih AI’nın bilimsel alandaki resmi başlangıcını gösterir.",
     "scenes": [
       {
-        "text": "Yapay zekâ ne zaman ortaya çıktı",
+        "text": "Yapay zeka ne zaman akademik disiplin oldu",
         "visual_query": "computer screen"
       },
       {
-        "text": "Bilgisayar bilimcileri bin dokuz yüz elli altı yılında yapay zekâyı akademik bir disiplin olarak tanımladılar",
-        "visual_query": "lab computer"
+        "text": "Yapay zeka bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu ve araştırma başladı",
+        "visual_query": "lab equipment"
       },
       {
-        "text": "Bu başlangıç modern yapay zekâ araştırmalarının temelini oluşturdu ve hâlâ etkisini sürdürüyor",
-        "visual_query": "research lab"
+        "text": "Bu başlangıç yapay zekanın sonraki yıllarda oyun sağlık ve otomasyon alanlarına yayılmasını sağladı",
+        "visual_query": "robot arm"
       }
     ],
-    "closing_question": "Sizce geleceği nasıl şekillendirir",
-    "closing_visual_query": "keyboard monitor desk",
+    "closing_question": "Sizce AI geleceği nasıl",
+    "closing_visual_query": "future tech ai",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Yapay Zekâ Tarihi",
-    "title": "Yapay zekâ hangi yılda akademik disiplin olarak kuruldu?",
-    "description": "Yapay zekâ akademik bir alan olarak 1956’da ortaya çıktı. Bu tarih, modern yapay zekâ çalışmalarının temelini oluşturur.",
+    "topic": "Yapay Zeka Tarihi",
+    "title": "Yapay Zeka Ne Zaman Bilim Dalı Oldu",
+    "description": "Yapay zekanın akademik kökeni bin dokuz yüz elli altı yılına dayanır Bu tarih alandaki ilk resmi araştırmaları işaret eder",
     "hashtags": {
-      "primary": "yapayzekâ",
+      "primary": "yapayzeka",
       "secondary": "tarih"
     },
     "tags": [
-      "yapayzekâ",
+      "yapayzeka",
       "tarih",
       "bilim",
       "teknoloji",
-      "akademi"
+      "araştırma"
     ]
   },
   "reference_sources": [
-    {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
-    },
     {
       "id": "1164",
       "title": "Artificial intelligence",
       "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
       "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
-    },
-    {
-      "id": "563299",
-      "title": "Human behavior",
-      "url": "https://en.wikipedia.org/wiki/Human_behavior",
-      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
-    },
-    {
-      "id": "26990",
-      "title": "Social psychology",
-      "url": "https://en.wikipedia.org/wiki/Social_psychology",
-      "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
     }
   ],
-  "error": "Konu tekrar ediyor; başka olgu seç"
+  "error": null
 }
