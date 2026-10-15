@@ -5,5 +5,12 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "Daily Groq quota cooldown 2696s saved; resume in a later scheduled run"
+  },
+  {
+    "run_id": "38824354831",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": false,
+    "error": "Saved provider cooldown still active; a later scheduled run must resume"
   }
 ]
