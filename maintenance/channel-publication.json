@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-15T17:42:58.566671+00:00",
+  "checked_at": "2026-10-15T18:00:35.299850+00:00",
   "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
   "read_from_youtube": true,
   "latest_public": {
-    "video_id": "dRv2xmpZSE4",
-    "title": "Gıdalardaki Kimyasal Bileşenler Nasıl İncelenir",
-    "youtube_published_at": "2026-10-08T13:00:11Z",
+    "video_id": "UbkZuza2lQc",
+    "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
+    "youtube_published_at": "2026-10-15T18:00:23Z",
     "state": "public",
     "youtube_status": {
       "uploadStatus": "processed",
@@ -17,19 +17,18 @@
       "selfDeclaredMadeForKids": false
     },
     "processing": "succeeded",
-    "receipt_run_id": "37709502910",
-    "intended_publish_at": "2026-10-08T13:00:00Z"
+    "receipt_run_id": "38774532549",
+    "intended_publish_at": "2026-10-15T18:00:00Z"
   },
   "videos": [
     {
       "video_id": "UbkZuza2lQc",
       "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
-      "youtube_published_at": "2026-10-15T17:24:04Z",
-      "state": "scheduled_wait",
+      "youtube_published_at": "2026-10-15T18:00:23Z",
+      "state": "public",
       "youtube_status": {
         "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-15T18:00:00Z",
+        "privacyStatus": "public",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
