@@ -176,14 +176,13 @@ def _validate_package(data: dict) -> dict:
     return data
 
 
-def repair_sources(sources, previous, error):
+def repair_sources(sources, previous, error, retired=()):
     """A used topic needs a fresh real reference, not a repair pinned to it."""
-    selected = next((s for s in sources if previous and s['id'] == previous.get('source_id')), None)
+    available = [source for source in sources if source['id'] not in retired]
+    selected = next((s for s in available if previous and s['id'] == previous.get('source_id')), None)
     if selected and str(error).startswith('Konu tekrar ediyor'):
-        alternatives = [source for source in sources if source['id'] != selected['id']]
-        if alternatives:
-            return alternatives
-    return [selected] if selected else sources
+        return [source for source in available if source['id'] != selected['id']]
+    return [selected] if selected else available
 
 
 def generate(niche: str | None = None, avoid_extra: str = ""):
@@ -229,12 +228,17 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
 
     last_err: Exception | None = None
     previous = None
+    retired_sources = set()
     for attempt in range(5):
         audit = None
         correction = ""
         supplied_sources = sources
         if last_err:
-            supplied_sources = repair_sources(sources, previous, last_err)
+            if str(last_err).startswith('Konu tekrar ediyor') and previous:
+                retired_sources.add(previous.get('source_id'))
+            supplied_sources = repair_sources(sources, previous, last_err, retired_sources)
+            if not supplied_sources:
+                raise RuntimeError('Verilen gerçek kaynak havuzundaki konular kullanılmış; aynı kaynaklara yeni Groq çağrısı yapılmadı')
             # An editor-rejected story is not a draft to preserve. Repeating its
             # full prose in the next input anchored live repairs to the same
             # unsupported causes and scope. Keep the actual source and the
