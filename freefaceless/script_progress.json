@@ -1,50 +1,68 @@
 {
   "run_id": "38655983689",
-  "attempt": 5,
-  "stage": "validation_failed",
+  "attempt": 1,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "68753",
-    "source_fact_quote": "Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness.",
-    "fact_scope": "Varlık: dikkat (psikolojik süreç). Koşul: birden fazla ilişkili süreç içerir; seçici, sürdürülen, bölünmüş ve yönlendiren alt süreçler. Kapsam: tanım psikoloji, sinirbilim ve bilişsel bilimlerde geçerlidir.",
+    "source_id": "26903",
+    "source_fact_quote": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one.",
+    "fact_scope": "Varlık: Güneş Sistemi; Koşul: Güneş ve etrafında dönen kütlelerin kütleçekimsel olarak bağlı olduğu sistem; Kapsam: sekiz gezegeni kapsar ve bunlardan biri Dünya'dır.",
     "scenes": [
       {
-        "text": "Dikkat tek bir süreç değildir birden fazla",
-        "visual_query": "brain diagram"
+        "text": "Güneş Sistemi Güneş ve gezegenlerden oluşur",
+        "visual_query": "sun planets"
       },
       {
-        "text": "Seçici sürdürülen bölünmüş ve yönlendiren alt süreçler dikkat içinde farklı görevleri yönetir",
-        "visual_query": "brain network"
+        "text": "Sistem Güneşin kütleçekimsel çekimiyle bağlıdır ve sekiz gezegeni barındırır bunlardan biri Dünya olarak bilinir",
+        "visual_query": "planets orbit"
       },
       {
-        "text": "Bu süreçler ön parietal ve subkortikal bölgelerdeki ağlarla çalışır ve bellekle bağlantılıdır",
-        "visual_query": "brain scan"
+        "text": "Dünya Güneş etrafında bir yıl süren bir yörünge izler ve suyu korur",
+        "visual_query": "earth orbit"
       }
     ],
-    "closing_question": "Siz hangi dikkat türünü kullanıyorsunuz",
-    "closing_visual_query": "attention study brain",
+    "closing_question": "Güneş sistemini merak ediyor musun",
+    "closing_visual_query": "space night sky",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Psikoloji",
-    "title": "Dikkat birden fazla süreçten oluşur",
-    "description": "Dikkat, farklı alt süreçleri kapsayan bir bütündür. Bu süreçler beyin bölgelerindeki ağlarla desteklenir",
+    "topic": "Güneş Sistemi",
+    "title": "Güneş Sistemi kaç gezegene sahiptir",
+    "description": "Güneş Sistemi'nin yapısını öğreniyoruz Gezegenlerin Güneş etrafındaki hareketini keşfediyoruz",
     "hashtags": {
-      "primary": "psikoloji",
-      "secondary": "biliş"
+      "primary": "gunes",
+      "secondary": "gezegenler"
     },
     "tags": [
-      "dikkat",
-      "psikoloji",
-      "bilişsel",
-      "zihin",
-      "beyin"
+      "güneş",
+      "gezegen",
+      "uzay",
+      "astronomi",
+      "bilim"
     ]
   },
   "reference_sources": [
     {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
+      "id": "26903",
+      "title": "Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System",
+      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
+    },
+    {
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+    },
+    {
+      "id": "33306",
+      "title": "Water",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+    },
+    {
+      "id": "19828134",
+      "title": "Plant",
+      "url": "https://en.wikipedia.org/wiki/Plant",
+      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     }
   ],
-  "error": "Konu tekrar ediyor; başka olgu seç"
+  "error": null
 }
