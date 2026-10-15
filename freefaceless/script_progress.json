@@ -1,45 +1,45 @@
 {
   "run_id": "38655983689",
-  "attempt": 4,
-  "stage": "validation_failed",
+  "attempt": 5,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "33978",
     "source_fact_quote": "On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually.",
-    "fact_scope": "Bu cümle Dünya yüzeyindeki sıcaklıkların yıllık olarak eksi kırk derece ile yüz dört derece arasında değiştiğini belirtir",
+    "fact_scope": "Bu cümle Dünya yüzeyindeki sıcaklıkların yıllık olarak eksi kırk derece ile artı kırk derece arasında değiştiğini ve bu aralığın Fahrenheit cinsinden eksi kırk dereceyi yüz dört Fahrenheit olarak gösterdiğini belirtir",
     "scenes": [
       {
         "text": "Dünya yüzeyinde sıcaklıklar geniş bir aralıkta değişir",
         "visual_query": "earth sky"
       },
       {
-        "text": "Yıllık ortalama sıcaklıklar eksi kırk ile yüz dört derece arasında",
+        "text": "Yıllık ortalama sıcaklıklar eksi kırk ile artı kırk derece arasında",
         "visual_query": "thermometer gauge"
       },
       {
-        "text": "Bu sıcaklık farkı iklim çeşitliliğini ve bölgesel hava koşullarını belirler",
-        "visual_query": "map climate"
+        "text": "Bu aralık eksi kırk dereceyi yüz dört Fahrenheit olarak gösterir",
+        "visual_query": "thermometer fahrenheit"
       },
       {
-        "text": "Kutupta sıcaklık eksi kırk ekvatorda yüz dört dereceye kadar",
+        "text": "Kutuplarda sıcaklık eksi kırk ekvatorda artı kırk dereceye kadar",
         "visual_query": "polar equator"
       }
     ],
-    "closing_question": "Sizce en sıcak gün nerede",
+    "closing_question": "Sizce en sıcak yer neresi",
     "closing_visual_query": "sun heat map",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "Dünya Sıcaklıkları",
-    "title": "Dünya Yüzeyindeki Sıcaklıklar Eksi Kırktan Yüz Dört Dereceye",
-    "description": "Dünya yüzeyindeki sıcaklıklar geniş bir aralıkta değişir Bu aralık eksi kırk dereceden yüz dört dereceye kadar uzanır",
+    "title": "Dünya Yüzeyindeki Sıcaklıklar Eksi Kırktan Artı Kırka",
+    "description": "Dünya yüzeyindeki sıcaklıklar eksi kırk ile artı kırk derece arasında değişir Bu aralık iklim çeşitliliğini belirler",
     "hashtags": {
       "primary": "iklim",
       "secondary": "coğrafya"
     },
     "tags": [
       "sıcaklık",
-      "dünya",
       "iklim",
-      "hava",
-      "meteoroloji"
+      "dünya",
+      "meteoroloji",
+      "hava"
     ]
   },
   "reference_sources": [
@@ -50,9 +50,5 @@
       "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     }
   ],
-  "error": "Editör reddetti: Kaynak, Dünya yüzeyindeki sıcaklıkların -40°C ile +40°C arasında olduğunu belirtirken, başlık ve sahneler 104°C'ye kadar (yüz dört derece) olduğunu iddia ediyor; bu sayı kaynağın verdiği ölçüyle tutarsızdır.",
-  "editorial_review": {
-    "valid": false,
-    "reason": "Kaynak, Dünya yüzeyindeki sıcaklıkların -40°C ile +40°C arasında olduğunu belirtirken, başlık ve sahneler 104°C'ye kadar (yüz dört derece) olduğunu iddia ediyor; bu sayı kaynağın verdiği ölçüyle tutarsızdır."
-  }
+  "error": null
 }
