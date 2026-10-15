@@ -1,0 +1,96 @@
+{
+  "focus": "Günlük hayat ve eşyalar",
+  "model": "openai/gpt-oss-120b",
+  "saved_at": "2026-10-15T17:23:08.128614+00:00",
+  "data": {
+    "source_id": "33978",
+    "source_fact_quote": "Weather is driven by air pressure, temperature, and moisture differences between one place and another.",
+    "fact_scope": "Varlık: hava durumu; Koşul: bir yer ile diğer yer arasındaki hava basıncı, sıcaklık ve nem farkları; Kapsam: Dünya üzerindeki atmosferik koşullar",
+    "scenes": [
+      {
+        "text": "Hava durumu neden farklı yerlerde değişir",
+        "visual_query": "cloud sky"
+      },
+      {
+        "text": "Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler",
+        "visual_query": "thermometer barometer"
+      },
+      {
+        "text": "Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur",
+        "visual_query": "sunlight earth"
+      },
+      {
+        "text": "Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol",
+        "visual_query": "weather map globe"
+      }
+    ],
+    "closing_question": "Sizce hava nasıl değişir",
+    "closing_visual_query": "weather map globe",
+    "cta": "İlginç Gerçekler kanalına abone ol",
+    "topic": "Hava Durumu",
+    "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
+    "description": "Hava durumu, yerler arasındaki basınç ve nem farklarıyla şekillenir. Güneş ışınlarının açısı bu farkları belirler.\n\n#shorts #hava #iklim",
+    "hashtags": {
+      "primary": "hava",
+      "secondary": "iklim"
+    },
+    "tags": [
+      "hava",
+      "iklim",
+      "basınç",
+      "sıcaklık",
+      "nem"
+    ],
+    "spoken_text": "Hava durumu neden farklı yerlerde değişir Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol",
+    "full_text": "Hava durumu neden farklı yerlerde değişir Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Hava durumu neden farklı yerlerde değişir. Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler. Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur. Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
+    "editorial_review": {
+      "valid": true,
+      "reason": "Başlıkla uyumlu, sahneler kaynakta belirtilen hava basıncı, sıcaklık, nem farkları ve Güneş ışını açısının etkisini açıklıyor, metin doğal Türkçe, etiketler doğru, kapanış sorusu uygun"
+    },
+    "reference_source": {
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+    },
+    "raw_groq_package": {
+      "source_id": "33978",
+      "source_fact_quote": "Weather is driven by air pressure, temperature, and moisture differences between one place and another.",
+      "fact_scope": "Varlık: hava durumu; Koşul: bir yer ile diğer yer arasındaki hava basıncı, sıcaklık ve nem farkları; Kapsam: Dünya üzerindeki atmosferik koşullar",
+      "scenes": [
+        {
+          "text": "Hava durumu neden farklı yerlerde değişir",
+          "visual_query": "cloud sky"
+        },
+        {
+          "text": "Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler",
+          "visual_query": "thermometer barometer"
+        },
+        {
+          "text": "Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur",
+          "visual_query": "sunlight earth"
+        }
+      ],
+      "closing_question": "Sizce hava nasıl değişir",
+      "closing_visual_query": "weather map globe",
+      "cta": "İlginç Gerçekler kanalına abone ol",
+      "topic": "Hava Durumu",
+      "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
+      "description": "Hava durumu, yerler arasındaki basınç ve nem farklarıyla şekillenir. Güneş ışınlarının açısı bu farkları belirler.",
+      "hashtags": {
+        "primary": "hava",
+        "secondary": "iklim"
+      },
+      "tags": [
+        "hava",
+        "iklim",
+        "basınç",
+        "sıcaklık",
+        "nem"
+      ]
+    }
+  }
+}
