@@ -1,0 +1,926 @@
+{
+  "checked_at": "2026-10-15T17:42:58.566671+00:00",
+  "channel_id": "UCU-N6tFV2_YVElMaB0YXPrQ",
+  "read_from_youtube": true,
+  "latest_public": {
+    "video_id": "dRv2xmpZSE4",
+    "title": "Gıdalardaki Kimyasal Bileşenler Nasıl İncelenir",
+    "youtube_published_at": "2026-10-08T13:00:11Z",
+    "state": "public",
+    "youtube_status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    },
+    "processing": "succeeded",
+    "receipt_run_id": "37709502910",
+    "intended_publish_at": "2026-10-08T13:00:00Z"
+  },
+  "videos": [
+    {
+      "video_id": "UbkZuza2lQc",
+      "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
+      "youtube_published_at": "2026-10-15T17:24:04Z",
+      "state": "scheduled_wait",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-15T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "38774532549",
+      "intended_publish_at": "2026-10-15T18:00:00Z"
+    },
+    {
+      "video_id": "4QM1WuzlESg",
+      "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
+      "youtube_published_at": "2026-10-14T19:11:39Z",
+      "state": "private_unscheduled",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "38617387040",
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "yR-L4HgfzeM",
+      "title": "Yapay zekâ 1956’da nasıl kuruldu ve bugün ne yapıyor",
+      "youtube_published_at": "2026-10-14T15:12:00Z",
+      "state": "private_unscheduled",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "38581083432",
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "OPAO7ad2qvM",
+      "title": "Yapay zekâ akademik disiplin ne zaman kuruldu",
+      "youtube_published_at": "2026-10-14T13:04:03Z",
+      "state": "private_unscheduled",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "38565865952",
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "YwAIxQbwSdg",
+      "title": "Yapay Zeka Ne Zaman Bilim Dalı Oldu",
+      "youtube_published_at": "2026-10-14T10:31:56Z",
+      "state": "private_unscheduled",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "38545291271",
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "dRv2xmpZSE4",
+      "title": "Gıdalardaki Kimyasal Bileşenler Nasıl İncelenir",
+      "youtube_published_at": "2026-10-08T13:00:11Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "37709502910",
+      "intended_publish_at": "2026-10-08T13:00:00Z"
+    },
+    {
+      "video_id": "uQdwUc-_0HI",
+      "title": "İnternet nasıl dünya çapında milyarlarca cihazı bağlar",
+      "youtube_published_at": "2026-10-08T05:00:13Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "37709502910",
+      "intended_publish_at": "2026-10-08T05:00:00Z"
+    },
+    {
+      "video_id": "koeWYXvPozo",
+      "title": "Eidetik Hafıza Gerçek mi Çocuklarda Görülen Sır",
+      "youtube_published_at": "2026-10-07T21:00:26Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "37551955683",
+      "intended_publish_at": "2026-10-07T21:00:00Z"
+    },
+    {
+      "video_id": "kHMYeELrulo",
+      "title": "Uyku iki aşamada nasıl gerçekleşir",
+      "youtube_published_at": "2026-10-07T13:00:00Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "37551955683",
+      "intended_publish_at": "2026-10-07T13:00:00Z"
+    },
+    {
+      "video_id": "7KrX5fj_9Lg",
+      "title": "Kanada’nın Barış Kulesi Neden Önemli",
+      "youtube_published_at": "2026-10-07T05:00:17Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "37496387559",
+      "intended_publish_at": "2026-10-07T05:00:00Z"
+    },
+    {
+      "video_id": "xjBcMXd_7-M",
+      "title": "Peace Tower: Kanada’nın Simgesel Saat Kulesi Neden Önemli",
+      "youtube_published_at": "2026-10-06T21:00:23Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "37496387559",
+      "intended_publish_at": "2026-10-06T21:00:00Z"
+    },
+    {
+      "video_id": "IRLRyryp8CE",
+      "title": "Günde 505 Karar Veriyoruz ve Yarıları Bilinç Dışı",
+      "youtube_published_at": "2026-10-01T01:00:05Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": "36796049045",
+      "intended_publish_at": "2026-10-01T01:00:00Z"
+    },
+    {
+      "video_id": "zHYkHyqDH-w",
+      "title": "30 kg Taşın Sıra Dışı Kullanımı ve Roma Mühendisliği Sırrı",
+      "youtube_published_at": "2026-09-30T21:00:16Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T21:00:00Z"
+    },
+    {
+      "video_id": "beECWZnh5vE",
+      "title": "Buzdolabının Soğutma Sırrı Neden İçindeki Buz Erir",
+      "youtube_published_at": "2026-09-30T17:00:26Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T17:00:00Z"
+    },
+    {
+      "video_id": "bgQMXtXgg_8",
+      "title": "Dünyanın En Hızlı Su Akışı 300 km/s Hıza Ulaşıyor",
+      "youtube_published_at": "2026-09-30T13:00:30Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T13:00:00Z"
+    },
+    {
+      "video_id": "OidPmxH-vX0",
+      "title": "Köprü Altındaki Gizli Çay Bahçesi Nasıl Keşfedildi?",
+      "youtube_published_at": "2026-09-30T13:00:10Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T13:00:00Z"
+    },
+    {
+      "video_id": "4Q2enxs1zSo",
+      "title": "‘Köpek’ kelimesi aslında bir uzay terimi miydi?",
+      "youtube_published_at": "2026-09-30T09:00:33Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T09:00:00Z"
+    },
+    {
+      "video_id": "7L4OfCvgy00",
+      "title": "İstanbul’da su aniden maviye dönen gizli çeşme nerede?",
+      "youtube_published_at": "2026-09-30T09:00:22Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "WnikBM7mznM",
+      "title": "Zeno’nun Achilles‑kaplumbağa paradoksu neden asla buluşmaz",
+      "youtube_published_at": "2026-09-30T09:00:04Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T09:00:00Z"
+    },
+    {
+      "video_id": "4ZulUBjuI1M",
+      "title": "Baykal Gölü’nün 300 m Derin Çukuru Neden Özel?",
+      "youtube_published_at": "2026-09-30T05:00:10Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T05:00:00Z"
+    },
+    {
+      "video_id": "9GIIEgFAg5c",
+      "title": "Kayıp Şamanların Gölgesi Çölde Ayakları Neden Alıyor",
+      "youtube_published_at": "2026-09-30T05:00:00Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T05:00:00Z"
+    },
+    {
+      "video_id": "G3L8TvOxIxk",
+      "title": "Göbeklitepe Sütunu: Gizli Takvim Nasıl Çalışıyor?",
+      "youtube_published_at": "2026-09-30T01:00:31Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T01:00:00Z"
+    },
+    {
+      "video_id": "xD-XfMxqFMs",
+      "title": "Tavuk Çorbası Neden İlk Çağ’da Şifa Kaynağı Oldu?",
+      "youtube_published_at": "2026-09-30T01:00:28Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-30T01:00:00Z"
+    },
+    {
+      "video_id": "ioFhhkX0ae4",
+      "title": "Socotra’nın Asılı Ağacı: Gökyüzünden Düşen Kanat",
+      "youtube_published_at": "2026-09-30T01:00:26Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "nZdrijRWkVk",
+      "title": "GPT-4'ün 2 saniyede fotoğrafı nasıl oluşturduğunu görün",
+      "youtube_published_at": "2026-09-29T21:00:11Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-29T21:00:00Z"
+    },
+    {
+      "video_id": "bHf1nECwepU",
+      "title": "DALL·E 3’ün gizli ölçeğiyle fotoğraf 8 kat net!",
+      "youtube_published_at": "2026-09-29T17:00:05Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "EfYUcRj6t6c",
+      "title": "Mavi balinanın kalbi neden 2 metreden büyük?",
+      "youtube_published_at": "2026-09-29T17:00:02Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": "2026-09-29T17:00:00Z"
+    },
+    {
+      "video_id": "Hlu8Yj7N7Eg",
+      "title": "Mikrodalgada metal ses çıkarır mı? Gerçek neden!",
+      "youtube_published_at": "2026-09-29T09:32:29Z",
+      "state": "private_unscheduled",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "Zmty5s5eU4A",
+      "title": "Mitolojiler sadece eski masallar değildir #shorts",
+      "youtube_published_at": "2026-09-14T20:00:23Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "awf01mt9Ask",
+      "title": "Evrenin büyük kısmını göremiyoruz #shorts",
+      "youtube_published_at": "2026-09-14T15:00:01Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "cVcMHYxeWU8",
+      "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+      "youtube_published_at": "2026-09-14T09:00:08Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "DyWuIbpHgEY",
+      "title": "Algoritmalar sadece ne izlediğini değil, ne zaman zayıf olduğunu da öğrenir #shorts",
+      "youtube_published_at": "2026-09-14T03:00:10Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "lX5Iu69nOAo",
+      "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+      "youtube_published_at": "2026-09-13T20:00:03Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "D3h3QJPFdIc",
+      "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+      "youtube_published_at": "2026-09-13T15:00:30Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "AhbyQuXBfTI",
+      "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
+      "youtube_published_at": "2026-09-13T09:00:03Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "GtzDM-eR_Xk",
+      "title": "Başarının en gizli tarafı motivasyon değildir, tekrar gücüdür #shorts",
+      "youtube_published_at": "2026-09-13T03:00:14Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "bzOBDVDN4y8",
+      "title": "Şunu biliyor musun #shorts",
+      "youtube_published_at": "2026-09-12T20:00:31Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "YaWC5uLS8Qc",
+      "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+      "youtube_published_at": "2026-09-12T15:00:30Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "be1LTxl9Ygo",
+      "title": "Mitolojiler sadece eski masallar değildir #shorts",
+      "youtube_published_at": "2026-09-12T09:00:18Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "Ho754uI5rvU",
+      "title": "Algoritmalar sadece ne izlediğini değil, ne zaman zayıf olduğunu da öğrenir #shorts",
+      "youtube_published_at": "2026-09-12T03:00:21Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "U2_GrF3D2j0",
+      "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
+      "youtube_published_at": "2026-09-11T20:00:00Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "kz-KGLRShUE",
+      "title": "İnsanlar neden kalabalıkta daha az yardım eder biliyor musun #shorts",
+      "youtube_published_at": "2026-09-11T15:00:24Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "rWCJa3Jc4j4",
+      "title": "Mitolojiler sadece eski masallar değildir #shorts",
+      "youtube_published_at": "2026-09-11T09:00:16Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "gq2nX4NVFwU",
+      "title": "Mitolojiler sadece eski masallar değildir #shorts",
+      "youtube_published_at": "2026-09-11T03:00:37Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "4zzLo0vsomg",
+      "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+      "youtube_published_at": "2026-09-10T20:00:32Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "5jo-CGSv34g",
+      "title": "Mitolojiler sadece eski masallar değildir #shorts",
+      "youtube_published_at": "2026-09-10T15:00:16Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "oOi6ALdLdFo",
+      "title": "Beyninin seni kandırdığını biliyor musun #shorts",
+      "youtube_published_at": "2026-09-10T09:00:35Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "xkfUe7vdmEQ",
+      "title": "Bilimde en büyük keşifler bazen bir hata gibi başlar #shorts",
+      "youtube_published_at": "2026-09-10T03:00:32Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "JpUFtiL1AtU",
+      "title": "Uzayın en korkunç sırrını biliyor musunuz #shorts",
+      "youtube_published_at": "2026-09-09T20:00:08Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    },
+    {
+      "video_id": "rz2m3rrbWmQ",
+      "title": "Biliyor musunuz çevremizdeki insanları hiç fark etmediğimiz şekilde taklit ediyoru #shorts",
+      "youtube_published_at": "2026-09-09T15:00:21Z",
+      "state": "public",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing": "succeeded",
+      "receipt_run_id": null,
+      "intended_publish_at": null
+    }
+  ]
+}
