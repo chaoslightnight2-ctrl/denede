@@ -1,16 +1,19 @@
 [
   {
-    "run_id": "38779598935",
-    "slot": "2300",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "Daily Groq quota cooldown 1262s saved; resume in a later scheduled run"
-  },
-  {
-    "run_id": "38779598935",
+    "run_id": "38809231079",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "Saved provider cooldown still active; a later scheduled run must resume"
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-16T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-16T16:00:00Z",
+    "video_id": "tmeXnILg25A",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261015_212710_batarya-terminalleri/final.mp4",
+    "topic": "Batarya terminalleri",
+    "title": "Bataryanın pozitif ucu neden katottur",
+    "narration": "Bataryanın pozitif ucu ne olarak adlandırılır Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler Daha uzun ömürlü olabilir mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-16T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
