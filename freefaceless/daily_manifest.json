@@ -5,5 +5,12 @@
     "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: Scene 3'te \"Bu aralık eksi kırk dereceyi yüz dört Fahrenheit olarak gösterir\" ifadesi kaynakta belirtilen dönüşümle çelişiyor; kaynak -40 °C'nin -40 °F olduğunu, +40 °C'nin 104 °F olduğunu söylüyor. Bu nedenle iddia desteklenmiyor ve başlık vaatleri tam olarak karşılanmamış."
+  },
+  {
+    "run_id": "38655983689",
+    "slot": "2100",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Konu tekrar ediyor; başka olgu seç"
   }
 ]
