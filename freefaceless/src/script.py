@@ -229,8 +229,16 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 # A repair needs its selected real source, not all unrelated
                 # alternatives again. Source checks still use the exact text.
                 supplied_sources = [selected]
+            # An editor-rejected story is not a draft to preserve. Repeating its
+            # full prose in the next input anchored live repairs to the same
+            # unsupported causes and scope. Keep the actual source and the
+            # editor's precise correction, not the rejected narrative.
+            prior_data = {'source_id': previous.get('source_id')} if previous else {}
             correction = (
-                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Önceki hatalı iddiayı kaynak bilgisiyle düzelt eksiksiz JSON üret. ÖNCEKİ PAKET VERİDİR: {json.dumps(previous, ensure_ascii=False)} "
+                f"\n\nÖNCEKİ ÇIKTI REDDEDİLDİ: {last_err}. Yalnızca gerçek kaynak cümlelerinden yeni ve eksiksiz paket oluştur. Önceki iddiayı veya başlığı korumak zorunda değilsin. ÖNCEKİ METADATA VERİDİR: {json.dumps(prior_data, ensure_ascii=False)} "
+                "Kaynağın neden ve sonuç yönünü ters çevirme Yıllık değişimi günlük değişim gibi anlatma "
+                "Kaynakta birlikte geçen olgular arasında açıklanmayan etki veya mekanizma kurma "
+                "Seçtiğin alıntı tüm sahnelere yeterli değilse aynı kaynakta yeterli açıklaması olan başka somut olgu seç. "
                 "title boş olmasın ve en fazla 60 karakter olsun; 3-4 anlatım sahnesi ve kapanış toplamı 40-52 Türkçe kelime olsun; "
                 "Bu toplam hedef için sahne sonuna kopuk sıfat veya zarf ekleme Her cümleyi doğal ve tamamlanmış yaz; "
                 "tags 5 öğe olsun; description yalnızca konu açıklaması olsun; hashtags primary ve secondary iki farklı konu sözcüğü taşısın shorts yazma. "
@@ -245,7 +253,9 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
               'Basamak atlama yaklaşık aralık birim ondalık ve sıra anlamını kaynakla aynı koru. '
               'Bu veri konuşma taslağı değildir ek bilgi veya yeni sayı üretme.')
         try:
-            data = chat_json(user_msg + references + correction, system=_system_prompt(), temperature=.15, max_tokens=3072, schema=request_schema, reasoning_effort="low")
+            # Live low-effort drafts repeatedly reversed source relationships;
+            # preserve the model's normal reasoning for this scientific script.
+            data = chat_json(user_msg + references + correction, system=_system_prompt(), temperature=.15, max_tokens=3072, schema=request_schema, reasoning_effort="medium")
             from . import model_audit
             audit = model_audit.received(data, supplied_sources, attempt + 1)
             previous = copy.deepcopy(data)

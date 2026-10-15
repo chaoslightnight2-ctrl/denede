@@ -1,6 +1,6 @@
 {
-  "request_id": "2026-10-15T16:33:57.896409+00:00-denede",
+  "request_id": "2026-10-15T17:06:14.445065+00:00-denede",
   "mode": "complete_daily_uploads",
   "enabled": true,
-  "reason": "Resume missing daily uploads with reviewed draft reuse and native quiz cards"
+  "reason": "Generate source-faithful missing daily uploads with normal same-model reasoning"
 }
