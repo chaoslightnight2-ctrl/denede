@@ -1,7 +1,7 @@
 {
   "run_id": "38774532549",
   "attempt": 1,
-  "stage": "editor_rejected",
+  "stage": "validation_failed",
   "raw_groq_package": {
     "source_id": "33978",
     "source_fact_quote": "On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually.",
@@ -64,7 +64,7 @@
       "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
     }
   ],
-  "error": null,
+  "error": "Editör reddetti: Başlıkta ‘±104°F’ ifadesi kaynakta bulunmuyor; kaynak -40°F ile 104°F arasında değiştiğini söylüyor, ±104°F yanlış. İkinci sahne kaynakla uyumlu, ancak üçüncü sahnede ‘yaklaşık yüz dört fahrenhayt’ denilerek ‘yaklaşık’ sözcüğü eklenmiş, bu niteleme kaynakta yer almıyor. Bu nedenle iddialar tam olarak desteklenmiyor.",
   "editorial_review": {
     "valid": false,
     "reason": "Başlıkta ‘±104°F’ ifadesi kaynakta bulunmuyor; kaynak -40°F ile 104°F arasında değiştiğini söylüyor, ±104°F yanlış. İkinci sahne kaynakla uyumlu, ancak üçüncü sahnede ‘yaklaşık yüz dört fahrenhayt’ denilerek ‘yaklaşık’ sözcüğü eklenmiş, bu niteleme kaynakta yer almıyor. Bu nedenle iddialar tam olarak desteklenmiyor."
