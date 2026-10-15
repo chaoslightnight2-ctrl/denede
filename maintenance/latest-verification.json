@@ -1,41 +1,21 @@
 {
-  "source_run": "38774532549",
-  "verified_at": "2026-10-15T17:43:48.307808+00:00",
-  "videos": [
+  "source_run": "38779598935",
+  "verified_at": "2026-10-15T17:48:20.864978+00:00",
+  "videos": [],
+  "errors": [
     {
       "index": 1,
-      "video_id": "UbkZuza2lQc",
-      "youtube_url": "https://youtu.be/UbkZuza2lQc",
-      "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
-      "narration": "Hava durumu neden farklı yerlerde değişir Bir yer ile diğer yer arasında hava basıncı sıcaklık ve nem farkları hava durumunu belirler Güneş ışınlarının açıları enleme göre değiştiği için bu farklar yerlerde daha da oluşur Sizce hava nasıl değişir İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-15T18:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-15T18:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.1,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/UbkZuza2lQc.jpg"
+      "error": "Daily Groq quota cooldown 1262s saved; resume in a later scheduled run"
+    },
+    {
+      "index": 2,
+      "error": "Saved provider cooldown still active; a later scheduled run must resume"
     }
   ],
-  "errors": [],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 1,
+  "target_count": 2,
   "published_count": 0,
-  "accepted_complete": true
+  "accepted_complete": false
 }
