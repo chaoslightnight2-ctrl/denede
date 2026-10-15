@@ -1,19 +1,9 @@
 [
   {
-    "run_id": "38617387040",
-    "slot": "1200",
-    "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": null,
-    "private_recovery": true,
-    "scheduled_publish_at_utc": null,
-    "video_id": "4QM1WuzlESg",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261014_191108_yapay-zek-uygulamalar/final.mp4",
-    "topic": "Yapay zekâ uygulamaları",
-    "title": "Yapay zekâ hangi popüler uygulamalara sahiptir?",
-    "narration": "Yapay zekâ öğrenme akıl yürütme problem çözme algı ve karar verme görevlerini yerine getirir Web arama motorları sohbet botları sanal asistanlar ve sürücüsüz araçlar yüksek profilli uygulamalardır Metin görsel ses ve video üretiminde yapay zekâ kullanılır Sizce en etkileyici hangisi İlginç Gerçekler kanalına abone ol",
-    "publish_at": null,
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "run_id": "38655983689",
+    "slot": "1900",
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": false,
+    "error": "5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: Editör reddetti: Scene 3'te \"Bu aralık eksi kırk dereceyi yüz dört Fahrenheit olarak gösterir\" ifadesi kaynakta belirtilen dönüşümle çelişiyor; kaynak -40 °C'nin -40 °F olduğunu, +40 °C'nin 104 °F olduğunu söylüyor. Bu nedenle iddia desteklenmiyor ve başlık vaatleri tam olarak karşılanmamış."
   }
 ]
