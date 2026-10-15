@@ -1,7 +1,7 @@
 {
   "run_id": "38655983689",
-  "attempt": 2,
-  "stage": "validation_failed",
+  "attempt": 3,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "68753",
     "source_fact_quote": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways.",
@@ -12,19 +12,19 @@
         "visual_query": "brain focus"
       },
       {
-        "text": "Dikkat, farkındalığın belirli bir işe yönelerek diğer uyarıcılardan büyük ölçüde bilinçli uzaklaşmasıdır",
-        "visual_query": "eye screen"
+        "text": "Dikkat sınırlı zihinsel kaynakları belirli bilgi parçacıklarına dağıtarak çalışır ve diğer uyarıcıları bastırır",
+        "visual_query": "brain network"
       },
       {
-        "text": "Psikoloji, sinirbilim ve sosyal bilimlerde dikkat, seçici, sürdürülen, bölünmüş ve yönlendiren süreçler olarak tanımlanır",
-        "visual_query": "brain network"
+        "text": "Dikkat seçici sürdürülen bölünmüş ve yönlendiren alt süreçleri kapsayan bir bütün olarak işlev görür",
+        "visual_query": "mind map"
       }
     ],
     "closing_question": "Odaklanma sizin için ne",
-    "closing_visual_query": "mind study focus",
+    "closing_visual_query": "attention study brain",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "Psikoloji",
-    "title": "Dikkat nasıl odaklanır ve dışlar",
+    "title": "Dikkat nasıl odaklanır ve dışarıda kalanları bastırır",
     "description": "Dikkat, farkındalığın belirli bir hedefe yönelmesidir Bu süreç farklı bilim dallarında çeşitli biçimlerde incelenir",
     "hashtags": {
       "primary": "psikoloji",
@@ -46,5 +46,5 @@
       "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
     }
   ],
-  "error": "Konu tekrar ediyor; başka olgu seç"
+  "error": null
 }
