@@ -1,7 +1,7 @@
 {
   "run_id": "38655983689",
   "attempt": 1,
-  "stage": "received_unvalidated",
+  "stage": "editor_rejected",
   "raw_groq_package": {
     "source_id": "26903",
     "source_fact_quote": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one.",
@@ -64,5 +64,9 @@
       "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     }
   ],
-  "error": null
+  "error": null,
+  "editorial_review": {
+    "valid": false,
+    "reason": "Sahnedeki üçüncü cümlede \"Dünya ... suyu korur\" ifadesi kaynakta yer almıyor; kaynak sadece Dünya'nın sekiz gezegenden biri olduğunu ve Güneş etrafında döndüğünü belirtiyor, suyun korunmasıyla ilgili bir bilgi yok. Bu desteklenmemiş iddia nedeniyle başlık vaatleri tam olarak karşılanmıyor."
+  }
 }
