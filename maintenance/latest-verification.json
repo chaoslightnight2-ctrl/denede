@@ -1,50 +1,21 @@
 {
-  "source_run": "38809231079",
-  "verified_at": "2026-10-15T21:36:21.081792+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "tmeXnILg25A",
-      "youtube_url": "https://youtu.be/tmeXnILg25A",
-      "title": "Bataryanın pozitif ucu neden katottur",
-      "narration": "Bataryanın pozitif ucu ne olarak adlandırılır Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler Daha uzun ömürlü olabilir mi İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-16T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-16T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 20.5,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/tmeXnILg25A.jpg"
-    }
-  ],
+  "source_run": "38824354831",
+  "verified_at": "2026-10-15T23:44:03.818886+00:00",
+  "videos": [],
   "errors": [
     {
-      "index": 2,
-      "error": "Daily Groq quota cooldown 1340s saved; resume in a later scheduled run"
+      "index": 1,
+      "error": "Daily Groq quota cooldown 2696s saved; resume in a later scheduled run"
     },
     {
-      "index": 3,
+      "index": 2,
       "error": "Saved provider cooldown still active; a later scheduled run must resume"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 3,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
