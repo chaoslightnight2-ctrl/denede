@@ -22,7 +22,8 @@
     "Yapay Zeka Tarihi",
     "Yapay Zekâ Tarihi",
     "Yapay zekâ",
-    "Yapay zekâ uygulamaları"
+    "Yapay zekâ uygulamaları",
+    "Hava Durumu"
   ],
   "published": [
     {
@@ -257,6 +258,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38617387040",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261015_172309",
+      "topic": "Hava Durumu",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Neden Hava Durumu Yerler Arasında Farklıdır?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261015_172309_hava-durumu/final.mp4",
+      "video_id": "UbkZuza2lQc",
+      "publish_at": "2026-10-15T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38774532549"
     }
   ]
 }
