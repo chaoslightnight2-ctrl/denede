@@ -1,7 +1,7 @@
 {
   "run_id": "38809231079",
   "attempt": 1,
-  "stage": "received_unvalidated",
+  "stage": "review_passed",
   "raw_groq_package": {
     "source_id": "19174720",
     "source_fact_quote": "When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode.",
@@ -64,5 +64,9 @@
       "text": "Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations. Transport infrastructure consists of fixed installations, including roads, railways, airways, waterways, canals, and pipelines, as well as terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports. Terminals may be used both for the interchange of passengers and cargo and for maintenance. Means of transport are any of the different kinds of transport facilities used to carry people or cargo. They may include vehicles, riding animals, and pack animals. Vehicles may include wagons, automobiles, bicycles, buses, trains, trucks, helicopters, watercraft, spacecraft, and aircraft. Mobility is concerned with the experience around transportation services, including aspects such as availability, information, usability, accessibility, and affordability (as in right to mobility)."
     }
   ],
-  "error": null
+  "error": null,
+  "editorial_review": {
+    "valid": true,
+    "reason": "Başlıkta sorulan 'pozitif uç neden katottur' sorusu sahne 2'de elektronların negatif uçtan akıp redoks reaksiyonunu başlatmasıyla açıklanıyor; bu açıklama kaynakta verilen pozitif terminalin katot olduğu ve elektron akışıyla redoks gerçekleştiği ifadesiyle uyumlu. Diğer sahneler ve açıklama da kaynakla tutarlı, dil ve biçim kurallarına uygun."
+  }
 }
