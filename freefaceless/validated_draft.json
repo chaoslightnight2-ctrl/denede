@@ -1,96 +1,89 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-16T12:51:08.360693+00:00",
+  "saved_at": "2026-10-16T22:11:12.999121+00:00",
   "data": {
-    "source_id": "19644137",
-    "source_fact_quote": "The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs).",
-    "fact_scope": "Bu cümle, Martin Cooper tarafından Motorola şirketi adına New York şehrinde üç Nisan bin dokuz yüz yetmiş üç tarihinde yapılan ilk taşınabilir cep telefonu gösterimini ve cihazın yaklaşık iki kilogram ağırlığını tanımlar.",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "İlk taşınabilir cep telefonu ne zaman gösterildi",
-        "visual_query": "handset demo"
+        "text": "Elektrik akımı manyetik alan yaratır mı",
+        "visual_query": "copper wire"
       },
       {
-        "text": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi",
-        "visual_query": "new york"
+        "text": "Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur",
+        "visual_query": "magnet field"
       },
       {
-        "text": "Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı",
-        "visual_query": "kilogram weight"
+        "text": "Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur",
+        "visual_query": "electric coil"
       },
       {
-        "text": "Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-        "visual_query": "smartphone evolution future"
+        "text": "Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Sizce telefonlar nasıl evrimleşti",
-    "closing_visual_query": "smartphone evolution future",
+    "closing_question": "Siz de deney yaptınız mı?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "title": "İlk Cep Telefonu Ne Zaman Gösterildi",
-    "topic": "Mobil iletişim",
-    "description": "İlk cep telefonu gösterimi 1973 yılında gerçekleşti. O dönemde cihaz iki kilogram ağırlığındaydı.\n\n#shorts #teknoloji #tarih",
+    "topic": "elektrik",
+    "title": "Elektrik akımı nasıl manyetik alan oluşturur?",
+    "description": "Elektrik akımı bir iletkenden geçtiğinde çevresinde manyetik alan oluşur. Bu, elektromanyetizma temel prensibidir.\n\n#shorts #elektrik #manyetizma",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "tarih"
+      "primary": "elektrik",
+      "secondary": "manyetizma"
     },
     "tags": [
-      "cep telefonu",
-      "mobil teknoloji",
-      "tarih",
-      "elektronik",
-      "gösterim"
+      "elektrik",
+      "manyetikalan",
+      "akım",
+      "elektromanyetizma",
+      "fizik"
     ],
-    "spoken_text": "İlk taşınabilir cep telefonu ne zaman gösterildi İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk taşınabilir cep telefonu ne zaman gösterildi İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk taşınabilir cep telefonu ne zaman gösterildi. İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi. Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı. Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
-    "editorial_review": {
-      "valid": true,
-      "reason": "Başlık, açıklama ve sahneler kaynakta verilen 1973 yılı ve yaklaşık 2 kg ağırlığıyla uyumlu, tüm iddialar destekleniyor"
-    },
+    "spoken_text": "Elektrik akımı manyetik alan yaratır mı Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Elektrik akımı manyetik alan yaratır mı Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Elektrik akımı manyetik alan yaratır mı. Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur. Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur. Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
-      "source_fact_quote": "The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs).",
-      "fact_scope": "Bu cümle, Martin Cooper tarafından Motorola şirketi adına New York şehrinde üç Nisan bin dokuz yüz yetmiş üç tarihinde yapılan ilk taşınabilir cep telefonu gösterimini ve cihazın yaklaşık iki kilogram ağırlığını tanımlar.",
+      "source_id": "9550",
       "scenes": [
         {
-          "text": "İlk taşınabilir cep telefonu ne zaman gösterildi",
-          "visual_query": "handset demo"
+          "text": "Elektrik akımı manyetik alan yaratır mı?",
+          "visual_query": "copper wire"
         },
         {
-          "text": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi",
-          "visual_query": "new york"
+          "text": "Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur; bu, iletkenden akım geçtiğinde olur.",
+          "visual_query": "magnet field"
         },
         {
-          "text": "Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı",
-          "visual_query": "kilogram weight"
+          "text": "Elektrik, manyetizmayla ilişkilidir; ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur.",
+          "visual_query": "electric coil"
         }
       ],
-      "closing_question": "Sizce telefonlar nasıl evrimleşti",
-      "closing_visual_query": "smartphone evolution future",
+      "closing_question": "Siz de deney yaptınız mı?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "title": "İlk Cep Telefonu Ne Zaman Gösterildi",
-      "topic": "Mobil iletişim",
-      "description": "İlk cep telefonu gösterimi 1973 yılında gerçekleşti. O dönemde cihaz iki kilogram ağırlığındaydı.",
+      "topic": "elektrik",
+      "title": "Elektrik akımı nasıl manyetik alan oluşturur?",
+      "description": "Elektrik akımı bir iletkenden geçtiğinde çevresinde manyetik alan oluşur. Bu, elektromanyetizma temel prensibidir.",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "tarih"
+        "primary": "elektrik",
+        "secondary": "manyetizma"
       },
       "tags": [
-        "cep telefonu",
-        "mobil teknoloji",
-        "tarih",
-        "elektronik",
-        "gösterim"
+        "elektrik",
+        "manyetikalan",
+        "akım",
+        "elektromanyetizma",
+        "fizik"
       ]
-    }
+    },
+    "generation_mode": "prompt_first_v1"
   }
 }
