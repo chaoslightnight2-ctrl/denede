@@ -297,7 +297,8 @@
       "video_id": "Hkibt633nHk",
       "publish_at": "2026-10-16T18:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "38900217321"
+      "run_id": "38900217321",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
