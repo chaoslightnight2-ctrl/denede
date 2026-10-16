@@ -15,36 +15,22 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60] or "short"
 
 
-MIN_VOICE_SECONDS = 18.0
-MAX_VOICE_SECONDS = 30.0
-TARGET_VOICE_SECONDS = 24.0
-MAX_SCRIPT_TRIES = 3
 
 
-@limited_requests("GROQ_MAX_REQUESTS_PER_ITEM", 6)
+@limited_requests("GROQ_MAX_REQUESTS_PER_ITEM", 3)
 def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object, list, float, object]:
-    """Süre hedefini tutturan senaryo+seslendirme seçimi (en fazla 3 deneme)."""
-    best = None
-    for attempt in range(1, MAX_SCRIPT_TRIES + 1):
-        data = script.generate(niche=niche, avoid_extra=avoid_extra)
-        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
-        work.mkdir(parents=True, exist_ok=True)
-        # Preserve the exact source, original response and prepared speech before
-        # TTS, so a render failure cannot erase the evidence for manual review.
-        (work / 'script.json').write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
-        voice_mp3 = voice.synth(data["tts_text"], work / "voice.mp3")
-        words = captions.transcribe_words(voice_mp3)
-        duration = float(words[-1]["end"]) if words else 0.0
-        print(f"      deneme {attempt}: topic={data['topic']} sure={duration:.1f}sn kelime={len(data['full_text'].split())}", flush=True)
-        cand = (abs(TARGET_VOICE_SECONDS - duration), data, work, voice_mp3, words, duration)
-        if best is None or cand[0] < best[0]:
-            best = cand
-        if MIN_VOICE_SECONDS <= duration <= MAX_VOICE_SECONDS:
-            return data, work, voice_mp3, words, duration
-        from .validated_draft import clear
-        clear()
-    raise RuntimeError(f"Üç aynı Groq denemesi ses süresini 18-30 saniyeye sığdıramadı; en yakın aday kullanılmadı")
+    """Generate and synthesize once; duration never requests replacement prose."""
+    data = script.generate(niche=niche, avoid_extra=avoid_extra)
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    work = OUTPUT_DIR / f"{stamp}_{slug(data['topic'])}"
+    work.mkdir(parents=True, exist_ok=True)
+    (work / 'script.json').write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+    voice_mp3 = voice.synth(data['tts_text'], work / 'voice.mp3')
+    words = captions.transcribe_words(voice_mp3)
+    duration = float(words[-1]['end']) if words else 0.0
+    if duration <= 0:
+        raise ValueError('Voice track has no usable timed words')
+    return data, work, voice_mp3, words, duration
 
 
 def run_once(niche: str | None = None, publish_at: str | None = None,
@@ -52,7 +38,6 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
     print("[1/7] Groq ile senaryo üretiliyor")
     data, work, voice_mp3, words, duration = _pick_script(niche, avoid_extra)
     print(f"      topic: {data['topic']} ({duration:.1f}sn)")
-    script.verify_approved_package(data)
     stamp = work.name.split("_")[0] + "_" + work.name.split("_")[1]
 
     print("[2-3/7] Seslendirme + kelime zaman damgası hazır")
@@ -89,7 +74,6 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
                            int(os.getenv('DAILY_VIDEO_COUNT', '3')),
                            preferred=datetime.fromisoformat(publish_at.replace('Z', '+00:00')))
             publish_at = at.astimezone(ZoneInfo('UTC')).isoformat().replace('+00:00', 'Z')
-        script.verify_approved_package(data)
         print("[7/7] YouTube yükleme")
         video_id = upload.upload_video(
             video_path=final,

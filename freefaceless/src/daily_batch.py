@@ -40,7 +40,7 @@ def publish_time(hour: int) -> datetime:
     return next_slot(datetime.now(TZ), state.load().get('published', []), int(os.getenv('DAILY_VIDEO_COUNT', '3')), hour=hour)
 
 
-@limited_requests("GROQ_MAX_REQUESTS_PER_RUN", lambda: 6 * int(os.getenv('DAILY_VIDEO_COUNT', '3')))
+@limited_requests("GROQ_MAX_REQUESTS_PER_RUN", lambda: 3 * int(os.getenv('DAILY_VIDEO_COUNT', '3')))
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     from .upload_recovery import requested

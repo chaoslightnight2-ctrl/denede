@@ -1,4 +1,4 @@
-"""Reuse only a real editorially approved draft whose live source is unchanged."""
+"""Reuse a saved production response while its live source is unchanged."""
 import json
 import os
 from datetime import datetime, timezone, timedelta
@@ -14,7 +14,7 @@ def load(focus, sources, used, avoid=''):
     saved = json.loads(PATH.read_text(encoding='utf-8'))
     data = saved.get('data', {})
     if (saved.get('focus') != focus or saved.get('model') != os.getenv('GROQ_MODEL', 'openai/gpt-oss-120b')
-            or not data.get('editorial_review', {}).get('valid')
+            or data.get('generation_mode') != 'prompt_first_v1'
             or data.get('topic') in used or (avoid and data.get('topic') in avoid)):
         return None
     age = datetime.now(timezone.utc) - datetime.fromisoformat(saved['saved_at'])
@@ -22,11 +22,6 @@ def load(focus, sources, used, avoid=''):
         return None
     source = data.get('reference_source')
     if not source or not any(s.get('id') == source.get('id') and s.get('text') == source.get('text') for s in sources):
-        return None
-    try:
-        from .script import verify_approved_package
-        verify_approved_package(data)
-    except (ValueError, TypeError, KeyError):
         return None
     return data
 
