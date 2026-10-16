@@ -15,5 +15,22 @@
     "publish_at": "2026-10-16T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "38900217321",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-16T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-16T20:00:00Z",
+    "video_id": "QKWUH8aFSOk",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261016_125109_mobil-ileti-im/final.mp4",
+    "topic": "Mobil iletişim",
+    "title": "İlk Cep Telefonu Ne Zaman Gösterildi",
+    "narration": "İlk taşınabilir cep telefonu ne zaman gösterildi İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-16T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
