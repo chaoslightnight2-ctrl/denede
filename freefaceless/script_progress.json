@@ -1,41 +1,41 @@
 {
   "run_id": "38900217321",
-  "attempt": 2,
-  "stage": "validation_failed",
+  "attempt": 3,
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "9550",
-    "source_fact_quote": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. The motion of electric charge carriers is an electric current and produces a magnetic field.",
-    "fact_scope": "Varlığı ve hareketi yüklü maddeye bağlı olan elektrik, tüm fiziksel fenomenleri kapsar; yük taşıyan parçacıkların hareketi akım oluşturur ve manyetik alan üretir.",
+    "source_fact_quote": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations.",
+    "fact_scope": "Varlık: Elektrik; Koşul: Yüklü maddenin varlığı ve hareketi; Kapsam: Bu koşullarla ortaya çıkan fiziksel fenomenler bütünüdür.",
     "scenes": [
       {
-        "text": "Elektrik yüklü maddelerin varlığı ve hareketiyle oluşur",
+        "text": "Elektrik yüklü maddelerin varlığı ve hareketidir",
         "visual_query": "lightning bolt"
       },
       {
-        "text": "Yük taşıyan parçacıklar hareket ettiğinde akım meydana gelir ve çevresinde manyetik alan oluşur",
-        "visual_query": "wire coil"
+        "text": "Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir",
+        "visual_query": "copper wire"
       },
       {
-        "text": "Bu akım ve manyetik alan elektrik enerjisinin farklı günlük cihazlarda kullanılmasını sağlar",
-        "visual_query": "lamp socket"
+        "text": "Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler",
+        "visual_query": "static spark"
       }
     ],
-    "closing_question": "Sizce elektrik nasıl çalışır",
-    "closing_visual_query": "electric circuit board",
+    "closing_question": "Sizce elektrik nasıl hissedilir",
+    "closing_visual_query": "electric charge field",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "title": "Elektrik Akımı ve Manyetik Alan Nasıl Oluşur",
-    "description": "Elektriğin temel özelliklerini ve akım ile manyetik alan ilişkisini öğrenin Günlük yaşamda bu fenomenin nasıl çalıştığını keşfedin",
     "topic": "Elektrik",
+    "title": "Elektrik nedir? Yüklerin hareketi ve alanı",
+    "description": "Elektriğin temel tanımını ve etkilerini keşfedin Yüklerin hareketi nasıl alan ve akım oluşturur öğrenin",
     "hashtags": {
-      "primary": "elektrik",
-      "secondary": "bilim"
+      "primary": "bilim",
+      "secondary": "günlük"
     },
     "tags": [
       "elektrik",
+      "yük",
+      "alan",
       "akım",
-      "manyetik",
-      "enerji",
-      "fen"
+      "manyetizma"
     ]
   },
   "reference_sources": [
@@ -46,5 +46,5 @@
       "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     }
   ],
-  "error": "source_fact_quote must be a verbatim passage from the selected real source"
+  "error": null
 }
