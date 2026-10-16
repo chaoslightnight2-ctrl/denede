@@ -1,21 +1,69 @@
 {
-  "source_run": "38824354831",
-  "verified_at": "2026-10-15T23:44:03.818886+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "38900217321",
+  "verified_at": "2026-10-16T12:52:29.512787+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "Daily Groq quota cooldown 2696s saved; resume in a later scheduled run"
+      "video_id": "Hkibt633nHk",
+      "youtube_url": "https://youtu.be/Hkibt633nHk",
+      "title": "Elektrik nedir? Yüklerin hareketi ve alanı",
+      "narration": "Elektrik yüklü maddelerin varlığı ve hareketidir Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler Sizce elektrik nasıl hissedilir İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-16T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-16T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.6,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/Hkibt633nHk.jpg"
     },
     {
       "index": 2,
-      "error": "Saved provider cooldown still active; a later scheduled run must resume"
+      "video_id": "QKWUH8aFSOk",
+      "youtube_url": "https://youtu.be/QKWUH8aFSOk",
+      "title": "İlk Cep Telefonu Ne Zaman Gösterildi",
+      "narration": "İlk taşınabilir cep telefonu ne zaman gösterildi İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç yılında New Yorkta gösterildi Cihaz yaklaşık iki kilogram ağırlığındaydı ve bu ağırlık günümüz telefonlarından çok daha fazlaydı Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-16T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-16T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.933333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/QKWUH8aFSOk.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [],
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
