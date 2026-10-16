@@ -1,13 +1,46 @@
 {
-  "source_run": "38950125627",
-  "verified_at": "2026-10-16T18:50:04.958891+00:00",
-  "videos": [],
-  "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "source_run": "38973577581",
+  "verified_at": "2026-10-16T22:23:50.648643+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "D6ptq1ulz3M",
+      "youtube_url": "https://youtu.be/D6ptq1ulz3M",
+      "title": "Elektrik akımı nasıl manyetik alan oluşturur?",
+      "narration": "Elektrik akımı manyetik alan yaratır mı Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-17T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-17T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.3,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/D6ptq1ulz3M.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "index": 2,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "skipped": "daily_target_already_accepted",
-  "target_count": 0,
-  "daily_existing_count": 3,
-  "accepted_complete": true
+  "target_count": 2,
+  "published_count": 0,
+  "accepted_complete": false
 }
