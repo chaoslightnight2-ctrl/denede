@@ -5,6 +5,7 @@ import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from .publish_schedule import next_slot
+from .groq_budget import limited_requests
 from . import script, voice, captions, visuals, assemble, upload, state
 from .quality import validate_rendered_video
 from .config import OUTPUT_DIR
@@ -20,6 +21,7 @@ TARGET_VOICE_SECONDS = 24.0
 MAX_SCRIPT_TRIES = 3
 
 
+@limited_requests("GROQ_MAX_REQUESTS_PER_ITEM", 6)
 def _pick_script(niche: str | None, avoid_extra: str = "") -> tuple[dict, object, list, float, object]:
     """Süre hedefini tutturan senaryo+seslendirme seçimi (en fazla 3 deneme)."""
     best = None

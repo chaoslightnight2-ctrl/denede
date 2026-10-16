@@ -16,8 +16,10 @@ import logging
 import os
 from datetime import datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
+from requests import RequestException
 
 from . import pipeline, state
+from .groq_budget import limited_requests
 from .config import ROOT
 from .publish_schedule import publication_hours, daily_receipts
 from .script import TURKISH_NICHES
@@ -38,6 +40,7 @@ def publish_time(hour: int) -> datetime:
     return next_slot(datetime.now(TZ), state.load().get('published', []), int(os.getenv('DAILY_VIDEO_COUNT', '3')), hour=hour)
 
 
+@limited_requests("GROQ_MAX_REQUESTS_PER_RUN", lambda: 6 * int(os.getenv('DAILY_VIDEO_COUNT', '3')))
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     from .upload_recovery import requested
@@ -117,6 +120,7 @@ def main() -> None:
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
     seen_topics: set[str] = set()
     for slot, hour, at, niche in selected_targets:
+        provider_error = None
         utc = at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         print(f"[{slot}] {niche} -> {at.isoformat()}", flush=True)
         try:
@@ -137,9 +141,11 @@ def main() -> None:
                 **res,
             }
         except Exception as exc:
-            print(f"[{slot}] HATA (diğer slotlar devam edecek): {exc}", flush=True)
+            provider_error = exc
+            print(f"[{slot}] HATA: {exc}", flush=True)
             result_row = {"run_id": os.getenv("GITHUB_RUN_ID"), "slot": slot, "niche": niche, "ok": False, "error": str(exc)}
 
+        stop = isinstance(provider_error, RequestException)
         if args.retry_failed:
             index = next(i for i, row in enumerate(manifest) if row.get("slot") == slot and not row.get("ok"))
             manifest[index] = result_row
@@ -149,6 +155,8 @@ def main() -> None:
         if not args.no_upload:
             from .upload_checkpoint import checkpoint
             checkpoint([MANIFEST, ROOT / 'state.json'])
+        if stop:
+            raise provider_error
 
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     ok = sum(1 for row in manifest if row.get("ok"))

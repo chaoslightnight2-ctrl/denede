@@ -4,6 +4,7 @@ import json
 import re
 import os
 from .groq_client import chat_json, object_schema
+from .groq_budget import limited_requests
 from .prompt_contract import CROSS_LANGUAGE_SOURCE_RULES
 from .audience_strategy import brief, STORY_RULES, category
 from .performance_feedback import prompt_feedback, choose_hook_style, category_bonus
@@ -185,6 +186,15 @@ def repair_sources(sources, previous, error, retired=()):
     return [selected] if selected else available
 
 
+def evidence_source(data, sources):
+    source = next((s for s in sources if s['id'] == data.get('source_id')), None)
+    quote = " ".join(str(data.get('source_fact_quote') or '').split())
+    if not source or not quote or quote not in " ".join(source['text'].split()):
+        raise ValueError('source_fact_quote must be a verbatim passage from the selected real source')
+    return source
+
+
+@limited_requests("GROQ_MAX_REQUESTS_PER_ITEM", 6)
 def generate(niche: str | None = None, avoid_extra: str = ""):
     focus = niche or CONFIG["niche"]
     sources = fetch_sources(focus)
@@ -268,6 +278,7 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             from . import model_audit
             audit = model_audit.received(data, supplied_sources, attempt + 1)
             previous = copy.deepcopy(data)
+            evidence_source(data, supplied_sources)
             if not isinstance(data.get('scenes'), list) or not 3 <= len(data['scenes']) <= 4:
                 raise ValueError('Kapanış dışında 3-4 anlatım sahnesi gerekli')
             if any('abone' in str(scene.get('text', '')).casefold() or 'İlginç Gerçekler'.casefold() in str(scene.get('text', '')).casefold() for scene in data['scenes']):
