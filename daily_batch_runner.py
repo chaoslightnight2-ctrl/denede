@@ -82,6 +82,7 @@ def fallback_script(niche: str) -> str:
 
 
 def generate_script(niche: str) -> str:
+    raise ValueError("Legacy generation has no source approval; use freefaceless/src protected pipeline")
     best = ""
     best_count = 999
     try:

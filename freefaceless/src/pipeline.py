@@ -52,6 +52,7 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
     print("[1/7] Groq ile senaryo üretiliyor")
     data, work, voice_mp3, words, duration = _pick_script(niche, avoid_extra)
     print(f"      topic: {data['topic']} ({duration:.1f}sn)")
+    script.verify_approved_package(data)
     stamp = work.name.split("_")[0] + "_" + work.name.split("_")[1]
 
     print("[2-3/7] Seslendirme + kelime zaman damgası hazır")
@@ -88,6 +89,7 @@ def run_once(niche: str | None = None, publish_at: str | None = None,
                            int(os.getenv('DAILY_VIDEO_COUNT', '3')),
                            preferred=datetime.fromisoformat(publish_at.replace('Z', '+00:00')))
             publish_at = at.astimezone(ZoneInfo('UTC')).isoformat().replace('+00:00', 'Z')
+        script.verify_approved_package(data)
         print("[7/7] YouTube yükleme")
         video_id = upload.upload_video(
             video_path=final,

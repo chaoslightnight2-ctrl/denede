@@ -5,6 +5,7 @@ import re
 import os
 from .groq_client import chat_json, object_schema
 from .groq_budget import limited_requests
+from .source_review import evidence_schema, validate_review, make_proof, require_proof, EVIDENCE_INSTRUCTIONS
 from .prompt_contract import CROSS_LANGUAGE_SOURCE_RULES
 from .audience_strategy import brief, STORY_RULES, category
 from .performance_feedback import prompt_feedback, choose_hook_style, category_bonus
@@ -35,7 +36,7 @@ PACKAGE_SCHEMA = object_schema({
     "scenes": {"type": "array", "items": object_schema({
         "text": {"type": "string", "description": "A complete natural Turkish spoken sentence supported by the selected reference. No punctuation, numerical digits, source references, production instructions or filler."},
         "visual_query": {"type": "string", "description": "Two to four lowercase ASCII English words naming a visible object relevant to this sentence"}})}})
-REVIEW_SCHEMA = object_schema({"valid": {"type": "boolean"}, "reason": {"type": "string"}})
+REVIEW_SCHEMA = object_schema({"valid": {"type": "boolean"}, "reason": {"type": "string"}, "evidence": evidence_schema()})
 
 # Write the evidence and spoken story before its derived publishing metadata.
 # Corrections must not retain a title from an earlier, different narration.
@@ -293,6 +294,8 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             data = _validate_package(data)
             if data["topic"].casefold() in {str(topic).casefold() for topic in banned}:
                 raise ValueError("Konu tekrar ediyor; başka olgu seç")
+            fields = fact_fields(raw_package)
+            review_source = evidence_source(raw_package, supplied_sources)['text']
             verdict = chat_json(
                 "Bağımsız Türkçe bilim ve kültür editörüsün. Aşağıdaki başlık açıklama ve sahneleri incele. "
                 "Türkçesi doğal mı, başlıkla konu uyumlu mu, iddialar verilen kaynakta açıkça destekleniyor mu, "
@@ -315,7 +318,8 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                 "Konuşmada kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa reddet. "
                 "JSON döndür: {\"valid\":true,\"reason\":\"kısa gerekçe\"}\n" + json.dumps(
                     {key: raw_package[key] for key in ('topic', 'title', 'description', 'tags', 'scenes', 'closing_question', 'cta', 'source_fact_quote', 'fact_scope') if key in raw_package}, ensure_ascii=False)
-                + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False),
+                + '\nKAYNAK:\n' + json.dumps(next((s for s in sources if s['id'] == data.get('source_id')), {}), ensure_ascii=False)
+                + EVIDENCE_INSTRUCTIONS + '\nDENETLENECEK_ALANLAR: ' + json.dumps(fields, ensure_ascii=False),
                 system=(
                     'You are a source-bound editor, not a general knowledge checker. '
                     'Sources may be English or another language. Spoken narration '
@@ -350,17 +354,19 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
                     'The separate cta is channel promotion and does not need source '
                     'support. A personal viewer question does not need a factual '
                     'source unless it presupposes an unsupported factual claim. '
-                    'Return only the requested valid/reason JSON schema.'),
+                    'Return only the requested valid/reason/evidence JSON schema.'),
                 temperature=0, max_tokens=1800, schema=REVIEW_SCHEMA)
             if verdict.get("valid") is not True:
                 model_audit.update(audit, 'editor_rejected', verdict=verdict)
                 raise ValueError("Editör reddetti: " + str(verdict.get("reason", "belirsiz olgu")))
+            validate_review(verdict, fields, review_source)
             model_audit.update(audit, 'review_passed', verdict=verdict)
             data["audience_bucket"] = category(data["topic"] + " " + focus)
             data["hook_style"] = hook_style
             data["editorial_review"] = verdict
             data['reference_source'] = next((s for s in sources if s['id'] == data.get('source_id')), None)
             data['raw_groq_package'] = previous
+            data['publication_approval'] = make_proof(fact_payload(data), fields, review_source, verdict)
             validated_draft.save(focus, data)
             return data
         except (ValueError, KeyError, TypeError) as exc:
@@ -370,3 +376,20 @@ def generate(niche: str | None = None, avoid_extra: str = ""):
             log.warning('Groq script attempt %s/5 failed existing validation: %s', attempt + 1, exc)
     raise RuntimeError(f"5 aynı Groq modeli denemesinde geçerli senaryo paketi alınamadı: {last_err}")
 
+
+
+def fact_fields(raw):
+    return {'title': raw.get('title'), 'description': raw.get('description'),
+            **{f'scene_{i}': scene['text'] for i, scene in enumerate(raw.get('scenes', []))}}
+
+
+def fact_payload(data):
+    return {key: data.get(key) for key in ('topic', 'title', 'description', 'tags', 'scenes',
+        'spoken_text', 'tts_text', 'closing_question', 'cta', 'raw_groq_package', 'reference_source')}
+
+
+def verify_approved_package(data):
+    raw = data.get('raw_groq_package', {})
+    source = data.get('reference_source', {}).get('text')
+    require_proof(fact_payload(data), fact_fields(raw), source,
+                  data.get('editorial_review'), data.get('publication_approval'))

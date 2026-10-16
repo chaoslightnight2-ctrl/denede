@@ -87,6 +87,7 @@ class DailyPublishingTests(unittest.TestCase):
         saved = {'used_topics': [], 'published': []}
         with patch.dict(os.environ, {'DAILY_VIDEO_COUNT': '3', 'PUBLISH_UPLOAD_CHECKPOINTS': '0'}), \
              patch.object(pipeline, 'datetime', types.SimpleNamespace(now=lambda tz: fixed, fromisoformat=datetime.fromisoformat)), \
+             patch.object(pipeline.script, 'verify_approved_package'), \
              patch.object(pipeline, '_pick_script', return_value=(data, Path('20261006_060000_deney'), Path('voice.mp3'), [], 32)), \
              patch.object(pipeline.visuals, 'fetch_for_scenes', return_value=[]), \
              patch.object(pipeline.captions, 'write_ass', return_value=Path('captions.ass')), \
