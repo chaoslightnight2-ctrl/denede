@@ -15,5 +15,12 @@
     "publish_at": "2026-10-17T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "38980669769",
+    "slot": "2300",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
