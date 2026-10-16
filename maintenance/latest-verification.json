@@ -1,19 +1,19 @@
 {
-  "source_run": "38973577581",
-  "verified_at": "2026-10-16T22:23:50.648643+00:00",
+  "source_run": "38980669769",
+  "verified_at": "2026-10-16T23:32:02.329314+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "D6ptq1ulz3M",
-      "youtube_url": "https://youtu.be/D6ptq1ulz3M",
-      "title": "Elektrik akımı nasıl manyetik alan oluşturur?",
-      "narration": "Elektrik akımı manyetik alan yaratır mı Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-17T16:00:00Z",
+      "video_id": "scYfp8BfD0c",
+      "youtube_url": "https://youtu.be/scYfp8BfD0c",
+      "title": "Akıllı ev aletleri işimizi azaltıyor mu? – Tartışmalı",
+      "narration": "Akıllı ev aletleri ne kadar zaman kazandırır Kaynağa göre ev teknolojisi işleri kısaltıyor deniyor ama kanıtları kesin değil henüz tam Ev aletleri otomasyon ve enerji verimli tasarımlar da dahil Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-17T18:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-10-17T16:00:00Z",
+        "publishAt": "2026-10-17T18:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,18 +23,18 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 19.3,
+        "duration": 18.166667,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/D6ptq1ulz3M.jpg"
+      "preview": "maintenance/previews/scYfp8BfD0c.jpg"
     }
   ],
   "errors": [
     {
       "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
   "accepted_count": 1,
