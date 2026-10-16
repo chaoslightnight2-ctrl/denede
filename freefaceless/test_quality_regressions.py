@@ -32,7 +32,10 @@ class DenedeQualityTests(unittest.TestCase):
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
                    'closing_visual_query': 'shore ocean foam', 'cta': 'İlginç Gerçekler kanalına abone ol'}
         sources = [{'id': '123', 'title': 'Wave reference', 'url': 'https://example.test/reference', 'text': ' '.join(texts)}]
-        with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), {'valid': True, 'reason': 'correct'}]) as request, \
+        verdict = {'valid': True, 'reason': 'test fixture only', 'evidence': [
+            {'field': key, 'supported': True, 'source_quote': sources[0]['text']}
+            for key in script.fact_fields(package)]}
+        with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), verdict]) as request, \
              patch.object(script.state, 'load', return_value={'used_topics': []}), \
              patch.object(script, 'fetch_sources', return_value=sources):
             result = script.generate()
@@ -61,7 +64,7 @@ class DenedeQualityTests(unittest.TestCase):
         data = {'topic': 'deney', 'title': 'deney', 'description': 'deney', 'tags': [], 'scenes': [], 'spoken_text': 'temiz metin'}
         saved = {'used_topics': [], 'published': [{'video_id': 'AbcDef_1234'}]}
         work = Path('20260930_060000_deney')
-        with patch.object(pipeline, '_pick_script', return_value=(data, work, Path('voice.mp3'), [], 32)), \
+        with patch.object(pipeline.script, 'verify_approved_package'), patch.object(pipeline, '_pick_script', return_value=(data, work, Path('voice.mp3'), [], 32)), \
              patch.object(pipeline.visuals, 'fetch_for_scenes', return_value=[]), \
              patch.object(pipeline.captions, 'write_ass', return_value=Path('captions.ass')), \
              patch.object(pipeline.assemble, 'build', return_value=Path('final.mp4')), \

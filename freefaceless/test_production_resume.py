@@ -42,7 +42,7 @@ class ProductionResumeTests(unittest.TestCase):
 
     def test_approved_draft_requires_unchanged_source_and_unused_topic(self):
         source = {'id': 'real-source', 'text': 'actual source body'}
-        data = {'topic': 'actual topic', 'editorial_review': {'valid': True}, 'reference_source': source}
+        data = approved_fixture(source)
         with TemporaryDirectory() as folder, patch.object(validated_draft, 'PATH', Path(folder) / 'draft.json'), \
              patch.dict(os.environ, {'PUBLISH_UPLOAD_CHECKPOINTS': '1'}), patch.object(validated_draft, 'checkpoint'):
             validated_draft.save('science', data)
@@ -52,7 +52,7 @@ class ProductionResumeTests(unittest.TestCase):
 
     def test_duration_rejected_draft_is_not_reused(self):
         source = {'id': 'real-source', 'text': 'actual source body'}
-        data = {'topic': 'actual topic', 'editorial_review': {'valid': True}, 'reference_source': source}
+        data = approved_fixture(source)
         with TemporaryDirectory() as folder, patch.object(validated_draft, 'PATH', Path(folder) / 'draft.json'), \
              patch.dict(os.environ, {'PUBLISH_UPLOAD_CHECKPOINTS': '1'}), patch.object(validated_draft, 'checkpoint'):
             validated_draft.save('science', data)
@@ -62,3 +62,14 @@ class ProductionResumeTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+def approved_fixture(source):
+    from src.script import fact_fields, fact_payload
+    from src.source_review import make_proof
+    raw = {'title': 'Actual title', 'description': 'Actual description', 'scenes': [{'text': 'Actual narration'}]}
+    review = {'valid': True, 'reason': 'test fixture only', 'evidence': [
+        {'field': key, 'source_quote': source['text'], 'supported': True} for key in fact_fields(raw)]}
+    data = {'topic': 'actual topic', 'editorial_review': review, 'reference_source': source, 'raw_groq_package': raw}
+    data['publication_approval'] = make_proof(fact_payload(data), fact_fields(raw), source['text'], review)
+    return data

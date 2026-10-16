@@ -102,6 +102,7 @@ GENERATED_PACKAGE = {}
 GENERATED_PACKAGE = {}
 
 def generate_script(niche: str) -> str:
+    raise ValueError("Legacy generation has no source approval; use freefaceless/src protected pipeline")
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         raise RuntimeError("GROQ_API_KEY tanımlı değil; yedek anlatım kapalı.")
@@ -402,6 +403,7 @@ def get_youtube_service():
     return build("youtube", "v3", credentials=creds)
 
 def upload_to_youtube(video_path, title, description, tags=None):
+    raise ValueError("Legacy upload has no source approval; use freefaceless/src protected pipeline")
     if not os.path.exists(video_path):
         raise FileNotFoundError(video_path)
     if "#shorts" not in title.lower():

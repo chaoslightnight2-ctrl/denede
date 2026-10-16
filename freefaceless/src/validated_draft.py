@@ -23,6 +23,11 @@ def load(focus, sources, used, avoid=''):
     source = data.get('reference_source')
     if not source or not any(s.get('id') == source.get('id') and s.get('text') == source.get('text') for s in sources):
         return None
+    try:
+        from .script import verify_approved_package
+        verify_approved_package(data)
+    except (ValueError, TypeError, KeyError):
+        return None
     return data
 
 
