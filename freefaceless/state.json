@@ -24,7 +24,8 @@
     "Yapay zekâ",
     "Yapay zekâ uygulamaları",
     "Hava Durumu",
-    "Batarya terminalleri"
+    "Batarya terminalleri",
+    "Elektrik"
   ],
   "published": [
     {
@@ -285,6 +286,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38809231079",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261016_123909",
+      "topic": "Elektrik",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Elektrik nedir? Yüklerin hareketi ve alanı",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261016_123909_elektrik/final.mp4",
+      "video_id": "Hkibt633nHk",
+      "publish_at": "2026-10-16T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "38900217321"
     }
   ]
 }
