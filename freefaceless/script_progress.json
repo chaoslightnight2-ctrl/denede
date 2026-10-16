@@ -1,7 +1,7 @@
 {
   "run_id": "38973577581",
   "attempt": 1,
-  "stage": "received_unvalidated",
+  "stage": "prepared_without_editor",
   "raw_groq_package": {
     "source_id": "9550",
     "scenes": [
