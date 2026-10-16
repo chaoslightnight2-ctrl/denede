@@ -24,7 +24,7 @@ class DenedeQualityTests(unittest.TestCase):
                  'Sığ kıyılara yaklaşan dalgaların biçimi ve hareketi derinlikle birlikte değişir',
                  'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
         queries = ['ocean surface waves', 'wind sea waves', 'water circular motion', 'shallow coastal waves', 'beach breaking waves']
-        package = {'source_id': '123', 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
+        package = {'source_id': '123', 'source_fact_quote': texts[0], 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
                    'description': 'Deniz dalgalarının hareketi',
                    'hashtags': {'primary': 'Dalga', 'secondary': 'Deniz'},
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
