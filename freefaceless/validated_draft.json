@@ -1,95 +1,95 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-15T21:27:08.773780+00:00",
+  "saved_at": "2026-10-16T12:39:08.156519+00:00",
   "data": {
-    "source_id": "19174720",
-    "source_fact_quote": "When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode.",
-    "fact_scope": "Bu cümle, elektrik bataryasının güç sağladığı durumda pozitif terminalinin katot, negatif terminalinin ise anot olduğunu belirtir.",
+    "source_id": "9550",
+    "source_fact_quote": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations.",
+    "fact_scope": "Varlık: Elektrik; Koşul: Yüklü maddenin varlığı ve hareketi; Kapsam: Bu koşullarla ortaya çıkan fiziksel fenomenler bütünüdür.",
     "scenes": [
       {
-        "text": "Bataryanın pozitif ucu ne olarak adlandırılır",
-        "visual_query": "battery terminal"
+        "text": "Elektrik yüklü maddelerin varlığı ve hareketidir",
+        "visual_query": "lightning bolt"
       },
       {
-        "text": "Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır",
-        "visual_query": "battery diagram"
+        "text": "Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir",
+        "visual_query": "copper wire"
       },
       {
-        "text": "Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler",
-        "visual_query": "battery anode"
+        "text": "Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler",
+        "visual_query": "static spark"
       },
       {
-        "text": "Daha uzun ömürlü olabilir mi İlginç Gerçekler kanalına abone ol",
-        "visual_query": "battery lifespan test"
+        "text": "Sizce elektrik nasıl hissedilir İlginç Gerçekler kanalına abone ol",
+        "visual_query": "electric charge field"
       }
     ],
-    "closing_question": "Daha uzun ömürlü olabilir mi",
-    "closing_visual_query": "battery lifespan test",
+    "closing_question": "Sizce elektrik nasıl hissedilir",
+    "closing_visual_query": "electric charge field",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Batarya terminalleri",
-    "title": "Bataryanın pozitif ucu neden katottur",
-    "description": "Bir bataryanın pozitif terminali katot olarak adlandırılır. Negatif terminal ise anot olarak bilinir.\n\n#shorts #batarya #elektrik",
+    "topic": "Elektrik",
+    "title": "Elektrik nedir? Yüklerin hareketi ve alanı",
+    "description": "Elektriğin temel tanımını ve etkilerini keşfedin Yüklerin hareketi nasıl alan ve akım oluşturur öğrenin\n\n#shorts #bilim #günlük",
     "hashtags": {
-      "primary": "batarya",
-      "secondary": "elektrik"
+      "primary": "bilim",
+      "secondary": "günlük"
     },
     "tags": [
-      "batarya",
-      "katot",
-      "anot",
       "elektrik",
-      "enerji"
+      "yük",
+      "alan",
+      "akım",
+      "manyetizma"
     ],
-    "spoken_text": "Bataryanın pozitif ucu ne olarak adlandırılır Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler Daha uzun ömürlü olabilir mi İlginç Gerçekler kanalına abone ol",
-    "full_text": "Bataryanın pozitif ucu ne olarak adlandırılır Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler Daha uzun ömürlü olabilir mi İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Bataryanın pozitif ucu ne olarak adlandırılır. Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır. Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler. Daha uzun ömürlü olabilir mi İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "spoken_text": "Elektrik yüklü maddelerin varlığı ve hareketidir Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler Sizce elektrik nasıl hissedilir İlginç Gerçekler kanalına abone ol",
+    "full_text": "Elektrik yüklü maddelerin varlığı ve hareketidir Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler Sizce elektrik nasıl hissedilir İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Elektrik yüklü maddelerin varlığı ve hareketidir. Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir. Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler. Sizce elektrik nasıl hissedilir İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
     "editorial_review": {
       "valid": true,
-      "reason": "Başlıkta sorulan 'pozitif uç neden katottur' sorusu sahne 2'de elektronların negatif uçtan akıp redoks reaksiyonunu başlatmasıyla açıklanıyor; bu açıklama kaynakta verilen pozitif terminalin katot olduğu ve elektron akışıyla redoks gerçekleştiği ifadesiyle uyumlu. Diğer sahneler ve açıklama da kaynakla tutarlı, dil ve biçim kurallarına uygun."
+      "reason": "Tüm iddialar kaynakla uyumlu, metin doğal Türkçe ve başlıkla konu tutarlı."
     },
     "reference_source": {
-      "id": "19174720",
-      "title": "Electric battery",
-      "url": "https://en.wikipedia.org/wiki/Electric_battery",
-      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     "raw_groq_package": {
-      "source_id": "19174720",
-      "source_fact_quote": "When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode.",
-      "fact_scope": "Bu cümle, elektrik bataryasının güç sağladığı durumda pozitif terminalinin katot, negatif terminalinin ise anot olduğunu belirtir.",
+      "source_id": "9550",
+      "source_fact_quote": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations.",
+      "fact_scope": "Varlık: Elektrik; Koşul: Yüklü maddenin varlığı ve hareketi; Kapsam: Bu koşullarla ortaya çıkan fiziksel fenomenler bütünüdür.",
       "scenes": [
         {
-          "text": "Bataryanın pozitif ucu ne olarak adlandırılır",
-          "visual_query": "battery terminal"
+          "text": "Elektrik yüklü maddelerin varlığı ve hareketidir",
+          "visual_query": "lightning bolt"
         },
         {
-          "text": "Pozitif uç katot olarak adlandırılır çünkü elektronlar negatif uçtan akarak redoks reaksiyonunu başlatır",
-          "visual_query": "battery diagram"
+          "text": "Bu fenomen elektrik yüküne sahip maddelerin hareketiyle elektrik akımı oluşturur ve manyetik alan üretir",
+          "visual_query": "copper wire"
         },
         {
-          "text": "Negatif uç anot olarak bilinir ve elektronların kaynak olduğu yerdir bu da akımı belirler",
-          "visual_query": "battery anode"
+          "text": "Pozitif ya da negatif yük çevresinde bir elektrik alanı yaratarak diğer yükleri etkiler",
+          "visual_query": "static spark"
         }
       ],
-      "closing_question": "Daha uzun ömürlü olabilir mi",
-      "closing_visual_query": "battery lifespan test",
+      "closing_question": "Sizce elektrik nasıl hissedilir",
+      "closing_visual_query": "electric charge field",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "Batarya terminalleri",
-      "title": "Bataryanın pozitif ucu neden katottur",
-      "description": "Bir bataryanın pozitif terminali katot olarak adlandırılır. Negatif terminal ise anot olarak bilinir.",
+      "topic": "Elektrik",
+      "title": "Elektrik nedir? Yüklerin hareketi ve alanı",
+      "description": "Elektriğin temel tanımını ve etkilerini keşfedin Yüklerin hareketi nasıl alan ve akım oluşturur öğrenin",
       "hashtags": {
-        "primary": "batarya",
-        "secondary": "elektrik"
+        "primary": "bilim",
+        "secondary": "günlük"
       },
       "tags": [
-        "batarya",
-        "katot",
-        "anot",
         "elektrik",
-        "enerji"
+        "yük",
+        "alan",
+        "akım",
+        "manyetizma"
       ]
     }
   }
