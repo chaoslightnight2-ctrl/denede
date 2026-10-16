@@ -40,7 +40,7 @@ class ProductionResumeTests(unittest.TestCase):
             daily_batch.main()
         run.assert_not_called()
 
-    def test_approved_draft_requires_unchanged_source_and_unused_topic(self):
+    def test_saved_draft_requires_unchanged_source_and_unused_topic(self):
         source = {'id': 'real-source', 'text': 'actual source body'}
         data = approved_fixture(source)
         with TemporaryDirectory() as folder, patch.object(validated_draft, 'PATH', Path(folder) / 'draft.json'), \
@@ -50,7 +50,7 @@ class ProductionResumeTests(unittest.TestCase):
             self.assertIsNone(validated_draft.load('science', [dict(source, text='updated source')], []))
             self.assertIsNone(validated_draft.load('science', [source], ['actual topic']))
 
-    def test_duration_rejected_draft_is_not_reused(self):
+    def test_cleared_draft_is_not_reused(self):
         source = {'id': 'real-source', 'text': 'actual source body'}
         data = approved_fixture(source)
         with TemporaryDirectory() as folder, patch.object(validated_draft, 'PATH', Path(folder) / 'draft.json'), \
@@ -65,11 +65,4 @@ if __name__ == '__main__':
 
 
 def approved_fixture(source):
-    from src.script import fact_fields, fact_payload
-    from src.source_review import make_proof
-    raw = {'title': 'Actual title', 'description': 'Actual description', 'scenes': [{'text': 'Actual narration'}]}
-    review = {'valid': True, 'reason': 'test fixture only', 'evidence': [
-        {'field': key, 'source_quote': source['text'], 'supported': True} for key in fact_fields(raw)]}
-    data = {'topic': 'actual topic', 'editorial_review': review, 'reference_source': source, 'raw_groq_package': raw}
-    data['publication_approval'] = make_proof(fact_payload(data), fact_fields(raw), source['text'], review)
-    return data
+    return {'topic': 'actual topic', 'reference_source': source, 'generation_mode': 'prompt_first_v1'}

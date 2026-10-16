@@ -24,7 +24,7 @@ class DenedeQualityTests(unittest.TestCase):
                  'Sığ kıyılara yaklaşan dalgaların biçimi ve hareketi derinlikle birlikte değişir',
                  'Kıyıda gördüğün dalgalar suyun tamamını uzağa taşıyan bir nehir değildir']
         queries = ['ocean surface waves', 'wind sea waves', 'water circular motion', 'shallow coastal waves', 'beach breaking waves']
-        package = {'source_id': '123', 'source_fact_quote': texts[0], 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
+        package = {'source_id': '123', 'topic': 'Deniz dalgaları', 'title': 'Dalgalar suyu nereye taşır',
                    'description': 'Deniz dalgalarının hareketi',
                    'hashtags': {'primary': 'Dalga', 'secondary': 'Deniz'},
                    'tags': ['dalga', 'deniz', 'rüzgar', 'su', 'kıyı'],
@@ -32,10 +32,7 @@ class DenedeQualityTests(unittest.TestCase):
                    'closing_question': 'Sen dalgaları izlerken suyun hareketini fark ettin mi',
                    'closing_visual_query': 'shore ocean foam', 'cta': 'İlginç Gerçekler kanalına abone ol'}
         sources = [{'id': '123', 'title': 'Wave reference', 'url': 'https://example.test/reference', 'text': ' '.join(texts)}]
-        verdict = {'valid': True, 'reason': 'test fixture only', 'evidence': [
-            {'field': key, 'supported': True, 'source_quote': sources[0]['text']}
-            for key in script.fact_fields(package)]}
-        with patch.object(script, 'chat_json', side_effect=[copy.deepcopy(package), verdict]) as request, \
+        with patch.object(script, 'chat_json', return_value=copy.deepcopy(package)) as request, \
              patch.object(script.state, 'load', return_value={'used_topics': []}), \
              patch.object(script, 'fetch_sources', return_value=sources):
             result = script.generate()
@@ -43,19 +40,10 @@ class DenedeQualityTests(unittest.TestCase):
         self.assertEqual(result['spoken_text'].count('abone ol'), 1)
         self.assertTrue(result['scenes'][-1]['text'].endswith('İlginç Gerçekler kanalına abone ol'))
         self.assertEqual(result['reference_source'], sources[0])
-        # The actual assembled video has five scenes, but only four factual
-        # scenes may be sent for source entailment; the fifth contains the CTA.
-        review_prompt = request.call_args_list[1].args[0]
-        marker = 'JSON döndür: {"valid":true,"reason":"kısa gerekçe"}\n'
-        review_data = __import__('json').loads(review_prompt.split(marker, 1)[1].split('\nKAYNAK:\n', 1)[0])
-        self.assertEqual(review_data['scenes'], package['scenes'])
-        self.assertEqual(review_data['closing_question'], package['closing_question'])
-        self.assertEqual(review_data['cta'], package['cta'])
-        self.assertTrue(all('abone ol' not in scene['text'] for scene in review_data['scenes']))
+        request.assert_called_once()
         self.assertTrue(result['description'].endswith('#shorts #Dalga #Deniz'))
         self.assertEqual(result['spoken_text'].count('#'), 0)
-        self.assertIn(sources[0]['text'], request.call_args_list[1].args[0])
-        self.assertIn(texts[1], request.call_args_list[1].args[0])
+        self.assertIn(sources[0]['text'], request.call_args.args[0])
         self.assertNotIn('.', result['scenes'][1]['text'])
         self.assertNotIn('example.test', result['spoken_text'])
 
@@ -64,7 +52,7 @@ class DenedeQualityTests(unittest.TestCase):
         data = {'topic': 'deney', 'title': 'deney', 'description': 'deney', 'tags': [], 'scenes': [], 'spoken_text': 'temiz metin'}
         saved = {'used_topics': [], 'published': [{'video_id': 'AbcDef_1234'}]}
         work = Path('20260930_060000_deney')
-        with patch.object(pipeline.script, 'verify_approved_package'), patch.object(pipeline, '_pick_script', return_value=(data, work, Path('voice.mp3'), [], 32)), \
+        with patch.object(pipeline, '_pick_script', return_value=(data, work, Path('voice.mp3'), [], 32)), \
              patch.object(pipeline.visuals, 'fetch_for_scenes', return_value=[]), \
              patch.object(pipeline.captions, 'write_ass', return_value=Path('captions.ass')), \
              patch.object(pipeline.assemble, 'build', return_value=Path('final.mp4')), \
