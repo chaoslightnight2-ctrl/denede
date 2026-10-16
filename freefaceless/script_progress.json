@@ -1,7 +1,7 @@
 {
   "run_id": "38900217321",
   "attempt": 1,
-  "stage": "received_unvalidated",
+  "stage": "validation_failed",
   "raw_groq_package": {
     "source_id": "9550",
     "source_fact_quote": "The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end.",
@@ -64,5 +64,5 @@
       "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     }
   ],
-  "error": null
+  "error": "Başlık boş veya 60 karakterden uzun"
 }
