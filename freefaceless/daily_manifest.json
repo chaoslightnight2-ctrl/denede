@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "38973577581",
-    "slot": "1900",
-    "niche": "Günlük hayatta bilimin açıklamaları",
+    "run_id": "38980669769",
+    "slot": "2100",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-17T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-10-17T21:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-17T16:00:00Z",
-    "video_id": "D6ptq1ulz3M",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261016_221114_elektrik/final.mp4",
-    "topic": "elektrik",
-    "title": "Elektrik akımı nasıl manyetik alan oluşturur?",
-    "narration": "Elektrik akımı manyetik alan yaratır mı Akım taşıyan yükler hareket ederken çevresinde manyetik alan oluşturur bu iletkenden akım geçtiğinde olur Elektrik manyetizmayla ilişkilidir ikisi elektromanyetizmanın bir parçasıdır ve fiziksel bir olgudur Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-17T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-10-17T18:00:00Z",
+    "video_id": "scYfp8BfD0c",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261016_232313_g-nl-k-ya-am/final.mp4",
+    "topic": "günlük yaşam",
+    "title": "Akıllı ev aletleri işimizi azaltıyor mu? – Tartışmalı",
+    "narration": "Akıllı ev aletleri ne kadar zaman kazandırır Kaynağa göre ev teknolojisi işleri kısaltıyor deniyor ama kanıtları kesin değil henüz tam Ev aletleri otomasyon ve enerji verimli tasarımlar da dahil Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-17T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "38973577581",
-    "slot": "2100",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
