@@ -1,13 +1,50 @@
 {
-  "source_run": "39067309208",
-  "verified_at": "2026-10-17T20:36:26.256862+00:00",
-  "videos": [],
-  "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "source_run": "39077028490",
+  "verified_at": "2026-10-17T23:16:50.996867+00:00",
+  "videos": [
+    {
+      "index": 3,
+      "video_id": "JfLDCQYhWZ4",
+      "youtube_url": "https://youtu.be/JfLDCQYhWZ4",
+      "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
+      "narration": "İlk cep telefonu nasıl ortaya çıktı bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-18T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-18T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.6,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/JfLDCQYhWZ4.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "index": 1,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 2,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "skipped": "daily_target_already_accepted",
-  "target_count": 0,
-  "daily_existing_count": 3,
-  "accepted_complete": true
+  "target_count": 3,
+  "published_count": 0,
+  "accepted_complete": false
 }
