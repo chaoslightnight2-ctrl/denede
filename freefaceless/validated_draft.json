@@ -1,88 +1,88 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-17T11:39:12.073516+00:00",
+  "saved_at": "2026-10-17T23:15:12.661981+00:00",
   "data": {
-    "source_id": "33306",
-    "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
-    "description": "Su, polar bir molekül olduğu için güçlü hidrojen bağları oluşturur. Bu bağlar suyu evrensel çözücü yapar.\n\n#shorts #bilim #günlükhayat",
-    "hashtags": {
-      "primary": "bilim",
-      "secondary": "günlükhayat"
-    },
-    "topic": "günlük bilim",
-    "tags": [
-      "su",
-      "polar",
-      "hidrojenbağları",
-      "çözücü",
-      "evren"
-    ],
+    "source_id": "19644137",
     "scenes": [
       {
-        "text": "Bir damla su ne kadar gizemli",
-        "visual_query": "glass water"
+        "text": "İlk cep telefonu nasıl ortaya çıktı",
+        "visual_query": "old phone"
       },
       {
-        "text": "Su polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur bu da onu evrensel çözücü yapar",
-        "visual_query": "molecule diagram"
+        "text": "bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı",
+        "visual_query": "city street"
       },
       {
-        "text": "Su Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur",
-        "visual_query": "earth water"
+        "text": "Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu",
+        "visual_query": "old device"
       },
       {
-        "text": "Siz de suyu nasıl kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "kitchen tap"
+        "text": "Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "future phone"
       }
     ],
-    "closing_question": "Siz de suyu nasıl kullanıyorsunuz?",
-    "closing_visual_query": "kitchen tap",
+    "closing_question": "Siz hangi telefonu tercih ederdiniz?",
+    "closing_visual_query": "future phone",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "spoken_text": "Bir damla su ne kadar gizemli Su polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur bu da onu evrensel çözücü yapar Su Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur Siz de suyu nasıl kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Bir damla su ne kadar gizemli Su polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur bu da onu evrensel çözücü yapar Su Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur Siz de suyu nasıl kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Bir damla su ne kadar gizemli. Su polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur bu da onu evrensel çözücü yapar. Su Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur. Siz de suyu nasıl kullanıyorsunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "topic": "teknoloji",
+    "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
+    "description": "İlk taşınabilir cep telefonu, üç Nisan bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper tarafından tanıtıldı. Bu cihaz yaklaşık iki kilogram ağırlığındaydı.\n\n#shorts #teknoloji #mobiltelefon",
+    "hashtags": {
+      "primary": "teknoloji",
+      "secondary": "mobiltelefon"
+    },
+    "tags": [
+      "ceptelefonu",
+      "mobil",
+      "iletisim",
+      "tarih",
+      "inovasyon"
+    ],
+    "spoken_text": "İlk cep telefonu nasıl ortaya çıktı bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
+    "full_text": "İlk cep telefonu nasıl ortaya çıktı bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "İlk cep telefonu nasıl ortaya çıktı. bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı. Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu. Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "technology_science",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "19644137",
+      "title": "Mobile phone",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
     },
     "raw_groq_package": {
-      "source_id": "33306",
-      "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
-      "description": "Su, polar bir molekül olduğu için güçlü hidrojen bağları oluşturur. Bu bağlar suyu evrensel çözücü yapar.",
-      "hashtags": {
-        "primary": "bilim",
-        "secondary": "günlükhayat"
-      },
-      "topic": "günlük bilim",
-      "tags": [
-        "su",
-        "polar",
-        "hidrojenbağları",
-        "çözücü",
-        "evren"
-      ],
+      "source_id": "19644137",
       "scenes": [
         {
-          "text": "Bir damla su, ne kadar gizemli?",
-          "visual_query": "glass water"
+          "text": "İlk cep telefonu nasıl ortaya çıktı?",
+          "visual_query": "old phone"
         },
         {
-          "text": "Su, polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur, bu da onu evrensel çözücü yapar.",
-          "visual_query": "molecule diagram"
+          "text": "bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper, üç kilogramlık cihazla ilk telefonu tanıttı.",
+          "visual_query": "city street"
         },
         {
-          "text": "Su, Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur.",
-          "visual_query": "earth water"
+          "text": "Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu.",
+          "visual_query": "old device"
         }
       ],
-      "closing_question": "Siz de suyu nasıl kullanıyorsunuz?",
-      "closing_visual_query": "kitchen tap",
-      "cta": "İlginç Gerçekler kanalına abone ol"
+      "closing_question": "Siz hangi telefonu tercih ederdiniz?",
+      "closing_visual_query": "future phone",
+      "cta": "İlginç Gerçekler kanalına abone ol",
+      "topic": "teknoloji",
+      "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
+      "description": "İlk taşınabilir cep telefonu, üç Nisan bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper tarafından tanıtıldı. Bu cihaz yaklaşık iki kilogram ağırlığındaydı.",
+      "hashtags": {
+        "primary": "teknoloji",
+        "secondary": "mobiltelefon"
+      },
+      "tags": [
+        "ceptelefonu",
+        "mobil",
+        "iletisim",
+        "tarih",
+        "inovasyon"
+      ]
     },
     "generation_mode": "prompt_first_v1"
   }
