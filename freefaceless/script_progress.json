@@ -1,65 +1,65 @@
 {
-  "run_id": "39029334665",
+  "run_id": "39077028490",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "33306",
-    "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
-    "description": "Su, polar bir molekül olduğu için güçlü hidrojen bağları oluşturur. Bu bağlar suyu evrensel çözücü yapar.",
-    "hashtags": {
-      "primary": "bilim",
-      "secondary": "günlükhayat"
-    },
-    "topic": "günlük bilim",
-    "tags": [
-      "su",
-      "polar",
-      "hidrojenbağları",
-      "çözücü",
-      "evren"
-    ],
+    "source_id": "31217535",
     "scenes": [
       {
-        "text": "Bir damla su, ne kadar gizemli?",
-        "visual_query": "glass water"
+        "text": "Bellek kaç temel aşamaya gerçekten bölünür?",
+        "visual_query": "lab"
       },
       {
-        "text": "Su, polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur, bu da onu evrensel çözücü yapar.",
-        "visual_query": "molecule diagram"
+        "text": "Bellek üç aşamadan oluşur: duyusal, çalışma ve uzun süreli bellek, her biri farklı görevler üstlenir.",
+        "visual_query": "mind"
       },
       {
-        "text": "Su, Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur.",
-        "visual_query": "earth water"
+        "text": "Çalışma belleği bilgiyi geçici tutar, uzun belleğe aktarır.",
+        "visual_query": "cell"
       }
     ],
-    "closing_question": "Siz de suyu nasıl kullanıyorsunuz?",
-    "closing_visual_query": "kitchen tap",
-    "cta": "İlginç Gerçekler kanalına abone ol"
+    "closing_question": "Siz hangi belleği kullandınız?",
+    "closing_visual_query": "home",
+    "cta": "İlginç Gerçekler kanalına abone ol",
+    "topic": "psikoloji",
+    "title": "Bellek üç aşamadan oluşur: Duyusal, Çalışma ve Süreli",
+    "description": "Bellek üç temel aşamaya ayrılır. Duyusal, çalışma ve uzun süreli bellek birbirini tamamlar.",
+    "hashtags": {
+      "primary": "bellek",
+      "secondary": "psikoloji"
+    },
+    "tags": [
+      "bellek",
+      "psikoloji",
+      "davranış",
+      "nörobilim",
+      "zihin"
+    ]
   },
   "reference_sources": [
     {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "563299",
+      "title": "Human behavior",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
     },
     {
-      "id": "19828134",
-      "title": "Plant",
-      "url": "https://en.wikipedia.org/wiki/Plant",
-      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
+      "id": "26990",
+      "title": "Social psychology",
+      "url": "https://en.wikipedia.org/wiki/Social_psychology",
+      "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
     },
     {
-      "id": "54176",
-      "title": "Human body",
-      "url": "https://en.wikipedia.org/wiki/Human_body",
-      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
+      "id": "31217535",
+      "title": "Memory",
+      "url": "https://en.wikipedia.org/wiki/Memory",
+      "text": "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action. If past events could not be remembered, it would be impossible for language, relationships, or personal identity to develop. Memory loss is usually described as forgetfulness or a disorder such as amnesia. Memory is often understood as an information processing system with explicit and implicit functioning that is made up of a sensory processor, short-term (or working) memory, and long-term memory. This can be related to the neuron. The sensory processor allows information from the outside world to be sensed in the form of chemical and physical stimuli and attended to various levels of focus and intent. Working memory serves as an encoding and retrieval processor. Information in the form of stimuli is encoded in accordance with explicit or implicit functions by the working memory processor. The working memory also retrieves information from previously stored material. Finally, the function of long-term memory is to store information through various categorical models or systems. Declarative, or explicit memory, is the conscious storage and recollection of data. Under declarative memory resides semantic and episodic memory. Semantic memory refers to memory that is encoded with specific meaning. Meanwhile, episodic memory refers to information that is encoded along a spatial and temporal plane. Declarative memory is usually the primary process thought of when referencing memory. Non-declarative, or implicit, memory is the unconscious storage and recollection of information."
     },
     {
-      "id": "4269567",
-      "title": "Dog",
-      "url": "https://en.wikipedia.org/wiki/Dog",
-      "text": "The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of wolves. Also called the domestic dog, it was selectively bred during the Late Pleistocene by hunter-gatherers. Dogs and the modern gray wolf share a common ancestor. Dogs were the first species to be domesticated over 14,000 years ago, before the development of agriculture, though genetic studies suggest the domestication process may have begun over 25,000 years ago. Due to their long association with humans, dogs have gained the ability to thrive on a starch-rich diet that would be inadequate for other canids. Dogs have been bred for specific behaviors, sensory abilities, and physical traits. Dog breeds vary widely in shape, size, and color. All dogs have a similar number of bones, although the number can vary with tail length. They also have powerful jaws containing about 42 teeth, and well-developed senses of smell, hearing, and sight. Compared to humans, dogs have a superior sense of smell and hearing, but less acute vision. Dogs serve humans in many ways, including hunting, herding, pulling loads, providing protection and companionship, offering therapeutic support, assisting people with disabilities, and supporting police and military operations. Communication in dogs includes eye gaze, facial expression, vocalization, body posture (including movements of bodies and limbs), and chemical communication (scents, pheromones, and taste). They mark their territories by urinating on them, which is more likely when entering a new environment. Over the millennia, dogs have uniquely adapted to human behavior; this adaptation includes being able to understand and communicate with humans."
+      "id": "25140",
+      "title": "Perception",
+      "url": "https://en.wikipedia.org/wiki/Perception",
+      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
     }
   ],
   "error": null
