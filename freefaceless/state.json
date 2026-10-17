@@ -28,7 +28,8 @@
     "Elektrik",
     "Mobil iletişim",
     "elektrik",
-    "günlük yaşam"
+    "günlük yaşam",
+    "günlük bilim"
   ],
   "published": [
     {
@@ -341,6 +342,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "38980669769",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261017_113913",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261017_113913_g-nl-k-bilim/final.mp4",
+      "video_id": "lU4KlLfQnXE",
+      "publish_at": "2026-10-17T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39029334665"
     }
   ]
 }
