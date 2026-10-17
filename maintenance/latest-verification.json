@@ -1,19 +1,19 @@
 {
-  "source_run": "38980669769",
-  "verified_at": "2026-10-16T23:32:02.329314+00:00",
+  "source_run": "39029334665",
+  "verified_at": "2026-10-17T11:40:53.209987+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "scYfp8BfD0c",
-      "youtube_url": "https://youtu.be/scYfp8BfD0c",
-      "title": "Akıllı ev aletleri işimizi azaltıyor mu? – Tartışmalı",
-      "narration": "Akıllı ev aletleri ne kadar zaman kazandırır Kaynağa göre ev teknolojisi işleri kısaltıyor deniyor ama kanıtları kesin değil henüz tam Ev aletleri otomasyon ve enerji verimli tasarımlar da dahil Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-17T18:00:00Z",
+      "video_id": "lU4KlLfQnXE",
+      "youtube_url": "https://youtu.be/lU4KlLfQnXE",
+      "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
+      "narration": "Bir damla su ne kadar gizemli Su polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur bu da onu evrensel çözücü yapar Su Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur Siz de suyu nasıl kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-17T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-10-17T18:00:00Z",
+        "publishAt": "2026-10-17T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,19 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 18.166667,
+        "duration": 18.2,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/scYfp8BfD0c.jpg"
+      "preview": "maintenance/previews/lU4KlLfQnXE.jpg"
     }
   ],
-  "errors": [
-    {
-      "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    }
-  ],
+  "errors": [],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
