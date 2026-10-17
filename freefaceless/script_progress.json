@@ -1,7 +1,7 @@
 {
   "run_id": "39029334665",
   "attempt": 1,
-  "stage": "received_unvalidated",
+  "stage": "prepared_without_editor",
   "raw_groq_package": {
     "source_id": "33306",
     "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
