@@ -29,7 +29,8 @@
     "Mobil iletişim",
     "elektrik",
     "günlük yaşam",
-    "günlük bilim"
+    "günlük bilim",
+    "teknoloji"
   ],
   "published": [
     {
@@ -355,6 +356,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39029334665",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261017_231514",
+      "topic": "teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261017_231514_teknoloji/final.mp4",
+      "video_id": "JfLDCQYhWZ4",
+      "publish_at": "2026-10-18T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39077028490"
     }
   ]
 }
