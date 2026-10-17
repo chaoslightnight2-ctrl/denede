@@ -1,19 +1,9 @@
 [
   {
-    "run_id": "39029334665",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-17T23:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-17T20:00:00Z",
-    "video_id": "lU4KlLfQnXE",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261017_113913_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Su Neden Evrensel Çözücü? İşte Açıklaması",
-    "narration": "Bir damla su ne kadar gizemli Su polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur bu da onu evrensel çözücü yapar Su Dünya yüzeyinin yüzde yetmiş birini kaplar ve üç hâlde bulunur Siz de suyu nasıl kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-17T20:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "run_id": "39077028490",
+    "slot": "1900",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
