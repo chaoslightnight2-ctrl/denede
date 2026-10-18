@@ -3,63 +3,63 @@
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "19828134",
+    "source_id": "19644137",
+    "title": "İlk taşınabilir mobil telefon iki kilogramdı",
+    "description": "İlk taşınabilir mobil telefon, bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Yaklaşık iki kilogram ağırlığındaydı.",
     "scenes": [
       {
-        "text": "Bitkiler nasıl oksijen üretir ve temizler?",
-        "visual_query": "leaf"
+        "text": "İlk cep telefonu ne kadar ağırdı?",
+        "visual_query": "old phone"
       },
       {
-        "text": "Bitkiler fotosentezle su ve karbondioksitten glukoz ve oksijen üretir, güneş ışığıyla havayı temizler.",
-        "visual_query": "sun"
+        "text": "Martin Cooper bin dokuz yüz yetmiş üç'te gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı.",
+        "visual_query": "demo stage"
       },
       {
-        "text": "Klorofil pigmenti bitkilere yeşil renk verir ve ışığı emer, enerji depolar.",
-        "visual_query": "cell"
+        "text": "Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir.",
+        "visual_query": "phone features"
       }
     ],
-    "closing_question": "Siz de fotosentez biliyor musunuz?",
-    "closing_visual_query": "lab",
+    "closing_question": "Siz de merak ettiniz mi?",
+    "closing_visual_query": "curious viewer",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Bitkiler Fotosentezle Oksijen Üretir ve Havayı Temizler",
-    "description": "Bitkiler fotosentez sayesinde oksijen üretir. Bu süreç havayı temiz tutar.",
+    "topic": "Mobil Telefon Tarihi",
     "hashtags": {
-      "primary": "bitkiler",
-      "secondary": "fotosentez"
+      "primary": "mobiltelefon",
+      "secondary": "teknoloji"
     },
     "tags": [
-      "bitki",
-      "oksijen",
-      "fotosentez",
-      "doğa",
-      "günlük"
+      "mobil",
+      "telefon",
+      "tarih",
+      "teknoloji",
+      "icad"
     ]
   },
   "reference_sources": [
     {
-      "id": "19828134",
-      "title": "Plant",
-      "url": "https://en.wikipedia.org/wiki/Plant",
-      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
+      "id": "18580879",
+      "title": "Transport",
+      "url": "https://en.wikipedia.org/wiki/Transport",
+      "text": "Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations. Transport infrastructure consists of fixed installations, including roads, railways, airways, waterways, canals, and pipelines, as well as terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports. Terminals may be used both for the interchange of passengers and cargo and for maintenance. Means of transport are any of the different kinds of transport facilities used to carry people or cargo. They may include vehicles, riding animals, and pack animals. Vehicles may include wagons, automobiles, bicycles, buses, trains, trucks, helicopters, watercraft, spacecraft, and aircraft. Mobility is concerned with the experience around transportation services, including aspects such as availability, information, usability, accessibility, and affordability (as in right to mobility)."
     },
     {
-      "id": "54176",
-      "title": "Human body",
-      "url": "https://en.wikipedia.org/wiki/Human_body",
-      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
+      "id": "19644137",
+      "title": "Mobile phone",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
     },
     {
-      "id": "4269567",
-      "title": "Dog",
-      "url": "https://en.wikipedia.org/wiki/Dog",
-      "text": "The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of wolves. Also called the domestic dog, it was selectively bred during the Late Pleistocene by hunter-gatherers. Dogs and the modern gray wolf share a common ancestor. Dogs were the first species to be domesticated over 14,000 years ago, before the development of agriculture, though genetic studies suggest the domestication process may have begun over 25,000 years ago. Due to their long association with humans, dogs have gained the ability to thrive on a starch-rich diet that would be inadequate for other canids. Dogs have been bred for specific behaviors, sensory abilities, and physical traits. Dog breeds vary widely in shape, size, and color. All dogs have a similar number of bones, although the number can vary with tail length. They also have powerful jaws containing about 42 teeth, and well-developed senses of smell, hearing, and sight. Compared to humans, dogs have a superior sense of smell and hearing, but less acute vision. Dogs serve humans in many ways, including hunting, herding, pulling loads, providing protection and companionship, offering therapeutic support, assisting people with disabilities, and supporting police and military operations. Communication in dogs includes eye gaze, facial expression, vocalization, body posture (including movements of bodies and limbs), and chemical communication (scents, pheromones, and taste). They mark their territories by urinating on them, which is more likely when entering a new environment. Over the millennia, dogs have uniquely adapted to human behavior; this adaptation includes being able to understand and communicate with humans."
+      "id": "14539",
+      "title": "Internet",
+      "url": "https://en.wikipedia.org/wiki/Internet",
+      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
     },
     {
-      "id": "26903",
-      "title": "Solar System",
-      "url": "https://en.wikipedia.org/wiki/Solar_System",
-      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
+      "id": "7878457",
+      "title": "Computer",
+      "url": "https://en.wikipedia.org/wiki/Computer",
+      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
     }
   ],
   "error": null
