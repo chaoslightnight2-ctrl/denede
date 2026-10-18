@@ -31,7 +31,8 @@
     "günlük yaşam",
     "günlük bilim",
     "teknoloji",
-    "Mobil Telefon Tarihi"
+    "Mobil Telefon Tarihi",
+    "mobil telefon tarihi"
   ],
   "published": [
     {
@@ -396,6 +397,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39164333051",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261018_205514",
+      "topic": "mobil telefon tarihi",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261018_205514_mobil-telefon-tarihi/final.mp4",
+      "video_id": "aXepTvW7Wus",
+      "publish_at": "2026-10-19T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39164333051"
     }
   ]
 }
