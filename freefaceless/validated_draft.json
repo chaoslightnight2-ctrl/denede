@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-18T18:15:12.565111+00:00",
+  "saved_at": "2026-10-18T20:43:12.078265+00:00",
   "data": {
-    "source_id": "19644137",
-    "title": "İlk taşınabilir mobil telefon iki kilogramdı",
-    "description": "İlk taşınabilir mobil telefon, bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Yaklaşık iki kilogram ağırlığındaydı.\n\n#shorts #mobiltelefon #teknoloji",
+    "source_id": "19828134",
     "scenes": [
       {
-        "text": "İlk cep telefonu ne kadar ağırdı",
-        "visual_query": "old phone"
+        "text": "Neden evimizdeki hava tamamen oksijenle dolu",
+        "visual_query": "home air"
       },
       {
-        "text": "Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı",
-        "visual_query": "demo stage"
+        "text": "Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler",
+        "visual_query": "leaf sunlight"
       },
       {
-        "text": "Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir",
-        "visual_query": "phone features"
+        "text": "Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar",
+        "visual_query": "forest canopy"
       },
       {
-        "text": "Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
-        "visual_query": "curious viewer"
+        "text": "Siz de bitki bakıyor musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "garden view"
       }
     ],
-    "closing_question": "Siz de merak ettiniz mi?",
-    "closing_visual_query": "curious viewer",
+    "closing_question": "Siz de bitki bakıyor musunuz?",
+    "closing_visual_query": "garden view",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Mobil Telefon Tarihi",
+    "topic": "günlük bilim",
+    "title": "Bitkiler Güneşle Oksijen Üretir: Fotosentez Nasıl?",
+    "description": "Bitkiler fotosentez sayesinde su ve karbondioksitten oksijen üretir. Bu süreç dünyadaki oksijenin büyük bir kısmını sağlar.\n\n#shorts #bitkiler #fotosentez",
     "hashtags": {
-      "primary": "mobiltelefon",
-      "secondary": "teknoloji"
+      "primary": "bitkiler",
+      "secondary": "fotosentez"
     },
     "tags": [
-      "mobil",
-      "telefon",
-      "tarih",
-      "teknoloji",
-      "icad"
+      "bitki",
+      "oksijen",
+      "güneş",
+      "fotosentez",
+      "doğa"
     ],
-    "spoken_text": "İlk cep telefonu ne kadar ağırdı Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu ne kadar ağırdı Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu ne kadar ağırdı. Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı. Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir. Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "direct_change",
+    "spoken_text": "Neden evimizdeki hava tamamen oksijenle dolu Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar Siz de bitki bakıyor musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Neden evimizdeki hava tamamen oksijenle dolu Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar Siz de bitki bakıyor musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Neden evimizdeki hava tamamen oksijenle dolu. Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler. Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar. Siz de bitki bakıyor musunuz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "19828134",
+      "title": "Plant",
+      "url": "https://en.wikipedia.org/wiki/Plant",
+      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
-      "title": "İlk taşınabilir mobil telefon iki kilogramdı",
-      "description": "İlk taşınabilir mobil telefon, bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Yaklaşık iki kilogram ağırlığındaydı.",
+      "source_id": "19828134",
       "scenes": [
         {
-          "text": "İlk cep telefonu ne kadar ağırdı?",
-          "visual_query": "old phone"
+          "text": "Neden evimizdeki hava tamamen oksijenle dolu?",
+          "visual_query": "home air"
         },
         {
-          "text": "Martin Cooper bin dokuz yüz yetmiş üç'te gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı.",
-          "visual_query": "demo stage"
+          "text": "Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler.",
+          "visual_query": "leaf sunlight"
         },
         {
-          "text": "Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir.",
-          "visual_query": "phone features"
+          "text": "Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar.",
+          "visual_query": "forest canopy"
         }
       ],
-      "closing_question": "Siz de merak ettiniz mi?",
-      "closing_visual_query": "curious viewer",
+      "closing_question": "Siz de bitki bakıyor musunuz?",
+      "closing_visual_query": "garden view",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "Mobil Telefon Tarihi",
+      "topic": "günlük bilim",
+      "title": "Bitkiler Güneşle Oksijen Üretir: Fotosentez Nasıl?",
+      "description": "Bitkiler fotosentez sayesinde su ve karbondioksitten oksijen üretir. Bu süreç dünyadaki oksijenin büyük bir kısmını sağlar.",
       "hashtags": {
-        "primary": "mobiltelefon",
-        "secondary": "teknoloji"
+        "primary": "bitkiler",
+        "secondary": "fotosentez"
       },
       "tags": [
-        "mobil",
-        "telefon",
-        "tarih",
-        "teknoloji",
-        "icad"
+        "bitki",
+        "oksijen",
+        "güneş",
+        "fotosentez",
+        "doğa"
       ]
     },
     "generation_mode": "prompt_first_v1"
