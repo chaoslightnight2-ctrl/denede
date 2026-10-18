@@ -1,65 +1,65 @@
 {
-  "run_id": "39077028490",
+  "run_id": "39125676592",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "19644137",
+    "source_id": "26903",
+    "title": "Güneş Sistemi'nde Güneş Kütlesinin %99.86'sını Oluşturur",
+    "description": "Güneş, Solar Sistemin toplam kütlesinin %99.86'sını oluşturur. Bu da gezegenlerin kütlesinin çok az bir kısmını temsil eder.",
+    "topic": "günlük bilim",
+    "tags": [
+      "güneş",
+      "kütle",
+      "güneş sistemi",
+      "astronomi",
+      "uzay"
+    ],
     "scenes": [
       {
-        "text": "İlk cep telefonu nasıl ortaya çıktı?",
-        "visual_query": "old phone"
+        "text": "Güneş, sistemimizin dev enerji kaynağıdır ve",
+        "visual_query": "sun"
       },
       {
-        "text": "bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper, üç kilogramlık cihazla ilk telefonu tanıttı.",
-        "visual_query": "city street"
+        "text": "Güneş, toplam kütlenin yüzde doksan doksan nokta sekiz altı yüzdesini oluşturur sistemde",
+        "visual_query": "mass"
       },
       {
-        "text": "Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu.",
-        "visual_query": "old device"
+        "text": "Güneş çekirdeğinde hidrojen helyuma dönüşerek enerji üretir ışık",
+        "visual_query": "core"
       }
     ],
-    "closing_question": "Siz hangi telefonu tercih ederdiniz?",
-    "closing_visual_query": "future phone",
+    "closing_question": "Siz de şaşırdınız mı?",
+    "closing_visual_query": "sun",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
-    "description": "İlk taşınabilir cep telefonu, üç Nisan bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper tarafından tanıtıldı. Bu cihaz yaklaşık iki kilogram ağırlığındaydı.",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
-    },
-    "tags": [
-      "ceptelefonu",
-      "mobil",
-      "iletisim",
-      "tarih",
-      "inovasyon"
-    ]
+      "primary": "güneş",
+      "secondary": "astronomi"
+    }
   },
   "reference_sources": [
     {
-      "id": "1164",
-      "title": "Artificial intelligence",
-      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
-      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
+      "id": "19828134",
+      "title": "Plant",
+      "url": "https://en.wikipedia.org/wiki/Plant",
+      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     },
     {
-      "id": "18580879",
-      "title": "Transport",
-      "url": "https://en.wikipedia.org/wiki/Transport",
-      "text": "Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations. Transport infrastructure consists of fixed installations, including roads, railways, airways, waterways, canals, and pipelines, as well as terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports. Terminals may be used both for the interchange of passengers and cargo and for maintenance. Means of transport are any of the different kinds of transport facilities used to carry people or cargo. They may include vehicles, riding animals, and pack animals. Vehicles may include wagons, automobiles, bicycles, buses, trains, trucks, helicopters, watercraft, spacecraft, and aircraft. Mobility is concerned with the experience around transportation services, including aspects such as availability, information, usability, accessibility, and affordability (as in right to mobility)."
+      "id": "54176",
+      "title": "Human body",
+      "url": "https://en.wikipedia.org/wiki/Human_body",
+      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     },
     {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "1787105",
+      "title": "Animal sexual behaviour",
+      "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
+      "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
     },
     {
-      "id": "14539",
-      "title": "Internet",
-      "url": "https://en.wikipedia.org/wiki/Internet",
-      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
+      "id": "26903",
+      "title": "Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System",
+      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
     }
   ],
   "error": null
