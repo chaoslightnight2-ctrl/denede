@@ -5,5 +5,22 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "39152484099",
+    "slot": "2100",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-19T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-19T18:00:00Z",
+    "video_id": "tjv0Hv3CoJM",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261018_181514_mobil-telefon-tarihi/final.mp4",
+    "topic": "Mobil Telefon Tarihi",
+    "title": "İlk taşınabilir mobil telefon iki kilogramdı",
+    "narration": "İlk cep telefonu ne kadar ağırdı Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-19T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
