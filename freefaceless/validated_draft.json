@@ -1,49 +1,49 @@
 {
   "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-17T23:15:12.661981+00:00",
+  "saved_at": "2026-10-18T18:15:12.565111+00:00",
   "data": {
     "source_id": "19644137",
+    "title": "İlk taşınabilir mobil telefon iki kilogramdı",
+    "description": "İlk taşınabilir mobil telefon, bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Yaklaşık iki kilogram ağırlığındaydı.\n\n#shorts #mobiltelefon #teknoloji",
     "scenes": [
       {
-        "text": "İlk cep telefonu nasıl ortaya çıktı",
+        "text": "İlk cep telefonu ne kadar ağırdı",
         "visual_query": "old phone"
       },
       {
-        "text": "bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı",
-        "visual_query": "city street"
+        "text": "Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı",
+        "visual_query": "demo stage"
       },
       {
-        "text": "Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu",
-        "visual_query": "old device"
+        "text": "Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir",
+        "visual_query": "phone features"
       },
       {
-        "text": "Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "future phone"
+        "text": "Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "curious viewer"
       }
     ],
-    "closing_question": "Siz hangi telefonu tercih ederdiniz?",
-    "closing_visual_query": "future phone",
+    "closing_question": "Siz de merak ettiniz mi?",
+    "closing_visual_query": "curious viewer",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
-    "description": "İlk taşınabilir cep telefonu, üç Nisan bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper tarafından tanıtıldı. Bu cihaz yaklaşık iki kilogram ağırlığındaydı.\n\n#shorts #teknoloji #mobiltelefon",
+    "topic": "Mobil Telefon Tarihi",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
+      "primary": "mobiltelefon",
+      "secondary": "teknoloji"
     },
     "tags": [
-      "ceptelefonu",
       "mobil",
-      "iletisim",
+      "telefon",
       "tarih",
-      "inovasyon"
+      "teknoloji",
+      "icad"
     ],
-    "spoken_text": "İlk cep telefonu nasıl ortaya çıktı bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu nasıl ortaya çıktı bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu nasıl ortaya çıktı. bin dokuz yüz yetmiş üçte New Yorkta Martin Cooper üç kilogramlık cihazla ilk telefonu tanıttı. Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu. Siz hangi telefonu tercih ederdiniz İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "İlk cep telefonu ne kadar ağırdı Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "İlk cep telefonu ne kadar ağırdı Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "İlk cep telefonu ne kadar ağırdı. Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı. Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir. Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
       "id": "19644137",
       "title": "Mobile phone",
@@ -52,36 +52,36 @@
     },
     "raw_groq_package": {
       "source_id": "19644137",
+      "title": "İlk taşınabilir mobil telefon iki kilogramdı",
+      "description": "İlk taşınabilir mobil telefon, bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Yaklaşık iki kilogram ağırlığındaydı.",
       "scenes": [
         {
-          "text": "İlk cep telefonu nasıl ortaya çıktı?",
+          "text": "İlk cep telefonu ne kadar ağırdı?",
           "visual_query": "old phone"
         },
         {
-          "text": "bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper, üç kilogramlık cihazla ilk telefonu tanıttı.",
-          "visual_query": "city street"
+          "text": "Martin Cooper bin dokuz yüz yetmiş üç'te gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı.",
+          "visual_query": "demo stage"
         },
         {
-          "text": "Bu telefon iki kilogramdan ağırdı ve sadece sesli arama yapıyordu.",
-          "visual_query": "old device"
+          "text": "Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir.",
+          "visual_query": "phone features"
         }
       ],
-      "closing_question": "Siz hangi telefonu tercih ederdiniz?",
-      "closing_visual_query": "future phone",
+      "closing_question": "Siz de merak ettiniz mi?",
+      "closing_visual_query": "curious viewer",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "İlk Cep Telefonu Ne Zaman ve Nerede Tanıtıldı?",
-      "description": "İlk taşınabilir cep telefonu, üç Nisan bin dokuz yüz yetmiş üç'te New York'ta Martin Cooper tarafından tanıtıldı. Bu cihaz yaklaşık iki kilogram ağırlığındaydı.",
+      "topic": "Mobil Telefon Tarihi",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobiltelefon"
+        "primary": "mobiltelefon",
+        "secondary": "teknoloji"
       },
       "tags": [
-        "ceptelefonu",
         "mobil",
-        "iletisim",
+        "telefon",
         "tarih",
-        "inovasyon"
+        "teknoloji",
+        "icad"
       ]
     },
     "generation_mode": "prompt_first_v1"
