@@ -1,16 +1,9 @@
 [
   {
-    "run_id": "39125676592",
+    "run_id": "39152484099",
     "slot": "1900",
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "39125676592",
-    "slot": "2100",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
