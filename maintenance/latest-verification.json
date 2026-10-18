@@ -1,19 +1,44 @@
 {
-  "source_run": "39125676592",
-  "verified_at": "2026-10-18T12:23:52.752853+00:00",
-  "videos": [],
+  "source_run": "39152484099",
+  "verified_at": "2026-10-18T18:16:50.148161+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "tjv0Hv3CoJM",
+      "youtube_url": "https://youtu.be/tjv0Hv3CoJM",
+      "title": "İlk taşınabilir mobil telefon iki kilogramdı",
+      "narration": "İlk cep telefonu ne kadar ağırdı Martin Cooper bin dokuz yüz yetmiş üçte gösterdiği ilk taşınabilir telefon iki kilogram ağırlığındaydı Mobil telefonlar Bluetooth ve NFC gibi kısa menzil teknolojilerini de içerir Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-19T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-19T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.333333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/tjv0Hv3CoJM.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
