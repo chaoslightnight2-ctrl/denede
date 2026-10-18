@@ -1,69 +1,13 @@
 {
-  "source_run": "39164333051",
-  "verified_at": "2026-10-18T20:57:01.942395+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "-BA8lZ_eWHs",
-      "youtube_url": "https://youtu.be/-BA8lZ_eWHs",
-      "title": "Bitkiler Güneşle Oksijen Üretir: Fotosentez Nasıl?",
-      "narration": "Neden evimizdeki hava tamamen oksijenle dolu Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar Siz de bitki bakıyor musunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-19T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-19T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.333333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/-BA8lZ_eWHs.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "aXepTvW7Wus",
-      "youtube_url": "https://youtu.be/aXepTvW7Wus",
-      "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
-      "narration": "Taşınabilir telefonun ilk doğuşu nasıl oldu Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık ilk cep telefonunu gösterdi Günümüzde cep telefonları mesaj internet fotoğraf ve oyun gibi çok işlevli Siz hangi özelliği seviyorsunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-19T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-19T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.966667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/aXepTvW7Wus.jpg"
-    }
-  ],
+  "source_run": "39174031433",
+  "verified_at": "2026-10-18T22:52:54.805273+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 2,
-  "processed_count": 2,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 2,
-  "published_count": 0,
+  "skipped": "daily_target_already_accepted",
+  "target_count": 0,
+  "daily_existing_count": 3,
   "accepted_complete": true
 }
