@@ -383,6 +383,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39152484099",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261018_204313",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Bitkiler Güneşle Oksijen Üretir: Fotosentez Nasıl?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261018_204313_g-nl-k-bilim/final.mp4",
+      "video_id": "-BA8lZ_eWHs",
+      "publish_at": "2026-10-19T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39164333051"
     }
   ]
 }
