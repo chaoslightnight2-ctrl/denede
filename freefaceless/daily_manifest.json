@@ -5,5 +5,12 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "Selected stock has no visible opening; no replacement clip used"
+  },
+  {
+    "run_id": "39507159882",
+    "slot": "2100",
+    "niche": "Teknoloji ve icatlar",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
