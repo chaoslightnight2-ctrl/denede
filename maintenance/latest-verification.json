@@ -1,21 +1,25 @@
 {
-  "source_run": "39481725867",
-  "verified_at": "2026-10-20T19:32:08.861519+00:00",
+  "source_run": "39507159882",
+  "verified_at": "2026-10-20T22:47:50.674809+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "Selected stock has no visible opening; no replacement clip used"
     },
     {
       "index": 2,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "target_count": 2,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
