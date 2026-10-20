@@ -1,53 +1,42 @@
 {
-  "run_id": "39164333051",
+  "run_id": "39424408132",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "19644137",
+    "source_id": "1164",
     "scenes": [
       {
-        "text": "Taşınabilir telefonun ilk doğuşu nasıl oldu?",
-        "visual_query": "museum exhibit"
+        "text": "Bilgisayarlar kararlarını nasıl mantıkla gerçekten verir?",
+        "visual_query": "pc"
       },
       {
-        "text": "Martin Cooper, üç Nisan bin dokuz yüz yetmiş üç'te, iki kilogramlık ilk cep telefonunu gösterdi.",
-        "visual_query": "city street"
+        "text": "Yapay zeka, bilgisayarların mantıksal kurallarla karar vermesini sağlayan bir teknolojidir ve böylece karmaşık problemleri çözebilir.",
+        "visual_query": "ai"
       },
       {
-        "text": "Günümüzde cep telefonları mesaj, internet, fotoğraf ve oyun gibi çok işlevli.",
-        "visual_query": "hand holding"
+        "text": "Yapay zeka, sohbet botları ve otonom araçlar gibi alanlarda kullanılır.",
+        "visual_query": "car"
       }
     ],
-    "closing_question": "Siz hangi özelliği seviyorsunuz?",
-    "closing_visual_query": "phone screen",
+    "closing_question": "Siz de denediniz mi?",
+    "closing_visual_query": "ask",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "mobil telefon tarihi",
-    "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
-    "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Cihaz yaklaşık iki kilogram ağırlığındaydı.",
+    "topic": "yapayzeka",
+    "title": "Yapay zeka nasıl karar verir? Mantıkla çalışır",
+    "description": "Yapay zeka, bilgisayarların mantıksal kurallarla karar vermesini sağlar. Bu sayede karmaşık problemler çözülebilir.",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobil"
+      "primary": "yapayzeka",
+      "secondary": "bilisim"
     },
     "tags": [
-      "cep telefonu",
-      "tarih",
-      "mobil iletişim",
-      "teknoloji"
+      "yapay zeka",
+      "karar verme",
+      "bilgisayar",
+      "mantık",
+      "AI"
     ]
   },
   "reference_sources": [
-    {
-      "id": "18580879",
-      "title": "Transport",
-      "url": "https://en.wikipedia.org/wiki/Transport",
-      "text": "Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations. Transport infrastructure consists of fixed installations, including roads, railways, airways, waterways, canals, and pipelines, as well as terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports. Terminals may be used both for the interchange of passengers and cargo and for maintenance. Means of transport are any of the different kinds of transport facilities used to carry people or cargo. They may include vehicles, riding animals, and pack animals. Vehicles may include wagons, automobiles, bicycles, buses, trains, trucks, helicopters, watercraft, spacecraft, and aircraft. Mobility is concerned with the experience around transportation services, including aspects such as availability, information, usability, accessibility, and affordability (as in right to mobility)."
-    },
-    {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
-    },
     {
       "id": "14539",
       "title": "Internet",
@@ -59,6 +48,18 @@
       "title": "Computer",
       "url": "https://en.wikipedia.org/wiki/Computer",
       "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
+    },
+    {
+      "id": "19174720",
+      "title": "Electric battery",
+      "url": "https://en.wikipedia.org/wiki/Electric_battery",
+      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
+    },
+    {
+      "id": "1164",
+      "title": "Artificial intelligence",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
   "error": null
