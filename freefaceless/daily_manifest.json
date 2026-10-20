@@ -1,36 +1,9 @@
 [
   {
-    "run_id": "39164333051",
+    "run_id": "39345854889",
     "slot": "1900",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-19T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-19T16:00:00Z",
-    "video_id": "-BA8lZ_eWHs",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261018_204313_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Bitkiler Güneşle Oksijen Üretir: Fotosentez Nasıl?",
-    "narration": "Neden evimizdeki hava tamamen oksijenle dolu Bitkiler fotosentez yaparak su ve karbondioksitten güneş ışığıyla oksijen ve enerji üretirler Bitkiler aynı zamanda dünyadaki oksijenin büyük bir kısmını sağlar Siz de bitki bakıyor musunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-19T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "39164333051",
-    "slot": "2300",
     "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-19T23:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-19T20:00:00Z",
-    "video_id": "aXepTvW7Wus",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261018_205514_mobil-telefon-tarihi/final.mp4",
-    "topic": "mobil telefon tarihi",
-    "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
-    "narration": "Taşınabilir telefonun ilk doğuşu nasıl oldu Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık ilk cep telefonunu gösterdi Günümüzde cep telefonları mesaj internet fotoğraf ve oyun gibi çok işlevli Siz hangi özelliği seviyorsunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-19T20:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "ok": false,
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
