@@ -3,63 +3,63 @@
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "1164",
+    "source_id": "252137",
     "scenes": [
       {
-        "text": "Bilgisayarlar kararlarını nasıl mantıkla gerçekten verir?",
-        "visual_query": "pc"
+        "text": "Neden tuz, binlerce yıldır yiyecekleri korur?",
+        "visual_query": "kitchen table"
       },
       {
-        "text": "Yapay zeka, bilgisayarların mantıksal kurallarla karar vermesini sağlayan bir teknolojidir ve böylece karmaşık problemleri çözebilir.",
-        "visual_query": "ai"
+        "text": "Food science, modern alanda, tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler.",
+        "visual_query": "food lab"
       },
       {
-        "text": "Yapay zeka, sohbet botları ve otonom araçlar gibi alanlarda kullanılır.",
-        "visual_query": "car"
+        "text": "Kimya, fiziks, mikrobiyoloji gibi birçok bilim bir arada çalışır.",
+        "visual_query": "science lab"
       }
     ],
-    "closing_question": "Siz de denediniz mi?",
-    "closing_visual_query": "ask",
+    "closing_question": "Siz de tuzla pişirir misiniz?",
+    "closing_visual_query": "kitchen sink",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "yapayzeka",
-    "title": "Yapay zeka nasıl karar verir? Mantıkla çalışır",
-    "description": "Yapay zeka, bilgisayarların mantıksal kurallarla karar vermesini sağlar. Bu sayede karmaşık problemler çözülebilir.",
+    "topic": "günlük hayat",
+    "title": "Neden Tuz Gıdaları Korur? Food Science Kökeni",
+    "description": "Food science, modern gıda araştırmalarının temeli, eski tuzlama yöntemlerinden evrilmiştir. Bu disiplin, yiyeceklerin kimyasal özelliklerini inceler.",
     "hashtags": {
-      "primary": "yapayzeka",
-      "secondary": "bilisim"
+      "primary": "gıdasanat",
+      "secondary": "tuz"
     },
     "tags": [
-      "yapay zeka",
-      "karar verme",
-      "bilgisayar",
-      "mantık",
-      "AI"
+      "tuz",
+      "gıda",
+      "koruma",
+      "bilim",
+      "günlük"
     ]
   },
   "reference_sources": [
     {
-      "id": "14539",
-      "title": "Internet",
-      "url": "https://en.wikipedia.org/wiki/Internet",
-      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
     },
     {
-      "id": "7878457",
-      "title": "Computer",
-      "url": "https://en.wikipedia.org/wiki/Computer",
-      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     },
     {
-      "id": "19174720",
-      "title": "Electric battery",
-      "url": "https://en.wikipedia.org/wiki/Electric_battery",
-      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     },
     {
-      "id": "1164",
-      "title": "Artificial intelligence",
-      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
-      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
+      "id": "27709",
+      "title": "Semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Semiconductor",
+      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
     }
   ],
   "error": null
