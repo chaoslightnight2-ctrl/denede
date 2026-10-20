@@ -1,32 +1,8 @@
 [
   {
-    "run_id": "39424408132",
-    "slot": "1900",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "39424408132",
-    "slot": "2100",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-20T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-20T18:00:00Z",
-    "video_id": "gfYxeYXRSTw",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261020_125514_g-nl-k-hayat/final.mp4",
-    "topic": "günlük hayat",
-    "title": "Neden Tuz Gıdaları Korur? Food Science Kökeni",
-    "narration": "Neden tuz binlerce yıldır yiyecekleri korur Food science modern alanda tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler Kimya fiziks mikrobiyoloji gibi birçok bilim bir arada çalışır Siz de tuzla pişirir misiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-20T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "39424408132",
+    "run_id": "39481725867",
     "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
