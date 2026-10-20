@@ -1,85 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-18T20:55:13.625042+00:00",
+  "saved_at": "2026-10-20T12:55:13.116890+00:00",
   "data": {
-    "source_id": "19644137",
+    "source_id": "252137",
     "scenes": [
       {
-        "text": "Taşınabilir telefonun ilk doğuşu nasıl oldu",
-        "visual_query": "museum exhibit"
+        "text": "Neden tuz binlerce yıldır yiyecekleri korur",
+        "visual_query": "kitchen table"
       },
       {
-        "text": "Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık ilk cep telefonunu gösterdi",
-        "visual_query": "city street"
+        "text": "Food science modern alanda tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler",
+        "visual_query": "food lab"
       },
       {
-        "text": "Günümüzde cep telefonları mesaj internet fotoğraf ve oyun gibi çok işlevli",
-        "visual_query": "hand holding"
+        "text": "Kimya fiziks mikrobiyoloji gibi birçok bilim bir arada çalışır",
+        "visual_query": "science lab"
       },
       {
-        "text": "Siz hangi özelliği seviyorsunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "phone screen"
+        "text": "Siz de tuzla pişirir misiniz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "kitchen sink"
       }
     ],
-    "closing_question": "Siz hangi özelliği seviyorsunuz?",
-    "closing_visual_query": "phone screen",
+    "closing_question": "Siz de tuzla pişirir misiniz?",
+    "closing_visual_query": "kitchen sink",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "mobil telefon tarihi",
-    "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
-    "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Cihaz yaklaşık iki kilogram ağırlığındaydı.\n\n#shorts #teknoloji #mobil",
+    "topic": "günlük hayat",
+    "title": "Neden Tuz Gıdaları Korur? Food Science Kökeni",
+    "description": "Food science, modern gıda araştırmalarının temeli, eski tuzlama yöntemlerinden evrilmiştir. Bu disiplin, yiyeceklerin kimyasal özelliklerini inceler.\n\n#shorts #gıdasanat #tuz",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobil"
+      "primary": "gıdasanat",
+      "secondary": "tuz"
     },
     "tags": [
-      "cep telefonu",
-      "tarih",
-      "mobil iletişim",
-      "teknoloji"
+      "tuz",
+      "gıda",
+      "koruma",
+      "bilim",
+      "günlük"
     ],
-    "spoken_text": "Taşınabilir telefonun ilk doğuşu nasıl oldu Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık ilk cep telefonunu gösterdi Günümüzde cep telefonları mesaj internet fotoğraf ve oyun gibi çok işlevli Siz hangi özelliği seviyorsunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Taşınabilir telefonun ilk doğuşu nasıl oldu Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık ilk cep telefonunu gösterdi Günümüzde cep telefonları mesaj internet fotoğraf ve oyun gibi çok işlevli Siz hangi özelliği seviyorsunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Taşınabilir telefonun ilk doğuşu nasıl oldu. Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık ilk cep telefonunu gösterdi. Günümüzde cep telefonları mesaj internet fotoğraf ve oyun gibi çok işlevli. Siz hangi özelliği seviyorsunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "direct_change",
+    "spoken_text": "Neden tuz binlerce yıldır yiyecekleri korur Food science modern alanda tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler Kimya fiziks mikrobiyoloji gibi birçok bilim bir arada çalışır Siz de tuzla pişirir misiniz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Neden tuz binlerce yıldır yiyecekleri korur Food science modern alanda tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler Kimya fiziks mikrobiyoloji gibi birçok bilim bir arada çalışır Siz de tuzla pişirir misiniz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Neden tuz binlerce yıldır yiyecekleri korur. Food science modern alanda tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler. Kimya fiziks mikrobiyoloji gibi birçok bilim bir arada çalışır. Siz de tuzla pişirir misiniz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
+      "source_id": "252137",
       "scenes": [
         {
-          "text": "Taşınabilir telefonun ilk doğuşu nasıl oldu?",
-          "visual_query": "museum exhibit"
+          "text": "Neden tuz, binlerce yıldır yiyecekleri korur?",
+          "visual_query": "kitchen table"
         },
         {
-          "text": "Martin Cooper, üç Nisan bin dokuz yüz yetmiş üç'te, iki kilogramlık ilk cep telefonunu gösterdi.",
-          "visual_query": "city street"
+          "text": "Food science, modern alanda, tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler.",
+          "visual_query": "food lab"
         },
         {
-          "text": "Günümüzde cep telefonları mesaj, internet, fotoğraf ve oyun gibi çok işlevli.",
-          "visual_query": "hand holding"
+          "text": "Kimya, fiziks, mikrobiyoloji gibi birçok bilim bir arada çalışır.",
+          "visual_query": "science lab"
         }
       ],
-      "closing_question": "Siz hangi özelliği seviyorsunuz?",
-      "closing_visual_query": "phone screen",
+      "closing_question": "Siz de tuzla pişirir misiniz?",
+      "closing_visual_query": "kitchen sink",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "mobil telefon tarihi",
-      "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
-      "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Cihaz yaklaşık iki kilogram ağırlığındaydı.",
+      "topic": "günlük hayat",
+      "title": "Neden Tuz Gıdaları Korur? Food Science Kökeni",
+      "description": "Food science, modern gıda araştırmalarının temeli, eski tuzlama yöntemlerinden evrilmiştir. Bu disiplin, yiyeceklerin kimyasal özelliklerini inceler.",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobil"
+        "primary": "gıdasanat",
+        "secondary": "tuz"
       },
       "tags": [
-        "cep telefonu",
-        "tarih",
-        "mobil iletişim",
-        "teknoloji"
+        "tuz",
+        "gıda",
+        "koruma",
+        "bilim",
+        "günlük"
       ]
     },
     "generation_mode": "prompt_first_v1"
