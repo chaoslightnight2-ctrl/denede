@@ -1,18 +1,50 @@
 {
-  "source_run": "39345854889",
-  "verified_at": "2026-10-20T00:20:04.287078+00:00",
-  "videos": [],
+  "source_run": "39424408132",
+  "verified_at": "2026-10-20T13:08:09.659648+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "gfYxeYXRSTw",
+      "youtube_url": "https://youtu.be/gfYxeYXRSTw",
+      "title": "Neden Tuz Gıdaları Korur? Food Science Kökeni",
+      "narration": "Neden tuz binlerce yıldır yiyecekleri korur Food science modern alanda tuzlama gibi eski koruma yöntemlerinden evrilmiştir ve gıdaların kimyasını inceler Kimya fiziks mikrobiyoloji gibi birçok bilim bir arada çalışır Siz de tuzla pişirir misiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-20T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-20T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.466667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/gfYxeYXRSTw.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
