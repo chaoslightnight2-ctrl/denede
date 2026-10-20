@@ -32,7 +32,8 @@
     "günlük bilim",
     "teknoloji",
     "Mobil Telefon Tarihi",
-    "mobil telefon tarihi"
+    "mobil telefon tarihi",
+    "günlük hayat"
   ],
   "published": [
     {
@@ -410,6 +411,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39164333051",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261020_125514",
+      "topic": "günlük hayat",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Neden Tuz Gıdaları Korur? Food Science Kökeni",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261020_125514_g-nl-k-hayat/final.mp4",
+      "video_id": "gfYxeYXRSTw",
+      "publish_at": "2026-10-20T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39424408132"
     }
   ]
 }
