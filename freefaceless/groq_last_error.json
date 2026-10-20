@@ -1,9 +1,9 @@
 {
-  "run_id": "39507159882",
+  "run_id": "39516520700",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'hashtags', 'tags'",
-  "observed_at": 1792536429.9472573,
-  "failed_generation_excerpt": "{\"source_id\":\"33978\",\"title\":\"Neden Hava S\u0131cakl\u0131\u011f\u0131 Y\u0131ll\u0131k \u00b1k\u0131rk\u00b0C Dalgalan\u0131r?\",\"description\":\"D\u00fcnya \u00fczerindeki hava s\u0131cakl\u0131\u011f\u0131 y\u0131ll\u0131k olarak k\u0131rk derece civar\u0131nda de\u011fi\u015fir. Bu dalgalanma, G\u00fcne\u015f'in e\u011fik ekseni ve atmosferik ko\u015fullardan kaynaklan\u0131r.\",\"scenes\":[{\"text\":\"Sabah serin, ak\u015fam s\u0131cak; s\u0131cakl\u0131k neden de\u011fi\u015fir?\",\"visual_query\":\"sky\"},{\"text\":\"Hava s\u0131cakl\u0131\u011f\u0131, D\u00fcnya ekseninin e\u011fikli\u011fi ve G\u00fcne\u015f \u0131\u015f\u0131n\u0131m\u0131n\u0131n farkl\u0131 b\u00f6lgelerdeki etkisiyle y\u0131ll\u0131k \u00b1k\u0131rk\u00b0C de\u011fi\u015fir d\u00fcnya.\",\"visual_query\":\"sun\"}]}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1792539789.8637862,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
