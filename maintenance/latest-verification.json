@@ -1,13 +1,18 @@
 {
-  "source_run": "39320462393",
-  "verified_at": "2026-10-19T20:36:22.778298+00:00",
+  "source_run": "39345854889",
+  "verified_at": "2026-10-20T00:20:04.287078+00:00",
   "videos": [],
-  "errors": [],
+  "errors": [
+    {
+      "index": 1,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "skipped": "daily_target_already_accepted",
-  "target_count": 0,
-  "daily_existing_count": 3,
-  "accepted_complete": true
+  "public_listing_error": "HTTPError",
+  "target_count": 1,
+  "published_count": 0,
+  "accepted_complete": false
 }
