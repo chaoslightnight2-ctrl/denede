@@ -1,25 +1,17 @@
 {
-  "source_run": "39603515585",
-  "verified_at": "2026-10-21T13:19:50.525474+00:00",
+  "source_run": "39660375133",
+  "verified_at": "2026-10-21T19:28:02.093501+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 3,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "target_count": 3,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
