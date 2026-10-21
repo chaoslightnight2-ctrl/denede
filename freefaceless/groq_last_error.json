@@ -2,8 +2,8 @@
   "run_id": "39603515585",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1792587550.1500158,
-  "failed_generation_excerpt": "{\"source_id\":\"9550\",\"scenes\":[{\"text\":\"Elektrik ak\u0131m\u0131 bir manyetik alan yarat\u0131r m\u0131?\",\"visual_query\":\"lamp\"},{\"text\":\"Hareketli y\u00fckler ak\u0131m olu\u015fturur ve bu ak\u0131m \u00e7evresinde manyetik alan meydana getirir.\",\"visual_query\":\"coil\"}]}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1792588029.912753,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
