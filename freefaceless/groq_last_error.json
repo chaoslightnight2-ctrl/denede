@@ -1,9 +1,9 @@
 {
-  "run_id": "39516520700",
+  "run_id": "39603515585",
   "http_status": 400,
   "code": "json_validate_failed",
   "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1792540269.9520578,
-  "failed_generation_excerpt": "{\"source_id\":\"33306\",\"scenes\":[{\"text\":\"D\u00fcnya \u00fczerindeki suyun oran\u0131 ger\u00e7ekten \u015fa\u015f\u0131rt\u0131c\u0131!\",\"visual_query\":\"sea\"},{\"text\":\"Y\u00fczeyin yakla\u015f\u0131k yetmi\u015f bir y\u00fczdeyi su kaplar; yani 71 y\u00fczde d\u00fcnya y\u00fczeyinde\",\"visual_query\":\"map\"},{\"text\":\"Su, polar molek\u00fcl oldu\u011fu i\u00e7in g\u00fc\u00e7l\u00fc hidrojen ba\u011flar\u0131 olu\u015fturur.\",\"visual_query\":\"mole\"}]}",
+  "observed_at": 1792587550.1500158,
+  "failed_generation_excerpt": "{\"source_id\":\"9550\",\"scenes\":[{\"text\":\"Elektrik ak\u0131m\u0131 bir manyetik alan yarat\u0131r m\u0131?\",\"visual_query\":\"lamp\"},{\"text\":\"Hareketli y\u00fckler ak\u0131m olu\u015fturur ve bu ak\u0131m \u00e7evresinde manyetik alan meydana getirir.\",\"visual_query\":\"coil\"}]}",
   "retry_after": null
 }
