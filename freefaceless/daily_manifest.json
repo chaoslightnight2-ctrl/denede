@@ -15,5 +15,12 @@
     "publish_at": "2026-10-22T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "39782681641",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": false,
+    "error": "No described asset matches scene 2: primary secondary"
   }
 ]
