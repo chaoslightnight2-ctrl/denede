@@ -1,19 +1,19 @@
 {
-  "source_run": "39696486177",
-  "verified_at": "2026-10-22T00:23:50.644177+00:00",
+  "source_run": "39782681641",
+  "verified_at": "2026-10-22T13:12:03.653503+00:00",
   "videos": [
     {
-      "index": 2,
-      "video_id": "p3C1v2cmRiA",
-      "youtube_url": "https://youtu.be/p3C1v2cmRiA",
-      "title": "Elektrik akımı nasıl manyetik alan üretir?",
-      "narration": "Akımın gizli gücü nasıl ortaya çıkar Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-22T18:00:00Z",
+      "index": 1,
+      "video_id": "EO-510v5hD8",
+      "youtube_url": "https://youtu.be/EO-510v5hD8",
+      "title": "Neden evimizdeki ışıklar elektrik akımıyla yanar?",
+      "narration": "Neden prizdeki ışıklar aniden hızla evde yanar Elektrik yüklü parçacıkların hareketiyle oluşur ve bu akım manyetik alan yaratır ve enerji taşır günlük Pozitif ya da negatif bir yük çevresinde güçlü elektrik alan oluşturur Siz de bir deney yapın İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-22T16:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-10-22T18:00:00Z",
+        "publishAt": "2026-10-22T16:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,29 +23,24 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 19.566667,
+        "duration": 20.066667,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/p3C1v2cmRiA.jpg"
+      "preview": "maintenance/previews/EO-510v5hD8.jpg"
     }
   ],
   "errors": [
     {
-      "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 3,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "index": 2,
+      "error": "No described asset matches scene 2: primary secondary"
     }
   ],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 3,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
