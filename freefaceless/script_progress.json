@@ -1,39 +1,39 @@
 {
-  "run_id": "39696486177",
+  "run_id": "39782681641",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "9550",
     "scenes": [
       {
-        "text": "Akımın gizli gücü nasıl ortaya çıkar",
-        "visual_query": "circuit board"
+        "text": "Neden prizdeki ışıklar aniden hızla evde yanar?",
+        "visual_query": "wall outlet"
       },
       {
-        "text": "Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner",
-        "visual_query": "electric wire"
+        "text": "Elektrik, yüklü parçacıkların hareketiyle oluşur ve bu akım manyetik alan yaratır ve enerji taşır günlük.",
+        "visual_query": "electric circuit"
       },
       {
-        "text": "Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır",
-        "visual_query": "magnet field"
+        "text": "Pozitif ya da negatif bir yük, çevresinde güçlü elektrik alan oluşturur.",
+        "visual_query": "charged particle"
       }
     ],
-    "closing_question": "Siz de deney yaptınız mı",
-    "closing_visual_query": "lab experiment",
+    "closing_question": "Siz de bir deney yapın?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük hayatta bilimin açıklamaları",
-    "title": "Elektrik akımı nasıl manyetik alan üretir?",
-    "description": "Elektrik akımı bir manyetik alan oluşturur Bu alan akımın yönüne dik olarak ortaya çıkar",
+    "topic": "elektrik",
+    "title": "Neden evimizdeki ışıklar elektrik akımıyla yanar?",
+    "description": "Elektrik, yüklü parçacıkların hareketiyle oluşan bir fenomendir. Akım geçtiğinde manyetik alan da ortaya çıkar.",
     "hashtags": {
       "primary": "elektrik",
-      "secondary": "manyetizma"
+      "secondary": "fizik"
     },
     "tags": [
       "elektrik",
-      "manyetizma",
       "akım",
-      "fizik",
-      "elektrikalanı"
+      "manyetik",
+      "yük",
+      "devre"
     ]
   },
   "reference_sources": [
