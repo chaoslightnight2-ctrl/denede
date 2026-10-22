@@ -3,63 +3,63 @@
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "563299",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "Genetik mi, çevre mi davranışınızı belirler?",
-        "visual_query": "lab"
+        "text": "Akımın gizli gücü nasıl ortaya çıkar",
+        "visual_query": "circuit board"
       },
       {
-        "text": "İnsan davranışı, genetik miras, yaşam ortamı ve bireyin psikolojik tepkileriyle birlikte şekillenir.",
-        "visual_query": "dna"
+        "text": "Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner",
+        "visual_query": "electric wire"
       },
       {
-        "text": "Davranış, bireyin düşünce, duygular ve sosyal etkileşimlerinin birleşimiyle yönlendirilir.",
-        "visual_query": "mind"
+        "text": "Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır",
+        "visual_query": "magnet field"
       }
     ],
-    "closing_question": "Sizce hangisi daha etkili?",
-    "closing_visual_query": "eye",
+    "closing_question": "Siz de deney yaptınız mı",
+    "closing_visual_query": "lab experiment",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "İnsan Davranışı Şekillenen Faktörler: Genetik ve Çevre",
-    "description": "İnsan davranışı genetik miras ve çevresel etkilerin bir araya gelmesiyle oluşur. Bu iki faktör, bireyin düşünce ve duygularını şekillendirir.",
+    "topic": "günlük hayatta bilimin açıklamaları",
+    "title": "Elektrik akımı nasıl manyetik alan üretir?",
+    "description": "Elektrik akımı bir manyetik alan oluşturur Bu alan akımın yönüne dik olarak ortaya çıkar",
     "hashtags": {
-      "primary": "psikoloji",
-      "secondary": "davranış"
+      "primary": "elektrik",
+      "secondary": "manyetizma"
     },
     "tags": [
-      "genetik",
-      "cevre",
-      "davranis",
-      "psikoloji",
-      "insan"
+      "elektrik",
+      "manyetizma",
+      "akım",
+      "fizik",
+      "elektrikalanı"
     ]
   },
   "reference_sources": [
     {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     {
-      "id": "183403",
-      "title": "Learning",
-      "url": "https://en.wikipedia.org/wiki/Learning",
-      "text": "Learning is the process of acquiring new understanding, knowledge, behavior, skills, values, attitudes, and preferences. The ability to learn is possessed by humans, other animals, and some machines. There is also evidence for some kind of learning in certain plants. Some learning is immediate, induced by a single event (e.g. being burned by a hot stove), but much skill and knowledge accumulate from repeated experiences. The changes induced by learning often last a lifetime, and it is hard to distinguish learned material that seems to be \"lost\" from that which cannot be retrieved. Human learning begins at birth and may even start before birth and continues until death as a consequence of ongoing interactions between people and their environment. The nature and processes involved in learning are studied in many established fields (including educational psychology, neuropsychology, experimental psychology, Cognitive science, and pedagogy), as well as emerging fields of knowledge (e.g. with a shared interest in the topic of learning from safety events such as incidents or accidents, or in collaborative learning health systems). Research in such fields has led to the significant identification of various sorts of learning. For example, learning may occur as a result of habituation, or classical conditioning, operant conditioning or as a result of more complex activities such as play, seen only in more cognitively complex animals. Learning may occur consciously or without conscious awareness. Learning that an aversive event cannot be avoided or escaped may result in a condition called learned helplessness."
+      "id": "33306",
+      "title": "Water",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
     },
     {
-      "id": "563299",
-      "title": "Human behavior",
-      "url": "https://en.wikipedia.org/wiki/Human_behavior",
-      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
+      "id": "19828134",
+      "title": "Plant",
+      "url": "https://en.wikipedia.org/wiki/Plant",
+      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     },
     {
-      "id": "26990",
-      "title": "Social psychology",
-      "url": "https://en.wikipedia.org/wiki/Social_psychology",
-      "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
+      "id": "54176",
+      "title": "Human body",
+      "url": "https://en.wikipedia.org/wiki/Human_body",
+      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     }
   ],
   "error": null
