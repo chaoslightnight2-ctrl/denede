@@ -1,33 +1,19 @@
 [
   {
-    "run_id": "39696486177",
+    "run_id": "39782681641",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "39696486177",
-    "slot": "2100",
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-22T21:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-10-22T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-22T18:00:00Z",
-    "video_id": "p3C1v2cmRiA",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261022_001114_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
-    "topic": "günlük hayatta bilimin açıklamaları",
-    "title": "Elektrik akımı nasıl manyetik alan üretir?",
-    "narration": "Akımın gizli gücü nasıl ortaya çıkar Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-22T18:00:00Z",
+    "scheduled_publish_at_utc": "2026-10-22T16:00:00Z",
+    "video_id": "EO-510v5hD8",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261022_130716_elektrik/final.mp4",
+    "topic": "elektrik",
+    "title": "Neden evimizdeki ışıklar elektrik akımıyla yanar?",
+    "narration": "Neden prizdeki ışıklar aniden hızla evde yanar Elektrik yüklü parçacıkların hareketiyle oluşur ve bu akım manyetik alan yaratır ve enerji taşır günlük Pozitif ya da negatif bir yük çevresinde güçlü elektrik alan oluşturur Siz de bir deney yapın İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-22T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "39696486177",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
