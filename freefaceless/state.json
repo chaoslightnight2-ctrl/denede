@@ -33,7 +33,8 @@
     "teknoloji",
     "Mobil Telefon Tarihi",
     "mobil telefon tarihi",
-    "günlük hayat"
+    "günlük hayat",
+    "günlük hayatta bilimin açıklamaları"
   ],
   "published": [
     {
@@ -424,6 +425,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39424408132",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261022_001114",
+      "topic": "günlük hayatta bilimin açıklamaları",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Elektrik akımı nasıl manyetik alan üretir?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261022_001114_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
+      "video_id": "p3C1v2cmRiA",
+      "publish_at": "2026-10-22T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39696486177"
     }
   ]
 }
