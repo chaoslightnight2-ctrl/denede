@@ -2,8 +2,8 @@
   "run_id": "39782681641",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1792673950.0949259,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1792674189.984921,
+  "failed_generation_excerpt": "{\"source_id\":\"9550\",\"scenes\":[{\"text\":\"Elektrik ak\u0131m\u0131 neden manyetik alan yarat\u0131r?\",\"visual_query\":\"lab\"},{\"text\":\"Ak\u0131m ta\u015f\u0131yan y\u00fckler hareket eder, bu hareket uzayda manyetik alan olu\u015fturur ve enerji ta\u015f\u0131r.\",\"visual_query\":\"lab\"}]}",
   "retry_after": null
 }
