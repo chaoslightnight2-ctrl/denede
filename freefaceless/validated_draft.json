@@ -1,47 +1,47 @@
 {
   "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-20T22:23:12.465195+00:00",
+  "saved_at": "2026-10-22T00:11:12.663372+00:00",
   "data": {
     "source_id": "9550",
     "scenes": [
       {
-        "text": "Elektrik nasıl bir akım taşıyor evde",
-        "visual_query": "home outlet"
+        "text": "Akımın gizli gücü nasıl ortaya çıkar",
+        "visual_query": "circuit board"
       },
       {
-        "text": "Elektrik yüklü parçacıkların hareketiyle oluşan akımdır ve manyetik alan üretir aynı zamanda ışık da verir",
-        "visual_query": "electric circuit"
+        "text": "Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner",
+        "visual_query": "electric wire"
       },
       {
-        "text": "Elektrik yıldırım ve statik gibi fenomenlerde görülür ve ısı da üretir",
-        "visual_query": "lightning storm"
+        "text": "Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır",
+        "visual_query": "magnet field"
       },
       {
-        "text": "Sizce elektrik ne kadar önemli İlginç Gerçekler kanalına abone ol",
-        "visual_query": "light bulb"
+        "text": "Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "lab experiment"
       }
     ],
-    "closing_question": "Sizce elektrik ne kadar önemli?",
-    "closing_visual_query": "light bulb",
+    "closing_question": "Siz de deney yaptınız mı",
+    "closing_visual_query": "lab experiment",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Elektrik nedir? Yüklü parçacıkların hareketiyle oluşur",
-    "description": "Elektrik, yüklü parçacıkların hareketiyle oluşan bir akımdır. Manyetik alan ve ışık da üretir.\n\n#shorts #elektrik #bilim",
+    "topic": "günlük hayatta bilimin açıklamaları",
+    "title": "Elektrik akımı nasıl manyetik alan üretir?",
+    "description": "Elektrik akımı bir manyetik alan oluşturur Bu alan akımın yönüne dik olarak ortaya çıkar\n\n#shorts #elektrik #manyetizma",
     "hashtags": {
       "primary": "elektrik",
-      "secondary": "bilim"
+      "secondary": "manyetizma"
     },
     "tags": [
       "elektrik",
+      "manyetizma",
+      "akım",
       "fizik",
-      "enerji",
-      "günlükhayat",
-      "bilim"
+      "elektrikalanı"
     ],
-    "spoken_text": "Elektrik nasıl bir akım taşıyor evde Elektrik yüklü parçacıkların hareketiyle oluşan akımdır ve manyetik alan üretir aynı zamanda ışık da verir Elektrik yıldırım ve statik gibi fenomenlerde görülür ve ısı da üretir Sizce elektrik ne kadar önemli İlginç Gerçekler kanalına abone ol",
-    "full_text": "Elektrik nasıl bir akım taşıyor evde Elektrik yüklü parçacıkların hareketiyle oluşan akımdır ve manyetik alan üretir aynı zamanda ışık da verir Elektrik yıldırım ve statik gibi fenomenlerde görülür ve ısı da üretir Sizce elektrik ne kadar önemli İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Elektrik nasıl bir akım taşıyor evde. Elektrik yüklü parçacıkların hareketiyle oluşan akımdır ve manyetik alan üretir aynı zamanda ışık da verir. Elektrik yıldırım ve statik gibi fenomenlerde görülür ve ısı da üretir. Sizce elektrik ne kadar önemli İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Akımın gizli gücü nasıl ortaya çıkar Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Akımın gizli gücü nasıl ortaya çıkar Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Akımın gizli gücü nasıl ortaya çıkar. Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner. Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır. Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
     "hook_style": "direct_change",
     "reference_source": {
@@ -54,34 +54,34 @@
       "source_id": "9550",
       "scenes": [
         {
-          "text": "Elektrik nasıl bir akım taşıyor evde?",
-          "visual_query": "home outlet"
+          "text": "Akımın gizli gücü nasıl ortaya çıkar",
+          "visual_query": "circuit board"
         },
         {
-          "text": "Elektrik, yüklü parçacıkların hareketiyle oluşan akımdır ve manyetik alan üretir aynı zamanda ışık da verir.",
-          "visual_query": "electric circuit"
+          "text": "Elektrik akımı hareket ederken çevresinde dik bir manyetik alan üretir ve bu alan telin etrafında döner",
+          "visual_query": "electric wire"
         },
         {
-          "text": "Elektrik, yıldırım ve statik gibi fenomenlerde görülür ve ısı da üretir.",
-          "visual_query": "lightning storm"
+          "text": "Manyetizma ve elektrik aynı fenomenin iki yönüdür Maxwell denklemleriyle açıklanır",
+          "visual_query": "magnet field"
         }
       ],
-      "closing_question": "Sizce elektrik ne kadar önemli?",
-      "closing_visual_query": "light bulb",
+      "closing_question": "Siz de deney yaptınız mı",
+      "closing_visual_query": "lab experiment",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük bilim",
-      "title": "Elektrik nedir? Yüklü parçacıkların hareketiyle oluşur",
-      "description": "Elektrik, yüklü parçacıkların hareketiyle oluşan bir akımdır. Manyetik alan ve ışık da üretir.",
+      "topic": "günlük hayatta bilimin açıklamaları",
+      "title": "Elektrik akımı nasıl manyetik alan üretir?",
+      "description": "Elektrik akımı bir manyetik alan oluşturur Bu alan akımın yönüne dik olarak ortaya çıkar",
       "hashtags": {
         "primary": "elektrik",
-        "secondary": "bilim"
+        "secondary": "manyetizma"
       },
       "tags": [
         "elektrik",
+        "manyetizma",
+        "akım",
         "fizik",
-        "enerji",
-        "günlükhayat",
-        "bilim"
+        "elektrikalanı"
       ]
     },
     "generation_mode": "prompt_first_v1"
