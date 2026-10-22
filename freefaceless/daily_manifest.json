@@ -1,24 +1,7 @@
 [
   {
-    "run_id": "39782681641",
+    "run_id": "39838076520",
     "slot": "1900",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-22T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-22T16:00:00Z",
-    "video_id": "EO-510v5hD8",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261022_130716_elektrik/final.mp4",
-    "topic": "elektrik",
-    "title": "Neden evimizdeki ışıklar elektrik akımıyla yanar?",
-    "narration": "Neden prizdeki ışıklar aniden hızla evde yanar Elektrik yüklü parçacıkların hareketiyle oluşur ve bu akım manyetik alan yaratır ve enerji taşır günlük Pozitif ya da negatif bir yük çevresinde güçlü elektrik alan oluşturur Siz de bir deney yapın İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-22T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "39782681641",
-    "slot": "2300",
     "niche": "Teknoloji ve icatlar",
     "ok": false,
     "error": "No described asset matches scene 2: primary secondary"
