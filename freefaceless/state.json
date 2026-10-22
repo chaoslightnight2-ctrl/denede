@@ -438,6 +438,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39696486177",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261022_130716",
+      "topic": "elektrik",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Neden evimizdeki ışıklar elektrik akımıyla yanar?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261022_130716_elektrik/final.mp4",
+      "video_id": "EO-510v5hD8",
+      "publish_at": "2026-10-22T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "39782681641"
     }
   ]
 }
