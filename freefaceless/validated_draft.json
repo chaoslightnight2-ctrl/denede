@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-22T13:11:13.493081+00:00",
+  "saved_at": "2026-10-22T22:39:11.858966+00:00",
   "data": {
-    "source_id": "19174720",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "Bataryanın iki ucu neden farklı isimle anılır",
-        "visual_query": "battery ends"
+        "text": "Evdeki zaman tasarrufu gerçek mi teknoloji",
+        "visual_query": "livingroom clock"
       },
       {
-        "text": "Pozitif terminal katot negatif terminal ise elektron kaynağı olan anot olarak doğru tanımlanır",
-        "visual_query": "positive negative"
+        "text": "Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur",
+        "visual_query": "washing machine"
       },
       {
-        "text": "Birincil bataryalar tek kullanımlı ikincil ise genellikle şarj edilebilir",
-        "visual_query": "primary secondary"
+        "text": "Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder",
+        "visual_query": "smart home panel"
       },
       {
-        "text": "Siz hangi bataryayı tercih edersiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "battery terminals"
+        "text": "Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "home office"
       }
     ],
-    "closing_question": "Siz hangi bataryayı tercih edersiniz?",
-    "closing_visual_query": "battery terminals",
+    "closing_question": "Siz de zaman kazanıyor musunuz?",
+    "closing_visual_query": "home office",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "batarya",
-    "title": "Bataryada Pozitif Terminal Katot mu? İşte Cevap!",
-    "description": "Bataryanın pozitif ucu katot, negatif ucu anot olarak adlandırılır. Birincil bataryalar tek kullanımlı, ikincil bataryalar ise şarj edilebilir.\n\n#shorts #batarya #elektrik",
+    "topic": "günlük yaşam",
+    "title": "Ev teknolojileri zamanı azaltıyor mu? Kanıt eksik.",
+    "description": "Ev teknolojileri ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlanmamıştır. Bu durum hâlâ tartışma konusudur.\n\n#shorts #evteknolojisi #zaman",
     "hashtags": {
-      "primary": "batarya",
-      "secondary": "elektrik"
+      "primary": "evteknolojisi",
+      "secondary": "zaman"
     },
     "tags": [
-      "batarya",
-      "elektrik",
-      "enerji",
-      "tek",
-      "şarj"
+      "ev",
+      "teknoloji",
+      "zaman",
+      "ev işleri",
+      "otomasyon"
     ],
-    "spoken_text": "Bataryanın iki ucu neden farklı isimle anılır Pozitif terminal katot negatif terminal ise elektron kaynağı olan anot olarak doğru tanımlanır Birincil bataryalar tek kullanımlı ikincil ise genellikle şarj edilebilir Siz hangi bataryayı tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Bataryanın iki ucu neden farklı isimle anılır Pozitif terminal katot negatif terminal ise elektron kaynağı olan anot olarak doğru tanımlanır Birincil bataryalar tek kullanımlı ikincil ise genellikle şarj edilebilir Siz hangi bataryayı tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Bataryanın iki ucu neden farklı isimle anılır. Pozitif terminal katot negatif terminal ise elektron kaynağı olan anot olarak doğru tanımlanır. Birincil bataryalar tek kullanımlı ikincil ise genellikle şarj edilebilir. Siz hangi bataryayı tercih edersiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
+    "spoken_text": "Evdeki zaman tasarrufu gerçek mi teknoloji Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Evdeki zaman tasarrufu gerçek mi teknoloji Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Evdeki zaman tasarrufu gerçek mi teknoloji. Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur. Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder. Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
     "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19174720",
-      "title": "Electric battery",
-      "url": "https://en.wikipedia.org/wiki/Electric_battery",
-      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     "raw_groq_package": {
-      "source_id": "19174720",
+      "source_id": "79425",
       "scenes": [
         {
-          "text": "Bataryanın iki ucu neden farklı isimle anılır?",
-          "visual_query": "battery ends"
+          "text": "Evdeki zaman tasarrufu gerçek mi, teknoloji?",
+          "visual_query": "livingroom clock"
         },
         {
-          "text": "Pozitif terminal katot, negatif terminal ise elektron kaynağı olan anot olarak doğru tanımlanır.",
-          "visual_query": "positive negative"
+          "text": "Bu iddia kesin kanıtlanmamış; ev teknolojileri zaman kazandırır mı tartışmalı bir konudur.",
+          "visual_query": "washing machine"
         },
         {
-          "text": "Birincil bataryalar tek kullanımlı, ikincil ise genellikle şarj edilebilir.",
-          "visual_query": "primary secondary"
+          "text": "Ev otomasyonu, enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder.",
+          "visual_query": "smart home panel"
         }
       ],
-      "closing_question": "Siz hangi bataryayı tercih edersiniz?",
-      "closing_visual_query": "battery terminals",
+      "closing_question": "Siz de zaman kazanıyor musunuz?",
+      "closing_visual_query": "home office",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "batarya",
-      "title": "Bataryada Pozitif Terminal Katot mu? İşte Cevap!",
-      "description": "Bataryanın pozitif ucu katot, negatif ucu anot olarak adlandırılır. Birincil bataryalar tek kullanımlı, ikincil bataryalar ise şarj edilebilir.",
+      "topic": "günlük yaşam",
+      "title": "Ev teknolojileri zamanı azaltıyor mu? Kanıt eksik.",
+      "description": "Ev teknolojileri ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlanmamıştır. Bu durum hâlâ tartışma konusudur.",
       "hashtags": {
-        "primary": "batarya",
-        "secondary": "elektrik"
+        "primary": "evteknolojisi",
+        "secondary": "zaman"
       },
       "tags": [
-        "batarya",
-        "elektrik",
-        "enerji",
-        "tek",
-        "şarj"
+        "ev",
+        "teknoloji",
+        "zaman",
+        "ev işleri",
+        "otomasyon"
       ]
     },
     "generation_mode": "prompt_first_v1"
