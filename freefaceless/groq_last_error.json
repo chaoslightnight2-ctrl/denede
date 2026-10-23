@@ -3,7 +3,7 @@
   "http_status": 400,
   "code": "json_validate_failed",
   "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1792759870.149889,
+  "observed_at": 1792760110.1064615,
   "failed_generation_excerpt": "",
   "retry_after": null
 }
