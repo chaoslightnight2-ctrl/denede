@@ -1,25 +1,8 @@
 [
   {
-    "run_id": "39864144074",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-23T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-23T16:00:00Z",
-    "video_id": "PQtWPeGE-8o",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261022_223913_g-nl-k-ya-am/final.mp4",
-    "topic": "günlük yaşam",
-    "title": "Ev teknolojileri zamanı azaltıyor mu? Kanıt eksik.",
-    "narration": "Evdeki zaman tasarrufu gerçek mi teknoloji Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-23T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "39864144074",
+    "run_id": "39874809187",
     "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
