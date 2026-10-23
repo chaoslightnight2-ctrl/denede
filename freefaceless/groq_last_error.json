@@ -3,7 +3,7 @@
   "http_status": 400,
   "code": "json_validate_failed",
   "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1792783870.0339832,
-  "failed_generation_excerpt": "{\"source_id\":\"79425\",\"scenes\":[{\"text\":\"Ev i\u015flerinde harcanan zaman ger\u00e7ekten azald\u0131 m\u0131, siz?\",\"visual_query\":\"kch\"},{\"text\":\"Ev teknolojileri zaman tasarrufu sa\u011flad\u0131\u011f\u0131n\u0131 iddia eder, ancak bu iddian\u0131n ger\u00e7ekli\u011fi genellikle tart\u0131\u015fmal\u0131d\u0131r.\",\"visual_query\":\"tv\"},{\"text\":\"Ak\u0131ll\u0131 \u00e7ama\u015f\u0131r makineleri ve enerji verimli f\u0131r\u0131nlar da bu kapsamda yer al\u0131r.\",\"visual_query\":\"app\"}]}",
+  "observed_at": 1792784350.0108056,
+  "failed_generation_excerpt": "{\"source_id\":\"25140\",\"scenes\":[{\"text\":\"G\u00f6zlerimiz d\u0131\u015f d\u00fcnyay\u0131 nas\u0131l yorumlar ger\u00e7ekten?\",\"visual_query\":\"eye view\"},{\"text\":\"Alg\u0131, duyusal bilgiyi tan\u0131mlama, yorumlama ve d\u00fczenleme s\u00fcrecidir; beynin sinir a\u011flar\u0131yla etkile\u015fimi sonucunda.\",\"visual_query\":\"brain neurons\"},{\"text\":\"Alg\u0131, \u00f6\u011frenme, beklenti ve dikkat gibi fakt\u00f6rlerle \u015fekillenir.\",\"visual_query\":\"brain scan\"}]}",
   "retry_after": null
 }
