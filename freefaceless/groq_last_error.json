@@ -1,9 +1,9 @@
 {
-  "run_id": "39954638189",
+  "run_id": "40009412088",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1792760110.1064615,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1792783870.0339832,
+  "failed_generation_excerpt": "{\"source_id\":\"79425\",\"scenes\":[{\"text\":\"Ev i\u015flerinde harcanan zaman ger\u00e7ekten azald\u0131 m\u0131, siz?\",\"visual_query\":\"kch\"},{\"text\":\"Ev teknolojileri zaman tasarrufu sa\u011flad\u0131\u011f\u0131n\u0131 iddia eder, ancak bu iddian\u0131n ger\u00e7ekli\u011fi genellikle tart\u0131\u015fmal\u0131d\u0131r.\",\"visual_query\":\"tv\"},{\"text\":\"Ak\u0131ll\u0131 \u00e7ama\u015f\u0131r makineleri ve enerji verimli f\u0131r\u0131nlar da bu kapsamda yer al\u0131r.\",\"visual_query\":\"app\"}]}",
   "retry_after": null
 }
