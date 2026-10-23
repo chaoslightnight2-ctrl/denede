@@ -1,39 +1,39 @@
 {
-  "run_id": "39954638189",
+  "run_id": "40009412088",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "79425",
     "scenes": [
       {
-        "text": "Evdeki akıllı cihazlar zamanı nasıl kısaltır?",
-        "visual_query": "tv"
+        "text": "Evdeki çamaşır makinesi nasıl çalışır gerçek?",
+        "visual_query": "wash"
       },
       {
-        "text": "Domestik teknoloji ev işlerine harcanan süreyi azaltabilir, fakat bu kesin kanıta dayanmaz.",
-        "visual_query": "app"
+        "text": "Çamaşır makinesi, suyu ısıtan bir ısıtıcı ve döndüren bir motorla çalışır, elektrikle beslenir.",
+        "visual_query": "gear"
       },
       {
-        "text": "Akıllı ev otomasyonu aynı zamanda enerji tasarrufu da sağlar.",
-        "visual_query": "led"
+        "text": "Modern çamaşır makineleri ev otomasyonu ve enerji verimliliği sunar.",
+        "visual_query": "home"
       }
     ],
     "closing_question": "Siz de denediniz mi?",
-    "closing_visual_query": "home",
+    "closing_visual_query": "room",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "evteknolojisi",
-    "title": "Akıllı ev cihazları temizlik süresini kısaltır mı?",
-    "description": "Domestik teknoloji ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlara dayanmaz. Akıllı ev otomasyonu da enerji tasarrufu sağlar.",
+    "title": "Çamaşır Makinesi Nasıl Çalışır? Elektrik ve Isıtıcı",
+    "description": "Çamaşır makineleri suyu ısıtan bir ısıtıcı ve döndüren bir motorla çalışır. Elektrik enerjisiyle beslenir ve evdeki temizlik işini kolaylaştırır.",
     "hashtags": {
       "primary": "evteknolojisi",
       "secondary": "günlükhayat"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "akıllı ev",
-      "temizlik",
-      "enerji"
+      "çamaşırmakinesi",
+      "evotomasyonu",
+      "enerjiverimliliği",
+      "evteknolojisi",
+      "günlükyaşam"
     ]
   },
   "reference_sources": [
