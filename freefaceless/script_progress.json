@@ -1,48 +1,42 @@
 {
-  "run_id": "39864144074",
+  "run_id": "39954638189",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "79425",
     "scenes": [
       {
-        "text": "Evdeki zaman tasarrufu gerçek mi, teknoloji?",
-        "visual_query": "livingroom clock"
+        "text": "Evdeki akıllı cihazlar zamanı nasıl kısaltır?",
+        "visual_query": "tv"
       },
       {
-        "text": "Bu iddia kesin kanıtlanmamış; ev teknolojileri zaman kazandırır mı tartışmalı bir konudur.",
-        "visual_query": "washing machine"
+        "text": "Domestik teknoloji ev işlerine harcanan süreyi azaltabilir, fakat bu kesin kanıta dayanmaz.",
+        "visual_query": "app"
       },
       {
-        "text": "Ev otomasyonu, enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder.",
-        "visual_query": "smart home panel"
+        "text": "Akıllı ev otomasyonu aynı zamanda enerji tasarrufu da sağlar.",
+        "visual_query": "led"
       }
     ],
-    "closing_question": "Siz de zaman kazanıyor musunuz?",
-    "closing_visual_query": "home office",
+    "closing_question": "Siz de denediniz mi?",
+    "closing_visual_query": "home",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük yaşam",
-    "title": "Ev teknolojileri zamanı azaltıyor mu? Kanıt eksik.",
-    "description": "Ev teknolojileri ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlanmamıştır. Bu durum hâlâ tartışma konusudur.",
+    "topic": "evteknolojisi",
+    "title": "Akıllı ev cihazları temizlik süresini kısaltır mı?",
+    "description": "Domestik teknoloji ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlara dayanmaz. Akıllı ev otomasyonu da enerji tasarrufu sağlar.",
     "hashtags": {
       "primary": "evteknolojisi",
-      "secondary": "zaman"
+      "secondary": "günlükhayat"
     },
     "tags": [
       "ev",
       "teknoloji",
-      "zaman",
-      "ev işleri",
-      "otomasyon"
+      "akıllı ev",
+      "temizlik",
+      "enerji"
     ]
   },
   "reference_sources": [
-    {
-      "id": "33978",
-      "title": "Weather",
-      "url": "https://en.wikipedia.org/wiki/Weather",
-      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
-    },
     {
       "id": "27709",
       "title": "Semiconductor",
@@ -60,6 +54,12 @@
       "title": "Domestic technology",
       "url": "https://en.wikipedia.org/wiki/Domestic_technology",
       "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+    },
+    {
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
     }
   ],
   "error": null
