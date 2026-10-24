@@ -1,23 +1,48 @@
 {
-  "source_run": "40092051838",
-  "verified_at": "2026-10-24T12:27:45.604571+00:00",
-  "videos": [],
+  "source_run": "40119250633",
+  "verified_at": "2026-10-24T18:32:52.080616+00:00",
+  "videos": [
+    {
+      "index": 3,
+      "video_id": "36AxOWckNFM",
+      "youtube_url": "https://youtu.be/36AxOWckNFM",
+      "title": "Işık retinaya odaklandığında görsel algı oluşur",
+      "narration": "Gözün içinde ışık nasıl toplanır ve retinaya Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-25T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-25T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.6,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/36AxOWckNFM.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "No described asset matches scene 3: future tech"
     },
     {
       "index": 2,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 3,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 3,
   "published_count": 0,
