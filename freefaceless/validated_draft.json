@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-24T18:15:13.034124+00:00",
+  "saved_at": "2026-10-24T18:31:12.386324+00:00",
   "data": {
-    "source_id": "19644137",
+    "source_id": "25140",
     "scenes": [
       {
-        "text": "İlk cep telefonu nasıl ortaya çıktı",
-        "visual_query": "city street"
+        "text": "Gözün içinde ışık nasıl toplanır ve retinaya",
+        "visual_query": "eye retina"
       },
       {
-        "text": "Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi",
-        "visual_query": "city plaza"
+        "text": "Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir",
+        "visual_query": "lens retina brain"
       },
       {
-        "text": "Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu",
-        "visual_query": "handheld device"
+        "text": "Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır",
+        "visual_query": "learning attention memory"
       },
       {
-        "text": "Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol",
-        "visual_query": "future tech"
+        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "brain activity"
       }
     ],
-    "closing_question": "Sizce bir sonraki yenilik ne?",
-    "closing_visual_query": "future tech",
+    "closing_question": "Siz de fark ettiniz mi",
+    "closing_visual_query": "brain activity",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "mobiltelefon",
-    "title": "Martin Cooper’ın New York’ta Tanıttığı İlk Cep Telefonu",
-    "description": "Bin dokuz yüz yetmiş üç’te Martin Cooper, iki kilogramlık bir cihazla New York’ta ilk taşınabilir cep telefonunu gösterdi. Bu, mobil iletişimin yeni bir çağını başlattı.\n\n#shorts #mobiltelefon #teknoloji",
+    "topic": "psikoloji",
+    "title": "Işık retinaya odaklandığında görsel algı oluşur",
+    "description": "Işık göz merceğiyle retinaya odaklanır ve görüntü oluşturur Bu sinyaller beyne iletilir ve algı gerçekleşir\n\n#shorts #algı #psikoloji",
     "hashtags": {
-      "primary": "mobiltelefon",
-      "secondary": "teknoloji"
+      "primary": "algı",
+      "secondary": "psikoloji"
     },
     "tags": [
-      "ceptelefonu",
-      "martincooper",
-      "ilkcep",
-      "teknoloji",
-      "tarih"
+      "algı",
+      "görsel",
+      "psikoloji",
+      "beyin",
+      "duyular"
     ],
-    "spoken_text": "İlk cep telefonu nasıl ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu nasıl ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu nasıl ortaya çıktı. Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi. Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu. Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
+    "spoken_text": "Gözün içinde ışık nasıl toplanır ve retinaya Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Gözün içinde ışık nasıl toplanır ve retinaya Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Gözün içinde ışık nasıl toplanır ve retinaya. Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir. Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
     "hook_style": "direct_change",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "25140",
+      "title": "Perception",
+      "url": "https://en.wikipedia.org/wiki/Perception",
+      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
+      "source_id": "25140",
       "scenes": [
         {
-          "text": "İlk cep telefonu nasıl ortaya çıktı?",
-          "visual_query": "city street"
+          "text": "Gözün içinde ışık nasıl toplanır ve retinaya",
+          "visual_query": "eye retina"
         },
         {
-          "text": "Martin Cooper, üç Nisan bin dokuz yüz yetmiş üç’te, iki kilogramlık cihazla New York’ta gösterdi.",
-          "visual_query": "city plaza"
+          "text": "Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir",
+          "visual_query": "lens retina brain"
         },
         {
-          "text": "Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu.",
-          "visual_query": "handheld device"
+          "text": "Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır",
+          "visual_query": "learning attention memory"
         }
       ],
-      "closing_question": "Sizce bir sonraki yenilik ne?",
-      "closing_visual_query": "future tech",
+      "closing_question": "Siz de fark ettiniz mi",
+      "closing_visual_query": "brain activity",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "mobiltelefon",
-      "title": "Martin Cooper’ın New York’ta Tanıttığı İlk Cep Telefonu",
-      "description": "Bin dokuz yüz yetmiş üç’te Martin Cooper, iki kilogramlık bir cihazla New York’ta ilk taşınabilir cep telefonunu gösterdi. Bu, mobil iletişimin yeni bir çağını başlattı.",
+      "topic": "psikoloji",
+      "title": "Işık retinaya odaklandığında görsel algı oluşur",
+      "description": "Işık göz merceğiyle retinaya odaklanır ve görüntü oluşturur Bu sinyaller beyne iletilir ve algı gerçekleşir",
       "hashtags": {
-        "primary": "mobiltelefon",
-        "secondary": "teknoloji"
+        "primary": "algı",
+        "secondary": "psikoloji"
       },
       "tags": [
-        "ceptelefonu",
-        "martincooper",
-        "ilkcep",
-        "teknoloji",
-        "tarih"
+        "algı",
+        "görsel",
+        "psikoloji",
+        "beyin",
+        "duyular"
       ]
     },
     "generation_mode": "prompt_first_v1"
