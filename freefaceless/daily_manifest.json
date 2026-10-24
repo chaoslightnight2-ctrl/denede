@@ -5,5 +5,12 @@
     "niche": "Teknoloji ve icatlar",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "40092051838",
+    "slot": "2100",
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
