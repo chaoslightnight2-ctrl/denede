@@ -5,5 +5,12 @@
     "niche": "Teknoloji ve icatlar",
     "ok": false,
     "error": "No described asset matches scene 3: future tech"
+  },
+  {
+    "run_id": "40119250633",
+    "slot": "1900",
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
