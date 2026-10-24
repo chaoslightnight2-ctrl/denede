@@ -34,7 +34,8 @@
     "Mobil Telefon Tarihi",
     "mobil telefon tarihi",
     "günlük hayat",
-    "günlük hayatta bilimin açıklamaları"
+    "günlük hayatta bilimin açıklamaları",
+    "psikoloji"
   ],
   "published": [
     {
@@ -464,6 +465,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "39864144074",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261024_183113",
+      "topic": "psikoloji",
+      "audience_bucket": "human_behavior",
+      "hook_style": "direct_change",
+      "title": "Işık retinaya odaklandığında görsel algı oluşur",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261024_183113_psikoloji/final.mp4",
+      "video_id": "36AxOWckNFM",
+      "publish_at": "2026-10-25T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "40119250633"
     }
   ]
 }
