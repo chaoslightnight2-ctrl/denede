@@ -1,65 +1,65 @@
 {
-  "run_id": "40119250633",
+  "run_id": "40140728655",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "25140",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "Gözün içinde ışık nasıl toplanır ve retinaya",
-        "visual_query": "eye retina"
+        "text": "Akıllı çamaşır makinesi ne kadar zaman kazandırır?",
+        "visual_query": "home"
       },
       {
-        "text": "Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir",
-        "visual_query": "lens retina brain"
+        "text": "Domestik teknoloji, ev işlerine harcanan süreyi azalttığını iddia ediyor, fakat bu iddia kesin kanıtlarla desteklenmiyor.",
+        "visual_query": "data"
       },
       {
-        "text": "Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır",
-        "visual_query": "learning attention memory"
+        "text": "Ev otomasyonu, enerji verimliliği ve öz-yeterlilik hedefliyor, günlük yaşamda.",
+        "visual_query": "grid"
       }
     ],
-    "closing_question": "Siz de fark ettiniz mi",
-    "closing_visual_query": "brain activity",
+    "closing_question": "Siz de denediniz mi?",
+    "closing_visual_query": "room",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "Işık retinaya odaklandığında görsel algı oluşur",
-    "description": "Işık göz merceğiyle retinaya odaklanır ve görüntü oluşturur Bu sinyaller beyne iletilir ve algı gerçekleşir",
+    "title": "Evdeki teknoloji iş yükümüzü azaltıyor mu? Tartışmalı",
+    "description": "Domestik teknoloji, ev işlerine harcanan zamanı azaltmayı iddia ediyor. Ancak bu iddianın bilimsel kanıtları kesin değildir.",
     "hashtags": {
-      "primary": "algı",
-      "secondary": "psikoloji"
+      "primary": "evteknolojisi",
+      "secondary": "günlükyaşam"
     },
     "tags": [
-      "algı",
-      "görsel",
-      "psikoloji",
-      "beyin",
-      "duyular"
-    ]
+      "ev",
+      "teknoloji",
+      "evappliances",
+      "otomasyon",
+      "zaman"
+    ],
+    "topic": "evteknolojisi"
   },
   "reference_sources": [
     {
-      "id": "26990",
-      "title": "Social psychology",
-      "url": "https://en.wikipedia.org/wiki/Social_psychology",
-      "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
+      "id": "23416874",
+      "title": "Sense",
+      "url": "https://en.wikipedia.org/wiki/Sense",
+      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
     },
     {
-      "id": "31217535",
-      "title": "Memory",
-      "url": "https://en.wikipedia.org/wiki/Memory",
-      "text": "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action. If past events could not be remembered, it would be impossible for language, relationships, or personal identity to develop. Memory loss is usually described as forgetfulness or a disorder such as amnesia. Memory is often understood as an information processing system with explicit and implicit functioning that is made up of a sensory processor, short-term (or working) memory, and long-term memory. This can be related to the neuron. The sensory processor allows information from the outside world to be sensed in the form of chemical and physical stimuli and attended to various levels of focus and intent. Working memory serves as an encoding and retrieval processor. Information in the form of stimuli is encoded in accordance with explicit or implicit functions by the working memory processor. The working memory also retrieves information from previously stored material. Finally, the function of long-term memory is to store information through various categorical models or systems. Declarative, or explicit memory, is the conscious storage and recollection of data. Under declarative memory resides semantic and episodic memory. Semantic memory refers to memory that is encoded with specific meaning. Meanwhile, episodic memory refers to information that is encoded along a spatial and temporal plane. Declarative memory is usually the primary process thought of when referencing memory. Non-declarative, or implicit, memory is the unconscious storage and recollection of information."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     {
-      "id": "25140",
-      "title": "Perception",
-      "url": "https://en.wikipedia.org/wiki/Perception",
-      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
     },
     {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     }
   ],
   "error": null
