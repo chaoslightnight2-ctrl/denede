@@ -1,33 +1,9 @@
 [
   {
-    "run_id": "40119250633",
-    "slot": "2300",
+    "run_id": "40131298836",
+    "slot": "1900",
     "niche": "Teknoloji ve icatlar",
     "ok": false,
-    "error": "No described asset matches scene 3: future tech"
-  },
-  {
-    "run_id": "40119250633",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "40119250633",
-    "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-25T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-25T18:00:00Z",
-    "video_id": "36AxOWckNFM",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261024_183113_psikoloji/final.mp4",
-    "topic": "psikoloji",
-    "title": "Işık retinaya odaklandığında görsel algı oluşur",
-    "narration": "Gözün içinde ışık nasıl toplanır ve retinaya Işık lens tarafından odaklanır retinada görüntü oluşturur sinir sinyallerine dönüşür ve beyin tarafından işlenir Persepsiyon öğrenme beklenti ve dikkatle şekillenir ve hafıza etkisi vardır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-25T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
