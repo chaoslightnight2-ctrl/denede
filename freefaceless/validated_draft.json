@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-22T22:39:11.858966+00:00",
+  "saved_at": "2026-10-24T18:15:13.034124+00:00",
   "data": {
-    "source_id": "79425",
+    "source_id": "19644137",
     "scenes": [
       {
-        "text": "Evdeki zaman tasarrufu gerçek mi teknoloji",
-        "visual_query": "livingroom clock"
+        "text": "İlk cep telefonu nasıl ortaya çıktı",
+        "visual_query": "city street"
       },
       {
-        "text": "Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur",
-        "visual_query": "washing machine"
+        "text": "Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi",
+        "visual_query": "city plaza"
       },
       {
-        "text": "Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder",
-        "visual_query": "smart home panel"
+        "text": "Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu",
+        "visual_query": "handheld device"
       },
       {
-        "text": "Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "home office"
+        "text": "Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol",
+        "visual_query": "future tech"
       }
     ],
-    "closing_question": "Siz de zaman kazanıyor musunuz?",
-    "closing_visual_query": "home office",
+    "closing_question": "Sizce bir sonraki yenilik ne?",
+    "closing_visual_query": "future tech",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük yaşam",
-    "title": "Ev teknolojileri zamanı azaltıyor mu? Kanıt eksik.",
-    "description": "Ev teknolojileri ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlanmamıştır. Bu durum hâlâ tartışma konusudur.\n\n#shorts #evteknolojisi #zaman",
+    "topic": "mobiltelefon",
+    "title": "Martin Cooper’ın New York’ta Tanıttığı İlk Cep Telefonu",
+    "description": "Bin dokuz yüz yetmiş üç’te Martin Cooper, iki kilogramlık bir cihazla New York’ta ilk taşınabilir cep telefonunu gösterdi. Bu, mobil iletişimin yeni bir çağını başlattı.\n\n#shorts #mobiltelefon #teknoloji",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "zaman"
+      "primary": "mobiltelefon",
+      "secondary": "teknoloji"
     },
     "tags": [
-      "ev",
+      "ceptelefonu",
+      "martincooper",
+      "ilkcep",
       "teknoloji",
-      "zaman",
-      "ev işleri",
-      "otomasyon"
+      "tarih"
     ],
-    "spoken_text": "Evdeki zaman tasarrufu gerçek mi teknoloji Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Evdeki zaman tasarrufu gerçek mi teknoloji Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Evdeki zaman tasarrufu gerçek mi teknoloji. Bu iddia kesin kanıtlanmamış ev teknolojileri zaman kazandırır mı tartışmalı bir konudur. Ev otomasyonu enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder. Siz de zaman kazanıyor musunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "spoken_text": "İlk cep telefonu nasıl ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol",
+    "full_text": "İlk cep telefonu nasıl ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol",
+    "tts_text": "İlk cep telefonu nasıl ortaya çıktı. Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazla New Yorkta gösterdi. Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu. Sizce bir sonraki yenilik ne İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "technology_science",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "19644137",
+      "title": "Mobile phone",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
     },
     "raw_groq_package": {
-      "source_id": "79425",
+      "source_id": "19644137",
       "scenes": [
         {
-          "text": "Evdeki zaman tasarrufu gerçek mi, teknoloji?",
-          "visual_query": "livingroom clock"
+          "text": "İlk cep telefonu nasıl ortaya çıktı?",
+          "visual_query": "city street"
         },
         {
-          "text": "Bu iddia kesin kanıtlanmamış; ev teknolojileri zaman kazandırır mı tartışmalı bir konudur.",
-          "visual_query": "washing machine"
+          "text": "Martin Cooper, üç Nisan bin dokuz yüz yetmiş üç’te, iki kilogramlık cihazla New York’ta gösterdi.",
+          "visual_query": "city plaza"
         },
         {
-          "text": "Ev otomasyonu, enerji verimliliği ve öz yeterlilik gibi hedeflere de hizmet eder.",
-          "visual_query": "smart home panel"
+          "text": "Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu.",
+          "visual_query": "handheld device"
         }
       ],
-      "closing_question": "Siz de zaman kazanıyor musunuz?",
-      "closing_visual_query": "home office",
+      "closing_question": "Sizce bir sonraki yenilik ne?",
+      "closing_visual_query": "future tech",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük yaşam",
-      "title": "Ev teknolojileri zamanı azaltıyor mu? Kanıt eksik.",
-      "description": "Ev teknolojileri ev işlerine harcanan zamanı azaltabilir, ancak bu kesin kanıtlanmamıştır. Bu durum hâlâ tartışma konusudur.",
+      "topic": "mobiltelefon",
+      "title": "Martin Cooper’ın New York’ta Tanıttığı İlk Cep Telefonu",
+      "description": "Bin dokuz yüz yetmiş üç’te Martin Cooper, iki kilogramlık bir cihazla New York’ta ilk taşınabilir cep telefonunu gösterdi. Bu, mobil iletişimin yeni bir çağını başlattı.",
       "hashtags": {
-        "primary": "evteknolojisi",
-        "secondary": "zaman"
+        "primary": "mobiltelefon",
+        "secondary": "teknoloji"
       },
       "tags": [
-        "ev",
+        "ceptelefonu",
+        "martincooper",
+        "ilkcep",
         "teknoloji",
-        "zaman",
-        "ev işleri",
-        "otomasyon"
+        "tarih"
       ]
     },
     "generation_mode": "prompt_first_v1"
