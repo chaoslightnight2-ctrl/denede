@@ -1,65 +1,65 @@
 {
-  "run_id": "40009412088",
+  "run_id": "40092051838",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "25140",
+    "source_id": "19644137",
     "scenes": [
       {
-        "text": "Neden bazen aynı nesneyi farklı gerçekten görürüz?",
-        "visual_query": "eye"
+        "text": "İlk cep telefonu gerçekten neye benziyordu?",
+        "visual_query": "show"
       },
       {
-        "text": "Algı, öğrenme, bellek ve beklentilerle şekillenen, duyusal veriyi yorumlayan bir zihinsel süreçtir ve kararlarımızı yönlendirir.",
-        "visual_query": "head"
+        "text": "Bin dokuz yüz yetmiş üçte Martin Cooper, iki kilogramlık cihazla ilk mobil telefonu gösterdi.",
+        "visual_query": "demo"
       },
       {
-        "text": "Dikkat, hangi sinyallerin algılanacağını seçer ve beyinde etkiler, işlem yapar, beyin yönlendirir.",
-        "visual_query": "mind"
+        "text": "Cihaz sadece arama yapabiliyor, bataryası bir saatten az sürdü.",
+        "visual_query": "tech"
       }
     ],
-    "closing_question": "Siz de fark ettiniz mi?",
-    "closing_visual_query": "eye",
+    "closing_question": "Siz de merak ettiniz mi?",
+    "closing_visual_query": "desk",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "Algı Neden Yanılır? Öğrenme ve Beklentiler Şekillendirir",
-    "description": "Algı, öğrenme, bellek ve beklentilerle şekillenir. Dikkat, hangi duyusal sinyallerin algılanacağını belirler.",
+    "topic": "mobiltelefon",
+    "title": "İlk cep telefonu iki kilogramlık cihazla tanıtıldı",
+    "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üçte tanıtıldı. Cihaz iki kilogram ağırlığındaydı.",
     "hashtags": {
-      "primary": "algı",
-      "secondary": "psikoloji"
+      "primary": "teknoloji",
+      "secondary": "mobiltelefon"
     },
     "tags": [
-      "algı",
-      "psikoloji",
-      "duyusal",
-      "bellek",
-      "dikkat"
+      "ceptelefonu",
+      "mobil",
+      "ilktelefon",
+      "martincooper",
+      "teknoloji"
     ]
   },
   "reference_sources": [
     {
-      "id": "563299",
-      "title": "Human behavior",
-      "url": "https://en.wikipedia.org/wiki/Human_behavior",
-      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
+      "id": "18580879",
+      "title": "Transport",
+      "url": "https://en.wikipedia.org/wiki/Transport",
+      "text": "Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations. Transport infrastructure consists of fixed installations, including roads, railways, airways, waterways, canals, and pipelines, as well as terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports. Terminals may be used both for the interchange of passengers and cargo and for maintenance. Means of transport are any of the different kinds of transport facilities used to carry people or cargo. They may include vehicles, riding animals, and pack animals. Vehicles may include wagons, automobiles, bicycles, buses, trains, trucks, helicopters, watercraft, spacecraft, and aircraft. Mobility is concerned with the experience around transportation services, including aspects such as availability, information, usability, accessibility, and affordability (as in right to mobility)."
     },
     {
-      "id": "26990",
-      "title": "Social psychology",
-      "url": "https://en.wikipedia.org/wiki/Social_psychology",
-      "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
+      "id": "19644137",
+      "title": "Mobile phone",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
     },
     {
-      "id": "31217535",
-      "title": "Memory",
-      "url": "https://en.wikipedia.org/wiki/Memory",
-      "text": "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action. If past events could not be remembered, it would be impossible for language, relationships, or personal identity to develop. Memory loss is usually described as forgetfulness or a disorder such as amnesia. Memory is often understood as an information processing system with explicit and implicit functioning that is made up of a sensory processor, short-term (or working) memory, and long-term memory. This can be related to the neuron. The sensory processor allows information from the outside world to be sensed in the form of chemical and physical stimuli and attended to various levels of focus and intent. Working memory serves as an encoding and retrieval processor. Information in the form of stimuli is encoded in accordance with explicit or implicit functions by the working memory processor. The working memory also retrieves information from previously stored material. Finally, the function of long-term memory is to store information through various categorical models or systems. Declarative, or explicit memory, is the conscious storage and recollection of data. Under declarative memory resides semantic and episodic memory. Semantic memory refers to memory that is encoded with specific meaning. Meanwhile, episodic memory refers to information that is encoded along a spatial and temporal plane. Declarative memory is usually the primary process thought of when referencing memory. Non-declarative, or implicit, memory is the unconscious storage and recollection of information."
+      "id": "14539",
+      "title": "Internet",
+      "url": "https://en.wikipedia.org/wiki/Internet",
+      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
     },
     {
-      "id": "25140",
-      "title": "Perception",
-      "url": "https://en.wikipedia.org/wiki/Perception",
-      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
+      "id": "7878457",
+      "title": "Computer",
+      "url": "https://en.wikipedia.org/wiki/Computer",
+      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
     }
   ],
   "error": null
