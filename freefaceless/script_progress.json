@@ -1,65 +1,65 @@
 {
   "run_id": "40119250633",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "19644137",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "İlk cep telefonu nasıl ortaya çıktı?",
-        "visual_query": "city street"
+        "text": "Evdeki çamaşır makinesi ne kadar enerji tasarrufu sağlar?",
+        "visual_query": "wash"
       },
       {
-        "text": "Martin Cooper, üç Nisan bin dokuz yüz yetmiş üç’te, iki kilogramlık cihazla New York’ta gösterdi.",
-        "visual_query": "city plaza"
+        "text": "Domestik teknoloji, çamaşır makinesinin yıkama süresini yarıya indirerek günlük iş yükünü azaltır.",
+        "visual_query": "home"
       },
       {
-        "text": "Bu cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu.",
-        "visual_query": "handheld device"
+        "text": "Ayrıca akıllı ev sistemleri, enerji tüketimini otomatik izler ve su tüketimini azaltır.",
+        "visual_query": "grid"
       }
     ],
-    "closing_question": "Sizce bir sonraki yenilik ne?",
-    "closing_visual_query": "future tech",
+    "closing_question": "Siz de tasarruf yapıyor musunuz?",
+    "closing_visual_query": "room",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "mobiltelefon",
-    "title": "Martin Cooper’ın New York’ta Tanıttığı İlk Cep Telefonu",
-    "description": "Bin dokuz yüz yetmiş üç’te Martin Cooper, iki kilogramlık bir cihazla New York’ta ilk taşınabilir cep telefonunu gösterdi. Bu, mobil iletişimin yeni bir çağını başlattı.",
+    "topic": "günlük yaşam",
+    "title": "Domestik teknoloji çamaşır makinesini yarıya indirir",
+    "description": "Evdeki çamaşır makinesi, modern teknolojiler sayesinde yıkama süresini yarıya düşürür. Böylece günlük temizlik işiniz daha az zaman alır.",
     "hashtags": {
-      "primary": "mobiltelefon",
-      "secondary": "teknoloji"
+      "primary": "evteknolojisi",
+      "secondary": "enerjitazarrufu"
     },
     "tags": [
-      "ceptelefonu",
-      "martincooper",
-      "ilkcep",
-      "teknoloji",
-      "tarih"
+      "çamaşır makinesi",
+      "ev teknolojisi",
+      "zaman tasarrufu",
+      "ev otomasyonu",
+      "günlük iş"
     ]
   },
   "reference_sources": [
     {
-      "id": "18580879",
-      "title": "Transport",
-      "url": "https://en.wikipedia.org/wiki/Transport",
-      "text": "Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations. Transport infrastructure consists of fixed installations, including roads, railways, airways, waterways, canals, and pipelines, as well as terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports. Terminals may be used both for the interchange of passengers and cargo and for maintenance. Means of transport are any of the different kinds of transport facilities used to carry people or cargo. They may include vehicles, riding animals, and pack animals. Vehicles may include wagons, automobiles, bicycles, buses, trains, trucks, helicopters, watercraft, spacecraft, and aircraft. Mobility is concerned with the experience around transportation services, including aspects such as availability, information, usability, accessibility, and affordability (as in right to mobility)."
+      "id": "23416874",
+      "title": "Sense",
+      "url": "https://en.wikipedia.org/wiki/Sense",
+      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
     },
     {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     {
-      "id": "14539",
-      "title": "Internet",
-      "url": "https://en.wikipedia.org/wiki/Internet",
-      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
     },
     {
-      "id": "7878457",
-      "title": "Computer",
-      "url": "https://en.wikipedia.org/wiki/Computer",
-      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     }
   ],
   "error": null
