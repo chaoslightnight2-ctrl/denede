@@ -2,8 +2,8 @@
   "run_id": "40242998342",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta'",
-  "observed_at": 1792969629.9738858,
-  "failed_generation_excerpt": "{\"source_id\":\"25140\",\"title\":\"Alg\u0131 Neden Sadece Al\u0131c\u0131 De\u011fil, Aktif \u015eekillendiricidir\",\"description\":\"Alg\u0131, sadece d\u0131\u015fsal sinyalleri almakla kalmaz. \u00d6\u011frenme, bellek ve beklenti gibi i\u00e7sel fakt\u00f6rler onu \u015fekillendirir.\",\"hashtags\":{\"primary\":\"psikoloji\",\"secondary\":\"alg\u0131\"},\"topic\":\"psikoloji\",\"tags\":[\"alg\u0131\",\"duyusal\",\"bellek\",\"\u00f6\u011frenme\",\"dikkat\"],\"scenes\":[{\"text\":\"Alg\u0131 sadece duyusal bir al\u0131c\u0131 m\u0131 ger\u00e7ekten?\",\"visual_query\":\"brain scan\"}]}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1792969872.0130963,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
