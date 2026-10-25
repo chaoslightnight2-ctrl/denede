@@ -15,5 +15,12 @@
     "publish_at": "2026-10-25T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "40193648242",
+    "slot": "2300",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
