@@ -489,7 +489,8 @@
       "video_id": "mfrBiBSP0NM",
       "publish_at": "2026-10-25T16:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "40193648242"
+      "run_id": "40193648242",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }

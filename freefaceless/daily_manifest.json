@@ -1,16 +1,19 @@
 [
   {
-    "run_id": "40140728655",
+    "run_id": "40193648242",
     "slot": "1900",
     "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "40140728655",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-25T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-25T16:00:00Z",
+    "video_id": "mfrBiBSP0NM",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261025_123913_g-nl-k-hayat/final.mp4",
+    "topic": "günlük hayat",
+    "title": "Ev İşlerine Harcanan Zaman Azalıyor mu? Tartışmalı",
+    "narration": "Akıllı çamaşır makinesi ne kadar zaman kazandırır Domestik teknoloji ev işlerine harcanan süreyi azalttığını iddia eder ancak kanıtları kesin değildir Ev otomasyonu enerji verimliliği ve öz yeterlilik hedefler için Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-25T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
