@@ -1,65 +1,65 @@
 {
-  "run_id": "40193648242",
+  "run_id": "40221037624",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "79425",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "Akıllı çamaşır makinesi ne kadar zaman kazandırır?",
-        "visual_query": "washing machine"
+        "text": "Bir ampul yandığında gerçekten neler olur?",
+        "visual_query": "bulb"
       },
       {
-        "text": "Domestik teknoloji ev işlerine harcanan süreyi azalttığını iddia eder, ancak kanıtları kesin değildir.",
-        "visual_query": "home appliances"
+        "text": "Elektrik akımı hareket ettiğinde çevresinde bir manyetik alan oluşur ve bu alan cihazları çalıştırır.",
+        "visual_query": "coil"
       },
       {
-        "text": "Ev otomasyonu enerji verimliliği ve öz-yeterlilik hedefler için.",
-        "visual_query": "smart home"
+        "text": "Elektrik ışık, ısı ve ses gibi çeşitli fenomenlere yol açar.",
+        "visual_query": "wave"
       }
     ],
-    "closing_question": "Siz de zaman kazandınız mı?",
-    "closing_visual_query": "home interior",
+    "closing_question": "Siz de manyetik alan?",
+    "closing_visual_query": "mag",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük hayat",
-    "title": "Ev İşlerine Harcanan Zaman Azalıyor mu? Tartışmalı",
-    "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltabilir. Ancak bu iddianın bilimsel kanıtları kesin değildir.",
+    "topic": "günlük bilim",
+    "title": "Bir ampul yandığında manyetik alan oluşur",
+    "description": "Elektrik akımı hareket ettiğinde manyetik alan meydana gelir. Bu alan günlük cihazlarımızın çalışmasında rol oynar.",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "günlükyaşam"
+      "primary": "elektrik",
+      "secondary": "manyetik"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "evaparatları",
-      "zaman",
-      "verimlilik"
+      "elektrik",
+      "manyetik",
+      "günlük yaşam",
+      "bilim",
+      "fizik"
     ]
   },
   "reference_sources": [
     {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "54176",
+      "title": "Human body",
+      "url": "https://en.wikipedia.org/wiki/Human_body",
+      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     },
     {
-      "id": "252137",
-      "title": "Food science",
-      "url": "https://en.wikipedia.org/wiki/Food_science",
-      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
+      "id": "1787105",
+      "title": "Animal sexual behaviour",
+      "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
+      "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
     },
     {
-      "id": "27834",
-      "title": "Sleep",
-      "url": "https://en.wikipedia.org/wiki/Sleep",
-      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+      "id": "26903",
+      "title": "Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System",
+      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
     },
     {
-      "id": "33978",
-      "title": "Weather",
-      "url": "https://en.wikipedia.org/wiki/Weather",
-      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     }
   ],
   "error": null
