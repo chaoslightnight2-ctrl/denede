@@ -1,11 +1,11 @@
 {
-  "source_run": "40221037624",
-  "verified_at": "2026-10-25T18:28:04.040126+00:00",
+  "source_run": "40236989382",
+  "verified_at": "2026-10-25T21:59:51.563284+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
   "accepted_count": 0,
