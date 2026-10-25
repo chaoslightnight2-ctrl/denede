@@ -1,9 +1,9 @@
 [
   {
-    "run_id": "40221037624",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
+    "run_id": "40236989382",
+    "slot": "1900",
+    "niche": "Psikoloji ve insan davranışları",
     "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
