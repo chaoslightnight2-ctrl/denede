@@ -478,6 +478,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "40119250633",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261025_123913",
+      "topic": "günlük hayat",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Ev İşlerine Harcanan Zaman Azalıyor mu? Tartışmalı",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261025_123913_g-nl-k-hayat/final.mp4",
+      "video_id": "mfrBiBSP0NM",
+      "publish_at": "2026-10-25T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "40193648242"
     }
   ]
 }
