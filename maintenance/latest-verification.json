@@ -1,19 +1,44 @@
 {
-  "source_run": "40140728655",
-  "verified_at": "2026-10-24T23:11:52.309746+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "40193648242",
+  "verified_at": "2026-10-25T12:52:02.120150+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "video_id": "mfrBiBSP0NM",
+      "youtube_url": "https://youtu.be/mfrBiBSP0NM",
+      "title": "Ev İşlerine Harcanan Zaman Azalıyor mu? Tartışmalı",
+      "narration": "Akıllı çamaşır makinesi ne kadar zaman kazandırır Domestik teknoloji ev işlerine harcanan süreyi azalttığını iddia eder ancak kanıtları kesin değildir Ev otomasyonu enerji verimliliği ve öz yeterlilik hedefler için Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-25T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-25T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.266667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/mfrBiBSP0NM.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [
+    {
+      "index": 2,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
