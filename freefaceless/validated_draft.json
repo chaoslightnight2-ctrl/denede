@@ -1,87 +1,87 @@
 {
-  "focus": "Psikoloji ve insan davranışları",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-26T14:27:13.668846+00:00",
+  "saved_at": "2026-10-26T20:39:12.906647+00:00",
   "data": {
-    "source_id": "25140",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "Gözlerimiz ışığı yakalar beyin nasıl işler",
-        "visual_query": "eye retina"
+        "text": "Elektrik akımı neden manyetik alan yaratır",
+        "visual_query": "electric coil"
       },
       {
-        "text": "Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir beyin bu sinyalleri yorumlar",
-        "visual_query": "brain neurons"
+        "text": "Akım hareket eden yüklü parçacıklar çevredeki uzayda manyetik alan oluşturur Bu da manyetizmanın temel prensibidir",
+        "visual_query": "magnet coil"
       },
       {
-        "text": "Algı öğrenme hafıza beklentiyle şekillenir ve dikkat beynin alt katmanları",
-        "visual_query": "memory attention"
+        "text": "Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar",
+        "visual_query": "light bulb"
       },
       {
-        "text": "Siz de bunu gördünüz mü İlginç Gerçekler kanalına abone ol",
-        "visual_query": "person thinking"
+        "text": "Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "lab bench"
       }
     ],
-    "closing_question": "Siz de bunu gördünüz mü",
-    "closing_visual_query": "person thinking",
+    "closing_question": "Siz de deney yaptınız mı?",
+    "closing_visual_query": "lab bench",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "algı",
-    "title": "Gözlerimiz ışığı yakalar beyin nasıl yorumlar",
-    "description": "Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir Beyin bu sinyalleri yorumlayarak görmemizi sağlar\n\n#shorts #perception #psychology",
+    "topic": "elektrik",
+    "title": "Elektrik Akımı ve Manyetik Alan: Günlük Bilim",
+    "description": "Elektrik akımı hareket eden yüklü parçacıkların oluşturduğu manyetik alandır. Bu etkileşim ışık ve ısı gibi diğer fenomenleri de içerir.\n\n#shorts #elektrik #manyetizma",
     "hashtags": {
-      "primary": "perception",
-      "secondary": "psychology"
+      "primary": "elektrik",
+      "secondary": "manyetizma"
     },
     "tags": [
-      "görme",
-      "algı",
-      "beyin",
-      "sinir",
-      "duyular"
+      "elektrik",
+      "manyetik",
+      "akım",
+      "fenomen",
+      "bilim"
     ],
-    "spoken_text": "Gözlerimiz ışığı yakalar beyin nasıl işler Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir beyin bu sinyalleri yorumlar Algı öğrenme hafıza beklentiyle şekillenir ve dikkat beynin alt katmanları Siz de bunu gördünüz mü İlginç Gerçekler kanalına abone ol",
-    "full_text": "Gözlerimiz ışığı yakalar beyin nasıl işler Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir beyin bu sinyalleri yorumlar Algı öğrenme hafıza beklentiyle şekillenir ve dikkat beynin alt katmanları Siz de bunu gördünüz mü İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Gözlerimiz ışığı yakalar beyin nasıl işler. Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir beyin bu sinyalleri yorumlar. Algı öğrenme hafıza beklentiyle şekillenir ve dikkat beynin alt katmanları. Siz de bunu gördünüz mü İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "human_behavior",
+    "spoken_text": "Elektrik akımı neden manyetik alan yaratır Akım hareket eden yüklü parçacıklar çevredeki uzayda manyetik alan oluşturur Bu da manyetizmanın temel prensibidir Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Elektrik akımı neden manyetik alan yaratır Akım hareket eden yüklü parçacıklar çevredeki uzayda manyetik alan oluşturur Bu da manyetizmanın temel prensibidir Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Elektrik akımı neden manyetik alan yaratır. Akım hareket eden yüklü parçacıklar çevredeki uzayda manyetik alan oluşturur Bu da manyetizmanın temel prensibidir. Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar. Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
     "hook_style": "direct_change",
     "reference_source": {
-      "id": "25140",
-      "title": "Perception",
-      "url": "https://en.wikipedia.org/wiki/Perception",
-      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     "raw_groq_package": {
-      "source_id": "25140",
+      "source_id": "9550",
       "scenes": [
         {
-          "text": "Gözlerimiz ışığı yakalar beyin nasıl işler",
-          "visual_query": "eye retina"
+          "text": "Elektrik akımı neden manyetik alan yaratır?",
+          "visual_query": "electric coil"
         },
         {
-          "text": "Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir beyin bu sinyalleri yorumlar",
-          "visual_query": "brain neurons"
+          "text": "Akım hareket eden yüklü parçacıklar, çevredeki uzayda manyetik alan oluşturur. Bu da manyetizmanın temel prensibidir.",
+          "visual_query": "magnet coil"
         },
         {
-          "text": "Algı öğrenme hafıza beklentiyle şekillenir ve dikkat beynin alt katmanları",
-          "visual_query": "memory attention"
+          "text": "Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar.",
+          "visual_query": "light bulb"
         }
       ],
-      "closing_question": "Siz de bunu gördünüz mü",
-      "closing_visual_query": "person thinking",
+      "closing_question": "Siz de deney yaptınız mı?",
+      "closing_visual_query": "lab bench",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "algı",
-      "title": "Gözlerimiz ışığı yakalar beyin nasıl yorumlar",
-      "description": "Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir Beyin bu sinyalleri yorumlayarak görmemizi sağlar",
+      "topic": "elektrik",
+      "title": "Elektrik Akımı ve Manyetik Alan: Günlük Bilim",
+      "description": "Elektrik akımı hareket eden yüklü parçacıkların oluşturduğu manyetik alandır. Bu etkileşim ışık ve ısı gibi diğer fenomenleri de içerir.",
       "hashtags": {
-        "primary": "perception",
-        "secondary": "psychology"
+        "primary": "elektrik",
+        "secondary": "manyetizma"
       },
       "tags": [
-        "görme",
-        "algı",
-        "beyin",
-        "sinir",
-        "duyular"
+        "elektrik",
+        "manyetik",
+        "akım",
+        "fenomen",
+        "bilim"
       ]
     },
     "generation_mode": "prompt_first_v1"
