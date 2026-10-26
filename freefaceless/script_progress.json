@@ -1,65 +1,65 @@
 {
-  "run_id": "40221037624",
+  "run_id": "40337857438",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "9550",
+    "source_id": "25140",
     "scenes": [
       {
-        "text": "Bir ampul yandığında gerçekten neler olur?",
-        "visual_query": "bulb"
+        "text": "Gözlerimiz ışığı yakalar beyin nasıl işler",
+        "visual_query": "eye retina"
       },
       {
-        "text": "Elektrik akımı hareket ettiğinde çevresinde bir manyetik alan oluşur ve bu alan cihazları çalıştırır.",
-        "visual_query": "coil"
+        "text": "Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir beyin bu sinyalleri yorumlar",
+        "visual_query": "brain neurons"
       },
       {
-        "text": "Elektrik ışık, ısı ve ses gibi çeşitli fenomenlere yol açar.",
-        "visual_query": "wave"
+        "text": "Algı öğrenme hafıza beklentiyle şekillenir ve dikkat beynin alt katmanları",
+        "visual_query": "memory attention"
       }
     ],
-    "closing_question": "Siz de manyetik alan?",
-    "closing_visual_query": "mag",
+    "closing_question": "Siz de bunu gördünüz mü",
+    "closing_visual_query": "person thinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Bir ampul yandığında manyetik alan oluşur",
-    "description": "Elektrik akımı hareket ettiğinde manyetik alan meydana gelir. Bu alan günlük cihazlarımızın çalışmasında rol oynar.",
+    "topic": "algı",
+    "title": "Gözlerimiz ışığı yakalar beyin nasıl yorumlar",
+    "description": "Işık retinaya çarpar ve sinir hücreleri elektrik sinyali üretir Beyin bu sinyalleri yorumlayarak görmemizi sağlar",
     "hashtags": {
-      "primary": "elektrik",
-      "secondary": "manyetik"
+      "primary": "perception",
+      "secondary": "psychology"
     },
     "tags": [
-      "elektrik",
-      "manyetik",
-      "günlük yaşam",
-      "bilim",
-      "fizik"
+      "görme",
+      "algı",
+      "beyin",
+      "sinir",
+      "duyular"
     ]
   },
   "reference_sources": [
     {
-      "id": "54176",
-      "title": "Human body",
-      "url": "https://en.wikipedia.org/wiki/Human_body",
-      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
+      "id": "25140",
+      "title": "Perception",
+      "url": "https://en.wikipedia.org/wiki/Perception",
+      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
     },
     {
-      "id": "1787105",
-      "title": "Animal sexual behaviour",
-      "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
-      "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
+      "id": "68753",
+      "title": "Attention",
+      "url": "https://en.wikipedia.org/wiki/Attention",
+      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
     },
     {
-      "id": "26903",
-      "title": "Solar System",
-      "url": "https://en.wikipedia.org/wiki/Solar_System",
-      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
+      "id": "183403",
+      "title": "Learning",
+      "url": "https://en.wikipedia.org/wiki/Learning",
+      "text": "Learning is the process of acquiring new understanding, knowledge, behavior, skills, values, attitudes, and preferences. The ability to learn is possessed by humans, other animals, and some machines. There is also evidence for some kind of learning in certain plants. Some learning is immediate, induced by a single event (e.g. being burned by a hot stove), but much skill and knowledge accumulate from repeated experiences. The changes induced by learning often last a lifetime, and it is hard to distinguish learned material that seems to be \"lost\" from that which cannot be retrieved. Human learning begins at birth and may even start before birth and continues until death as a consequence of ongoing interactions between people and their environment. The nature and processes involved in learning are studied in many established fields (including educational psychology, neuropsychology, experimental psychology, Cognitive science, and pedagogy), as well as emerging fields of knowledge (e.g. with a shared interest in the topic of learning from safety events such as incidents or accidents, or in collaborative learning health systems). Research in such fields has led to the significant identification of various sorts of learning. For example, learning may occur as a result of habituation, or classical conditioning, operant conditioning or as a result of more complex activities such as play, seen only in more cognitively complex animals. Learning may occur consciously or without conscious awareness. Learning that an aversive event cannot be avoided or escaped may result in a condition called learned helplessness."
     },
     {
-      "id": "9550",
-      "title": "Electricity",
-      "url": "https://en.wikipedia.org/wiki/Electricity",
-      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+      "id": "563299",
+      "title": "Human behavior",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
     }
   ],
   "error": null
