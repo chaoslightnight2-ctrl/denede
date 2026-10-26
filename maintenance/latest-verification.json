@@ -1,21 +1,50 @@
 {
-  "source_run": "40337857438",
-  "verified_at": "2026-10-26T14:39:56.606836+00:00",
-  "videos": [],
+  "source_run": "40395955029",
+  "verified_at": "2026-10-26T20:58:09.205376+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "pT05mDIGbwY",
+      "youtube_url": "https://youtu.be/pT05mDIGbwY",
+      "title": "Elektrik Akımı ve Manyetik Alan: Günlük Bilim",
+      "narration": "Elektrik akımı neden manyetik alan yaratır Akım hareket eden yüklü parçacıklar çevredeki uzayda manyetik alan oluşturur Bu da manyetizmanın temel prensibidir Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-27T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-27T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.166667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/pT05mDIGbwY.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
       "error": "No described asset matches scene 2: memory attention"
     },
     {
-      "index": 2,
+      "index": 3,
       "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
