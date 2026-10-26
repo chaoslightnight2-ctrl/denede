@@ -1,17 +1,21 @@
 {
-  "source_run": "40242998342",
-  "verified_at": "2026-10-25T23:15:55.015016+00:00",
+  "source_run": "40337857438",
+  "verified_at": "2026-10-26T14:39:56.606836+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
+      "error": "No described asset matches scene 2: memory attention"
+    },
+    {
+      "index": 2,
       "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "target_count": 1,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
