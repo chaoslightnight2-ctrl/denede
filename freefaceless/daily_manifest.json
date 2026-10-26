@@ -1,9 +1,9 @@
 [
   {
-    "run_id": "40242998342",
+    "run_id": "40337857438",
     "slot": "1900",
     "niche": "Psikoloji ve insan davranışları",
     "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    "error": "No described asset matches scene 2: memory attention"
   }
 ]
