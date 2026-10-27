@@ -1,16 +1,19 @@
 [
   {
-    "run_id": "40425283242",
+    "run_id": "40509866763",
     "slot": "1900",
     "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "40425283242",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-27T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-27T16:00:00Z",
+    "video_id": "1Kk67z2-JJU",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261027_134715_hava-durumu/final.mp4",
+    "topic": "hava durumu",
+    "title": "Sabahları Gökyüzünün Gri Olmasının Nedeni Nem ve Basınç",
+    "narration": "Sabahları gökyüzü neden sık sık gri görünür Çünkü atmosferdeki sıcaklık nem ve basınç farkları sabahları daha yoğun bulut oluşturur ve görünür Dünya atmosferinin en alt katmanı troposfer burada çoğu hava olayı gerçekleşir Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-27T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
