@@ -1,65 +1,65 @@
 {
-  "run_id": "40395955029",
+  "run_id": "40425283242",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "9550",
+    "source_id": "27834",
     "scenes": [
       {
-        "text": "Elektrik akımı neden manyetik alan yaratır?",
-        "visual_query": "electric coil"
+        "text": "Uykuda beyin hâlâ gerçekten çalışıyor mu?",
+        "visual_query": "bed"
       },
       {
-        "text": "Akım hareket eden yüklü parçacıklar, çevredeki uzayda manyetik alan oluşturur. Bu da manyetizmanın temel prensibidir.",
-        "visual_query": "magnet coil"
+        "text": "Uykuda kaslar felç olur, beyin ise aktif kalır, hatta koma kadar değil.",
+        "visual_query": "head"
       },
       {
-        "text": "Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar.",
-        "visual_query": "light bulb"
+        "text": "REM uykusunda beden sanal olarak felç olur, rüyalar bu aşamada yoğunlaşır.",
+        "visual_query": "room"
       }
     ],
-    "closing_question": "Siz de deney yaptınız mı?",
-    "closing_visual_query": "lab bench",
+    "closing_question": "Siz de aynı şekilde mi?",
+    "closing_visual_query": "eye",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "elektrik",
-    "title": "Elektrik Akımı ve Manyetik Alan: Günlük Bilim",
-    "description": "Elektrik akımı hareket eden yüklü parçacıkların oluşturduğu manyetik alandır. Bu etkileşim ışık ve ısı gibi diğer fenomenleri de içerir.",
+    "topic": "günlük hayat ve eşyalar",
+    "title": "Uykuda Beyin Neden Aktiftir? Kaslar Felç Olur",
+    "description": "Uykuda kaslar felç olur, beyin hâlâ aktif kalır. Bu durum REM uykusunda özellikle belirgindir.",
     "hashtags": {
-      "primary": "elektrik",
-      "secondary": "manyetizma"
+      "primary": "uyku",
+      "secondary": "beyin"
     },
     "tags": [
-      "elektrik",
-      "manyetik",
-      "akım",
-      "fenomen",
-      "bilim"
+      "uyku",
+      "beyin",
+      "kaslar",
+      "rem",
+      "dinlenme"
     ]
   },
   "reference_sources": [
     {
-      "id": "1787105",
-      "title": "Animal sexual behaviour",
-      "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
-      "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     },
     {
-      "id": "26903",
-      "title": "Solar System",
-      "url": "https://en.wikipedia.org/wiki/Solar_System",
-      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     },
     {
-      "id": "9550",
-      "title": "Electricity",
-      "url": "https://en.wikipedia.org/wiki/Electricity",
-      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+      "id": "27709",
+      "title": "Semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Semiconductor",
+      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
     },
     {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "23416874",
+      "title": "Sense",
+      "url": "https://en.wikipedia.org/wiki/Sense",
+      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
     }
   ],
   "error": null
