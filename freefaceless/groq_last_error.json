@@ -2,8 +2,8 @@
   "run_id": "40509866763",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1793108350.1268299,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1793108590.2387364,
+  "failed_generation_excerpt": "{\"source_id\":\"33978\",\"scenes\":[{\"text\":\"G\u00fcn i\u00e7inde s\u0131cakl\u0131k neden bu kadar ger\u00e7ekten de\u011fi\u015fir?\",\"visual_query\":\"sky\"},{\"text\":\"\u00c7\u00fcnk\u00fc G\u00fcne\u015f \u0131\u015f\u0131n\u0131m\u0131 enlem fark\u0131yla farkl\u0131 yo\u011funlukta gelir, s\u0131cakl\u0131k \u00b1k\u0131rk\u00b0C'ye ula\u015f\u0131r y\u0131ll\u0131k daha fazla.\",\"visual_query\":\"sun\"},{\"text\":\"Atmosferin en alt katman\u0131 troposfer, hava olaylar\u0131n\u0131n \u00e7o\u011fu burada ger\u00e7ekle\u015fir g\u00fcnl\u00fck ya\u015famda.\",\"visual_query\":\"map\"}]}",
   "retry_after": null
 }
