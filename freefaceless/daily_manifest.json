@@ -1,33 +1,9 @@
 [
   {
-    "run_id": "40395955029",
+    "run_id": "40425283242",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": false,
-    "error": "No described asset matches scene 2: memory attention"
-  },
-  {
-    "run_id": "40395955029",
-    "slot": "2100",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-27T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-27T18:00:00Z",
-    "video_id": "pT05mDIGbwY",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261026_203914_elektrik/final.mp4",
-    "topic": "elektrik",
-    "title": "Elektrik Akımı ve Manyetik Alan: Günlük Bilim",
-    "narration": "Elektrik akımı neden manyetik alan yaratır Akım hareket eden yüklü parçacıklar çevredeki uzayda manyetik alan oluşturur Bu da manyetizmanın temel prensibidir Elektrik aynı zamanda ışık ve ısı gibi fenomenleri kapsar Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-27T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "40395955029",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
