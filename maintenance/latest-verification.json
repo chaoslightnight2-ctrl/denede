@@ -1,19 +1,44 @@
 {
-  "source_run": "40425283242",
-  "verified_at": "2026-10-27T00:27:51.055515+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "40509866763",
+  "verified_at": "2026-10-27T14:03:46.421514+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "video_id": "1Kk67z2-JJU",
+      "youtube_url": "https://youtu.be/1Kk67z2-JJU",
+      "title": "Sabahları Gökyüzünün Gri Olmasının Nedeni Nem ve Basınç",
+      "narration": "Sabahları gökyüzü neden sık sık gri görünür Çünkü atmosferdeki sıcaklık nem ve basınç farkları sabahları daha yoğun bulut oluşturur ve görünür Dünya atmosferinin en alt katmanı troposfer burada çoğu hava olayı gerçekleşir Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-27T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-27T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.933333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/1Kk67z2-JJU.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [
+    {
+      "index": 2,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
