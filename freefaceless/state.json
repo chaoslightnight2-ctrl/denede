@@ -35,7 +35,8 @@
     "mobil telefon tarihi",
     "günlük hayat",
     "günlük hayatta bilimin açıklamaları",
-    "psikoloji"
+    "psikoloji",
+    "hava durumu"
   ],
   "published": [
     {
@@ -504,6 +505,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "40395955029",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261027_134715",
+      "topic": "hava durumu",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Sabahları Gökyüzünün Gri Olmasının Nedeni Nem ve Basınç",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261027_134715_hava-durumu/final.mp4",
+      "video_id": "1Kk67z2-JJU",
+      "publish_at": "2026-10-27T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "40509866763"
     }
   ]
 }
