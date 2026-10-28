@@ -1,9 +1,9 @@
 [
   {
-    "run_id": "40574877484",
+    "run_id": "40607859699",
     "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
+    "niche": "Teknoloji ve icatlar",
     "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
