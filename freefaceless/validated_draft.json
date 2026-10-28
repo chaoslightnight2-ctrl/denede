@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-28T14:07:13.187070+00:00",
+  "saved_at": "2026-10-28T14:15:12.101807+00:00",
   "data": {
-    "source_id": "19644137",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "İlk cep telefonu ne kadar ağırdı",
-        "visual_query": "old phone"
+        "text": "Evdeki zaman tasarrufu gerçekten nereden geliyor",
+        "visual_query": "laundry room"
       },
       {
-        "text": "bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı New Yorkta gösterdi",
-        "visual_query": "handheld demo"
+        "text": "Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır",
+        "visual_query": "home appliances"
       },
       {
-        "text": "Bugün cep telefonları LTE ve 5G gibi ağları destekler",
-        "visual_query": "modern phone"
+        "text": "Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir",
+        "visual_query": "washing machine"
       },
       {
-        "text": "Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "phone hand"
+        "text": "Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "clock hands"
       }
     ],
-    "closing_question": "Siz hangi telefonu tercih edersiniz?",
-    "closing_visual_query": "phone hand",
+    "closing_question": "Siz de zaman kazandınız mı?",
+    "closing_visual_query": "clock hands",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "İlk Cep Telefonu Ne Kadar Ağırdı? İşte Cevabı!",
-    "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te iki kilogram ağırlığındaydı. Martin Cooper bu cihazı New York’ta tanıttı.\n\n#shorts #teknoloji #mobiltelefon",
+    "topic": "ev teknolojisi",
+    "title": "Ev teknolojileri ev işlerini azaltır mı? Tartışmalı",
+    "description": "Domestik teknoloji, ev işlerinde harcanan zamanı azalttığı iddia edilir. Ancak bu iddianın doğruluğu tartışmalıdır.\n\n#shorts #evteknolojisi #günlükyaşam",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
+      "primary": "evteknolojisi",
+      "secondary": "günlükyaşam"
     },
     "tags": [
-      "ceptelefonu",
-      "ilktelefon",
-      "mobilteknoloji",
-      "tarih",
-      "martincooper"
+      "ev",
+      "teknoloji",
+      "ev işleri",
+      "otomasyon",
+      "verimlilik"
     ],
-    "spoken_text": "İlk cep telefonu ne kadar ağırdı bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı New Yorkta gösterdi Bugün cep telefonları LTE ve 5G gibi ağları destekler Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu ne kadar ağırdı bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı New Yorkta gösterdi Bugün cep telefonları LTE ve 5G gibi ağları destekler Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu ne kadar ağırdı. bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı New Yorkta gösterdi. Bugün cep telefonları LTE ve 5G gibi ağları destekler. Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "direct_change",
+    "spoken_text": "Evdeki zaman tasarrufu gerçekten nereden geliyor Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Evdeki zaman tasarrufu gerçekten nereden geliyor Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Evdeki zaman tasarrufu gerçekten nereden geliyor. Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır. Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir. Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
+      "source_id": "79425",
       "scenes": [
         {
-          "text": "İlk cep telefonu ne kadar ağırdı?",
-          "visual_query": "old phone"
+          "text": "Evdeki zaman tasarrufu gerçekten nereden geliyor?",
+          "visual_query": "laundry room"
         },
         {
-          "text": "bin dokuz yüz yetmiş üç'te Martin Cooper, iki kilogramlık cihazı New York’ta gösterdi.",
-          "visual_query": "handheld demo"
+          "text": "Domestik teknoloji, ev işlerinde harcanan zamanı azalttığı iddia edilir, fakat bu tartışmalıdır.",
+          "visual_query": "home appliances"
         },
         {
-          "text": "Bugün cep telefonları LTE ve 5G gibi ağları destekler.",
-          "visual_query": "modern phone"
+          "text": "Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir.",
+          "visual_query": "washing machine"
         }
       ],
-      "closing_question": "Siz hangi telefonu tercih edersiniz?",
-      "closing_visual_query": "phone hand",
+      "closing_question": "Siz de zaman kazandınız mı?",
+      "closing_visual_query": "clock hands",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "İlk Cep Telefonu Ne Kadar Ağırdı? İşte Cevabı!",
-      "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te iki kilogram ağırlığındaydı. Martin Cooper bu cihazı New York’ta tanıttı.",
+      "topic": "ev teknolojisi",
+      "title": "Ev teknolojileri ev işlerini azaltır mı? Tartışmalı",
+      "description": "Domestik teknoloji, ev işlerinde harcanan zamanı azalttığı iddia edilir. Ancak bu iddianın doğruluğu tartışmalıdır.",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobiltelefon"
+        "primary": "evteknolojisi",
+        "secondary": "günlükyaşam"
       },
       "tags": [
-        "ceptelefonu",
-        "ilktelefon",
-        "mobilteknoloji",
-        "tarih",
-        "martincooper"
+        "ev",
+        "teknoloji",
+        "ev işleri",
+        "otomasyon",
+        "verimlilik"
       ]
     },
     "generation_mode": "prompt_first_v1"
