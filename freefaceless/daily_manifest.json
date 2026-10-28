@@ -12,5 +12,12 @@
     "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "40607859699",
+    "slot": "2300",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
