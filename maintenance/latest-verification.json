@@ -1,74 +1,17 @@
 {
-  "source_run": "40701613210",
-  "verified_at": "2026-10-28T14:23:50.713297+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "l7pqLfnZElc",
-      "youtube_url": "https://youtu.be/l7pqLfnZElc",
-      "title": "İlk Cep Telefonu Ne Kadar Ağırdı? İşte Cevabı!",
-      "narration": "İlk cep telefonu ne kadar ağırdı bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı New Yorkta gösterdi Bugün cep telefonları LTE ve 5G gibi ağları destekler Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-28T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-28T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.533333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/l7pqLfnZElc.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "JkvYEv1iPyI",
-      "youtube_url": "https://youtu.be/JkvYEv1iPyI",
-      "title": "Ev teknolojileri ev işlerini azaltır mı? Tartışmalı",
-      "narration": "Evdeki zaman tasarrufu gerçekten nereden geliyor Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-28T18:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-28T18:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 20.033333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/JkvYEv1iPyI.jpg"
-    }
-  ],
+  "source_run": "40761569254",
+  "verified_at": "2026-10-28T20:28:17.788595+00:00",
+  "videos": [],
   "errors": [
     {
-      "index": 3,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "index": 1,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 2,
-  "processed_count": 2,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 3,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
