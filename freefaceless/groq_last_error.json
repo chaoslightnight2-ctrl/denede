@@ -2,8 +2,8 @@
   "run_id": "40701613210",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1793196190.0886154,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1793196669.920821,
+  "failed_generation_excerpt": "{\"source_id\":\"79425\",\"scenes\":[{\"text\":\"Ev teknolojileriyle evdeki zaman tasarrufu nas\u0131l m\u00fcmk\u00fcn?\",\"visual_query\":\"kitchen clock\"},{\"text\":\"Ev teknolojileri, ev i\u015flerine harcanan s\u00fcreyi azaltt\u0131; bu iddia tam olarak kan\u0131tlanmam\u0131\u015f, tart\u0131\u015fmal\u0131.\",\"visual_query\":\"washing machine\"},{\"text\":\"Ayr\u0131ca, ev teknolojileri enerji verimlili\u011fi ve \u00f6z-yeterlilik hedefliyor.\",\"visual_query\":\"solar panel\"}]}",
   "retry_after": null
 }
