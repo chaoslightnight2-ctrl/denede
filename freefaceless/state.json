@@ -518,6 +518,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "40509866763",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261028_140714",
+      "topic": "teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "İlk Cep Telefonu Ne Kadar Ağırdı? İşte Cevabı!",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261028_140714_teknoloji/final.mp4",
+      "video_id": "l7pqLfnZElc",
+      "publish_at": "2026-10-28T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "40701613210"
     }
   ]
 }
