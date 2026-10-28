@@ -2,8 +2,8 @@
   "run_id": "40607859699",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1793147229.9346035,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1793147470.1149206,
+  "failed_generation_excerpt": "{\"source_id\":\"79425\",\"scenes\":[{\"text\":\"Evdeki ak\u0131ll\u0131 cihazlar ne i\u015fe yarar g\u00fcnl\u00fck ya\u015famda?\",\"visual_query\":\"smart home\"},{\"text\":\"Ev teknolojileri, i\u015f y\u00fck\u00fcn\u00fc azaltmay\u0131 vaat eder; fakat bu iddia kesin kan\u0131tlara dayanmaz, etkili de\u011fildir.\",\"visual_query\":\"washing machine\"},{\"text\":\"Ev otomasyonu, enerji verimlili\u011fi ve \u00f6z-yeterlilik hedefler sa\u011flar ev sahiplerine.\",\"visual_query\":\"home automation\"}]}",
   "retry_after": null
 }
