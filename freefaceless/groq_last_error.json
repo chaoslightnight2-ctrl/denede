@@ -1,9 +1,9 @@
 {
-  "run_id": "40574877484",
+  "run_id": "40607859699",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1793132349.9394515,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1793146749.9658785,
+  "failed_generation_excerpt": "{\"source_id\":\"1164\",\"scenes\":[{\"text\":\"Yapay zek\u00e2 tarihindeki b\u00fcy\u00fck d\u00f6n\u00fcm noktas\u0131 nedir?\",\"visual_query\":\"ai\"},{\"text\":\"Yapay zek\u00e2 akademik disiplin olarak 1956 y\u0131l\u0131nda, yani bin dokuz y\u00fcz elli alt\u0131, kurulmu\u015ftur.\",\"visual_query\":\"lab\"},{\"text\":\"AI ara\u015ft\u0131rmalar\u0131 d\u00f6nemsel olarak iyimserlik ve AI k\u0131\u015flar\u0131yla dalgalan\u0131r, toplumu etkiler.\",\"visual_query\":\"pie\"}]}",
   "retry_after": null
 }
