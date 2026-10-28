@@ -1,23 +1,19 @@
 [
   {
-    "run_id": "40607859699",
+    "run_id": "40701613210",
     "slot": "1900",
     "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "40607859699",
-    "slot": "2100",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "40607859699",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-28T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-28T16:00:00Z",
+    "video_id": "l7pqLfnZElc",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261028_140714_teknoloji/final.mp4",
+    "topic": "teknoloji",
+    "title": "İlk Cep Telefonu Ne Kadar Ağırdı? İşte Cevabı!",
+    "narration": "İlk cep telefonu ne kadar ağırdı bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı New Yorkta gösterdi Bugün cep telefonları LTE ve 5G gibi ağları destekler Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-28T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
