@@ -1,9 +1,19 @@
 [
   {
-    "run_id": "40761569254",
+    "run_id": "40795430132",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-29T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-29T16:00:00Z",
+    "video_id": "o5OubKrz7LQ",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261029_004714_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
+    "narration": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı Yüzeyin yetmiş bir yüzdeyi su oluşturur okyanuslar ve göller dahil yaşamın temel kaynağıdır Su polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-29T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
