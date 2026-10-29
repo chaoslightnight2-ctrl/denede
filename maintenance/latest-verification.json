@@ -1,17 +1,75 @@
 {
-  "source_run": "40761569254",
-  "verified_at": "2026-10-28T20:28:17.788595+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "40795430132",
+  "verified_at": "2026-10-29T01:07:46.828580+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "video_id": "o5OubKrz7LQ",
+      "youtube_url": "https://youtu.be/o5OubKrz7LQ",
+      "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
+      "narration": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı Yüzeyin yetmiş bir yüzdeyi su oluşturur okyanuslar ve göller dahil yaşamın temel kaynağıdır Su polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-29T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-29T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.366667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/o5OubKrz7LQ.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "rfGyRcqjCzk",
+      "youtube_url": "https://youtu.be/rfGyRcqjCzk",
+      "title": "1973'te Martin Cooper'ın 2 kg'lık İlk Cep Telefonu",
+      "narration": "İlk cep telefonu ne kadar ağırdı 1973te Martin Cooper iki kilogram ağırlığındaki ilk taşınabilir telefon cihazını New Yorkta tanıttı Bu cihaz yaklaşık iki kilogram ağırlığındaydı ve sadece sesli arama yapabiliyordu Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-29T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-29T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.933333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/rfGyRcqjCzk.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [
+    {
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    }
+  ],
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
-  "target_count": 1,
+  "public_listing_error": "HTTPError",
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
