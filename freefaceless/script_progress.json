@@ -1,39 +1,39 @@
 {
-  "run_id": "40889684208",
+  "run_id": "40947508179",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "33306",
     "scenes": [
       {
-        "text": "Dünya yüzeyinde su ne kadar hâkim?",
+        "text": "Su, hayatın gizli süper kahramanı mı?",
         "visual_query": "sea"
       },
       {
-        "text": "Yüzeyin yaklaşık yetmiş bir yüzdeyi su kaplar, yani büyük bir kısmı sudur ve yaşamı destekler.",
-        "visual_query": "map"
+        "text": "Dünya yüzeyinin yaklaşık yetmiş bir yüzdeyi su kaplar, yani büyük bir kısmı sudur.",
+        "visual_query": "sea"
       },
       {
-        "text": "Su, polar molekül yapısı sayesinde güçlü hidrojen bağları oluşturur ve ısıyı taşır.",
-        "visual_query": "drop"
+        "text": "Su, polar molekül yapısı sayesinde evrensel çözücü olarak bilinir.",
+        "visual_query": "sea"
       }
     ],
-    "closing_question": "Sizce suyun önemi nedir?",
-    "closing_visual_query": "cup",
+    "closing_question": "Siz de suyu seviyor musunuz?",
+    "closing_visual_query": "sea",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
+    "topic": "günlükbilim",
     "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
-    "description": "Dünya yüzeyinin büyük bir kısmı sudur. Yüzeyin yaklaşık yetmiş bir yüzdeyi su kaplar.",
+    "description": "Dünya yüzeyinin yaklaşık yetmiş bir yüzdeyi su kaplar. Bu büyük su kütlesi yaşam için temel bir kaynaktır.",
     "hashtags": {
       "primary": "su",
-      "secondary": "doğa"
+      "secondary": "bilim"
     },
     "tags": [
       "su",
-      "dünya",
-      "yüzey",
+      "doğa",
       "bilim",
-      "gerçek"
+      "günlük hayat",
+      "coğrafya"
     ]
   },
   "reference_sources": [
