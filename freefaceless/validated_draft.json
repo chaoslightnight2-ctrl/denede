@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-28T14:15:12.101807+00:00",
+  "saved_at": "2026-10-29T00:47:12.757083+00:00",
   "data": {
-    "source_id": "79425",
+    "source_id": "33306",
     "scenes": [
       {
-        "text": "Evdeki zaman tasarrufu gerçekten nereden geliyor",
-        "visual_query": "laundry room"
+        "text": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı",
+        "visual_query": "earth surface"
       },
       {
-        "text": "Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır",
-        "visual_query": "home appliances"
+        "text": "Yüzeyin yetmiş bir yüzdeyi su oluşturur okyanuslar ve göller dahil yaşamın temel kaynağıdır",
+        "visual_query": "water globe"
       },
       {
-        "text": "Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir",
-        "visual_query": "washing machine"
+        "text": "Su polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir",
+        "visual_query": "water molecule"
       },
       {
-        "text": "Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-        "visual_query": "clock hands"
+        "text": "Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "person drinking"
       }
     ],
-    "closing_question": "Siz de zaman kazandınız mı?",
-    "closing_visual_query": "clock hands",
+    "closing_question": "Siz de suyu seviyor musunuz?",
+    "closing_visual_query": "person drinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "ev teknolojisi",
-    "title": "Ev teknolojileri ev işlerini azaltır mı? Tartışmalı",
-    "description": "Domestik teknoloji, ev işlerinde harcanan zamanı azalttığı iddia edilir. Ancak bu iddianın doğruluğu tartışmalıdır.\n\n#shorts #evteknolojisi #günlükyaşam",
+    "topic": "günlük bilim",
+    "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
+    "description": "Su, Dünya yüzeyinin büyük bir kısmını oluşturur. Yüzeyin yetmiş bir yüzdeyi su kaplar.\n\n#shorts #bilim #su",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "günlükyaşam"
+      "primary": "bilim",
+      "secondary": "su"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "ev işleri",
-      "otomasyon",
-      "verimlilik"
+      "su",
+      "doğa",
+      "çevre",
+      "hidrojen",
+      "solvent"
     ],
-    "spoken_text": "Evdeki zaman tasarrufu gerçekten nereden geliyor Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "full_text": "Evdeki zaman tasarrufu gerçekten nereden geliyor Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Evdeki zaman tasarrufu gerçekten nereden geliyor. Domestik teknoloji ev işlerinde harcanan zamanı azalttığı iddia edilir fakat bu tartışmalıdır. Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir. Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı Yüzeyin yetmiş bir yüzdeyi su oluşturur okyanuslar ve göller dahil yaşamın temel kaynağıdır Su polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı Yüzeyin yetmiş bir yüzdeyi su oluşturur okyanuslar ve göller dahil yaşamın temel kaynağıdır Su polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı. Yüzeyin yetmiş bir yüzdeyi su oluşturur okyanuslar ve göller dahil yaşamın temel kaynağıdır. Su polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir. Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "33306",
+      "title": "Water",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
     },
     "raw_groq_package": {
-      "source_id": "79425",
+      "source_id": "33306",
       "scenes": [
         {
-          "text": "Evdeki zaman tasarrufu gerçekten nereden geliyor?",
-          "visual_query": "laundry room"
+          "text": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı?",
+          "visual_query": "earth surface"
         },
         {
-          "text": "Domestik teknoloji, ev işlerinde harcanan zamanı azalttığı iddia edilir, fakat bu tartışmalıdır.",
-          "visual_query": "home appliances"
+          "text": "Yüzeyin yetmiş bir yüzdeyi su oluşturur, okyanuslar ve göller dahil, yaşamın temel kaynağıdır.",
+          "visual_query": "water globe"
         },
         {
-          "text": "Kıyafet kurutma makineleri ve çamaşır makineleri bu teknolojinin örnekleridir.",
-          "visual_query": "washing machine"
+          "text": "Su, polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir.",
+          "visual_query": "water molecule"
         }
       ],
-      "closing_question": "Siz de zaman kazandınız mı?",
-      "closing_visual_query": "clock hands",
+      "closing_question": "Siz de suyu seviyor musunuz?",
+      "closing_visual_query": "person drinking",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "ev teknolojisi",
-      "title": "Ev teknolojileri ev işlerini azaltır mı? Tartışmalı",
-      "description": "Domestik teknoloji, ev işlerinde harcanan zamanı azalttığı iddia edilir. Ancak bu iddianın doğruluğu tartışmalıdır.",
+      "topic": "günlük bilim",
+      "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
+      "description": "Su, Dünya yüzeyinin büyük bir kısmını oluşturur. Yüzeyin yetmiş bir yüzdeyi su kaplar.",
       "hashtags": {
-        "primary": "evteknolojisi",
-        "secondary": "günlükyaşam"
+        "primary": "bilim",
+        "secondary": "su"
       },
       "tags": [
-        "ev",
-        "teknoloji",
-        "ev işleri",
-        "otomasyon",
-        "verimlilik"
+        "su",
+        "doğa",
+        "çevre",
+        "hidrojen",
+        "solvent"
       ]
     },
     "generation_mode": "prompt_first_v1"
