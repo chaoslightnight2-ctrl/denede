@@ -545,6 +545,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "40701613210",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261029_004714",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261029_004714_g-nl-k-bilim/final.mp4",
+      "video_id": "o5OubKrz7LQ",
+      "publish_at": "2026-10-29T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "40795430132"
     }
   ]
 }
