@@ -1,65 +1,65 @@
 {
-  "run_id": "40701613210",
+  "run_id": "40795430132",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "563299",
+    "source_id": "33306",
     "scenes": [
       {
-        "text": "Davranışınızı belirleyen gizli iki güç nedir?",
-        "visual_query": "room"
+        "text": "Dünya yüzeyinin büyük kısmı neyle tamamen kaplı?",
+        "visual_query": "earth surface"
       },
       {
-        "text": "Çevresel faktörler ve genetik miras, davranışınızı şekillendiren temel etkenlerdir hayatınızda ve günlük seçimlerinizde.",
-        "visual_query": "lab"
+        "text": "Yüzeyin yetmiş bir yüzdeyi su oluşturur, okyanuslar ve göller dahil, yaşamın temel kaynağıdır.",
+        "visual_query": "water globe"
       },
       {
-        "text": "Düşünceler ve duygular da davranışı yönlendiren içsel etkenlerdir.",
-        "visual_query": "mind"
+        "text": "Su, polar molekül yapısıyla güçlü hidrojen bağları kurar ve çözücü özelliğiyle bilinir.",
+        "visual_query": "water molecule"
       }
     ],
-    "closing_question": "Sizce hangisi daha etkili?",
-    "closing_visual_query": "book",
+    "closing_question": "Siz de suyu seviyor musunuz?",
+    "closing_visual_query": "person drinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "İnsan Davranışı",
-    "title": "İnsan Davranışı Neden Çevresel ve Genetik Faktörlerle Şekillenir?",
-    "description": "İnsan davranışı çevresel etkiler ve genetik miras tarafından belirlenir. Düşünce ve duygular da bu sürece katkı sağlar.",
+    "topic": "günlük bilim",
+    "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Suyla Kaplı?",
+    "description": "Su, Dünya yüzeyinin büyük bir kısmını oluşturur. Yüzeyin yetmiş bir yüzdeyi su kaplar.",
     "hashtags": {
-      "primary": "davranış",
-      "secondary": "psikoloji"
+      "primary": "bilim",
+      "secondary": "su"
     },
     "tags": [
-      "davranış",
+      "su",
+      "doğa",
       "çevre",
-      "genetik",
-      "psikoloji",
-      "insan"
+      "hidrojen",
+      "solvent"
     ]
   },
   "reference_sources": [
     {
-      "id": "183403",
-      "title": "Learning",
-      "url": "https://en.wikipedia.org/wiki/Learning",
-      "text": "Learning is the process of acquiring new understanding, knowledge, behavior, skills, values, attitudes, and preferences. The ability to learn is possessed by humans, other animals, and some machines. There is also evidence for some kind of learning in certain plants. Some learning is immediate, induced by a single event (e.g. being burned by a hot stove), but much skill and knowledge accumulate from repeated experiences. The changes induced by learning often last a lifetime, and it is hard to distinguish learned material that seems to be \"lost\" from that which cannot be retrieved. Human learning begins at birth and may even start before birth and continues until death as a consequence of ongoing interactions between people and their environment. The nature and processes involved in learning are studied in many established fields (including educational psychology, neuropsychology, experimental psychology, Cognitive science, and pedagogy), as well as emerging fields of knowledge (e.g. with a shared interest in the topic of learning from safety events such as incidents or accidents, or in collaborative learning health systems). Research in such fields has led to the significant identification of various sorts of learning. For example, learning may occur as a result of habituation, or classical conditioning, operant conditioning or as a result of more complex activities such as play, seen only in more cognitively complex animals. Learning may occur consciously or without conscious awareness. Learning that an aversive event cannot be avoided or escaped may result in a condition called learned helplessness."
+      "id": "33306",
+      "title": "Water",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
     },
     {
-      "id": "563299",
-      "title": "Human behavior",
-      "url": "https://en.wikipedia.org/wiki/Human_behavior",
-      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
+      "id": "19828134",
+      "title": "Plant",
+      "url": "https://en.wikipedia.org/wiki/Plant",
+      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     },
     {
-      "id": "26990",
-      "title": "Social psychology",
-      "url": "https://en.wikipedia.org/wiki/Social_psychology",
-      "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
+      "id": "54176",
+      "title": "Human body",
+      "url": "https://en.wikipedia.org/wiki/Human_body",
+      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     },
     {
-      "id": "31217535",
-      "title": "Memory",
-      "url": "https://en.wikipedia.org/wiki/Memory",
-      "text": "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action. If past events could not be remembered, it would be impossible for language, relationships, or personal identity to develop. Memory loss is usually described as forgetfulness or a disorder such as amnesia. Memory is often understood as an information processing system with explicit and implicit functioning that is made up of a sensory processor, short-term (or working) memory, and long-term memory. This can be related to the neuron. The sensory processor allows information from the outside world to be sensed in the form of chemical and physical stimuli and attended to various levels of focus and intent. Working memory serves as an encoding and retrieval processor. Information in the form of stimuli is encoded in accordance with explicit or implicit functions by the working memory processor. The working memory also retrieves information from previously stored material. Finally, the function of long-term memory is to store information through various categorical models or systems. Declarative, or explicit memory, is the conscious storage and recollection of data. Under declarative memory resides semantic and episodic memory. Semantic memory refers to memory that is encoded with specific meaning. Meanwhile, episodic memory refers to information that is encoded along a spatial and temporal plane. Declarative memory is usually the primary process thought of when referencing memory. Non-declarative, or implicit, memory is the unconscious storage and recollection of information."
+      "id": "1787105",
+      "title": "Animal sexual behaviour",
+      "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
+      "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
     }
   ],
   "error": null
