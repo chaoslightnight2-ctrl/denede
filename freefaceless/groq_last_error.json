@@ -2,8 +2,8 @@
   "run_id": "40981100438",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1793320990.091653,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1793321470.0360053,
+  "failed_generation_excerpt": "{\"source_id\":\"19828134\",\"scenes\":[{\"text\":\"Neden nefes ald\u0131\u011f\u0131m\u0131z hava bitkilerden gelir?\",\"visual_query\":\"forest sky\"},{\"text\":\"Bitkiler fotosentezle g\u00fcne\u015f \u0131\u015f\u0131\u011f\u0131n\u0131 kullan\u0131p su ve karbondioksitten oksijen \u00fcretirler ve bu oksijen havaya yay\u0131l\u0131r\",\"visual_query\":\"leaf sunlight\"},{\"text\":\"Klorofil pigmenti, \u0131\u015f\u0131\u011f\u0131 yakalay\u0131p kimyasal enerji \u00fcretir ve oksijen olu\u015fturur\",\"visual_query\":\"green leaf\"}]}",
   "retry_after": null
 }
