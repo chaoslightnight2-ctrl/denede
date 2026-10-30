@@ -1,19 +1,19 @@
 {
-  "source_run": "40981100438",
-  "verified_at": "2026-10-30T00:59:55.437488+00:00",
+  "source_run": "41068874151",
+  "verified_at": "2026-10-30T14:29:08.245500+00:00",
   "videos": [
     {
-      "index": 2,
-      "video_id": "OOJAUCKpwBM",
-      "youtube_url": "https://youtu.be/OOJAUCKpwBM",
-      "title": "Güneş, Sistemimizin %99,86'sını Oluşturur: Neden?",
-      "narration": "Güneş sistemimizin neredeyse tamamı kütlesi mi Evet Güneş Güneş Sisteminin kütlesinin yüzde doksan doksan virgül seksen altı yüzdesini taşır gerçekten doğru Kalan kütlenin büyük kısmı sekiz gezegen arasında dağılır özellikle Dünya Sizce Güneş gerçekten benzersiz mi İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-30T18:00:00Z",
+      "index": 1,
+      "video_id": "VayVlXyoR_A",
+      "youtube_url": "https://youtu.be/VayVlXyoR_A",
+      "title": "Güneş, Güneş Sistemi'nin neredeyse tamamını neden taşır?",
+      "narration": "Güneş sistemimizin dev ağırlığı gerçekten mi Güneş kütlesinin neredeyse tamamını diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar Bu durum Güneşin çekim gücünü tüm gezegenleri belirler Sizce başka bir yıldız aynı mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-30T16:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-10-30T18:00:00Z",
+        "publishAt": "2026-10-30T16:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,29 +23,47 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 20.733333,
+        "duration": 17.9,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/OOJAUCKpwBM.jpg"
-    }
-  ],
-  "errors": [
-    {
-      "index": 1,
-      "error": "No described asset matches scene 2: attention focus"
+      "preview": "maintenance/previews/VayVlXyoR_A.jpg"
     },
     {
-      "index": 3,
-      "error": "No described asset matches scene 1: martin cooper demo"
+      "index": 2,
+      "video_id": "rMQnQYRXPSg",
+      "youtube_url": "https://youtu.be/rMQnQYRXPSg",
+      "title": "İlk Cep Telefonu Ne Zaman Tanıtıldı? Üç Nisan 1973",
+      "narration": "İlk cep telefonu ne zaman ortaya çıktı Üç Nisan bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı tanıttı Günümüzde cep telefonları mesaj internet ve fotoğraf çekme gibi çok işlevli Siz hangi özelliği seversiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-10-30T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-10-30T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.766667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/rMQnQYRXPSg.jpg"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "errors": [],
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 3,
+  "target_count": 2,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
