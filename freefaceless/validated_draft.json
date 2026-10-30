@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-29T00:59:14.184578+00:00",
+  "saved_at": "2026-10-30T00:47:11.762458+00:00",
   "data": {
-    "source_id": "19644137",
+    "source_id": "25140",
     "scenes": [
       {
-        "text": "İlk cep telefonu ne kadar ağırdı",
-        "visual_query": "old mobile"
+        "text": "Gözünüzdeki ışık nasıl beyne tamamen ulaşır",
+        "visual_query": "eye retina"
       },
       {
-        "text": "1973te Martin Cooper iki kilogram ağırlığındaki ilk taşınabilir telefon cihazını New Yorkta tanıttı",
-        "visual_query": "city demonstration"
+        "text": "Işık retinaya çarpar sinir hücreleri elektrik sinyali üretir ve beyne iletilir sonra",
+        "visual_query": "brain neuron"
       },
       {
-        "text": "Bu cihaz yaklaşık iki kilogram ağırlığındaydı ve sadece sesli arama yapabiliyordu",
-        "visual_query": "handheld device"
+        "text": "Algı beklentiler ve dikkatle şekillenir bilinç dışı gerçekleşir",
+        "visual_query": "attention focus"
       },
       {
-        "text": "Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "phone choice"
+        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "brain scan"
       }
     ],
-    "closing_question": "Siz hangi telefonu tercih edersiniz?",
-    "closing_visual_query": "phone choice",
+    "closing_question": "Siz de fark ettiniz mi?",
+    "closing_visual_query": "brain scan",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "1973'te Martin Cooper'ın 2 kg'lık İlk Cep Telefonu",
-    "description": "Bin dokuz yüz yetmiş üç'te Martin Cooper, iki kilogram ağırlığındaki ilk taşınabilir cep telefonunu tanıttı. Bu cihaz, New York'ta yapılan bir gösteride ortaya çıktı.\n\n#shorts #teknoloji #mobiltelefon",
+    "topic": "algı",
+    "title": "Algı Nasıl Çalışır? Beynin Görsel Bilgiyi İşleme Şekli",
+    "description": "Algı, duyusal bilgiyi yorumlayarak gerçekliği oluşturur. Beynimiz ışığı retina üzerinden alır ve beyin içinde işler.\n\n#shorts #algı #psikoloji",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
+      "primary": "algı",
+      "secondary": "psikoloji"
     },
     "tags": [
-      "cep telefonu",
-      "mobil telefon",
-      "teknoloji tarihi",
-      "martin cooper",
-      "ilk telefon"
+      "algı",
+      "görme",
+      "beyin",
+      "duyular",
+      "psikoloji"
     ],
-    "spoken_text": "İlk cep telefonu ne kadar ağırdı 1973te Martin Cooper iki kilogram ağırlığındaki ilk taşınabilir telefon cihazını New Yorkta tanıttı Bu cihaz yaklaşık iki kilogram ağırlığındaydı ve sadece sesli arama yapabiliyordu Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu ne kadar ağırdı 1973te Martin Cooper iki kilogram ağırlığındaki ilk taşınabilir telefon cihazını New Yorkta tanıttı Bu cihaz yaklaşık iki kilogram ağırlığındaydı ve sadece sesli arama yapabiliyordu Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu ne kadar ağırdı. 1973te Martin Cooper iki kilogram ağırlığındaki ilk taşınabilir telefon cihazını New Yorkta tanıttı. Bu cihaz yaklaşık iki kilogram ağırlığındaydı ve sadece sesli arama yapabiliyordu. Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "spoken_text": "Gözünüzdeki ışık nasıl beyne tamamen ulaşır Işık retinaya çarpar sinir hücreleri elektrik sinyali üretir ve beyne iletilir sonra Algı beklentiler ve dikkatle şekillenir bilinç dışı gerçekleşir Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Gözünüzdeki ışık nasıl beyne tamamen ulaşır Işık retinaya çarpar sinir hücreleri elektrik sinyali üretir ve beyne iletilir sonra Algı beklentiler ve dikkatle şekillenir bilinç dışı gerçekleşir Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Gözünüzdeki ışık nasıl beyne tamamen ulaşır. Işık retinaya çarpar sinir hücreleri elektrik sinyali üretir ve beyne iletilir sonra. Algı beklentiler ve dikkatle şekillenir bilinç dışı gerçekleşir. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "25140",
+      "title": "Perception",
+      "url": "https://en.wikipedia.org/wiki/Perception",
+      "text": "Perception (from Latin perceptio 'gathering, receiving') is the identification, interpretation and organization of sensory information, in order to represent and understand the presented information or environment. All perception involves signals that go through the nervous system, which in turn result from physical or chemical stimulation of the sensory system. Vision involves light striking the retina of the eye; smell is mediated by odor molecules; and hearing involves pressure waves. Perception is not only the passive receipt of these signals, but it is also shaped by the recipient's learning, memory, expectation, and attention. Sensory input is a process that transforms this low-level information to higher-level information (e.g., extracts shapes for object recognition). The following process connects a person's concepts and expectations (or knowledge) with restorative and selective mechanisms, such as attention, that influence perception. Perception depends on complex functions of the nervous system, but subjectively seems mostly effortless because this processing happens outside conscious awareness. Since the rise of experimental psychology in the 19th century, psychology's understanding of perception has progressed by combining a variety of techniques. Psychophysics quantitatively describes the relationships between the physical qualities of the sensory input and perception. Sensory neuroscience studies the neural mechanisms underlying perception. Perceptual systems can also be studied computationally, in terms of the information they process."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
+      "source_id": "25140",
       "scenes": [
         {
-          "text": "İlk cep telefonu ne kadar ağırdı?",
-          "visual_query": "old mobile"
+          "text": "Gözünüzdeki ışık nasıl beyne tamamen ulaşır?",
+          "visual_query": "eye retina"
         },
         {
-          "text": "1973'te Martin Cooper, iki kilogram ağırlığındaki ilk taşınabilir telefon cihazını New York'ta tanıttı.",
-          "visual_query": "city demonstration"
+          "text": "Işık retinaya çarpar, sinir hücreleri elektrik sinyali üretir ve beyne iletilir sonra.",
+          "visual_query": "brain neuron"
         },
         {
-          "text": "Bu cihaz, yaklaşık iki kilogram ağırlığındaydı ve sadece sesli arama yapabiliyordu.",
-          "visual_query": "handheld device"
+          "text": "Algı, beklentiler ve dikkatle şekillenir, bilinç dışı gerçekleşir.",
+          "visual_query": "attention focus"
         }
       ],
-      "closing_question": "Siz hangi telefonu tercih edersiniz?",
-      "closing_visual_query": "phone choice",
+      "closing_question": "Siz de fark ettiniz mi?",
+      "closing_visual_query": "brain scan",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "1973'te Martin Cooper'ın 2 kg'lık İlk Cep Telefonu",
-      "description": "Bin dokuz yüz yetmiş üç'te Martin Cooper, iki kilogram ağırlığındaki ilk taşınabilir cep telefonunu tanıttı. Bu cihaz, New York'ta yapılan bir gösteride ortaya çıktı.",
+      "topic": "algı",
+      "title": "Algı Nasıl Çalışır? Beynin Görsel Bilgiyi İşleme Şekli",
+      "description": "Algı, duyusal bilgiyi yorumlayarak gerçekliği oluşturur. Beynimiz ışığı retina üzerinden alır ve beyin içinde işler.",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobiltelefon"
+        "primary": "algı",
+        "secondary": "psikoloji"
       },
       "tags": [
-        "cep telefonu",
-        "mobil telefon",
-        "teknoloji tarihi",
-        "martin cooper",
-        "ilk telefon"
+        "algı",
+        "görme",
+        "beyin",
+        "duyular",
+        "psikoloji"
       ]
     },
     "generation_mode": "prompt_first_v1"
