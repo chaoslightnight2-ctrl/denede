@@ -1,88 +1,88 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-30T00:59:12.593434+00:00",
+  "saved_at": "2026-10-30T14:19:11.956580+00:00",
   "data": {
-    "source_id": "19644137",
+    "source_id": "26903",
     "scenes": [
       {
-        "text": "İlk cep telefonu nasıl ortaya çıktı",
-        "visual_query": "old phone"
+        "text": "Güneş sistemimizin dev ağırlığı gerçekten mi",
+        "visual_query": "sun space"
       },
       {
-        "text": "Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte New Yorkta ilk cep telefonunu tanıttı",
-        "visual_query": "martin cooper demo"
+        "text": "Güneş kütlesinin neredeyse tamamını diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar",
+        "visual_query": "sun mass"
       },
       {
-        "text": "Cihaz yaklaşık iki kilogram ağırlığındaydı ve bir elden tutuluyordu",
-        "visual_query": "heavy handset"
+        "text": "Bu durum Güneşin çekim gücünü tüm gezegenleri belirler",
+        "visual_query": "sun gravity"
       },
       {
-        "text": "Sizce bu ne kadar yenilikti İlginç Gerçekler kanalına abone ol",
-        "visual_query": "museum exhibit"
+        "text": "Sizce başka bir yıldız aynı mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "star sky"
       }
     ],
-    "closing_question": "Sizce bu ne kadar yenilikti?",
-    "closing_visual_query": "museum exhibit",
+    "closing_question": "Sizce başka bir yıldız aynı mı?",
+    "closing_visual_query": "star sky",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "İlk cep telefonu ne zaman ve kim tarafından tanıtıldı?",
-    "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te tanıtıldı. Martin Cooper bu yeniliği New York'ta gösterdi.\n\n#shorts #teknoloji #mobiltelefon",
+    "title": "Güneş, Güneş Sistemi'nin neredeyse tamamını neden taşır?",
+    "description": "Güneş, sistemdeki diğer tüm cisimlerin toplam kütlesinden çok daha ağırdır. Bu yüzden gezegenlerin yörüngeleri Güneş etrafında döner.\n\n#shorts #güneş #astronomi",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
+      "primary": "güneş",
+      "secondary": "astronomi"
     },
     "tags": [
-      "ceptelefonu",
-      "mobil",
-      "tarih",
-      "martincooper",
-      "yenilik"
+      "güneş",
+      "güneş sistemi",
+      "bilim",
+      "günlük hayat",
+      "astronomi"
     ],
-    "spoken_text": "İlk cep telefonu nasıl ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte New Yorkta ilk cep telefonunu tanıttı Cihaz yaklaşık iki kilogram ağırlığındaydı ve bir elden tutuluyordu Sizce bu ne kadar yenilikti İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu nasıl ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte New Yorkta ilk cep telefonunu tanıttı Cihaz yaklaşık iki kilogram ağırlığındaydı ve bir elden tutuluyordu Sizce bu ne kadar yenilikti İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu nasıl ortaya çıktı. Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte New Yorkta ilk cep telefonunu tanıttı. Cihaz yaklaşık iki kilogram ağırlığındaydı ve bir elden tutuluyordu. Sizce bu ne kadar yenilikti İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
+    "topic": "güneş",
+    "spoken_text": "Güneş sistemimizin dev ağırlığı gerçekten mi Güneş kütlesinin neredeyse tamamını diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar Bu durum Güneşin çekim gücünü tüm gezegenleri belirler Sizce başka bir yıldız aynı mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Güneş sistemimizin dev ağırlığı gerçekten mi Güneş kütlesinin neredeyse tamamını diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar Bu durum Güneşin çekim gücünü tüm gezegenleri belirler Sizce başka bir yıldız aynı mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Güneş sistemimizin dev ağırlığı gerçekten mi. Güneş kütlesinin neredeyse tamamını diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar. Bu durum Güneşin çekim gücünü tüm gezegenleri belirler. Sizce başka bir yıldız aynı mı İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
     "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "26903",
+      "title": "Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System",
+      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
+      "source_id": "26903",
       "scenes": [
         {
-          "text": "İlk cep telefonu nasıl ortaya çıktı?",
-          "visual_query": "old phone"
+          "text": "Güneş, sistemimizin dev ağırlığı gerçekten mi?",
+          "visual_query": "sun space"
         },
         {
-          "text": "Martin Cooper, üç Nisan bin dokuz yüz yetmiş üç'te New York'ta ilk cep telefonunu tanıttı.",
-          "visual_query": "martin cooper demo"
+          "text": "Güneş, kütlesinin neredeyse tamamını, diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar.",
+          "visual_query": "sun mass"
         },
         {
-          "text": "Cihaz yaklaşık iki kilogram ağırlığındaydı ve bir elden tutuluyordu.",
-          "visual_query": "heavy handset"
+          "text": "Bu durum, Güneş'in çekim gücünü tüm gezegenleri belirler.",
+          "visual_query": "sun gravity"
         }
       ],
-      "closing_question": "Sizce bu ne kadar yenilikti?",
-      "closing_visual_query": "museum exhibit",
+      "closing_question": "Sizce başka bir yıldız aynı mı?",
+      "closing_visual_query": "star sky",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "İlk cep telefonu ne zaman ve kim tarafından tanıtıldı?",
-      "description": "İlk taşınabilir cep telefonu bin dokuz yüz yetmiş üç'te tanıtıldı. Martin Cooper bu yeniliği New York'ta gösterdi.",
+      "title": "Güneş, Güneş Sistemi'nin neredeyse tamamını neden taşır?",
+      "description": "Güneş, sistemdeki diğer tüm cisimlerin toplam kütlesinden çok daha ağırdır. Bu yüzden gezegenlerin yörüngeleri Güneş etrafında döner.",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobiltelefon"
+        "primary": "güneş",
+        "secondary": "astronomi"
       },
       "tags": [
-        "ceptelefonu",
-        "mobil",
-        "tarih",
-        "martincooper",
-        "yenilik"
-      ]
+        "güneş",
+        "güneş sistemi",
+        "bilim",
+        "günlük hayat",
+        "astronomi"
+      ],
+      "topic": "güneş"
     },
     "generation_mode": "prompt_first_v1"
   }
