@@ -571,6 +571,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "40795430132",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261030_005514",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Güneş, Sistemimizin %99,86'sını Oluşturur: Neden?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261030_005514_g-nl-k-bilim/final.mp4",
+      "video_id": "OOJAUCKpwBM",
+      "publish_at": "2026-10-30T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "40981100438"
     }
   ]
 }
