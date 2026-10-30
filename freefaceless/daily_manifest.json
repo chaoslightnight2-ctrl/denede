@@ -15,5 +15,22 @@
     "publish_at": "2026-10-30T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "41068874151",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-10-30T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-10-30T20:00:00Z",
+    "video_id": "rMQnQYRXPSg",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261030_142739_teknoloji/final.mp4",
+    "topic": "teknoloji",
+    "title": "İlk Cep Telefonu Ne Zaman Tanıtıldı? Üç Nisan 1973",
+    "narration": "İlk cep telefonu ne zaman ortaya çıktı Üç Nisan bin dokuz yüz yetmiş üçte Martin Cooper iki kilogramlık cihazı tanıttı Günümüzde cep telefonları mesaj internet ve fotoğraf çekme gibi çok işlevli Siz hangi özelliği seversiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-30T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
