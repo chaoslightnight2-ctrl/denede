@@ -1,9 +1,9 @@
 [
   {
-    "run_id": "40947508179",
+    "run_id": "40981100438",
     "slot": "1900",
-    "niche": "Günlük hayatta bilimin açıklamaları",
+    "niche": "Psikoloji ve insan davranışları",
     "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
+    "error": "No described asset matches scene 2: attention focus"
   }
 ]
