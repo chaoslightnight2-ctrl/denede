@@ -582,7 +582,8 @@
       "video_id": "OOJAUCKpwBM",
       "publish_at": "2026-10-30T18:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "40981100438"
+      "run_id": "40981100438",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
