@@ -37,7 +37,8 @@
     "günlük hayatta bilimin açıklamaları",
     "psikoloji",
     "hava durumu",
-    "ev teknolojisi"
+    "ev teknolojisi",
+    "güneş"
   ],
   "published": [
     {
@@ -584,6 +585,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "40981100438",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261030_141913",
+      "topic": "güneş",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Güneş, Güneş Sistemi'nin neredeyse tamamını neden taşır?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261030_141913_g-ne/final.mp4",
+      "video_id": "VayVlXyoR_A",
+      "publish_at": "2026-10-30T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41068874151"
     }
   ]
 }
