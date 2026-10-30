@@ -1,33 +1,19 @@
 [
   {
-    "run_id": "40981100438",
+    "run_id": "41068874151",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "No described asset matches scene 2: attention focus"
-  },
-  {
-    "run_id": "40981100438",
-    "slot": "2100",
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-30T21:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-10-30T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-30T18:00:00Z",
-    "video_id": "OOJAUCKpwBM",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261030_005514_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Güneş, Sistemimizin %99,86'sını Oluşturur: Neden?",
-    "narration": "Güneş sistemimizin neredeyse tamamı kütlesi mi Evet Güneş Güneş Sisteminin kütlesinin yüzde doksan doksan virgül seksen altı yüzdesini taşır gerçekten doğru Kalan kütlenin büyük kısmı sekiz gezegen arasında dağılır özellikle Dünya Sizce Güneş gerçekten benzersiz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-30T18:00:00Z",
+    "scheduled_publish_at_utc": "2026-10-30T16:00:00Z",
+    "video_id": "VayVlXyoR_A",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261030_141913_g-ne/final.mp4",
+    "topic": "güneş",
+    "title": "Güneş, Güneş Sistemi'nin neredeyse tamamını neden taşır?",
+    "narration": "Güneş sistemimizin dev ağırlığı gerçekten mi Güneş kütlesinin neredeyse tamamını diğer tüm gezegen ve cisimlerin toplamını büyük ölçüde aşar Bu durum Güneşin çekim gücünü tüm gezegenleri belirler Sizce başka bir yıldız aynı mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-10-30T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "40981100438",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "No described asset matches scene 1: martin cooper demo"
   }
 ]
