@@ -1,44 +1,19 @@
 {
-  "source_run": "41233466696",
-  "verified_at": "2026-10-31T19:28:18.991680+00:00",
-  "videos": [
-    {
-      "index": 2,
-      "video_id": "80uOqTH5vN4",
-      "youtube_url": "https://youtu.be/80uOqTH5vN4",
-      "title": "Neden bazı sesleri hemen fark ederiz? Beyin odaklanır",
-      "narration": "Neden bazı sesleri hemen fark ederiz Beyin sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz Dikkat aynı anda birden çok göreve bölünebilir ve yönlendirilebilir Siz hangi sesleri önceliklendirirsiniz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-01T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-01T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.8,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/80uOqTH5vN4.jpg"
-    }
-  ],
+  "source_run": "41248586463",
+  "verified_at": "2026-10-31T22:52:04.686978+00:00",
+  "videos": [],
   "errors": [
     {
       "index": 1,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 2,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
