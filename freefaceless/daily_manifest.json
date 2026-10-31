@@ -1,26 +1,9 @@
 [
   {
-    "run_id": "41233466696",
-    "slot": "2300",
-    "niche": "Günlük hayat ve eşyalar",
+    "run_id": "41248586463",
+    "slot": "2100",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "41233466696",
-    "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-01T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-01T16:00:00Z",
-    "video_id": "80uOqTH5vN4",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261031_192713_psikoloji/final.mp4",
-    "topic": "psikoloji",
-    "title": "Neden bazı sesleri hemen fark ederiz? Beyin odaklanır",
-    "narration": "Neden bazı sesleri hemen fark ederiz Beyin sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz Dikkat aynı anda birden çok göreve bölünebilir ve yönlendirilebilir Siz hangi sesleri önceliklendirirsiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-01T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
   }
 ]
