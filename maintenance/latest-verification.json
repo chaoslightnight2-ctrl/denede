@@ -1,47 +1,17 @@
 {
-  "source_run": "41150571201",
-  "verified_at": "2026-10-31T00:55:55.670419+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "t5DnXjKncW8",
-      "youtube_url": "https://youtu.be/t5DnXjKncW8",
-      "title": "Ev işlerine harcanan süre azaldı mı? İddia tartışmalı.",
-      "narration": "Akıllı çamaşır makinesi ne kadar zaman kazandırır Domestik teknoloji ev işlerine harcanan süreyi azalttığını iddia eder ancak kanıtları tartışmalıdır Enerji verimliliği ve öz yeterlilik ev tasarımında yeni hedeflerdir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-10-31T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-10-31T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 20.166667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/t5DnXjKncW8.jpg"
-    }
-  ],
+  "source_run": "41206475592",
+  "verified_at": "2026-10-31T13:51:50.086349+00:00",
+  "videos": [],
   "errors": [
     {
-      "index": 2,
+      "index": 1,
       "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
