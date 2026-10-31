@@ -1,25 +1,8 @@
 [
   {
-    "run_id": "41150571201",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-10-31T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-10-31T16:00:00Z",
-    "video_id": "t5DnXjKncW8",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261031_004313_ev-teknolojisi/final.mp4",
-    "topic": "ev teknolojisi",
-    "title": "Ev işlerine harcanan süre azaldı mı? İddia tartışmalı.",
-    "narration": "Akıllı çamaşır makinesi ne kadar zaman kazandırır Domestik teknoloji ev işlerine harcanan süreyi azalttığını iddia eder ancak kanıtları tartışmalıdır Enerji verimliliği ve öz yeterlilik ev tasarımında yeni hedeflerdir Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-10-31T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "41150571201",
+    "run_id": "41206475592",
     "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
