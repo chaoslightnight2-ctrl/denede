@@ -1,19 +1,44 @@
 {
-  "source_run": "41248586463",
-  "verified_at": "2026-10-31T22:52:04.686978+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "41254666766",
+  "verified_at": "2026-11-01T00:21:43.217220+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
+      "video_id": "NaaonKG-_20",
+      "youtube_url": "https://youtu.be/NaaonKG-_20",
+      "title": "Elektrik: Yüklü Parçacıkların Hareketi Enerji Üretir",
+      "narration": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-01T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-01T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.466667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/NaaonKG-_20.jpg"
+    }
+  ],
+  "errors": [
     {
       "index": 2,
       "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
