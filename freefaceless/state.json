@@ -648,7 +648,8 @@
       "video_id": "NaaonKG-_20",
       "publish_at": "2026-11-01T18:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "41254666766"
+      "run_id": "41254666766",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
