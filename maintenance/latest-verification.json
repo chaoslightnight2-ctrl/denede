@@ -1,19 +1,19 @@
 {
-  "source_run": "41254666766",
-  "verified_at": "2026-11-01T00:21:43.217220+00:00",
+  "source_run": "41315292670",
+  "verified_at": "2026-11-01T14:29:12.478327+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "NaaonKG-_20",
-      "youtube_url": "https://youtu.be/NaaonKG-_20",
-      "title": "Elektrik: Yüklü Parçacıkların Hareketi Enerji Üretir",
-      "narration": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-01T18:00:00Z",
+      "video_id": "MduSNEfQo_w",
+      "youtube_url": "https://youtu.be/MduSNEfQo_w",
+      "title": "Dikkat Tek Süreç Değil, Alt Süreçlerden Oluşur",
+      "narration": "Dikkatin sadece bir süreç olduğunu mu sandınız Hayır dikkat tek bir süreç değil birden fazla alt süreçten oluşur ve çeşitlenir Bu süreçler beyin içinde farklı bölgelerde dağıtılmış ağlarla yönetilir Siz hangi dikkatinizi test edersiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-01T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-01T18:00:00Z",
+        "publishAt": "2026-11-01T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,19 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 19.466667,
+        "duration": 18.5,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/NaaonKG-_20.jpg"
+      "preview": "maintenance/previews/MduSNEfQo_w.jpg"
     }
   ],
-  "errors": [
-    {
-      "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
-    }
-  ],
+  "errors": [],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
