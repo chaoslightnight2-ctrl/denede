@@ -1,41 +1,13 @@
 {
-  "source_run": "41315292670",
-  "verified_at": "2026-11-01T14:29:12.478327+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "MduSNEfQo_w",
-      "youtube_url": "https://youtu.be/MduSNEfQo_w",
-      "title": "Dikkat Tek Süreç Değil, Alt Süreçlerden Oluşur",
-      "narration": "Dikkatin sadece bir süreç olduğunu mu sandınız Hayır dikkat tek bir süreç değil birden fazla alt süreçten oluşur ve çeşitlenir Bu süreçler beyin içinde farklı bölgelerde dağıtılmış ağlarla yönetilir Siz hangi dikkatinizi test edersiniz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-01T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-01T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.5,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/MduSNEfQo_w.jpg"
-    }
-  ],
+  "source_run": "41342723967",
+  "verified_at": "2026-11-01T19:39:50.454335+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 1,
-  "published_count": 0,
+  "skipped": "daily_target_already_accepted",
+  "target_count": 0,
+  "daily_existing_count": 3,
   "accepted_complete": true
 }
