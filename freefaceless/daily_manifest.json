@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "41254666766",
-    "slot": "2100",
-    "niche": "Günlük hayatta bilimin açıklamaları",
+    "run_id": "41315292670",
+    "slot": "2300",
+    "niche": "Psikoloji ve insan davranışları",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-01T21:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-01T23:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-01T18:00:00Z",
-    "video_id": "NaaonKG-_20",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261101_000715_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Elektrik: Yüklü Parçacıkların Hareketi Enerji Üretir",
-    "narration": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-01T18:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-01T20:00:00Z",
+    "video_id": "MduSNEfQo_w",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261101_142714_psikoloji/final.mp4",
+    "topic": "psikoloji",
+    "title": "Dikkat Tek Süreç Değil, Alt Süreçlerden Oluşur",
+    "narration": "Dikkatin sadece bir süreç olduğunu mu sandınız Hayır dikkat tek bir süreç değil birden fazla alt süreçten oluşur ve çeşitlenir Bu süreçler beyin içinde farklı bölgelerde dağıtılmış ağlarla yönetilir Siz hangi dikkatinizi test edersiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-01T20:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "41254666766",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]

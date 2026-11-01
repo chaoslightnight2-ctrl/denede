@@ -661,7 +661,8 @@
       "video_id": "MduSNEfQo_w",
       "publish_at": "2026-11-01T20:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "41315292670"
+      "run_id": "41315292670",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
