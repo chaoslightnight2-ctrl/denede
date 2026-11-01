@@ -637,6 +637,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "41233466696",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261101_000715",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Elektrik: Yüklü Parçacıkların Hareketi Enerji Üretir",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261101_000715_g-nl-k-bilim/final.mp4",
+      "video_id": "NaaonKG-_20",
+      "publish_at": "2026-11-01T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41254666766"
     }
   ]
 }
