@@ -2,8 +2,8 @@
   "run_id": "41315292670",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1793542750.1415815,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1793542989.9412167,
+  "failed_generation_excerpt": "{\"source_id\":\"25140\",\"scenes\":[{\"text\":\"Alg\u0131 sadece duyusal sinyaller mi al\u0131r?\",\"visual_query\":\"eye retina\"},{\"text\":\"Hay\u0131r, alg\u0131 \u00f6\u011frenme, bellek, beklenti ve dikkatle \u015fekillenen aktif bir s\u00fcre\u00e7tir zihinsel.\",\"visual_query\":\"brain network\"},{\"text\":\"Bu i\u015flem bilin\u00e7 d\u0131\u015f\u0131 ger\u00e7ekle\u015fir ve \u00e7aba gerektirmez.\",\"visual_query\":\"neuron activity\"}]}",
   "retry_after": null
 }
