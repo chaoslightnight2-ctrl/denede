@@ -1,87 +1,87 @@
 {
-  "focus": "Psikoloji ve insan davranışları",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-10-31T19:27:12.430344+00:00",
+  "saved_at": "2026-11-01T00:07:14.101722+00:00",
   "data": {
-    "source_id": "68753",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "Neden bazı sesleri hemen fark ederiz",
-        "visual_query": "ear headphones"
+        "text": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur",
+        "visual_query": "static spark"
       },
       {
-        "text": "Beyin sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz",
-        "visual_query": "brain diagram"
+        "text": "Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar",
+        "visual_query": "circuit board"
       },
       {
-        "text": "Dikkat aynı anda birden çok göreve bölünebilir ve yönlendirilebilir",
-        "visual_query": "person multitask"
+        "text": "Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir",
+        "visual_query": "magnet field"
       },
       {
-        "text": "Siz hangi sesleri önceliklendirirsiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "room desk"
+        "text": "Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "lightning bolt"
       }
     ],
-    "closing_question": "Siz hangi sesleri önceliklendirirsiniz?",
-    "closing_visual_query": "room desk",
+    "closing_question": "Siz de hissedebiliyor musunuz?",
+    "closing_visual_query": "lightning bolt",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "Neden bazı sesleri hemen fark ederiz? Beyin odaklanır",
-    "description": "Beyin, sınırlı kaynaklarını öncelikli seslere yönlendirir. Bu sayede bazı sesleri hemen fark ederiz.\n\n#shorts #psikoloji #dikkat",
+    "topic": "günlük bilim",
+    "title": "Elektrik: Yüklü Parçacıkların Hareketi Enerji Üretir",
+    "description": "Elektrik, pozitif ya da negatif yüklü parçacıkların hareketiyle ortaya çıkar. Bu akım aynı zamanda manyetik bir alan oluşturur.\n\n#shorts #elektrik #fizik",
     "hashtags": {
-      "primary": "psikoloji",
-      "secondary": "dikkat"
+      "primary": "elektrik",
+      "secondary": "fizik"
     },
     "tags": [
-      "dikkat",
-      "algı",
-      "beyin",
-      "psikoloji",
-      "davranış"
+      "elektrik",
+      "enerji",
+      "parçacık",
+      "manyetik",
+      "bilim"
     ],
-    "spoken_text": "Neden bazı sesleri hemen fark ederiz Beyin sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz Dikkat aynı anda birden çok göreve bölünebilir ve yönlendirilebilir Siz hangi sesleri önceliklendirirsiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Neden bazı sesleri hemen fark ederiz Beyin sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz Dikkat aynı anda birden çok göreve bölünebilir ve yönlendirilebilir Siz hangi sesleri önceliklendirirsiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Neden bazı sesleri hemen fark ederiz. Beyin sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz. Dikkat aynı anda birden çok göreve bölünebilir ve yönlendirilebilir. Siz hangi sesleri önceliklendirirsiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "human_behavior",
-    "hook_style": "direct_change",
+    "spoken_text": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Elektrik yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur. Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar. Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir. Siz de hissedebiliyor musunuz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     "raw_groq_package": {
-      "source_id": "68753",
+      "source_id": "9550",
       "scenes": [
         {
-          "text": "Neden bazı sesleri hemen fark ederiz?",
-          "visual_query": "ear headphones"
+          "text": "Elektrik, yüklü parçacıkların hareketiyle gerçekten tamamen doğal oluşur",
+          "visual_query": "static spark"
         },
         {
-          "text": "Beyin, sınırlı kaynakları öncelikli seslere yönlendirerek diğerlerini filtre eder ve bu sayede fark ederiz.",
-          "visual_query": "brain diagram"
+          "text": "Pozitif ya da negatif yüklü parçacıklar hareket ettiğinde elektrik enerjisi günlük ortaya çıkar",
+          "visual_query": "circuit board"
         },
         {
-          "text": "Dikkat, aynı anda birden çok göreve bölünebilir ve yönlendirilebilir.",
-          "visual_query": "person multitask"
+          "text": "Elektrik akımı bir manyetik alan da gerçekten güçlü etkili üretir",
+          "visual_query": "magnet field"
         }
       ],
-      "closing_question": "Siz hangi sesleri önceliklendirirsiniz?",
-      "closing_visual_query": "room desk",
+      "closing_question": "Siz de hissedebiliyor musunuz?",
+      "closing_visual_query": "lightning bolt",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "psikoloji",
-      "title": "Neden bazı sesleri hemen fark ederiz? Beyin odaklanır",
-      "description": "Beyin, sınırlı kaynaklarını öncelikli seslere yönlendirir. Bu sayede bazı sesleri hemen fark ederiz.",
+      "topic": "günlük bilim",
+      "title": "Elektrik: Yüklü Parçacıkların Hareketi Enerji Üretir",
+      "description": "Elektrik, pozitif ya da negatif yüklü parçacıkların hareketiyle ortaya çıkar. Bu akım aynı zamanda manyetik bir alan oluşturur.",
       "hashtags": {
-        "primary": "psikoloji",
-        "secondary": "dikkat"
+        "primary": "elektrik",
+        "secondary": "fizik"
       },
       "tags": [
-        "dikkat",
-        "algı",
-        "beyin",
-        "psikoloji",
-        "davranış"
+        "elektrik",
+        "enerji",
+        "parçacık",
+        "manyetik",
+        "bilim"
       ]
     },
     "generation_mode": "prompt_first_v1"
