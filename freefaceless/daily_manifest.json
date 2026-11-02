@@ -15,5 +15,22 @@
     "publish_at": "2026-11-02T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "41487246714",
+    "slot": "2300",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-02T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-02T20:00:00Z",
+    "video_id": "ODV96DLnTJU",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261102_171515_psikoloji/final.mp4",
+    "topic": "psikoloji",
+    "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
+    "narration": "Genetik mi çevre mi davranışımızı yönlendirir Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-02T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]

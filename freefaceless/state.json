@@ -700,7 +700,8 @@
       "video_id": "ODV96DLnTJU",
       "publish_at": "2026-11-02T20:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "41487246714"
+      "run_id": "41487246714",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
