@@ -689,6 +689,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "41487246714",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261102_171515",
+      "topic": "psikoloji",
+      "audience_bucket": "human_behavior",
+      "hook_style": "concrete_question",
+      "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261102_171515_psikoloji/final.mp4",
+      "video_id": "ODV96DLnTJU",
+      "publish_at": "2026-11-02T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41487246714"
     }
   ]
 }
