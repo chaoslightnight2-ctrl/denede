@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-02T17:07:13.121084+00:00",
+  "saved_at": "2026-11-02T17:15:12.820540+00:00",
   "data": {
-    "source_id": "33978",
+    "source_id": "563299",
     "scenes": [
       {
-        "text": "Sabah dışarıda neden birden yağmur yağar",
-        "visual_query": "city street"
+        "text": "Genetik mi çevre mi davranışımızı yönlendirir",
+        "visual_query": "brain scan"
       },
       {
-        "text": "Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir",
-        "visual_query": "cloud formation"
+        "text": "Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda",
+        "visual_query": "family dinner"
       },
       {
-        "text": "Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar",
-        "visual_query": "troposphere layer"
+        "text": "Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler",
+        "visual_query": "neuron network"
       },
       {
-        "text": "Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "rainy window"
+        "text": "Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+        "visual_query": "thought bubble"
       }
     ],
-    "closing_question": "Siz de yağmuru seviyor musunuz?",
-    "closing_visual_query": "rainy window",
+    "closing_question": "Sizce hangisi daha etkili?",
+    "closing_visual_query": "thought bubble",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "hava durumu",
-    "title": "Yağmur Neden Yağar? Basınç ve Nem Farkları Açıklıyor",
-    "description": "Yağmur, atmosferdeki basınç, sıcaklık ve nem farklarından kaynaklanan hava akımlarıyla oluşur. Bu akımlar bulutları toplar ve yağmurun düşmesini sağlar.\n\n#shorts #hava #meteoroloji",
+    "topic": "psikoloji",
+    "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
+    "description": "İnsan davranışı sadece genetik ya da sadece çevreyle belirlenmez. Her iki faktör de birlikte etkili olur.\n\n#shorts #davranış #genetik",
     "hashtags": {
-      "primary": "hava",
-      "secondary": "meteoroloji"
+      "primary": "davranış",
+      "secondary": "genetik"
     },
     "tags": [
-      "yağmur",
-      "basınç",
-      "nem",
-      "sıcaklık",
-      "troposfer"
+      "davranış",
+      "genetik",
+      "çevre",
+      "psikoloji",
+      "insan"
     ],
-    "spoken_text": "Sabah dışarıda neden birden yağmur yağar Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Sabah dışarıda neden birden yağmur yağar Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Sabah dışarıda neden birden yağmur yağar. Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir. Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar. Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "spoken_text": "Genetik mi çevre mi davranışımızı yönlendirir Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "full_text": "Genetik mi çevre mi davranışımızı yönlendirir Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Genetik mi çevre mi davranışımızı yönlendirir. Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda. Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler. Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "33978",
-      "title": "Weather",
-      "url": "https://en.wikipedia.org/wiki/Weather",
-      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+      "id": "563299",
+      "title": "Human behavior",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
     },
     "raw_groq_package": {
-      "source_id": "33978",
+      "source_id": "563299",
       "scenes": [
         {
-          "text": "Sabah dışarıda neden birden yağmur yağar?",
-          "visual_query": "city street"
+          "text": "Genetik mi, çevre mi davranışımızı yönlendirir?",
+          "visual_query": "brain scan"
         },
         {
-          "text": "Çünkü atmosferdeki basınç, sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir.",
-          "visual_query": "cloud formation"
+          "text": "Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda",
+          "visual_query": "family dinner"
         },
         {
-          "text": "Troposfer, yani atmosferin en alt katmanı, çoğu hava olayına ev sahipliği yapar.",
-          "visual_query": "troposphere layer"
+          "text": "Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler",
+          "visual_query": "neuron network"
         }
       ],
-      "closing_question": "Siz de yağmuru seviyor musunuz?",
-      "closing_visual_query": "rainy window",
+      "closing_question": "Sizce hangisi daha etkili?",
+      "closing_visual_query": "thought bubble",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "hava durumu",
-      "title": "Yağmur Neden Yağar? Basınç ve Nem Farkları Açıklıyor",
-      "description": "Yağmur, atmosferdeki basınç, sıcaklık ve nem farklarından kaynaklanan hava akımlarıyla oluşur. Bu akımlar bulutları toplar ve yağmurun düşmesini sağlar.",
+      "topic": "psikoloji",
+      "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
+      "description": "İnsan davranışı sadece genetik ya da sadece çevreyle belirlenmez. Her iki faktör de birlikte etkili olur.",
       "hashtags": {
-        "primary": "hava",
-        "secondary": "meteoroloji"
+        "primary": "davranış",
+        "secondary": "genetik"
       },
       "tags": [
-        "yağmur",
-        "basınç",
-        "nem",
-        "sıcaklık",
-        "troposfer"
+        "davranış",
+        "genetik",
+        "çevre",
+        "psikoloji",
+        "insan"
       ]
     },
     "generation_mode": "prompt_first_v1"
