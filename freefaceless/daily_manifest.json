@@ -15,5 +15,12 @@
     "publish_at": "2026-11-02T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "41366919107",
+    "slot": "2100",
+    "niche": "Teknoloji ve icatlar",
+    "ok": false,
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
