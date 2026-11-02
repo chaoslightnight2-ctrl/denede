@@ -1,13 +1,46 @@
 {
-  "source_run": "41342723967",
-  "verified_at": "2026-11-01T19:39:50.454335+00:00",
-  "videos": [],
-  "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "source_run": "41366919107",
+  "verified_at": "2026-11-02T00:39:50.653652+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "1Mt7Ukb4OlY",
+      "youtube_url": "https://youtu.be/1Mt7Ukb4OlY",
+      "title": "Dünya yüzeyinin yüzde yetmiş birini su kaplar: Neden?",
+      "narration": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-02T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-02T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.666667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/1Mt7Ukb4OlY.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "index": 2,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "skipped": "daily_target_already_accepted",
-  "target_count": 0,
-  "daily_existing_count": 3,
-  "accepted_complete": true
+  "target_count": 2,
+  "published_count": 0,
+  "accepted_complete": false
 }
