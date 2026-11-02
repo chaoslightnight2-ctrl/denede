@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "41366919107",
-    "slot": "1900",
-    "niche": "Günlük hayatta bilimin açıklamaları",
+    "run_id": "41487246714",
+    "slot": "2100",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-02T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-02T21:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-02T16:00:00Z",
-    "video_id": "1Mt7Ukb4OlY",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261102_002714_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Dünya yüzeyinin yüzde yetmiş birini su kaplar: Neden?",
-    "narration": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-02T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-02T18:00:00Z",
+    "video_id": "mar6et3jUUo",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261102_170714_hava-durumu/final.mp4",
+    "topic": "hava durumu",
+    "title": "Yağmur Neden Yağar? Basınç ve Nem Farkları Açıklıyor",
+    "narration": "Sabah dışarıda neden birden yağmur yağar Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-02T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "41366919107",
-    "slot": "2100",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
