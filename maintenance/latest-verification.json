@@ -1,19 +1,19 @@
 {
-  "source_run": "41366919107",
-  "verified_at": "2026-11-02T00:39:50.653652+00:00",
+  "source_run": "41487246714",
+  "verified_at": "2026-11-02T17:17:04.668109+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "1Mt7Ukb4OlY",
-      "youtube_url": "https://youtu.be/1Mt7Ukb4OlY",
-      "title": "Dünya yüzeyinin yüzde yetmiş birini su kaplar: Neden?",
-      "narration": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-02T16:00:00Z",
+      "video_id": "mar6et3jUUo",
+      "youtube_url": "https://youtu.be/mar6et3jUUo",
+      "title": "Yağmur Neden Yağar? Basınç ve Nem Farkları Açıklıyor",
+      "narration": "Sabah dışarıda neden birden yağmur yağar Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-02T18:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-02T16:00:00Z",
+        "publishAt": "2026-11-02T18:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,47 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 18.666667,
+        "duration": 20.0,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/1Mt7Ukb4OlY.jpg"
-    }
-  ],
-  "errors": [
+      "preview": "maintenance/previews/mar6et3jUUo.jpg"
+    },
     {
       "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "video_id": "ODV96DLnTJU",
+      "youtube_url": "https://youtu.be/ODV96DLnTJU",
+      "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
+      "narration": "Genetik mi çevre mi davranışımızı yönlendirir Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-02T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-02T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.233333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/ODV96DLnTJU.jpg"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "errors": [],
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
