@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-02T00:27:12.794143+00:00",
+  "saved_at": "2026-11-02T17:07:13.121084+00:00",
   "data": {
-    "source_id": "33306",
+    "source_id": "33978",
     "scenes": [
       {
-        "text": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı",
-        "visual_query": "ocean view"
+        "text": "Sabah dışarıda neden birden yağmur yağar",
+        "visual_query": "city street"
       },
       {
-        "text": "Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur",
-        "visual_query": "world map"
+        "text": "Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir",
+        "visual_query": "cloud formation"
       },
       {
-        "text": "Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır",
-        "visual_query": "water glass"
+        "text": "Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar",
+        "visual_query": "troposphere layer"
       },
       {
-        "text": "Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "glass of water"
+        "text": "Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "rainy window"
       }
     ],
-    "closing_question": "Siz ne kadar su içiyorsunuz?",
-    "closing_visual_query": "glass of water",
+    "closing_question": "Siz de yağmuru seviyor musunuz?",
+    "closing_visual_query": "rainy window",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Dünya yüzeyinin yüzde yetmiş birini su kaplar: Neden?",
-    "description": "Dünya yüzeyinin büyük bir kısmı sudur. Yüzde yetmiş birini su oluşturur.\n\n#shorts #su #doğa",
+    "topic": "hava durumu",
+    "title": "Yağmur Neden Yağar? Basınç ve Nem Farkları Açıklıyor",
+    "description": "Yağmur, atmosferdeki basınç, sıcaklık ve nem farklarından kaynaklanan hava akımlarıyla oluşur. Bu akımlar bulutları toplar ve yağmurun düşmesini sağlar.\n\n#shorts #hava #meteoroloji",
     "hashtags": {
-      "primary": "su",
-      "secondary": "doğa"
+      "primary": "hava",
+      "secondary": "meteoroloji"
     },
     "tags": [
-      "su",
-      "dünya",
-      "yüzey",
-      "doğa",
-      "bilim"
+      "yağmur",
+      "basınç",
+      "nem",
+      "sıcaklık",
+      "troposfer"
     ],
-    "spoken_text": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı. Yüzeyin yüzde yetmiş birini su kaplar yani büyük bir kısmı dünyanın sudur. Su evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır. Siz ne kadar su içiyorsunuz İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Sabah dışarıda neden birden yağmur yağar Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Sabah dışarıda neden birden yağmur yağar Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Sabah dışarıda neden birden yağmur yağar. Çünkü atmosferdeki basınç sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir. Troposfer yani atmosferin en alt katmanı çoğu hava olayına ev sahipliği yapar. Siz de yağmuru seviyor musunuz İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     },
     "raw_groq_package": {
-      "source_id": "33306",
+      "source_id": "33978",
       "scenes": [
         {
-          "text": "Dünya üzerindeki su miktarı gerçekten şaşırtıcı!",
-          "visual_query": "ocean view"
+          "text": "Sabah dışarıda neden birden yağmur yağar?",
+          "visual_query": "city street"
         },
         {
-          "text": "Yüzeyin yüzde yetmiş birini su kaplar, yani büyük bir kısmı dünyanın sudur.",
-          "visual_query": "world map"
+          "text": "Çünkü atmosferdeki basınç, sıcaklık ve nem farkları hava akımlarını oluşturur ve bulutları toplayarak yağmur getirir.",
+          "visual_query": "cloud formation"
         },
         {
-          "text": "Su, evimizdeki içeceklerin temel bileşeni ve yaşamın vazgeçilmez kaynağıdır.",
-          "visual_query": "water glass"
+          "text": "Troposfer, yani atmosferin en alt katmanı, çoğu hava olayına ev sahipliği yapar.",
+          "visual_query": "troposphere layer"
         }
       ],
-      "closing_question": "Siz ne kadar su içiyorsunuz?",
-      "closing_visual_query": "glass of water",
+      "closing_question": "Siz de yağmuru seviyor musunuz?",
+      "closing_visual_query": "rainy window",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük bilim",
-      "title": "Dünya yüzeyinin yüzde yetmiş birini su kaplar: Neden?",
-      "description": "Dünya yüzeyinin büyük bir kısmı sudur. Yüzde yetmiş birini su oluşturur.",
+      "topic": "hava durumu",
+      "title": "Yağmur Neden Yağar? Basınç ve Nem Farkları Açıklıyor",
+      "description": "Yağmur, atmosferdeki basınç, sıcaklık ve nem farklarından kaynaklanan hava akımlarıyla oluşur. Bu akımlar bulutları toplar ve yağmurun düşmesini sağlar.",
       "hashtags": {
-        "primary": "su",
-        "secondary": "doğa"
+        "primary": "hava",
+        "secondary": "meteoroloji"
       },
       "tags": [
-        "su",
-        "dünya",
-        "yüzey",
-        "doğa",
-        "bilim"
+        "yağmur",
+        "basınç",
+        "nem",
+        "sıcaklık",
+        "troposfer"
       ]
     },
     "generation_mode": "prompt_first_v1"
