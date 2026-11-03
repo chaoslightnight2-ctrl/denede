@@ -15,5 +15,22 @@
     "publish_at": "2026-11-03T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "41556364202",
+    "slot": "2100",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-03T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-03T18:00:00Z",
+    "video_id": "LD8Ejh91lCQ",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261103_011114_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Elektrik nedir? Yüklü maddelerin hareketiyle oluşur",
+    "narration": "Evdeki ışıkları yakmak gerçekten neye bağlı Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan doğal fiziksel bir fenomen bütünüdür Elektrik akımı manyetik alan oluşturur ve manyetizma ile yakından ilişkilidir güç Siz de elektrikle şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-03T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
