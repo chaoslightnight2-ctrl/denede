@@ -702,6 +702,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "41487246714",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261103_010714",
+      "topic": "psikoloji",
+      "audience_bucket": "human_behavior",
+      "hook_style": "direct_change",
+      "title": "İnsan Davranışı Çevresel Genetik Faktörlerle Şekillenir",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261103_010714_psikoloji/final.mp4",
+      "video_id": "jF2YAuycOTo",
+      "publish_at": "2026-11-03T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41556364202"
     }
   ]
 }
