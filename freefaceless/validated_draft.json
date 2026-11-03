@@ -1,49 +1,49 @@
 {
   "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-02T17:15:12.820540+00:00",
+  "saved_at": "2026-11-03T01:07:12.564029+00:00",
   "data": {
     "source_id": "563299",
     "scenes": [
       {
-        "text": "Genetik mi çevre mi davranışımızı yönlendirir",
+        "text": "İnsanlar neden aynı anda iki şeyi hisseder",
+        "visual_query": "crowd street"
+      },
+      {
+        "text": "Çevresel ve genetik faktörler düşünce ve duygularla birlikte davranışı etkili bir şekilde yönlendirir",
         "visual_query": "brain scan"
       },
       {
-        "text": "Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda",
+        "text": "Davranış yaşam boyunca iç ve dış uyarıcılara yanıt olarak değişir",
         "visual_query": "family dinner"
       },
       {
-        "text": "Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler",
-        "visual_query": "neuron network"
-      },
-      {
-        "text": "Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
-        "visual_query": "thought bubble"
+        "text": "Siz de aynı hissediyor musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Sizce hangisi daha etkili?",
-    "closing_visual_query": "thought bubble",
+    "closing_question": "Siz de aynı hissediyor musunuz?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "psikoloji",
-    "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
-    "description": "İnsan davranışı sadece genetik ya da sadece çevreyle belirlenmez. Her iki faktör de birlikte etkili olur.\n\n#shorts #davranış #genetik",
+    "title": "İnsan Davranışı Çevresel Genetik Faktörlerle Şekillenir",
+    "description": "İnsan davranışı çevresel ve genetik faktörlerin etkisiyle oluşur. Düşünce ve duygular da bu sürece katkı sağlar.\n\n#shorts #insan davranışı #psikoloji",
     "hashtags": {
-      "primary": "davranış",
-      "secondary": "genetik"
+      "primary": "insan davranışı",
+      "secondary": "psikoloji"
     },
     "tags": [
       "davranış",
-      "genetik",
       "çevre",
+      "genetik",
       "psikoloji",
       "insan"
     ],
-    "spoken_text": "Genetik mi çevre mi davranışımızı yönlendirir Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
-    "full_text": "Genetik mi çevre mi davranışımızı yönlendirir Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Genetik mi çevre mi davranışımızı yönlendirir. Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda. Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler. Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "İnsanlar neden aynı anda iki şeyi hisseder Çevresel ve genetik faktörler düşünce ve duygularla birlikte davranışı etkili bir şekilde yönlendirir Davranış yaşam boyunca iç ve dış uyarıcılara yanıt olarak değişir Siz de aynı hissediyor musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "İnsanlar neden aynı anda iki şeyi hisseder Çevresel ve genetik faktörler düşünce ve duygularla birlikte davranışı etkili bir şekilde yönlendirir Davranış yaşam boyunca iç ve dış uyarıcılara yanıt olarak değişir Siz de aynı hissediyor musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "İnsanlar neden aynı anda iki şeyi hisseder. Çevresel ve genetik faktörler düşünce ve duygularla birlikte davranışı etkili bir şekilde yönlendirir. Davranış yaşam boyunca iç ve dış uyarıcılara yanıt olarak değişir. Siz de aynı hissediyor musunuz İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "human_behavior",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
       "id": "563299",
       "title": "Human behavior",
@@ -54,32 +54,32 @@
       "source_id": "563299",
       "scenes": [
         {
-          "text": "Genetik mi, çevre mi davranışımızı yönlendirir?",
+          "text": "İnsanlar neden aynı anda iki şeyi hisseder?",
+          "visual_query": "crowd street"
+        },
+        {
+          "text": "Çevresel ve genetik faktörler, düşünce ve duygularla birlikte davranışı etkili bir şekilde yönlendirir.",
           "visual_query": "brain scan"
         },
         {
-          "text": "Hem genetik hem çevresel faktörler birlikte davranışlarımızı şekillendirir ve yönlendirir bireysel yaşamda",
+          "text": "Davranış, yaşam boyunca iç ve dış uyarıcılara yanıt olarak değişir.",
           "visual_query": "family dinner"
-        },
-        {
-          "text": "Bu etkileşim sinir ağlarının gelişimini etkileyerek kararları belirler",
-          "visual_query": "neuron network"
         }
       ],
-      "closing_question": "Sizce hangisi daha etkili?",
-      "closing_visual_query": "thought bubble",
+      "closing_question": "Siz de aynı hissediyor musunuz?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
       "topic": "psikoloji",
-      "title": "Genetik ve Çevre İnsan Davranışını Şekillendirir",
-      "description": "İnsan davranışı sadece genetik ya da sadece çevreyle belirlenmez. Her iki faktör de birlikte etkili olur.",
+      "title": "İnsan Davranışı Çevresel Genetik Faktörlerle Şekillenir",
+      "description": "İnsan davranışı çevresel ve genetik faktörlerin etkisiyle oluşur. Düşünce ve duygular da bu sürece katkı sağlar.",
       "hashtags": {
-        "primary": "davranış",
-        "secondary": "genetik"
+        "primary": "insan davranışı",
+        "secondary": "psikoloji"
       },
       "tags": [
         "davranış",
-        "genetik",
         "çevre",
+        "genetik",
         "psikoloji",
         "insan"
       ]
