@@ -32,5 +32,22 @@
     "publish_at": "2026-11-03T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "41556364202",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-03T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-03T20:00:00Z",
+    "video_id": "rMcI2saxS6A",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261103_011914_teknoloji/final.mp4",
+    "topic": "teknoloji",
+    "title": "Li-ion pillerin enerji yoğunluğu üç kat arttı, neden?",
+    "narration": "Li ion piller neden daha hafif olabiliyor Li ion piller lityum iyonlarının katı elektrotlara geçişiyle enerji depolar bu da yüksek enerji yoğunluğu sağlar bin dokuz yüz doksan birden beri enerji yoğunluğu üç kat arttı maliyet ise on kat azaldı Yeni pil alır mısınız İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-03T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
