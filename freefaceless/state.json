@@ -728,6 +728,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "41556364202",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261103_011914",
+      "topic": "teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Li-ion pillerin enerji yoğunluğu üç kat arttı, neden?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261103_011914_teknoloji/final.mp4",
+      "video_id": "rMcI2saxS6A",
+      "publish_at": "2026-11-03T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41556364202"
     }
   ]
 }
