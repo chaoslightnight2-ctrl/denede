@@ -1,98 +1,13 @@
 {
-  "source_run": "41556364202",
-  "verified_at": "2026-11-03T01:21:13.478737+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "jF2YAuycOTo",
-      "youtube_url": "https://youtu.be/jF2YAuycOTo",
-      "title": "İnsan Davranışı Çevresel Genetik Faktörlerle Şekillenir",
-      "narration": "İnsanlar neden aynı anda iki şeyi hisseder Çevresel ve genetik faktörler düşünce ve duygularla birlikte davranışı etkili bir şekilde yönlendirir Davranış yaşam boyunca iç ve dış uyarıcılara yanıt olarak değişir Siz de aynı hissediyor musunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-03T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-03T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.233333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/jF2YAuycOTo.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "LD8Ejh91lCQ",
-      "youtube_url": "https://youtu.be/LD8Ejh91lCQ",
-      "title": "Elektrik nedir? Yüklü maddelerin hareketiyle oluşur",
-      "narration": "Evdeki ışıkları yakmak gerçekten neye bağlı Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan doğal fiziksel bir fenomen bütünüdür Elektrik akımı manyetik alan oluşturur ve manyetizma ile yakından ilişkilidir güç Siz de elektrikle şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-03T18:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-03T18:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.966667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/LD8Ejh91lCQ.jpg"
-    },
-    {
-      "index": 3,
-      "video_id": "rMcI2saxS6A",
-      "youtube_url": "https://youtu.be/rMcI2saxS6A",
-      "title": "Li-ion pillerin enerji yoğunluğu üç kat arttı, neden?",
-      "narration": "Li ion piller neden daha hafif olabiliyor Li ion piller lityum iyonlarının katı elektrotlara geçişiyle enerji depolar bu da yüksek enerji yoğunluğu sağlar bin dokuz yüz doksan birden beri enerji yoğunluğu üç kat arttı maliyet ise on kat azaldı Yeni pil alır mısınız İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-03T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-03T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 20.433333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/rMcI2saxS6A.jpg"
-    }
-  ],
+  "source_run": "41568249836",
+  "verified_at": "2026-11-03T02:48:53.934663+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 3,
-  "processed_count": 3,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 3,
-  "published_count": 0,
+  "skipped": "daily_target_already_accepted",
+  "target_count": 0,
+  "daily_existing_count": 3,
   "accepted_complete": true
 }
