@@ -1,13 +1,75 @@
 {
-  "source_run": "41717368031",
-  "verified_at": "2026-11-03T21:01:05.265870+00:00",
-  "videos": [],
-  "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "source_run": "41751610634",
+  "verified_at": "2026-11-04T01:24:36.270347+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "VnQORlF_FHc",
+      "youtube_url": "https://youtu.be/VnQORlF_FHc",
+      "title": "Ev teknolojileri zamanı nasıl kısaltır?",
+      "narration": "Çamaşır makinesi evde zamanımızı nasıl kısaltır Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-04T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-04T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.633333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/VnQORlF_FHc.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "paPoLVcrwGA",
+      "youtube_url": "https://youtu.be/paPoLVcrwGA",
+      "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Su?",
+      "narration": "Dünya yüzeyinin büyük kısmı neyle kaplı Yüzeyin yaklaşık yetmiş bir yüzdeyi su yani H2O kaplar dünya üzerindeki tüm yaşam için Su polar molekül olmasıyla güçlü hidrojen bağları oluşturur Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-04T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-04T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.333333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/paPoLVcrwGA.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "index": 2,
+      "error": "No described asset matches scene 2: mind interaction"
+    }
+  ],
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
-  "skipped": "daily_target_already_accepted",
-  "target_count": 0,
-  "daily_existing_count": 3,
-  "accepted_complete": true
+  "public_listing_error": "HTTPError",
+  "target_count": 3,
+  "published_count": 0,
+  "accepted_complete": false
 }
