@@ -2,8 +2,8 @@
   "run_id": "41751610634",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1793754430.1665099,
-  "failed_generation_excerpt": "{\"source_id\":\"79425\",\"scenes\":[{\"text\":\"Ak\u0131ll\u0131 \u00e7ama\u015f\u0131r makinesi ne kadar zaman kazand\u0131r\u0131r?\",\"visual_query\":\"washing machine\"},{\"text\":\"Domestik teknoloji ev i\u015flerinde harcanan s\u00fcreyi azaltt\u0131\u011f\u0131n\u0131 iddia ediyor, fakat bu iddia tart\u0131\u015fmal\u0131.\",\"visual_query\":\"home appliance\"},{\"text\":\"Ev otomasyonu, enerji verimlili\u011fi ve \u00f6z-yeterlilik hedefler sa\u011flar.\",\"visual_query\":\"smart home\"}]}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1793754910.0648932,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
