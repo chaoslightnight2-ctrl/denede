@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-04T01:23:13.137672+00:00",
+  "saved_at": "2026-11-04T22:11:13.370900+00:00",
   "data": {
-    "source_id": "33306",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "Dünya yüzeyinin büyük kısmı neyle kaplı",
-        "visual_query": "earth surface"
+        "text": "Evdeki teknoloji zaman kazandırır mı gerçekten",
+        "visual_query": "kitchen appliances"
       },
       {
-        "text": "Yüzeyin yaklaşık yetmiş bir yüzdeyi su yani H2O kaplar dünya üzerindeki tüm yaşam için",
-        "visual_query": "water globe"
+        "text": "Evet ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır",
+        "visual_query": "living room robot"
       },
       {
-        "text": "Su polar molekül olmasıyla güçlü hidrojen bağları oluşturur",
-        "visual_query": "molecule diagram"
+        "text": "Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir",
+        "visual_query": "solar panel roof"
       },
       {
-        "text": "Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "water splash"
+        "text": "Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "home kitchen"
       }
     ],
-    "closing_question": "Siz de suyu seviyor musunuz?",
-    "closing_visual_query": "water splash",
+    "closing_question": "Siz de denediniz mi?",
+    "closing_visual_query": "home kitchen",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Su?",
-    "description": "Su, Dünya yüzeyinin büyük bir kısmını kaplar. Yaklaşık yetmiş bir yüzdeyi su oluşturur.\n\n#shorts #bilim #su",
+    "topic": "evteknolojisi",
+    "title": "Ev Teknolojileri Zamanı Azaltır: Aletler ve Otomasyon",
+    "description": "Evdeki teknolojik cihazlar ve otomasyon, günlük işlere harcanan zamanı azaltır. Bu sayede enerji verimliliği ve kendi kendine yeten evler de hedeflenir.\n\n#shorts #evteknolojisi #zamankazanımı",
     "hashtags": {
-      "primary": "bilim",
-      "secondary": "su"
+      "primary": "evteknolojisi",
+      "secondary": "zamankazanımı"
     },
-    "topic": "günlük bilim",
     "tags": [
-      "su",
-      "dünya",
-      "yüzey",
-      "evrensel çözücü",
-      "hidrojen bağları"
+      "ev",
+      "teknoloji",
+      "otomasyon",
+      "evişi",
+      "enerjiverimliliği"
     ],
-    "spoken_text": "Dünya yüzeyinin büyük kısmı neyle kaplı Yüzeyin yaklaşık yetmiş bir yüzdeyi su yani H2O kaplar dünya üzerindeki tüm yaşam için Su polar molekül olmasıyla güçlü hidrojen bağları oluşturur Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Dünya yüzeyinin büyük kısmı neyle kaplı Yüzeyin yaklaşık yetmiş bir yüzdeyi su yani H2O kaplar dünya üzerindeki tüm yaşam için Su polar molekül olmasıyla güçlü hidrojen bağları oluşturur Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Dünya yüzeyinin büyük kısmı neyle kaplı. Yüzeyin yaklaşık yetmiş bir yüzdeyi su yani H2O kaplar dünya üzerindeki tüm yaşam için. Su polar molekül olmasıyla güçlü hidrojen bağları oluşturur. Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Evdeki teknoloji zaman kazandırır mı gerçekten Evet ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Evdeki teknoloji zaman kazandırır mı gerçekten Evet ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Evdeki teknoloji zaman kazandırır mı gerçekten. Evet ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır. Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir. Siz de denediniz mi İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     "raw_groq_package": {
-      "source_id": "33306",
+      "source_id": "79425",
       "scenes": [
         {
-          "text": "Dünya yüzeyinin büyük kısmı neyle kaplı?",
-          "visual_query": "earth surface"
+          "text": "Evdeki teknoloji zaman kazandırır mı gerçekten?",
+          "visual_query": "kitchen appliances"
         },
         {
-          "text": "Yüzeyin yaklaşık yetmiş bir yüzdeyi su, yani H2O, kaplar, dünya üzerindeki tüm yaşam için.",
-          "visual_query": "water globe"
+          "text": "Evet, ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır.",
+          "visual_query": "living room robot"
         },
         {
-          "text": "Su, polar molekül olmasıyla güçlü hidrojen bağları oluşturur.",
-          "visual_query": "molecule diagram"
+          "text": "Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir.",
+          "visual_query": "solar panel roof"
         }
       ],
-      "closing_question": "Siz de suyu seviyor musunuz?",
-      "closing_visual_query": "water splash",
+      "closing_question": "Siz de denediniz mi?",
+      "closing_visual_query": "home kitchen",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Su?",
-      "description": "Su, Dünya yüzeyinin büyük bir kısmını kaplar. Yaklaşık yetmiş bir yüzdeyi su oluşturur.",
+      "topic": "evteknolojisi",
+      "title": "Ev Teknolojileri Zamanı Azaltır: Aletler ve Otomasyon",
+      "description": "Evdeki teknolojik cihazlar ve otomasyon, günlük işlere harcanan zamanı azaltır. Bu sayede enerji verimliliği ve kendi kendine yeten evler de hedeflenir.",
       "hashtags": {
-        "primary": "bilim",
-        "secondary": "su"
+        "primary": "evteknolojisi",
+        "secondary": "zamankazanımı"
       },
-      "topic": "günlük bilim",
       "tags": [
-        "su",
-        "dünya",
-        "yüzey",
-        "evrensel çözücü",
-        "hidrojen bağları"
+        "ev",
+        "teknoloji",
+        "otomasyon",
+        "evişi",
+        "enerjiverimliliği"
       ]
     },
     "generation_mode": "prompt_first_v1"
