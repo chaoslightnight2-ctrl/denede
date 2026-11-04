@@ -38,7 +38,8 @@
     "psikoloji",
     "hava durumu",
     "ev teknolojisi",
-    "güneş"
+    "güneş",
+    "evteknolojisi"
   ],
   "published": [
     {
@@ -767,6 +768,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "41751610634",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261104_221114",
+      "topic": "evteknolojisi",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Ev Teknolojileri Zamanı Azaltır: Aletler ve Otomasyon",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261104_221114_evteknolojisi/final.mp4",
+      "video_id": "J5tdLQA-axw",
+      "publish_at": "2026-11-05T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41919926222"
     }
   ]
 }
