@@ -1,17 +1,50 @@
 {
-  "source_run": "41857366892",
-  "verified_at": "2026-11-04T15:29:14.134859+00:00",
-  "videos": [],
+  "source_run": "41919926222",
+  "verified_at": "2026-11-04T22:19:47.833852+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "J5tdLQA-axw",
+      "youtube_url": "https://youtu.be/J5tdLQA-axw",
+      "title": "Ev Teknolojileri Zamanı Azaltır: Aletler ve Otomasyon",
+      "narration": "Evdeki teknoloji zaman kazandırır mı gerçekten Evet ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-05T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-05T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.633333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/J5tdLQA-axw.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
