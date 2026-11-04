@@ -1,43 +1,9 @@
 [
   {
-    "run_id": "41751610634",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-04T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-04T16:00:00Z",
-    "video_id": "VnQORlF_FHc",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261104_011114_g-nl-k-ya-am/final.mp4",
-    "topic": "günlük yaşam",
-    "title": "Ev teknolojileri zamanı nasıl kısaltır?",
-    "narration": "Çamaşır makinesi evde zamanımızı nasıl kısaltır Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-04T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "41751610634",
+    "run_id": "41857366892",
     "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": false,
-    "error": "No described asset matches scene 2: mind interaction"
-  },
-  {
-    "run_id": "41751610634",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-04T23:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-04T20:00:00Z",
-    "video_id": "paPoLVcrwGA",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261104_012314_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Dünya Yüzeyinin Yetmiş Bir Yüzdesi Neden Su?",
-    "narration": "Dünya yüzeyinin büyük kısmı neyle kaplı Yüzeyin yaklaşık yetmiş bir yüzdeyi su yani H2O kaplar dünya üzerindeki tüm yaşam için Su polar molekül olmasıyla güçlü hidrojen bağları oluşturur Siz de suyu seviyor musunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-04T20:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
