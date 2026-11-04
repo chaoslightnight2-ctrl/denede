@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-04T01:11:12.763098+00:00",
+  "saved_at": "2026-11-04T01:19:12.798299+00:00",
   "data": {
-    "source_id": "79425",
+    "source_id": "563299",
     "scenes": [
       {
-        "text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır",
-        "visual_query": "washing machine"
+        "text": "Neden bazen aynı anda iki duygu hissedersin",
+        "visual_query": "brain emotion"
       },
       {
-        "text": "Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır",
-        "visual_query": "clock timer"
+        "text": "Çünkü davranışımız çevresel etkiler ve genetik faktörlerin birleşimiyle tamamen şekillenir ve yönlendirilir",
+        "visual_query": "brain genetics"
       },
       {
-        "text": "ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır",
-        "visual_query": "smart home"
+        "text": "Bu faktörler düşünce ve duygularla da etkileşir günlük yaşamda",
+        "visual_query": "mind interaction"
       },
       {
-        "text": "Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-        "visual_query": "livingroom clock"
+        "text": "Sizce davranışınızı ne yönlendirir İlginç Gerçekler kanalına abone ol",
+        "visual_query": "person thinking"
       }
     ],
-    "closing_question": "Siz de zaman kazandınız mı?",
-    "closing_visual_query": "livingroom clock",
+    "closing_question": "Sizce davranışınızı ne yönlendirir?",
+    "closing_visual_query": "person thinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük yaşam",
-    "title": "Ev teknolojileri zamanı nasıl kısaltır?",
-    "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltır. Böylece haftada birkaç saat tasarruf sağlanır.\n\n#shorts #evteknolojisi #zamankazanma",
+    "topic": "psikoloji",
+    "title": "İnsan Davranışı Çevresel ve Genetik Şekillenir",
+    "description": "İnsan davranışı çevresel ve genetik faktörlerle yönlendirilir. Bu faktörler düşünce ve duygularla da etkileşir.\n\n#shorts #davranış #psikoloji",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "zamankazanma"
+      "primary": "davranış",
+      "secondary": "psikoloji"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "zaman",
-      "tasarruf",
-      "otomasyon"
+      "davranış",
+      "çevre",
+      "genetik",
+      "psikoloji",
+      "insan"
     ],
-    "spoken_text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "full_text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır. Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır. ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır. Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "spoken_text": "Neden bazen aynı anda iki duygu hissedersin Çünkü davranışımız çevresel etkiler ve genetik faktörlerin birleşimiyle tamamen şekillenir ve yönlendirilir Bu faktörler düşünce ve duygularla da etkileşir günlük yaşamda Sizce davranışınızı ne yönlendirir İlginç Gerçekler kanalına abone ol",
+    "full_text": "Neden bazen aynı anda iki duygu hissedersin Çünkü davranışımız çevresel etkiler ve genetik faktörlerin birleşimiyle tamamen şekillenir ve yönlendirilir Bu faktörler düşünce ve duygularla da etkileşir günlük yaşamda Sizce davranışınızı ne yönlendirir İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Neden bazen aynı anda iki duygu hissedersin. Çünkü davranışımız çevresel etkiler ve genetik faktörlerin birleşimiyle tamamen şekillenir ve yönlendirilir. Bu faktörler düşünce ve duygularla da etkileşir günlük yaşamda. Sizce davranışınızı ne yönlendirir İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "563299",
+      "title": "Human behavior",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
     },
     "raw_groq_package": {
-      "source_id": "79425",
+      "source_id": "563299",
       "scenes": [
         {
-          "text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır?",
-          "visual_query": "washing machine"
+          "text": "Neden bazen aynı anda iki duygu hissedersin?",
+          "visual_query": "brain emotion"
         },
         {
-          "text": "Ev teknolojileri, ev işlerine harcanan süreyi önemli ölçüde azaltır; bu sayede haftada birkaç saat tasarruf sağlanır.",
-          "visual_query": "clock timer"
+          "text": "Çünkü davranışımız, çevresel etkiler ve genetik faktörlerin birleşimiyle tamamen şekillenir ve yönlendirilir.",
+          "visual_query": "brain genetics"
         },
         {
-          "text": "ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır.",
-          "visual_query": "smart home"
+          "text": "Bu faktörler düşünce ve duygularla da etkileşir günlük yaşamda.",
+          "visual_query": "mind interaction"
         }
       ],
-      "closing_question": "Siz de zaman kazandınız mı?",
-      "closing_visual_query": "livingroom clock",
+      "closing_question": "Sizce davranışınızı ne yönlendirir?",
+      "closing_visual_query": "person thinking",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük yaşam",
-      "title": "Ev teknolojileri zamanı nasıl kısaltır?",
-      "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltır. Böylece haftada birkaç saat tasarruf sağlanır.",
+      "topic": "psikoloji",
+      "title": "İnsan Davranışı Çevresel ve Genetik Şekillenir",
+      "description": "İnsan davranışı çevresel ve genetik faktörlerle yönlendirilir. Bu faktörler düşünce ve duygularla da etkileşir.",
       "hashtags": {
-        "primary": "evteknolojisi",
-        "secondary": "zamankazanma"
+        "primary": "davranış",
+        "secondary": "psikoloji"
       },
       "tags": [
-        "ev",
-        "teknoloji",
-        "zaman",
-        "tasarruf",
-        "otomasyon"
+        "davranış",
+        "çevre",
+        "genetik",
+        "psikoloji",
+        "insan"
       ]
     },
     "generation_mode": "prompt_first_v1"
