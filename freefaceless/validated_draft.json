@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-03T01:19:12.665776+00:00",
+  "saved_at": "2026-11-04T01:11:12.763098+00:00",
   "data": {
-    "source_id": "201485",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "Li ion piller neden daha hafif olabiliyor",
-        "visual_query": "lithium battery"
+        "text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır",
+        "visual_query": "washing machine"
       },
       {
-        "text": "Li ion piller lityum iyonlarının katı elektrotlara geçişiyle enerji depolar bu da yüksek enerji yoğunluğu sağlar",
-        "visual_query": "battery diagram"
+        "text": "Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır",
+        "visual_query": "clock timer"
       },
       {
-        "text": "bin dokuz yüz doksan birden beri enerji yoğunluğu üç kat arttı maliyet ise on kat azaldı",
-        "visual_query": "graph chart"
+        "text": "ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır",
+        "visual_query": "smart home"
       },
       {
-        "text": "Yeni pil alır mısınız İlginç Gerçekler kanalına abone ol",
-        "visual_query": "store shelf"
+        "text": "Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "livingroom clock"
       }
     ],
-    "closing_question": "Yeni pil alır mısınız?",
-    "closing_visual_query": "store shelf",
+    "closing_question": "Siz de zaman kazandınız mı?",
+    "closing_visual_query": "livingroom clock",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "Li-ion pillerin enerji yoğunluğu üç kat arttı, neden?",
-    "description": "Li-ion piller, lityum iyonlarının katı elektrotlara geçişiyle enerji depolar. bin dokuz yüz doksan bir'den beri enerji yoğunluğu üç kat artmıştır.\n\n#shorts #lityumiyon #pilteknolojisi",
+    "topic": "günlük yaşam",
+    "title": "Ev teknolojileri zamanı nasıl kısaltır?",
+    "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltır. Böylece haftada birkaç saat tasarruf sağlanır.\n\n#shorts #evteknolojisi #zamankazanma",
     "hashtags": {
-      "primary": "lityumiyon",
-      "secondary": "pilteknolojisi"
+      "primary": "evteknolojisi",
+      "secondary": "zamankazanma"
     },
     "tags": [
-      "lityum",
-      "pil",
-      "enerji",
+      "ev",
       "teknoloji",
-      "batarya"
+      "zaman",
+      "tasarruf",
+      "otomasyon"
     ],
-    "spoken_text": "Li ion piller neden daha hafif olabiliyor Li ion piller lityum iyonlarının katı elektrotlara geçişiyle enerji depolar bu da yüksek enerji yoğunluğu sağlar bin dokuz yüz doksan birden beri enerji yoğunluğu üç kat arttı maliyet ise on kat azaldı Yeni pil alır mısınız İlginç Gerçekler kanalına abone ol",
-    "full_text": "Li ion piller neden daha hafif olabiliyor Li ion piller lityum iyonlarının katı elektrotlara geçişiyle enerji depolar bu da yüksek enerji yoğunluğu sağlar bin dokuz yüz doksan birden beri enerji yoğunluğu üç kat arttı maliyet ise on kat azaldı Yeni pil alır mısınız İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Li ion piller neden daha hafif olabiliyor. Li ion piller lityum iyonlarının katı elektrotlara geçişiyle enerji depolar bu da yüksek enerji yoğunluğu sağlar. bin dokuz yüz doksan birden beri enerji yoğunluğu üç kat arttı maliyet ise on kat azaldı. Yeni pil alır mısınız İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "spoken_text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır. Ev teknolojileri ev işlerine harcanan süreyi önemli ölçüde azaltır bu sayede haftada birkaç saat tasarruf sağlanır. ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır. Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "201485",
-      "title": "Lithium-ion battery",
-      "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
-      "text": "A lithium-ion battery or Li-ion battery is a type of rechargeable battery that uses the reversible intercalation of lithium ions (Li+) into electronically conducting solids to store energy. There are many different varieties, which are usually categorized by the materials used in the cathode. Compared to other rechargeable battery types, they generally have higher specific energy, energy density, and energy efficiency and a longer cycle life and calendar life. In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold. In late 2024, global demand passed 1 terawatt-hour per year, while production capacity was more than twice that. The invention and commercialization of Li-ion batteries has had a large impact on technology, as recognized by the 2019 Nobel Prize in Chemistry, which was awarded to contributors to the development of Li-ion batteries. Li-ion batteries have enabled portable consumer electronics, laptop computers, cellular phones, and electric cars. They are used for grid-scale energy storage and in military and aerospace applications. Li-ion battery sizes are generally not standardised (e.g. in the spirit of the AA battery) and they come in various and unique form factors depending on device and vendor. They typically have a nominal voltage of 3.6 or 3.7 V. M. Stanley Whittingham conceived intercalation electrodes in the 1970s and created the first rechargeable lithium-ion battery, based on a titanium disulfide cathode and a lithium-aluminium anode, although it suffered from safety problems and was never commercialized."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     "raw_groq_package": {
-      "source_id": "201485",
+      "source_id": "79425",
       "scenes": [
         {
-          "text": "Li-ion piller neden daha hafif olabiliyor?",
-          "visual_query": "lithium battery"
+          "text": "Çamaşır makinesi evde zamanımızı nasıl kısaltır?",
+          "visual_query": "washing machine"
         },
         {
-          "text": "Li-ion piller, lityum iyonlarının katı elektrotlara geçişiyle enerji depolar, bu da yüksek enerji yoğunluğu sağlar.",
-          "visual_query": "battery diagram"
+          "text": "Ev teknolojileri, ev işlerine harcanan süreyi önemli ölçüde azaltır; bu sayede haftada birkaç saat tasarruf sağlanır.",
+          "visual_query": "clock timer"
         },
         {
-          "text": "bin dokuz yüz doksan bir'den beri enerji yoğunluğu üç kat arttı, maliyet ise on kat azaldı.",
-          "visual_query": "graph chart"
+          "text": "ev otomasyonu ve akıllı cihazlar da bu süreci hızlandırır.",
+          "visual_query": "smart home"
         }
       ],
-      "closing_question": "Yeni pil alır mısınız?",
-      "closing_visual_query": "store shelf",
+      "closing_question": "Siz de zaman kazandınız mı?",
+      "closing_visual_query": "livingroom clock",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "Li-ion pillerin enerji yoğunluğu üç kat arttı, neden?",
-      "description": "Li-ion piller, lityum iyonlarının katı elektrotlara geçişiyle enerji depolar. bin dokuz yüz doksan bir'den beri enerji yoğunluğu üç kat artmıştır.",
+      "topic": "günlük yaşam",
+      "title": "Ev teknolojileri zamanı nasıl kısaltır?",
+      "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltır. Böylece haftada birkaç saat tasarruf sağlanır.",
       "hashtags": {
-        "primary": "lityumiyon",
-        "secondary": "pilteknolojisi"
+        "primary": "evteknolojisi",
+        "secondary": "zamankazanma"
       },
       "tags": [
-        "lityum",
-        "pil",
-        "enerji",
+        "ev",
         "teknoloji",
-        "batarya"
+        "zaman",
+        "tasarruf",
+        "otomasyon"
       ]
     },
     "generation_mode": "prompt_first_v1"
