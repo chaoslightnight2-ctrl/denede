@@ -39,7 +39,8 @@
     "hava durumu",
     "ev teknolojisi",
     "güneş",
-    "evteknolojisi"
+    "evteknolojisi",
+    "mobiltelefon"
   ],
   "published": [
     {
@@ -807,6 +808,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42117384150",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261105_220712",
+      "topic": "mobiltelefon",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "İlk Mobil Telefon Ne Zaman ve Nasıl Yapıldı?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261105_220712_mobiltelefon/final.mp4",
+      "video_id": "1vFQzA3vZro",
+      "publish_at": "2026-11-06T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "42117384150"
     }
   ]
 }
