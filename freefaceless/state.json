@@ -792,7 +792,8 @@
       "video_id": "g_ZNT4SKop4",
       "publish_at": "2026-11-05T16:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "41947884662"
+      "run_id": "41947884662",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }

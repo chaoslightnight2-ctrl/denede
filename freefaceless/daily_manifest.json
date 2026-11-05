@@ -1,33 +1,19 @@
 [
   {
-    "run_id": "41919926222",
+    "run_id": "41947884662",
     "slot": "1900",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "41919926222",
-    "slot": "2100",
-    "niche": "Günlük hayat ve eşyalar",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-05T21:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-05T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-05T18:00:00Z",
-    "video_id": "J5tdLQA-axw",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261104_221114_evteknolojisi/final.mp4",
-    "topic": "evteknolojisi",
-    "title": "Ev Teknolojileri Zamanı Azaltır: Aletler ve Otomasyon",
-    "narration": "Evdeki teknoloji zaman kazandırır mı gerçekten Evet ev aletleri ve otomasyon sayesinde ev işlerine harcanan süre önemli ölçüde azalır Ayrıca enerji verimliliği ve kendi kendine yeten evler hedeflenir Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-05T18:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-05T16:00:00Z",
+    "video_id": "g_ZNT4SKop4",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261105_012312_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Bitkiler Neden Dünya Oksijeninin Çoğunu Üretiyor?",
+    "narration": "Neden nefes aldığımız havanın çoğu bitkilerden Bitkiler fotosentez sayesinde Dünya oksijeninin büyük bir kısmını üretir bu süreçte su ve karbondioksit kullanılır Bitkiler aynı zamanda şeker üretir besin zincirinin temelidir Siz de bitkileri koruyun mu İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-05T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "41919926222",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
