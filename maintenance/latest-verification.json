@@ -1,17 +1,74 @@
 {
-  "source_run": "42054959990",
-  "verified_at": "2026-11-05T15:39:46.824402+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "42117384150",
+  "verified_at": "2026-11-05T22:19:48.656421+00:00",
+  "videos": [
     {
       "index": 1,
+      "video_id": "ZedGQI-Lly4",
+      "youtube_url": "https://youtu.be/ZedGQI-Lly4",
+      "title": "Neden havamızdaki oksijen bitkilerden gelir? İşte cevap!",
+      "narration": "Neden nefes aldığımız havanın 21i oksijendir Bitkiler fotosentezle su karbondioksitten oksijen üretir güneş ışığını klorofil yakalar havaya salar Dünya üzerindeki oksijenin yüzde yetmişi ormanlardan yüzde otuzu deniz bitkilerinden gelir Siz hangi bitkiyi seviyorsunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-06T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-06T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.933333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/ZedGQI-Lly4.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "1vFQzA3vZro",
+      "youtube_url": "https://youtu.be/1vFQzA3vZro",
+      "title": "İlk Mobil Telefon Ne Zaman ve Nasıl Yapıldı?",
+      "narration": "Taşınabilir telefonun ağırlığı gerçekten ne kadar İlk el taşınabilir telefon üç Nisan bin dokuz yüz yetmiş üçte iki kilogram ağırlığındaydı Cihaz radyo frekansı üzerinden hücresel ağla bağlanıyordu ilk kez Sizce telefonlar nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-06T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-06T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.133333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/1vFQzA3vZro.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "index": 3,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
