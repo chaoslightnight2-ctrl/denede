@@ -1,47 +1,17 @@
 {
-  "source_run": "41947884662",
-  "verified_at": "2026-11-05T01:31:56.000231+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "g_ZNT4SKop4",
-      "youtube_url": "https://youtu.be/g_ZNT4SKop4",
-      "title": "Bitkiler Neden Dünya Oksijeninin Çoğunu Üretiyor?",
-      "narration": "Neden nefes aldığımız havanın çoğu bitkilerden Bitkiler fotosentez sayesinde Dünya oksijeninin büyük bir kısmını üretir bu süreçte su ve karbondioksit kullanılır Bitkiler aynı zamanda şeker üretir besin zincirinin temelidir Siz de bitkileri koruyun mu İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-05T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-05T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.933333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/g_ZNT4SKop4.jpg"
-    }
-  ],
+  "source_run": "42054959990",
+  "verified_at": "2026-11-05T15:39:46.824402+00:00",
+  "videos": [],
   "errors": [
     {
-      "index": 2,
-      "error": "No described asset matches scene 1: martin cooper demo"
+      "index": 1,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
