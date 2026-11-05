@@ -781,6 +781,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "41919926222",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261105_012312",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Bitkiler Neden Dünya Oksijeninin Çoğunu Üretiyor?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261105_012312_g-nl-k-bilim/final.mp4",
+      "video_id": "g_ZNT4SKop4",
+      "publish_at": "2026-11-05T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "41947884662"
     }
   ]
 }
