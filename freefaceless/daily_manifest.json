@@ -1,9 +1,19 @@
 [
   {
-    "run_id": "42054959990",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
+    "run_id": "42117384150",
+    "slot": "1900",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-06T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-06T16:00:00Z",
+    "video_id": "ZedGQI-Lly4",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261105_220313_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Neden havamızdaki oksijen bitkilerden gelir? İşte cevap!",
+    "narration": "Neden nefes aldığımız havanın 21i oksijendir Bitkiler fotosentezle su karbondioksitten oksijen üretir güneş ışığını klorofil yakalar havaya salar Dünya üzerindeki oksijenin yüzde yetmişi ormanlardan yüzde otuzu deniz bitkilerinden gelir Siz hangi bitkiyi seviyorsunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-06T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
