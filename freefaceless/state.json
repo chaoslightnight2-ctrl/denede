@@ -832,7 +832,8 @@
       "video_id": "S-l1SimmgIM",
       "publish_at": "2026-11-06T20:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "42143676590"
+      "run_id": "42143676590",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
