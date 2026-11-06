@@ -1,65 +1,65 @@
 {
-  "run_id": "42117384150",
+  "run_id": "42143676590",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "79425",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "Evdeki akıllı cihazlar tam olarak ne işe yarar?",
-        "visual_query": "home"
+        "text": "Neden bir elinizle metal tutunca çarpma hissedersiniz?",
+        "visual_query": "hand metal"
       },
       {
-        "text": "Bazı araştırmalar ev işlerini kısalttığını söylese de kesin kanıt yoktur ve hâlâ tartışılır.",
-        "visual_query": "data"
+        "text": "Çünkü vücudunuzdaki elektrik yükleri metal yüzeyine akar ve akım oluşturur sizi şoklar.",
+        "visual_query": "electric spark"
       },
       {
-        "text": "Ayrıca enerji tasarrufu ve öz‑yeterlilik de evde sağlanır, konfor artar.",
-        "visual_query": "lamp"
+        "text": "Bu akım, statik elektrik olarak bilinir ve kuru havalarda daha güçlü olur.",
+        "visual_query": "dry air"
       }
     ],
-    "closing_question": "Siz de denediniz mi?",
-    "closing_visual_query": "bed",
+    "closing_question": "Siz de çarptınız mı?",
+    "closing_visual_query": "shocked hand",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "ev teknolojileri",
-    "title": "Evdeki teknolojiler iş yükünü azaltır mı? Gerçek nedir",
-    "description": "Ev teknolojileri, ev işlerini kısaltma iddiası taşıyor. Ancak bu iddianın kesin kanıtları yok.",
+    "topic": "günlük bilim",
+    "title": "Metal tutunca çarpma hissi: Vücuttaki elektrik akımı",
+    "description": "Metal bir nesneye dokunduğunuzda vücudunuzdaki elektrik yükleri yüzeye akar. Bu akım, çarpma hissi olarak sizi şoklar.",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "günlükhayat"
+      "primary": "elektrik",
+      "secondary": "statik"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "otomasyon",
-      "zaman",
-      "verimlilik"
+      "elektrik",
+      "statik",
+      "metal",
+      "çarpma",
+      "günlükhayat"
     ]
   },
   "reference_sources": [
     {
-      "id": "23416874",
-      "title": "Sense",
-      "url": "https://en.wikipedia.org/wiki/Sense",
-      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
+      "id": "54176",
+      "title": "Human body",
+      "url": "https://en.wikipedia.org/wiki/Human_body",
+      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     },
     {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "7116046",
+      "title": "Animal rights",
+      "url": "https://en.wikipedia.org/wiki/Animal_rights",
+      "text": "Animal rights is the philosophy according to which many or all sentient animals have moral worth independent of their utility to humans, and their most basic interests—such as avoiding suffering—should be afforded the same consideration as similar interests of human beings. The argument from marginal cases is often used to reach this conclusion. This argument holds that if human beings such as infants, senile people, and the cognitively disabled are granted moral status and negative rights, then nonhuman animals must be granted the same moral consideration, since animals do not lack any known morally relevant characteristic that marginal-case humans have. Broadly speaking, and particularly in popular discourse, the term \"animal rights\" is often used synonymously with \"animal protection\" or \"animal liberation\". More narrowly, \"animal rights\" refers to the idea that many animals have fundamental rights to be treated with respect as individuals—rights to life, liberty, and freedom from torture—that may not be overridden by considerations of aggregate welfare. Like human rights, animal rights center on the notion of freedom. Many animal rights advocates oppose assigning moral value and fundamental protections on the basis of species membership alone. They consider this idea, known as speciesism, a prejudice as irrational as any other, and hold that animals should not be considered property or used as food, clothing, entertainment, or beasts of burden merely because they are not human. Cultural traditions such as Jainism, Taoism, Hinduism, Buddhism, Shinto, and animism also espouse varying forms of animal rights."
     },
     {
-      "id": "252137",
-      "title": "Food science",
-      "url": "https://en.wikipedia.org/wiki/Food_science",
-      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
+      "id": "26903",
+      "title": "Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System",
+      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
     },
     {
-      "id": "27834",
-      "title": "Sleep",
-      "url": "https://en.wikipedia.org/wiki/Sleep",
-      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     }
   ],
   "error": null
