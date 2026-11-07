@@ -1,88 +1,88 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-07T00:59:12.339317+00:00",
+  "saved_at": "2026-11-07T01:11:16.635042+00:00",
   "data": {
-    "source_id": "9550",
-    "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
-    "description": "Elektrik akımı, yüklerin hareketiyle oluşur ve bu hareket manyetik alan üretir. Pozitif ya da negatif bir yük etrafında bir elektrik alanı bulunur.\n\n#shorts #elektrik #manyetizma",
-    "hashtags": {
-      "primary": "elektrik",
-      "secondary": "manyetizma"
-    },
-    "topic": "elektrik",
-    "tags": [
-      "elektrik",
-      "manyetikalan",
-      "yük",
-      "akım",
-      "elektromanyetizma"
-    ],
+    "source_id": "201485",
     "scenes": [
       {
-        "text": "Elektrik akımı nasıl manyetik alan yaratır",
-        "visual_query": "circuit board"
+        "text": "Akıllı telefonlar neden uzun süre dayanıyor",
+        "visual_query": "person looking at phone"
       },
       {
-        "text": "Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir",
-        "visual_query": "magnet coil"
+        "text": "Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda",
+        "visual_query": "battery chart"
       },
       {
-        "text": "Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur",
-        "visual_query": "electric field"
+        "text": "Bu piller telefon laptop ve elektrikli araçlarda bulunur",
+        "visual_query": "car charger"
       },
       {
-        "text": "Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
-        "visual_query": "lab experiment"
+        "text": "Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
+        "visual_query": "hand holding battery"
       }
     ],
-    "closing_question": "Kendi manyetik alanını ölçtün mü?",
-    "closing_visual_query": "lab experiment",
+    "closing_question": "Piliniz ne kadar dayanıyor",
+    "closing_visual_query": "hand holding battery",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "spoken_text": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
-    "full_text": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Elektrik akımı nasıl manyetik alan yaratır. Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir. Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur. Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "topic": "teknoloji ve icatlar",
+    "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
+    "description": "Li‑ion pillerin enerji yoğunluğu üç kat artmıştır ve telefonlar daha uzun süre çalışır\n\n#shorts #teknoloji #pil",
+    "hashtags": {
+      "primary": "teknoloji",
+      "secondary": "pil"
+    },
+    "tags": [
+      "lityum",
+      "pil",
+      "teknoloji",
+      "akıllıtelefon",
+      "enerji"
+    ],
+    "spoken_text": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
+    "full_text": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Akıllı telefonlar neden uzun süre dayanıyor. Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda. Bu piller telefon laptop ve elektrikli araçlarda bulunur. Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "technology_science",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "9550",
-      "title": "Electricity",
-      "url": "https://en.wikipedia.org/wiki/Electricity",
-      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+      "id": "201485",
+      "title": "Lithium-ion battery",
+      "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+      "text": "A lithium-ion battery or Li-ion battery is a type of rechargeable battery that uses the reversible intercalation of lithium ions (Li+) into electronically conducting solids to store energy. There are many different varieties, which are usually categorized by the materials used in the cathode. Compared to other rechargeable battery types, they generally have higher specific energy, energy density, and energy efficiency and a longer cycle life and calendar life. In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold. In late 2024, global demand passed 1 terawatt-hour per year, while production capacity was more than twice that. The invention and commercialization of Li-ion batteries has had a large impact on technology, as recognized by the 2019 Nobel Prize in Chemistry, which was awarded to contributors to the development of Li-ion batteries. Li-ion batteries have enabled portable consumer electronics, laptop computers, cellular phones, and electric cars. They are used for grid-scale energy storage and in military and aerospace applications. Li-ion battery sizes are generally not standardised (e.g. in the spirit of the AA battery) and they come in various and unique form factors depending on device and vendor. They typically have a nominal voltage of 3.6 or 3.7 V. M. Stanley Whittingham conceived intercalation electrodes in the 1970s and created the first rechargeable lithium-ion battery, based on a titanium disulfide cathode and a lithium-aluminium anode, although it suffered from safety problems and was never commercialized."
     },
     "raw_groq_package": {
-      "source_id": "9550",
-      "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
-      "description": "Elektrik akımı, yüklerin hareketiyle oluşur ve bu hareket manyetik alan üretir. Pozitif ya da negatif bir yük etrafında bir elektrik alanı bulunur.",
-      "hashtags": {
-        "primary": "elektrik",
-        "secondary": "manyetizma"
-      },
-      "topic": "elektrik",
-      "tags": [
-        "elektrik",
-        "manyetikalan",
-        "yük",
-        "akım",
-        "elektromanyetizma"
-      ],
+      "source_id": "201485",
       "scenes": [
         {
-          "text": "Elektrik akımı nasıl manyetik alan yaratır?",
-          "visual_query": "circuit board"
+          "text": "Akıllı telefonlar neden uzun süre dayanıyor",
+          "visual_query": "person looking at phone"
         },
         {
-          "text": "Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir.",
-          "visual_query": "magnet coil"
+          "text": "Li‑ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda",
+          "visual_query": "battery chart"
         },
         {
-          "text": "Pozitif ya da negatif yük, etrafında bir elektrik alanı oluşturur.",
-          "visual_query": "electric field"
+          "text": "Bu piller telefon laptop ve elektrikli araçlarda bulunur",
+          "visual_query": "car charger"
         }
       ],
-      "closing_question": "Kendi manyetik alanını ölçtün mü?",
-      "closing_visual_query": "lab experiment",
-      "cta": "İlginç Gerçekler kanalına abone ol"
+      "closing_question": "Piliniz ne kadar dayanıyor",
+      "closing_visual_query": "hand holding battery",
+      "cta": "İlginç Gerçekler kanalına abone ol",
+      "topic": "teknoloji ve icatlar",
+      "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
+      "description": "Li‑ion pillerin enerji yoğunluğu üç kat artmıştır ve telefonlar daha uzun süre çalışır",
+      "hashtags": {
+        "primary": "teknoloji",
+        "secondary": "pil"
+      },
+      "tags": [
+        "lityum",
+        "pil",
+        "teknoloji",
+        "akıllıtelefon",
+        "enerji"
+      ]
     },
     "generation_mode": "prompt_first_v1"
   }
