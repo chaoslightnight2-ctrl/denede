@@ -15,5 +15,22 @@
     "publish_at": "2026-11-07T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "42319656552",
+    "slot": "2100",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-07T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-07T18:00:00Z",
+    "video_id": "e8CKsyrVL_E",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_005913_elektrik/final.mp4",
+    "topic": "elektrik",
+    "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
+    "narration": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-07T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
