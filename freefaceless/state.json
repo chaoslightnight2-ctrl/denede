@@ -40,7 +40,8 @@
     "ev teknolojisi",
     "güneş",
     "evteknolojisi",
-    "mobiltelefon"
+    "mobiltelefon",
+    "dikkat"
   ],
   "published": [
     {
@@ -834,6 +835,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42143676590",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261107_005513",
+      "topic": "dikkat",
+      "audience_bucket": "human_behavior",
+      "hook_style": "concrete_question",
+      "title": "Dikkat Tek Bir Süreç Değildir Birden Fazla İşlevi Var",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_005513_dikkat/final.mp4",
+      "video_id": "64oNsPfxWvA",
+      "publish_at": "2026-11-07T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "42319656552"
     }
   ]
 }
