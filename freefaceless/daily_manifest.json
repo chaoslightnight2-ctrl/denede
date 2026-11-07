@@ -32,5 +32,22 @@
     "publish_at": "2026-11-07T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "42319656552",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-07T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-07T20:00:00Z",
+    "video_id": "8ZrO5p-wrpM",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_011117_teknoloji-ve-icatlar/final.mp4",
+    "topic": "teknoloji ve icatlar",
+    "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
+    "narration": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-07T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]

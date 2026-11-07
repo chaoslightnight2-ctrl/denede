@@ -873,7 +873,8 @@
       "video_id": "8ZrO5p-wrpM",
       "publish_at": "2026-11-07T20:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "42319656552"
+      "run_id": "42319656552",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
