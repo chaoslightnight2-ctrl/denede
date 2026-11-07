@@ -1,13 +1,98 @@
 {
-  "source_run": "42292018788",
-  "verified_at": "2026-11-06T20:55:12.171809+00:00",
-  "videos": [],
+  "source_run": "42319656552",
+  "verified_at": "2026-11-07T01:12:52.837153+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "64oNsPfxWvA",
+      "youtube_url": "https://youtu.be/64oNsPfxWvA",
+      "title": "Dikkat Tek Bir Süreç Değildir Birden Fazla İşlevi Var",
+      "narration": "Dikkat sadece bir odaklanma olabilir mi Hayır dikkat bir birim değildir seçici sürdürülebilir bölünmüş ve yönlendirme gibi süreçleri kapsar Dikkat frontal parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir Siz hangi dikkat türünü kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-07T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-07T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.033333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/64oNsPfxWvA.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "e8CKsyrVL_E",
+      "youtube_url": "https://youtu.be/e8CKsyrVL_E",
+      "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
+      "narration": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-07T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-07T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.733333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/e8CKsyrVL_E.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "8ZrO5p-wrpM",
+      "youtube_url": "https://youtu.be/8ZrO5p-wrpM",
+      "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
+      "narration": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-07T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-07T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.0,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/8ZrO5p-wrpM.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 3,
+  "processed_count": 3,
   "complete": false,
-  "skipped": "daily_target_already_accepted",
-  "target_count": 0,
-  "daily_existing_count": 3,
+  "public_listing_error": "HTTPError",
+  "target_count": 3,
+  "published_count": 0,
   "accepted_complete": true
 }
