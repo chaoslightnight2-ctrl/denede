@@ -848,6 +848,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42319656552",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261107_005913",
+      "topic": "elektrik",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_005913_elektrik/final.mp4",
+      "video_id": "e8CKsyrVL_E",
+      "publish_at": "2026-11-07T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "42319656552"
     }
   ]
 }
