@@ -1,88 +1,88 @@
 {
-  "focus": "Psikoloji ve insan davranışları",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-07T00:55:12.427670+00:00",
+  "saved_at": "2026-11-07T00:59:12.339317+00:00",
   "data": {
-    "source_id": "68753",
+    "source_id": "9550",
+    "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
+    "description": "Elektrik akımı, yüklerin hareketiyle oluşur ve bu hareket manyetik alan üretir. Pozitif ya da negatif bir yük etrafında bir elektrik alanı bulunur.\n\n#shorts #elektrik #manyetizma",
+    "hashtags": {
+      "primary": "elektrik",
+      "secondary": "manyetizma"
+    },
+    "topic": "elektrik",
+    "tags": [
+      "elektrik",
+      "manyetikalan",
+      "yük",
+      "akım",
+      "elektromanyetizma"
+    ],
     "scenes": [
       {
-        "text": "Dikkat sadece bir odaklanma olabilir mi",
-        "visual_query": "brain scan"
+        "text": "Elektrik akımı nasıl manyetik alan yaratır",
+        "visual_query": "circuit board"
       },
       {
-        "text": "Hayır dikkat bir birim değildir seçici sürdürülebilir bölünmüş ve yönlendirme gibi süreçleri kapsar",
-        "visual_query": "neuron network"
+        "text": "Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir",
+        "visual_query": "magnet coil"
       },
       {
-        "text": "Dikkat frontal parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir",
-        "visual_query": "brain regions"
+        "text": "Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur",
+        "visual_query": "electric field"
       },
       {
-        "text": "Siz hangi dikkat türünü kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "person thinking"
+        "text": "Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
+        "visual_query": "lab experiment"
       }
     ],
-    "closing_question": "Siz hangi dikkat türünü kullanıyorsunuz?",
-    "closing_visual_query": "person thinking",
+    "closing_question": "Kendi manyetik alanını ölçtün mü?",
+    "closing_visual_query": "lab experiment",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "dikkat",
-    "title": "Dikkat Tek Bir Süreç Değildir Birden Fazla İşlevi Var",
-    "description": "Dikkat tek bir süreç değildir. Seçici, sürdürülebilir, bölünmüş ve yönlendirme gibi birçok alt süreci içerir.\n\n#shorts #psikoloji #davranış",
-    "hashtags": {
-      "primary": "psikoloji",
-      "secondary": "davranış"
-    },
-    "tags": [
-      "dikkat",
-      "bilişsel",
-      "psikoloji",
-      "nörobilim",
-      "zihin"
-    ],
-    "spoken_text": "Dikkat sadece bir odaklanma olabilir mi Hayır dikkat bir birim değildir seçici sürdürülebilir bölünmüş ve yönlendirme gibi süreçleri kapsar Dikkat frontal parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir Siz hangi dikkat türünü kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Dikkat sadece bir odaklanma olabilir mi Hayır dikkat bir birim değildir seçici sürdürülebilir bölünmüş ve yönlendirme gibi süreçleri kapsar Dikkat frontal parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir Siz hangi dikkat türünü kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Dikkat sadece bir odaklanma olabilir mi. Hayır dikkat bir birim değildir seçici sürdürülebilir bölünmüş ve yönlendirme gibi süreçleri kapsar. Dikkat frontal parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir. Siz hangi dikkat türünü kullanıyorsunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "human_behavior",
-    "hook_style": "concrete_question",
+    "spoken_text": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
+    "full_text": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Elektrik akımı nasıl manyetik alan yaratır. Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir. Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur. Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     "raw_groq_package": {
-      "source_id": "68753",
+      "source_id": "9550",
+      "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
+      "description": "Elektrik akımı, yüklerin hareketiyle oluşur ve bu hareket manyetik alan üretir. Pozitif ya da negatif bir yük etrafında bir elektrik alanı bulunur.",
+      "hashtags": {
+        "primary": "elektrik",
+        "secondary": "manyetizma"
+      },
+      "topic": "elektrik",
+      "tags": [
+        "elektrik",
+        "manyetikalan",
+        "yük",
+        "akım",
+        "elektromanyetizma"
+      ],
       "scenes": [
         {
-          "text": "Dikkat sadece bir odaklanma olabilir mi?",
-          "visual_query": "brain scan"
+          "text": "Elektrik akımı nasıl manyetik alan yaratır?",
+          "visual_query": "circuit board"
         },
         {
-          "text": "Hayır, dikkat bir birim değildir; seçici, sürdürülebilir, bölünmüş ve yönlendirme gibi süreçleri kapsar.",
-          "visual_query": "neuron network"
+          "text": "Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir.",
+          "visual_query": "magnet coil"
         },
         {
-          "text": "Dikkat, frontal, parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir.",
-          "visual_query": "brain regions"
+          "text": "Pozitif ya da negatif yük, etrafında bir elektrik alanı oluşturur.",
+          "visual_query": "electric field"
         }
       ],
-      "closing_question": "Siz hangi dikkat türünü kullanıyorsunuz?",
-      "closing_visual_query": "person thinking",
-      "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "dikkat",
-      "title": "Dikkat Tek Bir Süreç Değildir Birden Fazla İşlevi Var",
-      "description": "Dikkat tek bir süreç değildir. Seçici, sürdürülebilir, bölünmüş ve yönlendirme gibi birçok alt süreci içerir.",
-      "hashtags": {
-        "primary": "psikoloji",
-        "secondary": "davranış"
-      },
-      "tags": [
-        "dikkat",
-        "bilişsel",
-        "psikoloji",
-        "nörobilim",
-        "zihin"
-      ]
+      "closing_question": "Kendi manyetik alanını ölçtün mü?",
+      "closing_visual_query": "lab experiment",
+      "cta": "İlginç Gerçekler kanalına abone ol"
     },
     "generation_mode": "prompt_first_v1"
   }
