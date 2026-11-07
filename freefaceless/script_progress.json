@@ -1,65 +1,65 @@
 {
   "run_id": "42319656552",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "9550",
-    "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
-    "description": "Elektrik akımı, yüklerin hareketiyle oluşur ve bu hareket manyetik alan üretir. Pozitif ya da negatif bir yük etrafında bir elektrik alanı bulunur.",
-    "hashtags": {
-      "primary": "elektrik",
-      "secondary": "manyetizma"
-    },
-    "topic": "elektrik",
-    "tags": [
-      "elektrik",
-      "manyetikalan",
-      "yük",
-      "akım",
-      "elektromanyetizma"
-    ],
+    "source_id": "201485",
     "scenes": [
       {
-        "text": "Elektrik akımı nasıl manyetik alan yaratır?",
-        "visual_query": "circuit board"
+        "text": "Akıllı telefonlar neden uzun süre dayanıyor",
+        "visual_query": "person looking at phone"
       },
       {
-        "text": "Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir.",
-        "visual_query": "magnet coil"
+        "text": "Li‑ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda",
+        "visual_query": "battery chart"
       },
       {
-        "text": "Pozitif ya da negatif yük, etrafında bir elektrik alanı oluşturur.",
-        "visual_query": "electric field"
+        "text": "Bu piller telefon laptop ve elektrikli araçlarda bulunur",
+        "visual_query": "car charger"
       }
     ],
-    "closing_question": "Kendi manyetik alanını ölçtün mü?",
-    "closing_visual_query": "lab experiment",
-    "cta": "İlginç Gerçekler kanalına abone ol"
+    "closing_question": "Piliniz ne kadar dayanıyor",
+    "closing_visual_query": "hand holding battery",
+    "cta": "İlginç Gerçekler kanalına abone ol",
+    "topic": "teknoloji ve icatlar",
+    "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
+    "description": "Li‑ion pillerin enerji yoğunluğu üç kat artmıştır ve telefonlar daha uzun süre çalışır",
+    "hashtags": {
+      "primary": "teknoloji",
+      "secondary": "pil"
+    },
+    "tags": [
+      "lityum",
+      "pil",
+      "teknoloji",
+      "akıllıtelefon",
+      "enerji"
+    ]
   },
   "reference_sources": [
     {
-      "id": "7116046",
-      "title": "Animal rights",
-      "url": "https://en.wikipedia.org/wiki/Animal_rights",
-      "text": "Animal rights is the philosophy according to which many or all sentient animals have moral worth independent of their utility to humans, and their most basic interests—such as avoiding suffering—should be afforded the same consideration as similar interests of human beings. The argument from marginal cases is often used to reach this conclusion. This argument holds that if human beings such as infants, senile people, and the cognitively disabled are granted moral status and negative rights, then nonhuman animals must be granted the same moral consideration, since animals do not lack any known morally relevant characteristic that marginal-case humans have. Broadly speaking, and particularly in popular discourse, the term \"animal rights\" is often used synonymously with \"animal protection\" or \"animal liberation\". More narrowly, \"animal rights\" refers to the idea that many animals have fundamental rights to be treated with respect as individuals—rights to life, liberty, and freedom from torture—that may not be overridden by considerations of aggregate welfare. Like human rights, animal rights center on the notion of freedom. Many animal rights advocates oppose assigning moral value and fundamental protections on the basis of species membership alone. They consider this idea, known as speciesism, a prejudice as irrational as any other, and hold that animals should not be considered property or used as food, clothing, entertainment, or beasts of burden merely because they are not human. Cultural traditions such as Jainism, Taoism, Hinduism, Buddhism, Shinto, and animism also espouse varying forms of animal rights."
+      "id": "14539",
+      "title": "Internet",
+      "url": "https://en.wikipedia.org/wiki/Internet",
+      "text": "The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that comprises private, public, academic, business, and government networks of local to global scope, linked by electronic, wireless, and optical networking technologies. The Internet carries a vast range of information services and resources, such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, discussion groups, internet telephony, streaming media and file sharing. Most traditional communication media, including telephone, radio, television, paper mail, newspapers, and print publishing, have been transformed by the Internet, giving rise to new media such as email, online music, digital newspapers, news aggregators, and audio and video streaming websites. The Internet has enabled and accelerated new forms of personal interaction through instant messaging, Internet forums, and social networking services. Online shopping has also grown to occupy a significant market across industries, enabling firms to extend brick and mortar presences to serve larger markets. Business-to-business and financial services on the Internet affect supply chains across entire industries. The origins of the Internet date back to research that enabled the time-sharing of computer resources, the development of packet switching, and the design of computer networks for data communication."
     },
     {
-      "id": "26903",
-      "title": "Solar System",
-      "url": "https://en.wikipedia.org/wiki/Solar_System",
-      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
+      "id": "7878457",
+      "title": "Computer",
+      "url": "https://en.wikipedia.org/wiki/Computer",
+      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
     },
     {
-      "id": "9550",
-      "title": "Electricity",
-      "url": "https://en.wikipedia.org/wiki/Electricity",
-      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+      "id": "201485",
+      "title": "Lithium-ion battery",
+      "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+      "text": "A lithium-ion battery or Li-ion battery is a type of rechargeable battery that uses the reversible intercalation of lithium ions (Li+) into electronically conducting solids to store energy. There are many different varieties, which are usually categorized by the materials used in the cathode. Compared to other rechargeable battery types, they generally have higher specific energy, energy density, and energy efficiency and a longer cycle life and calendar life. In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold. In late 2024, global demand passed 1 terawatt-hour per year, while production capacity was more than twice that. The invention and commercialization of Li-ion batteries has had a large impact on technology, as recognized by the 2019 Nobel Prize in Chemistry, which was awarded to contributors to the development of Li-ion batteries. Li-ion batteries have enabled portable consumer electronics, laptop computers, cellular phones, and electric cars. They are used for grid-scale energy storage and in military and aerospace applications. Li-ion battery sizes are generally not standardised (e.g. in the spirit of the AA battery) and they come in various and unique form factors depending on device and vendor. They typically have a nominal voltage of 3.6 or 3.7 V. M. Stanley Whittingham conceived intercalation electrodes in the 1970s and created the first rechargeable lithium-ion battery, based on a titanium disulfide cathode and a lithium-aluminium anode, although it suffered from safety problems and was never commercialized."
     },
     {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "1164",
+      "title": "Artificial intelligence",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineering, and mathematics that develops and studies methods and software enabling machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. Prominent applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     }
   ],
   "error": null
