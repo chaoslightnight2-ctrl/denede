@@ -41,7 +41,8 @@
     "güneş",
     "evteknolojisi",
     "mobiltelefon",
-    "dikkat"
+    "dikkat",
+    "teknoloji ve icatlar"
   ],
   "published": [
     {
@@ -861,6 +862,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42319656552",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261107_011117",
+      "topic": "teknoloji ve icatlar",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_011117_teknoloji-ve-icatlar/final.mp4",
+      "video_id": "8ZrO5p-wrpM",
+      "publish_at": "2026-11-07T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "42319656552"
     }
   ]
 }
