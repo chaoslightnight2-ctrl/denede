@@ -1,43 +1,19 @@
 [
   {
-    "run_id": "42488983915",
+    "run_id": "42516162945",
     "slot": "1900",
     "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-08T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-09T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-08T16:00:00Z",
-    "video_id": "AP1qh9FAJJQ",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261108_142314_hava-durumu/final.mp4",
-    "topic": "hava durumu",
-    "title": "Neden Dünya’da Sıcaklık Yıllık Kırk Derece Değişir?",
-    "narration": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-08T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-09T16:00:00Z",
+    "video_id": "U1yIjiuKJUk",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261108_195114_g-nl-k-ya-am/final.mp4",
+    "topic": "günlük yaşam",
+    "title": "Beton Neden En Çok Kullanılan Malzeme? İşte Sebep",
+    "narration": "Evin zemini neden bu kadar gerçekten dayanıklı Çünkü beton su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır Siz de betonla neler yaparsınız İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-09T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "42488983915",
-    "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-08T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-08T18:00:00Z",
-    "video_id": "Tyfyj3l92-4",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261108_143114_psikoloji/final.mp4",
-    "topic": "psikoloji",
-    "title": "Dikkat Nedir? Görev Odaklı ve Diğerlerini Dışlayan Zihin",
-    "narration": "Neden bazı insanlar bir anda tamamen odaklanamıyor Dikkat farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır bellekle birlikte çalışır etkili Seçici sürdürülebilir ve bölünmüş dikkat türleri vardır beyinde farklı bölgeler tarafından yönetilir Siz hangi dikkatinizi kaybediyorsunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-08T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "42488983915",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
