@@ -1,9 +1,9 @@
 {
-  "run_id": "42319656552",
+  "run_id": "42428904284",
   "http_status": 400,
   "code": "json_validate_failed",
   "message": "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1794013632.029179,
+  "observed_at": 1794097150.4513474,
   "failed_generation_excerpt": "max completion tokens reached before generating a valid document",
   "retry_after": null
 }
