@@ -901,6 +901,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42488983915",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261108_195114",
+      "topic": "günlük yaşam",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Beton Neden En Çok Kullanılan Malzeme? İşte Sebep",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261108_195114_g-nl-k-ya-am/final.mp4",
+      "video_id": "U1yIjiuKJUk",
+      "publish_at": "2026-11-09T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "42516162945"
     }
   ]
 }
