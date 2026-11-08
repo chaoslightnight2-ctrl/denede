@@ -1,88 +1,88 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-07T01:11:16.635042+00:00",
+  "saved_at": "2026-11-08T14:23:13.152376+00:00",
   "data": {
-    "source_id": "201485",
+    "source_id": "33978",
+    "title": "Neden Dünya’da Sıcaklık Yıllık Kırk Derece Değişir?",
+    "description": "Dünya yüzeyindeki sıcaklık genellikle kırk derece civarında değişir. Bu fark güneş ışınlarının açı ve konum farklılıklarından kaynaklanır.\n\n#shorts #hava #iklim",
+    "hashtags": {
+      "primary": "hava",
+      "secondary": "iklim"
+    },
+    "topic": "hava durumu",
+    "tags": [
+      "sıcaklık",
+      "dünya",
+      "güneş",
+      "iklim",
+      "meteoroloji"
+    ],
     "scenes": [
       {
-        "text": "Akıllı telefonlar neden uzun süre dayanıyor",
-        "visual_query": "person looking at phone"
+        "text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz",
+        "visual_query": "morning window"
       },
       {
-        "text": "Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda",
-        "visual_query": "battery chart"
+        "text": "Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir",
+        "visual_query": "thermometer reading"
       },
       {
-        "text": "Bu piller telefon laptop ve elektrikli araçlarda bulunur",
-        "visual_query": "car charger"
+        "text": "Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır",
+        "visual_query": "sun angle"
       },
       {
-        "text": "Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
-        "visual_query": "hand holding battery"
+        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "window view"
       }
     ],
-    "closing_question": "Piliniz ne kadar dayanıyor",
-    "closing_visual_query": "hand holding battery",
+    "closing_question": "Siz de fark ettiniz mi?",
+    "closing_visual_query": "window view",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji ve icatlar",
-    "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
-    "description": "Li‑ion pillerin enerji yoğunluğu üç kat artmıştır ve telefonlar daha uzun süre çalışır\n\n#shorts #teknoloji #pil",
-    "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "pil"
-    },
-    "tags": [
-      "lityum",
-      "pil",
-      "teknoloji",
-      "akıllıtelefon",
-      "enerji"
-    ],
-    "spoken_text": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
-    "full_text": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Akıllı telefonlar neden uzun süre dayanıyor. Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda. Bu piller telefon laptop ve elektrikli araçlarda bulunur. Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "spoken_text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz. Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir. Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "201485",
-      "title": "Lithium-ion battery",
-      "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
-      "text": "A lithium-ion battery or Li-ion battery is a type of rechargeable battery that uses the reversible intercalation of lithium ions (Li+) into electronically conducting solids to store energy. There are many different varieties, which are usually categorized by the materials used in the cathode. Compared to other rechargeable battery types, they generally have higher specific energy, energy density, and energy efficiency and a longer cycle life and calendar life. In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold. In late 2024, global demand passed 1 terawatt-hour per year, while production capacity was more than twice that. The invention and commercialization of Li-ion batteries has had a large impact on technology, as recognized by the 2019 Nobel Prize in Chemistry, which was awarded to contributors to the development of Li-ion batteries. Li-ion batteries have enabled portable consumer electronics, laptop computers, cellular phones, and electric cars. They are used for grid-scale energy storage and in military and aerospace applications. Li-ion battery sizes are generally not standardised (e.g. in the spirit of the AA battery) and they come in various and unique form factors depending on device and vendor. They typically have a nominal voltage of 3.6 or 3.7 V. M. Stanley Whittingham conceived intercalation electrodes in the 1970s and created the first rechargeable lithium-ion battery, based on a titanium disulfide cathode and a lithium-aluminium anode, although it suffered from safety problems and was never commercialized."
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     },
     "raw_groq_package": {
-      "source_id": "201485",
+      "source_id": "33978",
+      "title": "Neden Dünya’da Sıcaklık Yıllık Kırk Derece Değişir?",
+      "description": "Dünya yüzeyindeki sıcaklık genellikle kırk derece civarında değişir. Bu fark güneş ışınlarının açı ve konum farklılıklarından kaynaklanır.",
+      "hashtags": {
+        "primary": "hava",
+        "secondary": "iklim"
+      },
+      "topic": "hava durumu",
+      "tags": [
+        "sıcaklık",
+        "dünya",
+        "güneş",
+        "iklim",
+        "meteoroloji"
+      ],
       "scenes": [
         {
-          "text": "Akıllı telefonlar neden uzun süre dayanıyor",
-          "visual_query": "person looking at phone"
+          "text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz?",
+          "visual_query": "morning window"
         },
         {
-          "text": "Li‑ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda",
-          "visual_query": "battery chart"
+          "text": "Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir.",
+          "visual_query": "thermometer reading"
         },
         {
-          "text": "Bu piller telefon laptop ve elektrikli araçlarda bulunur",
-          "visual_query": "car charger"
+          "text": "Bu değişim, güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır.",
+          "visual_query": "sun angle"
         }
       ],
-      "closing_question": "Piliniz ne kadar dayanıyor",
-      "closing_visual_query": "hand holding battery",
-      "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji ve icatlar",
-      "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
-      "description": "Li‑ion pillerin enerji yoğunluğu üç kat artmıştır ve telefonlar daha uzun süre çalışır",
-      "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "pil"
-      },
-      "tags": [
-        "lityum",
-        "pil",
-        "teknoloji",
-        "akıllıtelefon",
-        "enerji"
-      ]
+      "closing_question": "Siz de fark ettiniz mi?",
+      "closing_visual_query": "window view",
+      "cta": "İlginç Gerçekler kanalına abone ol"
     },
     "generation_mode": "prompt_first_v1"
   }
