@@ -15,5 +15,22 @@
     "publish_at": "2026-11-08T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "42488983915",
+    "slot": "2100",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-08T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-08T18:00:00Z",
+    "video_id": "Tyfyj3l92-4",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261108_143114_psikoloji/final.mp4",
+    "topic": "psikoloji",
+    "title": "Dikkat Nedir? Görev Odaklı ve Diğerlerini Dışlayan Zihin",
+    "narration": "Neden bazı insanlar bir anda tamamen odaklanamıyor Dikkat farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır bellekle birlikte çalışır etkili Seçici sürdürülebilir ve bölünmüş dikkat türleri vardır beyinde farklı bölgeler tarafından yönetilir Siz hangi dikkatinizi kaybediyorsunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-08T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
