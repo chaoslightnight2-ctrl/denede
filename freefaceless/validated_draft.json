@@ -1,88 +1,88 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-08T14:23:13.152376+00:00",
+  "saved_at": "2026-11-08T14:31:12.995535+00:00",
   "data": {
-    "source_id": "33978",
-    "title": "Neden Dünya’da Sıcaklık Yıllık Kırk Derece Değişir?",
-    "description": "Dünya yüzeyindeki sıcaklık genellikle kırk derece civarında değişir. Bu fark güneş ışınlarının açı ve konum farklılıklarından kaynaklanır.\n\n#shorts #hava #iklim",
-    "hashtags": {
-      "primary": "hava",
-      "secondary": "iklim"
-    },
-    "topic": "hava durumu",
-    "tags": [
-      "sıcaklık",
-      "dünya",
-      "güneş",
-      "iklim",
-      "meteoroloji"
-    ],
+    "source_id": "68753",
     "scenes": [
       {
-        "text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz",
-        "visual_query": "morning window"
+        "text": "Neden bazı insanlar bir anda tamamen odaklanamıyor",
+        "visual_query": "office desk"
       },
       {
-        "text": "Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir",
-        "visual_query": "thermometer reading"
+        "text": "Dikkat farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır bellekle birlikte çalışır etkili",
+        "visual_query": "brain scan"
       },
       {
-        "text": "Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır",
-        "visual_query": "sun angle"
+        "text": "Seçici sürdürülebilir ve bölünmüş dikkat türleri vardır beyinde farklı bölgeler tarafından yönetilir",
+        "visual_query": "neuron network"
       },
       {
-        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-        "visual_query": "window view"
+        "text": "Siz hangi dikkatinizi kaybediyorsunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "person thinking"
       }
     ],
-    "closing_question": "Siz de fark ettiniz mi?",
-    "closing_visual_query": "window view",
+    "closing_question": "Siz hangi dikkatinizi kaybediyorsunuz?",
+    "closing_visual_query": "person thinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "spoken_text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "full_text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz. Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir. Bu değişim güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "topic": "psikoloji",
+    "title": "Dikkat Nedir? Görev Odaklı ve Diğerlerini Dışlayan Zihin",
+    "description": "Dikkat, zihnin belirli bir göreve odaklanmasıdır. Bu süreçte diğer uyarıcılar dışlanır.\n\n#shorts #psikoloji #davranış",
+    "hashtags": {
+      "primary": "psikoloji",
+      "secondary": "davranış"
+    },
+    "tags": [
+      "dikkat",
+      "zihin",
+      "odaklanma",
+      "psikoloji",
+      "beyin"
+    ],
+    "spoken_text": "Neden bazı insanlar bir anda tamamen odaklanamıyor Dikkat farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır bellekle birlikte çalışır etkili Seçici sürdürülebilir ve bölünmüş dikkat türleri vardır beyinde farklı bölgeler tarafından yönetilir Siz hangi dikkatinizi kaybediyorsunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Neden bazı insanlar bir anda tamamen odaklanamıyor Dikkat farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır bellekle birlikte çalışır etkili Seçici sürdürülebilir ve bölünmüş dikkat türleri vardır beyinde farklı bölgeler tarafından yönetilir Siz hangi dikkatinizi kaybediyorsunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Neden bazı insanlar bir anda tamamen odaklanamıyor. Dikkat farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır bellekle birlikte çalışır etkili. Seçici sürdürülebilir ve bölünmüş dikkat türleri vardır beyinde farklı bölgeler tarafından yönetilir. Siz hangi dikkatinizi kaybediyorsunuz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "33978",
-      "title": "Weather",
-      "url": "https://en.wikipedia.org/wiki/Weather",
-      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+      "id": "68753",
+      "title": "Attention",
+      "url": "https://en.wikipedia.org/wiki/Attention",
+      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
     },
     "raw_groq_package": {
-      "source_id": "33978",
-      "title": "Neden Dünya’da Sıcaklık Yıllık Kırk Derece Değişir?",
-      "description": "Dünya yüzeyindeki sıcaklık genellikle kırk derece civarında değişir. Bu fark güneş ışınlarının açı ve konum farklılıklarından kaynaklanır.",
-      "hashtags": {
-        "primary": "hava",
-        "secondary": "iklim"
-      },
-      "topic": "hava durumu",
-      "tags": [
-        "sıcaklık",
-        "dünya",
-        "güneş",
-        "iklim",
-        "meteoroloji"
-      ],
+      "source_id": "68753",
       "scenes": [
         {
-          "text": "Sabahları dışarıda neden daha soğuk gerçekten hissederiz?",
-          "visual_query": "morning window"
+          "text": "Neden bazı insanlar bir anda tamamen odaklanamıyor?",
+          "visual_query": "office desk"
         },
         {
-          "text": "Yıllık sıcaklık genellikle kırk derece civarında değişir ve bu fark gerçekten bazen hissedilir.",
-          "visual_query": "thermometer reading"
+          "text": "Dikkat, farkındalığın bir göreve yönelmesi ve diğer uyarıcıları dışlamasıdır, bellekle birlikte çalışır etkili.",
+          "visual_query": "brain scan"
         },
         {
-          "text": "Bu değişim, güneş ışınlarının açı farkından ve dünya konumundan kaynaklanır.",
-          "visual_query": "sun angle"
+          "text": "Seçici, sürdürülebilir ve bölünmüş dikkat türleri vardır, beyinde farklı bölgeler tarafından yönetilir.",
+          "visual_query": "neuron network"
         }
       ],
-      "closing_question": "Siz de fark ettiniz mi?",
-      "closing_visual_query": "window view",
-      "cta": "İlginç Gerçekler kanalına abone ol"
+      "closing_question": "Siz hangi dikkatinizi kaybediyorsunuz?",
+      "closing_visual_query": "person thinking",
+      "cta": "İlginç Gerçekler kanalına abone ol",
+      "topic": "psikoloji",
+      "title": "Dikkat Nedir? Görev Odaklı ve Diğerlerini Dışlayan Zihin",
+      "description": "Dikkat, zihnin belirli bir göreve odaklanmasıdır. Bu süreçte diğer uyarıcılar dışlanır.",
+      "hashtags": {
+        "primary": "psikoloji",
+        "secondary": "davranış"
+      },
+      "tags": [
+        "dikkat",
+        "zihin",
+        "odaklanma",
+        "psikoloji",
+        "beyin"
+      ]
     },
     "generation_mode": "prompt_first_v1"
   }
