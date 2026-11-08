@@ -1,53 +1,9 @@
 [
   {
-    "run_id": "42319656552",
+    "run_id": "42428904284",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-07T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-07T16:00:00Z",
-    "video_id": "64oNsPfxWvA",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_005513_dikkat/final.mp4",
-    "topic": "dikkat",
-    "title": "Dikkat Tek Bir Süreç Değildir Birden Fazla İşlevi Var",
-    "narration": "Dikkat sadece bir odaklanma olabilir mi Hayır dikkat bir birim değildir seçici sürdürülebilir bölünmüş ve yönlendirme gibi süreçleri kapsar Dikkat frontal parietal ve subkortikal bölgelerde dağıtılmış ağlarla desteklenir Siz hangi dikkat türünü kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-07T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "42319656552",
-    "slot": "2100",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-07T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-07T18:00:00Z",
-    "video_id": "e8CKsyrVL_E",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_005913_elektrik/final.mp4",
-    "topic": "elektrik",
-    "title": "Elektrik akımı manyetik alan yaratır: hareketli yükler",
-    "narration": "Elektrik akımı nasıl manyetik alan yaratır Elektrik yüklerinin hareketi bir akım oluşturur ve bu akım manyetik alan üretir Pozitif ya da negatif yük etrafında bir elektrik alanı oluşturur Kendi manyetik alanını ölçtün mü İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-07T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "42319656552",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-07T23:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-07T20:00:00Z",
-    "video_id": "8ZrO5p-wrpM",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261107_011117_teknoloji-ve-icatlar/final.mp4",
-    "topic": "teknoloji ve icatlar",
-    "title": "Li‑ion piller üç kat enerji, telefonlar daha uzun",
-    "narration": "Akıllı telefonlar neden uzun süre dayanıyor Li ion piller enerji yoğunluğu üç kat artmış maliyeti on kat azalmış son otuz yılda Bu piller telefon laptop ve elektrikli araçlarda bulunur Piliniz ne kadar dayanıyor İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-07T20:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
