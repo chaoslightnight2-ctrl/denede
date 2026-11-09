@@ -1,9 +1,9 @@
 {
-  "run_id": "42541109255",
+  "run_id": "42664857859",
   "http_status": 400,
   "code": "json_validate_failed",
   "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1794185229.9384763,
+  "observed_at": 1794245470.2928305,
   "failed_generation_excerpt": "",
   "retry_after": null
 }
