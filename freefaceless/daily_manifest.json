@@ -1,19 +1,9 @@
 [
   {
-    "run_id": "42516162945",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-09T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-09T16:00:00Z",
-    "video_id": "U1yIjiuKJUk",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261108_195114_g-nl-k-ya-am/final.mp4",
-    "topic": "günlük yaşam",
-    "title": "Beton Neden En Çok Kullanılan Malzeme? İşte Sebep",
-    "narration": "Evin zemini neden bu kadar gerçekten dayanıklı Çünkü beton su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır Siz de betonla neler yaparsınız İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-09T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "run_id": "42541109255",
+    "slot": "2100",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
