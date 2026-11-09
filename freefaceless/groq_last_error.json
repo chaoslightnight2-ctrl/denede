@@ -1,9 +1,9 @@
 {
-  "run_id": "42516162945",
+  "run_id": "42541109255",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1794167230.079504,
-  "failed_generation_excerpt": "{\"source_id\":\"5371\",\"scenes\":[{\"text\":\"Beton, evimizin temellerini g\u00fc\u00e7l\u00fc ve dayan\u0131kl\u0131 nas\u0131l tutar?\",\"visual_query\":\"construction site\"},{\"text\":\"Beton, \u00e7imento ve suyun kimyasal reaksiyonu sayesinde sertle\u015fir, dayan\u0131kl\u0131 bir ta\u015f gibi olur.\",\"visual_query\":\"dry mix\"},{\"text\":\"\u0130\u00e7indeki hidratasyon s\u00fcreci \u0131s\u0131 a\u00e7\u0131\u011fa \u00e7\u0131kararak kuruma s\u00fcresini etkiler ve dayan\u0131kl\u0131l\u0131\u011f\u0131 art\u0131r\u0131r.\",\"visual_query\":\"concrete slab\"}]}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1794184989.8620958,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
