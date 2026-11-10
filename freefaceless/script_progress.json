@@ -1,39 +1,39 @@
 {
-  "run_id": "42748385887",
+  "run_id": "42845730619",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "79425",
     "scenes": [
       {
-        "text": "Akıllı çamaşır makinesi ne kadar zaman kazandırır?",
+        "text": "Ev işleri hiç bu kadar hızlı mı?",
+        "visual_query": "home"
+      },
+      {
+        "text": "Evdeki çamaşır ve bulaşık makineleri gibi teknolojiler, iş yükünü büyük ölçüde azalttı.",
         "visual_query": "wash"
       },
       {
-        "text": "Ev teknolojileri iş süresini kısaltabilir, fakat bu iddianın kesinliği hâlâ tartışmalıdır, bilimsel araştırmalar devam ediyor.",
-        "visual_query": "time"
-      },
-      {
-        "text": "Ev teknolojileri; çamaşır makinesi, akıllı ışık ve enerji tasarrufu gibi cihazları kapsar.",
-        "visual_query": "home"
+        "text": "Bu teknolojiler enerji tüketimini de artırabilir, dikkatli kullanılmalı.",
+        "visual_query": "lamp"
       }
     ],
-    "closing_question": "Siz de zaman kazandınız mı?",
-    "closing_visual_query": "ask",
+    "closing_question": "Siz de denediniz mi?",
+    "closing_visual_query": "room",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "ev teknolojileri",
-    "title": "Ev teknolojileri zamanı azaltır mı? İşte gerçek!",
-    "description": "Evdeki akıllı cihazlar iş süresini kısaltabilir. Ancak bu iddianın doğruluğu hâlâ tartışılıyor.",
+    "title": "Ev İşlerini Hızlandıran Çamaşır ve Bulaşık Makineleri",
+    "description": "Evdeki çamaşır ve bulaşık makineleri işleri hızlandırarak zaman tasarrufu sağlar. Ancak bu tasarrufun gerçekliği tartışmalıdır.",
     "hashtags": {
       "primary": "evteknolojisi",
-      "secondary": "zamankısaltma"
+      "secondary": "günlükhayat"
     },
+    "topic": "evteknolojisi",
     "tags": [
-      "ev",
-      "teknoloji",
+      "çamaşır",
+      "bulaşık",
+      "makine",
       "zaman",
-      "iş",
-      "araştırma"
+      "tasarruf"
     ]
   },
   "reference_sources": [
