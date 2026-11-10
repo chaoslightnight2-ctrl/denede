@@ -1,22 +1,51 @@
 {
-  "source_run": "42736167224",
-  "verified_at": "2026-11-10T01:58:27.623926+00:00",
-  "videos": [],
+  "source_run": "42748385887",
+  "verified_at": "2026-11-10T03:51:23.691962+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "jOYvcKKsYWs",
+      "youtube_url": "https://youtu.be/jOYvcKKsYWs",
+      "title": "Yapay Zeka Neden 1956’da Kuruldu? İşte Sebep",
+      "narration": "Yapay zekâ nasıl bir bilim dalı Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-10T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-10T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.8,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/jOYvcKKsYWs.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     },
     {
-      "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "public_listing_error": "HTTPError",
-  "target_count": 2,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
