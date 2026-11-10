@@ -42,7 +42,8 @@
     "evteknolojisi",
     "mobiltelefon",
     "dikkat",
-    "teknoloji ve icatlar"
+    "teknoloji ve icatlar",
+    "yapayzeka"
   ],
   "published": [
     {
@@ -914,6 +915,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42516162945",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261110_033512",
+      "topic": "yapayzeka",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Yapay Zeka Neden 1956’da Kuruldu? İşte Sebep",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261110_033512_yapayzeka/final.mp4",
+      "video_id": "jOYvcKKsYWs",
+      "publish_at": "2026-11-10T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "42748385887"
     }
   ]
 }
