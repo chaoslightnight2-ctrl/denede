@@ -1,47 +1,47 @@
 {
   "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-10T15:55:16.375733+00:00",
+  "saved_at": "2026-11-10T21:51:12.418589+00:00",
   "data": {
     "source_id": "563299",
     "scenes": [
       {
-        "text": "Neden bazen aynı anda iki farklı şey yaparız",
-        "visual_query": "brain illustration"
-      },
-      {
-        "text": "Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir",
-        "visual_query": "neuron network diagram"
-      },
-      {
-        "text": "Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir",
-        "visual_query": "social interaction scene"
-      },
-      {
-        "text": "Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol",
+        "text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz",
         "visual_query": "person thinking"
+      },
+      {
+        "text": "Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir",
+        "visual_query": "brain diagram"
+      },
+      {
+        "text": "Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir",
+        "visual_query": "emotion icons"
+      },
+      {
+        "text": "Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Sizce davranışınızı kim gerçekten belirler?",
-    "closing_visual_query": "person thinking",
+    "closing_question": "Sizce hangisi daha etkili?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "İnsan Davranışı Neden Çevresel ve Genetik Faktörlerle?",
-    "description": "İnsan davranışı çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.\n\n#shorts #davranış #psikoloji",
+    "topic": "davranış",
+    "title": "İnsan Davranışı Çevresel ve Genetik Faktörlerle Şekillenir",
+    "description": "İnsan davranışı çevresel etkiler ve genetik yapı tarafından belirlenir. Bu iki faktör, bireyin hareket ve tepkilerini şekillendirir.\n\n#shorts #davranış #psikoloji",
     "hashtags": {
       "primary": "davranış",
       "secondary": "psikoloji"
     },
     "tags": [
       "davranış",
-      "genetik",
       "çevre",
+      "genetik",
       "psikoloji",
       "insan"
     ],
-    "spoken_text": "Neden bazen aynı anda iki farklı şey yaparız Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol",
-    "full_text": "Neden bazen aynı anda iki farklı şey yaparız Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Neden bazen aynı anda iki farklı şey yaparız. Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir. Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir. Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "full_text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz. Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir. Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir. Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "human_behavior",
     "hook_style": "direct_change",
     "reference_source": {
@@ -54,32 +54,32 @@
       "source_id": "563299",
       "scenes": [
         {
-          "text": "Neden bazen aynı anda iki farklı şey yaparız?",
-          "visual_query": "brain illustration"
+          "text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz?",
+          "visual_query": "person thinking"
         },
         {
-          "text": "Çevresel ve genetik faktörler, düşünce ve duygular, bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir.",
-          "visual_query": "neuron network diagram"
+          "text": "Çevresel etkiler ve genetik yapı, bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir.",
+          "visual_query": "brain diagram"
         },
         {
-          "text": "Davranış, sosyal etkileşimler, kültürel normlarla ve öğrenme süreçleriyle de şekillenir.",
-          "visual_query": "social interaction scene"
+          "text": "Davranış aynı zamanda düşünceler, duygular ve içsel motivasyonlar tarafından da yönlendirilir.",
+          "visual_query": "emotion icons"
         }
       ],
-      "closing_question": "Sizce davranışınızı kim gerçekten belirler?",
-      "closing_visual_query": "person thinking",
+      "closing_question": "Sizce hangisi daha etkili?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "psikoloji",
-      "title": "İnsan Davranışı Neden Çevresel ve Genetik Faktörlerle?",
-      "description": "İnsan davranışı çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.",
+      "topic": "davranış",
+      "title": "İnsan Davranışı Çevresel ve Genetik Faktörlerle Şekillenir",
+      "description": "İnsan davranışı çevresel etkiler ve genetik yapı tarafından belirlenir. Bu iki faktör, bireyin hareket ve tepkilerini şekillendirir.",
       "hashtags": {
         "primary": "davranış",
         "secondary": "psikoloji"
       },
       "tags": [
         "davranış",
-        "genetik",
         "çevre",
+        "genetik",
         "psikoloji",
         "insan"
       ]
