@@ -1,37 +1,37 @@
 {
-  "run_id": "42845730619",
+  "run_id": "42908418960",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "563299",
     "scenes": [
       {
-        "text": "Neden bazen aynı anda iki farklı şey yaparız?",
-        "visual_query": "brain illustration"
+        "text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz?",
+        "visual_query": "person thinking"
       },
       {
-        "text": "Çevresel ve genetik faktörler, düşünce ve duygular, bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir.",
-        "visual_query": "neuron network diagram"
+        "text": "Çevresel etkiler ve genetik yapı, bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir.",
+        "visual_query": "brain diagram"
       },
       {
-        "text": "Davranış, sosyal etkileşimler, kültürel normlarla ve öğrenme süreçleriyle de şekillenir.",
-        "visual_query": "social interaction scene"
+        "text": "Davranış aynı zamanda düşünceler, duygular ve içsel motivasyonlar tarafından da yönlendirilir.",
+        "visual_query": "emotion icons"
       }
     ],
-    "closing_question": "Sizce davranışınızı kim gerçekten belirler?",
-    "closing_visual_query": "person thinking",
+    "closing_question": "Sizce hangisi daha etkili?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "İnsan Davranışı Neden Çevresel ve Genetik Faktörlerle?",
-    "description": "İnsan davranışı çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.",
+    "topic": "davranış",
+    "title": "İnsan Davranışı Çevresel ve Genetik Faktörlerle Şekillenir",
+    "description": "İnsan davranışı çevresel etkiler ve genetik yapı tarafından belirlenir. Bu iki faktör, bireyin hareket ve tepkilerini şekillendirir.",
     "hashtags": {
       "primary": "davranış",
       "secondary": "psikoloji"
     },
     "tags": [
       "davranış",
-      "genetik",
       "çevre",
+      "genetik",
       "psikoloji",
       "insan"
     ]
@@ -50,10 +50,10 @@
       "text": "Social psychology is the methodical study of how thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. Although studying many of the same substantive topics as its counterpart in the field of sociology, psychological social psychology places more emphasis on the individual, rather than society; the influence of social structure and culture on individual outcomes, such as personality, behavior, and one's position in social hierarchies. It also depends more heavily on experimental and laboratory research. Social psychologists typically explain human behavior as a result of the relationship between mental states and social situations, studying the social conditions under which thoughts, feelings, and behaviors occur, and how these variables influence social interactions."
     },
     {
-      "id": "21306150",
-      "title": "Random-access memory",
-      "url": "https://en.wikipedia.org/wiki/Random-access_memory",
-      "text": "Random-access memory (RAM; ) is a form of electronic computer memory that can be read and changed in any order, typically used to store working data and machine code. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory, in contrast with other direct-access data storage media (such as hard disks and magnetic tape), where the time required to read and write data items varies significantly depending on their physical locations on the recording medium, due to mechanical limitations such as media rotation speeds and arm movement. In modern technology, random-access memory takes the form of integrated circuit (IC) chips with MOS (metal–oxide–semiconductor) memory cells. RAM is normally associated with volatile types of memory where stored information is lost if power is removed. The two main types of volatile random-access semiconductor memory are static random-access memory (SRAM) and dynamic random-access memory (DRAM). Non-volatile RAM has also been developed and other types of non-volatile memories allow random access for read operations, but either do not allow write operations or have other kinds of limitations. These include most types of ROM and NOR flash memory. The use of semiconductor RAM dates back to 1965 when IBM introduced the monolithic (single-chip) 16-bit SP95 SRAM chip for their System/360 Model 95 computer, and Toshiba used bipolar DRAM memory cells for its 180-bit Toscal BC-1411 electronic calculator, both based on bipolar transistors."
+      "id": "31217535",
+      "title": "Memory",
+      "url": "https://en.wikipedia.org/wiki/Memory",
+      "text": "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action. If past events could not be remembered, it would be impossible for language, relationships, or personal identity to develop. Memory loss is usually described as forgetfulness or a disorder such as amnesia. Memory is often understood as an information processing system with explicit and implicit functioning that is made up of a sensory processor, short-term (or working) memory, and long-term memory. This can be related to the neuron. The sensory processor allows information from the outside world to be sensed in the form of chemical and physical stimuli and attended to various levels of focus and intent. Working memory serves as an encoding and retrieval processor. Information in the form of stimuli is encoded in accordance with explicit or implicit functions by the working memory processor. The working memory also retrieves information from previously stored material. Finally, the function of long-term memory is to store information through various categorical models or systems. Declarative, or explicit memory, is the conscious storage and recollection of data. Under declarative memory resides semantic and episodic memory. Semantic memory refers to memory that is encoded with specific meaning. Meanwhile, episodic memory refers to information that is encoded along a spatial and temporal plane. Declarative memory is usually the primary process thought of when referencing memory. Non-declarative, or implicit, memory is the unconscious storage and recollection of information."
     },
     {
       "id": "25140",
