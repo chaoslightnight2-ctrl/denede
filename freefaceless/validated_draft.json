@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-10T03:35:11.739815+00:00",
+  "saved_at": "2026-11-10T15:55:16.375733+00:00",
   "data": {
-    "source_id": "1164",
+    "source_id": "563299",
     "scenes": [
       {
-        "text": "Yapay zekâ nasıl bir bilim dalı",
-        "visual_query": "computer screen"
+        "text": "Neden bazen aynı anda iki farklı şey yaparız",
+        "visual_query": "brain illustration"
       },
       {
-        "text": "Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu",
-        "visual_query": "timeline chart"
+        "text": "Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir",
+        "visual_query": "neuron network diagram"
       },
       {
-        "text": "AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar",
-        "visual_query": "brain icon"
+        "text": "Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir",
+        "visual_query": "social interaction scene"
       },
       {
-        "text": "Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
-        "visual_query": "question mark"
+        "text": "Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol",
+        "visual_query": "person thinking"
       }
     ],
-    "closing_question": "Sizce AI geleceği nasıl?",
-    "closing_visual_query": "question mark",
+    "closing_question": "Sizce davranışınızı kim gerçekten belirler?",
+    "closing_visual_query": "person thinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "yapayzeka",
-    "title": "Yapay Zeka Neden 1956’da Kuruldu? İşte Sebep",
-    "description": "Yapay zekâ 1956 yılında akademik disiplin olarak kuruldu. Bu tarih, AI’nın sistematik araştırma alanı haline gelmesinin başlangıcıdır.\n\n#shorts #yapayzeka #teknoloji",
+    "topic": "psikoloji",
+    "title": "İnsan Davranışı Neden Çevresel ve Genetik Faktörlerle?",
+    "description": "İnsan davranışı çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.\n\n#shorts #davranış #psikoloji",
     "hashtags": {
-      "primary": "yapayzeka",
-      "secondary": "teknoloji"
+      "primary": "davranış",
+      "secondary": "psikoloji"
     },
     "tags": [
-      "yapayzeka",
-      "ai",
-      "bilgisayar",
-      "makineöğrenmesi",
-      "teknoloji"
+      "davranış",
+      "genetik",
+      "çevre",
+      "psikoloji",
+      "insan"
     ],
-    "spoken_text": "Yapay zekâ nasıl bir bilim dalı Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
-    "full_text": "Yapay zekâ nasıl bir bilim dalı Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Yapay zekâ nasıl bir bilim dalı. Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu. AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar. Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "spoken_text": "Neden bazen aynı anda iki farklı şey yaparız Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol",
+    "full_text": "Neden bazen aynı anda iki farklı şey yaparız Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Neden bazen aynı anda iki farklı şey yaparız. Çevresel ve genetik faktörler düşünce ve duygular bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir. Davranış sosyal etkileşimler kültürel normlarla ve öğrenme süreçleriyle de şekillenir. Sizce davranışınızı kim gerçekten belirler İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "1164",
-      "title": "Artificial intelligence",
-      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
-      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineering, and mathematics that develops and studies methods and software enabling machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. Prominent applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
+      "id": "563299",
+      "title": "Human behavior",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
     },
     "raw_groq_package": {
-      "source_id": "1164",
+      "source_id": "563299",
       "scenes": [
         {
-          "text": "Yapay zekâ nasıl bir bilim dalı?",
-          "visual_query": "computer screen"
+          "text": "Neden bazen aynı anda iki farklı şey yaparız?",
+          "visual_query": "brain illustration"
         },
         {
-          "text": "Yapay zekâ, bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu.",
-          "visual_query": "timeline chart"
+          "text": "Çevresel ve genetik faktörler, düşünce ve duygular, bireyin yaşamı boyunca kararlarını ve insan davranışını yönlendirir.",
+          "visual_query": "neuron network diagram"
         },
         {
-          "text": "AI, öğrenme, akıl yürütme ve algı gibi yetenekleri kapsar.",
-          "visual_query": "brain icon"
+          "text": "Davranış, sosyal etkileşimler, kültürel normlarla ve öğrenme süreçleriyle de şekillenir.",
+          "visual_query": "social interaction scene"
         }
       ],
-      "closing_question": "Sizce AI geleceği nasıl?",
-      "closing_visual_query": "question mark",
+      "closing_question": "Sizce davranışınızı kim gerçekten belirler?",
+      "closing_visual_query": "person thinking",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "yapayzeka",
-      "title": "Yapay Zeka Neden 1956’da Kuruldu? İşte Sebep",
-      "description": "Yapay zekâ 1956 yılında akademik disiplin olarak kuruldu. Bu tarih, AI’nın sistematik araştırma alanı haline gelmesinin başlangıcıdır.",
+      "topic": "psikoloji",
+      "title": "İnsan Davranışı Neden Çevresel ve Genetik Faktörlerle?",
+      "description": "İnsan davranışı çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.",
       "hashtags": {
-        "primary": "yapayzeka",
-        "secondary": "teknoloji"
+        "primary": "davranış",
+        "secondary": "psikoloji"
       },
       "tags": [
-        "yapayzeka",
-        "ai",
-        "bilgisayar",
-        "makineöğrenmesi",
-        "teknoloji"
+        "davranış",
+        "genetik",
+        "çevre",
+        "psikoloji",
+        "insan"
       ]
     },
     "generation_mode": "prompt_first_v1"
