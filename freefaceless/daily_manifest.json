@@ -5,5 +5,12 @@
     "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "42845730619",
+    "slot": "1900",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "No described asset matches scene 2: social interaction scene"
   }
 ]
