@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-08T19:51:13.756140+00:00",
+  "saved_at": "2026-11-10T03:35:11.739815+00:00",
   "data": {
-    "source_id": "5371",
+    "source_id": "1164",
     "scenes": [
       {
-        "text": "Evin zemini neden bu kadar gerçekten dayanıklı",
-        "visual_query": "home floor"
+        "text": "Yapay zekâ nasıl bir bilim dalı",
+        "visual_query": "computer screen"
       },
       {
-        "text": "Çünkü beton su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir",
-        "visual_query": "construction site"
+        "text": "Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu",
+        "visual_query": "timeline chart"
       },
       {
-        "text": "İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır",
-        "visual_query": "reinforced concrete"
+        "text": "AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar",
+        "visual_query": "brain icon"
       },
       {
-        "text": "Siz de betonla neler yaparsınız İlginç Gerçekler kanalına abone ol",
-        "visual_query": "building interior"
+        "text": "Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Siz de betonla neler yaparsınız?",
-    "closing_visual_query": "building interior",
+    "closing_question": "Sizce AI geleceği nasıl?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük yaşam",
-    "title": "Beton Neden En Çok Kullanılan Malzeme? İşte Sebep",
-    "description": "Beton, su sonrası en çok kullanılan yapı malzemesidir. Çimento suyla reaksiyona girerek sertleşir ve dayanıklı bir yapı oluşturur.\n\n#shorts #beton #yapımalzemeleri",
+    "topic": "yapayzeka",
+    "title": "Yapay Zeka Neden 1956’da Kuruldu? İşte Sebep",
+    "description": "Yapay zekâ 1956 yılında akademik disiplin olarak kuruldu. Bu tarih, AI’nın sistematik araştırma alanı haline gelmesinin başlangıcıdır.\n\n#shorts #yapayzeka #teknoloji",
     "hashtags": {
-      "primary": "beton",
-      "secondary": "yapımalzemeleri"
+      "primary": "yapayzeka",
+      "secondary": "teknoloji"
     },
     "tags": [
-      "beton",
-      "yapı",
-      "inşaat",
-      "malzeme",
-      "dayanıklılık"
+      "yapayzeka",
+      "ai",
+      "bilgisayar",
+      "makineöğrenmesi",
+      "teknoloji"
     ],
-    "spoken_text": "Evin zemini neden bu kadar gerçekten dayanıklı Çünkü beton su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır Siz de betonla neler yaparsınız İlginç Gerçekler kanalına abone ol",
-    "full_text": "Evin zemini neden bu kadar gerçekten dayanıklı Çünkü beton su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır Siz de betonla neler yaparsınız İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Evin zemini neden bu kadar gerçekten dayanıklı. Çünkü beton su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir. İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır. Siz de betonla neler yaparsınız İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "spoken_text": "Yapay zekâ nasıl bir bilim dalı Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
+    "full_text": "Yapay zekâ nasıl bir bilim dalı Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Yapay zekâ nasıl bir bilim dalı. Yapay zekâ bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu. AI öğrenme akıl yürütme ve algı gibi yetenekleri kapsar. Sizce AI geleceği nasıl İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "technology_science",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "5371",
-      "title": "Concrete",
-      "url": "https://en.wikipedia.org/wiki/Concrete",
-      "text": "Concrete is a composite material composed of aggregate bound together with a fluid cement that cures to a solid. It is the second-most-used substance (after water), the most widely used building material, and the most-manufactured material in the world. Cement-bound concrete differs from the less rigid, less durable asphaltic concrete, which has a bituminous binder. When aggregate is mixed with dry Portland cement and water, the mixture forms a fluid slurry that can be poured and molded into shape. The cement reacts with the water through a process called hydration, which hardens it after several hours to form a solid matrix that binds the materials together into a durable stone-like material with various uses. This time allows concrete to not only be cast in forms, but also to have a variety of tooled processes performed. The hydration process is exothermic, which means that ambient temperature plays a significant role in how long it takes concrete to set. Often, additives (such as pozzolans or superplasticizers) are included in the mixture to improve the physical properties of the wet mix, delay or accelerate the curing time, or otherwise modify the finished material. Most structural concrete is poured with reinforcing materials (such as steel rebar) embedded to provide tensile strength, yielding reinforced concrete. Before the invention of Portland cement in the early 1800s, lime-based cement binders, such as lime putty, were often used. The overwhelming majority of concretes are produced using Portland cement, but sometimes with other hydraulic cements, such as calcium aluminate cement."
+      "id": "1164",
+      "title": "Artificial intelligence",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineering, and mathematics that develops and studies methods and software enabling machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals. Prominent applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos). The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human. Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
     },
     "raw_groq_package": {
-      "source_id": "5371",
+      "source_id": "1164",
       "scenes": [
         {
-          "text": "Evin zemini neden bu kadar gerçekten dayanıklı?",
-          "visual_query": "home floor"
+          "text": "Yapay zekâ nasıl bir bilim dalı?",
+          "visual_query": "computer screen"
         },
         {
-          "text": "Çünkü beton, su sonrası en çok kullanılan yapı malzemesidir ve çimento suyla sertleşir.",
-          "visual_query": "construction site"
+          "text": "Yapay zekâ, bin dokuz yüz elli altı yılında akademik disiplin olarak kuruldu.",
+          "visual_query": "timeline chart"
         },
         {
-          "text": "İçine çelik donatı eklenince beton çekme dayanımı artar ve yapıların ömrünü uzatır.",
-          "visual_query": "reinforced concrete"
+          "text": "AI, öğrenme, akıl yürütme ve algı gibi yetenekleri kapsar.",
+          "visual_query": "brain icon"
         }
       ],
-      "closing_question": "Siz de betonla neler yaparsınız?",
-      "closing_visual_query": "building interior",
+      "closing_question": "Sizce AI geleceği nasıl?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük yaşam",
-      "title": "Beton Neden En Çok Kullanılan Malzeme? İşte Sebep",
-      "description": "Beton, su sonrası en çok kullanılan yapı malzemesidir. Çimento suyla reaksiyona girerek sertleşir ve dayanıklı bir yapı oluşturur.",
+      "topic": "yapayzeka",
+      "title": "Yapay Zeka Neden 1956’da Kuruldu? İşte Sebep",
+      "description": "Yapay zekâ 1956 yılında akademik disiplin olarak kuruldu. Bu tarih, AI’nın sistematik araştırma alanı haline gelmesinin başlangıcıdır.",
       "hashtags": {
-        "primary": "beton",
-        "secondary": "yapımalzemeleri"
+        "primary": "yapayzeka",
+        "secondary": "teknoloji"
       },
       "tags": [
-        "beton",
-        "yapı",
-        "inşaat",
-        "malzeme",
-        "dayanıklılık"
+        "yapayzeka",
+        "ai",
+        "bilgisayar",
+        "makineöğrenmesi",
+        "teknoloji"
       ]
     },
     "generation_mode": "prompt_first_v1"
