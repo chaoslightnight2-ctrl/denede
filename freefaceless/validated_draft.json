@@ -1,87 +1,87 @@
 {
   "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-10T21:51:12.418589+00:00",
+  "saved_at": "2026-11-11T01:15:12.007965+00:00",
   "data": {
-    "source_id": "563299",
+    "source_id": "68753",
     "scenes": [
       {
-        "text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz",
-        "visual_query": "person thinking"
+        "text": "Dikkat zihnin gizli süzgecidir bilgiyi seçer",
+        "visual_query": "brain waves"
       },
       {
-        "text": "Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir",
-        "visual_query": "brain diagram"
+        "text": "Dikkat bir görev ya da olaya yönelmiş farkındalık yoğunluğudur diğerlerini çoğunlukla dışlar",
+        "visual_query": "office desk"
       },
       {
-        "text": "Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir",
-        "visual_query": "emotion icons"
+        "text": "Dikkat sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir",
+        "visual_query": "neuron network"
       },
       {
-        "text": "Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
-        "visual_query": "question mark"
+        "text": "Siz neye odaklanıyorsunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "city street"
       }
     ],
-    "closing_question": "Sizce hangisi daha etkili?",
-    "closing_visual_query": "question mark",
+    "closing_question": "Siz neye odaklanıyorsunuz?",
+    "closing_visual_query": "city street",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "davranış",
-    "title": "İnsan Davranışı Çevresel ve Genetik Faktörlerle Şekillenir",
-    "description": "İnsan davranışı çevresel etkiler ve genetik yapı tarafından belirlenir. Bu iki faktör, bireyin hareket ve tepkilerini şekillendirir.\n\n#shorts #davranış #psikoloji",
+    "topic": "psikoloji",
+    "title": "Dikkat nasıl çalışır? – Konsantrasyonun sırrı",
+    "description": "Dikkat, farkındalığın belirli bir şeye yönelmesidir. Bu süreç, sınırlı bilişsel kaynakların bir kısmına tahsis edilir.\n\n#shorts #psikoloji #davranış",
     "hashtags": {
-      "primary": "davranış",
-      "secondary": "psikoloji"
+      "primary": "psikoloji",
+      "secondary": "davranış"
     },
     "tags": [
-      "davranış",
-      "çevre",
-      "genetik",
+      "dikkat",
+      "biliş",
+      "konsantrasyon",
       "psikoloji",
-      "insan"
+      "davranış"
     ],
-    "spoken_text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
-    "full_text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz. Çevresel etkiler ve genetik yapı bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir. Davranış aynı zamanda düşünceler duygular ve içsel motivasyonlar tarafından da yönlendirilir. Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Dikkat zihnin gizli süzgecidir bilgiyi seçer Dikkat bir görev ya da olaya yönelmiş farkındalık yoğunluğudur diğerlerini çoğunlukla dışlar Dikkat sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir Siz neye odaklanıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Dikkat zihnin gizli süzgecidir bilgiyi seçer Dikkat bir görev ya da olaya yönelmiş farkındalık yoğunluğudur diğerlerini çoğunlukla dışlar Dikkat sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir Siz neye odaklanıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Dikkat zihnin gizli süzgecidir bilgiyi seçer. Dikkat bir görev ya da olaya yönelmiş farkındalık yoğunluğudur diğerlerini çoğunlukla dışlar. Dikkat sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir. Siz neye odaklanıyorsunuz İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "human_behavior",
     "hook_style": "direct_change",
     "reference_source": {
-      "id": "563299",
-      "title": "Human behavior",
-      "url": "https://en.wikipedia.org/wiki/Human_behavior",
-      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
+      "id": "68753",
+      "title": "Attention",
+      "url": "https://en.wikipedia.org/wiki/Attention",
+      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
     },
     "raw_groq_package": {
-      "source_id": "563299",
+      "source_id": "68753",
       "scenes": [
         {
-          "text": "Davranışınızı ne yönlendirir gerçekten merak ediyor musunuz?",
-          "visual_query": "person thinking"
+          "text": "Dikkat, zihnin gizli süzgecidir, bilgiyi seçer.",
+          "visual_query": "brain waves"
         },
         {
-          "text": "Çevresel etkiler ve genetik yapı, bireyin davranışlarını şekillendiren temel faktörlerdir ve oldukça önemlidir.",
-          "visual_query": "brain diagram"
+          "text": "Dikkat, bir görev ya da olaya yönelmiş farkındalık yoğunluğudur, diğerlerini çoğunlukla dışlar.",
+          "visual_query": "office desk"
         },
         {
-          "text": "Davranış aynı zamanda düşünceler, duygular ve içsel motivasyonlar tarafından da yönlendirilir.",
-          "visual_query": "emotion icons"
+          "text": "Dikkat, sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir.",
+          "visual_query": "neuron network"
         }
       ],
-      "closing_question": "Sizce hangisi daha etkili?",
-      "closing_visual_query": "question mark",
+      "closing_question": "Siz neye odaklanıyorsunuz?",
+      "closing_visual_query": "city street",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "davranış",
-      "title": "İnsan Davranışı Çevresel ve Genetik Faktörlerle Şekillenir",
-      "description": "İnsan davranışı çevresel etkiler ve genetik yapı tarafından belirlenir. Bu iki faktör, bireyin hareket ve tepkilerini şekillendirir.",
+      "topic": "psikoloji",
+      "title": "Dikkat nasıl çalışır? – Konsantrasyonun sırrı",
+      "description": "Dikkat, farkındalığın belirli bir şeye yönelmesidir. Bu süreç, sınırlı bilişsel kaynakların bir kısmına tahsis edilir.",
       "hashtags": {
-        "primary": "davranış",
-        "secondary": "psikoloji"
+        "primary": "psikoloji",
+        "secondary": "davranış"
       },
       "tags": [
-        "davranış",
-        "çevre",
-        "genetik",
+        "dikkat",
+        "biliş",
+        "konsantrasyon",
         "psikoloji",
-        "insan"
+        "davranış"
       ]
     },
     "generation_mode": "prompt_first_v1"
