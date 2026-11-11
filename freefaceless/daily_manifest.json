@@ -1,33 +1,19 @@
 [
   {
-    "run_id": "42936378465",
+    "run_id": "43107293648",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-11T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-12T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-11T16:00:00Z",
-    "video_id": "fyBOTii96UY",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261111_011513_psikoloji/final.mp4",
-    "topic": "psikoloji",
-    "title": "Dikkat nasıl çalışır? – Konsantrasyonun sırrı",
-    "narration": "Dikkat zihnin gizli süzgecidir bilgiyi seçer Dikkat bir görev ya da olaya yönelmiş farkındalık yoğunluğudur diğerlerini çoğunlukla dışlar Dikkat sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir Siz neye odaklanıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-11T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-12T16:00:00Z",
+    "video_id": "EPnn3U9eKBs",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261111_220314_g-nl-k-hayat/final.mp4",
+    "topic": "günlük hayat",
+    "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
+    "narration": "Ev aletleri gerçekten zaman kazandırır mı Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-12T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "42936378465",
-    "slot": "2100",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "42936378465",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
