@@ -941,6 +941,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "42936378465",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261111_220314",
+      "topic": "günlük hayat",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261111_220314_g-nl-k-hayat/final.mp4",
+      "video_id": "EPnn3U9eKBs",
+      "publish_at": "2026-11-12T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "43107293648"
     }
   ]
 }
