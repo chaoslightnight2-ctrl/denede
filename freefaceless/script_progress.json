@@ -1,65 +1,65 @@
 {
-  "run_id": "42936378465",
+  "run_id": "43107293648",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "19828134",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "Sabah nefes aldığınız havanın kaynağı nedir?",
-        "visual_query": "ev"
+        "text": "Ev aletleri gerçekten zaman kazandırır mı?",
+        "visual_query": "kitchen appliances"
       },
       {
-        "text": "Bitkiler, kloroplasttaki klorofil sayesinde ışığı yakalayıp su ve karbondioksitten oksijen ve glikoz üretir.",
-        "visual_query": "lab"
+        "text": "Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca.",
+        "visual_query": "washing machine"
       },
       {
-        "text": "Bu süreç, tüm canlıların solunumuna destek olur ve gezegenin oksijen seviyesini korur.",
-        "visual_query": "doga"
+        "text": "Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder.",
+        "visual_query": "smart thermostat"
       }
     ],
-    "closing_question": "Siz de nefes alıyorsunuz?",
-    "closing_visual_query": "cam",
+    "closing_question": "Siz de evde denediniz mi?",
+    "closing_visual_query": "living room",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Bitkiler Neden Oksijen Üretir? Fotosentez Açıklaması",
-    "description": "Bitkiler, ışığı yakalayıp su ve karbondioksitten oksijen üretir. Bu süreç, yaşam için hayati bir oksijen kaynağı sağlar.",
+    "topic": "günlük hayat",
+    "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
+    "description": "Ev teknolojileri temizlik ve çamaşır işlerini hızlandırır. Böylece günlük ev işlerinde tasarruf sağlanır.",
     "hashtags": {
-      "primary": "bitki",
-      "secondary": "fotosentez"
+      "primary": "evteknolojisi",
+      "secondary": "evotomasyonu"
     },
     "tags": [
-      "bitki",
-      "oksijen",
-      "fotosentez",
-      "günlükhayat",
-      "doğa"
+      "ev",
+      "teknoloji",
+      "evaletleri",
+      "zaman",
+      "otomasyon"
     ]
   },
   "reference_sources": [
     {
-      "id": "19828134",
-      "title": "Plant",
-      "url": "https://en.wikipedia.org/wiki/Plant",
-      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
+      "id": "38407",
+      "title": "Humour",
+      "url": "https://en.wikipedia.org/wiki/Humour",
+      "text": "Humour (Commonwealth English) or humor (American English) is the tendency of experiences to provoke laughter and provide amusement. The term derives from the humoral medicine of the ancient Greeks, which taught that the balance of fluids in the human body, known as \"humours\" (Latin: humor, \"body fluid\"), controlled human health and emotion. People of all ages and cultures respond to humour. Most people can experience humour—be amused, smile or laugh at something funny (such as a pun or joke)—and thus are considered to have a sense of humour. The hypothetical person lacking a sense of humour could likely find the behaviour to be inexplicable, strange, or even irrational. Though ultimately decided by subjective personal taste, the extent to which a person finds something humorous depends on a host of variables, including geographical location, culture, maturity, level of education, intelligence and context. For example, young children may favour slapstick such as Punch and Judy, puppet shows or cartoons such as Tom and Jerry or Looney Tunes, whose physical nature makes it accessible to them. By contrast, more sophisticated forms of humour such as satire require an understanding of its social meaning and context, and thus tend to appeal to a more mature audience."
     },
     {
-      "id": "54176",
-      "title": "Human body",
-      "url": "https://en.wikipedia.org/wiki/Human_body",
-      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     {
-      "id": "1787105",
-      "title": "Animal sexual behaviour",
-      "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
-      "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
+      "id": "252137",
+      "title": "Food science",
+      "url": "https://en.wikipedia.org/wiki/Food_science",
+      "text": "Food science (or bromatology) is the study of food and its chemical properties. Its scope overlaps with agricultural science and nutritional science and extends to the scientific aspects of food safety and food processing, informing the development of food technology. Food science is an interdisciplinary field that integrates concepts from chemistry, physics, physiology, microbiology, and biochemistry. It evolved from early preservation practices such as salting to an organized research-driven field central to modern food production. The field includes several subdisciplines such as food chemistry, food technology, and molecular gastronomy, which examine the composition and processes used to produce and preserve food. Food scientists develop new products, design processing methods to produce these foods, select packaging materials, conduct shelf life and sensory evaluation studies of products using survey panels or potential consumers, and perform microbiological and chemical testing. They may study more fundamental phenomena that are directly linked to the production of food products and its properties."
     },
     {
-      "id": "26903",
-      "title": "Solar System",
-      "url": "https://en.wikipedia.org/wiki/Solar_System",
-      "text": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of which Earth is one. The Solar System is an isolated single-star planetary system (not part of a larger star system) within the Milky Way Galaxy. The system formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The Sun accounts for 99.86% of the Solar System's total mass. Inside the Sun's core, hydrogen is fused into helium, releasing energy that is emitted through the Sun's photosphere. This creates the heliosphere and a decreasing temperature gradient across the Solar System. The next most massive objects of the system are the eight planets, which by definition dominate the orbits they occupy. Closest to the Sun in order of increasing distance are the terrestrial planets – Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit within the Sun's habitable zone, in which sunlight can keep surface water liquid under atmospheric pressure. Beyond the frost line at about five astronomical units (AU), are the planets of the outer Solar System: two gas giants (Jupiter and Saturn) and two ice giants (Uranus and Neptune). Jupiter and Saturn possess nearly 90% of the non-stellar mass of the Solar System. Objects of planetary mass that do not dominate their orbit but directly orbit the Sun are called dwarf planets. The International Astronomical Union's Minor Planet Center lists Ceres, Pluto, Eris, Makemake, and Haumea as dwarf planets."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     }
   ],
   "error": null
