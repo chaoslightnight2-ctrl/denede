@@ -1,12 +1,37 @@
 {
-  "source_run": "42908418960",
-  "verified_at": "2026-11-10T22:11:58.744663+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "42936378465",
+  "verified_at": "2026-11-11T01:35:51.355503+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "No described asset matches scene 2: emotion icons"
-    },
+      "video_id": "fyBOTii96UY",
+      "youtube_url": "https://youtu.be/fyBOTii96UY",
+      "title": "Dikkat nasıl çalışır? – Konsantrasyonun sırrı",
+      "narration": "Dikkat zihnin gizli süzgecidir bilgiyi seçer Dikkat bir görev ya da olaya yönelmiş farkındalık yoğunluğudur diğerlerini çoğunlukla dışlar Dikkat sınırlı bilişsel kaynakların bir alt kümesine tahsis edilir Siz neye odaklanıyorsunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-11T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-11T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.4,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/fyBOTii96UY.jpg"
+    }
+  ],
+  "errors": [
     {
       "index": 2,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
@@ -16,8 +41,8 @@
       "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 3,
   "published_count": 0,
