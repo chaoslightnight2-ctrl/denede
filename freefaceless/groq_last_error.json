@@ -2,8 +2,8 @@
   "run_id": "43107293648",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'tags'",
-  "observed_at": 1794434350.089882,
-  "failed_generation_excerpt": "{\"source_id\":\"79425\",\"scenes\":[{\"text\":\"Ak\u0131ll\u0131 ev cihazlar\u0131 ne kadar zaman kazand\u0131r\u0131r?\",\"visual_query\":\"kitchen timer\"},{\"text\":\"Enerji verimlili\u011fi ve \u00f6z-yeterlilik hedefiyle tasarlan\u0131r, ev i\u015flerini daha verimli ve \u00f6nemli \u00f6l\u00e7\u00fcde azalt\u0131r g\u00fcnl\u00fck.\",\"visual_query\":\"smart home panel\"},{\"text\":\"Ak\u0131ll\u0131 \u00e7ama\u015f\u0131r makineleri ve kurutucular su ve enerji tasarrufu sa\u011flar.\",\"visual_query\":\"washing machine\"}],\"closing_question\":\"Siz de denediniz mi?\",\"closing_visual_query\":\"home interior\",\"cta\":\"\u0130lgin\u00e7 Ger\u00e7ekler kanal\u0131na abone ol\",\"topic\":\"ev teknolojisi\",\"title\":\"Ak\u0131ll\u0131 ev cihazlar\u0131 neden enerji tasarrufu sa\u011flar?\",\"description\":\"Ev teknolojileri enerji verimlili\u011fi ve \u00f6z-yeterlilik i\u00e7in tasarlan\u0131r. Bu sayede g\u00fcnl\u00fck ev i\u015flerinde zaman tasarrufu sa\u011flan\u0131r.\",\"hashtags\":{\"primary\":\"evteknolojisi\",\"secondary\":\"enerjiverimlili\u011fi\"}}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1794434830.0513713,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
