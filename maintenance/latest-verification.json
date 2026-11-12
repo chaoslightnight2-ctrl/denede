@@ -1,19 +1,19 @@
 {
-  "source_run": "43107293648",
-  "verified_at": "2026-11-11T22:16:00.699187+00:00",
+  "source_run": "43139297247",
+  "verified_at": "2026-11-12T02:24:47.215004+00:00",
   "videos": [
     {
-      "index": 1,
-      "video_id": "EPnn3U9eKBs",
-      "youtube_url": "https://youtu.be/EPnn3U9eKBs",
-      "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
-      "narration": "Ev aletleri gerçekten zaman kazandırır mı Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-12T16:00:00Z",
+      "index": 2,
+      "video_id": "sqJy6uDoIak",
+      "youtube_url": "https://youtu.be/sqJy6uDoIak",
+      "title": "Dikkat Tek Bir Süreç Değil, Neden Birden Fazla?",
+      "narration": "Dikkat sadece tek bir şey mi Hayır dikkat birden fazla süreçten oluşur seçici sürdürülebilir bölünmüş ve yönlendirici birlikte Bu süreçler frontal parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir Siz hangi süreci kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-12T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-12T16:00:00Z",
+        "publishAt": "2026-11-12T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,18 +23,18 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 16.9,
+        "duration": 19.8,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/EPnn3U9eKBs.jpg"
+      "preview": "maintenance/previews/sqJy6uDoIak.jpg"
     }
   ],
   "errors": [
     {
-      "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "index": 1,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
   "accepted_count": 1,
