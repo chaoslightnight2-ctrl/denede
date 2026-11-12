@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-11T22:03:12.769681+00:00",
+  "saved_at": "2026-11-12T02:23:11.794371+00:00",
   "data": {
-    "source_id": "79425",
+    "source_id": "68753",
     "scenes": [
       {
-        "text": "Ev aletleri gerçekten zaman kazandırır mı",
-        "visual_query": "kitchen appliances"
+        "text": "Dikkat sadece tek bir şey mi",
+        "visual_query": "brain scan"
       },
       {
-        "text": "Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca",
-        "visual_query": "washing machine"
+        "text": "Hayır dikkat birden fazla süreçten oluşur seçici sürdürülebilir bölünmüş ve yönlendirici birlikte",
+        "visual_query": "attention brain"
       },
       {
-        "text": "Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder",
-        "visual_query": "smart thermostat"
+        "text": "Bu süreçler frontal parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir",
+        "visual_query": "neural network"
       },
       {
-        "text": "Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
-        "visual_query": "living room"
+        "text": "Siz hangi süreci kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "person thinking"
       }
     ],
-    "closing_question": "Siz de evde denediniz mi?",
-    "closing_visual_query": "living room",
+    "closing_question": "Siz hangi süreci kullanıyorsunuz?",
+    "closing_visual_query": "person thinking",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük hayat",
-    "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
-    "description": "Ev teknolojileri temizlik ve çamaşır işlerini hızlandırır. Böylece günlük ev işlerinde tasarruf sağlanır.\n\n#shorts #evteknolojisi #evotomasyonu",
+    "topic": "psikoloji",
+    "title": "Dikkat Tek Bir Süreç Değil, Neden Birden Fazla?",
+    "description": "Dikkat, tek bir mekanizma değildir. Seçici, sürdürülebilir, bölünmüş ve yönlendirici gibi birçok alt süreçten oluşur.\n\n#shorts #psikoloji #dikkat",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "evotomasyonu"
+      "primary": "psikoloji",
+      "secondary": "dikkat"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "evaletleri",
-      "zaman",
-      "otomasyon"
+      "dikkat",
+      "beyin",
+      "algı",
+      "psikoloji",
+      "sinirbilim"
     ],
-    "spoken_text": "Ev aletleri gerçekten zaman kazandırır mı Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
-    "full_text": "Ev aletleri gerçekten zaman kazandırır mı Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Ev aletleri gerçekten zaman kazandırır mı. Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca. Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder. Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "spoken_text": "Dikkat sadece tek bir şey mi Hayır dikkat birden fazla süreçten oluşur seçici sürdürülebilir bölünmüş ve yönlendirici birlikte Bu süreçler frontal parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir Siz hangi süreci kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Dikkat sadece tek bir şey mi Hayır dikkat birden fazla süreçten oluşur seçici sürdürülebilir bölünmüş ve yönlendirici birlikte Bu süreçler frontal parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir Siz hangi süreci kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Dikkat sadece tek bir şey mi. Hayır dikkat birden fazla süreçten oluşur seçici sürdürülebilir bölünmüş ve yönlendirici birlikte. Bu süreçler frontal parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir. Siz hangi süreci kullanıyorsunuz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "68753",
+      "title": "Attention",
+      "url": "https://en.wikipedia.org/wiki/Attention",
+      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
     },
     "raw_groq_package": {
-      "source_id": "79425",
+      "source_id": "68753",
       "scenes": [
         {
-          "text": "Ev aletleri gerçekten zaman kazandırır mı?",
-          "visual_query": "kitchen appliances"
+          "text": "Dikkat sadece tek bir şey mi?",
+          "visual_query": "brain scan"
         },
         {
-          "text": "Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca.",
-          "visual_query": "washing machine"
+          "text": "Hayır, dikkat birden fazla süreçten oluşur: seçici, sürdürülebilir, bölünmüş ve yönlendirici birlikte.",
+          "visual_query": "attention brain"
         },
         {
-          "text": "Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder.",
-          "visual_query": "smart thermostat"
+          "text": "Bu süreçler frontal, parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir.",
+          "visual_query": "neural network"
         }
       ],
-      "closing_question": "Siz de evde denediniz mi?",
-      "closing_visual_query": "living room",
+      "closing_question": "Siz hangi süreci kullanıyorsunuz?",
+      "closing_visual_query": "person thinking",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük hayat",
-      "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
-      "description": "Ev teknolojileri temizlik ve çamaşır işlerini hızlandırır. Böylece günlük ev işlerinde tasarruf sağlanır.",
+      "topic": "psikoloji",
+      "title": "Dikkat Tek Bir Süreç Değil, Neden Birden Fazla?",
+      "description": "Dikkat, tek bir mekanizma değildir. Seçici, sürdürülebilir, bölünmüş ve yönlendirici gibi birçok alt süreçten oluşur.",
       "hashtags": {
-        "primary": "evteknolojisi",
-        "secondary": "evotomasyonu"
+        "primary": "psikoloji",
+        "secondary": "dikkat"
       },
       "tags": [
-        "ev",
-        "teknoloji",
-        "evaletleri",
-        "zaman",
-        "otomasyon"
+        "dikkat",
+        "beyin",
+        "algı",
+        "psikoloji",
+        "sinirbilim"
       ]
     },
     "generation_mode": "prompt_first_v1"
