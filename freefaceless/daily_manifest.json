@@ -5,5 +5,22 @@
     "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "43139297247",
+    "slot": "2300",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-12T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-12T20:00:00Z",
+    "video_id": "sqJy6uDoIak",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261112_022313_psikoloji/final.mp4",
+    "topic": "psikoloji",
+    "title": "Dikkat Tek Bir Süreç Değil, Neden Birden Fazla?",
+    "narration": "Dikkat sadece tek bir şey mi Hayır dikkat birden fazla süreçten oluşur seçici sürdürülebilir bölünmüş ve yönlendirici birlikte Bu süreçler frontal parietal ve subkortikal beyin bölgelerinde dağıtılmış ağlarla desteklenir Siz hangi süreci kullanıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-12T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
