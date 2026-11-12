@@ -967,6 +967,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "43139297247",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261112_222314",
+      "topic": "teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261112_222314_teknoloji/final.mp4",
+      "video_id": "jpMkP6iDtkY",
+      "publish_at": "2026-11-13T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "43318000036"
     }
   ]
 }
