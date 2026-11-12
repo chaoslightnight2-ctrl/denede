@@ -1,17 +1,50 @@
 {
-  "source_run": "43253388690",
-  "verified_at": "2026-11-12T16:04:16.071424+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "43318000036",
+  "verified_at": "2026-11-12T22:39:51.972526+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "video_id": "jpMkP6iDtkY",
+      "youtube_url": "https://youtu.be/jpMkP6iDtkY",
+      "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
+      "narration": "İlk cep telefonu ne kadar ağırdı Martin Cooper 3 Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazı New Yorkta gösterdi Gösterim New Yorkta radyo frekansı bağlantısıyla ilk kez yapıldı büyük ilgi toplandı Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-13T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-13T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.566667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/jpMkP6iDtkY.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [
+    {
+      "index": 2,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
