@@ -1,48 +1,42 @@
 {
-  "run_id": "43107293648",
+  "run_id": "43139297247",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "79425",
+    "source_id": "33978",
     "scenes": [
       {
-        "text": "Ev aletleri gerçekten zaman kazandırır mı?",
-        "visual_query": "kitchen appliances"
+        "text": "Sabahları gökyüzü neden hızla renklenir?",
+        "visual_query": "sky"
       },
       {
-        "text": "Uygulamalı bilim ev aletlerine entegre edilerek temizlik ve çamaşır süresini kısaltır ve ayrıca.",
-        "visual_query": "washing machine"
+        "text": "Hava, bölgesel basınç, sıcaklık ve nem farklarıyla şekillenir, bu da değişime yol açar.",
+        "visual_query": "air"
       },
       {
-        "text": "Ev otomasyonu ışık ve ısıyı akıllı sistemlerle kontrol eder.",
-        "visual_query": "smart thermostat"
+        "text": "Atmosferin en alt katmanı troposfer, çoğu hava olayına ev sahipliği yapar.",
+        "visual_query": "atm"
       }
     ],
-    "closing_question": "Siz de evde denediniz mi?",
-    "closing_visual_query": "living room",
+    "closing_question": "Sizce hava nasıl hissedilir?",
+    "closing_visual_query": "room",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük hayat",
-    "title": "Ev Aletleri Zaman Kazandırır Temizlik ve Çamaşır Kısalır",
-    "description": "Ev teknolojileri temizlik ve çamaşır işlerini hızlandırır. Böylece günlük ev işlerinde tasarruf sağlanır.",
+    "topic": "hava",
+    "title": "Hava Neden Bölgesel Farklarla Değişir? İşte Açıklaması",
+    "description": "Hava, basınç, sıcaklık ve nem farklarından oluşur. Troposfer, çoğu hava olayının gerçekleştiği katmandır.",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "evotomasyonu"
+      "primary": "hava",
+      "secondary": "iklim"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "evaletleri",
-      "zaman",
-      "otomasyon"
+      "hava",
+      "basınç",
+      "sıcaklık",
+      "nem",
+      "meteoroloji"
     ]
   },
   "reference_sources": [
-    {
-      "id": "38407",
-      "title": "Humour",
-      "url": "https://en.wikipedia.org/wiki/Humour",
-      "text": "Humour (Commonwealth English) or humor (American English) is the tendency of experiences to provoke laughter and provide amusement. The term derives from the humoral medicine of the ancient Greeks, which taught that the balance of fluids in the human body, known as \"humours\" (Latin: humor, \"body fluid\"), controlled human health and emotion. People of all ages and cultures respond to humour. Most people can experience humour—be amused, smile or laugh at something funny (such as a pun or joke)—and thus are considered to have a sense of humour. The hypothetical person lacking a sense of humour could likely find the behaviour to be inexplicable, strange, or even irrational. Though ultimately decided by subjective personal taste, the extent to which a person finds something humorous depends on a host of variables, including geographical location, culture, maturity, level of education, intelligence and context. For example, young children may favour slapstick such as Punch and Judy, puppet shows or cartoons such as Tom and Jerry or Looney Tunes, whose physical nature makes it accessible to them. By contrast, more sophisticated forms of humour such as satire require an understanding of its social meaning and context, and thus tend to appeal to a more mature audience."
-    },
     {
       "id": "79425",
       "title": "Domestic technology",
@@ -60,6 +54,12 @@
       "title": "Sleep",
       "url": "https://en.wikipedia.org/wiki/Sleep",
       "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+    },
+    {
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     }
   ],
   "error": null
