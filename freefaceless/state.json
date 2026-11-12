@@ -954,6 +954,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "43107293648",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261112_022313",
+      "topic": "psikoloji",
+      "audience_bucket": "human_behavior",
+      "hook_style": "direct_change",
+      "title": "Dikkat Tek Bir Süreç Değil, Neden Birden Fazla?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261112_022313_psikoloji/final.mp4",
+      "video_id": "sqJy6uDoIak",
+      "publish_at": "2026-11-12T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "43139297247"
     }
   ]
 }
