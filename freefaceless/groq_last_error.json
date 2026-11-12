@@ -2,8 +2,8 @@
   "run_id": "43139297247",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1794449470.0455906,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1794449709.962918,
+  "failed_generation_excerpt": "{\"source_id\":\"33978\",\"scenes\":[{\"text\":\"Neden sabahlar\u0131 g\u00f6ky\u00fcz\u00fc genellikle bulutlu olur s\u0131k s\u0131k?\",\"visual_query\":\"sky\"},{\"text\":\"Hava bas\u0131nc\u0131, s\u0131cakl\u0131k ve nem farklar\u0131, hava durumunu belirleyen ger\u00e7ek ba\u015fl\u0131ca temel etkenlerdir.\",\"visual_query\":\"air\"}]}",
   "retry_after": null
 }
