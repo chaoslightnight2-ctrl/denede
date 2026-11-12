@@ -1,9 +1,9 @@
 {
-  "run_id": "43253388690",
+  "run_id": "43318000036",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1794499150.2091422,
-  "failed_generation_excerpt": "{\"source_id\":\"33978\",\"scenes\":[{\"text\":\"G\u00fcnl\u00fck ya\u015famda havan\u0131n olu\u015ftu\u011fu katman neresi?\",\"visual_query\":\"sky\"},{\"text\":\"Hava, D\u00fcnya\u2019n\u0131n en alt atmosfer katman\u0131 olan troposferde, genellikle g\u00fcnl\u00fck hava olaylar\u0131 burada meydana gelir.\",\"visual_query\":\"air\"},{\"text\":\"Troposfer, s\u0131cakl\u0131k ve nem farklar\u0131ndan kaynaklanan hava hareketleriyle \u015fekillenir.\",\"visual_query\":\"wind\"}]}",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "observed_at": 1794521949.989981,
+  "failed_generation_excerpt": "",
   "retry_after": null
 }
