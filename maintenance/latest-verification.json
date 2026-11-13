@@ -1,21 +1,17 @@
 {
-  "source_run": "43451903716",
-  "verified_at": "2026-11-13T15:36:00.204385+00:00",
+  "source_run": "43515299897",
+  "verified_at": "2026-11-13T22:12:01.850897+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
-      "error": "No described asset matches scene 3: home wiring"
-    },
-    {
-      "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
