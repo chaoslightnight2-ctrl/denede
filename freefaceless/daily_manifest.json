@@ -1,33 +1,9 @@
 [
   {
-    "run_id": "43318000036",
-    "slot": "1900",
-    "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-13T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-13T16:00:00Z",
-    "video_id": "jpMkP6iDtkY",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261112_222314_teknoloji/final.mp4",
-    "topic": "teknoloji",
-    "title": "İlk Cep Telefonu Ne Zaman ve Kim Tarafından Gösterildi?",
-    "narration": "İlk cep telefonu ne kadar ağırdı Martin Cooper 3 Nisan bin dokuz yüz yetmiş üçte iki kilogramlık cihazı New Yorkta gösterdi Gösterim New Yorkta radyo frekansı bağlantısıyla ilk kez yapıldı büyük ilgi toplandı Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-13T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "43318000036",
+    "run_id": "43346926959",
     "slot": "2100",
-    "niche": "Günlük hayat ve eşyalar",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "43318000036",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
