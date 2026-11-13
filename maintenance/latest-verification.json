@@ -1,21 +1,20 @@
 {
-  "source_run": "43346926959",
-  "verified_at": "2026-11-13T02:03:55.522930+00:00",
+  "source_run": "43451903716",
+  "verified_at": "2026-11-13T15:36:00.204385+00:00",
   "videos": [],
   "errors": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "No described asset matches scene 3: home wiring"
     },
     {
       "index": 2,
-      "error": "Groq JSON truncated after same-model completion-budget retries"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
   "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
