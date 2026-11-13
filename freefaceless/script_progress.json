@@ -1,38 +1,38 @@
 {
-  "run_id": "43346926959",
+  "run_id": "43451903716",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "9550",
     "scenes": [
       {
-        "text": "Elektrik akımı nasıl oluşur merak ediyor musun?",
-        "visual_query": "lab"
+        "text": "Elektrik tarihinin gizli başlangıcı gerçekten nasıl nedir?",
+        "visual_query": "old circuit"
       },
       {
-        "text": "Elektrik akımı, bir iletkende serbest elektronların bir yönde sürüklenmesiyle ortaya çıkar ve enerji taşır.",
-        "visual_query": "wire"
+        "text": "Elektrik, on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı ve dönüm noktası oldu.",
+        "visual_query": "historical lab"
       },
       {
-        "text": "Bu akım, potansiyel farkı uygulandığında başlar ve devam eder.",
-        "visual_query": "bulb"
+        "text": "Maxwell denklemleri elektromanyetizmanın temelini oluşturur ve modern elektriği günlük yaşamda açıklar.",
+        "visual_query": "magnet coil"
       }
     ],
-    "closing_question": "Siz de deney yaptınız mı?",
-    "closing_visual_query": "lab",
+    "closing_question": "Siz de elektrikle oynadınız mı?",
+    "closing_visual_query": "home wiring",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "elektrik",
-    "title": "Elektrik Akımı Nasıl Oluşur? Elektronların Hareketi",
-    "description": "Elektrik akımı, bir iletkende elektronların bir yönde hareket etmesiyle oluşur. Potansiyel farkı uygulandığında bu akım başlar.",
+    "title": "Elektrik Ne Zaman Gelişti? On Yedinci ve On Sekizinci",
+    "description": "Elektrik, on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı. Maxwell denklemleri ise elektromanyetizmanın temelini oluşturur.",
     "hashtags": {
       "primary": "elektrik",
-      "secondary": "fizik"
+      "secondary": "bilim"
     },
     "tags": [
       "elektrik",
-      "akım",
-      "elektron",
       "fizik",
+      "teknoloji",
+      "günlükhayat",
       "bilim"
     ]
   },
