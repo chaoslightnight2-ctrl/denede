@@ -1,18 +1,50 @@
 {
-  "source_run": "43539864219",
-  "verified_at": "2026-11-14T01:32:34.453722+00:00",
-  "videos": [],
+  "source_run": "43603218936",
+  "verified_at": "2026-11-14T14:27:47.757775+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "oDmbqVu0OPQ",
+      "youtube_url": "https://youtu.be/oDmbqVu0OPQ",
+      "title": "Bilgisayarlar nasıl çoklu görev yapar?",
+      "narration": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde İlk bilgisayarlar 1930larda sadece birkaç adettir ve çok büyük boyutlardaydı Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-14T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-14T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 21.2,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/oDmbqVu0OPQ.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
