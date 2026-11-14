@@ -22,5 +22,12 @@
     "publish_at": "2026-11-14T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "43603218936",
+    "slot": "2300",
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": false,
+    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
