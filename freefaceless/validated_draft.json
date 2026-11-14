@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-13T15:31:15.217165+00:00",
+  "saved_at": "2026-11-14T14:19:12.834633+00:00",
   "data": {
-    "source_id": "9550",
+    "source_id": "7878457",
     "scenes": [
       {
-        "text": "Elektrik tarihinin gizli başlangıcı gerçekten nasıl nedir",
-        "visual_query": "old circuit"
+        "text": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır",
+        "visual_query": "computer desk"
       },
       {
-        "text": "Elektrik on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı ve dönüm noktası oldu",
-        "visual_query": "historical lab"
+        "text": "Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde",
+        "visual_query": "code editor"
       },
       {
-        "text": "Maxwell denklemleri elektromanyetizmanın temelini oluşturur ve modern elektriği günlük yaşamda açıklar",
-        "visual_query": "magnet coil"
+        "text": "İlk bilgisayarlar 1930larda sadece birkaç adettir ve çok büyük boyutlardaydı",
+        "visual_query": "vintage computer"
       },
       {
-        "text": "Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-        "visual_query": "home wiring"
+        "text": "Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "home office"
       }
     ],
-    "closing_question": "Siz de elektrikle oynadınız mı?",
-    "closing_visual_query": "home wiring",
+    "closing_question": "Siz de merak ettiniz mi?",
+    "closing_visual_query": "home office",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "elektrik",
-    "title": "Elektrik Ne Zaman Gelişti? On Yedinci ve On Sekizinci",
-    "description": "Elektrik, on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı. Maxwell denklemleri ise elektromanyetizmanın temelini oluşturur.\n\n#shorts #elektrik #bilim",
+    "topic": "bilgisayar",
+    "title": "Bilgisayarlar nasıl çoklu görev yapar?",
+    "description": "Bilgisayarlar programlanabilir olduğu için ardışık aritmetik ve mantıksal işlemleri otomatik yürütür. İlk bilgisayarlar 1930'larda sadece birkaç adettir ve çok büyük boyutlardaydı.\n\n#shorts #bilgisayar #teknoloji",
     "hashtags": {
-      "primary": "elektrik",
-      "secondary": "bilim"
+      "primary": "bilgisayar",
+      "secondary": "teknoloji"
     },
     "tags": [
-      "elektrik",
-      "fizik",
+      "bilgisayar",
       "teknoloji",
-      "günlükhayat",
-      "bilim"
+      "programlama",
+      "dijital",
+      "ik"
     ],
-    "spoken_text": "Elektrik tarihinin gizli başlangıcı gerçekten nasıl nedir Elektrik on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı ve dönüm noktası oldu Maxwell denklemleri elektromanyetizmanın temelini oluşturur ve modern elektriği günlük yaşamda açıklar Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-    "full_text": "Elektrik tarihinin gizli başlangıcı gerçekten nasıl nedir Elektrik on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı ve dönüm noktası oldu Maxwell denklemleri elektromanyetizmanın temelini oluşturur ve modern elektriği günlük yaşamda açıklar Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Elektrik tarihinin gizli başlangıcı gerçekten nasıl nedir. Elektrik on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı ve dönüm noktası oldu. Maxwell denklemleri elektromanyetizmanın temelini oluşturur ve modern elektriği günlük yaşamda açıklar. Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
+    "spoken_text": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde İlk bilgisayarlar 1930larda sadece birkaç adettir ve çok büyük boyutlardaydı Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde İlk bilgisayarlar 1930larda sadece birkaç adettir ve çok büyük boyutlardaydı Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır. Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde. İlk bilgisayarlar 1930larda sadece birkaç adettir ve çok büyük boyutlardaydı. Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "technology_science",
     "hook_style": "direct_change",
     "reference_source": {
-      "id": "9550",
-      "title": "Electricity",
-      "url": "https://en.wikipedia.org/wiki/Electricity",
-      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+      "id": "7878457",
+      "title": "Computer",
+      "url": "https://en.wikipedia.org/wiki/Computer",
+      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
     },
     "raw_groq_package": {
-      "source_id": "9550",
+      "source_id": "7878457",
       "scenes": [
         {
-          "text": "Elektrik tarihinin gizli başlangıcı gerçekten nasıl nedir?",
-          "visual_query": "old circuit"
+          "text": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır?",
+          "visual_query": "computer desk"
         },
         {
-          "text": "Elektrik, on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı ve dönüm noktası oldu.",
-          "visual_query": "historical lab"
+          "text": "Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde.",
+          "visual_query": "code editor"
         },
         {
-          "text": "Maxwell denklemleri elektromanyetizmanın temelini oluşturur ve modern elektriği günlük yaşamda açıklar.",
-          "visual_query": "magnet coil"
+          "text": "İlk bilgisayarlar 1930'larda sadece birkaç adettir ve çok büyük boyutlardaydı.",
+          "visual_query": "vintage computer"
         }
       ],
-      "closing_question": "Siz de elektrikle oynadınız mı?",
-      "closing_visual_query": "home wiring",
+      "closing_question": "Siz de merak ettiniz mi?",
+      "closing_visual_query": "home office",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "elektrik",
-      "title": "Elektrik Ne Zaman Gelişti? On Yedinci ve On Sekizinci",
-      "description": "Elektrik, on yedinci ve on sekizinci yüzyıllarda teorik olarak gelişmeye başladı. Maxwell denklemleri ise elektromanyetizmanın temelini oluşturur.",
+      "topic": "bilgisayar",
+      "title": "Bilgisayarlar nasıl çoklu görev yapar?",
+      "description": "Bilgisayarlar programlanabilir olduğu için ardışık aritmetik ve mantıksal işlemleri otomatik yürütür. İlk bilgisayarlar 1930'larda sadece birkaç adettir ve çok büyük boyutlardaydı.",
       "hashtags": {
-        "primary": "elektrik",
-        "secondary": "bilim"
+        "primary": "bilgisayar",
+        "secondary": "teknoloji"
       },
       "tags": [
-        "elektrik",
-        "fizik",
+        "bilgisayar",
         "teknoloji",
-        "günlükhayat",
-        "bilim"
+        "programlama",
+        "dijital",
+        "ik"
       ]
     },
     "generation_mode": "prompt_first_v1"
