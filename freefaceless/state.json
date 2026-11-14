@@ -43,7 +43,8 @@
     "mobiltelefon",
     "dikkat",
     "teknoloji ve icatlar",
-    "yapayzeka"
+    "yapayzeka",
+    "bilgisayar"
   ],
   "published": [
     {
@@ -980,6 +981,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "43318000036",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261114_141914",
+      "topic": "bilgisayar",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "Bilgisayarlar nasıl çoklu görev yapar?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261114_141914_bilgisayar/final.mp4",
+      "video_id": "oDmbqVu0OPQ",
+      "publish_at": "2026-11-14T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "43603218936"
     }
   ]
 }
