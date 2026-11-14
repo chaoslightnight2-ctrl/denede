@@ -5,5 +5,22 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "43603218936",
+    "slot": "2100",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-14T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-14T18:00:00Z",
+    "video_id": "oDmbqVu0OPQ",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261114_141914_bilgisayar/final.mp4",
+    "topic": "bilgisayar",
+    "title": "Bilgisayarlar nasıl çoklu görev yapar?",
+    "narration": "Bilgisayarlar gerçekten nasıl düşünür gibi çalışır Programlanabilir oldukları için bilgisayarlar ardışık aritmetik ve mantıksal işlemleri otomatik yürütürler hızlı bir şekilde İlk bilgisayarlar 1930larda sadece birkaç adettir ve çok büyük boyutlardaydı Siz de merak ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-14T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
