@@ -1,37 +1,37 @@
 {
-  "run_id": "43725963199",
+  "run_id": "43757781819",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "563299",
     "scenes": [
       {
-        "text": "Neden bazen aynı ortamda farklı tepkiler veririz?",
-        "visual_query": "room"
+        "text": "Genetik mi, çevre mi davranışınızı belirler?",
+        "visual_query": "mind"
       },
       {
-        "text": "Çünkü davranışımız çevresel ve genetik faktörlerin birleşiminden şekillenir, bu etkileşim düşünce ve hislerimizi de yönlendirir.",
-        "visual_query": "lab"
+        "text": "Hem genetik mirasınız hem de yaşadığınız ortam, düşünce ve hareketlerinizi birlikte şekillendirir.",
+        "visual_query": "cell"
       },
       {
-        "text": "Araştırmalar, sosyal durumların algılanmasıyla hafıza izleri oluştuğunu gösteriyor, beyin aktivitesini de etkiler.",
-        "visual_query": "book"
+        "text": "Davranış, düşünce ve duygularla birlikte çevresel ve genetik faktörlerden etkilenir.",
+        "visual_query": "data"
       }
     ],
     "closing_question": "Sizce hangisi daha etkili?",
-    "closing_visual_query": "mind",
+    "closing_visual_query": "quiz",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "insan davranışı",
-    "title": "Neden aynı ortamda farklı tepkiler veririz? Çevre ve genetik belirler!",
-    "description": "İnsan davranışı çevresel ve genetik etkilerin bir araya gelmesiyle oluşur. Bu etkileşim düşünce ve duygularımızı yönlendirir.",
+    "topic": "psikoloji",
+    "title": "Genetik ve çevre insan davranışını nasıl şekillendirir?",
+    "description": "İnsan davranışı genetik miras ve çevresel etkilerle şekillenir. Bu iki faktör, düşünce ve hareketlerimizi yönlendirir.",
     "hashtags": {
       "primary": "davranış",
       "secondary": "psikoloji"
     },
     "tags": [
-      "davranış",
-      "çevre",
       "genetik",
+      "çevre",
+      "davranış",
       "psikoloji",
       "insan"
     ]
