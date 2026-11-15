@@ -1,6 +1,6 @@
 {
-  "source_run": "43634689270",
-  "verified_at": "2026-11-14T20:08:04.211822+00:00",
+  "source_run": "43660229721",
+  "verified_at": "2026-11-15T01:03:47.816622+00:00",
   "videos": [],
   "errors": [
     {
@@ -11,6 +11,7 @@
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
+  "public_listing_error": "HTTPError",
   "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
