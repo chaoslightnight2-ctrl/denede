@@ -1,7 +1,36 @@
 {
-  "source_run": "43725963199",
-  "verified_at": "2026-11-15T14:59:53.813824+00:00",
-  "videos": [],
+  "source_run": "43757781819",
+  "verified_at": "2026-11-15T20:40:37.069858+00:00",
+  "videos": [
+    {
+      "index": 3,
+      "video_id": "Yt_9J0OKfqE",
+      "youtube_url": "https://youtu.be/Yt_9J0OKfqE",
+      "title": "Cep telefonları hücresel ağlarla nasıl iletişim kurar?",
+      "narration": "Cep telefonları neden hücresel ağlarla çalışır Her telefon sinyal gönderip alabilen bir radyo vericisi ve alıcısı içerir dolayısıyla hücresel ağlarla iletişim kurar İlk cep telefonu üç Nisan bin dokuz yüz yetmiş üçte iki kilogramdı Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-16T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-16T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 20.5,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/Yt_9J0OKfqE.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
@@ -9,13 +38,13 @@
     },
     {
       "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
