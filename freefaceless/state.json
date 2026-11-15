@@ -44,7 +44,8 @@
     "dikkat",
     "teknoloji ve icatlar",
     "yapayzeka",
-    "bilgisayar"
+    "bilgisayar",
+    "ceptelefonu"
   ],
   "published": [
     {
@@ -994,6 +995,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "43603218936",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261115_203913",
+      "topic": "ceptelefonu",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "Cep telefonları hücresel ağlarla nasıl iletişim kurar?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261115_203913_ceptelefonu/final.mp4",
+      "video_id": "Yt_9J0OKfqE",
+      "publish_at": "2026-11-16T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "43757781819"
     }
   ]
 }
