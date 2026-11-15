@@ -12,5 +12,22 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "43757781819",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-16T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-16T20:00:00Z",
+    "video_id": "Yt_9J0OKfqE",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261115_203913_ceptelefonu/final.mp4",
+    "topic": "ceptelefonu",
+    "title": "Cep telefonları hücresel ağlarla nasıl iletişim kurar?",
+    "narration": "Cep telefonları neden hücresel ağlarla çalışır Her telefon sinyal gönderip alabilen bir radyo vericisi ve alıcısı içerir dolayısıyla hücresel ağlarla iletişim kurar İlk cep telefonu üç Nisan bin dokuz yüz yetmiş üçte iki kilogramdı Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-16T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
