@@ -1,8 +1,8 @@
 [
   {
-    "run_id": "43634689270",
+    "run_id": "43660229721",
     "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
+    "niche": "Psikoloji ve insan davranışları",
     "ok": false,
     "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
