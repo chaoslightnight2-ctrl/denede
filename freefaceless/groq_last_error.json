@@ -1,9 +1,9 @@
 {
-  "run_id": "43725963199",
+  "run_id": "43757781819",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1794754750.170143,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
+  "observed_at": 1794774670.753831,
+  "failed_generation_excerpt": "{\"source_id\":\"9550\",\"scenes\":[{\"text\":\"Elektrik asl\u0131nda neyin hareketidir, g\u00fcnl\u00fck ya\u015famda?\",\"visual_query\":\"circuit board\"},{\"text\":\"Elektrik, pozitif ya da negatif y\u00fckl\u00fc par\u00e7ac\u0131klar\u0131n bulunmas\u0131 ve bu par\u00e7ac\u0131klar\u0131n hareketiyle olu\u015fur ve enerji.\",\"visual_query\":\"electric spark\"},{\"text\":\"Y\u00fck ta\u015f\u0131yan bir par\u00e7ac\u0131k etraf\u0131nda elektrik alan\u0131 olu\u015fur ve manyetik alan.\",\"visual_query\":\"charged particle\"}]}",
   "retry_after": null
 }
