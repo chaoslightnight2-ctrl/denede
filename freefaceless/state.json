@@ -1008,6 +1008,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "43757781819",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261116_010313",
+      "topic": "ev teknolojisi",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261116_010313_ev-teknolojisi/final.mp4",
+      "video_id": "LXI-vtFi8as",
+      "publish_at": "2026-11-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "43782638352"
     }
   ]
 }
