@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Psikoloji ve insan davranışları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-16T01:03:11.923843+00:00",
+  "saved_at": "2026-11-16T01:11:11.957359+00:00",
   "data": {
-    "source_id": "79425",
+    "source_id": "563299",
     "scenes": [
       {
-        "text": "Neden çamaşır makinesi artık daha hızlı",
-        "visual_query": "washing machine"
+        "text": "Neden davranışlarımız genetik mi yoksa çevre mi belirler",
+        "visual_query": "brain lab"
       },
       {
-        "text": "Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı",
-        "visual_query": "home appliance"
+        "text": "Davranış yaşam boyunca içsel ve dışsal uyarıcılara yanıt olarak çevresel ve genetik faktörlerle şekillenir",
+        "visual_query": "people interaction"
       },
       {
-        "text": "Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar",
-        "visual_query": "kitchen appliances"
+        "text": "Ayrıca düşünceler ve duygular da davranışlarımızı yönlendiren önemli etkenlerdir",
+        "visual_query": "mind emotion"
       },
       {
-        "text": "Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-        "visual_query": "living room"
+        "text": "Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Siz de zaman kazandınız mı?",
-    "closing_visual_query": "living room",
+    "closing_question": "Sizce hangisi daha etkili?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
-    "description": "Ev teknolojileri, ev işlerinde harcanan zamanı azaltıyor. Bu durum, cihazların otomasyonu ve verimli tasarımları sayesinde gerçekleşiyor.\n\n#shorts #evteknolojisi #günlükhayat",
+    "topic": "psikoloji",
+    "title": "Davranışlarımız Çevresel ve Genetik Faktörlerle Nasıl?",
+    "description": "İnsan davranışı, çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.\n\n#shorts #davranış #psikoloji",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "günlükhayat"
+      "primary": "davranış",
+      "secondary": "psikoloji"
     },
-    "topic": "ev teknolojisi",
     "tags": [
-      "ev",
-      "teknoloji",
-      "ev işleri",
-      "otomasyon",
-      "verimlilik"
+      "davranış",
+      "genetik",
+      "çevre",
+      "psikoloji",
+      "insan"
     ],
-    "spoken_text": "Neden çamaşır makinesi artık daha hızlı Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "full_text": "Neden çamaşır makinesi artık daha hızlı Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Neden çamaşır makinesi artık daha hızlı. Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı. Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar. Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "spoken_text": "Neden davranışlarımız genetik mi yoksa çevre mi belirler Davranış yaşam boyunca içsel ve dışsal uyarıcılara yanıt olarak çevresel ve genetik faktörlerle şekillenir Ayrıca düşünceler ve duygular da davranışlarımızı yönlendiren önemli etkenlerdir Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "full_text": "Neden davranışlarımız genetik mi yoksa çevre mi belirler Davranış yaşam boyunca içsel ve dışsal uyarıcılara yanıt olarak çevresel ve genetik faktörlerle şekillenir Ayrıca düşünceler ve duygular da davranışlarımızı yönlendiren önemli etkenlerdir Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Neden davranışlarımız genetik mi yoksa çevre mi belirler. Davranış yaşam boyunca içsel ve dışsal uyarıcılara yanıt olarak çevresel ve genetik faktörlerle şekillenir. Ayrıca düşünceler ve duygular da davranışlarımızı yönlendiren önemli etkenlerdir. Sizce hangisi daha etkili İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "human_behavior",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "563299",
+      "title": "Human behavior",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups , while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct,contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
     },
     "raw_groq_package": {
-      "source_id": "79425",
+      "source_id": "563299",
       "scenes": [
         {
-          "text": "Neden çamaşır makinesi artık daha hızlı?",
-          "visual_query": "washing machine"
+          "text": "Neden davranışlarımız genetik mi yoksa çevre mi belirler?",
+          "visual_query": "brain lab"
         },
         {
-          "text": "Çünkü ev teknolojisi, cihazları daha verimli hâle getirerek günlük iş süresini kısalttı.",
-          "visual_query": "home appliance"
+          "text": "Davranış, yaşam boyunca içsel ve dışsal uyarıcılara yanıt olarak çevresel ve genetik faktörlerle şekillenir.",
+          "visual_query": "people interaction"
         },
         {
-          "text": "Domestik teknoloji, çamaşır kurutma ve bulaşık makinelerini de kapsar.",
-          "visual_query": "kitchen appliances"
+          "text": "Ayrıca düşünceler ve duygular da davranışlarımızı yönlendiren önemli etkenlerdir.",
+          "visual_query": "mind emotion"
         }
       ],
-      "closing_question": "Siz de zaman kazandınız mı?",
-      "closing_visual_query": "living room",
+      "closing_question": "Sizce hangisi daha etkili?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
-      "description": "Ev teknolojileri, ev işlerinde harcanan zamanı azaltıyor. Bu durum, cihazların otomasyonu ve verimli tasarımları sayesinde gerçekleşiyor.",
+      "topic": "psikoloji",
+      "title": "Davranışlarımız Çevresel ve Genetik Faktörlerle Nasıl?",
+      "description": "İnsan davranışı, çevresel ve genetik etkilerle şekillenir. Düşünce ve duygular da bu sürece katkı sağlar.",
       "hashtags": {
-        "primary": "evteknolojisi",
-        "secondary": "günlükhayat"
+        "primary": "davranış",
+        "secondary": "psikoloji"
       },
-      "topic": "ev teknolojisi",
       "tags": [
-        "ev",
-        "teknoloji",
-        "ev işleri",
-        "otomasyon",
-        "verimlilik"
+        "davranış",
+        "genetik",
+        "çevre",
+        "psikoloji",
+        "insan"
       ]
     },
     "generation_mode": "prompt_first_v1"
