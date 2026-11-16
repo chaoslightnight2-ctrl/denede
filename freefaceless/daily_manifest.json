@@ -1,32 +1,18 @@
 [
   {
-    "run_id": "43757781819",
+    "run_id": "43782638352",
     "slot": "1900",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "43757781819",
-    "slot": "2100",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "43757781819",
-    "slot": "2300",
-    "niche": "Teknoloji ve icatlar",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-16T23:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-16T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-16T20:00:00Z",
-    "video_id": "Yt_9J0OKfqE",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261115_203913_ceptelefonu/final.mp4",
-    "topic": "ceptelefonu",
-    "title": "Cep telefonları hücresel ağlarla nasıl iletişim kurar?",
-    "narration": "Cep telefonları neden hücresel ağlarla çalışır Her telefon sinyal gönderip alabilen bir radyo vericisi ve alıcısı içerir dolayısıyla hücresel ağlarla iletişim kurar İlk cep telefonu üç Nisan bin dokuz yüz yetmiş üçte iki kilogramdı Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-16T20:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-16T16:00:00Z",
+    "video_id": "LXI-vtFi8as",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261116_010313_ev-teknolojisi/final.mp4",
+    "topic": "ev teknolojisi",
+    "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
+    "narration": "Neden çamaşır makinesi artık daha hızlı Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-16T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
   }

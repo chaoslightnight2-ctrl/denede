@@ -1019,7 +1019,8 @@
       "video_id": "LXI-vtFi8as",
       "publish_at": "2026-11-16T16:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "43782638352"
+      "run_id": "43782638352",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
