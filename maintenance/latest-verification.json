@@ -1,47 +1,17 @@
 {
-  "source_run": "43782638352",
-  "verified_at": "2026-11-16T01:11:58.865352+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "LXI-vtFi8as",
-      "youtube_url": "https://youtu.be/LXI-vtFi8as",
-      "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
-      "narration": "Neden çamaşır makinesi artık daha hızlı Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-16T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-16T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.4,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/LXI-vtFi8as.jpg"
-    }
-  ],
+  "source_run": "43913410252",
+  "verified_at": "2026-11-16T17:11:51.226442+00:00",
+  "videos": [],
   "errors": [
     {
-      "index": 2,
-      "error": "No described asset matches scene 2: mind emotion"
+      "index": 1,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "public_listing_error": "HTTPError",
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
