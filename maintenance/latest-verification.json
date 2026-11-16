@@ -1,19 +1,19 @@
 {
-  "source_run": "43757781819",
-  "verified_at": "2026-11-15T20:40:37.069858+00:00",
+  "source_run": "43782638352",
+  "verified_at": "2026-11-16T01:11:58.865352+00:00",
   "videos": [
     {
-      "index": 3,
-      "video_id": "Yt_9J0OKfqE",
-      "youtube_url": "https://youtu.be/Yt_9J0OKfqE",
-      "title": "Cep telefonları hücresel ağlarla nasıl iletişim kurar?",
-      "narration": "Cep telefonları neden hücresel ağlarla çalışır Her telefon sinyal gönderip alabilen bir radyo vericisi ve alıcısı içerir dolayısıyla hücresel ağlarla iletişim kurar İlk cep telefonu üç Nisan bin dokuz yüz yetmiş üçte iki kilogramdı Siz hangi telefonu tercih edersiniz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-16T20:00:00Z",
+      "index": 1,
+      "video_id": "LXI-vtFi8as",
+      "youtube_url": "https://youtu.be/LXI-vtFi8as",
+      "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
+      "narration": "Neden çamaşır makinesi artık daha hızlı Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-16T16:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-16T20:00:00Z",
+        "publishAt": "2026-11-16T16:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,28 +23,25 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 20.5,
+        "duration": 17.4,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/Yt_9J0OKfqE.jpg"
+      "preview": "maintenance/previews/LXI-vtFi8as.jpg"
     }
   ],
   "errors": [
     {
-      "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
       "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
+      "error": "No described asset matches scene 2: mind emotion"
     }
   ],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 3,
+  "public_listing_error": "HTTPError",
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
