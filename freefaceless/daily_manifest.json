@@ -1,26 +1,9 @@
 [
   {
-    "run_id": "43782638352",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-16T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-16T16:00:00Z",
-    "video_id": "LXI-vtFi8as",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261116_010313_ev-teknolojisi/final.mp4",
-    "topic": "ev teknolojisi",
-    "title": "Ev işleri kısalıyor: Ev teknolojisi sayesinde",
-    "narration": "Neden çamaşır makinesi artık daha hızlı Çünkü ev teknolojisi cihazları daha verimli hâle getirerek günlük iş süresini kısalttı Domestik teknoloji çamaşır kurutma ve bulaşık makinelerini de kapsar Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-16T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "43782638352",
+    "run_id": "43913410252",
     "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": false,
-    "error": "No described asset matches scene 2: mind emotion"
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
