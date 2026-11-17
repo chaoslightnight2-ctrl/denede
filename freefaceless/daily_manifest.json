@@ -1,7 +1,7 @@
 [
   {
-    "run_id": "44010464283",
-    "slot": "1900",
+    "run_id": "44130612021",
+    "slot": "2100",
     "niche": "Teknoloji ve icatlar",
     "ok": false,
     "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
