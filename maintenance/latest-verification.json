@@ -1,74 +1,17 @@
 {
-  "source_run": "44211846968",
-  "verified_at": "2026-11-18T01:12:31.022704+00:00",
-  "videos": [
-    {
-      "index": 2,
-      "video_id": "drgFcVnyZMg",
-      "youtube_url": "https://youtu.be/drgFcVnyZMg",
-      "title": "İlk Cep Telefonu Ne Zaman ve Nasıl Gösterildi?",
-      "narration": "İlk cep telefonu ne zaman ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı Bu ilk model radyo frekansı üzerinden çağrı yapıyordu Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-18T18:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-18T18:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.266667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/drgFcVnyZMg.jpg"
-    },
-    {
-      "index": 3,
-      "video_id": "vW4FGUTrHFs",
-      "youtube_url": "https://youtu.be/vW4FGUTrHFs",
-      "title": "Uyku Beyni Temizler: Amyloid Atığını Nasıl Atar?",
-      "narration": "Gece uyurken beyniniz gerçekten ne yapar Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-18T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-18T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.4,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/vW4FGUTrHFs.jpg"
-    }
-  ],
+  "source_run": "44225684158",
+  "verified_at": "2026-11-18T02:51:56.676820+00:00",
+  "videos": [],
   "errors": [
     {
       "index": 1,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 2,
-  "processed_count": 2,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 3,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
