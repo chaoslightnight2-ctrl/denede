@@ -1,43 +1,9 @@
 [
   {
-    "run_id": "44211846968",
+    "run_id": "44225684158",
     "slot": "1900",
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "44211846968",
-    "slot": "2100",
-    "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-18T21:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-18T18:00:00Z",
-    "video_id": "drgFcVnyZMg",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261118_010713_teknoloji/final.mp4",
-    "topic": "teknoloji",
-    "title": "İlk Cep Telefonu Ne Zaman ve Nasıl Gösterildi?",
-    "narration": "İlk cep telefonu ne zaman ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı Bu ilk model radyo frekansı üzerinden çağrı yapıyordu Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-18T18:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "44211846968",
-    "slot": "2300",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-18T23:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-18T20:00:00Z",
-    "video_id": "vW4FGUTrHFs",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261118_011113_uyku/final.mp4",
-    "topic": "uyku",
-    "title": "Uyku Beyni Temizler: Amyloid Atığını Nasıl Atar?",
-    "narration": "Gece uyurken beyniniz gerçekten ne yapar Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-18T20:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
   }
 ]
