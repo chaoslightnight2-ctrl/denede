@@ -5,5 +5,22 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "44211846968",
+    "slot": "2100",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-18T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-18T18:00:00Z",
+    "video_id": "drgFcVnyZMg",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261118_010713_teknoloji/final.mp4",
+    "topic": "teknoloji",
+    "title": "İlk Cep Telefonu Ne Zaman ve Nasıl Gösterildi?",
+    "narration": "İlk cep telefonu ne zaman ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı Bu ilk model radyo frekansı üzerinden çağrı yapıyordu Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-18T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
