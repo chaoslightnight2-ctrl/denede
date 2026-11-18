@@ -1,88 +1,88 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-18T01:07:12.074599+00:00",
+  "saved_at": "2026-11-18T01:11:12.179140+00:00",
   "data": {
-    "source_id": "19644137",
-    "title": "İlk Cep Telefonu Ne Zaman ve Nasıl Gösterildi?",
-    "description": "İlk taşınabilir cep telefonu üç Nisan bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Cihaz yaklaşık iki kilogram ağırlığındaydı.\n\n#shorts #teknoloji #mobiltelefon",
-    "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
-    },
-    "topic": "teknoloji",
-    "tags": [
-      "ceptelefonu",
-      "mobil",
-      "iletisim",
-      "teknoloji",
-      "tarih"
-    ],
+    "source_id": "27834",
     "scenes": [
       {
-        "text": "İlk cep telefonu ne zaman ortaya çıktı",
-        "visual_query": "handset demo"
+        "text": "Gece uyurken beyniniz gerçekten ne yapar",
+        "visual_query": "bedroom night"
       },
       {
-        "text": "Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı",
-        "visual_query": "conference stage"
+        "text": "Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur",
+        "visual_query": "brain illustration"
       },
       {
-        "text": "Bu ilk model radyo frekansı üzerinden çağrı yapıyordu",
-        "visual_query": "radio waves"
+        "text": "Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır",
+        "visual_query": "sleeping person"
       },
       {
-        "text": "Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-        "visual_query": "smartphone screen"
+        "text": "Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
+        "visual_query": "moon sky"
       }
     ],
-    "closing_question": "Sizce telefon nasıl evrimleşti?",
-    "closing_visual_query": "smartphone screen",
+    "closing_question": "Daha iyi uyuyabilir misin?",
+    "closing_visual_query": "moon sky",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "spoken_text": "İlk cep telefonu ne zaman ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı Bu ilk model radyo frekansı üzerinden çağrı yapıyordu Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu ne zaman ortaya çıktı Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı Bu ilk model radyo frekansı üzerinden çağrı yapıyordu Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu ne zaman ortaya çıktı. Martin Cooper üç Nisan bin dokuz yüz yetmiş üçte iki kilogramlık bir cihazla tanıttı. Bu ilk model radyo frekansı üzerinden çağrı yapıyordu. Sizce telefon nasıl evrimleşti İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "direct_change",
+    "topic": "uyku",
+    "title": "Uyku Beyni Temizler: Amyloid Atığını Nasıl Atar?",
+    "description": "Uyku, beyin sıvısının hareketini artırarak amyloid gibi zararlı maddeleri temizler. Bu temizlik hafıza ve genel sağlık için kritiktir.\n\n#shorts #uyku #beyin",
+    "hashtags": {
+      "primary": "uyku",
+      "secondary": "beyin"
+    },
+    "tags": [
+      "uyku",
+      "beyin",
+      "sağlık",
+      "hafıza",
+      "atıktemizleme"
+    ],
+    "spoken_text": "Gece uyurken beyniniz gerçekten ne yapar Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
+    "full_text": "Gece uyurken beyniniz gerçekten ne yapar Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Gece uyurken beyniniz gerçekten ne yapar. Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur. Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır. Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
-      "title": "İlk Cep Telefonu Ne Zaman ve Nasıl Gösterildi?",
-      "description": "İlk taşınabilir cep telefonu üç Nisan bin dokuz yüz yetmiş üç'te Martin Cooper tarafından tanıtıldı. Cihaz yaklaşık iki kilogram ağırlığındaydı.",
-      "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobiltelefon"
-      },
-      "topic": "teknoloji",
-      "tags": [
-        "ceptelefonu",
-        "mobil",
-        "iletisim",
-        "teknoloji",
-        "tarih"
-      ],
+      "source_id": "27834",
       "scenes": [
         {
-          "text": "İlk cep telefonu ne zaman ortaya çıktı?",
-          "visual_query": "handset demo"
+          "text": "Gece uyurken beyniniz gerçekten ne yapar?",
+          "visual_query": "bedroom night"
         },
         {
-          "text": "Martin Cooper üç Nisan bin dokuz yüz yetmiş üç'te iki kilogramlık bir cihazla tanıttı.",
-          "visual_query": "conference stage"
+          "text": "Uyku, beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur.",
+          "visual_query": "brain illustration"
         },
         {
-          "text": "Bu ilk model, radyo frekansı üzerinden çağrı yapıyordu.",
-          "visual_query": "radio waves"
+          "text": "Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır.",
+          "visual_query": "sleeping person"
         }
       ],
-      "closing_question": "Sizce telefon nasıl evrimleşti?",
-      "closing_visual_query": "smartphone screen",
-      "cta": "İlginç Gerçekler kanalına abone ol"
+      "closing_question": "Daha iyi uyuyabilir misin?",
+      "closing_visual_query": "moon sky",
+      "cta": "İlginç Gerçekler kanalına abone ol",
+      "topic": "uyku",
+      "title": "Uyku Beyni Temizler: Amyloid Atığını Nasıl Atar?",
+      "description": "Uyku, beyin sıvısının hareketini artırarak amyloid gibi zararlı maddeleri temizler. Bu temizlik hafıza ve genel sağlık için kritiktir.",
+      "hashtags": {
+        "primary": "uyku",
+        "secondary": "beyin"
+      },
+      "tags": [
+        "uyku",
+        "beyin",
+        "sağlık",
+        "hafıza",
+        "atıktemizleme"
+      ]
     },
     "generation_mode": "prompt_first_v1"
   }
