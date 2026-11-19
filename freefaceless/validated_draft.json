@@ -1,87 +1,87 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Günlük hayatta bilimin açıklamaları",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-18T01:11:12.179140+00:00",
+  "saved_at": "2026-11-19T00:31:12.514214+00:00",
   "data": {
-    "source_id": "27834",
+    "source_id": "9550",
     "scenes": [
       {
-        "text": "Gece uyurken beyniniz gerçekten ne yapar",
-        "visual_query": "bedroom night"
+        "text": "Evdeki ışıkları kim tamamen kontrol ediyor",
+        "visual_query": "livingroom lamp"
       },
       {
-        "text": "Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur",
-        "visual_query": "brain illustration"
+        "text": "Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur",
+        "visual_query": "circuit board"
       },
       {
-        "text": "Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır",
-        "visual_query": "sleeping person"
+        "text": "Elektrik manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür",
+        "visual_query": "magnet coil"
       },
       {
-        "text": "Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
-        "visual_query": "moon sky"
+        "text": "Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Daha iyi uyuyabilir misin?",
-    "closing_visual_query": "moon sky",
+    "closing_question": "Siz de elektrikle oynadınız mı?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "uyku",
-    "title": "Uyku Beyni Temizler: Amyloid Atığını Nasıl Atar?",
-    "description": "Uyku, beyin sıvısının hareketini artırarak amyloid gibi zararlı maddeleri temizler. Bu temizlik hafıza ve genel sağlık için kritiktir.\n\n#shorts #uyku #beyin",
+    "topic": "günlük bilim",
+    "title": "Elektrik Nedir? Yüklü Maddelerin Hareketiyle Oluşur!",
+    "description": "Elektrik, yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olgudur. Günlük yaşamda ışık, ısı ve iletişim gibi birçok alanda kullanılır.\n\n#shorts #elektrik #bilim",
     "hashtags": {
-      "primary": "uyku",
-      "secondary": "beyin"
+      "primary": "elektrik",
+      "secondary": "bilim"
     },
     "tags": [
-      "uyku",
-      "beyin",
-      "sağlık",
-      "hafıza",
-      "atıktemizleme"
+      "elektrik",
+      "fizik",
+      "günlük yaşam",
+      "bilim",
+      "enerji"
     ],
-    "spoken_text": "Gece uyurken beyniniz gerçekten ne yapar Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
-    "full_text": "Gece uyurken beyniniz gerçekten ne yapar Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Gece uyurken beyniniz gerçekten ne yapar. Uyku beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur. Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır. Daha iyi uyuyabilir misin İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Evdeki ışıkları kim tamamen kontrol ediyor Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur Elektrik manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Evdeki ışıkları kim tamamen kontrol ediyor Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur Elektrik manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Evdeki ışıkları kim tamamen kontrol ediyor. Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur. Elektrik manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür. Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "27834",
-      "title": "Sleep",
-      "url": "https://en.wikipedia.org/wiki/Sleep",
-      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+      "id": "9550",
+      "title": "Electricity",
+      "url": "https://en.wikipedia.org/wiki/Electricity",
+      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
     },
     "raw_groq_package": {
-      "source_id": "27834",
+      "source_id": "9550",
       "scenes": [
         {
-          "text": "Gece uyurken beyniniz gerçekten ne yapar?",
-          "visual_query": "bedroom night"
+          "text": "Evdeki ışıkları kim tamamen kontrol ediyor?",
+          "visual_query": "livingroom lamp"
         },
         {
-          "text": "Uyku, beyin sıvısının dolaşımını artırarak amyloid gibi atıkları temizler ve böylece hafıza ve sağlığı korur.",
-          "visual_query": "brain illustration"
+          "text": "Elektrik, yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur.",
+          "visual_query": "circuit board"
         },
         {
-          "text": "Uyku sırasında kas hareketi ve dış ortam etkileşimi büyük ölçüde azalır.",
-          "visual_query": "sleeping person"
+          "text": "Elektrik, manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür.",
+          "visual_query": "magnet coil"
         }
       ],
-      "closing_question": "Daha iyi uyuyabilir misin?",
-      "closing_visual_query": "moon sky",
+      "closing_question": "Siz de elektrikle oynadınız mı?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "uyku",
-      "title": "Uyku Beyni Temizler: Amyloid Atığını Nasıl Atar?",
-      "description": "Uyku, beyin sıvısının hareketini artırarak amyloid gibi zararlı maddeleri temizler. Bu temizlik hafıza ve genel sağlık için kritiktir.",
+      "topic": "günlük bilim",
+      "title": "Elektrik Nedir? Yüklü Maddelerin Hareketiyle Oluşur!",
+      "description": "Elektrik, yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olgudur. Günlük yaşamda ışık, ısı ve iletişim gibi birçok alanda kullanılır.",
       "hashtags": {
-        "primary": "uyku",
-        "secondary": "beyin"
+        "primary": "elektrik",
+        "secondary": "bilim"
       },
       "tags": [
-        "uyku",
-        "beyin",
-        "sağlık",
-        "hafıza",
-        "atıktemizleme"
+        "elektrik",
+        "fizik",
+        "günlük yaşam",
+        "bilim",
+        "enerji"
       ]
     },
     "generation_mode": "prompt_first_v1"
