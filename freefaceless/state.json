@@ -1048,6 +1048,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "44211846968",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261119_003114",
+      "topic": "günlük bilim",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Elektrik Nedir? Yüklü Maddelerin Hareketiyle Oluşur!",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261119_003114_g-nl-k-bilim/final.mp4",
+      "video_id": "SUjY_wXO-tw",
+      "publish_at": "2026-11-19T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "44428244466"
     }
   ]
 }
