@@ -1,17 +1,50 @@
 {
-  "source_run": "44347128554",
-  "verified_at": "2026-11-18T16:47:15.037752+00:00",
-  "videos": [],
+  "source_run": "44428244466",
+  "verified_at": "2026-11-19T00:52:49.961557+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "SUjY_wXO-tw",
+      "youtube_url": "https://youtu.be/SUjY_wXO-tw",
+      "title": "Elektrik Nedir? Yüklü Maddelerin Hareketiyle Oluşur!",
+      "narration": "Evdeki ışıkları kim tamamen kontrol ediyor Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur Elektrik manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-19T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-19T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.433333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/SUjY_wXO-tw.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
