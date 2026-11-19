@@ -5,5 +5,22 @@
     "niche": "Psikoloji ve insan davranışları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "44428244466",
+    "slot": "2100",
+    "niche": "Günlük hayatta bilimin açıklamaları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-19T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-19T18:00:00Z",
+    "video_id": "SUjY_wXO-tw",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261119_003114_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Elektrik Nedir? Yüklü Maddelerin Hareketiyle Oluşur!",
+    "narration": "Evdeki ışıkları kim tamamen kontrol ediyor Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir temel fiziksel olgudur Elektrik manyetizma ile aynı elektromanyetizma fenomeninin iki yönüdür Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-19T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
