@@ -1,9 +1,19 @@
 [
   {
-    "run_id": "44443664811",
-    "slot": "1900",
+    "run_id": "44567180832",
+    "slot": "2300",
     "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-19T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-19T20:00:00Z",
+    "video_id": "aLYmqwiafj8",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261119_163514_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Su Neden Şeffaf ve Tadı Yoktur? İşte Açıklama",
+    "narration": "Su neden şeffaf ve tatsızdır gerçekten Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-19T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
