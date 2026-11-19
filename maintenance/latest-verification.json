@@ -1,17 +1,46 @@
 {
-  "source_run": "44443664811",
-  "verified_at": "2026-11-19T02:32:08.033151+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "44567180832",
+  "verified_at": "2026-11-19T16:47:57.950866+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "video_id": "aLYmqwiafj8",
+      "youtube_url": "https://youtu.be/aLYmqwiafj8",
+      "title": "Su Neden Şeffaf ve Tadı Yoktur? İşte Açıklama",
+      "narration": "Su neden şeffaf ve tatsızdır gerçekten Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-19T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-19T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 16.4,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/aLYmqwiafj8.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [
+    {
+      "index": 2,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
