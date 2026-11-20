@@ -1,41 +1,25 @@
 {
-  "source_run": "44770213203",
-  "verified_at": "2026-11-20T16:17:32.289521+00:00",
-  "videos": [
+  "source_run": "44830764219",
+  "verified_at": "2026-11-20T23:03:45.229553+00:00",
+  "videos": [],
+  "errors": [
     {
       "index": 1,
-      "video_id": "4bWKzGNmdB8",
-      "youtube_url": "https://youtu.be/4bWKzGNmdB8",
-      "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
-      "narration": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-20T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-20T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 19.968,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/4bWKzGNmdB8.jpg"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 2,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "errors": [],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
-  "accepted_complete": true
+  "accepted_complete": false
 }
