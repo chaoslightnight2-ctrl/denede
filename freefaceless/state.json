@@ -1074,6 +1074,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "44567180832",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261120_003914",
+      "topic": "günlük hayat",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Akıllı telefonun beyni nasıl çalışır? Silikon çipler!",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_003914_g-nl-k-hayat/final.mp4",
+      "video_id": "tpSKiPvkiyo",
+      "publish_at": "2026-11-20T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "44647119804"
     }
   ]
 }
