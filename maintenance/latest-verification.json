@@ -1,19 +1,19 @@
 {
-  "source_run": "44567180832",
-  "verified_at": "2026-11-19T16:47:57.950866+00:00",
+  "source_run": "44647119804",
+  "verified_at": "2026-11-20T00:47:58.115348+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "aLYmqwiafj8",
-      "youtube_url": "https://youtu.be/aLYmqwiafj8",
-      "title": "Su Neden Şeffaf ve Tadı Yoktur? İşte Açıklama",
-      "narration": "Su neden şeffaf ve tatsızdır gerçekten Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-19T20:00:00Z",
+      "video_id": "tpSKiPvkiyo",
+      "youtube_url": "https://youtu.be/tpSKiPvkiyo",
+      "title": "Akıllı telefonun beyni nasıl çalışır? Silikon çipler!",
+      "narration": "Akıllı telefonun içinde ne gizli gerçek Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-20T16:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-19T20:00:00Z",
+        "publishAt": "2026-11-20T16:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,28 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 16.4,
+        "duration": 18.6,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/aLYmqwiafj8.jpg"
+      "preview": "maintenance/previews/tpSKiPvkiyo.jpg"
     }
   ],
   "errors": [
     {
       "index": 2,
+      "error": "No described asset matches scene 2: genetic environment"
+    },
+    {
+      "index": 3,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
