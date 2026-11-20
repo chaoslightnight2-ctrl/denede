@@ -1,39 +1,39 @@
 {
-  "run_id": "44658068711",
+  "run_id": "44770213203",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "23416874",
+    "source_id": "27834",
     "scenes": [
       {
-        "text": "Hayvanların beşin ötesi duyuları gerçekten var!",
-        "visual_query": "forest river"
+        "text": "Beyninizi gece gerçekten nasıl temizler, biliyor musunuz?",
+        "visual_query": "brain illustration"
       },
       {
-        "text": "İnsan dışı birçok hayvan, beşten fazla duyu organına sahip olarak çevresini algılar.",
-        "visual_query": "jungle night"
+        "text": "Uyku sırasında beyin, metabolik atıkları, özellikle amiloid plaklarını, damar boşluklarından ve sinir sistemi içinde temizler.",
+        "visual_query": "sleep cycle diagram"
       },
       {
-        "text": "Balıklar su akışını mekanoreseptörle, yılanlar ısıyı termoreseptörle algılar.",
-        "visual_query": "river cave"
+        "text": "Uyku, REM ve non‑REM olmak üzere iki farklı evrede gerçekleşir.",
+        "visual_query": "rem nonrem chart"
       }
     ],
-    "closing_question": "Siz de şaşırdınız mı?",
-    "closing_visual_query": "thought bubble",
+    "closing_question": "Siz de iyi uyur musunuz?",
+    "closing_visual_query": "bedroom night",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Duyular",
-    "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
-    "description": "Birçok hayvan beş temel duyu organının ötesinde algılamalar yapar. Bu, onların çevrelerini daha detaylı hissetmelerini sağlar.",
+    "topic": "uyku",
+    "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
+    "description": "Uyku, beyin atıklarını temizleyen bir temizlik sürecidir. Özellikle amiloid plakları, uyku sırasında uzaklaştırılır.",
     "hashtags": {
-      "primary": "hayvanduyuları",
-      "secondary": "bilim"
+      "primary": "uyku",
+      "secondary": "beyin"
     },
     "tags": [
-      "duyu",
-      "hayvan",
-      "bilim",
-      "günlük",
-      "gerçek"
+      "uyku",
+      "beyin",
+      "temizlik",
+      "amiloid",
+      "sağlık"
     ]
   },
   "reference_sources": [
