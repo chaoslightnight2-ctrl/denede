@@ -1,88 +1,88 @@
 {
-  "focus": "Psikoloji ve insan davranışları",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-20T00:43:12.116339+00:00",
+  "saved_at": "2026-11-20T02:15:11.499977+00:00",
   "data": {
-    "source_id": "563299",
-    "title": "Beyin sınırlı kaynakları bölerek çoklu görev yapar",
-    "description": "Beyin, sınırlı kaynaklarını farklı uyarıcılara bölerek aynı anda birden çok işi yönetebilir. Bu çoklu görev yeteneği genetik ve çevresel faktörlerin etkileşimiyle şekillenir.\n\n#shorts #davranış #psikoloji",
-    "hashtags": {
-      "primary": "davranış",
-      "secondary": "psikoloji"
-    },
-    "topic": "davranış",
-    "tags": [
-      "coklugorev",
-      "beyin",
-      "davranis",
-      "psikoloji",
-      "kaynak"
-    ],
+    "source_id": "23416874",
     "scenes": [
       {
-        "text": "Neden bazı insanlar aynı anda iki işi yapabilir",
-        "visual_query": "brain multitask"
+        "text": "Hayvanların beşin ötesi duyuları gerçekten var",
+        "visual_query": "forest river"
       },
       {
-        "text": "Çünkü beyin sınırlı kaynakları farklı uyarıcılara bölerek aynı anda birden çok görevi yönetir",
-        "visual_query": "neuron resources"
+        "text": "İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar",
+        "visual_query": "jungle night"
       },
       {
-        "text": "Davranış genetik ve çevresel faktörlerin etkileşimiyle birlikte şekillenir",
-        "visual_query": "genetic environment"
+        "text": "Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar",
+        "visual_query": "river cave"
       },
       {
-        "text": "Siz de çoklu görev İlginç Gerçekler kanalına abone ol",
-        "visual_query": "person multitasking"
+        "text": "Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+        "visual_query": "thought bubble"
       }
     ],
-    "closing_question": "Siz de çoklu görev?",
-    "closing_visual_query": "person multitasking",
+    "closing_question": "Siz de şaşırdınız mı?",
+    "closing_visual_query": "thought bubble",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "spoken_text": "Neden bazı insanlar aynı anda iki işi yapabilir Çünkü beyin sınırlı kaynakları farklı uyarıcılara bölerek aynı anda birden çok görevi yönetir Davranış genetik ve çevresel faktörlerin etkileşimiyle birlikte şekillenir Siz de çoklu görev İlginç Gerçekler kanalına abone ol",
-    "full_text": "Neden bazı insanlar aynı anda iki işi yapabilir Çünkü beyin sınırlı kaynakları farklı uyarıcılara bölerek aynı anda birden çok görevi yönetir Davranış genetik ve çevresel faktörlerin etkileşimiyle birlikte şekillenir Siz de çoklu görev İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Neden bazı insanlar aynı anda iki işi yapabilir. Çünkü beyin sınırlı kaynakları farklı uyarıcılara bölerek aynı anda birden çok görevi yönetir. Davranış genetik ve çevresel faktörlerin etkileşimiyle birlikte şekillenir. Siz de çoklu görev İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "human_behavior",
+    "topic": "Duyular",
+    "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
+    "description": "Birçok hayvan beş temel duyu organının ötesinde algılamalar yapar. Bu, onların çevrelerini daha detaylı hissetmelerini sağlar.\n\n#shorts #hayvanduyuları #bilim",
+    "hashtags": {
+      "primary": "hayvanduyuları",
+      "secondary": "bilim"
+    },
+    "tags": [
+      "duyu",
+      "hayvan",
+      "bilim",
+      "günlük",
+      "gerçek"
+    ],
+    "spoken_text": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+    "full_text": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Hayvanların beşin ötesi duyuları gerçekten var. İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar. Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar. Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
     "hook_style": "concrete_question",
     "reference_source": {
-      "id": "563299",
-      "title": "Human behavior",
-      "url": "https://en.wikipedia.org/wiki/Human_behavior",
-      "text": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior. Human behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups, while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct, contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament. Developmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, and political behavior shapes civic engagement, voting patterns, and governance participation."
+      "id": "23416874",
+      "title": "Sense",
+      "url": "https://en.wikipedia.org/wiki/Sense",
+      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
     },
     "raw_groq_package": {
-      "source_id": "563299",
-      "title": "Beyin sınırlı kaynakları bölerek çoklu görev yapar",
-      "description": "Beyin, sınırlı kaynaklarını farklı uyarıcılara bölerek aynı anda birden çok işi yönetebilir. Bu çoklu görev yeteneği genetik ve çevresel faktörlerin etkileşimiyle şekillenir.",
-      "hashtags": {
-        "primary": "davranış",
-        "secondary": "psikoloji"
-      },
-      "topic": "davranış",
-      "tags": [
-        "coklugorev",
-        "beyin",
-        "davranis",
-        "psikoloji",
-        "kaynak"
-      ],
+      "source_id": "23416874",
       "scenes": [
         {
-          "text": "Neden bazı insanlar aynı anda iki işi yapabilir?",
-          "visual_query": "brain multitask"
+          "text": "Hayvanların beşin ötesi duyuları gerçekten var!",
+          "visual_query": "forest river"
         },
         {
-          "text": "Çünkü beyin, sınırlı kaynakları farklı uyarıcılara bölerek aynı anda birden çok görevi yönetir.",
-          "visual_query": "neuron resources"
+          "text": "İnsan dışı birçok hayvan, beşten fazla duyu organına sahip olarak çevresini algılar.",
+          "visual_query": "jungle night"
         },
         {
-          "text": "Davranış, genetik ve çevresel faktörlerin etkileşimiyle birlikte şekillenir.",
-          "visual_query": "genetic environment"
+          "text": "Balıklar su akışını mekanoreseptörle, yılanlar ısıyı termoreseptörle algılar.",
+          "visual_query": "river cave"
         }
       ],
-      "closing_question": "Siz de çoklu görev?",
-      "closing_visual_query": "person multitasking",
-      "cta": "İlginç Gerçekler kanalına abone ol"
+      "closing_question": "Siz de şaşırdınız mı?",
+      "closing_visual_query": "thought bubble",
+      "cta": "İlginç Gerçekler kanalına abone ol",
+      "topic": "Duyular",
+      "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
+      "description": "Birçok hayvan beş temel duyu organının ötesinde algılamalar yapar. Bu, onların çevrelerini daha detaylı hissetmelerini sağlar.",
+      "hashtags": {
+        "primary": "hayvanduyuları",
+        "secondary": "bilim"
+      },
+      "tags": [
+        "duyu",
+        "hayvan",
+        "bilim",
+        "günlük",
+        "gerçek"
+      ]
     },
     "generation_mode": "prompt_first_v1"
   }
