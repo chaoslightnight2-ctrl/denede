@@ -1,88 +1,88 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-19T16:35:12.857256+00:00",
+  "saved_at": "2026-11-20T00:39:12.791885+00:00",
   "data": {
-    "source_id": "33306",
+    "source_id": "27709",
     "scenes": [
       {
-        "text": "Su neden şeffaf ve tatsızdır gerçekten",
-        "visual_query": "glass water"
+        "text": "Akıllı telefonun içinde ne gizli gerçek",
+        "visual_query": "smartphone interior"
       },
       {
-        "text": "Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur",
-        "visual_query": "molecule diagram"
+        "text": "Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati",
+        "visual_query": "silicon chip"
       },
       {
-        "text": "Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır",
-        "visual_query": "earth map"
+        "text": "Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır",
+        "visual_query": "solar cell"
       },
       {
-        "text": "Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "water bottle"
+        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Siz suyu nasıl korursunuz?",
-    "closing_visual_query": "water bottle",
+    "closing_question": "Siz de fark ettiniz mi?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Su Neden Şeffaf ve Tadı Yoktur? İşte Açıklama",
-    "description": "Su, şeffaf, tatsız ve kokusuz bir moleküldür. Bu özellikleri, ışığı çok az absorbe etmesi ve tat moleküllerine sahip olmamasından kaynaklanır.\n\n#shorts #bilim #su",
+    "title": "Akıllı telefonun beyni nasıl çalışır? Silikon çipler!",
+    "description": "Telefonlarımızın beyni silikon çiplerden oluşur. Bu yarı iletken malzeme elektronik cihazları mümkün kılar.\n\n#shorts #teknoloji #yarıiletken",
     "hashtags": {
-      "primary": "bilim",
-      "secondary": "su"
+      "primary": "teknoloji",
+      "secondary": "yarıiletken"
     },
     "tags": [
-      "su",
-      "şeffaflık",
-      "tad",
-      "günlük",
-      "bilim"
+      "telefon",
+      "çip",
+      "silicon",
+      "yarıiletken",
+      "elektronik"
     ],
-    "spoken_text": "Su neden şeffaf ve tatsızdır gerçekten Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Su neden şeffaf ve tatsızdır gerçekten Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Su neden şeffaf ve tatsızdır gerçekten. Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur. Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır. Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol.",
+    "topic": "günlük hayat",
+    "spoken_text": "Akıllı telefonun içinde ne gizli gerçek Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Akıllı telefonun içinde ne gizli gerçek Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Akıllı telefonun içinde ne gizli gerçek. Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati. Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "33306",
-      "title": "Water",
-      "url": "https://en.wikipedia.org/wiki/Water",
-      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
+      "id": "27709",
+      "title": "Semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Semiconductor",
+      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
     },
     "raw_groq_package": {
-      "source_id": "33306",
+      "source_id": "27709",
       "scenes": [
         {
-          "text": "Su neden şeffaf ve tatsızdır gerçekten?",
-          "visual_query": "glass water"
+          "text": "Akıllı telefonun içinde ne gizli gerçek?",
+          "visual_query": "smartphone interior"
         },
         {
-          "text": "Su, basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur.",
-          "visual_query": "molecule diagram"
+          "text": "Cevap: Telefonun beyni, silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati.",
+          "visual_query": "silicon chip"
         },
         {
-          "text": "Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır.",
-          "visual_query": "earth map"
+          "text": "Silisyum, ışığa ve ısıya duyarlı cihazlarda, örneğin güneş panellerinde da kullanılır.",
+          "visual_query": "solar cell"
         }
       ],
-      "closing_question": "Siz suyu nasıl korursunuz?",
-      "closing_visual_query": "water bottle",
+      "closing_question": "Siz de fark ettiniz mi?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük bilim",
-      "title": "Su Neden Şeffaf ve Tadı Yoktur? İşte Açıklama",
-      "description": "Su, şeffaf, tatsız ve kokusuz bir moleküldür. Bu özellikleri, ışığı çok az absorbe etmesi ve tat moleküllerine sahip olmamasından kaynaklanır.",
+      "title": "Akıllı telefonun beyni nasıl çalışır? Silikon çipler!",
+      "description": "Telefonlarımızın beyni silikon çiplerden oluşur. Bu yarı iletken malzeme elektronik cihazları mümkün kılar.",
       "hashtags": {
-        "primary": "bilim",
-        "secondary": "su"
+        "primary": "teknoloji",
+        "secondary": "yarıiletken"
       },
       "tags": [
-        "su",
-        "şeffaflık",
-        "tad",
-        "günlük",
-        "bilim"
-      ]
+        "telefon",
+        "çip",
+        "silicon",
+        "yarıiletken",
+        "elektronik"
+      ],
+      "topic": "günlük hayat"
     },
     "generation_mode": "prompt_first_v1"
   }
