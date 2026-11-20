@@ -1101,6 +1101,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "44658068711",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261120_161514",
+      "topic": "uyku",
+      "audience_bucket": "daily_life",
+      "hook_style": "direct_change",
+      "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_161514_uyku/final.mp4",
+      "video_id": "4bWKzGNmdB8",
+      "publish_at": "2026-11-20T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "44770213203"
     }
   ]
 }
