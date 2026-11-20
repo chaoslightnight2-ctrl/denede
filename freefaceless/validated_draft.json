@@ -1,87 +1,87 @@
 {
   "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-20T02:15:11.499977+00:00",
+  "saved_at": "2026-11-20T16:15:12.705155+00:00",
   "data": {
-    "source_id": "23416874",
+    "source_id": "27834",
     "scenes": [
       {
-        "text": "Hayvanların beşin ötesi duyuları gerçekten var",
-        "visual_query": "forest river"
+        "text": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz",
+        "visual_query": "brain illustration"
       },
       {
-        "text": "İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar",
-        "visual_query": "jungle night"
+        "text": "Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler",
+        "visual_query": "sleep cycle diagram"
       },
       {
-        "text": "Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar",
-        "visual_query": "river cave"
+        "text": "Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir",
+        "visual_query": "rem nonrem chart"
       },
       {
-        "text": "Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-        "visual_query": "thought bubble"
+        "text": "Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "bedroom night"
       }
     ],
-    "closing_question": "Siz de şaşırdınız mı?",
-    "closing_visual_query": "thought bubble",
+    "closing_question": "Siz de iyi uyur musunuz?",
+    "closing_visual_query": "bedroom night",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "Duyular",
-    "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
-    "description": "Birçok hayvan beş temel duyu organının ötesinde algılamalar yapar. Bu, onların çevrelerini daha detaylı hissetmelerini sağlar.\n\n#shorts #hayvanduyuları #bilim",
+    "topic": "uyku",
+    "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
+    "description": "Uyku, beyin atıklarını temizleyen bir temizlik sürecidir. Özellikle amiloid plakları, uyku sırasında uzaklaştırılır.\n\n#shorts #uyku #beyin",
     "hashtags": {
-      "primary": "hayvanduyuları",
-      "secondary": "bilim"
+      "primary": "uyku",
+      "secondary": "beyin"
     },
     "tags": [
-      "duyu",
-      "hayvan",
-      "bilim",
-      "günlük",
-      "gerçek"
+      "uyku",
+      "beyin",
+      "temizlik",
+      "amiloid",
+      "sağlık"
     ],
-    "spoken_text": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-    "full_text": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Hayvanların beşin ötesi duyuları gerçekten var. İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar. Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar. Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz. Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler. Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir. Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "23416874",
-      "title": "Sense",
-      "url": "https://en.wikipedia.org/wiki/Sense",
-      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     },
     "raw_groq_package": {
-      "source_id": "23416874",
+      "source_id": "27834",
       "scenes": [
         {
-          "text": "Hayvanların beşin ötesi duyuları gerçekten var!",
-          "visual_query": "forest river"
+          "text": "Beyninizi gece gerçekten nasıl temizler, biliyor musunuz?",
+          "visual_query": "brain illustration"
         },
         {
-          "text": "İnsan dışı birçok hayvan, beşten fazla duyu organına sahip olarak çevresini algılar.",
-          "visual_query": "jungle night"
+          "text": "Uyku sırasında beyin, metabolik atıkları, özellikle amiloid plaklarını, damar boşluklarından ve sinir sistemi içinde temizler.",
+          "visual_query": "sleep cycle diagram"
         },
         {
-          "text": "Balıklar su akışını mekanoreseptörle, yılanlar ısıyı termoreseptörle algılar.",
-          "visual_query": "river cave"
+          "text": "Uyku, REM ve non‑REM olmak üzere iki farklı evrede gerçekleşir.",
+          "visual_query": "rem nonrem chart"
         }
       ],
-      "closing_question": "Siz de şaşırdınız mı?",
-      "closing_visual_query": "thought bubble",
+      "closing_question": "Siz de iyi uyur musunuz?",
+      "closing_visual_query": "bedroom night",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "Duyular",
-      "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
-      "description": "Birçok hayvan beş temel duyu organının ötesinde algılamalar yapar. Bu, onların çevrelerini daha detaylı hissetmelerini sağlar.",
+      "topic": "uyku",
+      "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
+      "description": "Uyku, beyin atıklarını temizleyen bir temizlik sürecidir. Özellikle amiloid plakları, uyku sırasında uzaklaştırılır.",
       "hashtags": {
-        "primary": "hayvanduyuları",
-        "secondary": "bilim"
+        "primary": "uyku",
+        "secondary": "beyin"
       },
       "tags": [
-        "duyu",
-        "hayvan",
-        "bilim",
-        "günlük",
-        "gerçek"
+        "uyku",
+        "beyin",
+        "temizlik",
+        "amiloid",
+        "sağlık"
       ]
     },
     "generation_mode": "prompt_first_v1"
