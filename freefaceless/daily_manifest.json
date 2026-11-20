@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "44658068711",
-    "slot": "2100",
+    "run_id": "44770213203",
+    "slot": "2300",
     "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-20T21:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-20T23:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-20T18:00:00Z",
-    "video_id": "JwaSk5zjp64",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_021513_duyular/final.mp4",
-    "topic": "Duyular",
-    "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
-    "narration": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-20T18:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-20T20:00:00Z",
+    "video_id": "4bWKzGNmdB8",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_161514_uyku/final.mp4",
+    "topic": "uyku",
+    "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
+    "narration": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-20T20:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "44658068711",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
