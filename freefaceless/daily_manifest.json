@@ -1,33 +1,19 @@
 [
   {
-    "run_id": "44647119804",
-    "slot": "1900",
+    "run_id": "44658068711",
+    "slot": "2100",
     "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-20T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-20T21:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-20T16:00:00Z",
-    "video_id": "tpSKiPvkiyo",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_003914_g-nl-k-hayat/final.mp4",
-    "topic": "günlük hayat",
-    "title": "Akıllı telefonun beyni nasıl çalışır? Silikon çipler!",
-    "narration": "Akıllı telefonun içinde ne gizli gerçek Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-20T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-20T18:00:00Z",
+    "video_id": "JwaSk5zjp64",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_021513_duyular/final.mp4",
+    "topic": "Duyular",
+    "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
+    "narration": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-20T18:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "44647119804",
-    "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "No described asset matches scene 2: genetic environment"
-  },
-  {
-    "run_id": "44647119804",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
