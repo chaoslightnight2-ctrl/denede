@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "44567180832",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
+    "run_id": "44647119804",
+    "slot": "1900",
+    "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-19T23:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-20T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-19T20:00:00Z",
-    "video_id": "aLYmqwiafj8",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261119_163514_g-nl-k-bilim/final.mp4",
-    "topic": "günlük bilim",
-    "title": "Su Neden Şeffaf ve Tadı Yoktur? İşte Açıklama",
-    "narration": "Su neden şeffaf ve tatsızdır gerçekten Su basit H2O molekülü olduğu için ışığı çok az emer ve tadı yoktur Dünya yüzeyinin yaklaşık yetmiş bir yüzdesi suyla kaplıdır Siz suyu nasıl korursunuz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-19T20:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-20T16:00:00Z",
+    "video_id": "tpSKiPvkiyo",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_003914_g-nl-k-hayat/final.mp4",
+    "topic": "günlük hayat",
+    "title": "Akıllı telefonun beyni nasıl çalışır? Silikon çipler!",
+    "narration": "Akıllı telefonun içinde ne gizli gerçek Cevap Telefonun beyni silikon adı verilen yarı iletken çiplere dayanır ve günlük kullanımda hayati Silisyum ışığa ve ısıya duyarlı cihazlarda örneğin güneş panellerinde da kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-20T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "44567180832",
-    "slot": "1900",
-    "niche": "Teknoloji ve icatlar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
