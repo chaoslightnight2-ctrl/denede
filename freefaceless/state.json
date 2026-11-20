@@ -46,7 +46,8 @@
     "yapayzeka",
     "bilgisayar",
     "ceptelefonu",
-    "uyku"
+    "uyku",
+    "Duyular"
   ],
   "published": [
     {
@@ -1087,6 +1088,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "44647119804",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261120_021513",
+      "topic": "Duyular",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261120_021513_duyular/final.mp4",
+      "video_id": "JwaSk5zjp64",
+      "publish_at": "2026-11-20T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "44658068711"
     }
   ]
 }
