@@ -1,19 +1,19 @@
 {
-  "source_run": "44658068711",
-  "verified_at": "2026-11-20T02:37:54.988413+00:00",
+  "source_run": "44770213203",
+  "verified_at": "2026-11-20T16:17:32.289521+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "JwaSk5zjp64",
-      "youtube_url": "https://youtu.be/JwaSk5zjp64",
-      "title": "Hayvanların Beşin Ötesi Duyuları: İnsan Dışında Kaç Duyu?",
-      "narration": "Hayvanların beşin ötesi duyuları gerçekten var İnsan dışı birçok hayvan beşten fazla duyu organına sahip olarak çevresini algılar Balıklar su akışını mekanoreseptörle yılanlar ısıyı termoreseptörle algılar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-20T18:00:00Z",
+      "video_id": "4bWKzGNmdB8",
+      "youtube_url": "https://youtu.be/4bWKzGNmdB8",
+      "title": "Uyku sırasında beyin amiloid plaklarını nasıl temizler?",
+      "narration": "Beyninizi gece gerçekten nasıl temizler biliyor musunuz Uyku sırasında beyin metabolik atıkları özellikle amiloid plaklarını damar boşluklarından ve sinir sistemi içinde temizler Uyku REM ve non REM olmak üzere iki farklı evrede gerçekleşir Siz de iyi uyur musunuz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-20T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-20T18:00:00Z",
+        "publishAt": "2026-11-20T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,19 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 18.0,
+        "duration": 19.968,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/JwaSk5zjp64.jpg"
+      "preview": "maintenance/previews/4bWKzGNmdB8.jpg"
     }
   ],
-  "errors": [
-    {
-      "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
-    }
-  ],
+  "errors": [],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
