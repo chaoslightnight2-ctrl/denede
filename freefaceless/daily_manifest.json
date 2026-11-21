@@ -22,5 +22,22 @@
     "niche": "Teknoloji ve icatlar",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "44952585216",
+    "slot": "2300",
+    "niche": "Günlük hayat ve eşyalar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-22T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-22T20:00:00Z",
+    "video_id": "06YjEB6lfII",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261121_215913_ev-teknolojisi/final.mp4",
+    "topic": "ev teknolojisi",
+    "title": "Çamaşır Makinesi Çalışması: Suyunu Isıtarak Temizler",
+    "narration": "Evdeki çamaşır makinesi gerçekten nasıl çalışır Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-22T20:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
