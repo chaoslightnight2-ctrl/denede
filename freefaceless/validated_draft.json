@@ -1,87 +1,85 @@
 {
-  "focus": "Günlük hayatta bilimin açıklamaları",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-21T21:47:12.662461+00:00",
+  "saved_at": "2026-11-21T21:59:12.268999+00:00",
   "data": {
-    "source_id": "9550",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "Gök gürültüsü bir anda çaktı merak ettiniz mi",
-        "visual_query": "lightning bolt"
+        "text": "Evdeki çamaşır makinesi gerçekten nasıl çalışır",
+        "visual_query": "washing machine"
       },
       {
-        "text": "Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar",
-        "visual_query": "circuit board"
+        "text": "Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur",
+        "visual_query": "machine interior"
       },
       {
-        "text": "Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır",
-        "visual_query": "magnet coil"
+        "text": "Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır",
+        "visual_query": "sensor panel"
       },
       {
-        "text": "Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-        "visual_query": "home lab"
+        "text": "Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "clean laundry"
       }
     ],
-    "closing_question": "Siz de elektrikle oynadınız mı?",
-    "closing_visual_query": "home lab",
+    "closing_question": "Siz de denediniz mi?",
+    "closing_visual_query": "clean laundry",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Elektrik Nedir? Yük ve Hareketin Gücü Açıklanıyor",
-    "description": "Elektrik, yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fenomendir. Bu olay, manyetik alanların oluşumuna da yol açar.\n\n#shorts #elektrik #fizik",
+    "topic": "ev teknolojisi",
+    "title": "Çamaşır Makinesi Çalışması: Suyunu Isıtarak Temizler",
+    "description": "Çamaşır makineleri suyu ısıtarak ve döndürerek kirleri çıkarır. Ardından suyu boşaltıp kurutur.\n\n#shorts #evteknolojisi #evcihazları",
     "hashtags": {
-      "primary": "elektrik",
-      "secondary": "fizik"
+      "primary": "evteknolojisi",
+      "secondary": "evcihazları"
     },
     "tags": [
-      "elektrik",
-      "yük",
-      "manyetik",
-      "akım",
-      "günlük yaşam"
+      "çamaşır makinesi",
+      "ev teknolojisi",
+      "ev eşyaları",
+      "günlük hayat"
     ],
-    "spoken_text": "Gök gürültüsü bir anda çaktı merak ettiniz mi Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-    "full_text": "Gök gürültüsü bir anda çaktı merak ettiniz mi Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Gök gürültüsü bir anda çaktı merak ettiniz mi. Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar. Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır. Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol.",
+    "spoken_text": "Evdeki çamaşır makinesi gerçekten nasıl çalışır Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Evdeki çamaşır makinesi gerçekten nasıl çalışır Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Evdeki çamaşır makinesi gerçekten nasıl çalışır. Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur. Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır. Siz de denediniz mi İlginç Gerçekler kanalına abone ol.",
     "audience_bucket": "daily_life",
-    "hook_style": "direct_change",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "9550",
-      "title": "Electricity",
-      "url": "https://en.wikipedia.org/wiki/Electricity",
-      "text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. The presence of either a positive or negative electric charge produces an electric field. The motion of electric charge carriers is an electric current and produces a magnetic field. In most applications, Coulomb's law determines the force acting on an electrically charged particle. Electric potential is the work done to move an electric charge from one position to another within an electric field, typically measured in volts. Electricity plays a central role in many modern technologies, serving in electric power where electric current is used to energise equipment, and in electronics dealing with electrical circuits involving active components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies. The study of electrical phenomena dates back to antiquity, with theoretical understanding progressing slowly until the 17th and 18th centuries. The development of the theory of electromagnetism in the 19th century marked significant progress, leading to electricity's industrial and residential application by electrical engineers by the century's end."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     "raw_groq_package": {
-      "source_id": "9550",
+      "source_id": "79425",
       "scenes": [
         {
-          "text": "Gök gürültüsü bir anda çaktı, merak ettiniz mi?",
-          "visual_query": "lightning bolt"
+          "text": "Evdeki çamaşır makinesi gerçekten nasıl çalışır?",
+          "visual_query": "washing machine"
         },
         {
-          "text": "Elektrik, yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır; enerji akışı sağlar.",
-          "visual_query": "circuit board"
+          "text": "Çamaşır makinesi, suyu ısıtarak ve döndürerek kirleri çıkarır, ardından suyu boşaltır ve kurutur.",
+          "visual_query": "machine interior"
         },
         {
-          "text": "Elektrik akımı manyetik alan oluşturur, bu da motorları çalıştırır.",
-          "visual_query": "magnet coil"
+          "text": "Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır.",
+          "visual_query": "sensor panel"
         }
       ],
-      "closing_question": "Siz de elektrikle oynadınız mı?",
-      "closing_visual_query": "home lab",
+      "closing_question": "Siz de denediniz mi?",
+      "closing_visual_query": "clean laundry",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "günlük bilim",
-      "title": "Elektrik Nedir? Yük ve Hareketin Gücü Açıklanıyor",
-      "description": "Elektrik, yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fenomendir. Bu olay, manyetik alanların oluşumuna da yol açar.",
+      "topic": "ev teknolojisi",
+      "title": "Çamaşır Makinesi Çalışması: Suyunu Isıtarak Temizler",
+      "description": "Çamaşır makineleri suyu ısıtarak ve döndürerek kirleri çıkarır. Ardından suyu boşaltıp kurutur.",
       "hashtags": {
-        "primary": "elektrik",
-        "secondary": "fizik"
+        "primary": "evteknolojisi",
+        "secondary": "evcihazları"
       },
       "tags": [
-        "elektrik",
-        "yük",
-        "manyetik",
-        "akım",
-        "günlük yaşam"
+        "çamaşır makinesi",
+        "ev teknolojisi",
+        "ev eşyaları",
+        "günlük hayat"
       ]
     },
     "generation_mode": "prompt_first_v1"
