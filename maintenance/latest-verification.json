@@ -1,19 +1,19 @@
 {
-  "source_run": "44918644202",
-  "verified_at": "2026-11-21T15:43:44.853016+00:00",
+  "source_run": "44952585216",
+  "verified_at": "2026-11-21T22:00:53.027409+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "RR4hzAqpHOg",
-      "youtube_url": "https://youtu.be/RR4hzAqpHOg",
-      "title": "İlk cep telefonu neden iki kilogramdı? İşte cevabı!",
-      "narration": "İlk cep telefonunun ağırlığı gerçekten şaşırtıcıydı İlk taşınabilir cep telefonu iki kilogram ağırlığındaydı ve bin dokuz yüz yetmiş üçte tanıtıldı Bu cihaz sadece sesli arama yapabiliyordu ve metin mesajı gönderemezdi Hangi eski cihazı denemek istersiniz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-21T16:00:00Z",
+      "video_id": "OXTJId-Pw0Q",
+      "youtube_url": "https://youtu.be/OXTJId-Pw0Q",
+      "title": "Elektrik Nedir? Yük ve Hareketin Gücü Açıklanıyor",
+      "narration": "Gök gürültüsü bir anda çaktı merak ettiniz mi Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-22T16:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-21T16:00:00Z",
+        "publishAt": "2026-11-22T16:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,26 +23,50 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 19.866667,
+        "duration": 18.433333,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/RR4hzAqpHOg.jpg"
+      "preview": "maintenance/previews/OXTJId-Pw0Q.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "06YjEB6lfII",
+      "youtube_url": "https://youtu.be/06YjEB6lfII",
+      "title": "Çamaşır Makinesi Çalışması: Suyunu Isıtarak Temizler",
+      "narration": "Evdeki çamaşır makinesi gerçekten nasıl çalışır Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-22T20:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-22T20:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.933333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/06YjEB6lfII.jpg"
     }
   ],
   "errors": [
     {
       "index": 2,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 3,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 2,
+  "processed_count": 2,
   "complete": false,
   "target_count": 3,
   "published_count": 0,
