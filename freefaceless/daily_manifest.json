@@ -1,33 +1,19 @@
 [
   {
-    "run_id": "44918644202",
+    "run_id": "44952585216",
     "slot": "1900",
-    "niche": "Teknoloji ve icatlar",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-21T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-22T19:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-21T16:00:00Z",
-    "video_id": "RR4hzAqpHOg",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261121_152713_teknoloji/final.mp4",
-    "topic": "teknoloji",
-    "title": "İlk cep telefonu neden iki kilogramdı? İşte cevabı!",
-    "narration": "İlk cep telefonunun ağırlığı gerçekten şaşırtıcıydı İlk taşınabilir cep telefonu iki kilogram ağırlığındaydı ve bin dokuz yüz yetmiş üçte tanıtıldı Bu cihaz sadece sesli arama yapabiliyordu ve metin mesajı gönderemezdi Hangi eski cihazı denemek istersiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-21T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-22T16:00:00Z",
+    "video_id": "OXTJId-Pw0Q",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261121_214713_g-nl-k-bilim/final.mp4",
+    "topic": "günlük bilim",
+    "title": "Elektrik Nedir? Yük ve Hareketin Gücü Açıklanıyor",
+    "narration": "Gök gürültüsü bir anda çaktı merak ettiniz mi Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-22T16:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "44918644202",
-    "slot": "2100",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "44918644202",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
