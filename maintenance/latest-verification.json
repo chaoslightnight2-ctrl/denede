@@ -1,12 +1,37 @@
 {
-  "source_run": "44853355284",
-  "verified_at": "2026-11-21T02:27:51.643925+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "44918644202",
+  "verified_at": "2026-11-21T15:43:44.853016+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
+      "video_id": "RR4hzAqpHOg",
+      "youtube_url": "https://youtu.be/RR4hzAqpHOg",
+      "title": "İlk cep telefonu neden iki kilogramdı? İşte cevabı!",
+      "narration": "İlk cep telefonunun ağırlığı gerçekten şaşırtıcıydı İlk taşınabilir cep telefonu iki kilogram ağırlığındaydı ve bin dokuz yüz yetmiş üçte tanıtıldı Bu cihaz sadece sesli arama yapabiliyordu ve metin mesajı gönderemezdi Hangi eski cihazı denemek istersiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-21T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-21T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.866667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/RR4hzAqpHOg.jpg"
+    }
+  ],
+  "errors": [
     {
       "index": 2,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
@@ -16,8 +41,8 @@
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 3,
   "published_count": 0,
