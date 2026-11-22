@@ -1,39 +1,38 @@
 {
-  "run_id": "44969331430",
+  "run_id": "45037313522",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "33306",
     "scenes": [
       {
-        "text": "Su, hayatın gizli kahramanı gerçek mi?",
+        "text": "Su, hayatın her köşesinde nasıl var?",
+        "visual_query": "sea"
+      },
+      {
+        "text": "Su, evrensel çözücü olması ve Dünya yüzeyinin yetmiş bir yüzdeyi kaplamasıyla hayatı destekler.",
         "visual_query": "lab"
       },
       {
-        "text": "Evet, su polar bir molekül olduğu ve güçlü hidrojen bağları oluşturduğu için evrensel çözücüdür.",
-        "visual_query": "drop"
-      },
-      {
-        "text": "Su, katı, sıvı ve gaz hâllerinde aynı anda bulunabilir.",
+        "text": "Su molekülleri arasındaki güçlü hidrojen bağları, yüksek kaynama noktasını sağlar.",
         "visual_query": "ice"
       }
     ],
-    "closing_question": "Siz de suyu nasıl kullanıyorsunuz?",
-    "closing_visual_query": "home",
+    "closing_question": "Siz de suyu seviyor musunuz?",
+    "closing_visual_query": "sun",
     "cta": "İlginç Gerçekler kanalına abone ol",
     "topic": "günlük bilim",
-    "title": "Su Neden Evrensel Çözücü? Polar ve Hidrojen Bağları",
-    "description": "Su, polar bir molekül olduğu için diğer maddeleri çözer. Güçlü hidrojen bağları bu özelliği sağlar.",
+    "title": "Su Neden Evrensel Çözücü ve Yüzeyi Kaplar?",
+    "description": "Su, evrensel çözücü özelliğiyle bilinir. Dünya yüzeyinin büyük bir kısmı suyla kaplıdır.",
     "hashtags": {
       "primary": "bilim",
       "secondary": "su"
     },
     "tags": [
       "su",
-      "evrensel",
-      "polar",
-      "hidrojen",
-      "kimya"
+      "bilim",
+      "doğa",
+      "çözüm"
     ]
   },
   "reference_sources": [
