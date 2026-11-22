@@ -1,64 +1,65 @@
 {
-  "run_id": "44952585216",
+  "run_id": "44969331430",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "79425",
+    "source_id": "33306",
     "scenes": [
       {
-        "text": "Evdeki çamaşır makinesi gerçekten nasıl çalışır?",
-        "visual_query": "washing machine"
+        "text": "Su, hayatın gizli kahramanı gerçek mi?",
+        "visual_query": "lab"
       },
       {
-        "text": "Çamaşır makinesi, suyu ısıtarak ve döndürerek kirleri çıkarır, ardından suyu boşaltır ve kurutur.",
-        "visual_query": "machine interior"
+        "text": "Evet, su polar bir molekül olduğu ve güçlü hidrojen bağları oluşturduğu için evrensel çözücüdür.",
+        "visual_query": "drop"
       },
       {
-        "text": "Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır.",
-        "visual_query": "sensor panel"
+        "text": "Su, katı, sıvı ve gaz hâllerinde aynı anda bulunabilir.",
+        "visual_query": "ice"
       }
     ],
-    "closing_question": "Siz de denediniz mi?",
-    "closing_visual_query": "clean laundry",
+    "closing_question": "Siz de suyu nasıl kullanıyorsunuz?",
+    "closing_visual_query": "home",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "ev teknolojisi",
-    "title": "Çamaşır Makinesi Çalışması: Suyunu Isıtarak Temizler",
-    "description": "Çamaşır makineleri suyu ısıtarak ve döndürerek kirleri çıkarır. Ardından suyu boşaltıp kurutur.",
+    "topic": "günlük bilim",
+    "title": "Su Neden Evrensel Çözücü? Polar ve Hidrojen Bağları",
+    "description": "Su, polar bir molekül olduğu için diğer maddeleri çözer. Güçlü hidrojen bağları bu özelliği sağlar.",
     "hashtags": {
-      "primary": "evteknolojisi",
-      "secondary": "evcihazları"
+      "primary": "bilim",
+      "secondary": "su"
     },
     "tags": [
-      "çamaşır makinesi",
-      "ev teknolojisi",
-      "ev eşyaları",
-      "günlük hayat"
+      "su",
+      "evrensel",
+      "polar",
+      "hidrojen",
+      "kimya"
     ]
   },
   "reference_sources": [
     {
-      "id": "33978",
-      "title": "Weather",
-      "url": "https://en.wikipedia.org/wiki/Weather",
-      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
+      "id": "33306",
+      "title": "Water",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient. Due to its presence in all organisms, its chemical stability, its worldwide abundance, and its strong polarity relative to its small molecular size, water is often referred to as the \"universal solvent\". Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor. Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%)."
     },
     {
-      "id": "27709",
-      "title": "Semiconductor",
-      "url": "https://en.wikipedia.org/wiki/Semiconductor",
-      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
+      "id": "19828134",
+      "title": "Plant",
+      "url": "https://en.wikipedia.org/wiki/Plant",
+      "text": "Plants are the eukaryotic organisms that constitute the kingdom Plantae (/'plænteɪ/). They are predominantly photosynthetic or came from photosynthetic ancestors, meaning that they obtain their energy from sunlight by using the green pigment chlorophyll in their chloroplasts to produce sugars from carbon dioxide and water. Over the course of time, some plants have evolved to be parasitic, meaning they take energy from other organisms. Except for glaucophytes, some green algae and a few red algae, most plants are multicellular. Historically, as in Aristotle's biology, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. Definitions have narrowed since then; current definitions exclude fungi and some of the algae. By the definition used in this article, plants form the clade Viridiplantae (green plants), which consists of the green algae and the embryophytes or land plants (hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants). A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida. There are about 380,000 known species of plants, of which the majority, some 260,000, produce seeds. They range in size from single cells to the tallest trees. Green plants provide a substantial proportion of the world's molecular oxygen. The sugars they produce by photosynthesis provide the energy for most of Earth's ecosystems, and other organisms, including animals, are herbivores or otherwise dependent on plant materials. Grain, fruit, and vegetables are basic human foods and have been domesticated for millennia."
     },
     {
-      "id": "23416874",
-      "title": "Sense",
-      "url": "https://en.wikipedia.org/wiki/Sense",
-      "text": "A sense is a biological system used by an organism for sensation, the process of gathering information about the surroundings through the detection of stimuli. During sensation, sense organs collect various stimuli (such as a sound or smell) for transduction, meaning transformation into a form that can be understood by the brain. Sensation and perception are fundamental to nearly every aspect of an organism's cognition, behavior and thought. Although, in some cultures, five human senses were traditionally identified as such (namely sight, smell, touch, taste, and hearing), many more are now recognized. Senses used by non-human organisms are even greater in variety and number. In organisms, a sensory organ consists of a group of interrelated sensory cells that respond to a specific type of physical stimulus. Via cranial and spinal nerves (nerves of the central and peripheral nervous systems that relay sensory information to and from the brain and body), the different types of sensory receptor cells (such as mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors) in sensory organs transduct sensory information from these organs towards the central nervous system, finally arriving at the sensory cortices in the brain, where sensory signals are processed and interpreted (perceived). Sensory systems, or senses, are often divided into external (exteroception) and internal (interoception) sensory systems. Human external senses are based on the sensory organs of the eyes, ears, skin, nose, and mouth. Internal sensation detects stimuli from internal organs and tissues."
+      "id": "54176",
+      "title": "Human body",
+      "url": "https://en.wikipedia.org/wiki/Human_body",
+      "text": "The human body is composed of many different types of cells that together create tissues and subsequently organs and then organ systems. The external human body consists of a head, hair, neck, torso (which includes the thorax and abdomen), genitals, arms, hands, legs, and feet. The internal human body includes organs, teeth, bones, muscles, tendons, ligaments, blood vessels and blood, lymphatic vessels and lymph. The study of the human body includes anatomy, physiology, histology, and embryology. The body varies anatomically in known ways. Physiology focuses on the systems and organs of the human body and their functions. Many systems and mechanisms interact in order to maintain homeostasis, with safe levels of substances such as sugar, iron, and oxygen in the blood. The human body is studied by health professionals, physiologists, anatomists, and artists to assist them in their work."
     },
     {
-      "id": "79425",
-      "title": "Domestic technology",
-      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
-      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
+      "id": "4269567",
+      "title": "Dog",
+      "url": "https://en.wikipedia.org/wiki/Dog",
+      "text": "The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of wolves. Also called the domestic dog, it was selectively bred during the Late Pleistocene by hunter-gatherers. Dogs and the modern gray wolf share a common ancestor. Dogs were the first species to be domesticated over 14,000 years ago, before the development of agriculture, though genetic studies suggest the domestication process may have begun over 25,000 years ago. Due to their long association with humans, dogs have gained the ability to thrive on a starch-rich diet that would be inadequate for other canids. Dogs have been bred for specific behaviors, sensory abilities, and physical traits. Dog breeds vary widely in shape, size, and color. All dogs have a similar number of bones, although the number can vary with tail length. They also have powerful jaws containing about 42 teeth, and well-developed senses of smell, hearing, and sight. Compared to humans, dogs have a superior sense of smell and hearing, but less acute vision. Dogs serve humans in many ways, including hunting, herding, pulling loads, providing protection and companionship, offering therapeutic support, assisting people with disabilities, and supporting police and military operations. Communication in dogs includes eye gaze, facial expression, vocalization, body posture (including movements of bodies and limbs), and chemical communication (scents, pheromones, and taste). They mark their territories by urinating on them, which is more likely when entering a new environment. Over the millennia, dogs have uniquely adapted to human behavior; this adaptation includes being able to understand and communicate with humans."
     }
   ],
   "error": null
