@@ -1,74 +1,17 @@
 {
-  "source_run": "44952585216",
-  "verified_at": "2026-11-21T22:00:53.027409+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "OXTJId-Pw0Q",
-      "youtube_url": "https://youtu.be/OXTJId-Pw0Q",
-      "title": "Elektrik Nedir? Yük ve Hareketin Gücü Açıklanıyor",
-      "narration": "Gök gürültüsü bir anda çaktı merak ettiniz mi Elektrik yüklü maddelerin varlığı ve hareketiyle ortaya çıkan bir fiziksel olaydır enerji akışı sağlar Elektrik akımı manyetik alan oluşturur bu da motorları çalıştırır Siz de elektrikle oynadınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-22T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-22T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.433333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/OXTJId-Pw0Q.jpg"
-    },
-    {
-      "index": 3,
-      "video_id": "06YjEB6lfII",
-      "youtube_url": "https://youtu.be/06YjEB6lfII",
-      "title": "Çamaşır Makinesi Çalışması: Suyunu Isıtarak Temizler",
-      "narration": "Evdeki çamaşır makinesi gerçekten nasıl çalışır Çamaşır makinesi suyu ısıtarak ve döndürerek kirleri çıkarır ardından suyu boşaltır ve kurutur Modern çamaşır makineleri enerji tasarrufu için sensörler kullanır Siz de denediniz mi İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-22T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-22T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.933333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/06YjEB6lfII.jpg"
-    }
-  ],
+  "source_run": "44969331430",
+  "verified_at": "2026-11-22T01:07:44.388586+00:00",
+  "videos": [],
   "errors": [
     {
-      "index": 2,
+      "index": 1,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 2,
-  "processed_count": 2,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
-  "target_count": 3,
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
