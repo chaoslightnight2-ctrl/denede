@@ -1166,6 +1166,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "45331351556",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261124_185915",
+      "topic": "uyku",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Uyku Beyni Nasıl Temizler? Atıkların Silinme Süreci",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261124_185915_uyku/final.mp4",
+      "video_id": "XOP_gymiICU",
+      "publish_at": "2026-11-24T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "45464248547"
     }
   ]
 }
