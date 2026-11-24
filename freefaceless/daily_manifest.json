@@ -5,5 +5,22 @@
     "niche": "Günlük hayat ve eşyalar",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "45331351556",
+    "slot": "2100",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-24T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-24T18:00:00Z",
+    "video_id": "JlHEvplCfJE",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261124_052716_psikoloji/final.mp4",
+    "topic": "psikoloji",
+    "title": "Dikkat Nasıl Çalışır? Bilinçli Seçimlerimiz Açıklanıyor",
+    "narration": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz Dikkat sınırlı bilişsel kaynakları belirli bilgilere yönlendirir diğerlerini dışarıda tutar görev sürecinde günlük Seçici sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir Siz hangi şeyi gerçekten kaçırıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-24T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
