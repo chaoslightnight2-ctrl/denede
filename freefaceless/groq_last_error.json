@@ -1,9 +1,9 @@
 {
-  "run_id": "45325320933",
+  "run_id": "45331351556",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1795495629.9327953,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'topic', 'tags'",
+  "observed_at": 1795497550.1045105,
+  "failed_generation_excerpt": "{\"source_id\":\"68753\",\"scenes\":[{\"text\":\"Neden bir anda sadece bir \u015feye odaklan\u0131yoruz?\",\"visual_query\":\"person looking screen\"},{\"text\":\"\u00c7\u00fcnk\u00fc dikkat, tek bir s\u00fcre\u00e7 de\u011fil, birden \u00e7ok alt s\u00fcre\u00e7ten olu\u015fan bir sistemdir.\",\"visual_query\":\"brain diagram illustration\"},{\"text\":\"Bu alt s\u00fcre\u00e7ler aras\u0131nda se\u00e7ici, b\u00f6l\u00fcnm\u00fc\u015f ve s\u00fcrd\u00fcr\u00fclen dikkat yer al\u0131r.\",\"visual_query\":\"neuron network graphic\"}],\"closing_question\":\"Siz hangi dikkatinizi kullan\u0131yorsunuz?\",\"closing_visual_query\":\"thought bubble icon\",\"cta\":\"\u0130lgin\u00e7 Ger\u00e7ekler kanal\u0131na abone ol\",\"title\":\"Dikkat Neden Tek Bir \u015eey De\u011fildir? \u0130\u015fte Ger\u00e7ek\",\"description\":\"Dikkat, tek bir s\u00fcre\u00e7 de\u011fil, bir\u00e7ok alt s\u00fcre\u00e7ten olu\u015fur. Bu s\u00fcre\u00e7ler odaklanmay\u0131 ve bilgi i\u015fleme yetisini belirler.\",\"hashtags\":{\"primary\":\"psikoloji\",\"secondary\":\"davran\u0131\u015f\"}}",
   "retry_after": null
 }
