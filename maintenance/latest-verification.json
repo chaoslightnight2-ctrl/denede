@@ -1,19 +1,19 @@
 {
-  "source_run": "45331351556",
-  "verified_at": "2026-11-24T05:36:04.168017+00:00",
+  "source_run": "45464248547",
+  "verified_at": "2026-11-24T19:03:50.838058+00:00",
   "videos": [
     {
-      "index": 2,
-      "video_id": "JlHEvplCfJE",
-      "youtube_url": "https://youtu.be/JlHEvplCfJE",
-      "title": "Dikkat Nasıl Çalışır? Bilinçli Seçimlerimiz Açıklanıyor",
-      "narration": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz Dikkat sınırlı bilişsel kaynakları belirli bilgilere yönlendirir diğerlerini dışarıda tutar görev sürecinde günlük Seçici sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir Siz hangi şeyi gerçekten kaçırıyorsunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-24T18:00:00Z",
+      "index": 1,
+      "video_id": "XOP_gymiICU",
+      "youtube_url": "https://youtu.be/XOP_gymiICU",
+      "title": "Uyku Beyni Nasıl Temizler? Atıkların Silinme Süreci",
+      "narration": "Sabahları yorgun uyanmanın gerçek gizemi nedir Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-24T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-24T18:00:00Z",
+        "publishAt": "2026-11-24T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,28 +23,24 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 22.733333,
+        "duration": 19.6,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/JlHEvplCfJE.jpg"
+      "preview": "maintenance/previews/XOP_gymiICU.jpg"
     }
   ],
   "errors": [
     {
-      "index": 1,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    },
-    {
-      "index": 3,
+      "index": 2,
       "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 3,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
