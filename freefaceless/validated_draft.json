@@ -1,88 +1,88 @@
 {
-  "focus": "Psikoloji ve insan davranışları",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-24T05:27:14.893932+00:00",
+  "saved_at": "2026-11-24T18:59:13.713137+00:00",
   "data": {
-    "source_id": "68753",
+    "source_id": "27834",
     "scenes": [
       {
-        "text": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz",
-        "visual_query": "person looking away"
+        "text": "Sabahları yorgun uyanmanın gerçek gizemi nedir",
+        "visual_query": "bedroom morning"
       },
       {
-        "text": "Dikkat sınırlı bilişsel kaynakları belirli bilgilere yönlendirir diğerlerini dışarıda tutar görev sürecinde günlük",
-        "visual_query": "brain network diagram"
+        "text": "Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller",
+        "visual_query": "brain fluid"
       },
       {
-        "text": "Seçici sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir",
-        "visual_query": "neural network map"
+        "text": "REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur",
+        "visual_query": "dream sleep"
       },
       {
-        "text": "Siz hangi şeyi gerçekten kaçırıyorsunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "person thinking"
+        "text": "Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "night sky"
       }
     ],
-    "closing_question": "Siz hangi şeyi gerçekten kaçırıyorsunuz?",
-    "closing_visual_query": "person thinking",
+    "closing_question": "Daha iyi uyumak ister misiniz?",
+    "closing_visual_query": "night sky",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "psikoloji",
-    "title": "Dikkat Nasıl Çalışır? Bilinçli Seçimlerimiz Açıklanıyor",
-    "description": "Dikkat, sınırlı kaynakları belirli bilgilere yönlendirir. Böylece bazı bilgiler dışarıda kalır.\n\n#shorts #psikoloji #davranış",
+    "title": "Uyku Beyni Nasıl Temizler? Atıkların Silinme Süreci",
+    "description": "Uyku sırasında beyin omurilik sıvısı artar ve atık maddeler temizlenir. Bu süreç, amiloid birikimini önleyerek beyin sağlığını korur.\n\n#shorts #uyku #beyin",
     "hashtags": {
-      "primary": "psikoloji",
-      "secondary": "davranış"
+      "primary": "uyku",
+      "secondary": "beyin"
     },
     "tags": [
-      "dikkat",
-      "bilişsel",
-      "seçim",
-      "algı",
-      "beyin"
+      "uyku",
+      "beyin",
+      "sağlık",
+      "atık",
+      "rem"
     ],
-    "spoken_text": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz Dikkat sınırlı bilişsel kaynakları belirli bilgilere yönlendirir diğerlerini dışarıda tutar görev sürecinde günlük Seçici sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir Siz hangi şeyi gerçekten kaçırıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz Dikkat sınırlı bilişsel kaynakları belirli bilgilere yönlendirir diğerlerini dışarıda tutar görev sürecinde günlük Seçici sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir Siz hangi şeyi gerçekten kaçırıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz. Dikkat sınırlı bilişsel kaynakları belirli bilgilere yönlendirir diğerlerini dışarıda tutar görev sürecinde günlük. Seçici sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir. Siz hangi şeyi gerçekten kaçırıyorsunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "human_behavior",
-    "hook_style": "direct_change",
+    "topic": "uyku",
+    "spoken_text": "Sabahları yorgun uyanmanın gerçek gizemi nedir Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Sabahları yorgun uyanmanın gerçek gizemi nedir Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Sabahları yorgun uyanmanın gerçek gizemi nedir. Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller. REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur. Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "68753",
-      "title": "Attention",
-      "url": "https://en.wikipedia.org/wiki/Attention",
-      "text": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. Across disciplines, the nature of this directedness is conceptualized in different ways. In cognitive psychology, attention is often described as the allocation of limited cognitive processing resources to a subset of information, thoughts, or tasks. In neuropsychology, attention is understood as a set of mechanisms by which sensory cues and internal goals modulate neuronal tuning and orient behavioral and cognitive processes. Attention is not a unitary phenomenon but an umbrella term for multiple related processes, including selective attention (prioritizing some stimuli over others), sustained attention (maintaining focus), divided attention (sharing resources across tasks), and orienting (shifting focus in space or time). These processes are supported by distributed neural networks in frontal, parietal, and subcortical regions and are closely linked to working memory, executive functions, and consciousness. Patterns of attention also vary across cultures, especially in how individuals attend to context versus focal objects and how children are guided to manage attention in everyday activities."
+      "id": "27834",
+      "title": "Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
     },
     "raw_groq_package": {
-      "source_id": "68753",
+      "source_id": "27834",
       "scenes": [
         {
-          "text": "Neden bazı şeyleri tamamen gerçekten fark etmeyiz?",
-          "visual_query": "person looking away"
+          "text": "Sabahları yorgun uyanmanın gerçek gizemi nedir?",
+          "visual_query": "bedroom morning"
         },
         {
-          "text": "Dikkat, sınırlı bilişsel kaynakları belirli bilgilere yönlendirir, diğerlerini dışarıda tutar, görev sürecinde günlük.",
-          "visual_query": "brain network diagram"
+          "text": "Uyku, beyin omurilik sıvısının akışını artırarak atık maddeleri temizler. Bu da amiloid birikimini engeller.",
+          "visual_query": "brain fluid"
         },
         {
-          "text": "Seçici, sürdürülebilir ve bölünmüş dikkat farklı beyin bölgelerinde aktif gerçekleşir.",
-          "visual_query": "neural network map"
+          "text": "REM uykusunda bedeniniz sanal olarak felç olur, rüyalar bu anda oluşur.",
+          "visual_query": "dream sleep"
         }
       ],
-      "closing_question": "Siz hangi şeyi gerçekten kaçırıyorsunuz?",
-      "closing_visual_query": "person thinking",
+      "closing_question": "Daha iyi uyumak ister misiniz?",
+      "closing_visual_query": "night sky",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "psikoloji",
-      "title": "Dikkat Nasıl Çalışır? Bilinçli Seçimlerimiz Açıklanıyor",
-      "description": "Dikkat, sınırlı kaynakları belirli bilgilere yönlendirir. Böylece bazı bilgiler dışarıda kalır.",
+      "title": "Uyku Beyni Nasıl Temizler? Atıkların Silinme Süreci",
+      "description": "Uyku sırasında beyin omurilik sıvısı artar ve atık maddeler temizlenir. Bu süreç, amiloid birikimini önleyerek beyin sağlığını korur.",
       "hashtags": {
-        "primary": "psikoloji",
-        "secondary": "davranış"
+        "primary": "uyku",
+        "secondary": "beyin"
       },
       "tags": [
-        "dikkat",
-        "bilişsel",
-        "seçim",
-        "algı",
-        "beyin"
-      ]
+        "uyku",
+        "beyin",
+        "sağlık",
+        "atık",
+        "rem"
+      ],
+      "topic": "uyku"
     },
     "generation_mode": "prompt_first_v1"
   }
