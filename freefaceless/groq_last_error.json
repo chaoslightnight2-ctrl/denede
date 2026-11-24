@@ -2,8 +2,8 @@
   "run_id": "45325320933",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1795494669.9380934,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'tags'",
+  "observed_at": 1795494910.0349576,
+  "failed_generation_excerpt": "{\"source_id\":\"25140\",\"scenes\":[{\"text\":\"Alg\u0131 sadece duyular\u0131n kayd\u0131 ger\u00e7ek mi?\",\"visual_query\":\"brain illustration\"},{\"text\":\"Hay\u0131r, alg\u0131 \u00f6\u011frenme, bellek, beklenti ve dikkatle \u015fekillenen zihinsel aktif bir s\u00fcre\u00e7tir.\",\"visual_query\":\"neuron network\"},{\"text\":\"On dokuzuncu y\u00fczy\u0131lda deneysel psikolojiyle alg\u0131 ara\u015ft\u0131rmalar\u0131 h\u0131z kazand\u0131.\",\"visual_query\":\"historical lab\"}],\"closing_question\":\"Siz de alg\u0131y\u0131 sorgulad\u0131n\u0131z m\u0131?\",\"closing_visual_query\":\"thought bubble\",\"cta\":\"\u0130lgin\u00e7 Ger\u00e7ekler kanal\u0131na abone ol\",\"topic\":\"psikoloji\",\"title\":\"Alg\u0131 Neden Sadece Duyular\u0131n Kayd\u0131 De\u011fildir?\",\"description\":\"Alg\u0131, sadece d\u0131\u015fsal duyular\u0131n pasif al\u0131m\u0131 de\u011fildir. \u00d6\u011frenme, bellek ve dikkat alg\u0131y\u0131 aktif olarak \u015fekillendirir.\",\"hashtags\":{\"primary\":\"psikoloji\",\"secondary\":\"alg\u0131\"}}",
   "retry_after": null
 }
