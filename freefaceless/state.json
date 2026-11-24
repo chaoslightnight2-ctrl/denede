@@ -1153,6 +1153,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "44952585216",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261124_052716",
+      "topic": "psikoloji",
+      "audience_bucket": "human_behavior",
+      "hook_style": "direct_change",
+      "title": "Dikkat Nasıl Çalışır? Bilinçli Seçimlerimiz Açıklanıyor",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261124_052716_psikoloji/final.mp4",
+      "video_id": "JlHEvplCfJE",
+      "publish_at": "2026-11-24T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "45331351556"
     }
   ]
 }
