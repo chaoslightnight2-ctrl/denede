@@ -1,22 +1,8 @@
 [
   {
-    "run_id": "45325320933",
+    "run_id": "45331351556",
     "slot": "1900",
     "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "45325320933",
-    "slot": "2100",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
-  },
-  {
-    "run_id": "45325320933",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
