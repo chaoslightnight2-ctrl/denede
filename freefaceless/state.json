@@ -1177,7 +1177,8 @@
       "video_id": "XOP_gymiICU",
       "publish_at": "2026-11-24T20:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "45464248547"
+      "run_id": "45464248547",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
