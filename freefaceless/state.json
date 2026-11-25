@@ -47,7 +47,8 @@
     "bilgisayar",
     "ceptelefonu",
     "uyku",
-    "Duyular"
+    "Duyular",
+    "batarya"
   ],
   "published": [
     {
@@ -1179,6 +1180,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "45464248547",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261125_040313",
+      "topic": "batarya",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261125_040313_batarya/final.mp4",
+      "video_id": "NGUAcA9zTa4",
+      "publish_at": "2026-11-25T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "45543617573"
     }
   ]
 }
