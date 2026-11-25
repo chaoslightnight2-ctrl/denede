@@ -1,88 +1,88 @@
 {
-  "focus": "Günlük hayat ve eşyalar",
+  "focus": "Teknoloji ve icatlar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-24T18:59:13.713137+00:00",
+  "saved_at": "2026-11-25T04:03:12.268594+00:00",
   "data": {
-    "source_id": "27834",
+    "source_id": "19174720",
     "scenes": [
       {
-        "text": "Sabahları yorgun uyanmanın gerçek gizemi nedir",
-        "visual_query": "bedroom morning"
+        "text": "Bataryaların uçları neden tamamen farklı adlandırılır",
+        "visual_query": "battery terminals"
       },
       {
-        "text": "Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller",
-        "visual_query": "brain fluid"
+        "text": "Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar",
+        "visual_query": "circuit diagram"
       },
       {
-        "text": "REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur",
-        "visual_query": "dream sleep"
+        "text": "İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir",
+        "visual_query": "rechargeable cell"
       },
       {
-        "text": "Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "night sky"
+        "text": "Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
+        "visual_query": "hand holding battery"
       }
     ],
-    "closing_question": "Daha iyi uyumak ister misiniz?",
-    "closing_visual_query": "night sky",
+    "closing_question": "Siz de şarj eder misiniz?",
+    "closing_visual_query": "hand holding battery",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "title": "Uyku Beyni Nasıl Temizler? Atıkların Silinme Süreci",
-    "description": "Uyku sırasında beyin omurilik sıvısı artar ve atık maddeler temizlenir. Bu süreç, amiloid birikimini önleyerek beyin sağlığını korur.\n\n#shorts #uyku #beyin",
+    "topic": "batarya",
+    "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
+    "description": "Bir bataryada pozitif uç katot, negatif uç anot olarak adlandırılır. Bu adlandırma elektron akış yönüne göre yapılır.\n\n#shorts #batarya #elektrik",
     "hashtags": {
-      "primary": "uyku",
-      "secondary": "beyin"
+      "primary": "batarya",
+      "secondary": "elektrik"
     },
     "tags": [
-      "uyku",
-      "beyin",
-      "sağlık",
-      "atık",
-      "rem"
+      "batarya",
+      "katot",
+      "anot",
+      "elektrik",
+      "enerji"
     ],
-    "topic": "uyku",
-    "spoken_text": "Sabahları yorgun uyanmanın gerçek gizemi nedir Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Sabahları yorgun uyanmanın gerçek gizemi nedir Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Sabahları yorgun uyanmanın gerçek gizemi nedir. Uyku beyin omurilik sıvısının akışını artırarak atık maddeleri temizler Bu da amiloid birikimini engeller. REM uykusunda bedeniniz sanal olarak felç olur rüyalar bu anda oluşur. Daha iyi uyumak ister misiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "daily_life",
-    "hook_style": "concrete_question",
+    "spoken_text": "Bataryaların uçları neden tamamen farklı adlandırılır Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
+    "full_text": "Bataryaların uçları neden tamamen farklı adlandırılır Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Bataryaların uçları neden tamamen farklı adlandırılır. Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar. İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir. Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "technology_science",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "27834",
-      "title": "Sleep",
-      "url": "https://en.wikipedia.org/wiki/Sleep",
-      "text": "Sleep is a state of reduced mental and physical activity in which consciousness is altered and certain sensory activity is inhibited. During sleep, there is a marked decrease in muscle activity and interactions with the surrounding environment. While sleep differs from wakefulness in terms of the ability to react to stimuli, it still involves active brain patterns, making it more reactive than a coma or disorders of consciousness. Sleep occurs in repeating periods, during which the body alternates between two distinct modes: rapid eye movement sleep (REM) and non-REM sleep. Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body. Dreams are a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep. During sleep, most of the body's systems are in an anabolic state, helping to restore the immune, nervous, skeletal, and muscular systems; these are vital processes that maintain mood, memory, and cognitive function, and play a large role in the function of the endocrine and immune systems. The internal circadian clock promotes sleep daily at night, when it is dark. However, midday naps may also be necessary: current research is studying power naps. The diverse purposes and mechanisms of sleep are the subject of substantial ongoing research. Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years, and originating as a means for the brain to cleanse itself of waste products. Researchers have found that cleansing, including the removal of amyloid, may be a core purpose of sleep."
+      "id": "19174720",
+      "title": "Electric battery",
+      "url": "https://en.wikipedia.org/wiki/Electric_battery",
+      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
     },
     "raw_groq_package": {
-      "source_id": "27834",
+      "source_id": "19174720",
       "scenes": [
         {
-          "text": "Sabahları yorgun uyanmanın gerçek gizemi nedir?",
-          "visual_query": "bedroom morning"
+          "text": "Bataryaların uçları neden tamamen farklı adlandırılır?",
+          "visual_query": "battery terminals"
         },
         {
-          "text": "Uyku, beyin omurilik sıvısının akışını artırarak atık maddeleri temizler. Bu da amiloid birikimini engeller.",
-          "visual_query": "brain fluid"
+          "text": "Pozitif uç katot, negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar.",
+          "visual_query": "circuit diagram"
         },
         {
-          "text": "REM uykusunda bedeniniz sanal olarak felç olur, rüyalar bu anda oluşur.",
-          "visual_query": "dream sleep"
+          "text": "İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir.",
+          "visual_query": "rechargeable cell"
         }
       ],
-      "closing_question": "Daha iyi uyumak ister misiniz?",
-      "closing_visual_query": "night sky",
+      "closing_question": "Siz de şarj eder misiniz?",
+      "closing_visual_query": "hand holding battery",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "title": "Uyku Beyni Nasıl Temizler? Atıkların Silinme Süreci",
-      "description": "Uyku sırasında beyin omurilik sıvısı artar ve atık maddeler temizlenir. Bu süreç, amiloid birikimini önleyerek beyin sağlığını korur.",
+      "topic": "batarya",
+      "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
+      "description": "Bir bataryada pozitif uç katot, negatif uç anot olarak adlandırılır. Bu adlandırma elektron akış yönüne göre yapılır.",
       "hashtags": {
-        "primary": "uyku",
-        "secondary": "beyin"
+        "primary": "batarya",
+        "secondary": "elektrik"
       },
       "tags": [
-        "uyku",
-        "beyin",
-        "sağlık",
-        "atık",
-        "rem"
-      ],
-      "topic": "uyku"
+        "batarya",
+        "katot",
+        "anot",
+        "elektrik",
+        "enerji"
+      ]
     },
     "generation_mode": "prompt_first_v1"
   }
