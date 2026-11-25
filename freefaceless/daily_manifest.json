@@ -1,33 +1,9 @@
 [
   {
-    "run_id": "45543617573",
-    "slot": "1900",
-    "niche": "Teknoloji ve icatlar",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-25T19:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-25T16:00:00Z",
-    "video_id": "NGUAcA9zTa4",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261125_040313_batarya/final.mp4",
-    "topic": "batarya",
-    "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
-    "narration": "Bataryaların uçları neden tamamen farklı adlandırılır Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-25T16:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "45543617573",
-    "slot": "2100",
-    "niche": "Günlük hayat ve eşyalar",
-    "ok": false,
-    "error": "No described asset matches scene 2: global temperature"
-  },
-  {
-    "run_id": "45543617573",
+    "run_id": "45670065034",
     "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
-    "error": "No described asset matches scene 0: person focusing"
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
