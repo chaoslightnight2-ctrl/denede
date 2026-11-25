@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-25T04:03:12.268594+00:00",
+  "saved_at": "2026-11-25T04:15:12.837822+00:00",
   "data": {
-    "source_id": "19174720",
+    "source_id": "33978",
     "scenes": [
       {
-        "text": "Bataryaların uçları neden tamamen farklı adlandırılır",
-        "visual_query": "battery terminals"
+        "text": "Sabah kahvenizdeki buhar gerçekten nereden gelir",
+        "visual_query": "morning coffee"
       },
       {
-        "text": "Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar",
-        "visual_query": "circuit diagram"
+        "text": "Havanın sıcaklık farkı su buharının yükselip bulutlaşmasıyla oluşur ve kahve buharı da aynı prensiple",
+        "visual_query": "steam rising"
       },
       {
-        "text": "İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir",
-        "visual_query": "rechargeable cell"
+        "text": "Dünya genelinde sıcaklık genellikle kırk derece civarında değişir",
+        "visual_query": "global temperature"
       },
       {
-        "text": "Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "hand holding battery"
+        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "coffee steam"
       }
     ],
-    "closing_question": "Siz de şarj eder misiniz?",
-    "closing_visual_query": "hand holding battery",
+    "closing_question": "Siz de fark ettiniz mi?",
+    "closing_visual_query": "coffee steam",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "batarya",
-    "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
-    "description": "Bir bataryada pozitif uç katot, negatif uç anot olarak adlandırılır. Bu adlandırma elektron akış yönüne göre yapılır.\n\n#shorts #batarya #elektrik",
+    "topic": "günlük hayat",
+    "title": "Kahve Buharı Nereden Gelir? Havanın Sıcaklık Farkı",
+    "description": "Kahve buharı, havadaki sıcaklık farkının su buharını yükseltmesiyle oluşur. Dünya genelinde sıcaklık genellikle kırk derece civarında değişir.\n\n#shorts #kahve #hava",
     "hashtags": {
-      "primary": "batarya",
-      "secondary": "elektrik"
+      "primary": "kahve",
+      "secondary": "hava"
     },
     "tags": [
-      "batarya",
-      "katot",
-      "anot",
-      "elektrik",
-      "enerji"
+      "kahve",
+      "buhar",
+      "hava",
+      "sıcaklık",
+      "günlük"
     ],
-    "spoken_text": "Bataryaların uçları neden tamamen farklı adlandırılır Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Bataryaların uçları neden tamamen farklı adlandırılır Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Bataryaların uçları neden tamamen farklı adlandırılır. Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar. İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir. Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "direct_change",
+    "spoken_text": "Sabah kahvenizdeki buhar gerçekten nereden gelir Havanın sıcaklık farkı su buharının yükselip bulutlaşmasıyla oluşur ve kahve buharı da aynı prensiple Dünya genelinde sıcaklık genellikle kırk derece civarında değişir Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Sabah kahvenizdeki buhar gerçekten nereden gelir Havanın sıcaklık farkı su buharının yükselip bulutlaşmasıyla oluşur ve kahve buharı da aynı prensiple Dünya genelinde sıcaklık genellikle kırk derece civarında değişir Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Sabah kahvenizdeki buhar gerçekten nereden gelir. Havanın sıcaklık farkı su buharının yükselip bulutlaşmasıyla oluşur ve kahve buharı da aynı prensiple. Dünya genelinde sıcaklık genellikle kırk derece civarında değişir. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "concrete_question",
     "reference_source": {
-      "id": "19174720",
-      "title": "Electric battery",
-      "url": "https://en.wikipedia.org/wiki/Electric_battery",
-      "text": "An electric battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices. When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode. The terminal marked negative is the source of electrons. When a battery is connected to an external electric load, those negatively charged electrons flow through the circuit and reach the positive terminal, thus causing a redox reaction by attracting positively charged ions, or cations. Thus, higher energy reactants are converted to lower energy products, and the free-energy difference is delivered to the external circuit as electrical energy. Historically the term \"battery\" specifically referred to a device composed of multiple cells; however, the usage has evolved to include devices composed of a single cell. Primary (single-use or \"disposable\") batteries are used once and discarded, as the electrode materials are irreversibly changed during discharge; a common example is the alkaline battery used for flashlights and a multitude of portable electronic devices. Secondary (rechargeable) batteries can be discharged and recharged multiple times using an applied electric current; the original composition of the electrodes can be restored by reverse current. Examples include the lead–acid automotive battery used in internal combustion engine vehicles, and lithium-ion batteries used for portable electronics and electric cars."
+      "id": "33978",
+      "title": "Weather",
+      "url": "https://en.wikipedia.org/wiki/Weather",
+      "text": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth. Weather is driven by air pressure, temperature, and moisture differences between one place and another. These differences can occur due to the Sun's angle at any particular spot, which varies with latitude. The strong temperature contrast between polar and tropical air gives rise to the largest scale atmospheric circulations: the Hadley cell, the Ferrel cell, the polar cell, and the jet stream. Weather systems in the middle latitudes, such as extratropical cyclones, are caused by instabilities of the jet streamflow. Because Earth's axis is tilted relative to its orbital plane (called the ecliptic), sunlight is incident at different angles at different times of the year. On Earth's surface, temperatures usually range ±40 °C (−40 °F to 104 °F) annually. Over thousands of years, changes in Earth's orbit can affect the amount and distribution of solar energy received by Earth, thus influencing long-term climate and global climate change. Surface temperature differences in turn cause pressure differences."
     },
     "raw_groq_package": {
-      "source_id": "19174720",
+      "source_id": "33978",
       "scenes": [
         {
-          "text": "Bataryaların uçları neden tamamen farklı adlandırılır?",
-          "visual_query": "battery terminals"
+          "text": "Sabah kahvenizdeki buhar gerçekten nereden gelir?",
+          "visual_query": "morning coffee"
         },
         {
-          "text": "Pozitif uç katot, negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar.",
-          "visual_query": "circuit diagram"
+          "text": "Havanın sıcaklık farkı, su buharının yükselip bulutlaşmasıyla oluşur ve kahve buharı da aynı prensiple.",
+          "visual_query": "steam rising"
         },
         {
-          "text": "İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir.",
-          "visual_query": "rechargeable cell"
+          "text": "Dünya genelinde sıcaklık genellikle kırk derece civarında değişir.",
+          "visual_query": "global temperature"
         }
       ],
-      "closing_question": "Siz de şarj eder misiniz?",
-      "closing_visual_query": "hand holding battery",
+      "closing_question": "Siz de fark ettiniz mi?",
+      "closing_visual_query": "coffee steam",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "batarya",
-      "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
-      "description": "Bir bataryada pozitif uç katot, negatif uç anot olarak adlandırılır. Bu adlandırma elektron akış yönüne göre yapılır.",
+      "topic": "günlük hayat",
+      "title": "Kahve Buharı Nereden Gelir? Havanın Sıcaklık Farkı",
+      "description": "Kahve buharı, havadaki sıcaklık farkının su buharını yükseltmesiyle oluşur. Dünya genelinde sıcaklık genellikle kırk derece civarında değişir.",
       "hashtags": {
-        "primary": "batarya",
-        "secondary": "elektrik"
+        "primary": "kahve",
+        "secondary": "hava"
       },
       "tags": [
-        "batarya",
-        "katot",
-        "anot",
-        "elektrik",
-        "enerji"
+        "kahve",
+        "buhar",
+        "hava",
+        "sıcaklık",
+        "günlük"
       ]
     },
     "generation_mode": "prompt_first_v1"
