@@ -1,17 +1,50 @@
 {
-  "source_run": "45537053170",
-  "verified_at": "2026-11-25T03:11:48.889428+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "45543617573",
+  "verified_at": "2026-11-25T04:20:40.631505+00:00",
+  "videos": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "video_id": "NGUAcA9zTa4",
+      "youtube_url": "https://youtu.be/NGUAcA9zTa4",
+      "title": "Batarya uçları neden katot ve anot olarak adlandırılır?",
+      "narration": "Bataryaların uçları neden tamamen farklı adlandırılır Pozitif uç katot negatif uç anot olarak adlandırılır ve elektronlar anotdan katota akar İkinci tip bataryalar şarj edilebilir ve tekrar kullanılabilir Siz de şarj eder misiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-25T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-25T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.266667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/NGUAcA9zTa4.jpg"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "errors": [
+    {
+      "index": 2,
+      "error": "No described asset matches scene 2: global temperature"
+    },
+    {
+      "index": 3,
+      "error": "No described asset matches scene 0: person focusing"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
