@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-26T02:07:15.272360+00:00",
+  "saved_at": "2026-11-26T03:31:11.904589+00:00",
   "data": {
-    "source_id": "7878457",
+    "source_id": "27709",
     "scenes": [
       {
-        "text": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten",
-        "visual_query": "old calculator"
+        "text": "Telefonunuzun içinde gizli bir madde var",
+        "visual_query": "phone interior"
       },
       {
-        "text": "İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu tamamen",
-        "visual_query": "vintage computer"
+        "text": "Bu madde silisyumdur yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar",
+        "visual_query": "silicon chip"
       },
       {
-        "text": "1930larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı hâlâ ilgi çekiciydi",
-        "visual_query": "large machine"
+        "text": "Silisyum ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır",
+        "visual_query": "solar panel"
       },
       {
-        "text": "Siz hangi cihazı tercih edersiniz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "modern smartphone"
+        "text": "Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Siz hangi cihazı tercih edersiniz?",
-    "closing_visual_query": "modern smartphone",
+    "closing_question": "Siz de fark ettiniz mi?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "Bilgisayarlar Neden Sadece Hesaplama İçin Yapıldı?",
-    "description": "İlk bilgisayarlar yalnızca sayısal hesaplamalar için tasarlanmıştı. Daha sonra çok çeşitli görevleri yerine getirebilecek şekilde evrimleşti.\n\n#shorts #bilgisayar #teknoloji",
+    "topic": "yarıiletkenler",
+    "title": "Telefonların içinde silisyum nasıl çalışır?",
+    "description": "Telefonların devrelerinde silisyum yarı iletken olarak kullanılır. Bu madde akımı kontrol ederek cihazın çalışmasını sağlar.\n\n#shorts #yarıiletken #teknoloji",
     "hashtags": {
-      "primary": "bilgisayar",
+      "primary": "yarıiletken",
       "secondary": "teknoloji"
     },
     "tags": [
-      "bilgisayar",
-      "tarih",
-      "teknoloji",
-      "hesaplama",
-      "ilkbilgisayar"
+      "silisyum",
+      "telefon",
+      "elektronik",
+      "yarıiletken",
+      "doping"
     ],
-    "spoken_text": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu tamamen 1930larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı hâlâ ilgi çekiciydi Siz hangi cihazı tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "full_text": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu tamamen 1930larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı hâlâ ilgi çekiciydi Siz hangi cihazı tercih edersiniz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten. İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu tamamen. 1930larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı hâlâ ilgi çekiciydi. Siz hangi cihazı tercih edersiniz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
-    "hook_style": "concrete_question",
+    "spoken_text": "Telefonunuzun içinde gizli bir madde var Bu madde silisyumdur yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar Silisyum ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Telefonunuzun içinde gizli bir madde var Bu madde silisyumdur yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar Silisyum ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Telefonunuzun içinde gizli bir madde var. Bu madde silisyumdur yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar. Silisyum ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır. Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
+    "hook_style": "direct_change",
     "reference_source": {
-      "id": "7878457",
-      "title": "Computer",
-      "url": "https://en.wikipedia.org/wiki/Computer",
-      "text": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. The term computer system may refer to a nominally complete computer that includes the hardware, operating system, software, and peripheral equipment needed and used for full operation, or to a group of computers that are linked and function together, such as a computer network or computer cluster. Numbering only a few in the 1930s, today computers are ubiquitous over a broad range of industrial and consumer products that use computers as control systems. The price, size, and complexity of computers can range from simple single-purpose devices like key fobs, microwave ovens, and remote controls up to supercomputers and factories using industrial robots. Computers are at the core of general-purpose devices such as personal computers and mobile devices, such as smartphones. Computers power the Internet, which links billions of computers and users. Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long, tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century."
+      "id": "27709",
+      "title": "Semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Semiconductor",
+      "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
     },
     "raw_groq_package": {
-      "source_id": "7878457",
+      "source_id": "27709",
       "scenes": [
         {
-          "text": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten?",
-          "visual_query": "old calculator"
+          "text": "Telefonunuzun içinde gizli bir madde var.",
+          "visual_query": "phone interior"
         },
         {
-          "text": "İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu, tamamen.",
-          "visual_query": "vintage computer"
+          "text": "Bu madde silisyumdur; yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar.",
+          "visual_query": "silicon chip"
         },
         {
-          "text": "1930'larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı, hâlâ ilgi çekiciydi",
-          "visual_query": "large machine"
+          "text": "Silisyum, ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır.",
+          "visual_query": "solar panel"
         }
       ],
-      "closing_question": "Siz hangi cihazı tercih edersiniz?",
-      "closing_visual_query": "modern smartphone",
+      "closing_question": "Siz de fark ettiniz mi?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "Bilgisayarlar Neden Sadece Hesaplama İçin Yapıldı?",
-      "description": "İlk bilgisayarlar yalnızca sayısal hesaplamalar için tasarlanmıştı. Daha sonra çok çeşitli görevleri yerine getirebilecek şekilde evrimleşti.",
+      "topic": "yarıiletkenler",
+      "title": "Telefonların içinde silisyum nasıl çalışır?",
+      "description": "Telefonların devrelerinde silisyum yarı iletken olarak kullanılır. Bu madde akımı kontrol ederek cihazın çalışmasını sağlar.",
       "hashtags": {
-        "primary": "bilgisayar",
+        "primary": "yarıiletken",
         "secondary": "teknoloji"
       },
       "tags": [
-        "bilgisayar",
-        "tarih",
-        "teknoloji",
-        "hesaplama",
-        "ilkbilgisayar"
+        "silisyum",
+        "telefon",
+        "elektronik",
+        "yarıiletken",
+        "doping"
       ]
     },
     "generation_mode": "prompt_first_v1"
