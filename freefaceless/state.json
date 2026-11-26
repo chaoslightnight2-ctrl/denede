@@ -1193,6 +1193,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "45543617573",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261126_020716",
+      "topic": "teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "concrete_question",
+      "title": "Bilgisayarlar Neden Sadece Hesaplama İçin Yapıldı?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261126_020716_teknoloji/final.mp4",
+      "video_id": "6_TTq6AOsLw",
+      "publish_at": "2026-11-26T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "45737931135"
     }
   ]
 }
