@@ -1,19 +1,19 @@
 {
-  "source_run": "45748640385",
-  "verified_at": "2026-11-26T03:40:15.174225+00:00",
+  "source_run": "45869925949",
+  "verified_at": "2026-11-26T17:48:30.764358+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "nvOLwZEwhvk",
-      "youtube_url": "https://youtu.be/nvOLwZEwhvk",
-      "title": "Telefonların içinde silisyum nasıl çalışır?",
-      "narration": "Telefonunuzun içinde gizli bir madde var Bu madde silisyumdur yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar Silisyum ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-26T16:00:00Z",
+      "video_id": "knN4Krc1dz0",
+      "youtube_url": "https://youtu.be/knN4Krc1dz0",
+      "title": "Elektrik ve manyetizma neden birlikte incelenir? İşte cevabı!",
+      "narration": "Elektrik ve manyetizma aynı mı merak ettin Hayır ayrı değil ikisi aynı fenomenin iki yönü elektromanyetizma olarak adlandırılır bilimsel Maxwell denklemleri bu iki yönün birbirine dönüşümünü açıklar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-26T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-26T16:00:00Z",
+        "publishAt": "2026-11-26T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,19 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 18.433333,
+        "duration": 17.1,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/nvOLwZEwhvk.jpg"
+      "preview": "maintenance/previews/knN4Krc1dz0.jpg"
     }
   ],
-  "errors": [
-    {
-      "index": 2,
-      "error": "visual_query 2-6 İngilizce kelime olmalı"
-    }
-  ],
+  "errors": [],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
