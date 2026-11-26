@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "45748640385",
-    "slot": "1900",
-    "niche": "Günlük hayat ve eşyalar",
+    "run_id": "45869925949",
+    "slot": "2300",
+    "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-26T19:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-26T23:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-26T16:00:00Z",
-    "video_id": "nvOLwZEwhvk",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261126_033113_yar-iletkenler/final.mp4",
-    "topic": "yarıiletkenler",
-    "title": "Telefonların içinde silisyum nasıl çalışır?",
-    "narration": "Telefonunuzun içinde gizli bir madde var Bu madde silisyumdur yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar Silisyum ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır Siz de fark ettiniz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-26T16:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-26T20:00:00Z",
+    "video_id": "knN4Krc1dz0",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261126_174715_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
+    "topic": "günlük hayatta bilimin açıklamaları",
+    "title": "Elektrik ve manyetizma neden birlikte incelenir? İşte cevabı!",
+    "narration": "Elektrik ve manyetizma aynı mı merak ettin Hayır ayrı değil ikisi aynı fenomenin iki yönü elektromanyetizma olarak adlandırılır bilimsel Maxwell denklemleri bu iki yönün birbirine dönüşümünü açıklar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-26T20:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "45748640385",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "visual_query 2-6 İngilizce kelime olmalı"
   }
 ]
