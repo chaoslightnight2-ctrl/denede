@@ -1,17 +1,50 @@
 {
-  "source_run": "45670065034",
-  "verified_at": "2026-11-25T18:12:05.954284+00:00",
-  "videos": [],
+  "source_run": "45737931135",
+  "verified_at": "2026-11-26T02:19:45.077038+00:00",
+  "videos": [
+    {
+      "index": 2,
+      "video_id": "6_TTq6AOsLw",
+      "youtube_url": "https://youtu.be/6_TTq6AOsLw",
+      "title": "Bilgisayarlar Neden Sadece Hesaplama İçin Yapıldı?",
+      "narration": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu tamamen 1930larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı hâlâ ilgi çekiciydi Siz hangi cihazı tercih edersiniz İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-26T18:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-26T18:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 22.8,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/6_TTq6AOsLw.jpg"
+    }
+  ],
   "errors": [
     {
       "index": 1,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
