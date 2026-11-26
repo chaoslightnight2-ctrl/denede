@@ -1,39 +1,39 @@
 {
-  "run_id": "45737931135",
+  "run_id": "45748640385",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
-    "source_id": "27834",
+    "source_id": "27709",
     "scenes": [
       {
-        "text": "Uyku sırasında beyin gerçekten ne yapar?",
-        "visual_query": "bed"
+        "text": "Telefonunuzun içinde gizli bir madde var.",
+        "visual_query": "phone interior"
       },
       {
-        "text": "Beyin, amyloid gibi atık maddeleri temizleyerek kendini yeniler ve hafızayı güçlendirir destekler.",
-        "visual_query": "lab"
+        "text": "Bu madde silisyumdur; yarı iletken olarak devrelerde akımı kontrol eder ve cihazların çalışmasını sağlar.",
+        "visual_query": "silicon chip"
       },
       {
-        "text": "Temizlik, uyku sırasında beyin sıvısının akışıyla gerçekleşir aktif.",
-        "visual_query": "tube"
+        "text": "Silisyum, ışığa duyarlı sensörlerde ve güneş panellerinde de kullanılır.",
+        "visual_query": "solar panel"
       }
     ],
-    "closing_question": "Siz de daha iyi uyuyun?",
-    "closing_visual_query": "sun",
+    "closing_question": "Siz de fark ettiniz mi?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük hayat ve eşyalar",
-    "title": "Uyku Beyni Neden Atık Temizler ve Hafızayı Güçlendirir?",
-    "description": "Uyku sırasında beyin, amyloid gibi atık maddeleri temizler. Bu temizlik hafızayı güçlendirir.",
+    "topic": "yarıiletkenler",
+    "title": "Telefonların içinde silisyum nasıl çalışır?",
+    "description": "Telefonların devrelerinde silisyum yarı iletken olarak kullanılır. Bu madde akımı kontrol ederek cihazın çalışmasını sağlar.",
     "hashtags": {
-      "primary": "uyku",
-      "secondary": "beyin"
+      "primary": "yarıiletken",
+      "secondary": "teknoloji"
     },
     "tags": [
-      "uyku",
-      "beyin",
-      "hafıza",
-      "atık",
-      "temizlik"
+      "silisyum",
+      "telefon",
+      "elektronik",
+      "yarıiletken",
+      "doping"
     ]
   },
   "reference_sources": [
