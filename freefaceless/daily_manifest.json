@@ -5,5 +5,22 @@
     "niche": "Günlük hayatta bilimin açıklamaları",
     "ok": false,
     "error": "visual_query 2-6 İngilizce kelime olmalı"
+  },
+  {
+    "run_id": "45737931135",
+    "slot": "2100",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-26T21:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-26T18:00:00Z",
+    "video_id": "6_TTq6AOsLw",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261126_020716_teknoloji/final.mp4",
+    "topic": "teknoloji",
+    "title": "Bilgisayarlar Neden Sadece Hesaplama İçin Yapıldı?",
+    "narration": "Bilgisayarların doğuşu ne kadar basitti ilk gerçekten İlk bilgisayarlar sadece sayısal hesaplamalar yapmak için tasarlanmıştı ve başka bir işlevi yoktu tamamen 1930larda sadece birkaç bilgisayar bulunuyordu ve çok büyük boyutlardaydı hâlâ ilgi çekiciydi Siz hangi cihazı tercih edersiniz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-26T18:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
