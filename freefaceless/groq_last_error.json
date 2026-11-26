@@ -2,8 +2,8 @@
   "run_id": "45737931135",
   "http_status": 400,
   "code": "json_validate_failed",
-  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
-  "observed_at": 1795658109.953661,
-  "failed_generation_excerpt": "",
+  "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'topic', 'tags'",
+  "observed_at": 1795658589.8741293,
+  "failed_generation_excerpt": "{\"source_id\":\"7878457\",\"scenes\":[{\"text\":\"Bilgisayarlar bir zamanlar odalar kadar m\u0131?\",\"visual_query\":\"room\"},{\"text\":\"Evet, yirminci y\u00fczy\u0131l\u0131n ba\u015flar\u0131nda oda b\u00fcy\u00fckl\u00fc\u011f\u00fcndeydi; \u015fimdi cep telefonunda ta\u015f\u0131n\u0131yor ve her yerde kullan\u0131l\u0131yor.\",\"visual_query\":\"pc\"},{\"text\":\"\u0130lk bilgisayarlar sadece say\u0131sal hesaplama yapard\u0131, bug\u00fcn ise video oynat\u0131r.\",\"visual_query\":\"lab\"}],\"closing_question\":\"Sizce bir sonraki devrim ne?\",\"closing_visual_query\":\"net\",\"cta\":\"\u0130lgin\u00e7 Ger\u00e7ekler kanal\u0131na abone ol\",\"title\":\"Bilgisayarlar Neden Oda B\u00fcy\u00fckl\u00fc\u011f\u00fcndeydi ve \u015eimdi Cepte?\",\"description\":\"\u0130lk bilgisayarlar yirminci y\u00fczy\u0131l\u0131n ba\u015flar\u0131nda oda b\u00fcy\u00fckl\u00fc\u011f\u00fcndeydi. G\u00fcn\u00fcm\u00fczde ise cep telefonlar\u0131m\u0131zda ta\u015f\u0131n\u0131yor.\",\"hashtags\":{\"primary\":\"bilgisayar\",\"secondary\":\"teknoloji\"}}",
   "retry_after": null
 }
