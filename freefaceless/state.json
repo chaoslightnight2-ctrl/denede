@@ -1220,6 +1220,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "45748640385",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261126_174715",
+      "topic": "günlük hayatta bilimin açıklamaları",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Elektrik ve manyetizma neden birlikte incelenir? İşte cevabı!",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261126_174715_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
+      "video_id": "knN4Krc1dz0",
+      "publish_at": "2026-11-26T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "45869925949"
     }
   ]
 }
