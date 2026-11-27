@@ -49,7 +49,8 @@
     "uyku",
     "Duyular",
     "batarya",
-    "yarıiletkenler"
+    "yarıiletkenler",
+    "davranış"
   ],
   "published": [
     {
@@ -1233,6 +1234,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "45869925949",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261127_033512",
+      "topic": "davranış",
+      "audience_bucket": "human_behavior",
+      "hook_style": "direct_change",
+      "title": "Neden İnsanlar Risk Alır? Genetik ve Çevre Şekillendirir",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261127_033512_davran/final.mp4",
+      "video_id": "pbLFSOJGYug",
+      "publish_at": "2026-11-27T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "45934652670"
     }
   ]
 }
