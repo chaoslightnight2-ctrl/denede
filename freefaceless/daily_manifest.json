@@ -1,19 +1,9 @@
 [
   {
-    "run_id": "45869925949",
-    "slot": "2300",
-    "niche": "Günlük hayatta bilimin açıklamaları",
-    "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-26T23:00:00+03:00",
-    "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-26T20:00:00Z",
-    "video_id": "knN4Krc1dz0",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261126_174715_g-nl-k-hayatta-bilimin-a-klamalar/final.mp4",
-    "topic": "günlük hayatta bilimin açıklamaları",
-    "title": "Elektrik ve manyetizma neden birlikte incelenir? İşte cevabı!",
-    "narration": "Elektrik ve manyetizma aynı mı merak ettin Hayır ayrı değil ikisi aynı fenomenin iki yönü elektromanyetizma olarak adlandırılır bilimsel Maxwell denklemleri bu iki yönün birbirine dönüşümünü açıklar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-26T20:00:00Z",
-    "upload_status": "api_insert_confirmed",
-    "processing_status": "readback_scope_unavailable"
+    "run_id": "45924175961",
+    "slot": "1900",
+    "niche": "Psikoloji ve insan davranışları",
+    "ok": false,
+    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
