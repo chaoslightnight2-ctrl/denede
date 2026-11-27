@@ -1247,6 +1247,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "45934652670",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261127_173513",
+      "topic": "elektrik",
+      "audience_bucket": "daily_life",
+      "hook_style": "concrete_question",
+      "title": "Elektrik Akımı Neden Manyetik Alan Oluşturur?",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261127_173513_elektrik/final.mp4",
+      "video_id": "j_uAus8oWrs",
+      "publish_at": "2026-11-27T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "46041863121"
     }
   ]
 }
