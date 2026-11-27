@@ -1,39 +1,39 @@
 {
-  "run_id": "45934652670",
+  "run_id": "46041863121",
   "attempt": 1,
   "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "9550",
     "scenes": [
       {
-        "text": "Elektrik akımı bir iletkende ne üretir?",
-        "visual_query": "wire"
+        "text": "Elektrik akımı nasıl manyetik alan yaratır?",
+        "visual_query": "cable current"
       },
       {
-        "text": "Akım geçtiği iletkende çevresel bir manyetik alan oluşturur ve bu alan akıma dik yönlüdür.",
-        "visual_query": "mag"
+        "text": "Hareketli elektrik yükleri çevresinde manyetik alan oluşturur, bu da akımın manyetik etkisini sağlar.",
+        "visual_query": "magnet coil"
       },
       {
-        "text": "Bu manyetik alan, elektromıknatısların çalışmasında temel rol oynar.",
-        "visual_query": "coil"
+        "text": "Elektrik akımı aynı zamanda ısı üretir ve ışık verir.",
+        "visual_query": "heater bulb"
       }
     ],
     "closing_question": "Siz de deney yaptınız mı?",
-    "closing_visual_query": "lab",
+    "closing_visual_query": "experiment lab",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "günlük bilim",
-    "title": "Elektrik akımı bir iletkende manyetik alan üretir",
-    "description": "Elektrik akımı bir iletkenden geçtiğinde çevresinde manyetik alan oluşur. Bu özellik elektromıknatısların temelini oluşturur.",
+    "topic": "elektrik",
+    "title": "Elektrik Akımı Neden Manyetik Alan Oluşturur?",
+    "description": "Elektrik akımı hareket eden yüklerin oluşturduğu manyetik alan üretir. Bu yüzden akım geçen teller manyetik etkiler gösterir.",
     "hashtags": {
       "primary": "elektrik",
-      "secondary": "manyetikalan"
+      "secondary": "manyetizma"
     },
     "tags": [
       "elektrik",
       "manyetik",
-      "iletken",
       "akım",
-      "fizik"
+      "fizik",
+      "elektromanyetizma"
     ]
   },
   "reference_sources": [
