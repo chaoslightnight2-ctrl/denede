@@ -1,9 +1,19 @@
 [
   {
-    "run_id": "45924175961",
+    "run_id": "45934652670",
     "slot": "1900",
     "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-27T19:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-27T16:00:00Z",
+    "video_id": "pbLFSOJGYug",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261127_033512_davran/final.mp4",
+    "topic": "davranış",
+    "title": "Neden İnsanlar Risk Alır? Genetik ve Çevre Şekillendirir",
+    "narration": "Neden bazı insanlar risk almayı sever Çünkü davranış genetik yapı ve çevresel etkilerin düşünce ve duyguların etkileşimiyle şekillenir Stresli durumlarda beyin hızlı kararlar için otomatik tepkiler üretir Siz risk alır mısınız İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-27T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
