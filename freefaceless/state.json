@@ -1260,6 +1260,18 @@
       "upload_status": "api_insert_confirmed",
       "run_id": "46041863121",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "ts": "20261127_174714",
+      "topic": "teknoloji",
+      "audience_bucket": "technology_science",
+      "hook_style": "direct_change",
+      "title": "İlk Cep Telefonu Neden İki Kilogramdı? İşte Sebebi",
+      "path": "/home/runner/work/denede/denede/freefaceless/output/20261127_174714_teknoloji/final.mp4",
+      "video_id": "8rMcEQQ3uTw",
+      "publish_at": "2026-11-28T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "run_id": "46041863121"
     }
   ]
 }
