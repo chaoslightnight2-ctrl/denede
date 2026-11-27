@@ -1,41 +1,17 @@
 {
-  "source_run": "45869925949",
-  "verified_at": "2026-11-26T17:48:30.764358+00:00",
-  "videos": [
+  "source_run": "45924175961",
+  "verified_at": "2026-11-27T01:55:49.552534+00:00",
+  "videos": [],
+  "errors": [
     {
       "index": 1,
-      "video_id": "knN4Krc1dz0",
-      "youtube_url": "https://youtu.be/knN4Krc1dz0",
-      "title": "Elektrik ve manyetizma neden birlikte incelenir? İşte cevabı!",
-      "narration": "Elektrik ve manyetizma aynı mı merak ettin Hayır ayrı değil ikisi aynı fenomenin iki yönü elektromanyetizma olarak adlandırılır bilimsel Maxwell denklemleri bu iki yönün birbirine dönüşümünü açıklar Siz de şaşırdınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-26T20:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-26T20:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.1,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/knN4Krc1dz0.jpg"
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "errors": [],
-  "accepted_count": 1,
-  "processed_count": 1,
+  "accepted_count": 0,
+  "processed_count": 0,
   "complete": false,
   "target_count": 1,
   "published_count": 0,
-  "accepted_complete": true
+  "accepted_complete": false
 }
