@@ -1,9 +1,9 @@
 {
-  "run_id": "45869925949",
+  "run_id": "45924175961",
   "http_status": 400,
   "code": "json_validate_failed",
   "message": "max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_completion_tokens. See 'failed_generation' for the truncated output. Error: jsonschema: '' does not validate with /required: missing properties: 'closing_question', 'closing_visual_query', 'cta', 'topic', 'title', 'description', 'hashtags', 'tags'",
-  "observed_at": 1795714990.0961707,
-  "failed_generation_excerpt": "{\"source_id\":\"33306\",\"scenes\":[{\"text\":\"Su, her \u015feyi \u00e7\u00f6zen gizli s\u00fcredir?\",\"visual_query\":\"ev\"}]}",
+  "observed_at": 1795744030.0963485,
+  "failed_generation_excerpt": "{\"source_id\":\"563299\",\"scenes\":[{\"text\":\"Neden insanlar ayn\u0131 ortamda farkl\u0131 davran\u0131r?\",\"visual_query\":\"room\"},{\"text\":\"\u00c7\u00fcnk\u00fc davran\u0131\u015flar\u0131 \u00e7evresel uyar\u0131c\u0131lar ve genetik yap\u0131 birlikte belirler, bu da tepkileri y\u00f6nlendirir.\",\"visual_query\":\"lab\"},{\"text\":\"Stresli durumlarda beyin, \u00f6\u011frenmeyi ve haf\u0131zay\u0131 ge\u00e7ici olarak azalt\u0131r.\",\"visual_query\":\"cell\"}]}",
   "retry_after": null
 }
