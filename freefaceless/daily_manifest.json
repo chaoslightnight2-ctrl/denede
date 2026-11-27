@@ -15,5 +15,22 @@
     "publish_at": "2026-11-27T20:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
+  },
+  {
+    "run_id": "46041863121",
+    "slot": "2300",
+    "niche": "Teknoloji ve icatlar",
+    "ok": true,
+    "scheduled_publish_at_turkey": "2026-11-27T23:00:00+03:00",
+    "private_recovery": false,
+    "scheduled_publish_at_utc": "2026-11-28T16:00:00Z",
+    "video_id": "8rMcEQQ3uTw",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261127_174714_teknoloji/final.mp4",
+    "topic": "teknoloji",
+    "title": "İlk Cep Telefonu Neden İki Kilogramdı? İşte Sebebi",
+    "narration": "İlk cep telefonu ne kadar ağırdı Üç Nisan bin dokuz yüz yetmiş üçte tanıtıldı ağırlığı iki kilogramdı tamamen Cihazın bataryası o dönemde çok büyük ağır ve hantal bir yapıya sahipti Siz hangi eski cihazı hatırlıyorsunuz İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-28T16:00:00Z",
+    "upload_status": "api_insert_confirmed",
+    "processing_status": "readback_scope_unavailable"
   }
 ]
