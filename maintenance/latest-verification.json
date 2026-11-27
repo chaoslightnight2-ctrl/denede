@@ -1,17 +1,50 @@
 {
-  "source_run": "45924175961",
-  "verified_at": "2026-11-27T01:55:49.552534+00:00",
-  "videos": [],
-  "errors": [
+  "source_run": "45934652670",
+  "verified_at": "2026-11-27T03:55:52.029360+00:00",
+  "videos": [
     {
       "index": 1,
+      "video_id": "pbLFSOJGYug",
+      "youtube_url": "https://youtu.be/pbLFSOJGYug",
+      "title": "Neden İnsanlar Risk Alır? Genetik ve Çevre Şekillendirir",
+      "narration": "Neden bazı insanlar risk almayı sever Çünkü davranış genetik yapı ve çevresel etkilerin düşünce ve duyguların etkileşimiyle şekillenir Stresli durumlarda beyin hızlı kararlar için otomatik tepkiler üretir Siz risk alır mısınız İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-27T16:00:00Z",
+      "upload_status": "youtube_processed",
+      "youtube_status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-27T16:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false,
+        "selfDeclaredMadeForKids": false
+      },
+      "processing_status": "succeeded",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.733333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/pbLFSOJGYug.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "index": 2,
+      "error": "visual_query 2-6 İngilizce kelime olmalı"
+    },
+    {
+      "index": 3,
       "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
     }
   ],
-  "accepted_count": 0,
-  "processed_count": 0,
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
-  "target_count": 1,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
