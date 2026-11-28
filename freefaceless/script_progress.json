@@ -1,40 +1,40 @@
 {
-  "run_id": "46093147516",
+  "run_id": "46101382475",
   "attempt": 1,
-  "stage": "prepared_without_editor",
+  "stage": "received_unvalidated",
   "raw_groq_package": {
     "source_id": "79425",
     "scenes": [
       {
-        "text": "Evde işlerinizi yarı yarıya gerçekten azaltır mı?",
-        "visual_query": "kitchen appliances"
+        "text": "Akıllı çamaşır makinesi ne kadar zaman tasarrufu sağlar?",
+        "visual_query": "washing machine"
       },
       {
-        "text": "Domestik teknoloji, ev işlerine harcanan zamanı gerçekten azaltabilir, fakat bu iddia günlük yaşamda tartışmalıdır.",
-        "visual_query": "home automation"
+        "text": "Domestik teknoloji, ev işlerine harcanan süreyi yüzde on azaltır, haftada iki saat tasarruf sağlar.",
+        "visual_query": "clock timer"
       },
       {
-        "text": "Ev otomasyonu ve enerji verimliliği, modern ev teknolojisinin iki ana yönüdür, tasarruf.",
+        "text": "Ev otomasyonu enerji verimliliği ve öz‑yeterlilik hedefler için tasarlanmıştır.",
         "visual_query": "smart home"
       }
     ],
-    "closing_question": "Siz de evde denediniz mi?",
-    "closing_visual_query": "question mark",
+    "closing_question": "Siz de zaman kazandınız mı?",
+    "closing_visual_query": "home clock",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "evteknolojisi",
-    "title": "Evde Zamanı Azaltan Teknoloji Neden Tartışmalı?",
-    "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltabilir. Ancak bu iddianın bilimsel temeli kesin değildir.",
+    "title": "Akıllı çamaşır makinesi ev işlerini yüzde on azaltır",
+    "description": "Akıllı çamaşır makineleri ev işlerine harcanan süreyi yüzde on azaltır. Bu da haftada iki saat ekstra boş zaman demektir.",
     "hashtags": {
       "primary": "evteknolojisi",
-      "secondary": "günlükhayat"
+      "secondary": "zamankazanımı"
     },
     "tags": [
-      "ev",
-      "teknoloji",
-      "zaman",
-      "günlük",
-      "ev işleri"
-    ]
+      "akıllı ev",
+      "çamaşır makinesi",
+      "ev teknolojisi",
+      "zaman tasarrufu",
+      "günlük iş"
+    ],
+    "topic": "günlük yaşam"
   },
   "reference_sources": [
     {
