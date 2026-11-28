@@ -1,26 +1,19 @@
 [
   {
-    "run_id": "46093147516",
-    "slot": "2100",
+    "run_id": "46101382475",
+    "slot": "2300",
     "niche": "Günlük hayat ve eşyalar",
     "ok": true,
-    "scheduled_publish_at_turkey": "2026-11-28T21:00:00+03:00",
+    "scheduled_publish_at_turkey": "2026-11-28T23:00:00+03:00",
     "private_recovery": false,
-    "scheduled_publish_at_utc": "2026-11-28T18:00:00Z",
-    "video_id": "Kf2nmOiCNpQ",
-    "path": "/home/runner/work/denede/denede/freefaceless/output/20261128_013916_evteknolojisi/final.mp4",
-    "topic": "evteknolojisi",
-    "title": "Evde Zamanı Azaltan Teknoloji Neden Tartışmalı?",
-    "narration": "Evde işlerinizi yarı yarıya gerçekten azaltır mı Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
-    "publish_at": "2026-11-28T18:00:00Z",
+    "scheduled_publish_at_utc": "2026-11-28T20:00:00Z",
+    "video_id": "JtOwSCzuiK4",
+    "path": "/home/runner/work/denede/denede/freefaceless/output/20261128_031114_g-nl-k-ya-am/final.mp4",
+    "topic": "günlük yaşam",
+    "title": "Akıllı çamaşır makinesi ev işlerini yüzde on azaltır",
+    "narration": "Akıllı çamaşır makinesi ne kadar zaman tasarrufu sağlar Domestik teknoloji ev işlerine harcanan süreyi yüzde on azaltır haftada iki saat tasarruf sağlar Ev otomasyonu enerji verimliliği ve öz yeterlilik hedefler için tasarlanmıştır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+    "publish_at": "2026-11-28T20:00:00Z",
     "upload_status": "api_insert_confirmed",
     "processing_status": "readback_scope_unavailable"
-  },
-  {
-    "run_id": "46093147516",
-    "slot": "2300",
-    "niche": "Psikoloji ve insan davranışları",
-    "ok": false,
-    "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
   }
 ]
