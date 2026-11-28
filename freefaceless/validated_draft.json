@@ -1,87 +1,87 @@
 {
-  "focus": "Teknoloji ve icatlar",
+  "focus": "Günlük hayat ve eşyalar",
   "model": "openai/gpt-oss-120b",
-  "saved_at": "2026-11-27T17:47:13.117491+00:00",
+  "saved_at": "2026-11-28T01:39:14.478871+00:00",
   "data": {
-    "source_id": "19644137",
+    "source_id": "79425",
     "scenes": [
       {
-        "text": "İlk cep telefonu ne kadar ağırdı",
-        "visual_query": "old phone"
+        "text": "Evde işlerinizi yarı yarıya gerçekten azaltır mı",
+        "visual_query": "kitchen appliances"
       },
       {
-        "text": "Üç Nisan bin dokuz yüz yetmiş üçte tanıtıldı ağırlığı iki kilogramdı tamamen",
-        "visual_query": "handheld device"
+        "text": "Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır",
+        "visual_query": "home automation"
       },
       {
-        "text": "Cihazın bataryası o dönemde çok büyük ağır ve hantal bir yapıya sahipti",
-        "visual_query": "battery pack"
+        "text": "Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf",
+        "visual_query": "smart home"
       },
       {
-        "text": "Siz hangi eski cihazı hatırlıyorsunuz İlginç Gerçekler kanalına abone ol",
-        "visual_query": "old device"
+        "text": "Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
+        "visual_query": "question mark"
       }
     ],
-    "closing_question": "Siz hangi eski cihazı hatırlıyorsunuz?",
-    "closing_visual_query": "old device",
+    "closing_question": "Siz de evde denediniz mi?",
+    "closing_visual_query": "question mark",
     "cta": "İlginç Gerçekler kanalına abone ol",
-    "topic": "teknoloji",
-    "title": "İlk Cep Telefonu Neden İki Kilogramdı? İşte Sebebi",
-    "description": "İlk cep telefonu üç Nisan bin dokuz yüz yetmiş üç'te tanıtıldı ve iki kilogram ağırlığındaydı. Bu ağırlık, o dönemin teknoloji sınırlamalarını gösterir.\n\n#shorts #teknoloji #mobiltelefon",
+    "topic": "evteknolojisi",
+    "title": "Evde Zamanı Azaltan Teknoloji Neden Tartışmalı?",
+    "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltabilir. Ancak bu iddianın bilimsel temeli kesin değildir.\n\n#shorts #evteknolojisi #günlükhayat",
     "hashtags": {
-      "primary": "teknoloji",
-      "secondary": "mobiltelefon"
+      "primary": "evteknolojisi",
+      "secondary": "günlükhayat"
     },
     "tags": [
-      "ceptelefonu",
-      "ilktelefon",
-      "mobil",
+      "ev",
       "teknoloji",
-      "tarih"
+      "zaman",
+      "günlük",
+      "ev işleri"
     ],
-    "spoken_text": "İlk cep telefonu ne kadar ağırdı Üç Nisan bin dokuz yüz yetmiş üçte tanıtıldı ağırlığı iki kilogramdı tamamen Cihazın bataryası o dönemde çok büyük ağır ve hantal bir yapıya sahipti Siz hangi eski cihazı hatırlıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "full_text": "İlk cep telefonu ne kadar ağırdı Üç Nisan bin dokuz yüz yetmiş üçte tanıtıldı ağırlığı iki kilogramdı tamamen Cihazın bataryası o dönemde çok büyük ağır ve hantal bir yapıya sahipti Siz hangi eski cihazı hatırlıyorsunuz İlginç Gerçekler kanalına abone ol",
-    "tts_text": "İlk cep telefonu ne kadar ağırdı. Üç Nisan bin dokuz yüz yetmiş üçte tanıtıldı ağırlığı iki kilogramdı tamamen. Cihazın bataryası o dönemde çok büyük ağır ve hantal bir yapıya sahipti. Siz hangi eski cihazı hatırlıyorsunuz İlginç Gerçekler kanalına abone ol.",
-    "audience_bucket": "technology_science",
+    "spoken_text": "Evde işlerinizi yarı yarıya gerçekten azaltır mı Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
+    "full_text": "Evde işlerinizi yarı yarıya gerçekten azaltır mı Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
+    "tts_text": "Evde işlerinizi yarı yarıya gerçekten azaltır mı. Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır. Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf. Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol.",
+    "audience_bucket": "daily_life",
     "hook_style": "direct_change",
     "reference_source": {
-      "id": "19644137",
-      "title": "Mobile phone",
-      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
-      "text": "A mobile phone or cell phone is a portable wireless telephone that allows users to make and receive calls over a radio frequency link while moving within a designated telephone service area, unlike fixed-location phones (landline phones). This radio frequency link connects to the switching systems of a mobile phone operator, providing access to the public switched telephone network (PSTN). Modern mobile telephony relies on a cellular network architecture, which is why mobile phones are often referred to as 'cell phones' in North America. Beyond traditional voice communication, digital mobile phones have evolved to support a wide range of additional services. These include text messaging, ad-hoc networking, multimedia messaging, email, and internet access (via LTE, 5G NR, or Wi-Fi), as well as short-range wireless technologies like Bluetooth, infrared, and ultra-wideband (UWB). Mobile phones also support a variety of multimedia capabilities, such as digital photography, video recording, and gaming. In addition, they enable multimedia playback and streaming, including video content, as well as radio and television streaming. Furthermore, mobile phones offer satellite-based services, such as navigation and messaging, as well as business applications and payment solutions (via scanning QR codes or near-field communication (NFC)). Mobile phones offering only basic features are often referred to as feature phones (slang: dumbphones), while those with advanced computing power are known as smartphones. The first handheld mobile phone was demonstrated by Martin Cooper of Motorola in New York City on 3 April 1973, using a handset weighing c. 2 kilograms (4.4 lbs)."
+      "id": "79425",
+      "title": "Domestic technology",
+      "url": "https://en.wikipedia.org/wiki/Domestic_technology",
+      "text": "Domestic technology is the incorporation of applied science into the home. There are multiple aspects of domestic technology. On one level, there are home appliances, home automation and other devices commonly used in the home, such as clothes dryers and washing machines. On another level, domestic technology recognizes the use of applied science to construct homes to achieve a particular goal, such as energy efficiency or self-sufficiency. For more information, read about self-sufficient homes. It has been claimed that domestic technology has led to decreases in the time people spend on household work, although the factual basis of this claim is disputed."
     },
     "raw_groq_package": {
-      "source_id": "19644137",
+      "source_id": "79425",
       "scenes": [
         {
-          "text": "İlk cep telefonu ne kadar ağırdı?",
-          "visual_query": "old phone"
+          "text": "Evde işlerinizi yarı yarıya gerçekten azaltır mı?",
+          "visual_query": "kitchen appliances"
         },
         {
-          "text": "Üç Nisan bin dokuz yüz yetmiş üç'te tanıtıldı, ağırlığı iki kilogramdı tamamen.",
-          "visual_query": "handheld device"
+          "text": "Domestik teknoloji, ev işlerine harcanan zamanı gerçekten azaltabilir, fakat bu iddia günlük yaşamda tartışmalıdır.",
+          "visual_query": "home automation"
         },
         {
-          "text": "Cihazın bataryası o dönemde çok büyük, ağır ve hantal bir yapıya sahipti.",
-          "visual_query": "battery pack"
+          "text": "Ev otomasyonu ve enerji verimliliği, modern ev teknolojisinin iki ana yönüdür, tasarruf.",
+          "visual_query": "smart home"
         }
       ],
-      "closing_question": "Siz hangi eski cihazı hatırlıyorsunuz?",
-      "closing_visual_query": "old device",
+      "closing_question": "Siz de evde denediniz mi?",
+      "closing_visual_query": "question mark",
       "cta": "İlginç Gerçekler kanalına abone ol",
-      "topic": "teknoloji",
-      "title": "İlk Cep Telefonu Neden İki Kilogramdı? İşte Sebebi",
-      "description": "İlk cep telefonu üç Nisan bin dokuz yüz yetmiş üç'te tanıtıldı ve iki kilogram ağırlığındaydı. Bu ağırlık, o dönemin teknoloji sınırlamalarını gösterir.",
+      "topic": "evteknolojisi",
+      "title": "Evde Zamanı Azaltan Teknoloji Neden Tartışmalı?",
+      "description": "Ev teknolojileri, ev işlerine harcanan süreyi azaltabilir. Ancak bu iddianın bilimsel temeli kesin değildir.",
       "hashtags": {
-        "primary": "teknoloji",
-        "secondary": "mobiltelefon"
+        "primary": "evteknolojisi",
+        "secondary": "günlükhayat"
       },
       "tags": [
-        "ceptelefonu",
-        "ilktelefon",
-        "mobil",
+        "ev",
         "teknoloji",
-        "tarih"
+        "zaman",
+        "günlük",
+        "ev işleri"
       ]
     },
     "generation_mode": "prompt_first_v1"
