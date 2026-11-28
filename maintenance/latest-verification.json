@@ -1,19 +1,19 @@
 {
-  "source_run": "46041863121",
-  "verified_at": "2026-11-27T17:49:00.882579+00:00",
+  "source_run": "46093147516",
+  "verified_at": "2026-11-28T01:52:35.193192+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "j_uAus8oWrs",
-      "youtube_url": "https://youtu.be/j_uAus8oWrs",
-      "title": "Elektrik Akımı Neden Manyetik Alan Oluşturur?",
-      "narration": "Elektrik akımı nasıl manyetik alan yaratır Hareketli elektrik yükleri çevresinde manyetik alan oluşturur bu da akımın manyetik etkisini sağlar Elektrik akımı aynı zamanda ısı üretir ve ışık verir Siz de deney yaptınız mı İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-27T20:00:00Z",
+      "video_id": "Kf2nmOiCNpQ",
+      "youtube_url": "https://youtu.be/Kf2nmOiCNpQ",
+      "title": "Evde Zamanı Azaltan Teknoloji Neden Tartışmalı?",
+      "narration": "Evde işlerinizi yarı yarıya gerçekten azaltır mı Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-28T18:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-27T20:00:00Z",
+        "publishAt": "2026-11-28T18:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,47 +23,24 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 17.466667,
+        "duration": 19.7,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/j_uAus8oWrs.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "8rMcEQQ3uTw",
-      "youtube_url": "https://youtu.be/8rMcEQQ3uTw",
-      "title": "İlk Cep Telefonu Neden İki Kilogramdı? İşte Sebebi",
-      "narration": "İlk cep telefonu ne kadar ağırdı Üç Nisan bin dokuz yüz yetmiş üçte tanıtıldı ağırlığı iki kilogramdı tamamen Cihazın bataryası o dönemde çok büyük ağır ve hantal bir yapıya sahipti Siz hangi eski cihazı hatırlıyorsunuz İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-28T16:00:00Z",
-      "upload_status": "youtube_processed",
-      "youtube_status": {
-        "uploadStatus": "processed",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-28T16:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "madeForKids": false,
-        "selfDeclaredMadeForKids": false
-      },
-      "processing_status": "succeeded",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.933333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/8rMcEQQ3uTw.jpg"
+      "preview": "maintenance/previews/Kf2nmOiCNpQ.jpg"
     }
   ],
-  "errors": [],
-  "accepted_count": 2,
-  "processed_count": 2,
+  "errors": [
+    {
+      "index": 2,
+      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
+    }
+  ],
+  "accepted_count": 1,
+  "processed_count": 1,
   "complete": false,
   "target_count": 2,
   "published_count": 0,
-  "accepted_complete": true
+  "accepted_complete": false
 }
