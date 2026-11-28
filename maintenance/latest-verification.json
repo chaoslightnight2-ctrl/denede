@@ -1,19 +1,19 @@
 {
-  "source_run": "46093147516",
-  "verified_at": "2026-11-28T01:52:35.193192+00:00",
+  "source_run": "46101382475",
+  "verified_at": "2026-11-28T03:12:57.723221+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "Kf2nmOiCNpQ",
-      "youtube_url": "https://youtu.be/Kf2nmOiCNpQ",
-      "title": "Evde Zamanı Azaltan Teknoloji Neden Tartışmalı?",
-      "narration": "Evde işlerinizi yarı yarıya gerçekten azaltır mı Domestik teknoloji ev işlerine harcanan zamanı gerçekten azaltabilir fakat bu iddia günlük yaşamda tartışmalıdır Ev otomasyonu ve enerji verimliliği modern ev teknolojisinin iki ana yönüdür tasarruf Siz de evde denediniz mi İlginç Gerçekler kanalına abone ol",
-      "publish_at": "2026-11-28T18:00:00Z",
+      "video_id": "JtOwSCzuiK4",
+      "youtube_url": "https://youtu.be/JtOwSCzuiK4",
+      "title": "Akıllı çamaşır makinesi ev işlerini yüzde on azaltır",
+      "narration": "Akıllı çamaşır makinesi ne kadar zaman tasarrufu sağlar Domestik teknoloji ev işlerine harcanan süreyi yüzde on azaltır haftada iki saat tasarruf sağlar Ev otomasyonu enerji verimliliği ve öz yeterlilik hedefler için tasarlanmıştır Siz de zaman kazandınız mı İlginç Gerçekler kanalına abone ol",
+      "publish_at": "2026-11-28T20:00:00Z",
       "upload_status": "youtube_processed",
       "youtube_status": {
         "uploadStatus": "processed",
         "privacyStatus": "private",
-        "publishAt": "2026-11-28T18:00:00Z",
+        "publishAt": "2026-11-28T20:00:00Z",
         "license": "youtube",
         "embeddable": true,
         "publicStatsViewable": true,
@@ -23,24 +23,19 @@
       "processing_status": "succeeded",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 19.7,
+        "duration": 20.166667,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/Kf2nmOiCNpQ.jpg"
+      "preview": "maintenance/previews/JtOwSCzuiK4.jpg"
     }
   ],
-  "errors": [
-    {
-      "index": 2,
-      "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
-    }
-  ],
+  "errors": [],
   "accepted_count": 1,
   "processed_count": 1,
   "complete": false,
-  "target_count": 2,
+  "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
