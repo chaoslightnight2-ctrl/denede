@@ -1284,7 +1284,8 @@
       "video_id": "Kf2nmOiCNpQ",
       "publish_at": "2026-11-28T18:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "run_id": "46093147516"
+      "run_id": "46093147516",
+      "processing_status": "readback_scope_unavailable"
     }
   ]
 }
